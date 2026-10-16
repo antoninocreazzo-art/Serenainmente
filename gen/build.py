@@ -2,6 +2,9 @@
 """Genera il sito statico di serenainmente.it a partire da gen/dati.json.
 Uso: python3 gen/build.py  (dalla cartella del sito)"""
 import json, os, html, datetime
+from openpyxl import Workbook  # pip install openpyxl
+from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
+from openpyxl.worksheet.datavalidation import DataValidation
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = json.load(open(os.path.join(ROOT, 'gen', 'dati.json'), encoding='utf-8'))
@@ -93,11 +96,39 @@ def src_block(fid):
 
 pages = []
 
+def checklist_xlsx(g):
+    """Crea guide/<slug>/checklist.xlsx con la checklist della guida."""
+    wb = Workbook(); ws = wb.active; ws.title = 'Checklist'
+    malva, ink, rosa = '97606F', '3A2C30', 'F4E9EC'
+    ws.column_dimensions['A'].width = 8; ws.column_dimensions['B'].width = 60; ws.column_dimensions['C'].width = 28
+    ws['A1'] = g['titolo']; ws['A1'].font = Font(name='Georgia', size=16, bold=True, color=ink); ws.merge_cells('A1:C1')
+    ws['A2'] = g['sommario']; ws['A2'].font = Font(size=11, italic=True, color='7A6569'); ws.merge_cells('A2:C2')
+    ws.row_dimensions[1].height = 28; ws.row_dimensions[2].height = 20
+    for col, t in zip('ABC', ['Fatto', 'Cosa', 'Note']):
+        c = ws[f'{col}4']; c.value = t; c.font = Font(bold=True, color='FFFFFF'); c.fill = PatternFill('solid', fgColor=malva)
+        c.alignment = Alignment(vertical='center'); ws.row_dimensions[4].height = 22
+    thin = Side(style='thin', color='EADCDF')
+    dv = DataValidation(type='list', formula1='"☐,☑"', allow_blank=True); ws.add_data_validation(dv)
+    for i, item in enumerate(g.get('checklist', []), start=5):
+        ws[f'A{i}'] = '☐'; ws[f'A{i}'].alignment = Alignment(horizontal='center', vertical='center'); ws[f'A{i}'].font = Font(size=14, color=malva)
+        ws[f'B{i}'] = item; ws[f'B{i}'].alignment = Alignment(wrap_text=True, vertical='center'); ws.row_dimensions[i].height = 24
+        dv.add(ws[f'A{i}'])
+        for col in 'ABC':
+            ws[f'{col}{i}'].border = Border(bottom=thin)
+            if i % 2: ws[f'{col}{i}'].fill = PatternFill('solid', fgColor='FBF6F4')
+    n = 5 + len(g.get('checklist', [])) + 1
+    ws[f'B{n}'] = f"Da serenainmente.it/guide/{g['slug']}/ · {g['avvertenza']}"; ws[f'B{n}'].font = Font(size=9, color='7A6569'); ws[f'B{n}'].alignment = Alignment(wrap_text=True); ws.merge_cells(f'B{n}:C{n}'); ws.row_dimensions[n].height = 40
+    ws.freeze_panes = 'A5'; ws.sheet_view.showGridLines = False
+    ws.page_setup.orientation = 'portrait'; ws.page_setup.fitToWidth = 1; ws.print_options.horizontalCentered = True
+    d = os.path.join(ROOT, 'guide', g['slug']); os.makedirs(d, exist_ok=True)
+    wb.save(os.path.join(d, 'checklist.xlsx'))
+
 # ---------- guide ----------
 guide_cards = []
 for gi, g in enumerate(D['guide']):
     ng = D['guide'][(gi+1) % len(D['guide'])]
     nxt = f'<a class="card link next" href="/guide/{ng["slug"]}/"><span class="eyebrow">Prossima guida · {e(ng["tempo"])}</span><b>{e(ng["titolo"])}</b></a>' if len(D['guide'])>1 else ''
+    if g.get('checklist'): checklist_xlsx(g)
     steps = ''.join(f'<li><b>{e(s[0])}</b><span>{e(s[1])}</span></li>' for s in g['passi'])
     errori = ''.join(f'<li>{e(x)}</li>' for x in g.get('errori', []))
     check = ''.join(f'<li><span class="box" aria-hidden="true"></span>{e(x)}</li>' for x in g.get('checklist', []))
@@ -110,7 +141,7 @@ for gi, g in enumerate(D['guide']):
 <section class="stack"><h2>Perché aiuta</h2>{''.join(f'<p>{e(p)}</p>' for p in g['perche'])}</section>
 <section class="stack"><h2>Come si fa</h2><ol class="steps">{steps}</ol></section>
 {f'<section class="stack"><h2>Errori comuni</h2><ul class="plain">{errori}</ul></section>' if errori else ''}
-{f'<section class="note stack"><h2>Checklist</h2><ul class="check">{check}</ul><button class="btn sec noprint" type="button" onclick="window.print()">Stampa la checklist</button></section>' if check else ''}
+{f'<section class="note stack"><h2>Checklist</h2><ul class="check">{check}</ul><div class="row noprint"><a class="btn sec" href="/guide/{g["slug"]}/checklist.xlsx" download>Scarica in Excel</a><button class="btn sec" type="button" onclick="window.print()">Stampa</button></div></section>' if check else ''}
 {f'<section class="stack"><h2>Fonti</h2><ul class="sources">{fonti}</ul></section>' if fonti else ''}
 <p class="small">{e(g['avvertenza'])}</p>
 {share(f"/guide/{g['slug']}/", g['titolo'])}
