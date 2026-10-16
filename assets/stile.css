@@ -72,3 +72,19 @@ a.card.link:hover{border-color:var(--soft)}
 .post h2 a{color:var(--ink);text-decoration:none}
 .post h2 a:hover{color:var(--accent)}
 .hero{gap:18px}
+/* v3 */
+.wrap{max-width:680px}
+@media(min-width:760px){.cards{grid-template-columns:1fr 1fr}.moments{grid-template-columns:1fr 1fr 1fr}}
+.moments{display:grid;gap:12px}
+a.moment{background:var(--accent);color:#fff;border-radius:14px;padding:18px 20px;text-decoration:none;display:flex;flex-direction:column;gap:6px}
+a.moment b{font-family:var(--display);font-weight:400;font-size:19px;line-height:1.25}
+a.moment span{font-size:14px;opacity:.9}
+a.moment:hover{background:#85515F}
+.trust{list-style:none;margin:0;padding:18px 20px;background:var(--surface);border:1px solid var(--line);border-radius:14px;display:grid;gap:14px}
+@media(min-width:560px){.trust{grid-template-columns:1fr 1fr}}
+.trust li{display:flex;flex-direction:column;gap:2px;font-size:14px;color:var(--muted)}
+.trust b{color:var(--ink);font-weight:500;font-size:15px}
+.share{display:flex;flex-direction:column;gap:10px;padding:18px 20px;border:1px dashed var(--soft);border-radius:14px}
+button.btn{border:0;font:inherit;cursor:pointer;font-weight:500}
+a.card.link.next{background:var(--rosa);border-color:transparent}
+@media print{header,footer,.share,.btn,.noprint,.next,.facts{display:none!important}body{background:#fff}.note{background:#fff;padding:0}}

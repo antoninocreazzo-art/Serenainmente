@@ -1,60 +1,287 @@
 {
   "fonti": [
-    {"id": "SB-01", "ente": "Organizzazione Mondiale della Sanità (OMS)", "anno": 2019, "titolo": "To grow up healthy, children need to sit less and play more", "tipo": "Linea guida", "url": "https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more"},
-    {"id": "OR-04", "ente": "American Academy of Pediatrics – HealthyChildren.org", "anno": 2026, "titolo": "Healthy Sleep Habits: How Many Hours Does Your Child Need?", "tipo": "Raccomandazione", "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/Healthy-Sleep-Habits-How-Many-Hours-Does-Your-Child-Need.aspx"},
-    {"id": "OR-02", "ente": "Istituto Superiore di Sanità – EpiCentro", "anno": 2023, "titolo": "Piano nazionale di prevenzione vaccinale (PNPV) 2023-2025", "tipo": "Documento istituzionale", "url": "https://www.epicentro.iss.it/vaccini/piano-nazionale-vaccini-2023-2025"},
-    {"id": "TI-01", "ente": "Nutrients – Snuggs S., Harvey K.", "anno": 2023, "titolo": "Family Mealtimes: A Systematic Umbrella Review of Characteristics, Correlates, Outcomes and Interventions", "tipo": "Revisione sistematica", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10346164/"}
+    {
+      "id": "SB-01",
+      "ente": "Organizzazione Mondiale della Sanità (OMS)",
+      "anno": 2019,
+      "titolo": "To grow up healthy, children need to sit less and play more",
+      "tipo": "Linea guida",
+      "url": "https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more"
+    },
+    {
+      "id": "OR-04",
+      "ente": "American Academy of Pediatrics – HealthyChildren.org",
+      "anno": 2026,
+      "titolo": "Healthy Sleep Habits: How Many Hours Does Your Child Need?",
+      "tipo": "Raccomandazione",
+      "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/Healthy-Sleep-Habits-How-Many-Hours-Does-Your-Child-Need.aspx"
+    },
+    {
+      "id": "OR-02",
+      "ente": "Istituto Superiore di Sanità – EpiCentro",
+      "anno": 2023,
+      "titolo": "Piano nazionale di prevenzione vaccinale (PNPV) 2023-2025",
+      "tipo": "Documento istituzionale",
+      "url": "https://www.epicentro.iss.it/vaccini/piano-nazionale-vaccini-2023-2025"
+    },
+    {
+      "id": "TI-01",
+      "ente": "Nutrients – Snuggs S., Harvey K.",
+      "anno": 2023,
+      "titolo": "Family Mealtimes: A Systematic Umbrella Review of Characteristics, Correlates, Outcomes and Interventions",
+      "tipo": "Revisione sistematica",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10346164/"
+    }
   ],
   "post": [
-    {"slug": "cartellina-di-famiglia", "data": "2026-10-19", "controllo": "2026-10-13", "titolo": "Una cartellina, meno cose da cercare", "guida": "cartellina-di-famiglia",
-     "affermazioni": ["In Italia esiste un Calendario nazionale vaccinale che indica quali vaccinazioni sono offerte attivamente e gratuitamente per ogni fascia d'età. L'offerta concreta può variare per regione: il riferimento è il pediatra o la ASL."],
-     "fonti": ["OR-02"]},
-    {"slug": "la-sera-che-non-finisce-mai", "data": "2026-10-20", "controllo": "2026-10-13", "titolo": "La sera che non finisce mai: 4 mosse", "guida": "routine-della-nanna",
-     "affermazioni": ["L'American Academy of Pediatrics ricorda che i bambini traggono beneficio da una routine regolare della nanna e consiglia di spegnere gli schermi almeno un'ora prima di dormire."],
-     "fonti": ["OR-04"]},
-    {"slug": "non-serve-una-cena-perfetta", "data": "2026-10-21", "controllo": "2026-10-13", "titolo": "Non serve una cena perfetta",
-     "affermazioni": ["Una revisione di revisioni sistematiche ha rilevato che mangiare più spesso in famiglia è associato, in bambini e ragazzi, a una dieta di migliore qualità. È un'associazione, non un rapporto di causa ed effetto."],
-     "fonti": ["TI-01"]},
-    {"slug": "il-sonno-dei-piu-piccoli", "data": "2026-10-23", "controllo": "2026-10-13", "titolo": "Il sonno dei più piccoli: cosa indica l'OMS", "guida": "routine-della-nanna",
-     "affermazioni": ["L'OMS raccomanda 11-14 ore di sonno, sonnellini compresi, tra 1 e 2 anni e 10-13 ore tra 3 e 4 anni, con orari regolari. Sono indicazioni per la popolazione, non per il singolo bambino.", "Una routine regolare della nanna e gli schermi spenti almeno un'ora prima di dormire aiutano i bambini (American Academy of Pediatrics)."],
-     "fonti": ["SB-01", "OR-04"]}
+    {
+      "slug": "cartellina-di-famiglia",
+      "data": "2026-10-19",
+      "controllo": "2026-10-13",
+      "titolo": "Una cartellina, meno cose da cercare",
+      "guida": "cartellina-di-famiglia",
+      "affermazioni": [
+        "In Italia esiste un Calendario nazionale vaccinale che indica quali vaccinazioni sono offerte attivamente e gratuitamente per ogni fascia d'età. L'offerta concreta può variare per regione: il riferimento è il pediatra o la ASL."
+      ],
+      "fonti": [
+        "OR-02"
+      ]
+    },
+    {
+      "slug": "la-sera-che-non-finisce-mai",
+      "data": "2026-10-20",
+      "controllo": "2026-10-13",
+      "titolo": "La sera che non finisce mai: 4 mosse",
+      "guida": "routine-della-nanna",
+      "affermazioni": [
+        "L'American Academy of Pediatrics ricorda che i bambini traggono beneficio da una routine regolare della nanna e consiglia di spegnere gli schermi almeno un'ora prima di dormire."
+      ],
+      "fonti": [
+        "OR-04"
+      ]
+    },
+    {
+      "slug": "non-serve-una-cena-perfetta",
+      "data": "2026-10-21",
+      "controllo": "2026-10-13",
+      "titolo": "Non serve una cena perfetta",
+      "affermazioni": [
+        "Una revisione di revisioni sistematiche ha rilevato che mangiare più spesso in famiglia è associato, in bambini e ragazzi, a una dieta di migliore qualità. È un'associazione, non un rapporto di causa ed effetto."
+      ],
+      "fonti": [
+        "TI-01"
+      ]
+    },
+    {
+      "slug": "il-sonno-dei-piu-piccoli",
+      "data": "2026-10-23",
+      "controllo": "2026-10-13",
+      "titolo": "Il sonno dei più piccoli: cosa indica l'OMS",
+      "guida": "routine-della-nanna",
+      "affermazioni": [
+        "L'OMS raccomanda 11-14 ore di sonno, sonnellini compresi, tra 1 e 2 anni e 10-13 ore tra 3 e 4 anni, con orari regolari. Sono indicazioni per la popolazione, non per il singolo bambino.",
+        "Una routine regolare della nanna e gli schermi spenti almeno un'ora prima di dormire aiutano i bambini (American Academy of Pediatrics)."
+      ],
+      "fonti": [
+        "SB-01",
+        "OR-04"
+      ]
+    }
   ],
   "guide": [
-    {"slug": "cartellina-di-famiglia", "categoria": "Organizzarsi", "data": "2026-10-16", "titolo": "La cartellina di famiglia: cinque documenti in un posto solo",
-     "sommario": "Dieci minuti oggi per non cercare più il libretto delle vaccinazioni nel momento sbagliato.",
-     "tempo": "10 minuti", "serve": "Una cartellina, un foglio, una penna",
-     "perche": ["Quando serve un documento, di solito serve subito: dal pediatra, al pronto soccorso, all'iscrizione al nido. Se ogni documento sta in un posto diverso, la ricerca diventa ansia.", "Un posto solo, che tutti in casa conoscono, toglie questo peso. E fa sì che non debba ricordare tutto una persona sola."],
-     "passi": [["Tessere sanitarie", "Una copia, o l'originale se non lo usate spesso, per ogni componente della famiglia."], ["Vaccinazioni", "Il libretto o il certificato vaccinale dei bambini. In Italia il Calendario nazionale vaccinale indica le vaccinazioni offerte per età: per i dettagli della tua regione, il riferimento è il pediatra o la ASL."], ["Referti recenti", "Gli ultimi referti e le eventuali lettere di dimissione, dal più recente al più vecchio."], ["Un foglio di contatti", "Pediatra, medico di famiglia, guardia medica; allergie note e terapie in corso, scritte a mano in modo chiaro."], ["Dillo a tutti", "Scegli un posto fisso e dillo a chi vive con te e a chi ti aiuta con i bambini. La cartellina funziona solo se la trovano anche gli altri."]],
-     "errori": ["Volerla perfetta subito: meglio incompleta oggi che perfetta mai.", "Metterci tutto: se diventa un archivio, smette di essere veloce.", "Tenerla in un posto che conosci solo tu."],
-     "checklist": ["Tessere sanitarie di tutti", "Libretto o certificato vaccinale", "Ultimi referti", "Foglio con contatti, allergie e terapie", "Tutti in casa sanno dov'è"],
-     "fonti": ["OR-02"],
-     "avvertenza": "Consigli organizzativi generali. Per vaccinazioni, terapie e documenti sanitari specifici il riferimento resta il pediatra, il medico o la ASL."},
-    {"slug": "routine-della-nanna", "categoria": "Stare bene", "data": "2026-10-16", "titolo": "La sera che non finisce mai: una routine della nanna in quattro mosse",
-     "sommario": "Non una bacchetta magica: un metodo semplice, in linea con quello che indicano i pediatri.",
-     "tempo": "Ogni sera, 20-30 minuti", "serve": "Gli stessi gesti, nello stesso ordine",
-     "perche": ["L'American Academy of Pediatrics ricorda che i bambini traggono beneficio da una routine regolare della nanna. La regolarità aiuta il corpo e la testa a capire che la giornata sta finendo.", "Per i più piccoli l'OMS indica 11-14 ore di sonno tra 1 e 2 anni e 10-13 ore tra 3 e 4 anni, sonnellini compresi, con orari regolari. Sono indicazioni per tutta la popolazione: ogni bambino ha i suoi ritmi."],
-     "passi": [["Stesso orario", "Ogni sera alla stessa ora, anche se non si addormenta subito: conta la regolarità, non la perfezione."], ["Gli stessi tre gesti", "Per esempio bagnetto, pigiama, una storia. Sempre nello stesso ordine, così diventano un segnale."], ["Schermi spenti un'ora prima", "È una delle indicazioni dell'American Academy of Pediatrics. Vale per tutti in casa, se riuscite."], ["Se non funziona, non è colpa tua", "Ogni bambino è diverso. Se il sonno ti preoccupa, parlane con il pediatra: conosce la sua storia."]],
-     "errori": ["Cambiare metodo ogni sera.", "Trasformare le ore indicate in un esame da superare.", "Pensare di dover fare tutto da soli: la routine può farla chiunque in famiglia."],
-     "checklist": ["Orario della nanna deciso", "Tre gesti scelti, sempre nello stesso ordine", "Schermi spenti un'ora prima"],
-     "fonti": ["OR-04", "SB-01"],
-     "avvertenza": "Informazioni generali, non sostituiscono il parere del pediatra o del medico."},
-    {"slug": "domande-per-il-pediatra", "categoria": "Organizzarsi", "data": "2026-10-16", "titolo": "Prima della visita dal pediatra: le domande da preparare",
-     "sommario": "Dieci minuti prima della visita per uscire dallo studio con le risposte che cercavi.",
-     "tempo": "10 minuti prima, 2 minuti dopo", "serve": "Il telefono o un foglio",
-     "perche": ["Durante una visita si è spesso di corsa, il bambino è stanco e le domande più importanti tornano in mente solo in macchina, al ritorno.", "Prepararle prima non significa mettere in discussione il medico: lo aiuta a capire cosa ti preoccupa e ti fa uscire più tranquillo."],
-     "passi": [["Scrivi le domande", "Al massimo tre o quattro, in ordine di importanza. La più importante va per prima."], ["Annota cosa hai notato", "Da quando, quante volte, cosa è cambiato. Con parole tue: bastano poche righe."], ["Porta la cartellina", "Libretto vaccinale e ultimi referti a portata di mano."], ["Durante la visita, scrivi", "Annota le risposte. Se qualcosa non è chiaro, chiedi di ripeterlo con parole semplici: è normale."], ["Prima di uscire, riassumi", "Una frase: «Quindi facciamo così, e ci risentiamo se…». Così sai cosa fare e quando richiamare."]],
-     "errori": ["Fidarsi della memoria.", "Tenere per ultima la domanda che preoccupa di più.", "Uscire senza sapere quando ricontrollare."],
-     "checklist": ["Domande scritte, la più importante per prima", "Poche righe su cosa hai notato", "Cartellina con libretto e referti", "Risposte annotate", "So cosa fare e quando richiamare"],
-     "fonti": [],
-     "avvertenza": "Consigli organizzativi generali per prepararsi a una visita. Non sostituiscono le indicazioni del pediatra o del medico."}
+    {
+      "slug": "cartellina-di-famiglia",
+      "categoria": "Organizzarsi",
+      "data": "2026-10-16",
+      "titolo": "La cartellina di famiglia: cinque documenti in un posto solo",
+      "sommario": "Dieci minuti oggi per non cercare più il libretto delle vaccinazioni nel momento sbagliato.",
+      "tempo": "10 minuti",
+      "serve": "Una cartellina, un foglio, una penna",
+      "perche": [
+        "Quando serve un documento, di solito serve subito: dal pediatra, al pronto soccorso, all'iscrizione al nido. Se ogni documento sta in un posto diverso, la ricerca diventa ansia.",
+        "Un posto solo, che tutti in casa conoscono, toglie questo peso. E fa sì che non debba ricordare tutto una persona sola."
+      ],
+      "passi": [
+        [
+          "Tessere sanitarie",
+          "Una copia, o l'originale se non lo usate spesso, per ogni componente della famiglia."
+        ],
+        [
+          "Vaccinazioni",
+          "Il libretto o il certificato vaccinale dei bambini. In Italia il Calendario nazionale vaccinale indica le vaccinazioni offerte per età: per i dettagli della tua regione, il riferimento è il pediatra o la ASL."
+        ],
+        [
+          "Referti recenti",
+          "Gli ultimi referti e le eventuali lettere di dimissione, dal più recente al più vecchio."
+        ],
+        [
+          "Un foglio di contatti",
+          "Pediatra, medico di famiglia, guardia medica; allergie note e terapie in corso, scritte a mano in modo chiaro."
+        ],
+        [
+          "Dillo a tutti",
+          "Scegli un posto fisso e dillo a chi vive con te e a chi ti aiuta con i bambini. La cartellina funziona solo se la trovano anche gli altri."
+        ]
+      ],
+      "errori": [
+        "Volerla perfetta subito: meglio incompleta oggi che perfetta mai.",
+        "Metterci tutto: se diventa un archivio, smette di essere veloce.",
+        "Tenerla in un posto che conosci solo tu."
+      ],
+      "checklist": [
+        "Tessere sanitarie di tutti",
+        "Libretto o certificato vaccinale",
+        "Ultimi referti",
+        "Foglio con contatti, allergie e terapie",
+        "Tutti in casa sanno dov'è"
+      ],
+      "fonti": [
+        "OR-02"
+      ],
+      "avvertenza": "Consigli organizzativi generali. Per vaccinazioni, terapie e documenti sanitari specifici il riferimento resta il pediatra, il medico o la ASL."
+    },
+    {
+      "slug": "routine-della-nanna",
+      "categoria": "Stare bene",
+      "data": "2026-10-16",
+      "titolo": "La sera che non finisce mai: una routine della nanna in quattro mosse",
+      "sommario": "Non una bacchetta magica: un metodo semplice, in linea con quello che indicano i pediatri.",
+      "tempo": "Ogni sera, 20-30 minuti",
+      "serve": "Gli stessi gesti, nello stesso ordine",
+      "perche": [
+        "L'American Academy of Pediatrics ricorda che i bambini traggono beneficio da una routine regolare della nanna. La regolarità aiuta il corpo e la testa a capire che la giornata sta finendo.",
+        "Per i più piccoli l'OMS indica 11-14 ore di sonno tra 1 e 2 anni e 10-13 ore tra 3 e 4 anni, sonnellini compresi, con orari regolari. Sono indicazioni per tutta la popolazione: ogni bambino ha i suoi ritmi."
+      ],
+      "passi": [
+        [
+          "Stesso orario",
+          "Ogni sera alla stessa ora, anche se non si addormenta subito: conta la regolarità, non la perfezione."
+        ],
+        [
+          "Gli stessi tre gesti",
+          "Per esempio bagnetto, pigiama, una storia. Sempre nello stesso ordine, così diventano un segnale."
+        ],
+        [
+          "Schermi spenti un'ora prima",
+          "È una delle indicazioni dell'American Academy of Pediatrics. Vale per tutti in casa, se riuscite."
+        ],
+        [
+          "Se non funziona, non è colpa tua",
+          "Ogni bambino è diverso. Se il sonno ti preoccupa, parlane con il pediatra: conosce la sua storia."
+        ]
+      ],
+      "errori": [
+        "Cambiare metodo ogni sera.",
+        "Trasformare le ore indicate in un esame da superare.",
+        "Pensare di dover fare tutto da soli: la routine può farla chiunque in famiglia."
+      ],
+      "checklist": [
+        "Orario della nanna deciso",
+        "Tre gesti scelti, sempre nello stesso ordine",
+        "Schermi spenti un'ora prima"
+      ],
+      "fonti": [
+        "OR-04",
+        "SB-01"
+      ],
+      "avvertenza": "Informazioni generali, non sostituiscono il parere del pediatra o del medico."
+    },
+    {
+      "slug": "domande-per-il-pediatra",
+      "categoria": "Organizzarsi",
+      "data": "2026-10-16",
+      "titolo": "Prima della visita dal pediatra: le domande da preparare",
+      "sommario": "Dieci minuti prima della visita per uscire dallo studio con le risposte che cercavi.",
+      "tempo": "10 minuti prima, 2 minuti dopo",
+      "serve": "Il telefono o un foglio",
+      "perche": [
+        "Durante una visita si è spesso di corsa, il bambino è stanco e le domande più importanti tornano in mente solo in macchina, al ritorno.",
+        "Prepararle prima non significa mettere in discussione il medico: lo aiuta a capire cosa ti preoccupa e ti fa uscire più tranquillo."
+      ],
+      "passi": [
+        [
+          "Scrivi le domande",
+          "Al massimo tre o quattro, in ordine di importanza. La più importante va per prima."
+        ],
+        [
+          "Annota cosa hai notato",
+          "Da quando, quante volte, cosa è cambiato. Con parole tue: bastano poche righe."
+        ],
+        [
+          "Porta la cartellina",
+          "Libretto vaccinale e ultimi referti a portata di mano."
+        ],
+        [
+          "Durante la visita, scrivi",
+          "Annota le risposte. Se qualcosa non è chiaro, chiedi di ripeterlo con parole semplici: è normale."
+        ],
+        [
+          "Prima di uscire, riassumi",
+          "Una frase: «Quindi facciamo così, e ci risentiamo se…». Così sai cosa fare e quando richiamare."
+        ]
+      ],
+      "errori": [
+        "Fidarsi della memoria.",
+        "Tenere per ultima la domanda che preoccupa di più.",
+        "Uscire senza sapere quando ricontrollare."
+      ],
+      "checklist": [
+        "Domande scritte, la più importante per prima",
+        "Poche righe su cosa hai notato",
+        "Cartellina con libretto e referti",
+        "Risposte annotate",
+        "So cosa fare e quando richiamare"
+      ],
+      "fonti": [],
+      "avvertenza": "Consigli organizzativi generali per prepararsi a una visita. Non sostituiscono le indicazioni del pediatra o del medico."
+    }
   ],
   "chi": {
     "sommario": "Serena è un progetto editoriale per chi si prende cura della famiglia: guide pratiche, dati con le loro fonti e parole in cui ritrovarsi.",
     "sezioni": [
-      ["Cosa facciamo", ["Ogni giorno su Instagram pubblichiamo una cosa utile: un metodo pratico, un dato che toglie un'ansia, una frase da tenere o da mandare a qualcuno. Qui sul sito trovi le guide complete e le fonti di ogni post."]],
-      ["Come lavoriamo", ["I testi nascono con l'aiuto dell'intelligenza artificiale. Ogni post e ogni pagina vengono letti, scelti e approvati da una persona prima di uscire.", "Ogni dato viene da una fonte che puoi aprire: organizzazioni come l'OMS, l'Istituto Superiore di Sanità, società scientifiche, riviste con revisione. Una fonte entra nei nostri contenuti solo dopo essere stata controllata, e riportiamo i suoi limiti: età, anno del dato, differenza tra associazione e causa.", "Se trovi un errore o un collegamento che non funziona, scrivici in privato su Instagram: correggiamo e indichiamo la data dell'aggiornamento."]],
-      ["Cosa non siamo", ["Serena non è una persona e non è un servizio medico. Non diamo diagnosi né indicazioni sulla salute del tuo bambino: riportiamo cosa dicono le linee guida, poi decidi tu, con chi lo conosce."]],
-      ["Privacy", ["Questo sito non usa cookie, non ha sistemi di tracciamento e non raccoglie dati personali."]]
+      [
+        "Cosa facciamo",
+        [
+          "Ogni giorno su Instagram pubblichiamo una cosa utile: un metodo pratico, un dato che toglie un'ansia, una frase da tenere o da mandare a qualcuno. Qui sul sito trovi le guide complete e le fonti di ogni post."
+        ]
+      ],
+      [
+        "Come lavoriamo",
+        [
+          "I testi nascono con l'aiuto dell'intelligenza artificiale. Ogni post e ogni pagina vengono letti, scelti e approvati da una persona prima di uscire.",
+          "Ogni dato viene da una fonte che puoi aprire: organizzazioni come l'OMS, l'Istituto Superiore di Sanità, società scientifiche, riviste con revisione. Una fonte entra nei nostri contenuti solo dopo essere stata controllata, e riportiamo i suoi limiti: età, anno del dato, differenza tra associazione e causa.",
+          "Se trovi un errore o un collegamento che non funziona, scrivici in privato su Instagram: correggiamo e indichiamo la data dell'aggiornamento."
+        ]
+      ],
+      [
+        "Cosa non siamo",
+        [
+          "Serena non è una persona e non è un servizio medico. Non diamo diagnosi né indicazioni sulla salute del tuo bambino: riportiamo cosa dicono le linee guida, poi decidi tu, con chi lo conosce."
+        ]
+      ],
+      [
+        "Privacy",
+        [
+          "Questo sito non usa cookie, non ha sistemi di tracciamento e non raccoglie dati personali."
+        ]
+      ]
     ]
-  }
+  },
+  "momenti": [
+    {
+      "quando": "Hai un bambino piccolo e la sera non finisce mai",
+      "cosa": "Una routine della nanna in quattro mosse",
+      "guida": "routine-della-nanna"
+    },
+    {
+      "quando": "Hai una visita dal pediatra in arrivo",
+      "cosa": "Le domande da preparare in dieci minuti",
+      "guida": "domande-per-il-pediatra"
+    },
+    {
+      "quando": "Cerchi sempre il libretto nel momento sbagliato",
+      "cosa": "La cartellina di famiglia, cinque documenti in un posto solo",
+      "guida": "cartellina-di-famiglia"
+    }
+  ]
 }

@@ -33,6 +33,10 @@ def page(path, title, desc, body, ld=None):
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{canon}">
 <meta property="og:type" content="website">
+<meta property="og:image" content="{SITE}/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="it_IT">
 <link rel="icon" href="{ICON}">
 <link rel="stylesheet" href="/assets/stile.css">
@@ -63,6 +67,20 @@ def page(path, title, desc, body, ld=None):
 
 FONTI = {f['id']: f for f in D['fonti']}
 
+def share(path, title):
+    url = SITE + path
+    wa = 'https://wa.me/?text=' + html.escape(__import__('urllib.parse').parse.quote(f"{title} {url}"))
+    return f'''<div class="share"><span class="small">Ti è utile? Mandala a chi ne ha bisogno.</span>
+<div class="row"><a class="btn sec" href="{wa}" rel="noopener">Manda su WhatsApp</a><button class="btn sec" type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('{url}').then(()=>{{this.textContent='Link copiato'}})">Copia il link</button></div></div>'''
+
+TRUST = '''<ul class="trust" aria-label="Come lavoriamo">
+<li><b>Fonti aperte</b><span>Ogni dato ha una fonte che puoi aprire</span></li>
+<li><b>Nessuna pubblicità</b><span>Niente sponsor, niente cookie</span></li>
+<li><b>Scelto da una persona</b><span>I testi nascono con l'IA, ogni pagina è letta e approvata</span></li>
+<li><b>Il pediatra resta il riferimento</b><span>Informazioni generali, mai consigli sul singolo bambino</span></li>
+</ul>'''
+
+
 def src_block(fid):
     f = FONTI[fid]
     dom = f['url'].split('/')[2].replace('www.', '')
@@ -77,7 +95,9 @@ pages = []
 
 # ---------- guide ----------
 guide_cards = []
-for g in D['guide']:
+for gi, g in enumerate(D['guide']):
+    ng = D['guide'][(gi+1) % len(D['guide'])]
+    nxt = f'<a class="card link next" href="/guide/{ng["slug"]}/"><span class="eyebrow">Prossima guida · {e(ng["tempo"])}</span><b>{e(ng["titolo"])}</b></a>' if len(D['guide'])>1 else ''
     steps = ''.join(f'<li><b>{e(s[0])}</b><span>{e(s[1])}</span></li>' for s in g['passi'])
     errori = ''.join(f'<li>{e(x)}</li>' for x in g.get('errori', []))
     check = ''.join(f'<li><span class="box" aria-hidden="true"></span>{e(x)}</li>' for x in g.get('checklist', []))
@@ -90,9 +110,11 @@ for g in D['guide']:
 <section class="stack"><h2>Perché aiuta</h2>{''.join(f'<p>{e(p)}</p>' for p in g['perche'])}</section>
 <section class="stack"><h2>Come si fa</h2><ol class="steps">{steps}</ol></section>
 {f'<section class="stack"><h2>Errori comuni</h2><ul class="plain">{errori}</ul></section>' if errori else ''}
-{f'<section class="note stack"><h2>Checklist</h2><ul class="check">{check}</ul></section>' if check else ''}
+{f'<section class="note stack"><h2>Checklist</h2><ul class="check">{check}</ul><button class="btn sec noprint" type="button" onclick="window.print()">Stampa la checklist</button></section>' if check else ''}
 {f'<section class="stack"><h2>Fonti</h2><ul class="sources">{fonti}</ul></section>' if fonti else ''}
 <p class="small">{e(g['avvertenza'])}</p>
+{share(f"/guide/{g['slug']}/", g['titolo'])}
+{nxt}
 </article>'''
     ld = {"@context": "https://schema.org", "@type": "Article", "headline": g['titolo'], "description": g['sommario'],
           "datePublished": g['data'], "dateModified": g['data'], "inLanguage": "it",
@@ -100,9 +122,13 @@ for g in D['guide']:
     pages.append(page(f"/guide/{g['slug']}/", g['titolo'], g['sommario'], body, ld))
     guide_cards.append(f'<a class="card link" href="/guide/{g["slug"]}/"><span class="eyebrow">{e(g["categoria"])} · {e(g["tempo"])}</span><b>{e(g["titolo"])}</b><span>{e(g["sommario"])}</span></a>')
 
+cats = []
+for g in D['guide']:
+    if g['categoria'] not in cats: cats.append(g['categoria'])
+guide_groups = ''.join(f'<section class="stack" id="{e(c.lower().replace(" ","-"))}"><h2>{e(c)}</h2><div class="cards">{"".join(gc for gc, g in zip(guide_cards, D["guide"]) if g["categoria"]==c)}</div></section>' for c in cats)
 pages.append(page('/guide/', 'Guide pratiche', 'Piccoli metodi per giornate più leggere, con le fonti quando servono.',
     f'''<section class="stack"><h1>Guide pratiche</h1><p class="lead">Piccoli metodi per giornate più leggere. Si fanno con quello che hai già in casa: una cartellina, un foglio, il telefono.</p></section>
-<div class="cards">{''.join(guide_cards)}</div>'''))
+{guide_groups}'''))
 
 # ---------- fonti per post ----------
 post_cards = []
@@ -129,7 +155,7 @@ pages.append(page('/fonti/', 'Le fonti di Serena', 'Le fonti dei dati citati nei
 # ---------- chi è serena ----------
 c = D['chi']
 pages.append(page('/chi-e-serena/', 'Chi è Serena', c['sommario'],
-    f'''<article class="stack article"><h1>Chi è Serena</h1><p class="lead">{e(c['sommario'])}</p>
+    f'''<article class="stack article"><h1>Chi è Serena</h1><p class="lead">{e(c['sommario'])}</p>{TRUST}
 {''.join(f'<section class="stack"><h2>{e(s[0])}</h2>' + ''.join(f'<p>{e(x)}</p>' for x in s[1]) + '</section>' for s in c['sezioni'])}
 </article>'''))
 
@@ -140,9 +166,12 @@ pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della fam
     f'''<section class="stack hero"><h1>Parole e idee per chi si prende cura della famiglia.</h1>{FILO}
 <p class="lead">Una cosa pratica da fare in dieci minuti, un dato che toglie un'ansia, una frase in cui ritrovarsi.</p>
 <div class="row"><a class="btn" href="https://www.instagram.com/serenainmente/">Seguici su Instagram</a><a class="btn sec" href="/guide/">Leggi le guide</a></div></section>
-<section class="stack"><h2>Guide che restano</h2><div class="cards">{''.join(guide_cards)}</div></section>
+<section class="stack"><h2>Inizia da qui</h2><p>Scegli il momento che stai vivendo.</p><div class="moments">{''.join(f'<a class="moment" href="/guide/{m["guida"]}/"><b>{e(m["quando"])}</b><span>{e(m["cosa"])}</span></a>' for m in D.get('momenti', []))}</div></section>
+{TRUST}
+<section class="stack"><h2>Guide che restano</h2><div class="cards">{''.join(guide_cards)}</div><a href="/guide/">Tutte le guide →</a></section>
 <section class="stack"><h2>Dai nostri post</h2><p>Le fonti dei dati citati su Instagram, post per post.</p><ol class="posts">{home_posts}</ol><a href="/fonti/">Tutte le fonti →</a></section>
-<section class="note stack"><h2>Chi è Serena</h2><p>{e(c['sommario'])}</p><a href="/chi-e-serena/">Come lavoriamo →</a></section>'''))
+<section class="note stack"><h2>Chi è Serena</h2><p>{e(c['sommario'])}</p><a href="/chi-e-serena/">Come lavoriamo →</a></section>
+<section class="stack"><h2>Ogni giorno, una cosa utile</h2><p>Su Instagram pubblichiamo ogni mattina alle 10: un metodo pratico, un dato con la sua fonte, una frase da mandare a chi ne ha bisogno.</p><a class="btn" href="https://www.instagram.com/serenainmente/">Seguici su Instagram</a></section>'''))
 
 # ---------- sitemap, robots ----------
 today = datetime.date.today().isoformat()
