@@ -1,0 +1,36 @@
+[
+ {
+  "file": "2026-10-27-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "pratico · 3 passi",
+  "titolo": "Dal pediatra\nsenza dimenticare\nle domande",
+  "sottotitolo": "Dieci minuti prima della visita,\nper uscire con le risposte che cercavi."
+ },
+ {
+  "file": "2026-10-27-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "Scrivi le domande",
+  "testo": "Tre o quattro, non di più.\nLa più importante va per prima: di solito è quella che resta fuori."
+ },
+ {
+  "file": "2026-10-27-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Annota cosa hai notato",
+  "testo": "Da quando, quante volte, cosa è cambiato.\nCon parole tue: bastano poche righe sul telefono."
+ },
+ {
+  "file": "2026-10-27-4.jpg",
+  "tipo": "passo",
+  "numero": "3",
+  "titolo": "Prima di uscire, riassumi",
+  "testo": "Una frase sola:\n«Quindi facciamo così,\ne ci risentiamo se…».\nCosì sai cosa fare e quando richiamare."
+ },
+ {
+  "file": "2026-10-27-5.jpg",
+  "tipo": "chiusura",
+  "titolo": "Prepararle non vuol dire dubitare del medico.\nVuol dire aiutarlo a capire cosa ti preoccupa.",
+  "nota": "Consigli organizzativi generali. Per la salute del tuo bambino il riferimento resta il pediatra."
+ }
+]

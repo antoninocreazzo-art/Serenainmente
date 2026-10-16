@@ -1,0 +1,6 @@
+{
+  "name": "serena-grafiche",
+  "private": true,
+  "description": "Grafiche Instagram di @serenainmente generate in locale",
+  "dependencies": { "playwright-core": "1.47.2" }
+}
