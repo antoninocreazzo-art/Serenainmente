@@ -23,7 +23,7 @@
 <div class="wrap">
 <header class="top">
 <a class="brand" href="/"><span class="mark"><svg viewBox="0 0 1080 1080" aria-hidden="true"><path d="M 660 395 C 620 320 440 315 440 425 C 440 530 650 520 650 645 C 650 770 455 780 410 690" fill="none" stroke="#FBF6F4" stroke-width="90" stroke-linecap="round"/></svg></span>serenainmente</a>
-<nav class="nav" aria-label="Menu"><a href="/guide/">Guide</a><a href="/fonti/">Le fonti</a><a href="/chi-e-serena/">Chi è Serena</a></nav>
+<nav class="nav" aria-label="Menu"><a href="/guide/">Guide</a><a href="/gestionale/">Gestionale</a><a href="/fonti/">Le fonti</a><a href="/chi-e-serena/">Chi è Serena</a></nav>
 </header>
 <main class="stack" style="gap:36px">
 <article class="stack article">
@@ -51,5 +51,7 @@
 <p>Questo sito non usa cookie e non raccoglie dati personali. © 2026 serenainmente.it</p>
 </footer>
 </div>
+<script>if(navigator.share){document.querySelectorAll('[data-share]').forEach(b=>b.hidden=false)}
+document.querySelectorAll('[data-sharefile]').forEach(b=>{if(navigator.canShare){b.hidden=false;b.onclick=async()=>{try{const r=await fetch(b.dataset.sharefile);const f=new File([await r.blob()],b.dataset.sharefile.split('/').pop(),{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});if(navigator.canShare({files:[f]}))await navigator.share({files:[f],title:document.title});else location.href=b.dataset.sharefile}catch(e){}}}})</script>
 </body>
 </html>

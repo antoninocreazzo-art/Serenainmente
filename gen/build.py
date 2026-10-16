@@ -20,6 +20,8 @@ def data_it(s):
     d = datetime.date.fromisoformat(s)
     return f"{d.day} {MESI[d.month-1]} {d.year}"
 
+JS = "<script>if(navigator.share){document.querySelectorAll('[data-share]').forEach(b=>b.hidden=false)}\ndocument.querySelectorAll('[data-sharefile]').forEach(b=>{if(navigator.canShare){b.hidden=false;b.onclick=async()=>{try{const r=await fetch(b.dataset.sharefile);const f=new File([await r.blob()],b.dataset.sharefile.split('/').pop(),{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});if(navigator.canShare({files:[f]}))await navigator.share({files:[f],title:document.title});else location.href=b.dataset.sharefile}catch(e){}}}})</script>"
+
 def page(path, title, desc, body, ld=None):
     canon = SITE + path
     t = f"{title} · Serena" if title != 'Serena' else 'Serena · Parole e idee per chi si prende cura della famiglia'
@@ -49,7 +51,7 @@ def page(path, title, desc, body, ld=None):
 <div class="wrap">
 <header class="top">
 <a class="brand" href="/"><span class="mark">{MARK}</span>serenainmente</a>
-<nav class="nav" aria-label="Menu"><a href="/guide/">Guide</a><a href="/fonti/">Le fonti</a><a href="/chi-e-serena/">Chi è Serena</a></nav>
+<nav class="nav" aria-label="Menu"><a href="/guide/">Guide</a><a href="/gestionale/">Gestionale</a><a href="/fonti/">Le fonti</a><a href="/chi-e-serena/">Chi è Serena</a></nav>
 </header>
 <main class="stack" style="gap:36px">
 {body}
@@ -60,6 +62,7 @@ def page(path, title, desc, body, ld=None):
 <p>Questo sito non usa cookie e non raccoglie dati personali. © {datetime.date.today().year} serenainmente.it</p>
 </footer>
 </div>
+{JS}
 </body>
 </html>
 '''
@@ -74,7 +77,7 @@ def share(path, title):
     url = SITE + path
     wa = 'https://wa.me/?text=' + html.escape(__import__('urllib.parse').parse.quote(f"{title} {url}"))
     return f'''<div class="share"><span class="small">Ti è utile? Mandala a chi ne ha bisogno.</span>
-<div class="row"><a class="btn sec" href="{wa}" rel="noopener">Manda su WhatsApp</a><button class="btn sec" type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('{url}').then(()=>{{this.textContent='Link copiato'}})">Copia il link</button></div></div>'''
+<div class="row"><button class="btn" type="button" hidden data-share onclick="navigator.share({{title:{json.dumps(title, ensure_ascii=False)},url:'{url}'}}).catch(()=>{{}})">Condividi o salva in Note</button><a class="btn sec" href="{wa}" rel="noopener">Manda su WhatsApp</a><button class="btn sec" type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('{url}').then(()=>{{this.textContent='Link copiato'}})">Copia il link</button></div></div>'''
 
 TRUST = '''<ul class="trust" aria-label="Come lavoriamo">
 <li><b>Fonti aperte</b><span>Ogni dato ha una fonte che puoi aprire</span></li>
@@ -95,6 +98,7 @@ def src_block(fid):
 </li>'''
 
 pages = []
+import runpy; runpy.run_path(os.path.join(ROOT, 'gen', 'gestionale.py'))
 
 def checklist_xlsx(g):
     """Crea guide/<slug>/checklist.xlsx con la checklist della guida."""
@@ -141,7 +145,7 @@ for gi, g in enumerate(D['guide']):
 <section class="stack"><h2>Perché aiuta</h2>{''.join(f'<p>{e(p)}</p>' for p in g['perche'])}</section>
 <section class="stack"><h2>Come si fa</h2><ol class="steps">{steps}</ol></section>
 {f'<section class="stack"><h2>Errori comuni</h2><ul class="plain">{errori}</ul></section>' if errori else ''}
-{f'<section class="note stack"><h2>Checklist</h2><ul class="check">{check}</ul><div class="row noprint"><a class="btn sec" href="/guide/{g["slug"]}/checklist.xlsx" download>Scarica in Excel</a><button class="btn sec" type="button" onclick="window.print()">Stampa</button></div></section>' if check else ''}
+{f'<section class="note stack"><h2>Checklist</h2><ul class="check">{check}</ul><div class="row noprint"><a class="btn sec" href="/guide/{g["slug"]}/checklist.xlsx" download>Scarica in Excel</a><button class="btn sec" type="button" hidden data-sharefile="/guide/{g["slug"]}/checklist.xlsx">Condividi il file</button><button class="btn sec" type="button" onclick="window.print()">Stampa</button></div></section>' if check else ''}
 {f'<section class="stack"><h2>Fonti</h2><ul class="sources">{fonti}</ul></section>' if fonti else ''}
 <p class="small">{e(g['avvertenza'])}</p>
 {share(f"/guide/{g['slug']}/", g['titolo'])}
@@ -153,13 +157,38 @@ for gi, g in enumerate(D['guide']):
     pages.append(page(f"/guide/{g['slug']}/", g['titolo'], g['sommario'], body, ld))
     guide_cards.append(f'<a class="card link" href="/guide/{g["slug"]}/"><span class="eyebrow">{e(g["categoria"])} · {e(g["tempo"])}</span><b>{e(g["titolo"])}</b><span>{e(g["sommario"])}</span></a>')
 
+# ---------- gestionale ----------
+GEST = '/scarica/gestionale-di-famiglia.xlsx'
+gest_body = f'''<article class="stack article">
+<p class="eyebrow">Da scaricare · Excel</p>
+<h1>Il gestionale di famiglia</h1>
+<p class="lead">Un solo file per la cartellina, le scadenze, le visite, la settimana e i ricordi. Cinque minuti per metterlo in piedi, poi si aggiorna da solo.</p>
+<div class="row"><a class="btn" href="{GEST}" download>Scarica il file Excel</a><button class="btn sec" type="button" hidden data-sharefile="{GEST}">Condividi o salva in Note</button></div>
+<p class="small">Si apre con Excel, Fogli Google e Numbers, anche dal telefono. Resta sul tuo dispositivo: nessun dato viene inviato a nessuno.</p>
+<section class="stack"><h2>Cosa c'è dentro</h2><ol class="steps">
+<li><b>Inizia da qui</b><span>Quante scadenze hai nei prossimi 30 giorni, quali documenti stanno scadendo, qual è la prossima cosa da fare. Si calcola da solo.</span></li>
+<li><b>Famiglia</b><span>Una riga per persona, con pediatra, allergie note e terapie. L'età si calcola dalla data di nascita.</span></li>
+<li><b>Documenti</b><span>La cartellina di famiglia: dove sta ogni documento e quando scade. Lo stato si colora da solo.</span></li>
+<li><b>Scadenze</b><span>Vaccini, visite, rinnovi, iscrizioni, con chi se ne occupa. Spunta "Fatto" e sparisce dai promemoria.</span></li>
+<li><b>Visite</b><span>Le domande da fare, la più importante per prima; poi le risposte, cosa fare e quando richiamare.</span></li>
+<li><b>Settimana</b><span>La settimana di tutti, mattina, pomeriggio e sera, con chi se ne occupa.</span></li>
+<li><b>Contatti e Prime volte</b><span>I numeri utili da stampare, e i ricordi scritti il giorno stesso.</span></li>
+</ol></section>
+<section class="note stack"><h2>Come si usa</h2><ul class="plain"><li>Le celle da compilare hanno il testo blu; quelle nere si calcolano da sole.</li><li>Ogni scheda ha una riga di esempio: cancellala e scrivi i tuoi dati.</li><li>Se usi Fogli Google, caricalo su Drive e aprilo da lì: funziona tutto.</li></ul></section>
+<p class="small">Informazioni organizzative generali. Per vaccini, terapie e documenti sanitari il riferimento resta il pediatra, il medico o la ASL.</p>
+{share('/gestionale/', 'Il gestionale di famiglia')}
+</article>'''
+pages.append(page('/gestionale/', 'Il gestionale di famiglia', 'Un file Excel gratuito per la cartellina, le scadenze, le visite, la settimana e i ricordi della famiglia.', gest_body))
+gest_card = f'<a class="card link" href="/gestionale/"><span class="eyebrow">Da scaricare · Excel</span><b>Il gestionale di famiglia</b><span>Cartellina, scadenze, visite, settimana e ricordi in un solo file, che si aggiorna da solo.</span></a>'
+
 cats = []
 for g in D['guide']:
     if g['categoria'] not in cats: cats.append(g['categoria'])
 guide_groups = ''.join(f'<section class="stack" id="{e(c.lower().replace(" ","-"))}"><h2>{e(c)}</h2><div class="cards">{"".join(gc for gc, g in zip(guide_cards, D["guide"]) if g["categoria"]==c)}</div></section>' for c in cats)
 pages.append(page('/guide/', 'Guide pratiche', 'Piccoli metodi per giornate più leggere, con le fonti quando servono.',
     f'''<section class="stack"><h1>Guide pratiche</h1><p class="lead">Piccoli metodi per giornate più leggere. Si fanno con quello che hai già in casa: una cartellina, un foglio, il telefono.</p></section>
-{guide_groups}'''))
+{guide_groups}
+<section class="stack"><h2>Da scaricare</h2><div class="cards">{gest_card}</div></section>'''))
 
 # ---------- fonti per post ----------
 post_cards = []
@@ -199,7 +228,7 @@ pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della fam
 <div class="row"><a class="btn" href="https://www.instagram.com/serenainmente/">Seguici su Instagram</a><a class="btn sec" href="/guide/">Leggi le guide</a></div></section>
 <section class="stack"><h2>Inizia da qui</h2><p>Scegli il momento che stai vivendo.</p><div class="moments">{''.join(f'<a class="moment" href="/guide/{m["guida"]}/"><b>{e(m["quando"])}</b><span>{e(m["cosa"])}</span></a>' for m in D.get('momenti', []))}</div></section>
 {TRUST}
-<section class="stack"><h2>Guide che restano</h2><div class="cards">{''.join(guide_cards)}</div><a href="/guide/">Tutte le guide →</a></section>
+<section class="stack"><h2>Guide che restano</h2><div class="cards">{''.join(guide_cards)}{gest_card}</div><a href="/guide/">Tutte le guide →</a></section>
 <section class="stack"><h2>Dai nostri post</h2><p>Le fonti dei dati citati su Instagram, post per post.</p><ol class="posts">{home_posts}</ol><a href="/fonti/">Tutte le fonti →</a></section>
 <section class="note stack"><h2>Chi è Serena</h2><p>{e(c['sommario'])}</p><a href="/chi-e-serena/">Come lavoriamo →</a></section>
 <section class="stack"><h2>Ogni giorno, una cosa utile</h2><p>Su Instagram pubblichiamo ogni mattina alle 10: un metodo pratico, un dato con la sua fonte, una frase da mandare a chi ne ha bisogno.</p><a class="btn" href="https://www.instagram.com/serenainmente/">Seguici su Instagram</a></section>'''))
