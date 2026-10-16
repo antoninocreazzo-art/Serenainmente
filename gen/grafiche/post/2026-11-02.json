@@ -1,0 +1,35 @@
+[
+ {
+  "file": "2026-11-02-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "pratico · 3 passi",
+  "titolo": "La settimana\ndi tutti,\nsu un foglio",
+  "sottotitolo": "Dieci minuti il lunedì.\nMeno sorprese il giovedì sera."
+ },
+ {
+  "file": "2026-11-02-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "Gli orari fissi",
+  "testo": "Scuola, lavoro, sport.\nChi esce e chi rientra, giorno per giorno."
+ },
+ {
+  "file": "2026-11-02-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Le cose fuori dal solito",
+  "testo": "Una visita, una recita,\nun compleanno, una scadenza.\nUna riga ciascuna."
+ },
+ {
+  "file": "2026-11-02-4.jpg",
+  "tipo": "passo",
+  "numero": "3",
+  "titolo": "Chi fa cosa",
+  "testo": "Accanto a ogni cosa, un nome.\nSe qualcuno non può,\nlo dice adesso: c'è tempo\nper trovare un'altra strada."
+ },
+ {
+  "file": "2026-11-02-5.jpg",
+  "tipo": "chiusura",
+  "titolo": "Sul frigo, dove lo vedono tutti.\nCosì non deve ricordarlo\nuna persona sola."
+ }
+]

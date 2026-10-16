@@ -1,0 +1,37 @@
+[
+ {
+  "file": "2026-10-30-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "organizzarsi · 3 mosse",
+  "titolo": "Vaccini e scadenze,\nsenza doverle\nricordare",
+  "sottotitolo": "Un posto per le date.\nCosì la testa si libera."
+ },
+ {
+  "file": "2026-10-30-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "Il calendario esiste già",
+  "testo": "In Italia c'è un Calendario nazionale vaccinale: indica le vaccinazioni offerte gratuitamente per ogni età.\nI dettagli li conosce il pediatra o la ASL."
+ },
+ {
+  "file": "2026-10-30-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Segna la data appena esci",
+  "testo": "Sul calendario di casa, a penna,\ndove lo vedono tutti.\nE un promemoria sul telefono\nuna settimana prima."
+ },
+ {
+  "file": "2026-10-30-4.jpg",
+  "tipo": "passo",
+  "numero": "3",
+  "titolo": "Una foto al libretto",
+  "testo": "Dopo ogni appuntamento,\nuna foto alla pagina aggiornata.\nSe il libretto sparisce,\nle date restano."
+ },
+ {
+  "file": "2026-10-30-5.jpg",
+  "tipo": "chiusura",
+  "titolo": "Le date stanno sulla carta.\nLa testa resta libera.",
+  "fonte": "Fonte: Istituto Superiore di Sanità – EpiCentro, Piano nazionale di prevenzione vaccinale 2023-2025, 2023",
+  "nota": "Informazioni generali, non sostituiscono il parere del pediatra o del medico. L'offerta può variare da regione a regione."
+ }
+]

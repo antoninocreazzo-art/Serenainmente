@@ -86,6 +86,19 @@
         "SB-01",
         "OR-04"
       ]
+    },
+    {
+      "slug": "vaccini-e-scadenze",
+      "data": "2026-10-30",
+      "controllo": "2026-10-16",
+      "titolo": "Vaccini e scadenze, senza doverle ricordare",
+      "guida": "cartellina-di-famiglia",
+      "affermazioni": [
+        "In Italia esiste un Calendario nazionale vaccinale che indica le vaccinazioni offerte attivamente e gratuitamente per ogni fascia d'età. Cosa vale per il singolo bambino e nella sua regione lo indicano il pediatra o la ASL."
+      ],
+      "fonti": [
+        "OR-02"
+      ]
     }
   ],
   "guide": [

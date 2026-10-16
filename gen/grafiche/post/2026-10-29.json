@@ -1,0 +1,36 @@
+[
+ {
+  "file": "2026-10-29-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "pratico · 3 passi",
+  "titolo": "La testa piena:\nsvuotala in\ncinque minuti",
+  "sottotitolo": "Un foglio e una penna.\nNiente di più."
+ },
+ {
+  "file": "2026-10-29-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "Scrivi tutto",
+  "testo": "Tutto quello che ti gira in testa,\nsenza ordine.\nAnche le cose piccole: soprattutto quelle."
+ },
+ {
+  "file": "2026-10-29-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Cerchia solo l'oggi",
+  "testo": "Due o tre cose, non di più.\nSono le uniche che chiedono\nqualcosa a te, oggi."
+ },
+ {
+  "file": "2026-10-29-4.jpg",
+  "tipo": "passo",
+  "numero": "3",
+  "titolo": "Il resto aspetta",
+  "testo": "Ricopialo su un altro foglio:\nper domani, per la settimana,\no da lasciar andare."
+ },
+ {
+  "file": "2026-10-29-5.jpg",
+  "tipo": "chiusura",
+  "titolo": "La testa non è un'agenda.\nIl foglio sì.",
+  "testo": "Rifallo ogni volta che senti\nche non c'è più spazio."
+ }
+]
