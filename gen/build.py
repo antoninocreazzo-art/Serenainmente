@@ -20,7 +20,7 @@ def data_it(s):
     d = datetime.date.fromisoformat(s)
     return f"{d.day} {MESI[d.month-1]} {d.year}"
 
-JS = "<script>if(navigator.share){document.querySelectorAll('[data-share]').forEach(b=>b.hidden=false)}\ndocument.querySelectorAll('[data-sharefile]').forEach(b=>{if(navigator.canShare){b.hidden=false;b.onclick=async()=>{try{const r=await fetch(b.dataset.sharefile);const f=new File([await r.blob()],b.dataset.sharefile.split('/').pop(),{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});if(navigator.canShare({files:[f]}))await navigator.share({files:[f],title:document.title});else location.href=b.dataset.sharefile}catch(e){}}}})</script>"
+JS = "<script>\n(function(){\nvar S=document.querySelectorAll('[data-share]');\nif(navigator.share){S.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({title:b.dataset.title,text:b.dataset.title,url:b.dataset.url}).catch(function(){})})})}\nvar F=document.querySelectorAll('[data-sharefile]');\nif(navigator.share&&navigator.canShare){F.forEach(function(b){\n  var file=null,u=b.dataset.sharefile,name=u.split('/').pop();\n  fetch(u).then(function(r){return r.blob()}).then(function(bl){\n    var f=new File([bl],name,{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});\n    if(navigator.canShare({files:[f]})){file=f;b.hidden=false}\n  }).catch(function(){});\n  b.addEventListener('click',function(){if(file){navigator.share({files:[file],title:document.title}).catch(function(){})}else{location.href=u}});\n})}\n})();\n</script>"
 
 def page(path, title, desc, body, ld=None):
     canon = SITE + path
@@ -77,7 +77,7 @@ def share(path, title):
     url = SITE + path
     wa = 'https://wa.me/?text=' + html.escape(__import__('urllib.parse').parse.quote(f"{title} {url}"))
     return f'''<div class="share"><span class="small">Ti è utile? Mandala a chi ne ha bisogno.</span>
-<div class="row"><button class="btn" type="button" hidden data-share onclick="navigator.share({{title:{json.dumps(title, ensure_ascii=False)},url:'{url}'}}).catch(()=>{{}})">Condividi o salva in Note</button><a class="btn sec" href="{wa}" rel="noopener">Manda su WhatsApp</a><button class="btn sec" type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('{url}').then(()=>{{this.textContent='Link copiato'}})">Copia il link</button></div></div>'''
+<div class="row"><button class="btn" type="button" hidden data-share data-title="{e(title)}" data-url="{url}">Condividi o salva in Note</button><a class="btn sec" href="{wa}" rel="noopener">Manda su WhatsApp</a><button class="btn sec" type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('{url}').then(()=>{{this.textContent='Link copiato'}})">Copia il link</button></div></div>'''
 
 TRUST = '''<ul class="trust" aria-label="Come lavoriamo">
 <li><b>Fonti aperte</b><span>Ogni dato ha una fonte che puoi aprire</span></li>

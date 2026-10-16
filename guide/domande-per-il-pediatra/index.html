@@ -38,7 +38,7 @@
 
 <p class="small">Consigli organizzativi generali per prepararsi a una visita. Non sostituiscono le indicazioni del pediatra o del medico.</p>
 <div class="share"><span class="small">Ti è utile? Mandala a chi ne ha bisogno.</span>
-<div class="row"><button class="btn" type="button" hidden data-share onclick="navigator.share({title:"Prima della visita dal pediatra: le domande da preparare",url:'https://serenainmente.it/guide/domande-per-il-pediatra/'}).catch(()=>{})">Condividi o salva in Note</button><a class="btn sec" href="https://wa.me/?text=Prima%20della%20visita%20dal%20pediatra%3A%20le%20domande%20da%20preparare%20https%3A//serenainmente.it/guide/domande-per-il-pediatra/" rel="noopener">Manda su WhatsApp</a><button class="btn sec" type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('https://serenainmente.it/guide/domande-per-il-pediatra/').then(()=>{this.textContent='Link copiato'})">Copia il link</button></div></div>
+<div class="row"><button class="btn" type="button" hidden data-share data-title="Prima della visita dal pediatra: le domande da preparare" data-url="https://serenainmente.it/guide/domande-per-il-pediatra/">Condividi o salva in Note</button><a class="btn sec" href="https://wa.me/?text=Prima%20della%20visita%20dal%20pediatra%3A%20le%20domande%20da%20preparare%20https%3A//serenainmente.it/guide/domande-per-il-pediatra/" rel="noopener">Manda su WhatsApp</a><button class="btn sec" type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('https://serenainmente.it/guide/domande-per-il-pediatra/').then(()=>{this.textContent='Link copiato'})">Copia il link</button></div></div>
 <a class="card link next" href="/guide/cartellina-di-famiglia/"><span class="eyebrow">Prossima guida · 10 minuti</span><b>La cartellina di famiglia: cinque documenti in un posto solo</b></a>
 </article>
 </main>
@@ -48,7 +48,20 @@
 <p>Questo sito non usa cookie e non raccoglie dati personali. © 2026 serenainmente.it</p>
 </footer>
 </div>
-<script>if(navigator.share){document.querySelectorAll('[data-share]').forEach(b=>b.hidden=false)}
-document.querySelectorAll('[data-sharefile]').forEach(b=>{if(navigator.canShare){b.hidden=false;b.onclick=async()=>{try{const r=await fetch(b.dataset.sharefile);const f=new File([await r.blob()],b.dataset.sharefile.split('/').pop(),{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});if(navigator.canShare({files:[f]}))await navigator.share({files:[f],title:document.title});else location.href=b.dataset.sharefile}catch(e){}}}})</script>
+<script>
+(function(){
+var S=document.querySelectorAll('[data-share]');
+if(navigator.share){S.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({title:b.dataset.title,text:b.dataset.title,url:b.dataset.url}).catch(function(){})})})}
+var F=document.querySelectorAll('[data-sharefile]');
+if(navigator.share&&navigator.canShare){F.forEach(function(b){
+  var file=null,u=b.dataset.sharefile,name=u.split('/').pop();
+  fetch(u).then(function(r){return r.blob()}).then(function(bl){
+    var f=new File([bl],name,{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
+    if(navigator.canShare({files:[f]})){file=f;b.hidden=false}
+  }).catch(function(){});
+  b.addEventListener('click',function(){if(file){navigator.share({files:[file],title:document.title}).catch(function(){})}else{location.href=u}});
+})}
+})();
+</script>
 </body>
 </html>

@@ -48,7 +48,7 @@
 </li></ul></section>
 <p class="small">Informazioni generali, non sostituiscono il parere del pediatra o del medico.</p>
 <div class="share"><span class="small">Ti è utile? Mandala a chi ne ha bisogno.</span>
-<div class="row"><button class="btn" type="button" hidden data-share onclick="navigator.share({title:"La sera che non finisce mai: una routine della nanna in quattro mosse",url:'https://serenainmente.it/guide/routine-della-nanna/'}).catch(()=>{})">Condividi o salva in Note</button><a class="btn sec" href="https://wa.me/?text=La%20sera%20che%20non%20finisce%20mai%3A%20una%20routine%20della%20nanna%20in%20quattro%20mosse%20https%3A//serenainmente.it/guide/routine-della-nanna/" rel="noopener">Manda su WhatsApp</a><button class="btn sec" type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('https://serenainmente.it/guide/routine-della-nanna/').then(()=>{this.textContent='Link copiato'})">Copia il link</button></div></div>
+<div class="row"><button class="btn" type="button" hidden data-share data-title="La sera che non finisce mai: una routine della nanna in quattro mosse" data-url="https://serenainmente.it/guide/routine-della-nanna/">Condividi o salva in Note</button><a class="btn sec" href="https://wa.me/?text=La%20sera%20che%20non%20finisce%20mai%3A%20una%20routine%20della%20nanna%20in%20quattro%20mosse%20https%3A//serenainmente.it/guide/routine-della-nanna/" rel="noopener">Manda su WhatsApp</a><button class="btn sec" type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('https://serenainmente.it/guide/routine-della-nanna/').then(()=>{this.textContent='Link copiato'})">Copia il link</button></div></div>
 <a class="card link next" href="/guide/domande-per-il-pediatra/"><span class="eyebrow">Prossima guida · 10 minuti prima, 2 minuti dopo</span><b>Prima della visita dal pediatra: le domande da preparare</b></a>
 </article>
 </main>
@@ -58,7 +58,20 @@
 <p>Questo sito non usa cookie e non raccoglie dati personali. © 2026 serenainmente.it</p>
 </footer>
 </div>
-<script>if(navigator.share){document.querySelectorAll('[data-share]').forEach(b=>b.hidden=false)}
-document.querySelectorAll('[data-sharefile]').forEach(b=>{if(navigator.canShare){b.hidden=false;b.onclick=async()=>{try{const r=await fetch(b.dataset.sharefile);const f=new File([await r.blob()],b.dataset.sharefile.split('/').pop(),{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});if(navigator.canShare({files:[f]}))await navigator.share({files:[f],title:document.title});else location.href=b.dataset.sharefile}catch(e){}}}})</script>
+<script>
+(function(){
+var S=document.querySelectorAll('[data-share]');
+if(navigator.share){S.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({title:b.dataset.title,text:b.dataset.title,url:b.dataset.url}).catch(function(){})})})}
+var F=document.querySelectorAll('[data-sharefile]');
+if(navigator.share&&navigator.canShare){F.forEach(function(b){
+  var file=null,u=b.dataset.sharefile,name=u.split('/').pop();
+  fetch(u).then(function(r){return r.blob()}).then(function(bl){
+    var f=new File([bl],name,{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
+    if(navigator.canShare({files:[f]})){file=f;b.hidden=false}
+  }).catch(function(){});
+  b.addEventListener('click',function(){if(file){navigator.share({files:[file],title:document.title}).catch(function(){})}else{location.href=u}});
+})}
+})();
+</script>
 </body>
 </html>
