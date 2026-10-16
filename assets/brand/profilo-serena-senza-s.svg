@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080"><circle cx="540" cy="540" r="540" fill="#F5EDEA"/><circle cx="540" cy="540" r="330" fill="#EDE0E3"/>
+<clipPath id="c"><rect x="0" y="0" width="1080" height="600"/></clipPath>
+<circle cx="540" cy="600" r="209" fill="#C19BA5" clip-path="url(#c)"/>
+<line x1="270" y1="600" x2="810" y2="600" stroke="#93626F" stroke-width="22" stroke-linecap="round"/>
+<line x1="385" y1="668" x2="695" y2="668" stroke="#BC9AA3" stroke-width="22" stroke-linecap="round"/></svg>
