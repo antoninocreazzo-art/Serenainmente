@@ -24,7 +24,12 @@ JS = "<script>\n(function(){\nvar mobile=window.matchMedia('(pointer:coarse)').m
 
 def page(path, title, desc, body, ld=None):
     canon = SITE + path
-    t = f"{title} · Serena" if title != 'Serena' else 'Serena · Parole e idee per chi si prende cura della famiglia'
+    t = f"{title} · serenainmente" if title != 'Serena' else 'serenainmente · Serena, parole e idee per chi si prende cura della famiglia'
+    if path == '/' and not ld:
+        ld = {"@context": "https://schema.org", "@graph": [
+            {"@type": "WebSite", "name": "serenainmente", "alternateName": ["Serena", "Serena in mente"], "url": SITE + "/"},
+            {"@type": "Organization", "name": "Serena", "alternateName": "serenainmente", "url": SITE + "/",
+             "logo": SITE + "/assets/brand/avatar-320.png", "sameAs": ["https://www.instagram.com/serenainmente/"]}]}
     ldj = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>' if ld else ''
     out = f'''<!doctype html>
 <html lang="it">
