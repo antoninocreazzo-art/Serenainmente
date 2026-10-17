@@ -39,6 +39,22 @@
       "titolo": "Fascicolo Sanitario Elettronico: cos'è, come accedere, cosa contiene",
       "tipo": "Documento istituzionale",
       "url": "https://www.fascicolosanitario.gov.it/"
+    },
+    {
+      "id": "OR-06",
+      "ente": "Cittadinanzattiva",
+      "anno": 2020,
+      "titolo": "Liste d'attesa: guida per i cittadini (classi di priorità, tempi massimi, cosa fare)",
+      "tipo": "Guida per i cittadini",
+      "url": "https://www.cittadinanzattiva.it/files/primo_piano/scuola/Liste-Attesa-GUIDA-per-cittadini-Poster.pdf"
+    },
+    {
+      "id": "OR-07",
+      "ente": "Quotidiano Sanità",
+      "anno": 2026,
+      "titolo": "Liste d'attesa, il nuovo Piano nazionale 2026-2028: agende nel CUP, disdetta obbligatoria e percorsi di tutela",
+      "tipo": "Articolo di stampa specializzata",
+      "url": "https://www.quotidianosanita.it/governo-e-parlamento/liste-d-attesa-il-nuovo-piano-nazionale-2026-2028-all-ultimo-miglio-tutte-le-agende-nel-cup-disdetta-obbligatoria-e-percorsi-di-tutela-per-i-pazienti/"
     }
   ],
   "post": [
@@ -313,6 +329,65 @@
         "OR-02"
       ],
       "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Le modalità di attivazione cambiano da Regione a Regione: il riferimento è la tua ASL. Per la salute dei tuoi bambini il riferimento resta il pediatra."
+    },
+    {
+      "slug": "visita-specialistica-come-funziona",
+      "categoria": "Organizzarsi",
+      "data": "2026-10-17",
+      "titolo": "Allergologo, gastroenterologo, diabetologo: come funziona una visita specialistica per un bambino",
+      "sommario": "Chi la prescrive, dove si prenota, cosa si paga, cosa fare se l'attesa è troppo lunga. Con tre esempi: allergie, celiachia, diabete.",
+      "tempo": "10 minuti per capire il percorso",
+      "serve": "La ricetta del pediatra, la tessera sanitaria",
+      "perche": [
+        "Il pediatra dice «facciamo vedere il bambino a uno specialista» e da lì iniziano le domande: serve la ricetta? Dove prenoto? Quanto costa? Quanto aspetto? Nessuno lo spiega, e ogni volta si va a tentativi.",
+        "Il percorso è lo stesso per quasi tutte le visite. Conoscerlo una volta serve per tutte le altre, e toglie l'ansia di «star sbagliando qualcosa»."
+      ],
+      "passi": [
+        [
+          "Parte tutto dal pediatra",
+          "Con il Servizio Sanitario, la visita specialistica si fa con la ricetta (impegnativa) del pediatra o del medico di famiglia. La ricetta è elettronica: la trovi nel Fascicolo Sanitario e basta la tessera sanitaria per prenotare. Senza ricetta puoi andare solo privatamente, pagando per intero."
+        ],
+        [
+          "Guarda la lettera sulla ricetta",
+          "Il medico indica una priorità: U (entro 72 ore), B (entro 10 giorni), D (entro 30 giorni per le visite, 60 per gli esami), P (entro 120 giorni). Se non c'è, vale P. È il tempo massimo entro cui il Servizio Sanitario dovrebbe darti l'appuntamento, per una prima visita."
+        ],
+        [
+          "Prenota con il CUP",
+          "Telefono, sportello, sito o app della tua Regione, o in farmacia. Il CUP propone la prima data utile nel territorio della tua ASL: può non essere la struttura più vicina. Se rifiuti la prima data per sceglierne un'altra, esci dalla garanzia dei tempi."
+        ],
+        [
+          "Se l'attesa supera il tempo della ricetta",
+          "Non è normale e non devi arrangiarti da solo: chiedi all'ASL il «percorso di tutela». Le Regioni devono trovare un'alternativa senza costi oltre il ticket, in molti casi anche in intramoenia o in una struttura privata convenzionata. Il contatto è l'URP della tua ASL; segnati nome e data di chi ti risponde."
+        ],
+        [
+          "Cosa si paga",
+          "Per una visita specialistica si paga il ticket, con importi che cambiano da Regione a Regione. Esistono esenzioni per età e reddito e per patologia: le chiede il medico, le rilascia la ASL, e compaiono sulla ricetta e nel Fascicolo. Se poi non puoi andare, disdici almeno due giorni lavorativi prima: chi non si presenta senza disdire paga comunque."
+        ],
+        [
+          "Tre esempi di percorso",
+          "Allergie: il pediatra valuta e, se serve, prescrive la visita allergologica pediatrica e gli eventuali test. Celiachia: il pediatra prescrive gli esami del sangue e, in base al risultato, la visita gastroenterologica pediatrica. Diabete: la diagnosi e il seguito avvengono in un centro di diabetologia pediatrica, su indicazione del pediatra o dell'ospedale; per le malattie croniche riconosciute il medico attiva l'esenzione per patologia. In tutti e tre i casi il primo passo è lo stesso: il pediatra."
+        ]
+      ],
+      "errori": [
+        "Prenotare privatamente per paura dell'attesa, prima di aver chiesto all'ASL il percorso di tutela.",
+        "Rifiutare la prima data per averne una più comoda e scoprire che i tempi non sono più garantiti.",
+        "Non disdire: si paga lo stesso, e si toglie il posto a un altro bambino.",
+        "Andare alla visita senza i referti precedenti e senza le domande scritte."
+      ],
+      "checklist": [
+        "Ho la ricetta del pediatra, con la lettera di priorità",
+        "Ho prenotato al CUP e segnato la data sul calendario di casa",
+        "Se la data supera il tempo della ricetta, ho chiamato l'URP della ASL",
+        "So se abbiamo un'esenzione e se è sulla ricetta",
+        "Ho preparato le domande e i referti precedenti (vedi la guida sulla visita)",
+        "So come disdire, se serve"
+      ],
+      "fonti": [
+        "OR-06",
+        "OR-07",
+        "OR-05"
+      ],
+      "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026: le regole su ticket, esenzioni e percorsi di tutela cambiano da Regione a Regione e il nuovo Piano nazionale delle liste d'attesa è in approvazione. Il riferimento è la tua ASL. Per quando serve una visita e quale, il riferimento è il pediatra."
     }
   ],
   "chi": {
@@ -356,6 +431,11 @@
       "quando": "Non trovi un referto, o non sai dov'è il gruppo sanguigno",
       "cosa": "I documenti sanitari di famiglia: dove sono, anche online",
       "guida": "documenti-sanitari-dove-trovarli"
+    },
+    {
+      "quando": "Il pediatra ti ha detto «serve uno specialista»",
+      "cosa": "Ricetta, CUP, ticket, attese: come funziona una visita specialistica",
+      "guida": "visita-specialistica-come-funziona"
     },
     {
       "quando": "Hai una visita dal pediatra in arrivo",
