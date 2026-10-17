@@ -20,7 +20,7 @@ def data_it(s):
     d = datetime.date.fromisoformat(s)
     return f"{d.day} {MESI[d.month-1]} {d.year}"
 
-JS = "<script>\n(function(){\nvar mobile=window.matchMedia('(pointer:coarse)').matches||/Android|iPhone|iPad/i.test(navigator.userAgent);\nvar S=document.querySelectorAll('[data-share]');\nif(navigator.share&&mobile){S.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({title:b.dataset.title,text:b.dataset.title,url:b.dataset.url}).catch(function(e){if(e&&e.name!=='AbortError'){window.open('https://wa.me/?text='+encodeURIComponent(b.dataset.title+' '+b.dataset.url),'_blank')}})})})}\nvar F=document.querySelectorAll('[data-sharefile]');\nif(navigator.share&&navigator.canShare&&mobile){F.forEach(function(b){\n  var file=null,u=b.dataset.sharefile,name=u.split('/').pop();\n  fetch(u).then(function(r){return r.blob()}).then(function(bl){\n    var f=new File([bl],name,{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});\n    if(navigator.canShare({files:[f]})){file=f;b.hidden=false}\n  }).catch(function(){});\n  b.addEventListener('click',function(){if(file){navigator.share({files:[file],title:document.title}).catch(function(e){if(e&&e.name!=='AbortError'){location.href=u}})}else{location.href=u}});\n})}\n})();\n</script>"
+JS = "<script>\n(function(){\nvar mobile=window.matchMedia('(pointer:coarse)').matches||/Android|iPhone|iPad/i.test(navigator.userAgent);\nvar S=document.querySelectorAll('[data-share]');\nif(navigator.share&&mobile){S.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({title:b.dataset.title,text:b.dataset.title,url:b.dataset.url}).catch(function(e){if(e&&e.name!=='AbortError'){window.open('https://wa.me/?text='+encodeURIComponent(b.dataset.title+' '+b.dataset.url),'_blank')}})})})}\n})();\n</script>"
 
 def page(path, title, desc, body, ld=None):
     canon = SITE + path
@@ -145,7 +145,7 @@ for gi, g in enumerate(D['guide']):
 <section class="stack"><h2>Perché aiuta</h2>{''.join(f'<p>{e(p)}</p>' for p in g['perche'])}</section>
 <section class="stack"><h2>Come si fa</h2><ol class="steps">{steps}</ol></section>
 {f'<section class="stack"><h2>Errori comuni</h2><ul class="plain">{errori}</ul></section>' if errori else ''}
-{f'<section class="note stack"><h2>Checklist</h2><ul class="check">{check}</ul><div class="row noprint"><a class="btn sec" href="/guide/{g["slug"]}/checklist.xlsx" download>Scarica in Excel</a><button class="btn sec" type="button" hidden data-sharefile="/guide/{g["slug"]}/checklist.xlsx">Condividi il file</button><button class="btn sec" type="button" onclick="window.print()">Stampa</button></div></section>' if check else ''}
+{f'<section class="note stack"><h2>Checklist</h2><ul class="check">{check}</ul><div class="row noprint"><a class="btn sec" href="/guide/{g["slug"]}/checklist.xlsx" download>Scarica in Excel</a><button class="btn sec" type="button" onclick="window.print()">Stampa</button></div></section>' if check else ''}
 {f'<section class="stack"><h2>Fonti</h2><ul class="sources">{fonti}</ul></section>' if fonti else ''}
 <p class="small">{e(g['avvertenza'])}</p>
 {share(f"/guide/{g['slug']}/", g['titolo'])}
@@ -163,7 +163,7 @@ gest_body = f'''<article class="stack article">
 <p class="eyebrow">Da scaricare · Excel</p>
 <h1>Il gestionale di famiglia</h1>
 <p class="lead">Un solo file per la cartellina, le scadenze, le visite, la settimana e i ricordi. Cinque minuti per metterlo in piedi, poi si aggiorna da solo.</p>
-<div class="row"><a class="btn" href="{GEST}" download>Scarica il file Excel</a>{f'<a class="btn" href="{e(D["gestionale_sheets_url"])}" rel="noopener">Apri in Fogli Google (telefono)</a>' if D.get('gestionale_sheets_url') else ''}<button class="btn sec" type="button" hidden data-share data-title="Il gestionale di famiglia · serenainmente.it" data-url="{SITE}/gestionale/">Condividi o salva in Note</button><button class="btn sec" type="button" hidden data-sharefile="{GEST}">Condividi il file Excel</button></div>
+<div class="row"><a class="btn" href="{GEST}" download>Scarica il file Excel</a>{f'<a class="btn" href="{e(D["gestionale_sheets_url"])}" rel="noopener">Apri in Fogli Google (telefono)</a>' if D.get('gestionale_sheets_url') else ''}<button class="btn sec" type="button" hidden data-share data-title="Il gestionale di famiglia · serenainmente.it" data-url="{SITE}/gestionale/">Condividi o salva in Note</button></div>
 <p class="small">{'Dal telefono conviene la versione Fogli Google: tocca «Apri in Fogli Google», poi «Crea una copia», e il file è tuo, nel tuo Drive. ' if D.get('gestionale_sheets_url') else ''}Il file Excel si apre con Excel, Fogli Google e Numbers. In entrambi i casi i dati restano tuoi: nessun dato viene inviato a noi.</p>
 <section class="stack"><h2>Cosa c'è dentro</h2><ol class="steps">
 <li><b>Inizia da qui</b><span>Quante scadenze hai nei prossimi 30 giorni, quali documenti stanno scadendo, qual è la prossima cosa da fare. Si calcola da solo.</span></li>
