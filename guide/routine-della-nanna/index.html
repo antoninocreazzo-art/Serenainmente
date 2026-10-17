@@ -35,7 +35,15 @@
 <section class="stack"><h2>Perché aiuta</h2><p>L&#x27;American Academy of Pediatrics ricorda che i bambini traggono beneficio da una routine regolare della nanna. La regolarità aiuta il corpo e la testa a capire che la giornata sta finendo.</p><p>Per i più piccoli l&#x27;OMS indica 11-14 ore di sonno tra 1 e 2 anni e 10-13 ore tra 3 e 4 anni, sonnellini compresi, con orari regolari. Sono indicazioni per tutta la popolazione: ogni bambino ha i suoi ritmi.</p></section>
 <section class="stack"><h2>Come si fa</h2><ol class="steps"><li><b>Stesso orario</b><span>Ogni sera alla stessa ora, anche se non si addormenta subito: conta la regolarità, non la perfezione.</span></li><li><b>Gli stessi tre gesti</b><span>Per esempio bagnetto, pigiama, una storia. Sempre nello stesso ordine, così diventano un segnale.</span></li><li><b>Schermi spenti un&#x27;ora prima</b><span>È una delle indicazioni dell&#x27;American Academy of Pediatrics. Vale per tutti in casa, se riuscite.</span></li><li><b>Se non funziona, non è colpa tua</b><span>Ogni bambino è diverso. Se il sonno ti preoccupa, parlane con il pediatra: conosce la sua storia.</span></li></ol></section>
 <section class="stack"><h2>Errori comuni</h2><ul class="plain"><li>Cambiare metodo ogni sera.</li><li>Trasformare le ore indicate in un esame da superare.</li><li>Pensare di dover fare tutto da soli: la routine può farla chiunque in famiglia.</li></ul></section>
-<section class="note stack"><h2>Checklist</h2><ul class="check"><li><span class="box" aria-hidden="true"></span>Orario della nanna deciso</li><li><span class="box" aria-hidden="true"></span>Tre gesti scelti, sempre nello stesso ordine</li><li><span class="box" aria-hidden="true"></span>Schermi spenti un&#x27;ora prima</li></ul><div class="row noprint"><a class="btn sec" href="/guide/routine-della-nanna/checklist.xlsx" download data-umami-event="checklist-excel" data-umami-event-guida="routine-della-nanna">Scarica in Excel</a><button class="btn sec" type="button" onclick="window.print()" data-umami-event="checklist-stampa">Stampa</button></div></section>
+<section class="note stack"><h2>Checklist</h2><ul class="check"><li><label><input type="checkbox" data-ck="routine-della-nanna-0"><span class="box" aria-hidden="true"></span><span>Orario della nanna deciso</span></label></li><li><label><input type="checkbox" data-ck="routine-della-nanna-1"><span class="box" aria-hidden="true"></span><span>Tre gesti scelti, sempre nello stesso ordine</span></label></li><li><label><input type="checkbox" data-ck="routine-della-nanna-2"><span class="box" aria-hidden="true"></span><span>Schermi spenti un&#x27;ora prima</span></label></li></ul><p class="small">Spunta qui: le spunte restano salvate su questo telefono o computer.</p><div class="row noprint"><button class="btn" type="button" hidden data-sharetext="La sera che non finisce mai: una routine della nanna in quattro mosse · checklist
+☐ Orario della nanna deciso
+☐ Tre gesti scelti, sempre nello stesso ordine
+☐ Schermi spenti un&#x27;ora prima
+serenainmente.it/guide/routine-della-nanna/" data-umami-event="checklist-note">Salva in Note o Promemoria</button><button class="btn sec" type="button" data-copytext="La sera che non finisce mai: una routine della nanna in quattro mosse · checklist
+☐ Orario della nanna deciso
+☐ Tre gesti scelti, sempre nello stesso ordine
+☐ Schermi spenti un&#x27;ora prima
+serenainmente.it/guide/routine-della-nanna/" data-umami-event="checklist-copia">Copia la lista</button><a class="btn sec" href="/guide/routine-della-nanna/checklist.xlsx" download data-umami-event="checklist-excel" data-umami-event-guida="routine-della-nanna">Scarica in Excel</a><button class="btn sec" type="button" onclick="window.print()" data-umami-event="checklist-stampa">Stampa</button></div></section>
 <section class="stack"><h2>Fonti</h2><ul class="sources"><li class="src">
 <span class="org">American Academy of Pediatrics – HealthyChildren.org, 2026</span>
 <span class="ttl">Healthy Sleep Habits: How Many Hours Does Your Child Need?</span>
@@ -64,6 +72,10 @@
 var mobile=window.matchMedia('(pointer:coarse)').matches||/Android|iPhone|iPad/i.test(navigator.userAgent);
 var S=document.querySelectorAll('[data-share]');
 if(navigator.share&&mobile){S.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({title:b.dataset.title,text:b.dataset.title,url:b.dataset.url}).catch(function(e){if(e&&e.name!=='AbortError'){window.open('https://wa.me/?text='+encodeURIComponent(b.dataset.title+' '+b.dataset.url),'_blank')}})})})}
+var T=document.querySelectorAll('[data-sharetext]');
+if(navigator.share&&mobile){T.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({text:b.dataset.sharetext}).catch(function(){})})})}
+document.querySelectorAll('[data-copytext]').forEach(function(b){b.addEventListener('click',function(){if(navigator.clipboard){navigator.clipboard.writeText(b.dataset.copytext).then(function(){b.textContent='Lista copiata'})}})});
+try{document.querySelectorAll('input[data-ck]').forEach(function(c){var k='ck:'+c.dataset.ck;c.checked=localStorage.getItem(k)==='1';c.addEventListener('change',function(){localStorage.setItem(k,c.checked?'1':'0')})})}catch(e){}
 })();
 </script>
 </body>

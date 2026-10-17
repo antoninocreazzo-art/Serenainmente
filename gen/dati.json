@@ -71,6 +71,22 @@
       "titolo": "Prenotare visite ed esami: canali, disdetta, mancata presentazione",
       "tipo": "Documento istituzionale",
       "url": "https://www.regione.toscana.it/-/prenotare-visite-ed-esami"
+    },
+    {
+      "id": "OR-10",
+      "ente": "Altroconsumo",
+      "anno": 2026,
+      "titolo": "Medico di base: scelta, cambio, compiti e doveri",
+      "tipo": "Guida per i cittadini",
+      "url": "https://www.altroconsumo.it/salute/diritti-in-salute/speciali/medico-di-base"
+    },
+    {
+      "id": "OR-11",
+      "ente": "Money.it",
+      "anno": 2026,
+      "titolo": "Si può avere il medico di base in un altro Comune? Residenza, domicilio e assistenza temporanea",
+      "tipo": "Articolo divulgativo",
+      "url": "https://www.money.it/avere-medico-base-altro-comune"
     }
   ],
   "post": [
@@ -463,6 +479,65 @@
         "OR-07"
       ],
       "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Importi, canali di pagamento e termini di disdetta cambiano da Regione a Regione: fa fede quanto indicato dalla tua ASL al momento della prenotazione. I prezzi privati sono indicativi."
+    },
+    {
+      "slug": "pediatra-e-medico-di-base",
+      "categoria": "Organizzarsi",
+      "data": "2026-10-17",
+      "titolo": "Pediatra e medico di base: come si scelgono, come si cambiano, cosa devono fare",
+      "sommario": "Dove si sceglie, cosa fare se cambi città per un po', quando il pediatra lascia il posto al medico di famiglia, e cosa hai diritto di chiedere. Senza timidezza: è il loro lavoro.",
+      "tempo": "10 minuti per capire, 5 per fare la scelta",
+      "serve": "Tessera sanitaria, documento, SPID o CIE per farlo online",
+      "perche": [
+        "Il pediatra e il medico di famiglia sono il primo punto di riferimento della salute di casa, eppure quasi nessuno sa come si scelgono, quando si possono cambiare o cosa sono tenuti a fare. Così si resta con un medico lontano o che non ci convince, per paura di «fare un torto».",
+        "Non è un favore: è un servizio, con regole precise. Conoscerle serve a scegliere con calma, cambiare senza imbarazzo e chiedere quello che spetta. I medici lo sanno benissimo e ci sono abituati."
+      ],
+      "passi": [
+        [
+          "Chi scegliere: pediatra o medico di famiglia",
+          "Fino ai 6 anni il bambino ha il pediatra di libera scelta; dai 6 ai 14 i genitori possono scegliere se restare con il pediatra o passare al medico di famiglia; a 14 anni il passaggio è obbligatorio (fino a 16 in casi particolari). Gli adulti hanno il medico di medicina generale. Ogni medico ha un numero massimo di assistiti (per il pediatra di norma 800, per il medico di famiglia 1.500): si può scegliere solo tra chi ha posti liberi."
+        ],
+        [
+          "Dove si sceglie e si cambia",
+          "Online dal portale sanitario della tua Regione (con SPID o CIE: cerca «scelta medico» con il nome della tua Regione; in molte Regioni è dentro il Fascicolo Sanitario), allo sportello «scelta e revoca» della ASL, in alcune Regioni anche in farmacia. L'elenco dei medici con posti liberi, con indirizzo e orari, è lì. Puoi scegliere un medico di un altro Comune purché nell'ambito della tua ASL. Si cambia quando si vuole e senza spiegazioni: scegliendo il nuovo, il vecchio viene revocato da solo."
+        ],
+        [
+          "Se cambi città per un periodo",
+          "Se ti sposti per lavoro, studio o salute per più di tre mesi, senza cambiare residenza, puoi chiedere alla ASL del posto dove vivi un medico o un pediatra temporaneo: vale di norma un anno ed è rinnovabile. Servono documento, tessera sanitaria, un'autocertificazione del domicilio e la prova del motivo (contratto, iscrizione, certificato). Il medico «di casa» resta sospeso e torna attivo al rientro. Se invece il trasferimento è definitivo, cambi la residenza e scegli un nuovo medico nella nuova ASL."
+        ],
+        [
+          "Cosa il medico è tenuto a fare",
+          "Tenere l'ambulatorio aperto cinque giorni a settimana, con un orario minimo che cresce con gli assistiti (da 5 a 18 ore settimanali) ed esposto in studio; visitare a domicilio chi non può muoversi, in giornata se la richiesta arriva entro le 10; prescrivere farmaci, esami e visite che ritiene necessari; rilasciare gratis i certificati di malattia, di infortunio e di riammissione a scuola. Quando è in ferie o malato deve indicare un sostituto dal primo giorno."
+        ],
+        [
+          "Cosa invece non puoi pretendere",
+          "Che prescriva un esame o un farmaco solo perché lo chiedi tu o l'ha consigliato uno specialista privato: la decisione è sua, e gli specialisti pubblici prescrivono direttamente. Che venga a casa se puoi andare in studio. Certificati per sport non scolastico, assicurazioni o usi privati sono a pagamento. E il medico può rifiutare un nuovo assistito solo con un motivo comunicato alla ASL."
+        ],
+        [
+          "Chiedi senza timore",
+          "Vuoi un medico più vicino, con orari compatibili con il lavoro, che risponda al telefono in una fascia precisa? Chiedilo prima di sceglierlo: gli orari e il modo di contatto sono in elenco e in studio. Vuoi cambiare perché non ti trovi? Si fa in cinque minuti e il medico non riceve spiegazioni. Vuoi capire una ricetta o un referto? Fissa un appuntamento e porta le domande scritte (vedi la guida sulla visita). Sono professionisti, e un rapporto chiaro conviene anche a loro."
+        ]
+      ],
+      "errori": [
+        "Tenere un medico scomodo per anni perché «cambiare è brutto».",
+        "Non chiedere il medico temporaneo quando si vive altrove per mesi: le ricette e i certificati diventano un problema.",
+        "Aspettare i 14 anni senza aver pensato a quale medico di famiglia scegliere.",
+        "Pretendere la visita a domicilio o una prescrizione «perché l'ha detto il privato»."
+      ],
+      "checklist": [
+        "So chi è il pediatra o il medico di ognuno in casa, con orari e telefono",
+        "Ho controllato nell'elenco regionale se c'è un medico più comodo con posti liberi",
+        "Se viviamo altrove per più di tre mesi, abbiamo chiesto il medico temporaneo",
+        "Per i bambini tra 6 e 14 anni: abbiamo deciso se restare con il pediatra",
+        "Ho segnato chi sostituisce il medico quando è assente",
+        "I numeri sono nei Contatti del gestionale"
+      ],
+      "fonti": [
+        "OR-10",
+        "OR-11",
+        "OR-05"
+      ],
+      "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Orari minimi, massimali e procedure derivano dagli accordi nazionali e possono variare per Regione e ASL: fa fede la tua ASL. Per la salute il riferimento resta il medico."
     }
   ],
   "chi": {
@@ -502,6 +577,11 @@
       "quando": "Hai un bambino piccolo e la sera non finisce mai",
       "cosa": "Una routine della nanna in quattro mosse",
       "guida": "routine-della-nanna"
+    },
+    {
+      "quando": "Devi scegliere o cambiare pediatra, o vivi altrove per un po'",
+      "cosa": "Pediatra e medico di base: come si scelgono e cosa devono fare",
+      "guida": "pediatra-e-medico-di-base"
     },
     {
       "quando": "Non trovi un referto, o non sai dov'è il gruppo sanguigno",

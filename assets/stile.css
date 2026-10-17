@@ -88,3 +88,9 @@ a.moment:hover{background:#85515F}
 button.btn{border:0;font:inherit;cursor:pointer;font-weight:500}
 a.card.link.next{background:var(--rosa);border-color:transparent}
 @media print{header,footer,.share,.btn,.noprint,.next,.facts{display:none!important}body{background:#fff}.note{background:#fff;padding:0}}
+/* checklist interattiva */
+.check label{display:flex;gap:12px;align-items:flex-start;cursor:pointer}
+.check input[type=checkbox]{position:absolute;opacity:0;width:0;height:0}
+.check input:checked + .box{background:var(--accent);box-shadow:inset 0 0 0 3px var(--surface)}
+.check input:checked ~ span{color:var(--muted);text-decoration:line-through}
+.check input:focus-visible + .box{outline:2px solid var(--accent);outline-offset:2px}

@@ -35,7 +35,19 @@
 <section class="stack"><h2>Perché aiuta</h2><p>Quando serve un documento, di solito serve subito: dal pediatra, al pronto soccorso, all&#x27;iscrizione al nido. Se ogni documento sta in un posto diverso, la ricerca diventa ansia.</p><p>Un posto solo, che tutti in casa conoscono, toglie questo peso. E fa sì che non debba ricordare tutto una persona sola.</p></section>
 <section class="stack"><h2>Come si fa</h2><ol class="steps"><li><b>Tessere sanitarie</b><span>Una copia, o l&#x27;originale se non lo usate spesso, per ogni componente della famiglia.</span></li><li><b>Vaccinazioni</b><span>Il libretto o il certificato vaccinale dei bambini. In Italia il Calendario nazionale vaccinale indica le vaccinazioni offerte per età: per i dettagli della tua regione, il riferimento è il pediatra o la ASL.</span></li><li><b>Referti recenti</b><span>Gli ultimi referti e le eventuali lettere di dimissione, dal più recente al più vecchio.</span></li><li><b>Un foglio di contatti</b><span>Pediatra, medico di famiglia, guardia medica; allergie note e terapie in corso, scritte a mano in modo chiaro.</span></li><li><b>Dillo a tutti</b><span>Scegli un posto fisso e dillo a chi vive con te e a chi ti aiuta con i bambini. La cartellina funziona solo se la trovano anche gli altri.</span></li></ol></section>
 <section class="stack"><h2>Errori comuni</h2><ul class="plain"><li>Volerla perfetta subito: meglio incompleta oggi che perfetta mai.</li><li>Metterci tutto: se diventa un archivio, smette di essere veloce.</li><li>Tenerla in un posto che conosci solo tu.</li></ul></section>
-<section class="note stack"><h2>Checklist</h2><ul class="check"><li><span class="box" aria-hidden="true"></span>Tessere sanitarie di tutti</li><li><span class="box" aria-hidden="true"></span>Libretto o certificato vaccinale</li><li><span class="box" aria-hidden="true"></span>Ultimi referti</li><li><span class="box" aria-hidden="true"></span>Foglio con contatti, allergie e terapie</li><li><span class="box" aria-hidden="true"></span>Tutti in casa sanno dov&#x27;è</li></ul><div class="row noprint"><a class="btn sec" href="/guide/cartellina-di-famiglia/checklist.xlsx" download data-umami-event="checklist-excel" data-umami-event-guida="cartellina-di-famiglia">Scarica in Excel</a><button class="btn sec" type="button" onclick="window.print()" data-umami-event="checklist-stampa">Stampa</button></div></section>
+<section class="note stack"><h2>Checklist</h2><ul class="check"><li><label><input type="checkbox" data-ck="cartellina-di-famiglia-0"><span class="box" aria-hidden="true"></span><span>Tessere sanitarie di tutti</span></label></li><li><label><input type="checkbox" data-ck="cartellina-di-famiglia-1"><span class="box" aria-hidden="true"></span><span>Libretto o certificato vaccinale</span></label></li><li><label><input type="checkbox" data-ck="cartellina-di-famiglia-2"><span class="box" aria-hidden="true"></span><span>Ultimi referti</span></label></li><li><label><input type="checkbox" data-ck="cartellina-di-famiglia-3"><span class="box" aria-hidden="true"></span><span>Foglio con contatti, allergie e terapie</span></label></li><li><label><input type="checkbox" data-ck="cartellina-di-famiglia-4"><span class="box" aria-hidden="true"></span><span>Tutti in casa sanno dov&#x27;è</span></label></li></ul><p class="small">Spunta qui: le spunte restano salvate su questo telefono o computer.</p><div class="row noprint"><button class="btn" type="button" hidden data-sharetext="La cartellina di famiglia: cinque documenti in un posto solo · checklist
+☐ Tessere sanitarie di tutti
+☐ Libretto o certificato vaccinale
+☐ Ultimi referti
+☐ Foglio con contatti, allergie e terapie
+☐ Tutti in casa sanno dov&#x27;è
+serenainmente.it/guide/cartellina-di-famiglia/" data-umami-event="checklist-note">Salva in Note o Promemoria</button><button class="btn sec" type="button" data-copytext="La cartellina di famiglia: cinque documenti in un posto solo · checklist
+☐ Tessere sanitarie di tutti
+☐ Libretto o certificato vaccinale
+☐ Ultimi referti
+☐ Foglio con contatti, allergie e terapie
+☐ Tutti in casa sanno dov&#x27;è
+serenainmente.it/guide/cartellina-di-famiglia/" data-umami-event="checklist-copia">Copia la lista</button><a class="btn sec" href="/guide/cartellina-di-famiglia/checklist.xlsx" download data-umami-event="checklist-excel" data-umami-event-guida="cartellina-di-famiglia">Scarica in Excel</a><button class="btn sec" type="button" onclick="window.print()" data-umami-event="checklist-stampa">Stampa</button></div></section>
 <section class="stack"><h2>Fonti</h2><ul class="sources"><li class="src">
 <span class="org">Istituto Superiore di Sanità – EpiCentro, 2023</span>
 <span class="ttl">Piano nazionale di prevenzione vaccinale (PNPV) 2023-2025</span>
@@ -59,6 +71,10 @@
 var mobile=window.matchMedia('(pointer:coarse)').matches||/Android|iPhone|iPad/i.test(navigator.userAgent);
 var S=document.querySelectorAll('[data-share]');
 if(navigator.share&&mobile){S.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({title:b.dataset.title,text:b.dataset.title,url:b.dataset.url}).catch(function(e){if(e&&e.name!=='AbortError'){window.open('https://wa.me/?text='+encodeURIComponent(b.dataset.title+' '+b.dataset.url),'_blank')}})})})}
+var T=document.querySelectorAll('[data-sharetext]');
+if(navigator.share&&mobile){T.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({text:b.dataset.sharetext}).catch(function(){})})})}
+document.querySelectorAll('[data-copytext]').forEach(function(b){b.addEventListener('click',function(){if(navigator.clipboard){navigator.clipboard.writeText(b.dataset.copytext).then(function(){b.textContent='Lista copiata'})}})});
+try{document.querySelectorAll('input[data-ck]').forEach(function(c){var k='ck:'+c.dataset.ck;c.checked=localStorage.getItem(k)==='1';c.addEventListener('change',function(){localStorage.setItem(k,c.checked?'1':'0')})})}catch(e){}
 })();
 </script>
 </body>

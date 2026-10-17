@@ -20,7 +20,7 @@ def data_it(s):
     d = datetime.date.fromisoformat(s)
     return f"{d.day} {MESI[d.month-1]} {d.year}"
 
-JS = "<script>\n(function(){\nvar mobile=window.matchMedia('(pointer:coarse)').matches||/Android|iPhone|iPad/i.test(navigator.userAgent);\nvar S=document.querySelectorAll('[data-share]');\nif(navigator.share&&mobile){S.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({title:b.dataset.title,text:b.dataset.title,url:b.dataset.url}).catch(function(e){if(e&&e.name!=='AbortError'){window.open('https://wa.me/?text='+encodeURIComponent(b.dataset.title+' '+b.dataset.url),'_blank')}})})})}\n})();\n</script>"
+JS = "<script>\n(function(){\nvar mobile=window.matchMedia('(pointer:coarse)').matches||/Android|iPhone|iPad/i.test(navigator.userAgent);\nvar S=document.querySelectorAll('[data-share]');\nif(navigator.share&&mobile){S.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({title:b.dataset.title,text:b.dataset.title,url:b.dataset.url}).catch(function(e){if(e&&e.name!=='AbortError'){window.open('https://wa.me/?text='+encodeURIComponent(b.dataset.title+' '+b.dataset.url),'_blank')}})})})}\nvar T=document.querySelectorAll('[data-sharetext]');\nif(navigator.share&&mobile){T.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({text:b.dataset.sharetext}).catch(function(){})})})}\ndocument.querySelectorAll('[data-copytext]').forEach(function(b){b.addEventListener('click',function(){if(navigator.clipboard){navigator.clipboard.writeText(b.dataset.copytext).then(function(){b.textContent='Lista copiata'})}})});\ntry{document.querySelectorAll('input[data-ck]').forEach(function(c){var k='ck:'+c.dataset.ck;c.checked=localStorage.getItem(k)==='1';c.addEventListener('change',function(){localStorage.setItem(k,c.checked?'1':'0')})})}catch(e){}\n})();\n</script>"
 
 def page(path, title, desc, body, ld=None):
     canon = SITE + path
@@ -136,7 +136,8 @@ for gi, g in enumerate(D['guide']):
     if g.get('checklist'): checklist_xlsx(g)
     steps = ''.join(f'<li><b>{e(s[0])}</b><span>{e(s[1])}</span></li>' for s in g['passi'])
     errori = ''.join(f'<li>{e(x)}</li>' for x in g.get('errori', []))
-    check = ''.join(f'<li><span class="box" aria-hidden="true"></span>{e(x)}</li>' for x in g.get('checklist', []))
+    check = ''.join(f'<li><label><input type="checkbox" data-ck="{g["slug"]}-{i}"><span class="box" aria-hidden="true"></span><span>{e(x)}</span></label></li>' for i, x in enumerate(g.get('checklist', [])))
+    cktext = e(g['titolo'] + ' · checklist\n' + '\n'.join('☐ ' + x for x in g.get('checklist', [])) + '\nserenainmente.it/guide/' + g['slug'] + '/')
     fonti = ''.join(src_block(fid) for fid in g.get('fonti', []))
     body = f'''<article class="stack article">
 <p class="eyebrow">Guida pratica · {e(g['categoria'])}</p>
@@ -146,7 +147,7 @@ for gi, g in enumerate(D['guide']):
 <section class="stack"><h2>Perché aiuta</h2>{''.join(f'<p>{e(p)}</p>' for p in g['perche'])}</section>
 <section class="stack"><h2>Come si fa</h2><ol class="steps">{steps}</ol></section>
 {f'<section class="stack"><h2>Errori comuni</h2><ul class="plain">{errori}</ul></section>' if errori else ''}
-{f'<section class="note stack"><h2>Checklist</h2><ul class="check">{check}</ul><div class="row noprint"><a class="btn sec" href="/guide/{g["slug"]}/checklist.xlsx" download data-umami-event="checklist-excel" data-umami-event-guida="{g["slug"]}">Scarica in Excel</a><button class="btn sec" type="button" onclick="window.print()" data-umami-event="checklist-stampa">Stampa</button></div></section>' if check else ''}
+{f'<section class="note stack"><h2>Checklist</h2><ul class="check">{check}</ul><p class="small">Spunta qui: le spunte restano salvate su questo telefono o computer.</p><div class="row noprint"><button class="btn" type="button" hidden data-sharetext="{cktext}" data-umami-event="checklist-note">Salva in Note o Promemoria</button><button class="btn sec" type="button" data-copytext="{cktext}" data-umami-event="checklist-copia">Copia la lista</button><a class="btn sec" href="/guide/{g["slug"]}/checklist.xlsx" download data-umami-event="checklist-excel" data-umami-event-guida="{g["slug"]}">Scarica in Excel</a><button class="btn sec" type="button" onclick="window.print()" data-umami-event="checklist-stampa">Stampa</button></div></section>' if check else ''}
 {f'<section class="stack"><h2>Fonti</h2><ul class="sources">{fonti}</ul></section>' if fonti else ''}
 <p class="small">{e(g['avvertenza'])}</p>
 {share(f"/guide/{g['slug']}/", g['titolo'])}

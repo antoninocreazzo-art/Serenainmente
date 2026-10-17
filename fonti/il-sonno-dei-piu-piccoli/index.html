@@ -57,6 +57,10 @@
 var mobile=window.matchMedia('(pointer:coarse)').matches||/Android|iPhone|iPad/i.test(navigator.userAgent);
 var S=document.querySelectorAll('[data-share]');
 if(navigator.share&&mobile){S.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({title:b.dataset.title,text:b.dataset.title,url:b.dataset.url}).catch(function(e){if(e&&e.name!=='AbortError'){window.open('https://wa.me/?text='+encodeURIComponent(b.dataset.title+' '+b.dataset.url),'_blank')}})})})}
+var T=document.querySelectorAll('[data-sharetext]');
+if(navigator.share&&mobile){T.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({text:b.dataset.sharetext}).catch(function(){})})})}
+document.querySelectorAll('[data-copytext]').forEach(function(b){b.addEventListener('click',function(){if(navigator.clipboard){navigator.clipboard.writeText(b.dataset.copytext).then(function(){b.textContent='Lista copiata'})}})});
+try{document.querySelectorAll('input[data-ck]').forEach(function(c){var k='ck:'+c.dataset.ck;c.checked=localStorage.getItem(k)==='1';c.addEventListener('change',function(){localStorage.setItem(k,c.checked?'1':'0')})})}catch(e){}
 })();
 </script>
 </body>
