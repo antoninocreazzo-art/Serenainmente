@@ -491,7 +491,8 @@
       [
         "Privacy",
         [
-          "Questo sito non usa cookie, non ha sistemi di tracciamento e non raccoglie dati personali."
+          "Questo sito non usa cookie, non ha sistemi di profilazione e non raccoglie dati personali. Per capire quali pagine sono utili contiamo le visite in forma anonima con Umami, uno strumento che non usa cookie, non identifica le persone e conserva i dati su server in Europa: vediamo quante persone leggono una pagina, da quale canale arrivano e quanti scaricano il gestionale, mai chi sono. Per questo non serve un banner e non chiediamo consensi.",
+          "Il gestionale di famiglia e le checklist sono file che restano sul tuo dispositivo o nel tuo Drive: nessun dato che inserisci arriva a noi."
         ]
       ]
     ]

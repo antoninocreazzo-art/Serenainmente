@@ -45,6 +45,7 @@ def page(path, title, desc, body, ld=None):
 <meta property="og:locale" content="it_IT">
 <link rel="icon" href="{ICON}">
 <link rel="stylesheet" href="/assets/stile.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="301edcb4-f5b2-444e-a1e5-8b8614d0100a" data-domains="serenainmente.it"></script>
 {ldj}
 </head>
 <body>
@@ -59,7 +60,7 @@ def page(path, title, desc, body, ld=None):
 <footer>
 <p>I testi di Serena nascono con l'aiuto dell'intelligenza artificiale e sono scelti da una persona. <a href="/chi-e-serena/">Come lavoriamo</a></p>
 <p>Informazioni generali, non sostituiscono il parere del pediatra o del medico.</p>
-<p>Questo sito non usa cookie e non raccoglie dati personali. © {datetime.date.today().year} serenainmente.it</p>
+<p>Questo sito non usa cookie e non raccoglie dati personali; le visite sono contate in forma anonima. © {datetime.date.today().year} serenainmente.it</p>
 </footer>
 </div>
 {JS}
@@ -77,11 +78,11 @@ def share(path, title):
     url = SITE + path
     wa = 'https://wa.me/?text=' + html.escape(__import__('urllib.parse').parse.quote(f"{title} {url}"))
     return f'''<div class="share"><span class="small">Ti è utile? Mandala a chi ne ha bisogno.</span>
-<div class="row"><button class="btn" type="button" hidden data-share data-title="{e(title)}" data-url="{url}">Condividi o salva in Note</button><a class="btn sec" href="{wa}" rel="noopener">Manda su WhatsApp</a><button class="btn sec" type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('{url}').then(()=>{{this.textContent='Link copiato'}})">Copia il link</button></div></div>'''
+<div class="row"><button class="btn" type="button" hidden data-share data-umami-event="condividi" data-title="{e(title)}" data-url="{url}">Condividi o salva in Note</button><a class="btn sec" href="{wa}" rel="noopener" data-umami-event="whatsapp">Manda su WhatsApp</a><button class="btn sec" type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('{url}').then(()=>{{this.textContent='Link copiato'}})" data-umami-event="copia-link">Copia il link</button></div></div>'''
 
 TRUST = '''<ul class="trust" aria-label="Come lavoriamo">
 <li><b>Fonti aperte</b><span>Ogni dato ha una fonte che puoi aprire</span></li>
-<li><b>Nessuna pubblicità</b><span>Niente sponsor, niente cookie</span></li>
+<li><b>Nessuna pubblicità</b><span>Niente sponsor, niente cookie, niente profilazione</span></li>
 <li><b>Scelto da una persona</b><span>I testi nascono con l'IA, ogni pagina è letta e approvata</span></li>
 <li><b>Il pediatra resta il riferimento</b><span>Informazioni generali, mai consigli sul singolo bambino</span></li>
 </ul>'''
@@ -145,7 +146,7 @@ for gi, g in enumerate(D['guide']):
 <section class="stack"><h2>Perché aiuta</h2>{''.join(f'<p>{e(p)}</p>' for p in g['perche'])}</section>
 <section class="stack"><h2>Come si fa</h2><ol class="steps">{steps}</ol></section>
 {f'<section class="stack"><h2>Errori comuni</h2><ul class="plain">{errori}</ul></section>' if errori else ''}
-{f'<section class="note stack"><h2>Checklist</h2><ul class="check">{check}</ul><div class="row noprint"><a class="btn sec" href="/guide/{g["slug"]}/checklist.xlsx" download>Scarica in Excel</a><button class="btn sec" type="button" onclick="window.print()">Stampa</button></div></section>' if check else ''}
+{f'<section class="note stack"><h2>Checklist</h2><ul class="check">{check}</ul><div class="row noprint"><a class="btn sec" href="/guide/{g["slug"]}/checklist.xlsx" download data-umami-event="checklist-excel" data-umami-event-guida="{g["slug"]}">Scarica in Excel</a><button class="btn sec" type="button" onclick="window.print()" data-umami-event="checklist-stampa">Stampa</button></div></section>' if check else ''}
 {f'<section class="stack"><h2>Fonti</h2><ul class="sources">{fonti}</ul></section>' if fonti else ''}
 <p class="small">{e(g['avvertenza'])}</p>
 {share(f"/guide/{g['slug']}/", g['titolo'])}
@@ -163,7 +164,7 @@ gest_body = f'''<article class="stack article">
 <p class="eyebrow">Da scaricare · Excel</p>
 <h1>Il gestionale di famiglia</h1>
 <p class="lead">Un solo file per la cartellina, le scadenze, le visite, la settimana e i ricordi. Cinque minuti per metterlo in piedi, poi si aggiorna da solo.</p>
-<div class="row"><a class="btn" href="{GEST}" download>Scarica il file Excel</a>{f'<a class="btn" href="{e(D["gestionale_sheets_url"])}" rel="noopener">Apri in Fogli Google (telefono)</a>' if D.get('gestionale_sheets_url') else ''}<button class="btn sec" type="button" hidden data-share data-title="Il gestionale di famiglia · serenainmente.it" data-url="{SITE}/gestionale/">Condividi o salva in Note</button></div>
+<div class="row"><a class="btn" href="{GEST}" download data-umami-event="gestionale-excel">Scarica il file Excel</a>{f'<a class="btn" href="{e(D["gestionale_sheets_url"])}" rel="noopener" data-umami-event="gestionale-fogli">Apri in Fogli Google (telefono)</a>' if D.get('gestionale_sheets_url') else ''}<button class="btn sec" type="button" hidden data-share data-title="Il gestionale di famiglia · serenainmente.it" data-url="{SITE}/gestionale/">Condividi o salva in Note</button></div>
 <p class="small">{'Dal telefono conviene la versione Fogli Google: tocca «Apri in Fogli Google», poi «Crea una copia», e il file è tuo, nel tuo Drive. ' if D.get('gestionale_sheets_url') else ''}Il file Excel si apre con Excel, Fogli Google e Numbers. In entrambi i casi i dati restano tuoi: nessun dato viene inviato a noi.</p>
 <section class="stack"><h2>Cosa c'è dentro</h2><ol class="steps">
 <li><b>Inizia da qui</b><span>Quante scadenze hai nei prossimi 30 giorni, quali documenti stanno scadendo, qual è la prossima cosa da fare. Si calcola da solo.</span></li>
@@ -203,7 +204,7 @@ for p in sorted(D['post'], key=lambda x: x['data'], reverse=True):
 <section class="stack"><h2>Cosa dice il post</h2><ul class="plain">{claims}</ul></section>
 <section class="stack"><h2>Fonti</h2><ul class="sources">{fonti}</ul></section>
 <p class="small">Collegamenti controllati il {data_it(p['controllo'])}. Informazioni generali, non sostituiscono il parere del pediatra o del medico.</p>
-<div class="row">{gl}<a class="btn sec" href="https://www.instagram.com/serenainmente/">Vai al profilo Instagram</a></div>
+<div class="row">{gl}<a class="btn sec" href="https://www.instagram.com/serenainmente/" data-umami-event="instagram">Vai al profilo Instagram</a></div>
 </article>'''
     pages.append(page(f"/fonti/{p['slug']}/", f"Fonti: {p['titolo']}", f"Le fonti del post «{p['titolo']}» di @serenainmente.", body))
     post_cards.append(f'<li class="post"><span class="date">{data_it(p["data"])}</span><h2><a href="/fonti/{p["slug"]}/">{e(p["titolo"])}</a></h2><span class="small">{len(p["fonti"])} {"fonte" if len(p["fonti"])==1 else "fonti"}</span></li>')
@@ -225,13 +226,13 @@ home_posts = ''.join(f'<li class="post"><span class="date">{data_it(p["data"])}<
 pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della famiglia: guide pratiche, dati con le loro fonti, frasi in cui ritrovarsi.',
     f'''<section class="stack hero"><h1>Parole e idee per chi si prende cura della famiglia.</h1>{FILO}
 <p class="lead">Una cosa pratica da fare in dieci minuti, un dato che toglie un'ansia, una frase in cui ritrovarsi.</p>
-<div class="row"><a class="btn" href="https://www.instagram.com/serenainmente/">Seguici su Instagram</a><a class="btn sec" href="/guide/">Leggi le guide</a></div></section>
+<div class="row"><a class="btn" href="https://www.instagram.com/serenainmente/" data-umami-event="instagram">Seguici su Instagram</a><a class="btn sec" href="/guide/">Leggi le guide</a></div></section>
 <section class="stack"><h2>Inizia da qui</h2><p>Scegli il momento che stai vivendo.</p><div class="moments">{''.join(f'<a class="moment" href="/guide/{m["guida"]}/"><b>{e(m["quando"])}</b><span>{e(m["cosa"])}</span></a>' for m in D.get('momenti', []))}</div></section>
 {TRUST}
 <section class="stack"><h2>Guide che restano</h2><div class="cards">{''.join(guide_cards)}{gest_card}</div><a href="/guide/">Tutte le guide →</a></section>
 <section class="stack"><h2>Dai nostri post</h2><p>Le fonti dei dati citati su Instagram, post per post.</p><ol class="posts">{home_posts}</ol><a href="/fonti/">Tutte le fonti →</a></section>
 <section class="note stack"><h2>Chi è Serena</h2><p>{e(c['sommario'])}</p><a href="/chi-e-serena/">Come lavoriamo →</a></section>
-<section class="stack"><h2>Ogni giorno, una cosa utile</h2><p>Su Instagram pubblichiamo ogni mattina alle 10: un metodo pratico, un dato con la sua fonte, una frase da mandare a chi ne ha bisogno.</p><a class="btn" href="https://www.instagram.com/serenainmente/">Seguici su Instagram</a></section>'''))
+<section class="stack"><h2>Ogni giorno, una cosa utile</h2><p>Su Instagram pubblichiamo ogni mattina alle 10: un metodo pratico, un dato con la sua fonte, una frase da mandare a chi ne ha bisogno.</p><a class="btn" href="https://www.instagram.com/serenainmente/" data-umami-event="instagram">Seguici su Instagram</a></section>'''))
 
 # ---------- sitemap, robots ----------
 today = datetime.date.today().isoformat()

@@ -17,6 +17,7 @@
 <meta property="og:locale" content="it_IT">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1080 1080'%3E%3Ccircle cx='540' cy='540' r='540' fill='%2397606F'/%3E%3Cpath d='M 660 395 C 620 320 440 315 440 425 C 440 530 650 520 650 645 C 650 770 455 780 410 690' fill='none' stroke='%23FBF6F4' stroke-width='90' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="/assets/stile.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="301edcb4-f5b2-444e-a1e5-8b8614d0100a" data-domains="serenainmente.it"></script>
 
 </head>
 <body>
@@ -30,7 +31,7 @@
 <p class="eyebrow">Da scaricare · Excel</p>
 <h1>Il gestionale di famiglia</h1>
 <p class="lead">Un solo file per la cartellina, le scadenze, le visite, la settimana e i ricordi. Cinque minuti per metterlo in piedi, poi si aggiorna da solo.</p>
-<div class="row"><a class="btn" href="/scarica/gestionale-di-famiglia.xlsx" download>Scarica il file Excel</a><a class="btn" href="https://docs.google.com/spreadsheets/d/1ycUnYM7JzZToqAjSoFxcxFu4OZVd0p3kcyf_zxlcDzM/copy" rel="noopener">Apri in Fogli Google (telefono)</a><button class="btn sec" type="button" hidden data-share data-title="Il gestionale di famiglia · serenainmente.it" data-url="https://serenainmente.it/gestionale/">Condividi o salva in Note</button></div>
+<div class="row"><a class="btn" href="/scarica/gestionale-di-famiglia.xlsx" download data-umami-event="gestionale-excel">Scarica il file Excel</a><a class="btn" href="https://docs.google.com/spreadsheets/d/1ycUnYM7JzZToqAjSoFxcxFu4OZVd0p3kcyf_zxlcDzM/copy" rel="noopener" data-umami-event="gestionale-fogli">Apri in Fogli Google (telefono)</a><button class="btn sec" type="button" hidden data-share data-title="Il gestionale di famiglia · serenainmente.it" data-url="https://serenainmente.it/gestionale/">Condividi o salva in Note</button></div>
 <p class="small">Dal telefono conviene la versione Fogli Google: tocca «Apri in Fogli Google», poi «Crea una copia», e il file è tuo, nel tuo Drive. Il file Excel si apre con Excel, Fogli Google e Numbers. In entrambi i casi i dati restano tuoi: nessun dato viene inviato a noi.</p>
 <section class="stack"><h2>Cosa c'è dentro</h2><ol class="steps">
 <li><b>Inizia da qui</b><span>Quante scadenze hai nei prossimi 30 giorni, quali documenti stanno scadendo, qual è la prossima cosa da fare. Si calcola da solo.</span></li>
@@ -44,13 +45,13 @@
 <section class="note stack"><h2>Come si usa</h2><ul class="plain"><li>Le celle da compilare hanno il testo blu; quelle nere si calcolano da sole.</li><li>Ogni scheda ha una riga di esempio: cancellala e scrivi i tuoi dati.</li><li>Se usi Fogli Google, caricalo su Drive e aprilo da lì: funziona tutto.</li></ul></section>
 <p class="small">Informazioni organizzative generali. Per vaccini, terapie e documenti sanitari il riferimento resta il pediatra, il medico o la ASL.</p>
 <div class="share"><span class="small">Ti è utile? Mandala a chi ne ha bisogno.</span>
-<div class="row"><button class="btn" type="button" hidden data-share data-title="Il gestionale di famiglia" data-url="https://serenainmente.it/gestionale/">Condividi o salva in Note</button><a class="btn sec" href="https://wa.me/?text=Il%20gestionale%20di%20famiglia%20https%3A//serenainmente.it/gestionale/" rel="noopener">Manda su WhatsApp</a><button class="btn sec" type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('https://serenainmente.it/gestionale/').then(()=>{this.textContent='Link copiato'})">Copia il link</button></div></div>
+<div class="row"><button class="btn" type="button" hidden data-share data-umami-event="condividi" data-title="Il gestionale di famiglia" data-url="https://serenainmente.it/gestionale/">Condividi o salva in Note</button><a class="btn sec" href="https://wa.me/?text=Il%20gestionale%20di%20famiglia%20https%3A//serenainmente.it/gestionale/" rel="noopener" data-umami-event="whatsapp">Manda su WhatsApp</a><button class="btn sec" type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('https://serenainmente.it/gestionale/').then(()=>{this.textContent='Link copiato'})" data-umami-event="copia-link">Copia il link</button></div></div>
 </article>
 </main>
 <footer>
 <p>I testi di Serena nascono con l'aiuto dell'intelligenza artificiale e sono scelti da una persona. <a href="/chi-e-serena/">Come lavoriamo</a></p>
 <p>Informazioni generali, non sostituiscono il parere del pediatra o del medico.</p>
-<p>Questo sito non usa cookie e non raccoglie dati personali. © 2026 serenainmente.it</p>
+<p>Questo sito non usa cookie e non raccoglie dati personali; le visite sono contate in forma anonima. © 2026 serenainmente.it</p>
 </footer>
 </div>
 <script>
