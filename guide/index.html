@@ -40,7 +40,7 @@
 (function(){
 var mobile=window.matchMedia('(pointer:coarse)').matches||/Android|iPhone|iPad/i.test(navigator.userAgent);
 var S=document.querySelectorAll('[data-share]');
-if(navigator.share&&mobile){S.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({title:b.dataset.title,url:b.dataset.url}).catch(function(e){if(e&&e.name!=='AbortError'){window.open('https://wa.me/?text='+encodeURIComponent(b.dataset.title+' '+b.dataset.url),'_blank')}})})})}
+if(navigator.share&&mobile){S.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({title:b.dataset.title,text:b.dataset.title,url:b.dataset.url}).catch(function(e){if(e&&e.name!=='AbortError'){window.open('https://wa.me/?text='+encodeURIComponent(b.dataset.title+' '+b.dataset.url),'_blank')}})})})}
 var F=document.querySelectorAll('[data-sharefile]');
 if(navigator.share&&navigator.canShare&&mobile){F.forEach(function(b){
   var file=null,u=b.dataset.sharefile,name=u.split('/').pop();

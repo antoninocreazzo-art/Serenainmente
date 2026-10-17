@@ -30,7 +30,7 @@
 <p class="eyebrow">Da scaricare · Excel</p>
 <h1>Il gestionale di famiglia</h1>
 <p class="lead">Un solo file per la cartellina, le scadenze, le visite, la settimana e i ricordi. Cinque minuti per metterlo in piedi, poi si aggiorna da solo.</p>
-<div class="row"><a class="btn" href="/scarica/gestionale-di-famiglia.xlsx" download>Scarica il file Excel</a><button class="btn sec" type="button" hidden data-sharefile="/scarica/gestionale-di-famiglia.xlsx">Condividi o salva in Note</button></div>
+<div class="row"><a class="btn" href="/scarica/gestionale-di-famiglia.xlsx" download>Scarica il file Excel</a><button class="btn sec" type="button" hidden data-share data-title="Il gestionale di famiglia · serenainmente.it" data-url="https://serenainmente.it/gestionale/">Condividi o salva in Note</button><button class="btn sec" type="button" hidden data-sharefile="/scarica/gestionale-di-famiglia.xlsx">Condividi il file Excel</button></div>
 <p class="small">Il file Excel si apre con Excel, Fogli Google e Numbers. In entrambi i casi i dati restano tuoi: nessun dato viene inviato a noi.</p>
 <section class="stack"><h2>Cosa c'è dentro</h2><ol class="steps">
 <li><b>Inizia da qui</b><span>Quante scadenze hai nei prossimi 30 giorni, quali documenti stanno scadendo, qual è la prossima cosa da fare. Si calcola da solo.</span></li>
@@ -57,7 +57,7 @@
 (function(){
 var mobile=window.matchMedia('(pointer:coarse)').matches||/Android|iPhone|iPad/i.test(navigator.userAgent);
 var S=document.querySelectorAll('[data-share]');
-if(navigator.share&&mobile){S.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({title:b.dataset.title,url:b.dataset.url}).catch(function(e){if(e&&e.name!=='AbortError'){window.open('https://wa.me/?text='+encodeURIComponent(b.dataset.title+' '+b.dataset.url),'_blank')}})})})}
+if(navigator.share&&mobile){S.forEach(function(b){b.hidden=false;b.addEventListener('click',function(){navigator.share({title:b.dataset.title,text:b.dataset.title,url:b.dataset.url}).catch(function(e){if(e&&e.name!=='AbortError'){window.open('https://wa.me/?text='+encodeURIComponent(b.dataset.title+' '+b.dataset.url),'_blank')}})})})}
 var F=document.querySelectorAll('[data-sharefile]');
 if(navigator.share&&navigator.canShare&&mobile){F.forEach(function(b){
   var file=null,u=b.dataset.sharefile,name=u.split('/').pop();
