@@ -55,6 +55,22 @@
       "titolo": "Liste d'attesa, il nuovo Piano nazionale 2026-2028: agende nel CUP, disdetta obbligatoria e percorsi di tutela",
       "tipo": "Articolo di stampa specializzata",
       "url": "https://www.quotidianosanita.it/governo-e-parlamento/liste-d-attesa-il-nuovo-piano-nazionale-2026-2028-all-ultimo-miglio-tutte-le-agende-nel-cup-disdetta-obbligatoria-e-percorsi-di-tutela-per-i-pazienti/"
+    },
+    {
+      "id": "OR-08",
+      "ente": "ATS Brescia",
+      "anno": 2025,
+      "titolo": "Guida pratica alle prestazioni specialistiche: priorità, disdetta, mancata presentazione (D.L. 73/2024, L. 107/2024)",
+      "tipo": "Documento istituzionale",
+      "url": "https://www.ats-brescia.it/system/files/pagina_standard/files/694/2143/Guida%20pratica.pdf"
+    },
+    {
+      "id": "OR-09",
+      "ente": "Regione Toscana",
+      "anno": 2026,
+      "titolo": "Prenotare visite ed esami: canali, disdetta, mancata presentazione",
+      "tipo": "Documento istituzionale",
+      "url": "https://www.regione.toscana.it/-/prenotare-visite-ed-esami"
     }
   ],
   "post": [
@@ -388,6 +404,65 @@
         "OR-05"
       ],
       "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026: le regole su ticket, esenzioni e percorsi di tutela cambiano da Regione a Regione e il nuovo Piano nazionale delle liste d'attesa è in approvazione. Il riferimento è la tua ASL. Per quando serve una visita e quale, il riferimento è il pediatra."
+    },
+    {
+      "slug": "spostare-disdire-pagare-visita",
+      "categoria": "Organizzarsi",
+      "data": "2026-10-17",
+      "titolo": "Spostare una visita, disdire in tempo, pagare il ticket: le regole che nessuno ti spiega",
+      "sommario": "Cosa succede se non vai, entro quando avvisare, come e dove si paga, quanto dura la ricetta. E, se scegli il privato, dove prenotare e quanto aspettarsi di spendere.",
+      "tempo": "5 minuti",
+      "serve": "La ricetta, la tessera sanitaria, il numero del CUP della tua Regione",
+      "perche": [
+        "La visita è tra tre settimane, proprio il giorno della recita. Spostarla sembra una cosa da nulla, e invece ci sono regole precise: se non avvisi in tempo paghi comunque, anche se sei esente. E se rifiuti la data per una più comoda, perdi la priorità.",
+        "Conoscere le regole prima evita multe, attese raddoppiate e giri a vuoto. Sono le stesse in tutta Italia nella sostanza, con dettagli che cambiano da Regione a Regione."
+      ],
+      "passi": [
+        [
+          "Spostare: in pratica si disdice e si riprenota",
+          "Quasi nessun CUP «sposta» una visita: si cancella quella prenotata e se ne prende un'altra, con la stessa ricetta, dagli stessi canali (telefono, sito o app della Regione, sportello, farmacia). La nuova data è la prima disponibile in quel momento, non quella che avevi: se la ricetta ha una priorità e rifiuti la data proposta per motivi personali, i tempi massimi non sono più garantiti."
+        ],
+        [
+          "Disdire: almeno due giorni lavorativi prima",
+          "È la regola nazionale (in alcune Regioni 48 ore). Si disdice dagli stessi canali della prenotazione; molti CUP ti mandano un promemoria e ti chiedono conferma qualche giorno prima. Segna il numero di prenotazione: serve per cancellare in un minuto."
+        ],
+        [
+          "Se non vai senza disdire, paghi",
+          "Per legge (D.L. 73/2024, convertito nella legge 107/2024) chi non si presenta senza aver disdetto paga il ticket della prestazione non fatta, anche se è esente. Vale anche per i bambini. Fanno eccezione forza maggiore e impedimenti improvvisi, da documentare. In alcune Regioni, se poi non ritiri un referto, puoi pagare l'intero costo dell'esame."
+        ],
+        [
+          "Il ticket: quanto, come, quando",
+          "L'importo lo decide la Regione e dipende dalla prestazione; le esenzioni (età e reddito, patologia) devono risultare sulla ricetta. Si paga di norma prima della visita: allo sportello o ai totem della struttura, in farmacia, online sul portale regionale o con PagoPA (spesso anche dall'app IO). Conserva la ricevuta: serve per la detrazione fiscale e se l'esenzione non era stata registrata."
+        ],
+        [
+          "La ricetta ha una scadenza",
+          "Per le visite specialistiche la ricetta elettronica vale di norma un anno dalla data, ma alcune Regioni ed esami hanno tempi più brevi, e con le priorità B e D la prenotazione va fatta entro pochi giorni, altrimenti la classe scende. In caso di dubbio: prenota subito, anche se la data è lontana, poi semmai disdici."
+        ],
+        [
+          "Se scegli il privato: dove e quanto",
+          "Le opzioni sono tre: l'intramoenia (lo stesso medico dell'ospedale, in orario privato, prenotando allo sportello dedicato), i centri privati accreditati e gli studi privati. Per cercare e prenotare online i più usati sono MioDottore, Doctolib e CupSolidale/Cup24, che mostrano disponibilità e spesso il prezzo. Per una prima visita specialistica pediatrica privata, nelle città, l'ordine di grandezza è tra 80 e 150 euro: chiedi sempre il costo prima di prenotare, se c'è un supplemento per i test, e fatti rilasciare la fattura, detraibile. Ricorda: se vai privatamente per tua scelta, la Regione non rimborsa nulla; se invece i tempi della ricetta sono saltati, prima chiedi all'ASL il percorso di tutela."
+        ]
+      ],
+      "errori": [
+        "Non disdire «tanto è gratis»: non lo è più, anche per chi è esente.",
+        "Rifiutare la prima data per averne una più comoda e scoprire che la priorità è persa.",
+        "Lasciare scadere la ricetta aspettando il momento giusto per prenotare.",
+        "Pagare il privato senza aver chiesto il prezzo, o senza fattura."
+      ],
+      "checklist": [
+        "Ho il numero di prenotazione salvato (foto o nota)",
+        "So entro quando posso disdire senza pagare",
+        "Ho controllato che l'esenzione sia sulla ricetta",
+        "So come e dove pago il ticket, e conservo la ricevuta",
+        "La ricetta non è vicina alla scadenza",
+        "Se vado privatamente: prezzo chiesto, fattura richiesta"
+      ],
+      "fonti": [
+        "OR-08",
+        "OR-09",
+        "OR-07"
+      ],
+      "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Importi, canali di pagamento e termini di disdetta cambiano da Regione a Regione: fa fede quanto indicato dalla tua ASL al momento della prenotazione. I prezzi privati sono indicativi."
     }
   ],
   "chi": {
@@ -436,6 +511,11 @@
       "quando": "Il pediatra ti ha detto «serve uno specialista»",
       "cosa": "Ricetta, CUP, ticket, attese: come funziona una visita specialistica",
       "guida": "visita-specialistica-come-funziona"
+    },
+    {
+      "quando": "Devi spostare una visita, o non sai come si paga il ticket",
+      "cosa": "Disdire in tempo, pagare, prenotare privatamente: le regole",
+      "guida": "spostare-disdire-pagare-visita"
     },
     {
       "quando": "Hai una visita dal pediatra in arrivo",
