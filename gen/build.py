@@ -43,7 +43,8 @@ def page(path, title, desc, body, ld=None):
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="it_IT">
-<link rel="icon" href="{ICON}">
+<link rel="icon" type="image/png" href="/assets/brand/favicon-48.png">
+<link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/stile.css">
 <script defer src="https://cloud.umami.is/script.js" data-website-id="301edcb4-f5b2-444e-a1e5-8b8614d0100a" data-domains="serenainmente.it"></script>
 {ldj}
@@ -51,7 +52,7 @@ def page(path, title, desc, body, ld=None):
 <body>
 <div class="wrap">
 <header class="top">
-<a class="brand" href="/"><span class="mark">{MARK}</span>serenainmente</a>
+<a class="brand" href="/"><img class="mark" src="/assets/brand/mark-96.png" alt="" width="40" height="40">serenainmente</a>
 <nav class="nav" aria-label="Menu"><a href="/guide/">Guide</a><a href="/gestionale/">Gestionale</a><a href="/fonti/">Le fonti</a><a href="/chi-e-serena/">Chi è Serena</a></nav>
 </header>
 <main class="stack" style="gap:36px">
@@ -155,7 +156,7 @@ for gi, g in enumerate(D['guide']):
 </article>'''
     ld = {"@context": "https://schema.org", "@type": "Article", "headline": g['titolo'], "description": g['sommario'],
           "datePublished": g['data'], "dateModified": g['data'], "inLanguage": "it",
-          "author": {"@type": "Organization", "name": "Serena"}, "publisher": {"@type": "Organization", "name": "Serena"}}
+          "author": {"@type": "Organization", "name": "Serena"}, "publisher": {"@type": "Organization", "name": "Serena", "logo": {"@type": "ImageObject", "url": SITE + "/assets/brand/avatar-320.png"}}}
     pages.append(page(f"/guide/{g['slug']}/", g['titolo'], g['sommario'], body, ld))
     guide_cards.append(f'<a class="card link" href="/guide/{g["slug"]}/"><span class="eyebrow">{e(g["categoria"])} · {e(g["tempo"])}</span><b>{e(g["titolo"])}</b><span>{e(g["sommario"])}</span></a>')
 
@@ -217,8 +218,9 @@ pages.append(page('/fonti/', 'Le fonti di Serena', 'Le fonti dei dati citati nei
 # ---------- chi è serena ----------
 c = D['chi']
 pages.append(page('/chi-e-serena/', 'Chi è Serena', c['sommario'],
-    f'''<article class="stack article"><h1>Chi è Serena</h1><p class="lead">{e(c['sommario'])}</p>{TRUST}
+    f'''<article class="stack article"><img class="avatar" src="/assets/brand/avatar-320.png" alt="Immagine del profilo di Serena: un sole che sorge" width="120" height="120"><h1>Chi è Serena</h1><p class="lead">{e(c['sommario'])}</p>{TRUST}
 {''.join(f'<section class="stack"><h2>{e(s[0])}</h2>' + ''.join(f'<p>{e(x)}</p>' for x in s[1]) + '</section>' for s in c['sezioni'])}
+<a class="igcard" href="https://www.instagram.com/serenainmente/" data-umami-event="instagram"><img src="/assets/brand/avatar-160.png" alt="Immagine del profilo Instagram di Serena: un sole che sorge" width="80" height="80"><span><b>@serenainmente</b><small>Ogni mattina alle 10 su Instagram</small></span><span class="go">Segui →</span></a>
 </article>'''))
 
 # ---------- home ----------
@@ -233,7 +235,7 @@ pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della fam
 <section class="stack"><h2>Guide che restano</h2><div class="cards">{''.join(guide_cards)}{gest_card}</div><a href="/guide/">Tutte le guide →</a></section>
 <section class="stack"><h2>Dai nostri post</h2><p>Le fonti dei dati citati su Instagram, post per post.</p><ol class="posts">{home_posts}</ol><a href="/fonti/">Tutte le fonti →</a></section>
 <section class="note stack"><h2>Chi è Serena</h2><p>{e(c['sommario'])}</p><a href="/chi-e-serena/">Come lavoriamo →</a></section>
-<section class="stack"><h2>Ogni giorno, una cosa utile</h2><p>Su Instagram pubblichiamo ogni mattina alle 10: un metodo pratico, un dato con la sua fonte, una frase da mandare a chi ne ha bisogno.</p><a class="btn" href="https://www.instagram.com/serenainmente/" data-umami-event="instagram">Seguici su Instagram</a></section>'''))
+<section class="stack"><h2>Ogni giorno, una cosa utile</h2><p>Su Instagram pubblichiamo ogni mattina alle 10: un metodo pratico, un dato con la sua fonte, una frase da mandare a chi ne ha bisogno.</p><a class="igcard" href="https://www.instagram.com/serenainmente/" data-umami-event="instagram"><img src="/assets/brand/avatar-160.png" alt="Immagine del profilo Instagram di Serena: un sole che sorge" width="80" height="80"><span><b>@serenainmente</b><small>Ogni mattina alle 10 su Instagram</small></span><span class="go">Segui →</span></a></section>'''))
 
 # ---------- sitemap, robots ----------
 today = datetime.date.today().isoformat()
