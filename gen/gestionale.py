@@ -81,26 +81,29 @@ oggi = datetime.date.today()
 
 # ---------- Famiglia ----------
 ws = sheet('Famiglia', 'La tua famiglia', 'Una riga per persona. L\'età si calcola da sola dalla data di nascita.',
-           ['Nome', 'Ruolo', 'Data di nascita', 'Età', 'Pediatra o medico', 'Allergie note', 'Terapie in corso', 'Note'],
-           [18, 14, 16, 8, 24, 24, 24, 30])
-rows(ws, 5, 8, 'ABCEFGH'); dates(ws, 'C', 5)
+           ['Nome', 'Ruolo', 'Data di nascita', 'Età', 'Pediatra o medico', 'Allergie note', 'Terapie in corso', 'Gruppo sanguigno', 'Esenzioni (codice)', 'Fascicolo sanitario', 'Note'],
+           [18, 14, 16, 8, 24, 22, 22, 14, 16, 22, 28])
+rows(ws, 5, 11, 'ABCEFGHIJK'); dates(ws, 'C', 5)
+listval(ws, 'H', 5, ['Non so', '0+', '0-', 'A+', 'A-', 'B+', 'B-', 'AB+', 'AB-'])
+listval(ws, 'J', 5, ['Attivo, consenso dato', 'Attivo, consenso da dare', 'Da attivare (figlio)', 'Non so'])
 listval(ws, 'B', 5, ['Mamma', 'Papà', 'Bambino/a', 'Nonno/a', 'Altro'])
 for r in range(5, 5 + N_ROWS):
     ws[f'D{r}'] = f'=IF(C{r}="","",IF(DATEDIF(C{r},TODAY(),"y")=0,DATEDIF(C{r},TODAY(),"m")&" mesi",DATEDIF(C{r},TODAY(),"y")&" anni"))'
-example(ws, 5, ['Sofia', 'Bambino/a', datetime.date(oggi.year - 2, 3, 14), None, 'Dott.ssa Rossi · 010 000000', 'Nessuna nota', '—', None])
+example(ws, 5, ['Sofia', 'Bambino/a', datetime.date(oggi.year - 2, 3, 14), None, 'Dott.ssa Rossi · 010 000000', 'Nessuna nota', '—', 'Non so', '—', 'Da attivare (figlio)', None])
 
 # ---------- Documenti (la cartellina) ----------
 ws = sheet('Documenti', 'La cartellina di famiglia', 'Dove sta ogni documento e quando scade. "Giorni" e "Stato" si calcolano da soli.',
-           ['Documento', 'Di chi', 'Dove si trova', 'Scadenza', 'Giorni', 'Stato', 'Note'],
-           [30, 16, 26, 14, 9, 14, 30])
-rows(ws, 5, 7, 'ABCDG'); dates(ws, 'D', 5)
+           ['Documento', 'Di chi', 'Dove si trova (carta)', 'Scadenza', 'Giorni', 'Stato', 'Dove sta online', 'Note'],
+           [30, 14, 26, 14, 9, 14, 26, 26])
+rows(ws, 5, 8, 'ABCDGH'); dates(ws, 'D', 5)
+listval(ws, 'G', 5, ['Fascicolo sanitario', 'App IO', 'Mail', 'Foto sul telefono', 'Da nessuna parte'])
 listval(ws, 'A', 5, ['Tessera sanitaria', 'Carta d\'identità', 'Passaporto', 'Libretto vaccinale', 'Referto', 'Lettera di dimissione', 'Certificato', 'Altro'])
 for r in range(5, 5 + N_ROWS):
     ws[f'E{r}'] = f'=IF(D{r}="","",D{r}-TODAY())'
     ws[f'F{r}'] = f'=IF(D{r}="","",IF(E{r}<0,"Scaduto",IF(E{r}<=30,"In scadenza","Ok")))'
 stato_rule(ws, f'F5:F{4+N_ROWS}', 'E')
-example(ws, 5, ['Tessera sanitaria', 'Sofia', 'Cartellina blu, primo scomparto', datetime.date(oggi.year + 1, 6, 30), None, None, None])
-example(ws, 6, ['Libretto vaccinale', 'Sofia', 'Cartellina blu, primo scomparto', None, None, None, None], note='Senza scadenza: lascia vuota la data')
+example(ws, 5, ['Tessera sanitaria', 'Sofia', 'Cartellina blu, primo scomparto', datetime.date(oggi.year + 1, 6, 30), None, None, 'App IO', None])
+example(ws, 6, ['Libretto vaccinale', 'Sofia', 'Cartellina blu, primo scomparto', None, None, None, 'Fascicolo sanitario', None], note='Senza scadenza: lascia vuota la data')
 
 # ---------- Scadenze ----------
 ws = sheet('Scadenze', 'Vaccini, visite e scadenze', 'Tutto ciò che ha una data: richiami, controlli, rinnovi, iscrizioni. Spunta "Fatto" quando è chiuso.',
@@ -117,12 +120,17 @@ example(ws, 5, ['Richiamo vaccino (chiedere al pediatra quale)', 'Sofia', oggi +
 example(ws, 6, ['Iscrizione al nido', 'Sofia', oggi - datetime.timedelta(days=10), None, None, '☑', 'Papà', None], note='Fatto: sparisce dai promemoria')
 
 # ---------- Visite ----------
-ws = sheet('Visite', 'Prima e dopo la visita', 'Dieci minuti prima: scrivi le domande e cosa hai notato. Durante: le risposte. Prima di uscire: cosa fare e quando richiamare.',
-           ['Data', 'Chi', 'Medico', 'Domanda 1 (la più importante)', 'Domanda 2', 'Domanda 3', 'Cosa ho notato', 'Risposte', 'Cosa facciamo', 'Richiamare se / quando'],
-           [12, 12, 18, 26, 22, 22, 26, 30, 26, 22])
-rows(ws, 5, 10, 'ABCDEFGHIJ'); dates(ws, 'A', 5)
-for r in range(5, 5 + N_ROWS): ws.row_dimensions[r].height = 36
-example(ws, 5, [oggi + datetime.timedelta(days=7), 'Sofia', 'Dott.ssa Rossi', 'Si sveglia 3 volte a notte: è normale a questa età?', 'Mangia poco a cena', 'Quando il prossimo richiamo?', 'Da due settimane, soprattutto dopo giornate al nido', '', '', ''])
+ws = sheet('Visite', 'Prima e dopo la visita', 'Ricetta, prenotazione e ticket in alto; domande e risposte a seguire. "Disdire entro" si calcola da solo (due giorni lavorativi prima).',
+           ['Data', 'Chi', 'Medico / struttura', 'Priorità ricetta', 'Scadenza ricetta', 'N. prenotazione', 'Disdire entro', 'Ticket', 'Domanda 1 (la più importante)', 'Domanda 2', 'Domanda 3', 'Cosa ho notato', 'Risposte', 'Cosa facciamo', 'Richiamare se / quando'],
+           [12, 12, 20, 11, 13, 16, 13, 12, 26, 22, 22, 26, 30, 26, 22])
+rows(ws, 5, 15, 'ABCDEFHIJKLMNO'); dates(ws, 'A', 5); dates(ws, 'E', 5); dates(ws, 'G', 5)
+listval(ws, 'D', 5, ['U (72 ore)', 'B (10 giorni)', 'D (30/60 giorni)', 'P (120 giorni)', 'Controllo', 'Privata'])
+listval(ws, 'H', 5, ['Da pagare', 'Pagato', 'Esente', 'Privata'])
+for r in range(5, 5 + N_ROWS):
+    ws.row_dimensions[r].height = 36
+    ws[f'G{r}'] = f'=IF(A{r}="","",WORKDAY(A{r},-2))'
+ws.conditional_formatting.add(f'G5:G{4+N_ROWS}', FormulaRule(formula=['AND(ISNUMBER(G5),G5-TODAY()>=0,G5-TODAY()<=3)'], fill=PatternFill('solid', fgColor='FFF0C2'), font=Font(name=F, color='7A5A00', bold=True)))
+example(ws, 5, [oggi + datetime.timedelta(days=7), 'Sofia', 'Dott.ssa Rossi · Osp. Gaslini', 'D (30/60 giorni)', oggi + datetime.timedelta(days=300), 'CUP 12345678', None, 'Da pagare', 'Si sveglia 3 volte a notte: è normale a questa età?', 'Mangia poco a cena', 'Quando il prossimo richiamo?', 'Da due settimane, soprattutto dopo giornate al nido', '', '', ''])
 
 # ---------- Settimana ----------
 ws = wb.create_sheet('Settimana')
@@ -148,9 +156,11 @@ ws.freeze_panes = 'B5'; ws.page_setup.orientation = 'landscape'; ws.page_setup.f
 ws = sheet('Contatti', 'Contatti utili', 'Tutti i numeri che servono, in un posto solo. Stampalo e mettilo nella cartellina.',
            ['Chi', 'Nome', 'Telefono', 'Orari / quando chiamare', 'Note'], [22, 26, 18, 28, 30])
 rows(ws, 5, 5, 'ABCDE')
-listval(ws, 'A', 5, ['Pediatra', 'Medico di famiglia', 'Guardia medica', 'ASL', 'Pronto soccorso', 'Nido / scuola', 'Nonni', 'Babysitter', 'Farmacia', 'Altro'])
+listval(ws, 'A', 5, ['Pediatra', 'Medico di famiglia', 'Guardia medica', 'CUP (prenotazioni)', 'URP della ASL', 'Fascicolo sanitario (numero verde)', 'Pronto soccorso', 'Nido / scuola', 'Nonni', 'Babysitter', 'Farmacia', 'Altro'])
 example(ws, 5, ['Pediatra', 'Dott.ssa Rossi', '010 000000', 'Lun-ven 9-12, telefonate 13-14', None])
 example(ws, 6, ['Guardia medica', '', '116117', 'Notte, weekend e festivi', 'Numero unico in molte regioni: verifica nella tua'], note='Verifica il numero della tua regione')
+example(ws, 7, ['CUP (prenotazioni)', 'CUP regionale', '', 'Per prenotare e disdire; segna anche sito e app', 'Disdire almeno 2 giorni lavorativi prima'], note='Cerca il numero della tua Regione')
+example(ws, 8, ['URP della ASL', '', '', 'Se la visita supera i tempi della ricetta', 'Chiedi il «percorso di tutela»'], note='Cerca il numero della tua ASL')
 
 # ---------- Prime volte ----------
 ws = sheet('Prime volte', 'Le prime volte e i ricordi', 'La prima parola, i primi passi, il primo giorno di nido. Due righe oggi valgono più di una memoria tra dieci anni.',
@@ -172,34 +182,36 @@ items = [
     ('Scadenze nei prossimi 30 giorni', f"=COUNTIFS(Scadenze!D5:D{4+N_ROWS},\">=0\",Scadenze!D5:D{4+N_ROWS},\"<=30\")", 'Scheda Scadenze: richiami, visite, rinnovi non ancora fatti'),
     ('Scadenze già passate (non fatte)', f"=COUNTIF(Scadenze!D5:D{4+N_ROWS},\"<0\")", 'Vale la pena controllarle oggi'),
     ('Documenti scaduti o in scadenza', f"=COUNTIF(Documenti!F5:F{4+N_ROWS},\"Scaduto\")+COUNTIF(Documenti!F5:F{4+N_ROWS},\"In scadenza\")", 'Scheda Documenti: la cartellina di famiglia'),
+    ('Visite nei prossimi 7 giorni', f"=COUNTIFS(Visite!A5:A{4+N_ROWS},\">=\"&TODAY(),Visite!A5:A{4+N_ROWS},\"<=\"&(TODAY()+7))", 'Scheda Visite: controlla «Disdire entro» e il ticket'),
+    ('Ticket ancora da pagare', f"=COUNTIFS(Visite!H5:H{4+N_ROWS},\"Da pagare\",Visite!A5:A{4+N_ROWS},\">=\"&TODAY())", 'Di norma si paga prima della visita'),
     ('Prossima scadenza tra (giorni)', f"=IFERROR(MINIFS_PLACEHOLDER,\"\")", ''),
 ]
 # MINIFS non è garantito ovunque: usiamo SUMPRODUCT/MIN con IF in array-safe via AGGREGATE? Più semplice: MIN sui soli positivi con SUMPRODUCT.
-items[3] = ('Prossima scadenza tra (giorni)', f"=IF(COUNTIF(Scadenze!D5:D{4+N_ROWS},\">=0\")=0,\"—\",SUMPRODUCT(MIN(IF(Scadenze!D5:D{4+N_ROWS}>=0,Scadenze!D5:D{4+N_ROWS}))))", 'La più vicina tra quelle ancora da fare')
+items[[i for i,x in enumerate(items) if x[0].startswith('Prossima scadenza')][0]] = ('Prossima scadenza tra (giorni)', f"=IF(COUNTIF(Scadenze!D5:D{4+N_ROWS},\">=0\")=0,\"—\",SUMPRODUCT(MIN(IF(Scadenze!D5:D{4+N_ROWS}>=0,Scadenze!D5:D{4+N_ROWS}))))", 'La più vicina tra quelle ancora da fare')
 for i, (lab, f, note) in enumerate(items):
     r = 7 + i
     ws[f'A{r}'] = lab; ws[f'A{r}'].font = Font(name=F, color=INK)
     ws[f'B{r}'] = f; ws[f'B{r}'].font = Font(name=F, bold=True, size=13, color=MALVA); ws[f'B{r}'].alignment = Alignment(horizontal='center')
     ws[f'C{r}'] = note; ws[f'C{r}'].font = Font(name=F, size=9, color=MUTED)
     for col in 'ABC': ws[f'{col}{r}'].border = Border(bottom=thin)
-ws.conditional_formatting.add('B7:B9', FormulaRule(formula=['B7>0'], fill=PatternFill('solid', fgColor='FFF0C2')))
+ws.conditional_formatting.add('B7:B12', FormulaRule(formula=['B7>0'], fill=PatternFill('solid', fgColor='FFF0C2')))
 
-ws['A13'] = 'Come si usa'; ws['A13'].font = Font(name=F, bold=True, size=12, color=INK)
+ws['A15'] = 'Come si usa'; ws['A13'].font = Font(name=F, bold=True, size=12, color=INK)
 guida = [
-    ('Famiglia', 'Una riga per persona. L\'età si calcola da sola.'),
+    ('Famiglia', 'Una riga per persona: pediatra, allergie, gruppo sanguigno, esenzioni, stato del Fascicolo sanitario. L\'età si calcola da sola.'),
     ('Documenti', 'La cartellina: dove sta ogni documento e quando scade. Lo stato si colora da solo.'),
     ('Scadenze', 'Vaccini, visite, rinnovi, iscrizioni. Spunta "Fatto" e sparisce dai promemoria.'),
-    ('Visite', 'Prima della visita scrivi le domande, la più importante per prima. Dopo, cosa fare e quando richiamare.'),
+    ('Visite', 'Ricetta, prenotazione, ticket e la data entro cui disdire senza pagare. Poi le domande, la più importante per prima, e cosa fare dopo.'),
     ('Settimana', 'La settimana di tutti, con chi se ne occupa: così non ricorda tutto una persona sola.'),
     ('Contatti', 'Pediatra, guardia medica, nido, nonni. Stampalo e mettilo nella cartellina.'),
     ('Prime volte', 'I ricordi che non vuoi perdere, scritti il giorno stesso.'),
 ]
 for i, (k, v) in enumerate(guida):
-    r = 14 + i
+    r = 16 + i
     ws[f'A{r}'] = k; ws[f'A{r}'].font = Font(name=F, bold=True, color=MALVA)
     ws[f'C{r}'] = v; ws[f'C{r}'].font = Font(name=F, color=INK); ws[f'C{r}'].alignment = Alignment(wrap_text=True)
     ws.merge_cells(f'A{r}:B{r}')
-r = 22
+r = 24
 ws[f'A{r}'] = 'Legenda'; ws[f'A{r}'].font = Font(name=F, bold=True, size=12, color=INK)
 ws[f'A{r+1}'] = 'Testo blu su righe alternate'; ws[f'A{r+1}'].font = IN; ws[f'C{r+1}'] = 'Celle da compilare'; ws[f'C{r+1}'].font = Font(name=F, color=INK)
 ws[f'A{r+2}'] = 'Testo nero'; ws[f'A{r+2}'].font = FX; ws[f'C{r+2}'] = 'Si calcola da solo: non scriverci sopra'; ws[f'C{r+2}'].font = Font(name=F, color=INK)
