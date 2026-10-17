@@ -163,8 +163,8 @@ gest_body = f'''<article class="stack article">
 <p class="eyebrow">Da scaricare · Excel</p>
 <h1>Il gestionale di famiglia</h1>
 <p class="lead">Un solo file per la cartellina, le scadenze, le visite, la settimana e i ricordi. Cinque minuti per metterlo in piedi, poi si aggiorna da solo.</p>
-<div class="row"><a class="btn" href="{GEST}" download>Scarica il file Excel</a><button class="btn sec" type="button" hidden data-sharefile="{GEST}">Condividi o salva in Note</button></div>
-<p class="small">Si apre con Excel, Fogli Google e Numbers, anche dal telefono. Resta sul tuo dispositivo: nessun dato viene inviato a nessuno.</p>
+<div class="row"><a class="btn" href="{GEST}" download>Scarica il file Excel</a>{f'<a class="btn" href="{e(D["gestionale_sheets_url"])}" rel="noopener">Apri in Fogli Google (telefono)</a>' if D.get('gestionale_sheets_url') else ''}<button class="btn sec" type="button" hidden data-sharefile="{GEST}">Condividi o salva in Note</button></div>
+<p class="small">{'Dal telefono conviene la versione Fogli Google: tocca «Apri in Fogli Google», poi «Crea una copia», e il file è tuo, nel tuo Drive. ' if D.get('gestionale_sheets_url') else ''}Il file Excel si apre con Excel, Fogli Google e Numbers. In entrambi i casi i dati restano tuoi: nessun dato viene inviato a noi.</p>
 <section class="stack"><h2>Cosa c'è dentro</h2><ol class="steps">
 <li><b>Inizia da qui</b><span>Quante scadenze hai nei prossimi 30 giorni, quali documenti stanno scadendo, qual è la prossima cosa da fare. Si calcola da solo.</span></li>
 <li><b>Famiglia</b><span>Una riga per persona, con pediatra, allergie note e terapie. L'età si calcola dalla data di nascita.</span></li>
