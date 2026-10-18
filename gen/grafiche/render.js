@@ -27,7 +27,7 @@ const css = `
 .c{position:relative;width:1080px;height:1350px;overflow:hidden;color:#3A2C30}
 .f{position:absolute;left:150px;top:420px;width:780px;height:400px;display:flex;align-items:center;justify-content:center;text-align:center;font-family:Fraunces,Georgia,serif;font-size:60px;line-height:1.32;text-transform:lowercase;white-space:pre-line}
 .pensiero .f{font-size:44px;line-height:1.4;text-transform:none;left:110px;width:860px;top:330px;height:520px}
-.riconoscimento .f{font-size:54px;line-height:1.3;text-transform:none;text-align:left;justify-content:flex-start;left:130px;width:820px;top:300px;height:540px}
+.riconoscimento .f{font-size:54px;line-height:1.3;text-transform:none;text-align:center;justify-content:center;left:110px;width:860px;top:300px;height:540px}
 .forte .f{font-family:'DM Sans',sans-serif;font-weight:800;font-size:64px;line-height:1.12;text-transform:uppercase;text-align:left;justify-content:flex-start;letter-spacing:.5px;left:150px;width:780px;top:280px;height:580px}
 .parola .f{font-size:50px;line-height:1.36;text-transform:none;text-align:left;justify-content:flex-start;align-items:flex-start;left:150px;width:800px;top:610px;height:260px}
 .lab{position:absolute;left:150px;top:420px;padding:18px 34px;background:#EBD3D9;font-family:'DM Sans',sans-serif;font-weight:800;font-size:46px;letter-spacing:6px;text-transform:uppercase}
