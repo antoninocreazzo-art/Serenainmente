@@ -1,10 +1,11 @@
 [
  {
-  "file": "2026-10-27-1.jpg",
+  "file": "2026-10-27-1g.jpg",
   "tipo": "copertina",
   "etichetta": "pratico · 3 passi",
   "titolo": "Dal pediatra\nsenza dimenticare\nle domande",
-  "sottotitolo": "Dieci minuti prima della visita,\nper uscire con le risposte che cercavi."
+  "sottotitolo": "Dieci minuti prima della visita,\nper uscire con le risposte che cercavi.",
+  "sfondo": "#F4E9EC"
  },
  {
   "file": "2026-10-27-2.jpg",

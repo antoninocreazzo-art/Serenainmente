@@ -1,10 +1,11 @@
 [
  {
-  "file": "2026-10-20-1.jpg",
+  "file": "2026-10-20-1g.jpg",
   "tipo": "copertina",
   "etichetta": "pratico · 4 mosse",
   "titolo": "La sera che\nnon finisce mai",
-  "sottotitolo": "Un metodo semplice,\nin linea con quello che\nconsigliano i pediatri."
+  "sottotitolo": "Un metodo semplice,\nin linea con quello che\nconsigliano i pediatri.",
+  "sfondo": "#FBF6F4"
  },
  {
   "file": "2026-10-20-2.jpg",

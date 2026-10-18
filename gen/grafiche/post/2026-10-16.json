@@ -1,0 +1,39 @@
+[
+ {
+  "file": "2026-10-16-1g.jpg",
+  "tipo": "copertina",
+  "sfondo": "#F4E9EC",
+  "etichetta": "piacere, serena",
+  "titolo": "Chi è\nSerena",
+  "sottotitolo": "Un posto tranquillo per chi\nsi prende cura della famiglia."
+ },
+ {
+  "file": "2026-10-16-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "Cose pratiche",
+  "testo": "Guide, checklist e strumenti\ngratuiti per visite, documenti,\nscadenze e routine di casa."
+ },
+ {
+  "file": "2026-10-16-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Dati con\nla loro fonte",
+  "testo": "Ogni numero viene da una fonte\nche puoi aprire: OMS, Istituto\nSuperiore di Sanità, società\nscientifiche."
+ },
+ {
+  "file": "2026-10-16-4.jpg",
+  "tipo": "passo",
+  "numero": "3",
+  "titolo": "Parole in cui\nritrovarsi",
+  "testo": "Frasi da tenere per sé\no da mandare a chi\nsi prende cura di tutti."
+ },
+ {
+  "file": "2026-10-16-5.jpg",
+  "tipo": "chiusura",
+  "etichetta": "come lavoriamo",
+  "titolo": "Ideato e curato\nda una persona,\ncon supporto AI.",
+  "testo": "Niente pubblicità.\nIl pediatra resta il riferimento.",
+  "nota": "Guide complete e fonti su serenainmente.it"
+ }
+]

@@ -1,10 +1,11 @@
 [
  {
-  "file": "2026-10-19-1.jpg",
+  "file": "2026-10-19-1g.jpg",
   "tipo": "copertina",
   "etichetta": "pratico · 5 passi",
   "titolo": "Una cartellina.\nMeno cose\nda cercare.",
-  "sottotitolo": "Dieci minuti oggi,\nmolte ricerche in meno domani."
+  "sottotitolo": "Dieci minuti oggi,\nmolte ricerche in meno domani.",
+  "sfondo": "#EBD3D9"
  },
  {
   "file": "2026-10-19-2.jpg",

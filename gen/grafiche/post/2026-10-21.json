@@ -1,10 +1,11 @@
 [
  {
-  "file": "2026-10-21-1.jpg",
+  "file": "2026-10-21-1g.jpg",
   "tipo": "copertina",
   "etichetta": "un dato, con la sua fonte",
   "titolo": "Non serve una\ncena perfetta.\nServe sedersi.",
-  "sottotitolo": "E va bene anche\nquando non si riesce."
+  "sottotitolo": "E va bene anche\nquando non si riesce.",
+  "sfondo": "#F2EBE3"
  },
  {
   "file": "2026-10-21-2.jpg",

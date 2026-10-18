@@ -1,10 +1,11 @@
 [
  {
-  "file": "2026-11-02-1.jpg",
+  "file": "2026-11-02-1g.jpg",
   "tipo": "copertina",
   "etichetta": "pratico · 3 passi",
   "titolo": "La settimana\ndi tutti,\nsu un foglio",
-  "sottotitolo": "Dieci minuti il lunedì.\nMeno sorprese il giovedì sera."
+  "sottotitolo": "Dieci minuti il lunedì.\nMeno sorprese il giovedì sera.",
+  "sfondo": "#EBD3D9"
  },
  {
   "file": "2026-11-02-2.jpg",

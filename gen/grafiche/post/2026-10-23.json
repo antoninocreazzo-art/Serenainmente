@@ -1,10 +1,11 @@
 [
  {
-  "file": "2026-10-23-1.jpg",
+  "file": "2026-10-23-1g.jpg",
   "tipo": "copertina",
   "etichetta": "cosa indica l'OMS",
   "titolo": "Il sonno\ndei più piccoli",
-  "sottotitolo": "Le indicazioni per i bambini\nda 1 a 4 anni, da leggere\ncon calma."
+  "sottotitolo": "Le indicazioni per i bambini\nda 1 a 4 anni, da leggere\ncon calma.",
+  "sfondo": "#F4E9EC"
  },
  {
   "file": "2026-10-23-2.jpg",

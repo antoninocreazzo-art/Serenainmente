@@ -1,10 +1,11 @@
 [
  {
-  "file": "2026-10-29-1.jpg",
+  "file": "2026-10-29-1g.jpg",
   "tipo": "copertina",
   "etichetta": "pratico · 3 passi",
   "titolo": "La testa piena:\nsvuotala in\ncinque minuti",
-  "sottotitolo": "Un foglio e una penna.\nNiente di più."
+  "sottotitolo": "Un foglio e una penna.\nNiente di più.",
+  "sfondo": "#F2EBE3"
  },
  {
   "file": "2026-10-29-2.jpg",
