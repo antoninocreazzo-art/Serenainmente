@@ -239,7 +239,7 @@ GEST = '~/scarica/gestionale-di-famiglia.xlsx'
 SHEETS = D.get('gestionale_sheets_url')
 def devices(cls=''):
     return f'''<div class="devices {cls}" aria-hidden="true">
-<div class="laptop"><div class="scr"><div class="bar"><i></i><i></i><i></i><span>gestionale-di-famiglia.xlsx</span></div><img src="~/assets/gestionale/inizia.webp" alt="" loading="lazy"></div><div class="base"></div></div>
+<div class="laptop"><div class="scr"><img src="~/assets/gestionale/inizia.webp" alt="" loading="lazy"></div><div class="base"></div></div>
 <div class="phone"><div class="pscr"><img src="~/assets/gestionale/inizia-telefono.webp" alt="" loading="lazy"></div></div>
 </div>'''
 GEST_PUNTI = ['Si apre con Excel, Fogli Google e Numbers', 'Scadenze, documenti e visite si contano da soli',
