@@ -307,7 +307,7 @@ h2.c{text-align:left}
 
 /* video tutorial */
 .vid{margin:0;display:grid;gap:16px;align-items:center}
-.vid video{width:100%;max-width:320px;height:auto;aspect-ratio:9/16;object-fit:cover;border-radius:var(--r);background:var(--sabbia);box-shadow:var(--shadow);justify-self:center}
+.vid video{background:var(--sabbia) url(../video/gestionale-tutorial.jpg) center/cover no-repeat;width:100%;max-width:320px;height:auto;aspect-ratio:9/16;object-fit:cover;border-radius:var(--r);box-shadow:var(--shadow);justify-self:center}
 .vid figcaption{font-size:15.5px;color:var(--muted);line-height:1.55}.vid figcaption b{display:block;color:var(--ink);font-family:var(--display);font-weight:400;font-size:22px;margin-bottom:4px}
 @media(min-width:640px){.vid{grid-template-columns:300px 1fr;gap:28px}.vid video{justify-self:start}}
 

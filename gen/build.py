@@ -354,7 +354,7 @@ pages.append(page('/gestionale/', 'Il gestionale di famiglia', 'Un file gratuito
 </section>
 <section class="wrap gs-pts rv">{''.join(f'<div class="gp"><span class="vic">{ic("check")}</span><span>{p}</span></div>' for p in GEST_PUNTI)}</section>
 <section class="wrap-t gs-body">
-<figure class="vid rv"><video controls playsinline muted preload="none" poster="~/video/gestionale-tutorial.jpg" width="1080" height="1920" data-umami-event="gestionale-video"><source src="~/video/gestionale-tutorial.mp4" type="video/mp4"></video>
+<figure class="vid rv"><video controls playsinline muted preload="metadata" poster="~/video/gestionale-tutorial.jpg" width="1080" height="1920" data-umami-event="gestionale-video"><source src="~/video/gestionale-tutorial.mp4" type="video/mp4"></video>
 <figcaption><b>Come si usa, in un minuto.</b> Famiglia, visite, scadenze che si ripetono, la pagina «Inizia da qui» e la copia per il telefono. Il video è senza audio.</figcaption></figure>
 <h2>Cosa c'è dentro</h2>
 <ol class="steps">{''.join(f'<li><b>{e(a)}</b><span>{e(b)}</span></li>' for a, b in SCHEDE)}</ol>
