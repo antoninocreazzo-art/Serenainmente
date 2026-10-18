@@ -93,6 +93,16 @@ if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduc
  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
 }else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
+// frase che cambia in home
+var R=document.querySelector('[data-rot]');
+if(R&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+ var L=R.querySelectorAll('a'),k=0,stop=false;
+ R.addEventListener('mouseenter',function(){stop=true});R.addEventListener('mouseleave',function(){stop=false});
+ R.addEventListener('focusin',function(){stop=true});R.addEventListener('focusout',function(){stop=false});
+ setInterval(function(){if(stop||document.hidden)return;var a=L[k];a.classList.add('out');
+  setTimeout(function(){a.hidden=true;a.classList.remove('out');k=(k+1)%L.length;var b=L[k];b.classList.add('in0');b.hidden=false;
+   requestAnimationFrame(function(){requestAnimationFrame(function(){b.classList.remove('in0')})})},380)},3400);
+}
 // filtri e ricerca negli articoli
 var grid=document.querySelector('[data-grid]');
 if(grid){
@@ -386,11 +396,23 @@ pages.append(page('/fonti/', 'Le fonti di Serena', 'Le fonti dei dati citati nei
 <section class="wrap-t"><ul class="postl">{''.join(post_cards)}</ul></section>'''))
 
 # ---------- home ----------
+DOMANDE = [('Come prenotare una visita', '/guide/visita-specialistica-come-funziona/'),
+           ('Dove trovare un referto', '/guide/documenti-sanitari-dove-trovarli/'),
+           ('Come disdire senza pagare', '/guide/spostare-disdire-pagare-visita/'),
+           ('Come cambiare pediatra', '/guide/pediatra-e-medico-di-base/'),
+           ('Cosa chiedere al pediatra', '/guide/domande-per-il-pediatra/'),
+           ('Come calmare la sera', '/guide/routine-della-nanna/'),
+           ('Dove tenere i documenti', '/guide/cartellina-di-famiglia/'),
+           ('Come organizzare la settimana', '/gestionale/')]
+ROT = ('<p class="rot" data-rot><span class="sr">Per esempio: </span>'
+       + ''.join(f'<a href="~{h}"{"" if i == 0 else " hidden"}>{e(t)} {ic("arrow","ic-s")}</a>' for i, (t, h) in enumerate(DOMANDE))
+       + '</p>')
 tiles = ''.join(f'<a class="tile {a[4]}" href="~/guide/#{a[0]}"><span class="tic">{ic(a[3])}</span><b>{e(a[1])}</b><small>{e(a[2])}</small><span class="cnt">{argc[a[0]]} {"guida" if argc[a[0]] == 1 else "guide"}</span></a>' for a in ARG if argc[a[0]])
 pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della famiglia: guide pratiche, dati con le loro fonti, strumenti gratuiti.', f'''
 <section class="hero wrap">
 <div class="hero-txt"><h1>Hai già abbastanza da tenere a mente.</h1>
-<p class="lead">Come prenotare una visita, dove trovare un referto, come organizzare la settimana: guide chiare e strumenti gratuiti per chi si prende cura della famiglia.</p>
+{ROT}
+<p class="lead">Guide chiare e strumenti gratuiti per chi si prende cura della famiglia.</p>
 <div class="row"><a class="btn" href="~/guide/">Scopri le guide</a><a class="btn btn-line" href="{IG}" rel="noopener" data-umami-event="instagram">Seguici su Instagram</a></div></div>
 {foto('hero', '', 'hero-img', tone='rosa', eager=True)}
 </section>
