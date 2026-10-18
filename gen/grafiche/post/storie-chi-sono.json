@@ -1,0 +1,50 @@
+[
+ {
+  "file": "storia-chi-sono-0.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#FBF6F4",
+  "story": true,
+  "frase": "Chi sono"
+ },
+ {
+  "file": "storia-chi-sono-1.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "story": true,
+  "frase": "Piacere, Serena.\nUn posto tranquillo\nper chi si prende cura\ndella famiglia."
+ },
+ {
+  "file": "storia-chi-sono-2.jpg",
+  "tipo": "frase",
+  "stile": "pensiero",
+  "sfondo": "#FBF6F4",
+  "story": true,
+  "frase": "Qui trovi cose pratiche,\ndati con la loro fonte,\nparole in cui ritrovarsi.\n\nUn post ogni mattina alle 10."
+ },
+ {
+  "file": "storia-chi-sono-3.jpg",
+  "tipo": "frase",
+  "stile": "pensiero",
+  "sfondo": "#F2EBE3",
+  "story": true,
+  "frase": "Ideato e curato da una persona,\ncon supporto AI.\n\nOgni post viene scelto\ne controllato prima di uscire."
+ },
+ {
+  "file": "storia-chi-sono-4.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "story": true,
+  "frase": "Le informazioni sono generali:\nper il tuo bambino\nil riferimento resta il pediatra."
+ },
+ {
+  "file": "storia-chi-sono-5.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "story": true,
+  "frase": "Guide, fonti\ne gestionale gratuito\nsu serenainmente.it"
+ }
+]
