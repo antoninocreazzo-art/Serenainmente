@@ -189,7 +189,7 @@ h2.c{text-align:left}
 .gb-txt .btn{margin-top:6px;width:fit-content}
 /* dispositivi con screenshot reali */
 .devices{position:relative;padding-right:14%;padding-bottom:6%}
-@media(max-width:599px){.devices{padding:0;display:flex;justify-content:center}.devices .laptop{display:none}.devices .phone{position:relative;width:64%;max-width:250px;transform:rotate(-2deg)}}
+@media(max-width:599px){.devices{padding-right:10%;padding-bottom:10%}.devices .phone{width:36%;border-radius:16px;padding:5px}.devices .pscr{border-radius:12px}.laptop .scr{border-width:6px;border-bottom-width:8px}}
 .laptop .scr{background:#fff;border:10px solid #2F2A2C;border-bottom-width:12px;border-radius:14px 14px 0 0;overflow:hidden;aspect-ratio:16/10;box-shadow:0 20px 40px -24px rgba(0,0,0,.45)}
 .laptop .scr img{width:100%;height:100%;object-fit:cover;object-position:top left}
 .laptop .bar{display:flex;align-items:center;gap:5px;background:#97606F;padding:5px 8px;color:#fff;font-size:10px}
