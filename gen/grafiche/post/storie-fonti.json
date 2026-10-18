@@ -1,0 +1,42 @@
+[
+ {
+  "file": "storia-fonti-0.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F2EBE3",
+  "story": true,
+  "frase": "Fonti"
+ },
+ {
+  "file": "storia-fonti-1.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#FBF6F4",
+  "story": true,
+  "frase": "Ogni numero che leggi qui\nviene da una fonte\nche puoi aprire."
+ },
+ {
+  "file": "storia-fonti-2.jpg",
+  "tipo": "frase",
+  "stile": "pensiero",
+  "sfondo": "#F4E9EC",
+  "story": true,
+  "frase": "OMS, Istituto Superiore di Sanità,\nAmerican Academy of Pediatrics,\nriviste scientifiche.\n\nNessun dato a memoria,\nnessun allarme."
+ },
+ {
+  "file": "storia-fonti-3.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "story": true,
+  "frase": "Informazioni generali:\nnon sostituiscono il parere\ndel pediatra o del medico."
+ },
+ {
+  "file": "storia-fonti-4.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#FBF6F4",
+  "story": true,
+  "frase": "Tutti i link completi\nsu\nserenainmente.it/fonti"
+ }
+]
