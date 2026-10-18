@@ -1,0 +1,43 @@
+[
+ {
+  "file": "2026-11-08-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "stare bene · con fonte",
+  "titolo": "L'ultima ora\nprima della nanna",
+  "sottotitolo": "Cosa fare insieme\nquando gli schermi si spengono.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-08-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "Cosa dicono\ni pediatri",
+  "testo": "Una routine regolare della nanna\nfa bene ai bambini.\nE gli schermi si spengono\nalmeno un'ora prima.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-08-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Luci basse,\nvoci basse",
+  "testo": "Una lampada al posto\ndel lampadario.\nLa casa rallenta insieme a loro.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-08-4.jpg",
+  "tipo": "passo",
+  "numero": "3",
+  "titolo": "Le stesse cose,\nogni sera",
+  "testo": "Un pigiama, una storia,\ndue parole sulla giornata.\nSempre nello stesso ordine.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-08-5.jpg",
+  "tipo": "chiusura",
+  "titolo": "Non tutte le sere\nandrà così. Va bene.",
+  "testo": "Conta la regolarità,\nnon la sera perfetta.",
+  "fonte": "Fonte: American Academy of Pediatrics, Healthy Sleep Habits, 2026",
+  "nota": "Informazioni generali, non sostituiscono il parere del pediatra o del medico.",
+  "sfondo": "#FBF6F4"
+ }
+]

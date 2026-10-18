@@ -1,0 +1,41 @@
+[
+ {
+  "file": "2026-11-05-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "pratico · 3 mosse",
+  "titolo": "Quando il medico\ndice una parola\nche non capisci",
+  "sottotitolo": "Succede a tutti.\nTre mosse, subito, lì.",
+  "sfondo": "#F2EBE3"
+ },
+ {
+  "file": "2026-11-05-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "Chiedi di dirla\nin un altro modo",
+  "testo": "«Me lo può spiegare\ncon parole semplici?»\nÈ una domanda normale.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-05-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Scrivila subito",
+  "testo": "Sul telefono o su un foglio,\ncome l'hai capita.\nA casa ti servirà.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-05-4.jpg",
+  "tipo": "passo",
+  "numero": "3",
+  "titolo": "Ripeti\ncon parole tue",
+  "testo": "«Quindi devo…?»\nSe qualcosa non torna,\nlo chiarite lì, insieme.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-05-5.jpg",
+  "tipo": "chiusura",
+  "titolo": "Chiedere non è disturbare.\nÈ capire bene\ncosa fare a casa.",
+  "nota": "Consigli organizzativi generali, non sostituiscono il parere del pediatra o del medico.",
+  "sfondo": "#FBF6F4"
+ }
+]

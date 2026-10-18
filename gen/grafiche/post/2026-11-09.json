@@ -1,0 +1,41 @@
+[
+ {
+  "file": "2026-11-09-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "pratico · 3 domande",
+  "titolo": "Una decisione\nda prendere?\nPrima, tre domande",
+  "sottotitolo": "Per scegliere con più calma,\nanche quando hai fretta.",
+  "sfondo": "#EBD3D9"
+ },
+ {
+  "file": "2026-11-09-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "Può aspettare\nuna notte?",
+  "testo": "Molte scelte di casa\npossono aspettare domani.\nCon una notte di sonno in più.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-09-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Cosa so,\ncosa mi manca",
+  "testo": "Un foglio, due colonne.\nA sinistra quello che sai,\na destra le domande aperte.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-09-4.jpg",
+  "tipo": "passo",
+  "numero": "3",
+  "titolo": "A chi posso\nchiedere?",
+  "testo": "A chi c'è già passato.\nAl pediatra, se riguarda la salute.\nA chi ti conosce bene.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-09-5.jpg",
+  "tipo": "chiusura",
+  "titolo": "Scegliere con calma\nnon è perdere tempo.",
+  "testo": "È darti il tempo\ndi scegliere davvero.",
+  "sfondo": "#FBF6F4"
+ }
+]

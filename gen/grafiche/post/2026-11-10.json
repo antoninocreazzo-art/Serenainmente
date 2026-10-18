@@ -1,0 +1,17 @@
+[
+ {
+  "file": "2026-11-10-1.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "freccia": true,
+  "frase": "C'è una cosa\nche nessuno dice\nalle mamme…"
+ },
+ {
+  "file": "2026-11-10-2.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Che anche nei giorni\nin cui ti sembra\ndi sbagliare tutto,\nper qualcuno sei\nil posto più sicuro\ndel mondo."
+ }
+]
