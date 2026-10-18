@@ -1,613 +1,620 @@
 {
-  "fonti": [
-    {
-      "id": "SB-01",
-      "ente": "Organizzazione Mondiale della Sanità (OMS)",
-      "anno": 2019,
-      "titolo": "To grow up healthy, children need to sit less and play more",
-      "tipo": "Linea guida",
-      "url": "https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more"
-    },
-    {
-      "id": "OR-04",
-      "ente": "American Academy of Pediatrics – HealthyChildren.org",
-      "anno": 2026,
-      "titolo": "Healthy Sleep Habits: How Many Hours Does Your Child Need?",
-      "tipo": "Raccomandazione",
-      "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/Healthy-Sleep-Habits-How-Many-Hours-Does-Your-Child-Need.aspx"
-    },
-    {
-      "id": "OR-02",
-      "ente": "Istituto Superiore di Sanità – EpiCentro",
-      "anno": 2023,
-      "titolo": "Piano nazionale di prevenzione vaccinale (PNPV) 2023-2025",
-      "tipo": "Documento istituzionale",
-      "url": "https://www.epicentro.iss.it/vaccini/piano-nazionale-vaccini-2023-2025"
-    },
-    {
-      "id": "TI-01",
-      "ente": "Nutrients – Snuggs S., Harvey K.",
-      "anno": 2023,
-      "titolo": "Family Mealtimes: A Systematic Umbrella Review of Characteristics, Correlates, Outcomes and Interventions",
-      "tipo": "Revisione sistematica",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10346164/"
-    },
-    {
-      "id": "OR-05",
-      "ente": "Ministero della Salute – Portale nazionale del Fascicolo Sanitario Elettronico",
-      "anno": 2026,
-      "titolo": "Fascicolo Sanitario Elettronico: cos'è, come accedere, cosa contiene",
-      "tipo": "Documento istituzionale",
-      "url": "https://www.fascicolosanitario.gov.it/"
-    },
-    {
-      "id": "OR-06",
-      "ente": "Cittadinanzattiva",
-      "anno": 2020,
-      "titolo": "Liste d'attesa: guida per i cittadini (classi di priorità, tempi massimi, cosa fare)",
-      "tipo": "Guida per i cittadini",
-      "url": "https://www.cittadinanzattiva.it/files/primo_piano/scuola/Liste-Attesa-GUIDA-per-cittadini-Poster.pdf"
-    },
-    {
-      "id": "OR-07",
-      "ente": "Quotidiano Sanità",
-      "anno": 2026,
-      "titolo": "Liste d'attesa, il nuovo Piano nazionale 2026-2028: agende nel CUP, disdetta obbligatoria e percorsi di tutela",
-      "tipo": "Articolo di stampa specializzata",
-      "url": "https://www.quotidianosanita.it/governo-e-parlamento/liste-d-attesa-il-nuovo-piano-nazionale-2026-2028-all-ultimo-miglio-tutte-le-agende-nel-cup-disdetta-obbligatoria-e-percorsi-di-tutela-per-i-pazienti/"
-    },
-    {
-      "id": "OR-08",
-      "ente": "ATS Brescia",
-      "anno": 2025,
-      "titolo": "Guida pratica alle prestazioni specialistiche: priorità, disdetta, mancata presentazione (D.L. 73/2024, L. 107/2024)",
-      "tipo": "Documento istituzionale",
-      "url": "https://www.ats-brescia.it/system/files/pagina_standard/files/694/2143/Guida%20pratica.pdf"
-    },
-    {
-      "id": "OR-09",
-      "ente": "Regione Toscana",
-      "anno": 2026,
-      "titolo": "Prenotare visite ed esami: canali, disdetta, mancata presentazione",
-      "tipo": "Documento istituzionale",
-      "url": "https://www.regione.toscana.it/-/prenotare-visite-ed-esami"
-    },
-    {
-      "id": "OR-10",
-      "ente": "Altroconsumo",
-      "anno": 2026,
-      "titolo": "Medico di base: scelta, cambio, compiti e doveri",
-      "tipo": "Guida per i cittadini",
-      "url": "https://www.altroconsumo.it/salute/diritti-in-salute/speciali/medico-di-base"
-    },
-    {
-      "id": "OR-11",
-      "ente": "Money.it",
-      "anno": 2026,
-      "titolo": "Si può avere il medico di base in un altro Comune? Residenza, domicilio e assistenza temporanea",
-      "tipo": "Articolo divulgativo",
-      "url": "https://www.money.it/avere-medico-base-altro-comune"
-    }
-  ],
-  "post": [
-    {
-      "slug": "cartellina-di-famiglia",
-      "data": "2026-10-19",
-      "controllo": "2026-10-13",
-      "titolo": "Una cartellina, meno cose da cercare",
-      "guida": "cartellina-di-famiglia",
-      "affermazioni": [
-        "In Italia esiste un Calendario nazionale vaccinale che indica quali vaccinazioni sono offerte attivamente e gratuitamente per ogni fascia d'età. L'offerta concreta può variare per regione: il riferimento è il pediatra o la ASL."
-      ],
-      "fonti": [
-        "OR-02"
-      ]
-    },
-    {
-      "slug": "la-sera-che-non-finisce-mai",
-      "data": "2026-10-20",
-      "controllo": "2026-10-13",
-      "titolo": "La sera che non finisce mai: 4 mosse",
-      "guida": "routine-della-nanna",
-      "affermazioni": [
-        "L'American Academy of Pediatrics ricorda che i bambini traggono beneficio da una routine regolare della nanna e consiglia di spegnere gli schermi almeno un'ora prima di dormire."
-      ],
-      "fonti": [
-        "OR-04"
-      ]
-    },
-    {
-      "slug": "non-serve-una-cena-perfetta",
-      "data": "2026-10-21",
-      "controllo": "2026-10-13",
-      "titolo": "Non serve una cena perfetta",
-      "affermazioni": [
-        "Una revisione di revisioni sistematiche ha rilevato che mangiare più spesso in famiglia è associato, in bambini e ragazzi, a una dieta di migliore qualità. È un'associazione, non un rapporto di causa ed effetto."
-      ],
-      "fonti": [
-        "TI-01"
-      ]
-    },
-    {
-      "slug": "il-sonno-dei-piu-piccoli",
-      "data": "2026-10-23",
-      "controllo": "2026-10-13",
-      "titolo": "Il sonno dei più piccoli: cosa indica l'OMS",
-      "guida": "routine-della-nanna",
-      "affermazioni": [
-        "L'OMS raccomanda 11-14 ore di sonno, sonnellini compresi, tra 1 e 2 anni e 10-13 ore tra 3 e 4 anni, con orari regolari. Sono indicazioni per la popolazione, non per il singolo bambino.",
-        "Una routine regolare della nanna e gli schermi spenti almeno un'ora prima di dormire aiutano i bambini (American Academy of Pediatrics)."
-      ],
-      "fonti": [
-        "SB-01",
-        "OR-04"
-      ]
-    },
-    {
-      "slug": "vaccini-e-scadenze",
-      "data": "2026-10-30",
-      "controllo": "2026-10-16",
-      "titolo": "Vaccini e scadenze, senza doverle ricordare",
-      "guida": "cartellina-di-famiglia",
-      "affermazioni": [
-        "In Italia esiste un Calendario nazionale vaccinale che indica le vaccinazioni offerte attivamente e gratuitamente per ogni fascia d'età. Cosa vale per il singolo bambino e nella sua regione lo indicano il pediatra o la ASL."
-      ],
-      "fonti": [
-        "OR-02"
-      ]
-    }
-  ],
-  "guide": [
-    {
-      "slug": "cartellina-di-famiglia",
-      "categoria": "Organizzarsi",
-      "data": "2026-10-16",
-      "titolo": "La cartellina di famiglia: cinque documenti in un posto solo",
-      "sommario": "Dieci minuti oggi per non cercare più il libretto delle vaccinazioni nel momento sbagliato.",
-      "tempo": "10 minuti",
-      "serve": "Una cartellina, un foglio, una penna",
-      "perche": [
-        "Quando serve un documento, di solito serve subito: dal pediatra, al pronto soccorso, all'iscrizione al nido. Se ogni documento sta in un posto diverso, la ricerca diventa ansia.",
-        "Un posto solo, che tutti in casa conoscono, toglie questo peso. E fa sì che non debba ricordare tutto una persona sola."
-      ],
-      "passi": [
-        [
-          "Tessere sanitarie",
-          "Una copia, o l'originale se non lo usate spesso, per ogni componente della famiglia."
-        ],
-        [
-          "Vaccinazioni",
-          "Il libretto o il certificato vaccinale dei bambini. In Italia il Calendario nazionale vaccinale indica le vaccinazioni offerte per età: per i dettagli della tua regione, il riferimento è il pediatra o la ASL."
-        ],
-        [
-          "Referti recenti",
-          "Gli ultimi referti e le eventuali lettere di dimissione, dal più recente al più vecchio."
-        ],
-        [
-          "Un foglio di contatti",
-          "Pediatra, medico di famiglia, guardia medica; allergie note e terapie in corso, scritte a mano in modo chiaro."
-        ],
-        [
-          "Dillo a tutti",
-          "Scegli un posto fisso e dillo a chi vive con te e a chi ti aiuta con i bambini. La cartellina funziona solo se la trovano anche gli altri."
-        ]
-      ],
-      "errori": [
-        "Volerla perfetta subito: meglio incompleta oggi che perfetta mai.",
-        "Metterci tutto: se diventa un archivio, smette di essere veloce.",
-        "Tenerla in un posto che conosci solo tu."
-      ],
-      "checklist": [
-        "Tessere sanitarie di tutti",
-        "Libretto o certificato vaccinale",
-        "Ultimi referti",
-        "Foglio con contatti, allergie e terapie",
-        "Tutti in casa sanno dov'è"
-      ],
-      "fonti": [
-        "OR-02"
-      ],
-      "avvertenza": "Consigli organizzativi generali. Per vaccinazioni, terapie e documenti sanitari specifici il riferimento resta il pediatra, il medico o la ASL."
-    },
-    {
-      "slug": "routine-della-nanna",
-      "categoria": "Stare bene",
-      "data": "2026-10-16",
-      "titolo": "La sera che non finisce mai: una routine della nanna in quattro mosse",
-      "sommario": "Non una bacchetta magica: un metodo semplice, in linea con quello che indicano i pediatri.",
-      "tempo": "Ogni sera, 20-30 minuti",
-      "serve": "Gli stessi gesti, nello stesso ordine",
-      "perche": [
-        "L'American Academy of Pediatrics ricorda che i bambini traggono beneficio da una routine regolare della nanna. La regolarità aiuta il corpo e la testa a capire che la giornata sta finendo.",
-        "Per i più piccoli l'OMS indica 11-14 ore di sonno tra 1 e 2 anni e 10-13 ore tra 3 e 4 anni, sonnellini compresi, con orari regolari. Sono indicazioni per tutta la popolazione: ogni bambino ha i suoi ritmi."
-      ],
-      "passi": [
-        [
-          "Stesso orario",
-          "Ogni sera alla stessa ora, anche se non si addormenta subito: conta la regolarità, non la perfezione."
-        ],
-        [
-          "Gli stessi tre gesti",
-          "Per esempio bagnetto, pigiama, una storia. Sempre nello stesso ordine, così diventano un segnale."
-        ],
-        [
-          "Schermi spenti un'ora prima",
-          "È una delle indicazioni dell'American Academy of Pediatrics. Vale per tutti in casa, se riuscite."
-        ],
-        [
-          "Se non funziona, non è colpa tua",
-          "Ogni bambino è diverso. Se il sonno ti preoccupa, parlane con il pediatra: conosce la sua storia."
-        ]
-      ],
-      "errori": [
-        "Cambiare metodo ogni sera.",
-        "Trasformare le ore indicate in un esame da superare.",
-        "Pensare di dover fare tutto da soli: la routine può farla chiunque in famiglia."
-      ],
-      "checklist": [
-        "Orario della nanna deciso",
-        "Tre gesti scelti, sempre nello stesso ordine",
-        "Schermi spenti un'ora prima"
-      ],
-      "fonti": [
-        "OR-04",
-        "SB-01"
-      ],
-      "avvertenza": "Informazioni generali, non sostituiscono il parere del pediatra o del medico."
-    },
-    {
-      "slug": "domande-per-il-pediatra",
-      "categoria": "Organizzarsi",
-      "data": "2026-10-16",
-      "titolo": "Prima della visita dal pediatra: le domande da preparare",
-      "sommario": "Dieci minuti prima della visita per uscire dallo studio con le risposte che cercavi.",
-      "tempo": "10 minuti prima, 2 minuti dopo",
-      "serve": "Il telefono o un foglio",
-      "perche": [
-        "Durante una visita si è spesso di corsa, il bambino è stanco e le domande più importanti tornano in mente solo in macchina, al ritorno.",
-        "Prepararle prima non significa mettere in discussione il medico: lo aiuta a capire cosa ti preoccupa e ti fa uscire più tranquillo."
-      ],
-      "passi": [
-        [
-          "Scrivi le domande",
-          "Al massimo tre o quattro, in ordine di importanza. La più importante va per prima."
-        ],
-        [
-          "Annota cosa hai notato",
-          "Da quando, quante volte, cosa è cambiato. Con parole tue: bastano poche righe."
-        ],
-        [
-          "Porta la cartellina",
-          "Libretto vaccinale e ultimi referti a portata di mano."
-        ],
-        [
-          "Durante la visita, scrivi",
-          "Annota le risposte. Se qualcosa non è chiaro, chiedi di ripeterlo con parole semplici: è normale."
-        ],
-        [
-          "Prima di uscire, riassumi",
-          "Una frase: «Quindi facciamo così, e ci risentiamo se…». Così sai cosa fare e quando richiamare."
-        ]
-      ],
-      "errori": [
-        "Fidarsi della memoria.",
-        "Tenere per ultima la domanda che preoccupa di più.",
-        "Uscire senza sapere quando ricontrollare."
-      ],
-      "checklist": [
-        "Domande scritte, la più importante per prima",
-        "Poche righe su cosa hai notato",
-        "Cartellina con libretto e referti",
-        "Risposte annotate",
-        "So cosa fare e quando richiamare"
-      ],
-      "fonti": [],
-      "avvertenza": "Consigli organizzativi generali per prepararsi a una visita. Non sostituiscono le indicazioni del pediatra o del medico."
-    },
-    {
-      "slug": "documenti-sanitari-dove-trovarli",
-      "categoria": "Organizzarsi",
-      "data": "2026-10-17",
-      "titolo": "Referti, vaccini, visite, gruppo sanguigno: dove trovare i documenti sanitari di famiglia",
-      "sommario": "Quasi tutto è già online nel Fascicolo Sanitario Elettronico, anche per i figli. Ecco dove guardare, cosa non c'è e come averlo.",
-      "tempo": "15 minuti la prima volta",
-      "serve": "SPID o carta d'identità elettronica (CIE), il telefono",
-      "perche": [
-        "Il referto di sei mesi fa, la data del richiamo, l'ultima visita: ogni volta si ricomincia a cercare tra mail, foto e cassetti. Nel frattempo quasi tutto è già raccolto in un posto solo, il Fascicolo Sanitario Elettronico, e nessuno ce l'ha detto.",
-        "Sapere dove sta ogni cosa toglie un'ansia e fa risparmiare tempo dal pediatra, al pronto soccorso e all'iscrizione a scuola. E permette che non debba ricordare tutto una persona sola."
-      ],
-      "passi": [
-        [
-          "Il Fascicolo Sanitario Elettronico",
-          "Vai su fascicolosanitario.gov.it, scegli la tua Regione e accedi con SPID o CIE. Dentro trovi referti, verbali di pronto soccorso, lettere di dimissione, prescrizioni di farmaci e di visite, il certificato vaccinale. La prima volta controlla la sezione «Gestione consensi»: se non hai dato il consenso alla consultazione, i documenti ci sono ma medici e pediatra non li vedono."
-        ],
-        [
-          "Il fascicolo dei tuoi figli",
-          "Si apre con la tua identità digitale, fino ai loro 18 anni. Serve però che l'azienda sanitaria abbia registrato il tuo ruolo di genitore: in molte Regioni basta un modulo con la copia della carta d'identità, da consegnare all'ASL o da inviare online. Se nel tuo fascicolo non compaiono i figli, chiedilo al tuo sportello ASL o al numero verde della tua Regione."
-        ],
-        [
-          "Le vaccinazioni",
-          "Il certificato vaccinale riepilogativo è nel fascicolo del bambino. Se manca una dose vecchia, il libretto cartaceo o il centro vaccinale dell'ASL hanno il registro completo: chiedi una copia e mettila nella cartellina. Serve per nido, scuola e campi estivi."
-        ],
-        [
-          "Le visite programmate",
-          "Le prenotazioni fatte con il CUP compaiono nel fascicolo o nell'app della tua Regione, con data, ora e sede; in alcune Regioni arrivano anche i promemoria sull'app IO. Appena prenoti, segna comunque la data sul calendario di casa: il promemoria digitale lo vede una persona, il calendario lo vedono tutti."
-        ],
-        [
-          "Il gruppo sanguigno",
-          "Non è scritto sulla tessera sanitaria né sulla carta d'identità. Può essere nei documenti del ricovero alla nascita, se è stato determinato (non succede sempre), o in analisi del sangue già fatte: cercalo nel fascicolo. Se non c'è, è un esame semplice che il pediatra o il medico può prescrivere. Non è un'urgenza: in ospedale, prima di una trasfusione, il gruppo viene sempre verificato con un esame."
-        ],
-        [
-          "Mettilo dove lo trovano tutti",
-          "Scrivi nella cartellina di famiglia (o nel gestionale) dove sta ogni cosa: «referti: fascicolo», «libretto vaccinale: primo scomparto», «gruppo sanguigno: foglio nella cartellina». Così la prossima volta non cerchi: apri e trovi."
-        ]
-      ],
-      "errori": [
-        "Dare per scontato che il pediatra veda il fascicolo: senza il consenso alla consultazione, non lo vede.",
-        "Pensare che il fascicolo del bambino si apra da solo con il tuo SPID: va attivato il ruolo di genitore.",
-        "Cercare il gruppo sanguigno sulla tessera sanitaria.",
-        "Fidarsi solo del promemoria sul telefono di una persona."
-      ],
-      "checklist": [
-        "Ho SPID o CIE e sono entrato nel mio fascicolo",
-        "Ho dato il consenso alla consultazione",
-        "Nel mio fascicolo vedo i miei figli (o ho chiesto l'attivazione all'ASL)",
-        "Ho scaricato il certificato vaccinale di ogni figlio",
-        "Le prossime visite sono sul calendario di casa",
-        "So dove sta scritto il gruppo sanguigno, o ho chiesto l'esame"
-      ],
-      "fonti": [
-        "OR-05",
-        "OR-02"
-      ],
-      "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Le modalità di attivazione cambiano da Regione a Regione: il riferimento è la tua ASL. Per la salute dei tuoi bambini il riferimento resta il pediatra."
-    },
-    {
-      "slug": "visita-specialistica-come-funziona",
-      "categoria": "Organizzarsi",
-      "data": "2026-10-17",
-      "titolo": "Allergologo, gastroenterologo, diabetologo: come funziona una visita specialistica per un bambino",
-      "sommario": "Chi la prescrive, dove si prenota, cosa si paga, cosa fare se l'attesa è troppo lunga. Con tre esempi: allergie, celiachia, diabete.",
-      "tempo": "10 minuti per capire il percorso",
-      "serve": "La ricetta del pediatra, la tessera sanitaria",
-      "perche": [
-        "Il pediatra dice «facciamo vedere il bambino a uno specialista» e da lì iniziano le domande: serve la ricetta? Dove prenoto? Quanto costa? Quanto aspetto? Nessuno lo spiega, e ogni volta si va a tentativi.",
-        "Il percorso è lo stesso per quasi tutte le visite. Conoscerlo una volta serve per tutte le altre, e toglie l'ansia di «star sbagliando qualcosa»."
-      ],
-      "passi": [
-        [
-          "Parte tutto dal pediatra",
-          "Con il Servizio Sanitario, la visita specialistica si fa con la ricetta (impegnativa) del pediatra o del medico di famiglia. La ricetta è elettronica: la trovi nel Fascicolo Sanitario e basta la tessera sanitaria per prenotare. Senza ricetta puoi andare solo privatamente, pagando per intero."
-        ],
-        [
-          "Guarda la lettera sulla ricetta",
-          "Il medico indica una priorità: U (entro 72 ore), B (entro 10 giorni), D (entro 30 giorni per le visite, 60 per gli esami), P (entro 120 giorni). Se non c'è, vale P. È il tempo massimo entro cui il Servizio Sanitario dovrebbe darti l'appuntamento, per una prima visita."
-        ],
-        [
-          "Prenota con il CUP",
-          "Telefono, sportello, sito o app della tua Regione, o in farmacia. Il CUP propone la prima data utile nel territorio della tua ASL: può non essere la struttura più vicina. Se rifiuti la prima data per sceglierne un'altra, esci dalla garanzia dei tempi."
-        ],
-        [
-          "Se l'attesa supera il tempo della ricetta",
-          "Non è normale e non devi arrangiarti da solo: chiedi all'ASL il «percorso di tutela». Le Regioni devono trovare un'alternativa senza costi oltre il ticket, in molti casi anche in intramoenia o in una struttura privata convenzionata. Il contatto è l'URP della tua ASL; segnati nome e data di chi ti risponde."
-        ],
-        [
-          "Cosa si paga",
-          "Per una visita specialistica si paga il ticket, con importi che cambiano da Regione a Regione. Esistono esenzioni per età e reddito e per patologia: le chiede il medico, le rilascia la ASL, e compaiono sulla ricetta e nel Fascicolo. Se poi non puoi andare, disdici almeno due giorni lavorativi prima: chi non si presenta senza disdire paga comunque."
-        ],
-        [
-          "Tre esempi di percorso",
-          "Allergie: il pediatra valuta e, se serve, prescrive la visita allergologica pediatrica e gli eventuali test. Celiachia: il pediatra prescrive gli esami del sangue e, in base al risultato, la visita gastroenterologica pediatrica. Diabete: la diagnosi e il seguito avvengono in un centro di diabetologia pediatrica, su indicazione del pediatra o dell'ospedale; per le malattie croniche riconosciute il medico attiva l'esenzione per patologia. In tutti e tre i casi il primo passo è lo stesso: il pediatra."
-        ]
-      ],
-      "errori": [
-        "Prenotare privatamente per paura dell'attesa, prima di aver chiesto all'ASL il percorso di tutela.",
-        "Rifiutare la prima data per averne una più comoda e scoprire che i tempi non sono più garantiti.",
-        "Non disdire: si paga lo stesso, e si toglie il posto a un altro bambino.",
-        "Andare alla visita senza i referti precedenti e senza le domande scritte."
-      ],
-      "checklist": [
-        "Ho la ricetta del pediatra, con la lettera di priorità",
-        "Ho prenotato al CUP e segnato la data sul calendario di casa",
-        "Se la data supera il tempo della ricetta, ho chiamato l'URP della ASL",
-        "So se abbiamo un'esenzione e se è sulla ricetta",
-        "Ho preparato le domande e i referti precedenti (vedi la guida sulla visita)",
-        "So come disdire, se serve"
-      ],
-      "fonti": [
-        "OR-06",
-        "OR-07",
-        "OR-05"
-      ],
-      "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026: le regole su ticket, esenzioni e percorsi di tutela cambiano da Regione a Regione e il nuovo Piano nazionale delle liste d'attesa è in approvazione. Il riferimento è la tua ASL. Per quando serve una visita e quale, il riferimento è il pediatra."
-    },
-    {
-      "slug": "spostare-disdire-pagare-visita",
-      "categoria": "Organizzarsi",
-      "data": "2026-10-17",
-      "titolo": "Spostare una visita, disdire in tempo, pagare il ticket: le regole che nessuno ti spiega",
-      "sommario": "Cosa succede se non vai, entro quando avvisare, come e dove si paga, quanto dura la ricetta. E, se scegli il privato, dove prenotare e quanto aspettarsi di spendere.",
-      "tempo": "5 minuti",
-      "serve": "La ricetta, la tessera sanitaria, il numero del CUP della tua Regione",
-      "perche": [
-        "La visita è tra tre settimane, proprio il giorno della recita. Spostarla sembra una cosa da nulla, e invece ci sono regole precise: se non avvisi in tempo paghi comunque, anche se sei esente. E se rifiuti la data per una più comoda, perdi la priorità.",
-        "Conoscere le regole prima evita multe, attese raddoppiate e giri a vuoto. Sono le stesse in tutta Italia nella sostanza, con dettagli che cambiano da Regione a Regione."
-      ],
-      "passi": [
-        [
-          "Spostare: in pratica si disdice e si riprenota",
-          "Quasi nessun CUP «sposta» una visita: si cancella quella prenotata e se ne prende un'altra, con la stessa ricetta, dagli stessi canali (telefono, sito o app della Regione, sportello, farmacia). La nuova data è la prima disponibile in quel momento, non quella che avevi: se la ricetta ha una priorità e rifiuti la data proposta per motivi personali, i tempi massimi non sono più garantiti."
-        ],
-        [
-          "Disdire: almeno due giorni lavorativi prima",
-          "È la regola nazionale (in alcune Regioni 48 ore). Si disdice dagli stessi canali della prenotazione; molti CUP ti mandano un promemoria e ti chiedono conferma qualche giorno prima. Segna il numero di prenotazione: serve per cancellare in un minuto."
-        ],
-        [
-          "Se non vai senza disdire, paghi",
-          "Per legge (D.L. 73/2024, convertito nella legge 107/2024) chi non si presenta senza aver disdetto paga il ticket della prestazione non fatta, anche se è esente. Vale anche per i bambini. Fanno eccezione forza maggiore e impedimenti improvvisi, da documentare. In alcune Regioni, se poi non ritiri un referto, puoi pagare l'intero costo dell'esame."
-        ],
-        [
-          "Il ticket: quanto, come, quando",
-          "L'importo lo decide la Regione e dipende dalla prestazione; le esenzioni (età e reddito, patologia) devono risultare sulla ricetta. Si paga di norma prima della visita: allo sportello o ai totem della struttura, in farmacia, online sul portale regionale o con PagoPA (spesso anche dall'app IO). Conserva la ricevuta: serve per la detrazione fiscale e se l'esenzione non era stata registrata."
-        ],
-        [
-          "La ricetta ha una scadenza",
-          "Per le visite specialistiche la ricetta elettronica vale di norma un anno dalla data, ma alcune Regioni ed esami hanno tempi più brevi, e con le priorità B e D la prenotazione va fatta entro pochi giorni, altrimenti la classe scende. In caso di dubbio: prenota subito, anche se la data è lontana, poi semmai disdici."
-        ],
-        [
-          "Se scegli il privato: dove e quanto",
-          "Le opzioni sono tre: l'intramoenia (lo stesso medico dell'ospedale, in orario privato, prenotando allo sportello dedicato), i centri privati accreditati e gli studi privati. Per cercare e prenotare online i più usati sono MioDottore, Doctolib e CupSolidale/Cup24, che mostrano disponibilità e spesso il prezzo. Per una prima visita specialistica pediatrica privata, nelle città, l'ordine di grandezza è tra 80 e 150 euro: chiedi sempre il costo prima di prenotare, se c'è un supplemento per i test, e fatti rilasciare la fattura, detraibile. Ricorda: se vai privatamente per tua scelta, la Regione non rimborsa nulla; se invece i tempi della ricetta sono saltati, prima chiedi all'ASL il percorso di tutela."
-        ]
-      ],
-      "errori": [
-        "Non disdire «tanto è gratis»: non lo è più, anche per chi è esente.",
-        "Rifiutare la prima data per averne una più comoda e scoprire che la priorità è persa.",
-        "Lasciare scadere la ricetta aspettando il momento giusto per prenotare.",
-        "Pagare il privato senza aver chiesto il prezzo, o senza fattura."
-      ],
-      "checklist": [
-        "Ho il numero di prenotazione salvato (foto o nota)",
-        "So entro quando posso disdire senza pagare",
-        "Ho controllato che l'esenzione sia sulla ricetta",
-        "So come e dove pago il ticket, e conservo la ricevuta",
-        "La ricetta non è vicina alla scadenza",
-        "Se vado privatamente: prezzo chiesto, fattura richiesta"
-      ],
-      "fonti": [
-        "OR-08",
-        "OR-09",
-        "OR-07"
-      ],
-      "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Importi, canali di pagamento e termini di disdetta cambiano da Regione a Regione: fa fede quanto indicato dalla tua ASL al momento della prenotazione. I prezzi privati sono indicativi."
-    },
-    {
-      "slug": "pediatra-e-medico-di-base",
-      "categoria": "Organizzarsi",
-      "data": "2026-10-17",
-      "titolo": "Pediatra e medico di base: come si scelgono, come si cambiano, cosa devono fare",
-      "sommario": "Dove si sceglie, cosa fare se cambi città per un po', quando il pediatra lascia il posto al medico di famiglia, e cosa hai diritto di chiedere. Senza timidezza: è il loro lavoro.",
-      "tempo": "10 minuti per capire, 5 per fare la scelta",
-      "serve": "Tessera sanitaria, documento, SPID o CIE per farlo online",
-      "perche": [
-        "Il pediatra e il medico di famiglia sono il primo punto di riferimento della salute di casa, eppure quasi nessuno sa come si scelgono, quando si possono cambiare o cosa sono tenuti a fare. Così si resta con un medico lontano o che non ci convince, per paura di «fare un torto».",
-        "Non è un favore: è un servizio, con regole precise. Conoscerle serve a scegliere con calma, cambiare senza imbarazzo e chiedere quello che spetta. I medici lo sanno benissimo e ci sono abituati."
-      ],
-      "passi": [
-        [
-          "Chi scegliere: pediatra o medico di famiglia",
-          "Fino ai 6 anni il bambino ha il pediatra di libera scelta; dai 6 ai 14 i genitori possono scegliere se restare con il pediatra o passare al medico di famiglia; a 14 anni il passaggio è obbligatorio (fino a 16 in casi particolari). Gli adulti hanno il medico di medicina generale. Ogni medico ha un numero massimo di assistiti (per il pediatra di norma 800, per il medico di famiglia 1.500): si può scegliere solo tra chi ha posti liberi."
-        ],
-        [
-          "Dove si sceglie e si cambia",
-          "Online dal portale sanitario della tua Regione (con SPID o CIE: cerca «scelta medico» con il nome della tua Regione; in molte Regioni è dentro il Fascicolo Sanitario), allo sportello «scelta e revoca» della ASL, in alcune Regioni anche in farmacia. L'elenco dei medici con posti liberi, con indirizzo e orari, è lì. Puoi scegliere un medico di un altro Comune purché nell'ambito della tua ASL. Si cambia quando si vuole e senza spiegazioni: scegliendo il nuovo, il vecchio viene revocato da solo."
-        ],
-        [
-          "Se cambi città per un periodo",
-          "Se ti sposti per lavoro, studio o salute per più di tre mesi, senza cambiare residenza, puoi chiedere alla ASL del posto dove vivi un medico o un pediatra temporaneo: vale di norma un anno ed è rinnovabile. Servono documento, tessera sanitaria, un'autocertificazione del domicilio e la prova del motivo (contratto, iscrizione, certificato). Il medico «di casa» resta sospeso e torna attivo al rientro. Se invece il trasferimento è definitivo, cambi la residenza e scegli un nuovo medico nella nuova ASL."
-        ],
-        [
-          "Cosa il medico è tenuto a fare",
-          "Tenere l'ambulatorio aperto cinque giorni a settimana, con un orario minimo che cresce con gli assistiti (da 5 a 18 ore settimanali) ed esposto in studio; visitare a domicilio chi non può muoversi, in giornata se la richiesta arriva entro le 10; prescrivere farmaci, esami e visite che ritiene necessari; rilasciare gratis i certificati di malattia, di infortunio e di riammissione a scuola. Quando è in ferie o malato deve indicare un sostituto dal primo giorno."
-        ],
-        [
-          "Cosa invece non puoi pretendere",
-          "Che prescriva un esame o un farmaco solo perché lo chiedi tu o l'ha consigliato uno specialista privato: la decisione è sua, e gli specialisti pubblici prescrivono direttamente. Che venga a casa se puoi andare in studio. Certificati per sport non scolastico, assicurazioni o usi privati sono a pagamento. E il medico può rifiutare un nuovo assistito solo con un motivo comunicato alla ASL."
-        ],
-        [
-          "Chiedi senza timore",
-          "Vuoi un medico più vicino, con orari compatibili con il lavoro, che risponda al telefono in una fascia precisa? Chiedilo prima di sceglierlo: gli orari e il modo di contatto sono in elenco e in studio. Vuoi cambiare perché non ti trovi? Si fa in cinque minuti e il medico non riceve spiegazioni. Vuoi capire una ricetta o un referto? Fissa un appuntamento e porta le domande scritte (vedi la guida sulla visita). Sono professionisti, e un rapporto chiaro conviene anche a loro."
-        ]
-      ],
-      "errori": [
-        "Tenere un medico scomodo per anni perché «cambiare è brutto».",
-        "Non chiedere il medico temporaneo quando si vive altrove per mesi: le ricette e i certificati diventano un problema.",
-        "Aspettare i 14 anni senza aver pensato a quale medico di famiglia scegliere.",
-        "Pretendere la visita a domicilio o una prescrizione «perché l'ha detto il privato»."
-      ],
-      "checklist": [
-        "So chi è il pediatra o il medico di ognuno in casa, con orari e telefono",
-        "Ho controllato nell'elenco regionale se c'è un medico più comodo con posti liberi",
-        "Se viviamo altrove per più di tre mesi, abbiamo chiesto il medico temporaneo",
-        "Per i bambini tra 6 e 14 anni: abbiamo deciso se restare con il pediatra",
-        "Ho segnato chi sostituisce il medico quando è assente",
-        "I numeri sono nei Contatti del gestionale"
-      ],
-      "fonti": [
-        "OR-10",
-        "OR-11",
-        "OR-05"
-      ],
-      "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Orari minimi, massimali e procedure derivano dagli accordi nazionali e possono variare per Regione e ASL: fa fede la tua ASL. Per la salute il riferimento resta il medico."
-    }
-  ],
-  "chi": {
-    "sommario": "Serena è un progetto editoriale per chi si prende cura della famiglia: guide pratiche, dati con le loro fonti e parole in cui ritrovarsi.",
-    "sezioni": [
-      [
-        "Cosa facciamo",
-        [
-          "Ogni giorno su Instagram pubblichiamo una cosa utile: un metodo pratico, un dato che toglie un'ansia, una frase da tenere o da mandare a qualcuno. Qui sul sito trovi le guide complete e le fonti di ogni post."
-        ]
-      ],
-      [
-        "Come lavoriamo",
-        [
-          "I testi nascono con l'aiuto dell'intelligenza artificiale. Ogni post e ogni pagina vengono letti, scelti e approvati da una persona prima di uscire.",
-          "Ogni dato viene da una fonte che puoi aprire: organizzazioni come l'OMS, l'Istituto Superiore di Sanità, società scientifiche, riviste con revisione. Una fonte entra nei nostri contenuti solo dopo essere stata controllata, e riportiamo i suoi limiti: età, anno del dato, differenza tra associazione e causa.",
-          "Se trovi un errore o un collegamento che non funziona, scrivici in privato su Instagram: correggiamo e indichiamo la data dell'aggiornamento."
-        ]
-      ],
-      [
-        "Cosa non siamo",
-        [
-          "Serena non è una persona e non è un servizio medico. Non diamo diagnosi né indicazioni sulla salute del tuo bambino: riportiamo cosa dicono le linee guida, poi decidi tu, con chi lo conosce."
-        ]
-      ],
-      [
-        "Privacy",
-        [
-          "Questo sito non usa cookie, non ha sistemi di profilazione e non raccoglie dati personali. Per capire quali pagine sono utili contiamo le visite in forma anonima con Umami, uno strumento che non usa cookie, non identifica le persone e conserva i dati su server in Europa: vediamo quante persone leggono una pagina, da quale canale arrivano e quanti scaricano il gestionale, mai chi sono. Per questo non serve un banner e non chiediamo consensi.",
-          "Il gestionale di famiglia e le checklist sono file che restano sul tuo dispositivo o nel tuo Drive: nessun dato che inserisci arriva a noi."
-        ]
-      ]
-    ]
+ "fonti": [
+  {
+   "id": "SB-01",
+   "ente": "Organizzazione Mondiale della Sanità (OMS)",
+   "anno": 2019,
+   "titolo": "To grow up healthy, children need to sit less and play more",
+   "tipo": "Linea guida",
+   "url": "https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more"
   },
-  "momenti": [
-    {
-      "quando": "Hai un bambino piccolo e la sera non finisce mai",
-      "cosa": "Una routine della nanna in quattro mosse",
-      "guida": "routine-della-nanna"
-    },
-    {
-      "quando": "Devi scegliere o cambiare pediatra, o vivi altrove per un po'",
-      "cosa": "Pediatra e medico di base: come si scelgono e cosa devono fare",
-      "guida": "pediatra-e-medico-di-base"
-    },
-    {
-      "quando": "Non trovi un referto, o non sai dov'è il gruppo sanguigno",
-      "cosa": "I documenti sanitari di famiglia: dove sono, anche online",
-      "guida": "documenti-sanitari-dove-trovarli"
-    },
-    {
-      "quando": "Il pediatra ti ha detto «serve uno specialista»",
-      "cosa": "Ricetta, CUP, ticket, attese: come funziona una visita specialistica",
-      "guida": "visita-specialistica-come-funziona"
-    },
-    {
-      "quando": "Devi spostare una visita, o non sai come si paga il ticket",
-      "cosa": "Disdire in tempo, pagare, prenotare privatamente: le regole",
-      "guida": "spostare-disdire-pagare-visita"
-    },
-    {
-      "quando": "Hai una visita dal pediatra in arrivo",
-      "cosa": "Le domande da preparare in dieci minuti",
-      "guida": "domande-per-il-pediatra"
-    },
-    {
-      "quando": "Cerchi sempre il libretto nel momento sbagliato",
-      "cosa": "La cartellina di famiglia, cinque documenti in un posto solo",
-      "guida": "cartellina-di-famiglia"
-    }
-  ],
-  "gestionale_sheets_url": "https://docs.google.com/spreadsheets/d/1ycUnYM7JzZToqAjSoFxcxFu4OZVd0p3kcyf_zxlcDzM/copy"
+  {
+   "id": "OR-04",
+   "ente": "American Academy of Pediatrics – HealthyChildren.org",
+   "anno": 2026,
+   "titolo": "Healthy Sleep Habits: How Many Hours Does Your Child Need?",
+   "tipo": "Raccomandazione",
+   "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/Healthy-Sleep-Habits-How-Many-Hours-Does-Your-Child-Need.aspx"
+  },
+  {
+   "id": "OR-02",
+   "ente": "Istituto Superiore di Sanità – EpiCentro",
+   "anno": 2023,
+   "titolo": "Piano nazionale di prevenzione vaccinale (PNPV) 2023-2025",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.epicentro.iss.it/vaccini/piano-nazionale-vaccini-2023-2025"
+  },
+  {
+   "id": "TI-01",
+   "ente": "Nutrients – Snuggs S., Harvey K.",
+   "anno": 2023,
+   "titolo": "Family Mealtimes: A Systematic Umbrella Review of Characteristics, Correlates, Outcomes and Interventions",
+   "tipo": "Revisione sistematica",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10346164/"
+  },
+  {
+   "id": "OR-05",
+   "ente": "Ministero della Salute – Portale nazionale del Fascicolo Sanitario Elettronico",
+   "anno": 2026,
+   "titolo": "Fascicolo Sanitario Elettronico: cos'è, come accedere, cosa contiene",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.fascicolosanitario.gov.it/"
+  },
+  {
+   "id": "OR-06",
+   "ente": "Cittadinanzattiva",
+   "anno": 2020,
+   "titolo": "Liste d'attesa: guida per i cittadini (classi di priorità, tempi massimi, cosa fare)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.cittadinanzattiva.it/files/primo_piano/scuola/Liste-Attesa-GUIDA-per-cittadini-Poster.pdf"
+  },
+  {
+   "id": "OR-07",
+   "ente": "Quotidiano Sanità",
+   "anno": 2026,
+   "titolo": "Liste d'attesa, il nuovo Piano nazionale 2026-2028: agende nel CUP, disdetta obbligatoria e percorsi di tutela",
+   "tipo": "Articolo di stampa specializzata",
+   "url": "https://www.quotidianosanita.it/governo-e-parlamento/liste-d-attesa-il-nuovo-piano-nazionale-2026-2028-all-ultimo-miglio-tutte-le-agende-nel-cup-disdetta-obbligatoria-e-percorsi-di-tutela-per-i-pazienti/"
+  },
+  {
+   "id": "OR-08",
+   "ente": "ATS Brescia",
+   "anno": 2025,
+   "titolo": "Guida pratica alle prestazioni specialistiche: priorità, disdetta, mancata presentazione (D.L. 73/2024, L. 107/2024)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.ats-brescia.it/system/files/pagina_standard/files/694/2143/Guida%20pratica.pdf"
+  },
+  {
+   "id": "OR-09",
+   "ente": "Regione Toscana",
+   "anno": 2026,
+   "titolo": "Prenotare visite ed esami: canali, disdetta, mancata presentazione",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.regione.toscana.it/-/prenotare-visite-ed-esami"
+  },
+  {
+   "id": "OR-10",
+   "ente": "Altroconsumo",
+   "anno": 2026,
+   "titolo": "Medico di base: scelta, cambio, compiti e doveri",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.altroconsumo.it/salute/diritti-in-salute/speciali/medico-di-base"
+  },
+  {
+   "id": "OR-11",
+   "ente": "Money.it",
+   "anno": 2026,
+   "titolo": "Si può avere il medico di base in un altro Comune? Residenza, domicilio e assistenza temporanea",
+   "tipo": "Articolo divulgativo",
+   "url": "https://www.money.it/avere-medico-base-altro-comune"
+  }
+ ],
+ "post": [
+  {
+   "slug": "cartellina-di-famiglia",
+   "data": "2026-10-19",
+   "controllo": "2026-10-13",
+   "titolo": "Una cartellina, meno cose da cercare",
+   "guida": "cartellina-di-famiglia",
+   "affermazioni": [
+    "In Italia esiste un Calendario nazionale vaccinale che indica quali vaccinazioni sono offerte attivamente e gratuitamente per ogni fascia d'età. L'offerta concreta può variare per regione: il riferimento è il pediatra o la ASL."
+   ],
+   "fonti": [
+    "OR-02"
+   ]
+  },
+  {
+   "slug": "la-sera-che-non-finisce-mai",
+   "data": "2026-10-20",
+   "controllo": "2026-10-13",
+   "titolo": "La sera che non finisce mai: 4 mosse",
+   "guida": "routine-della-nanna",
+   "affermazioni": [
+    "L'American Academy of Pediatrics ricorda che i bambini traggono beneficio da una routine regolare della nanna e consiglia di spegnere gli schermi almeno un'ora prima di dormire."
+   ],
+   "fonti": [
+    "OR-04"
+   ]
+  },
+  {
+   "slug": "non-serve-una-cena-perfetta",
+   "data": "2026-10-21",
+   "controllo": "2026-10-13",
+   "titolo": "Non serve una cena perfetta",
+   "affermazioni": [
+    "Una revisione di revisioni sistematiche ha rilevato che mangiare più spesso in famiglia è associato, in bambini e ragazzi, a una dieta di migliore qualità. È un'associazione, non un rapporto di causa ed effetto."
+   ],
+   "fonti": [
+    "TI-01"
+   ]
+  },
+  {
+   "slug": "il-sonno-dei-piu-piccoli",
+   "data": "2026-10-23",
+   "controllo": "2026-10-13",
+   "titolo": "Il sonno dei più piccoli: cosa indica l'OMS",
+   "guida": "routine-della-nanna",
+   "affermazioni": [
+    "L'OMS raccomanda 11-14 ore di sonno, sonnellini compresi, tra 1 e 2 anni e 10-13 ore tra 3 e 4 anni, con orari regolari. Sono indicazioni per la popolazione, non per il singolo bambino.",
+    "Una routine regolare della nanna e gli schermi spenti almeno un'ora prima di dormire aiutano i bambini (American Academy of Pediatrics)."
+   ],
+   "fonti": [
+    "SB-01",
+    "OR-04"
+   ]
+  },
+  {
+   "slug": "vaccini-e-scadenze",
+   "data": "2026-10-30",
+   "controllo": "2026-10-16",
+   "titolo": "Vaccini e scadenze, senza doverle ricordare",
+   "guida": "cartellina-di-famiglia",
+   "affermazioni": [
+    "In Italia esiste un Calendario nazionale vaccinale che indica le vaccinazioni offerte attivamente e gratuitamente per ogni fascia d'età. Cosa vale per il singolo bambino e nella sua regione lo indicano il pediatra o la ASL."
+   ],
+   "fonti": [
+    "OR-02"
+   ]
+  }
+ ],
+ "guide": [
+  {
+   "slug": "cartellina-di-famiglia",
+   "categoria": "Organizzarsi",
+   "data": "2026-10-16",
+   "titolo": "La cartellina di famiglia: cinque documenti in un posto solo",
+   "sommario": "Dieci minuti oggi per non cercare più il libretto delle vaccinazioni nel momento sbagliato.",
+   "tempo": "10 minuti",
+   "serve": "Una cartellina, un foglio, una penna",
+   "perche": [
+    "Quando serve un documento, di solito serve subito: dal pediatra, al pronto soccorso, all'iscrizione al nido. Se ogni documento sta in un posto diverso, la ricerca diventa ansia.",
+    "Un posto solo, che tutti in casa conoscono, toglie questo peso. E fa sì che non debba ricordare tutto una persona sola."
+   ],
+   "passi": [
+    [
+     "Tessere sanitarie",
+     "Una copia, o l'originale se non lo usate spesso, per ogni componente della famiglia."
+    ],
+    [
+     "Vaccinazioni",
+     "Il libretto o il certificato vaccinale dei bambini. In Italia il Calendario nazionale vaccinale indica le vaccinazioni offerte per età: per i dettagli della tua regione, il riferimento è il pediatra o la ASL."
+    ],
+    [
+     "Referti recenti",
+     "Gli ultimi referti e le eventuali lettere di dimissione, dal più recente al più vecchio."
+    ],
+    [
+     "Un foglio di contatti",
+     "Pediatra, medico di famiglia, guardia medica; allergie note e terapie in corso, scritte a mano in modo chiaro."
+    ],
+    [
+     "Dillo a tutti",
+     "Scegli un posto fisso e dillo a chi vive con te e a chi ti aiuta con i bambini. La cartellina funziona solo se la trovano anche gli altri."
+    ]
+   ],
+   "errori": [
+    "Volerla perfetta subito: meglio incompleta oggi che perfetta mai.",
+    "Metterci tutto: se diventa un archivio, smette di essere veloce.",
+    "Tenerla in un posto che conosci solo tu."
+   ],
+   "checklist": [
+    "Tessere sanitarie di tutti",
+    "Libretto o certificato vaccinale",
+    "Ultimi referti",
+    "Foglio con contatti, allergie e terapie",
+    "Tutti in casa sanno dov'è"
+   ],
+   "fonti": [
+    "OR-02"
+   ],
+   "avvertenza": "Consigli organizzativi generali. Per vaccinazioni, terapie e documenti sanitari specifici il riferimento resta il pediatra, il medico o la ASL.",
+   "domanda": "Dove tenere i documenti"
+  },
+  {
+   "slug": "routine-della-nanna",
+   "categoria": "Stare bene",
+   "data": "2026-10-16",
+   "titolo": "La sera che non finisce mai: una routine della nanna in quattro mosse",
+   "sommario": "Non una bacchetta magica: un metodo semplice, in linea con quello che indicano i pediatri.",
+   "tempo": "Ogni sera, 20-30 minuti",
+   "serve": "Gli stessi gesti, nello stesso ordine",
+   "perche": [
+    "L'American Academy of Pediatrics ricorda che i bambini traggono beneficio da una routine regolare della nanna. La regolarità aiuta il corpo e la testa a capire che la giornata sta finendo.",
+    "Per i più piccoli l'OMS indica 11-14 ore di sonno tra 1 e 2 anni e 10-13 ore tra 3 e 4 anni, sonnellini compresi, con orari regolari. Sono indicazioni per tutta la popolazione: ogni bambino ha i suoi ritmi."
+   ],
+   "passi": [
+    [
+     "Stesso orario",
+     "Ogni sera alla stessa ora, anche se non si addormenta subito: conta la regolarità, non la perfezione."
+    ],
+    [
+     "Gli stessi tre gesti",
+     "Per esempio bagnetto, pigiama, una storia. Sempre nello stesso ordine, così diventano un segnale."
+    ],
+    [
+     "Schermi spenti un'ora prima",
+     "È una delle indicazioni dell'American Academy of Pediatrics. Vale per tutti in casa, se riuscite."
+    ],
+    [
+     "Se non funziona, non è colpa tua",
+     "Ogni bambino è diverso. Se il sonno ti preoccupa, parlane con il pediatra: conosce la sua storia."
+    ]
+   ],
+   "errori": [
+    "Cambiare metodo ogni sera.",
+    "Trasformare le ore indicate in un esame da superare.",
+    "Pensare di dover fare tutto da soli: la routine può farla chiunque in famiglia."
+   ],
+   "checklist": [
+    "Orario della nanna deciso",
+    "Tre gesti scelti, sempre nello stesso ordine",
+    "Schermi spenti un'ora prima"
+   ],
+   "fonti": [
+    "OR-04",
+    "SB-01"
+   ],
+   "avvertenza": "Informazioni generali, non sostituiscono il parere del pediatra o del medico.",
+   "domanda": "Come calmare la sera"
+  },
+  {
+   "slug": "domande-per-il-pediatra",
+   "categoria": "Organizzarsi",
+   "data": "2026-10-16",
+   "titolo": "Prima della visita dal pediatra: le domande da preparare",
+   "sommario": "Dieci minuti prima della visita per uscire dallo studio con le risposte che cercavi.",
+   "tempo": "10 minuti prima, 2 minuti dopo",
+   "serve": "Il telefono o un foglio",
+   "perche": [
+    "Durante una visita si è spesso di corsa, il bambino è stanco e le domande più importanti tornano in mente solo in macchina, al ritorno.",
+    "Prepararle prima non significa mettere in discussione il medico: lo aiuta a capire cosa ti preoccupa e ti fa uscire più tranquillo."
+   ],
+   "passi": [
+    [
+     "Scrivi le domande",
+     "Al massimo tre o quattro, in ordine di importanza. La più importante va per prima."
+    ],
+    [
+     "Annota cosa hai notato",
+     "Da quando, quante volte, cosa è cambiato. Con parole tue: bastano poche righe."
+    ],
+    [
+     "Porta la cartellina",
+     "Libretto vaccinale e ultimi referti a portata di mano."
+    ],
+    [
+     "Durante la visita, scrivi",
+     "Annota le risposte. Se qualcosa non è chiaro, chiedi di ripeterlo con parole semplici: è normale."
+    ],
+    [
+     "Prima di uscire, riassumi",
+     "Una frase: «Quindi facciamo così, e ci risentiamo se…». Così sai cosa fare e quando richiamare."
+    ]
+   ],
+   "errori": [
+    "Fidarsi della memoria.",
+    "Tenere per ultima la domanda che preoccupa di più.",
+    "Uscire senza sapere quando ricontrollare."
+   ],
+   "checklist": [
+    "Domande scritte, la più importante per prima",
+    "Poche righe su cosa hai notato",
+    "Cartellina con libretto e referti",
+    "Risposte annotate",
+    "So cosa fare e quando richiamare"
+   ],
+   "fonti": [],
+   "avvertenza": "Consigli organizzativi generali per prepararsi a una visita. Non sostituiscono le indicazioni del pediatra o del medico.",
+   "domanda": "Cosa chiedere al pediatra"
+  },
+  {
+   "slug": "documenti-sanitari-dove-trovarli",
+   "categoria": "Organizzarsi",
+   "data": "2026-10-17",
+   "titolo": "Referti, vaccini, visite, gruppo sanguigno: dove trovare i documenti sanitari di famiglia",
+   "sommario": "Quasi tutto è già online nel Fascicolo Sanitario Elettronico, anche per i figli. Ecco dove guardare, cosa non c'è e come averlo.",
+   "tempo": "15 minuti la prima volta",
+   "serve": "SPID o carta d'identità elettronica (CIE), il telefono",
+   "perche": [
+    "Il referto di sei mesi fa, la data del richiamo, l'ultima visita: ogni volta si ricomincia a cercare tra mail, foto e cassetti. Nel frattempo quasi tutto è già raccolto in un posto solo, il Fascicolo Sanitario Elettronico, e nessuno ce l'ha detto.",
+    "Sapere dove sta ogni cosa toglie un'ansia e fa risparmiare tempo dal pediatra, al pronto soccorso e all'iscrizione a scuola. E permette che non debba ricordare tutto una persona sola."
+   ],
+   "passi": [
+    [
+     "Il Fascicolo Sanitario Elettronico",
+     "Vai su fascicolosanitario.gov.it, scegli la tua Regione e accedi con SPID o CIE. Dentro trovi referti, verbali di pronto soccorso, lettere di dimissione, prescrizioni di farmaci e di visite, il certificato vaccinale. La prima volta controlla la sezione «Gestione consensi»: se non hai dato il consenso alla consultazione, i documenti ci sono ma medici e pediatra non li vedono."
+    ],
+    [
+     "Il fascicolo dei tuoi figli",
+     "Si apre con la tua identità digitale, fino ai loro 18 anni. Serve però che l'azienda sanitaria abbia registrato il tuo ruolo di genitore: in molte Regioni basta un modulo con la copia della carta d'identità, da consegnare all'ASL o da inviare online. Se nel tuo fascicolo non compaiono i figli, chiedilo al tuo sportello ASL o al numero verde della tua Regione."
+    ],
+    [
+     "Le vaccinazioni",
+     "Il certificato vaccinale riepilogativo è nel fascicolo del bambino. Se manca una dose vecchia, il libretto cartaceo o il centro vaccinale dell'ASL hanno il registro completo: chiedi una copia e mettila nella cartellina. Serve per nido, scuola e campi estivi."
+    ],
+    [
+     "Le visite programmate",
+     "Le prenotazioni fatte con il CUP compaiono nel fascicolo o nell'app della tua Regione, con data, ora e sede; in alcune Regioni arrivano anche i promemoria sull'app IO. Appena prenoti, segna comunque la data sul calendario di casa: il promemoria digitale lo vede una persona, il calendario lo vedono tutti."
+    ],
+    [
+     "Il gruppo sanguigno",
+     "Non è scritto sulla tessera sanitaria né sulla carta d'identità. Può essere nei documenti del ricovero alla nascita, se è stato determinato (non succede sempre), o in analisi del sangue già fatte: cercalo nel fascicolo. Se non c'è, è un esame semplice che il pediatra o il medico può prescrivere. Non è un'urgenza: in ospedale, prima di una trasfusione, il gruppo viene sempre verificato con un esame."
+    ],
+    [
+     "Mettilo dove lo trovano tutti",
+     "Scrivi nella cartellina di famiglia (o nel gestionale) dove sta ogni cosa: «referti: fascicolo», «libretto vaccinale: primo scomparto», «gruppo sanguigno: foglio nella cartellina». Così la prossima volta non cerchi: apri e trovi."
+    ]
+   ],
+   "errori": [
+    "Dare per scontato che il pediatra veda il fascicolo: senza il consenso alla consultazione, non lo vede.",
+    "Pensare che il fascicolo del bambino si apra da solo con il tuo SPID: va attivato il ruolo di genitore.",
+    "Cercare il gruppo sanguigno sulla tessera sanitaria.",
+    "Fidarsi solo del promemoria sul telefono di una persona."
+   ],
+   "checklist": [
+    "Ho SPID o CIE e sono entrato nel mio fascicolo",
+    "Ho dato il consenso alla consultazione",
+    "Nel mio fascicolo vedo i miei figli (o ho chiesto l'attivazione all'ASL)",
+    "Ho scaricato il certificato vaccinale di ogni figlio",
+    "Le prossime visite sono sul calendario di casa",
+    "So dove sta scritto il gruppo sanguigno, o ho chiesto l'esame"
+   ],
+   "fonti": [
+    "OR-05",
+    "OR-02"
+   ],
+   "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Le modalità di attivazione cambiano da Regione a Regione: il riferimento è la tua ASL. Per la salute dei tuoi bambini il riferimento resta il pediatra.",
+   "domanda": "Dove trovare un referto"
+  },
+  {
+   "slug": "visita-specialistica-come-funziona",
+   "categoria": "Organizzarsi",
+   "data": "2026-10-17",
+   "titolo": "Allergologo, gastroenterologo, diabetologo: come funziona una visita specialistica per un bambino",
+   "sommario": "Chi la prescrive, dove si prenota, cosa si paga, cosa fare se l'attesa è troppo lunga. Con tre esempi: allergie, celiachia, diabete.",
+   "tempo": "10 minuti per capire il percorso",
+   "serve": "La ricetta del pediatra, la tessera sanitaria",
+   "perche": [
+    "Il pediatra dice «facciamo vedere il bambino a uno specialista» e da lì iniziano le domande: serve la ricetta? Dove prenoto? Quanto costa? Quanto aspetto? Nessuno lo spiega, e ogni volta si va a tentativi.",
+    "Il percorso è lo stesso per quasi tutte le visite. Conoscerlo una volta serve per tutte le altre, e toglie l'ansia di «star sbagliando qualcosa»."
+   ],
+   "passi": [
+    [
+     "Parte tutto dal pediatra",
+     "Con il Servizio Sanitario, la visita specialistica si fa con la ricetta (impegnativa) del pediatra o del medico di famiglia. La ricetta è elettronica: la trovi nel Fascicolo Sanitario e basta la tessera sanitaria per prenotare. Senza ricetta puoi andare solo privatamente, pagando per intero."
+    ],
+    [
+     "Guarda la lettera sulla ricetta",
+     "Il medico indica una priorità: U (entro 72 ore), B (entro 10 giorni), D (entro 30 giorni per le visite, 60 per gli esami), P (entro 120 giorni). Se non c'è, vale P. È il tempo massimo entro cui il Servizio Sanitario dovrebbe darti l'appuntamento, per una prima visita."
+    ],
+    [
+     "Prenota con il CUP",
+     "Telefono, sportello, sito o app della tua Regione, o in farmacia. Il CUP propone la prima data utile nel territorio della tua ASL: può non essere la struttura più vicina. Se rifiuti la prima data per sceglierne un'altra, esci dalla garanzia dei tempi."
+    ],
+    [
+     "Se l'attesa supera il tempo della ricetta",
+     "Non è normale e non devi arrangiarti da solo: chiedi all'ASL il «percorso di tutela». Le Regioni devono trovare un'alternativa senza costi oltre il ticket, in molti casi anche in intramoenia o in una struttura privata convenzionata. Il contatto è l'URP della tua ASL; segnati nome e data di chi ti risponde."
+    ],
+    [
+     "Cosa si paga",
+     "Per una visita specialistica si paga il ticket, con importi che cambiano da Regione a Regione. Esistono esenzioni per età e reddito e per patologia: le chiede il medico, le rilascia la ASL, e compaiono sulla ricetta e nel Fascicolo. Se poi non puoi andare, disdici almeno due giorni lavorativi prima: chi non si presenta senza disdire paga comunque."
+    ],
+    [
+     "Tre esempi di percorso",
+     "Allergie: il pediatra valuta e, se serve, prescrive la visita allergologica pediatrica e gli eventuali test. Celiachia: il pediatra prescrive gli esami del sangue e, in base al risultato, la visita gastroenterologica pediatrica. Diabete: la diagnosi e il seguito avvengono in un centro di diabetologia pediatrica, su indicazione del pediatra o dell'ospedale; per le malattie croniche riconosciute il medico attiva l'esenzione per patologia. In tutti e tre i casi il primo passo è lo stesso: il pediatra."
+    ]
+   ],
+   "errori": [
+    "Prenotare privatamente per paura dell'attesa, prima di aver chiesto all'ASL il percorso di tutela.",
+    "Rifiutare la prima data per averne una più comoda e scoprire che i tempi non sono più garantiti.",
+    "Non disdire: si paga lo stesso, e si toglie il posto a un altro bambino.",
+    "Andare alla visita senza i referti precedenti e senza le domande scritte."
+   ],
+   "checklist": [
+    "Ho la ricetta del pediatra, con la lettera di priorità",
+    "Ho prenotato al CUP e segnato la data sul calendario di casa",
+    "Se la data supera il tempo della ricetta, ho chiamato l'URP della ASL",
+    "So se abbiamo un'esenzione e se è sulla ricetta",
+    "Ho preparato le domande e i referti precedenti (vedi la guida sulla visita)",
+    "So come disdire, se serve"
+   ],
+   "fonti": [
+    "OR-06",
+    "OR-07",
+    "OR-05"
+   ],
+   "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026: le regole su ticket, esenzioni e percorsi di tutela cambiano da Regione a Regione e il nuovo Piano nazionale delle liste d'attesa è in approvazione. Il riferimento è la tua ASL. Per quando serve una visita e quale, il riferimento è il pediatra.",
+   "domanda": "Come prenotare una visita"
+  },
+  {
+   "slug": "spostare-disdire-pagare-visita",
+   "categoria": "Organizzarsi",
+   "data": "2026-10-17",
+   "titolo": "Spostare una visita, disdire in tempo, pagare il ticket: le regole che nessuno ti spiega",
+   "sommario": "Cosa succede se non vai, entro quando avvisare, come e dove si paga, quanto dura la ricetta. E, se scegli il privato, dove prenotare e quanto aspettarsi di spendere.",
+   "tempo": "5 minuti",
+   "serve": "La ricetta, la tessera sanitaria, il numero del CUP della tua Regione",
+   "perche": [
+    "La visita è tra tre settimane, proprio il giorno della recita. Spostarla sembra una cosa da nulla, e invece ci sono regole precise: se non avvisi in tempo paghi comunque, anche se sei esente. E se rifiuti la data per una più comoda, perdi la priorità.",
+    "Conoscere le regole prima evita multe, attese raddoppiate e giri a vuoto. Sono le stesse in tutta Italia nella sostanza, con dettagli che cambiano da Regione a Regione."
+   ],
+   "passi": [
+    [
+     "Spostare: in pratica si disdice e si riprenota",
+     "Quasi nessun CUP «sposta» una visita: si cancella quella prenotata e se ne prende un'altra, con la stessa ricetta, dagli stessi canali (telefono, sito o app della Regione, sportello, farmacia). La nuova data è la prima disponibile in quel momento, non quella che avevi: se la ricetta ha una priorità e rifiuti la data proposta per motivi personali, i tempi massimi non sono più garantiti."
+    ],
+    [
+     "Disdire: almeno due giorni lavorativi prima",
+     "È la regola nazionale (in alcune Regioni 48 ore). Si disdice dagli stessi canali della prenotazione; molti CUP ti mandano un promemoria e ti chiedono conferma qualche giorno prima. Segna il numero di prenotazione: serve per cancellare in un minuto."
+    ],
+    [
+     "Se non vai senza disdire, paghi",
+     "Per legge (D.L. 73/2024, convertito nella legge 107/2024) chi non si presenta senza aver disdetto paga il ticket della prestazione non fatta, anche se è esente. Vale anche per i bambini. Fanno eccezione forza maggiore e impedimenti improvvisi, da documentare. In alcune Regioni, se poi non ritiri un referto, puoi pagare l'intero costo dell'esame."
+    ],
+    [
+     "Il ticket: quanto, come, quando",
+     "L'importo lo decide la Regione e dipende dalla prestazione; le esenzioni (età e reddito, patologia) devono risultare sulla ricetta. Si paga di norma prima della visita: allo sportello o ai totem della struttura, in farmacia, online sul portale regionale o con PagoPA (spesso anche dall'app IO). Conserva la ricevuta: serve per la detrazione fiscale e se l'esenzione non era stata registrata."
+    ],
+    [
+     "La ricetta ha una scadenza",
+     "Per le visite specialistiche la ricetta elettronica vale di norma un anno dalla data, ma alcune Regioni ed esami hanno tempi più brevi, e con le priorità B e D la prenotazione va fatta entro pochi giorni, altrimenti la classe scende. In caso di dubbio: prenota subito, anche se la data è lontana, poi semmai disdici."
+    ],
+    [
+     "Se scegli il privato: dove e quanto",
+     "Le opzioni sono tre: l'intramoenia (lo stesso medico dell'ospedale, in orario privato, prenotando allo sportello dedicato), i centri privati accreditati e gli studi privati. Per cercare e prenotare online i più usati sono MioDottore, Doctolib e CupSolidale/Cup24, che mostrano disponibilità e spesso il prezzo. Per una prima visita specialistica pediatrica privata, nelle città, l'ordine di grandezza è tra 80 e 150 euro: chiedi sempre il costo prima di prenotare, se c'è un supplemento per i test, e fatti rilasciare la fattura, detraibile. Ricorda: se vai privatamente per tua scelta, la Regione non rimborsa nulla; se invece i tempi della ricetta sono saltati, prima chiedi all'ASL il percorso di tutela."
+    ]
+   ],
+   "errori": [
+    "Non disdire «tanto è gratis»: non lo è più, anche per chi è esente.",
+    "Rifiutare la prima data per averne una più comoda e scoprire che la priorità è persa.",
+    "Lasciare scadere la ricetta aspettando il momento giusto per prenotare.",
+    "Pagare il privato senza aver chiesto il prezzo, o senza fattura."
+   ],
+   "checklist": [
+    "Ho il numero di prenotazione salvato (foto o nota)",
+    "So entro quando posso disdire senza pagare",
+    "Ho controllato che l'esenzione sia sulla ricetta",
+    "So come e dove pago il ticket, e conservo la ricevuta",
+    "La ricetta non è vicina alla scadenza",
+    "Se vado privatamente: prezzo chiesto, fattura richiesta"
+   ],
+   "fonti": [
+    "OR-08",
+    "OR-09",
+    "OR-07"
+   ],
+   "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Importi, canali di pagamento e termini di disdetta cambiano da Regione a Regione: fa fede quanto indicato dalla tua ASL al momento della prenotazione. I prezzi privati sono indicativi.",
+   "domanda": "Come disdire senza pagare"
+  },
+  {
+   "slug": "pediatra-e-medico-di-base",
+   "categoria": "Organizzarsi",
+   "data": "2026-10-17",
+   "titolo": "Pediatra e medico di base: come si scelgono, come si cambiano, cosa devono fare",
+   "sommario": "Dove si sceglie, cosa fare se cambi città per un po', quando il pediatra lascia il posto al medico di famiglia, e cosa hai diritto di chiedere. Senza timidezza: è il loro lavoro.",
+   "tempo": "10 minuti per capire, 5 per fare la scelta",
+   "serve": "Tessera sanitaria, documento, SPID o CIE per farlo online",
+   "perche": [
+    "Il pediatra e il medico di famiglia sono il primo punto di riferimento della salute di casa, eppure quasi nessuno sa come si scelgono, quando si possono cambiare o cosa sono tenuti a fare. Così si resta con un medico lontano o che non ci convince, per paura di «fare un torto».",
+    "Non è un favore: è un servizio, con regole precise. Conoscerle serve a scegliere con calma, cambiare senza imbarazzo e chiedere quello che spetta. I medici lo sanno benissimo e ci sono abituati."
+   ],
+   "passi": [
+    [
+     "Chi scegliere: pediatra o medico di famiglia",
+     "Fino ai 6 anni il bambino ha il pediatra di libera scelta; dai 6 ai 14 i genitori possono scegliere se restare con il pediatra o passare al medico di famiglia; a 14 anni il passaggio è obbligatorio (fino a 16 in casi particolari). Gli adulti hanno il medico di medicina generale. Ogni medico ha un numero massimo di assistiti (per il pediatra di norma 800, per il medico di famiglia 1.500): si può scegliere solo tra chi ha posti liberi."
+    ],
+    [
+     "Dove si sceglie e si cambia",
+     "Online dal portale sanitario della tua Regione (con SPID o CIE: cerca «scelta medico» con il nome della tua Regione; in molte Regioni è dentro il Fascicolo Sanitario), allo sportello «scelta e revoca» della ASL, in alcune Regioni anche in farmacia. L'elenco dei medici con posti liberi, con indirizzo e orari, è lì. Puoi scegliere un medico di un altro Comune purché nell'ambito della tua ASL. Si cambia quando si vuole e senza spiegazioni: scegliendo il nuovo, il vecchio viene revocato da solo."
+    ],
+    [
+     "Se cambi città per un periodo",
+     "Se ti sposti per lavoro, studio o salute per più di tre mesi, senza cambiare residenza, puoi chiedere alla ASL del posto dove vivi un medico o un pediatra temporaneo: vale di norma un anno ed è rinnovabile. Servono documento, tessera sanitaria, un'autocertificazione del domicilio e la prova del motivo (contratto, iscrizione, certificato). Il medico «di casa» resta sospeso e torna attivo al rientro. Se invece il trasferimento è definitivo, cambi la residenza e scegli un nuovo medico nella nuova ASL."
+    ],
+    [
+     "Cosa il medico è tenuto a fare",
+     "Tenere l'ambulatorio aperto cinque giorni a settimana, con un orario minimo che cresce con gli assistiti (da 5 a 18 ore settimanali) ed esposto in studio; visitare a domicilio chi non può muoversi, in giornata se la richiesta arriva entro le 10; prescrivere farmaci, esami e visite che ritiene necessari; rilasciare gratis i certificati di malattia, di infortunio e di riammissione a scuola. Quando è in ferie o malato deve indicare un sostituto dal primo giorno."
+    ],
+    [
+     "Cosa invece non puoi pretendere",
+     "Che prescriva un esame o un farmaco solo perché lo chiedi tu o l'ha consigliato uno specialista privato: la decisione è sua, e gli specialisti pubblici prescrivono direttamente. Che venga a casa se puoi andare in studio. Certificati per sport non scolastico, assicurazioni o usi privati sono a pagamento. E il medico può rifiutare un nuovo assistito solo con un motivo comunicato alla ASL."
+    ],
+    [
+     "Chiedi senza timore",
+     "Vuoi un medico più vicino, con orari compatibili con il lavoro, che risponda al telefono in una fascia precisa? Chiedilo prima di sceglierlo: gli orari e il modo di contatto sono in elenco e in studio. Vuoi cambiare perché non ti trovi? Si fa in cinque minuti e il medico non riceve spiegazioni. Vuoi capire una ricetta o un referto? Fissa un appuntamento e porta le domande scritte (vedi la guida sulla visita). Sono professionisti, e un rapporto chiaro conviene anche a loro."
+    ]
+   ],
+   "errori": [
+    "Tenere un medico scomodo per anni perché «cambiare è brutto».",
+    "Non chiedere il medico temporaneo quando si vive altrove per mesi: le ricette e i certificati diventano un problema.",
+    "Aspettare i 14 anni senza aver pensato a quale medico di famiglia scegliere.",
+    "Pretendere la visita a domicilio o una prescrizione «perché l'ha detto il privato»."
+   ],
+   "checklist": [
+    "So chi è il pediatra o il medico di ognuno in casa, con orari e telefono",
+    "Ho controllato nell'elenco regionale se c'è un medico più comodo con posti liberi",
+    "Se viviamo altrove per più di tre mesi, abbiamo chiesto il medico temporaneo",
+    "Per i bambini tra 6 e 14 anni: abbiamo deciso se restare con il pediatra",
+    "Ho segnato chi sostituisce il medico quando è assente",
+    "I numeri sono nei Contatti del gestionale"
+   ],
+   "fonti": [
+    "OR-10",
+    "OR-11",
+    "OR-05"
+   ],
+   "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Orari minimi, massimali e procedure derivano dagli accordi nazionali e possono variare per Regione e ASL: fa fede la tua ASL. Per la salute il riferimento resta il medico.",
+   "domanda": "Come cambiare pediatra"
+  }
+ ],
+ "chi": {
+  "sommario": "Serena è un progetto editoriale per chi si prende cura della famiglia: guide pratiche, dati con le loro fonti e parole in cui ritrovarsi.",
+  "sezioni": [
+   [
+    "Cosa facciamo",
+    [
+     "Ogni giorno su Instagram pubblichiamo una cosa utile: un metodo pratico, un dato che toglie un'ansia, una frase da tenere o da mandare a qualcuno. Qui sul sito trovi le guide complete e le fonti di ogni post."
+    ]
+   ],
+   [
+    "Come lavoriamo",
+    [
+     "I testi nascono con l'aiuto dell'intelligenza artificiale. Ogni post e ogni pagina vengono letti, scelti e approvati da una persona prima di uscire.",
+     "Ogni dato viene da una fonte che puoi aprire: organizzazioni come l'OMS, l'Istituto Superiore di Sanità, società scientifiche, riviste con revisione. Una fonte entra nei nostri contenuti solo dopo essere stata controllata, e riportiamo i suoi limiti: età, anno del dato, differenza tra associazione e causa.",
+     "Se trovi un errore o un collegamento che non funziona, scrivici in privato su Instagram: correggiamo e indichiamo la data dell'aggiornamento."
+    ]
+   ],
+   [
+    "Cosa non siamo",
+    [
+     "Serena non è una persona e non è un servizio medico. Non diamo diagnosi né indicazioni sulla salute del tuo bambino: riportiamo cosa dicono le linee guida, poi decidi tu, con chi lo conosce."
+    ]
+   ],
+   [
+    "Privacy",
+    [
+     "Questo sito non usa cookie, non ha sistemi di profilazione e non raccoglie dati personali. Per capire quali pagine sono utili contiamo le visite in forma anonima con Umami, uno strumento che non usa cookie, non identifica le persone e conserva i dati su server in Europa: vediamo quante persone leggono una pagina, da quale canale arrivano e quanti scaricano il gestionale, mai chi sono. Per questo non serve un banner e non chiediamo consensi.",
+     "Il gestionale di famiglia e le checklist sono file che restano sul tuo dispositivo o nel tuo Drive: nessun dato che inserisci arriva a noi."
+    ]
+   ]
+  ]
+ },
+ "momenti": [
+  {
+   "quando": "Hai un bambino piccolo e la sera non finisce mai",
+   "cosa": "Una routine della nanna in quattro mosse",
+   "guida": "routine-della-nanna"
+  },
+  {
+   "quando": "Devi scegliere o cambiare pediatra, o vivi altrove per un po'",
+   "cosa": "Pediatra e medico di base: come si scelgono e cosa devono fare",
+   "guida": "pediatra-e-medico-di-base"
+  },
+  {
+   "quando": "Non trovi un referto, o non sai dov'è il gruppo sanguigno",
+   "cosa": "I documenti sanitari di famiglia: dove sono, anche online",
+   "guida": "documenti-sanitari-dove-trovarli"
+  },
+  {
+   "quando": "Il pediatra ti ha detto «serve uno specialista»",
+   "cosa": "Ricetta, CUP, ticket, attese: come funziona una visita specialistica",
+   "guida": "visita-specialistica-come-funziona"
+  },
+  {
+   "quando": "Devi spostare una visita, o non sai come si paga il ticket",
+   "cosa": "Disdire in tempo, pagare, prenotare privatamente: le regole",
+   "guida": "spostare-disdire-pagare-visita"
+  },
+  {
+   "quando": "Hai una visita dal pediatra in arrivo",
+   "cosa": "Le domande da preparare in dieci minuti",
+   "guida": "domande-per-il-pediatra"
+  },
+  {
+   "quando": "Cerchi sempre il libretto nel momento sbagliato",
+   "cosa": "La cartellina di famiglia, cinque documenti in un posto solo",
+   "guida": "cartellina-di-famiglia"
+  }
+ ],
+ "gestionale_sheets_url": "https://docs.google.com/spreadsheets/d/1ycUnYM7JzZToqAjSoFxcxFu4OZVd0p3kcyf_zxlcDzM/copy"
 }

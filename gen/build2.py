@@ -96,7 +96,9 @@ if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduc
 // frase che cambia in home
 var R=document.querySelector('[data-rot]');
 if(R&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
- var L=R.querySelectorAll('a'),k=0,stop=false;
+ var A=[].slice.call(R.querySelectorAll('a')),first=A.shift(),M=+R.dataset.max||5;
+ for(var i=A.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=A[i];A[i]=A[j];A[j]=t}
+ var L=[first].concat(A.slice(0,M-1)),k=0,stop=false;
  R.addEventListener('mouseenter',function(){stop=true});R.addEventListener('mouseleave',function(){stop=false});
  R.addEventListener('focusin',function(){stop=true});R.addEventListener('focusout',function(){stop=false});
  setInterval(function(){if(stop||document.hidden)return;var a=L[k];a.classList.add('out');
@@ -396,15 +398,9 @@ pages.append(page('/fonti/', 'Le fonti di Serena', 'Le fonti dei dati citati nei
 <section class="wrap-t"><ul class="postl">{''.join(post_cards)}</ul></section>'''))
 
 # ---------- home ----------
-DOMANDE = [('Come prenotare una visita', '/guide/visita-specialistica-come-funziona/'),
-           ('Dove trovare un referto', '/guide/documenti-sanitari-dove-trovarli/'),
-           ('Come disdire senza pagare', '/guide/spostare-disdire-pagare-visita/'),
-           ('Come cambiare pediatra', '/guide/pediatra-e-medico-di-base/'),
-           ('Cosa chiedere al pediatra', '/guide/domande-per-il-pediatra/'),
-           ('Come calmare la sera', '/guide/routine-della-nanna/'),
-           ('Dove tenere i documenti', '/guide/cartellina-di-famiglia/'),
-           ('Come organizzare la settimana', '/gestionale/')]
-ROT = ('<p class="rot" data-rot><span class="sr">Per esempio: </span>'
+MAXROT = 5  # quante domande vede chi visita la home (scelte a caso ogni volta)
+DOMANDE = [(g['domanda'], f"/guide/{g['slug']}/") for g in GUIDE if g.get('domanda')] + [('Come organizzare la settimana', '/gestionale/')]
+ROT = (f'<p class="rot" data-rot data-max="{MAXROT}"><span class="sr">Per esempio: </span>'
        + ''.join(f'<a href="~{h}"{"" if i == 0 else " hidden"}>{e(t)} {ic("arrow","ic-s")}</a>' for i, (t, h) in enumerate(DOMANDE))
        + '</p>')
 tiles = ''.join(f'<a class="tile {a[4]}" href="~/guide/#{a[0]}"><span class="tic">{ic(a[3])}</span><b>{e(a[1])}</b><small>{e(a[2])}</small><span class="cnt">{argc[a[0]]} {"guida" if argc[a[0]] == 1 else "guide"}</span></a>' for a in ARG if argc[a[0]])
