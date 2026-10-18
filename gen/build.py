@@ -184,7 +184,7 @@ def page(path, title, desc, body, ld=None, cls=''):
 <div><h2>Serena</h2><ul><li><a href="~/chi-e-serena/">Chi è Serena</a></li><li><a href="~/metodo/">Il nostro metodo</a></li><li><a href="~/fonti/">Le fonti</a></li><li><a href="~/privacy/">Privacy</a></li></ul></div>
 <div><h2>Contatti</h2><ul><li><a href="mailto:{MAIL}">{MAIL}</a></li><li><a href="{IG}" rel="noopener">Messaggio su Instagram</a></li></ul></div>
 </div>
-<div class="ft-low"><p>Testi e immagini di Serena nascono con l'aiuto dell'intelligenza artificiale e sono scelti da una persona. Informazioni generali: non sostituiscono il parere del pediatra o del medico.</p>
+<div class="ft-low"><p>Serena è ideata e curata da una persona, con supporto AI per testi, immagini e verifica delle fonti. Informazioni generali: non sostituiscono il parere del pediatra o del medico.</p>
 <p>Questo sito non usa cookie e non raccoglie dati personali. © {datetime.date.today().year} serenainmente.it</p></div>
 </footer>
 {JS}
@@ -384,7 +384,7 @@ pages.append(page('/chi-e-serena/', 'Chi è Serena', D['chi']['sommario'], f'''
 <section class="wrap rv"><h2 class="c">I nostri valori</h2>{valori('v-grid')}</section>
 <section class="wrap-t prose">
 <h2>Cosa non siamo</h2>{''.join(f'<p>{e(p)}</p>' for p in CHI['Cosa non siamo'])}
-<h2>Trasparenza e indipendenza</h2><p>Testi e immagini nascono con l'aiuto dell'intelligenza artificiale e ogni pagina è letta e approvata da una persona. Non ci sono sponsor né pubblicità dietro ai consigli, e il sito non usa cookie. <a href="~/metodo/">Come lavoriamo, passo per passo</a>.</p>
+<h2>Trasparenza e indipendenza</h2><p>Serena è ideata e curata da una persona, con supporto AI per testi, immagini e verifica delle fonti: ogni pagina è letta e approvata prima di uscire. Non ci sono sponsor né pubblicità dietro ai consigli, e il sito non usa cookie. <a href="~/metodo/">Come lavoriamo, passo per passo</a>.</p>
 <div class="row"><a class="btn" href="~/guide/">Leggi le guide</a><a class="btn btn-line" href="~/risorse/">Risorse gratuite</a></div>
 {IGCARD}
 </section>'''))
@@ -397,8 +397,8 @@ pages.append(page('/metodo/', 'Il nostro metodo', 'Come nascono e si controllano
 <ol class="steps big">
 <li><b>Si parte da una domanda vera</b><span>Le cose che le famiglie si chiedono davvero: dove trovo un referto, cosa succede se salto una visita, quante ore deve dormire un bambino.</span></li>
 <li><b>Si cercano le fonti</b><span>{e(CHI['Come lavoriamo'][1])}</span></li>
-<li><b>Si scrive con l'aiuto dell'IA</b><span>{e(CHI['Come lavoriamo'][0])}</span></li>
-<li><b>Anche le immagini</b><span>Le fotografie del sito sono generate con l'intelligenza artificiale e scelte da una persona: non ritraggono luoghi, oggetti o persone reali.</span></li>
+<li><b>Si scrive con il supporto AI</b><span>{e(CHI['Come lavoriamo'][0])}</span></li>
+<li><b>Anche le immagini</b><span>Le fotografie del sito sono generate con strumenti AI e scelte da una persona: non ritraggono luoghi, oggetti o persone reali.</span></li>
 <li><b>Si corregge quando serve</b><span>{e(CHI['Come lavoriamo'][2])}</span></li>
 </ol>
 <section class="box box-salvia"><h2>Il pediatra resta il riferimento</h2><p>Riportiamo cosa dicono linee guida e istituzioni, in parole semplici. Non diamo diagnosi né indicazioni sul singolo bambino: per quello c'è chi lo conosce.</p></section>
