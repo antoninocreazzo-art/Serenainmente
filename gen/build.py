@@ -202,7 +202,7 @@ def page(path, title, desc, body, ld=None, cls=''):
             base, _, tail = re.match(r'([^?#]*/)([?#]?)(.*)', p).groups()
             return f'{attr}="{rel}{base}index.html{_}{tail}'
         return f'{attr}="{rel}{p}'
-    out = re.sub(r'(href|srcset|src)="~/([^"]*)', fix, out)
+    out = re.sub(r'(href|srcset|src|poster)="~/([^"]*)', fix, out)
     out = out.replace(' ~/assets/', ' ' + ('../' * len([x for x in path.strip('/').split('/') if x]) if REL else '/') + 'assets/')
     full = os.path.join(OUT, path.strip('/'), 'index.html') if path != '/' else os.path.join(OUT, 'index.html')
     os.makedirs(os.path.dirname(full), exist_ok=True)
@@ -354,6 +354,8 @@ pages.append(page('/gestionale/', 'Il gestionale di famiglia', 'Un file gratuito
 </section>
 <section class="wrap gs-pts rv">{''.join(f'<div class="gp"><span class="vic">{ic("check")}</span><span>{p}</span></div>' for p in GEST_PUNTI)}</section>
 <section class="wrap-t gs-body">
+<figure class="vid rv"><video controls playsinline muted preload="none" poster="~/video/gestionale-tutorial.jpg" width="1080" height="1920" data-umami-event="gestionale-video"><source src="~/video/gestionale-tutorial.mp4" type="video/mp4"></video>
+<figcaption><b>Come si usa, in un minuto.</b> Famiglia, visite, scadenze che si ripetono, la pagina «Inizia da qui» e la copia per il telefono. Il video è senza audio.</figcaption></figure>
 <h2>Cosa c'è dentro</h2>
 <ol class="steps">{''.join(f'<li><b>{e(a)}</b><span>{e(b)}</span></li>' for a, b in SCHEDE)}</ol>
 <figure class="shot rv"><img src="~/assets/gestionale/visite.webp" alt="La scheda Visite: data, ora, per chi, medico o struttura, stato, data entro cui disdire e ticket" loading="lazy"><figcaption>La scheda Visite, con le righe di esempio che trovi nel file.</figcaption></figure>

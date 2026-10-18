@@ -305,6 +305,12 @@ h2.c{text-align:left}
 .shot img{border-radius:var(--r-s);border:1px solid var(--line);box-shadow:var(--shadow)}
 .shot figcaption{font-size:14px;color:var(--muted)}
 
+/* video tutorial */
+.vid{margin:0;display:grid;gap:16px;align-items:center}
+.vid video{width:100%;max-width:320px;height:auto;aspect-ratio:9/16;border-radius:var(--r);background:var(--sabbia);box-shadow:var(--shadow);justify-self:center}
+.vid figcaption{font-size:15.5px;color:var(--muted);line-height:1.55}.vid figcaption b{display:block;color:var(--ink);font-family:var(--display);font-weight:400;font-size:22px;margin-bottom:4px}
+@media(min-width:640px){.vid{grid-template-columns:300px 1fr;gap:28px}.vid video{justify-self:start}}
+
 /* risorse */
 .cklist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
 .cklist li{display:flex;align-items:center;gap:8px;background:var(--surface);border-radius:var(--r-s);box-shadow:var(--shadow);padding:6px 6px 6px 18px}
