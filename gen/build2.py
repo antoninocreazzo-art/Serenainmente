@@ -389,8 +389,8 @@ pages.append(page('/fonti/', 'Le fonti di Serena', 'Le fonti dei dati citati nei
 tiles = ''.join(f'<a class="tile {a[4]}" href="~/guide/#{a[0]}"><span class="tic">{ic(a[3])}</span><b>{e(a[1])}</b><small>{e(a[2])}</small><span class="cnt">{argc[a[0]]} {"guida" if argc[a[0]] == 1 else "guide"}</span></a>' for a in ARG if argc[a[0]])
 pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della famiglia: guide pratiche, dati con le loro fonti, strumenti gratuiti.', f'''
 <section class="hero wrap">
-<div class="hero-txt"><h1>Parole e idee per chi si prende cura della famiglia.</h1>
-<p class="lead">Una cosa pratica da fare in dieci minuti, un dato che toglie un'ansia, una frase in cui ritrovarsi.</p>
+<div class="hero-txt"><h1>Hai già abbastanza da tenere a mente.</h1>
+<p class="lead">Come prenotare una visita, dove trovare un referto, come organizzare la settimana: guide chiare e strumenti gratuiti per chi si prende cura della famiglia.</p>
 <div class="row"><a class="btn" href="~/guide/">Scopri le guide</a><a class="btn btn-line" href="{IG}" rel="noopener" data-umami-event="instagram">Seguici su Instagram</a></div></div>
 {foto('hero', '', 'hero-img', tone='rosa', eager=True)}
 </section>
@@ -400,7 +400,7 @@ pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della fam
 <section class="wrap rv"><div class="sec-hd"><h2>Esplora per argomento</h2></div><div class="tiles">{tiles}</div></section>
 <section class="wrap rv"><div class="gband">{devices('sm')}<div class="gb-txt"><span class="eyebrow">Risorsa gratuita</span><h2>Il gestionale di famiglia</h2><p>Uno strumento semplice per organizzare documenti, scadenze, visite e la settimana di tutti.</p><ul class="ticks">{''.join(f'<li>{ic("check","ic-s")}{p}</li>' for p in GEST_PUNTI[:3])}</ul><a class="btn" href="~/gestionale/">Scopri il gestionale {ic('arrow','ic-s')}</a></div></div></section>
 <section class="wrap rv"><div class="chi-band">{foto('chi', '', 'cb-img', tone='sabbia')}<div class="cb-txt"><h2>Chi è Serena</h2><p>{e(D['chi']['sommario'])} Ogni dato ha la sua fonte, ogni pagina è letta da una persona.</p><a class="btn btn-line" href="~/chi-e-serena/">Scopri di più su Serena {ic('arrow','ic-s')}</a></div><blockquote class="quote"><p>{QUOTE}</p></blockquote></div></section>
-<section class="wrap rv ig-sec"><div><h2>Ogni giorno, una cosa utile</h2><p>Su Instagram, ogni mattina alle 10: un metodo pratico, un dato con la sua fonte, una frase da mandare a chi ne ha bisogno.</p></div>{IGCARD}</section>
+<section class="wrap rv ig-sec"><div><h2>Ogni giorno, una cosa utile</h2><p>Su Instagram, ogni mattina alle 10: una cosa pratica da fare in dieci minuti, un dato che toglie un'ansia, una frase in cui ritrovarsi.</p></div>{IGCARD}</section>
 ''', cls='p-home'))
 
 # ---------- sitemap, robots, file ----------
