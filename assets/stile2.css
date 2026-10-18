@@ -100,6 +100,16 @@ main{display:flex;flex-direction:column;gap:72px;padding-bottom:88px}
 .rot a.in0{opacity:0;transform:translateY(8px);transition:none}
 
 
+/* vedi tutte le domande */
+.rotw{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 16px;min-height:1.3em}
+.rot[hidden]{display:none}
+.rot-all{font:500 14px var(--body);color:var(--muted);background:none;border:0;padding:4px 0;cursor:pointer;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--rosa2)}
+.rot-all:hover{color:var(--accent-d);text-decoration-color:var(--accent)}
+.asks{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px;animation:drop .25s ease-out}
+.asks[hidden]{display:none}
+.asks a{display:inline-block;font-size:15px;color:var(--accent-d);text-decoration:none;background:var(--surface);border:1px solid var(--rosa2);border-radius:999px;padding:8px 14px;transition:background .2s,border-color .2s}
+.asks a:hover{background:var(--rosa);border-color:var(--accent)}
+
 /* riquadri foto */
 .ph{width:100%;height:auto;object-fit:cover;border-radius:var(--r);display:grid;place-items:center;overflow:hidden}
 div.ph svg{width:34%;max-width:200px;height:auto}

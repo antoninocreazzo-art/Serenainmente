@@ -93,17 +93,19 @@ if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduc
  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
 }else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
-// frase che cambia in home
+// frase che cambia in home, con «Vedi tutte»
 var R=document.querySelector('[data-rot]');
-if(R&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
- var A=[].slice.call(R.querySelectorAll('a')),first=A.shift(),M=+R.dataset.max||5;
- for(var i=A.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=A[i];A[i]=A[j];A[j]=t}
- var L=[first].concat(A.slice(0,M-1)),k=0,stop=false;
- R.addEventListener('mouseenter',function(){stop=true});R.addEventListener('mouseleave',function(){stop=false});
- R.addEventListener('focusin',function(){stop=true});R.addEventListener('focusout',function(){stop=false});
- setInterval(function(){if(stop||document.hidden)return;var a=L[k];a.classList.add('out');
-  setTimeout(function(){a.hidden=true;a.classList.remove('out');k=(k+1)%L.length;var b=L[k];b.classList.add('in0');b.hidden=false;
-   requestAnimationFrame(function(){requestAnimationFrame(function(){b.classList.remove('in0')})})},380)},3400);
+if(R){
+ var L=R.querySelectorAll('a'),k=0,stop=false,open=false,B=document.querySelector('.rot-all'),U=document.getElementById('tutte-domande');
+ B.hidden=false;
+ B.onclick=function(){open=!open;U.hidden=!open;R.hidden=open;B.setAttribute('aria-expanded',open);B.textContent=open?'Chiudi':'Vedi tutte'};
+ if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+  R.addEventListener('mouseenter',function(){stop=true});R.addEventListener('mouseleave',function(){stop=false});
+  R.addEventListener('focusin',function(){stop=true});R.addEventListener('focusout',function(){stop=false});
+  setInterval(function(){if(stop||open||document.hidden)return;var a=L[k];a.classList.add('out');
+   setTimeout(function(){a.hidden=true;a.classList.remove('out');k=(k+1)%L.length;var b=L[k];b.classList.add('in0');b.hidden=false;
+    requestAnimationFrame(function(){requestAnimationFrame(function(){b.classList.remove('in0')})})},380)},3400);
+ }
 }
 // filtri e ricerca negli articoli
 var grid=document.querySelector('[data-grid]');
@@ -403,6 +405,8 @@ DOMANDE = [(g['domanda'], f"/guide/{g['slug']}/") for g in GUIDE if g.get('doman
 ROT = (f'<p class="rot" data-rot data-max="{MAXROT}"><span class="sr">Per esempio: </span>'
        + ''.join(f'<a href="~{h}"{"" if i == 0 else " hidden"}>{e(t)} {ic("arrow","ic-s")}</a>' for i, (t, h) in enumerate(DOMANDE))
        + '</p>')
+ROT = (f'<div class="rotw">{ROT}<button class="rot-all" type="button" aria-expanded="false" aria-controls="tutte-domande" hidden>Vedi tutte</button></div>'
+       f'<ul class="asks" id="tutte-domande" hidden>' + ''.join(f'<li><a href="~{h}">{e(t)}</a></li>' for t, h in DOMANDE) + '</ul>')
 tiles = ''.join(f'<a class="tile {a[4]}" href="~/guide/#{a[0]}"><span class="tic">{ic(a[3])}</span><b>{e(a[1])}</b><small>{e(a[2])}</small><span class="cnt">{argc[a[0]]} {"guida" if argc[a[0]] == 1 else "guide"}</span></a>' for a in ARG if argc[a[0]])
 pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della famiglia: guide pratiche, dati con le loro fonti, strumenti gratuiti.', f'''
 <section class="hero wrap">
