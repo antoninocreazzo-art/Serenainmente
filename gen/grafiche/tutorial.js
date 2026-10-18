@@ -6,6 +6,7 @@ const A = path.join(__dirname, '..', '..', 'assets');
 const f64 = n => 'data:font/woff2;base64,' + fs.readFileSync(path.join(A, 'fonts', n)).toString('base64');
 const i64 = n => 'data:image/' + (n.endsWith('png') ? 'png' : 'webp') + ';base64,' + fs.readFileSync(path.join(A, n)).toString('base64');
 const OUT = process.argv[2] || 'tutorial.mp4', FPS = 25;
+const Q = process.env.FORMATO === '4:5', W = 1080, H = Q ? 1350 : 1920;
 const D = JSON.parse(process.argv[3] || '{}'); // date di esempio passate dal generatore (facoltative)
 const v1 = D.v1 || '24/10/2026', d1 = D.d1 || '22/10/2026', r0 = D.r0 || '08/09/2026', r1 = D.r1 || '08/11/2026';
 
@@ -58,7 +59,7 @@ const scenes = [
 const html = `<!doctype html><meta charset="utf-8"><style>
 @font-face{font-family:Fr;src:url(${f64('fraunces-latin-400-normal.woff2')})}@font-face{font-family:Fr;font-weight:600;src:url(${f64('fraunces-latin-600-normal.woff2')})}
 @font-face{font-family:DM;src:url(${f64('dm-sans-latin-400-normal.woff2')})}@font-face{font-family:DM;font-weight:500;src:url(${f64('dm-sans-latin-500-normal.woff2')})}
-*{box-sizing:border-box;margin:0;padding:0}body{width:1080px;height:1920px;overflow:hidden}
+*{box-sizing:border-box;margin:0;padding:0}body{width:1080px;height:${H}px;overflow:hidden}
 .st{position:absolute;inset:0;background:#F8F4EF;color:#3A2C30;font-family:DM;padding:150px 80px 0;display:flex;flex-direction:column;gap:56px;opacity:0}
 .cap{display:flex;flex-direction:column;gap:22px}.cap .n{width:84px;height:84px;border-radius:50%;background:#97606F;color:#fff;display:grid;place-items:center;font:600 44px Fr}
 .cap h1{font:600 76px/1.08 Fr}.cap p{font-size:40px;line-height:1.38;color:#5E4A4F}.cap b{color:#97606F;font-weight:500}
@@ -82,6 +83,12 @@ td.hl{transition:none}
 .end h1{font-size:84px;color:#97606F}.end h1 span{color:#3A2C30}
 .foot{position:absolute;left:0;right:0;bottom:90px;text-align:center;font:500 28px DM;letter-spacing:5px;color:#97606F}
 .dots{position:absolute;left:0;right:0;bottom:150px;display:flex;justify-content:center;gap:14px}.dots i{width:14px;height:14px;border-radius:50%;background:#E3D6CF}.dots i.on{background:#97606F;width:40px;border-radius:8px}
+${Q ? `.st{padding:70px 80px 0;gap:36px}.cap{gap:14px}.cap .n{width:68px;height:68px;font-size:36px}.cap h1{font-size:62px}.cap p{font-size:33px}
+.bar{height:60px;font-size:24px}.tt{font-size:34px;padding:18px 24px 10px}table{font-size:28px}th{padding:14px 18px;font-size:24px}td{padding:17px 18px}
+.note{font-size:29px;padding:22px 26px;margin-top:-10px}.menu{font-size:28px;margin-top:-18px}.menu div{padding:13px 22px}
+.dash .hi{font-size:38px;padding:16px 26px 10px}.k{font-size:26px;padding:10px 20px;margin-bottom:8px}.k b{font-size:44px}.lt{font-size:30px;padding:14px 26px 4px}.li{font-size:26px;padding:11px 26px}.li em{font-size:22px}
+.phone{width:360px;border-radius:48px;padding:13px}.phone img{border-radius:36px}.intro{padding-bottom:120px;gap:34px}.intro img{width:190px;height:190px}.intro h1{font-size:90px}.end h1{font-size:74px}
+.foot{bottom:48px;font-size:24px}.dots{bottom:96px}` : ''}
 </style>
 ${scenes.map((s, i) => `<div class="st" id="s${i}">${s}</div>`).join('')}
 <div class="dots">${S.slice(1, -1).map(() => '<i></i>').join('')}</div><div class="foot">serenainmente</div>
@@ -99,7 +106,7 @@ window.frame=t=>{S.forEach(([a,b],i)=>{const el=document.getElementById('s'+i);c
 (async () => {
   const dir = fs.mkdtempSync('/tmp/tut-');
   const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell' });
-  const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
+  const p = await b.newPage({ viewport: { width: W, height: H } });
   await p.setContent(html); await p.evaluate(() => document.fonts.ready);
   const N = Math.round(DUR * FPS), only = process.env.FRAMES ? process.env.FRAMES.split(',').map(Number) : null;
   for (let i = 0; i < N; i++) {
