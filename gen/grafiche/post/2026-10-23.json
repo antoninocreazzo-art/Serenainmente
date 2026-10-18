@@ -1,0 +1,30 @@
+[
+ {
+  "file": "2026-10-23-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "cosa indica l'OMS",
+  "titolo": "Il sonno\ndei più piccoli",
+  "sottotitolo": "Le indicazioni per i bambini\nda 1 a 4 anni, da leggere\ncon calma."
+ },
+ {
+  "file": "2026-10-23-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "1-2 anni: 11-14 ore\n3-4 anni: 10-13 ore",
+  "testo": "Sonnellini compresi.\nSono indicazioni per tutti,\nnon per il tuo bambino in\nparticolare: ognuno ha i suoi ritmi."
+ },
+ {
+  "file": "2026-10-23-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Cosa aiuta davvero",
+  "testo": "Orari regolari per andare\na letto e per svegliarsi,\ne una routine della nanna\nsempre uguale."
+ },
+ {
+  "file": "2026-10-23-4.jpg",
+  "tipo": "chiusura",
+  "titolo": "Se qualcosa ti\npreoccupa, il pediatra\nconosce la sua storia.",
+  "fonte": "Fonti: OMS, 2019 · American Academy of Pediatrics, Healthy Sleep Habits, 2026",
+  "nota": "Informazioni generali, non sostituiscono il parere del pediatra o del medico.\nLink completi su serenainmente.it/fonti"
+ }
+]

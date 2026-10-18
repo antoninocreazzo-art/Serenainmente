@@ -1,0 +1,52 @@
+[
+ {
+  "file": "2026-10-19-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "pratico · 5 passi",
+  "titolo": "Una cartellina.\nMeno cose\nda cercare.",
+  "sottotitolo": "Dieci minuti oggi,\nmolte ricerche in meno domani."
+ },
+ {
+  "file": "2026-10-19-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "Tessera sanitaria",
+  "testo": "Di ogni componente\ndella famiglia."
+ },
+ {
+  "file": "2026-10-19-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Libretto delle\nvaccinazioni",
+  "testo": "O il certificato\ndelle vaccinazioni."
+ },
+ {
+  "file": "2026-10-19-4.jpg",
+  "tipo": "passo",
+  "numero": "3",
+  "titolo": "Gli ultimi referti",
+  "testo": "E le lettere di dimissione."
+ },
+ {
+  "file": "2026-10-19-5.jpg",
+  "tipo": "passo",
+  "numero": "4",
+  "titolo": "Contatti, allergie,\nterapie",
+  "testo": "Un foglio con i numeri\ndel pediatra e del medico,\nallergie e terapie in corso."
+ },
+ {
+  "file": "2026-10-19-6.jpg",
+  "tipo": "passo",
+  "numero": "5",
+  "titolo": "Dì a tutti\ndove sta",
+  "testo": "Così non ricorda tutto\nuna persona sola."
+ },
+ {
+  "file": "2026-10-19-7.jpg",
+  "tipo": "chiusura",
+  "titolo": "Fatto: una\npreoccupazione\nin meno.",
+  "testo": "Non deve essere perfetta:\nbasta che ci sia.",
+  "fonte": "Fonte: Istituto Superiore di Sanità – EpiCentro, Piano nazionale di prevenzione vaccinale 2023–2025, 2023",
+  "nota": "Informazioni generali, non sostituiscono il parere del pediatra o del medico.\nLink completi su serenainmente.it/fonti"
+ }
+]

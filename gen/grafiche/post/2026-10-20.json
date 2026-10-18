@@ -1,0 +1,44 @@
+[
+ {
+  "file": "2026-10-20-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "pratico · 4 mosse",
+  "titolo": "La sera che\nnon finisce mai",
+  "sottotitolo": "Un metodo semplice,\nin linea con quello che\nconsigliano i pediatri."
+ },
+ {
+  "file": "2026-10-20-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "Stesso orario,\nogni sera",
+  "testo": "Anche se non si addormenta:\nè la regolarità che conta."
+ },
+ {
+  "file": "2026-10-20-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Le stesse tre cose,\nnello stesso ordine",
+  "testo": "Bagnetto, pigiama,\nuna storia."
+ },
+ {
+  "file": "2026-10-20-4.jpg",
+  "tipo": "passo",
+  "numero": "3",
+  "titolo": "Schermi spenti\nun'ora prima",
+  "testo": "Tutti, anche i vostri\nse riuscite."
+ },
+ {
+  "file": "2026-10-20-5.jpg",
+  "tipo": "passo",
+  "numero": "4",
+  "titolo": "Se non funziona,\nnon è colpa tua",
+  "testo": "Ogni bambino è diverso:\nparlane con il pediatra,\nche conosce la sua storia."
+ },
+ {
+  "file": "2026-10-20-6.jpg",
+  "tipo": "chiusura",
+  "titolo": "Una sera\nalla volta.",
+  "fonte": "Fonte: American Academy of Pediatrics, Healthy Sleep Habits, 2026",
+  "nota": "Informazioni generali, non sostituiscono il parere del pediatra o del medico.\nLink completi su serenainmente.it/fonti"
+ }
+]

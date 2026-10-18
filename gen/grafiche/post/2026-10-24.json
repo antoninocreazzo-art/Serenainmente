@@ -1,0 +1,24 @@
+[
+ {
+  "file": "2026-10-24-1.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Oggi hai chiesto a tutti\ncome stavano.\nQualcuno l'ha\nchiesto a te?",
+  "freccia": true
+ },
+ {
+  "file": "2026-10-24-2.jpg",
+  "tipo": "frase",
+  "stile": "pensiero",
+  "sfondo": "#F4E9EC",
+  "frase": "Una cosa piccola, da fare oggi:\ndillo a voce alta a una persona.\n«Oggi sono stanca.»\n«Oggi sono stanco.»\nBasta quello."
+ },
+ {
+  "file": "2026-10-24-3.jpg",
+  "tipo": "frase",
+  "stile": "pensiero",
+  "sfondo": "#F4E9EC",
+  "frase": "Chiedere a te come stai\nè già prendersi cura\ndi qualcuno."
+ }
+]

@@ -1,0 +1,30 @@
+[
+ {
+  "file": "2026-10-21-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "un dato, con la sua fonte",
+  "titolo": "Non serve una\ncena perfetta.\nServe sedersi.",
+  "sottotitolo": "E va bene anche\nquando non si riesce."
+ },
+ {
+  "file": "2026-10-21-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "Cosa dicono\ngli studi",
+  "testo": "Nelle famiglie che mangiano\ninsieme più spesso, bambini e\nragazzi tendono ad avere una\ndieta di migliore qualità.\nÈ un'associazione, non una\nregola di causa ed effetto."
+ },
+ {
+  "file": "2026-10-21-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Non serve la cena.\nServe un pasto.",
+  "testo": "Una colazione nel weekend,\ndieci minuti allo stesso tavolo,\ntelefoni lontani."
+ },
+ {
+  "file": "2026-10-21-4.jpg",
+  "tipo": "chiusura",
+  "titolo": "Conta quello,\nnon il menu.",
+  "fonte": "Fonte: Snuggs S., Harvey K., Family Mealtimes: A Systematic Umbrella Review, Nutrients, 2023",
+  "nota": "Informazioni generali, non sostituiscono il parere del pediatra o del medico.\nLink completi su serenainmente.it/fonti"
+ }
+]
