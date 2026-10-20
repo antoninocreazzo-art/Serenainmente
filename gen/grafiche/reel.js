@@ -1,9 +1,10 @@
 // Reel di Serena: frase che appare riga per riga, filo che si disegna. 1080x1920, 30 fps.
 // Uso: node reel.js '{"frase":"...","sfondo":"#F4E9EC","file":"out.mp4"}'
+// Con più di 4 righe (mini-racconto) il testo diventa più piccolo, resta con le maiuscole e sta sopra il filo; usare "durata":12-15.
 const fs=require('fs');const path=require('path');const {execSync}=require('child_process');const { chromium } = require('playwright-core');
 const FONTS=path.join(__dirname,'..','..','assets','fonts');const f64=n=>'data:font/woff2;base64,'+fs.readFileSync(path.join(FONTS,n)).toString('base64');
 const it=JSON.parse(process.argv[2]);const FPS=30,DUR=it.durata||8,N=FPS*DUR;
-const lines=it.frase.split('\n');
+const lines=it.frase.split('\n');const lungo=lines.length>4;
 const html=`<!doctype html><meta charset="utf-8"><style>
 @font-face{font-family:Fr;src:url(${f64('fraunces-latin-400-normal.woff2')})}@font-face{font-family:DM;font-weight:500;src:url(${f64('dm-sans-latin-500-normal.woff2')})}
 body{margin:0}.c{width:1080px;height:1920px;background:${it.sfondo||'#F4E9EC'};position:relative;overflow:hidden;font-family:Fr;color:#3A2C30}
@@ -12,6 +13,7 @@ body{margin:0}.c{width:1080px;height:1920px;background:${it.sfondo||'#F4E9EC'};p
 .t{position:absolute;left:0;top:1230px;width:1080px}
 .t path{stroke-dasharray:600;stroke-dashoffset:600}.t circle{opacity:0}
 .s{position:absolute;left:0;right:0;top:1560px;text-align:center;font:500 28px DM;letter-spacing:4px;color:#97606F;opacity:0}
+${lungo?'.f{top:260px;height:940px;font-size:58px;line-height:1.25;gap:14px;text-transform:none;padding-bottom:0;left:90px;right:90px}':''}
 </style><div class="c"><div class="f">${lines.map(l=>`<div class="l">${l.replace(/&/g,'&amp;').replace(/</g,'&lt;')}</div>`).join('')}</div>
 <svg class="t" viewBox="0 0 1080 200"><path d="M 300 128 C 380 128 400 62 470 62 C 540 62 552 138 620 138 C 690 138 700 84 760 84" fill="none" stroke="#97606F" stroke-width="7" stroke-linecap="round"/><circle cx="792" cy="84" r="9" fill="#C99AA6"/></svg><div class="s">serenainmente</div></div>
 <script>
