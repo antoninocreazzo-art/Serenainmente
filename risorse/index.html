@@ -93,7 +93,7 @@ if(grid){
  var q=document.querySelector('[data-q]'),chips=document.querySelectorAll('[data-arg]'),none=document.querySelector('[data-none]'),cur='tutti';
  var p=new URLSearchParams(location.search);if(p.get('q'))q.value=p.get('q');if(location.hash.length>1)cur=location.hash.slice(1);
  function run(){var t=(q.value||'').toLowerCase().trim(),n=0;
-  grid.querySelectorAll('[data-a]').forEach(function(c){var ok=(cur==='tutti'||c.dataset.a===cur)&&(!t||c.dataset.t.indexOf(t)>-1);c.hidden=!ok;if(ok)n++});
+  grid.querySelectorAll('[data-a]').forEach(function(c){var ok=c.dataset.tool?(!!t&&cur==='tutti'&&c.dataset.t.indexOf(t)>-1):((cur==='tutti'||c.dataset.a===cur)&&(!t||c.dataset.t.indexOf(t)>-1));c.hidden=!ok;if(ok)n++});
   chips.forEach(function(ch){ch.setAttribute('aria-pressed',ch.dataset.arg===cur)});none.hidden=n>0}
  chips.forEach(function(ch){ch.onclick=function(){cur=ch.dataset.arg;history.replaceState(null,'',cur==='tutti'?location.pathname+location.search:'#'+cur);run()}});
  q.oninput=run;run();

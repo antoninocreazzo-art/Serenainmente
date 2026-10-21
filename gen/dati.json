@@ -221,7 +221,9 @@
     "OR-02"
    ],
    "avvertenza": "Consigli organizzativi generali. Per vaccinazioni, terapie e documenti sanitari specifici il riferimento resta il pediatra, il medico o la ASL.",
-   "domanda": "Dove tenere i documenti"
+   "domanda": "Dove tenere i documenti",
+   "titolo_seo": "La cartellina di famiglia",
+   "strumento": "gestionale"
   },
   {
    "slug": "routine-della-nanna",
@@ -268,7 +270,9 @@
     "SB-01"
    ],
    "avvertenza": "Informazioni generali, non sostituiscono il parere del pediatra o del medico.",
-   "domanda": "Come calmare la sera"
+   "domanda": "Come calmare la sera",
+   "titolo_seo": "Routine della nanna in quattro mosse",
+   "strumento": "pdf:settimana-sul-frigo"
   },
   {
    "slug": "domande-per-il-pediatra",
@@ -318,7 +322,9 @@
    ],
    "fonti": [],
    "avvertenza": "Consigli organizzativi generali per prepararsi a una visita. Non sostituiscono le indicazioni del pediatra o del medico.",
-   "domanda": "Cosa chiedere al pediatra"
+   "domanda": "Cosa chiedere al pediatra",
+   "titolo_seo": "Domande da preparare per il pediatra",
+   "strumento": "pdf:domande-per-il-pediatra"
   },
   {
    "slug": "documenti-sanitari-dove-trovarli",
@@ -377,7 +383,9 @@
     "OR-02"
    ],
    "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Le modalità di attivazione cambiano da Regione a Regione: il riferimento è la tua ASL. Per la salute dei tuoi bambini il riferimento resta il pediatra.",
-   "domanda": "Dove trovare un referto"
+   "domanda": "Dove trovare un referto",
+   "titolo_seo": "Documenti sanitari di famiglia: dove trovarli",
+   "strumento": "gestionale"
   },
   {
    "slug": "visita-specialistica-come-funziona",
@@ -437,7 +445,9 @@
     "OR-05"
    ],
    "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026: le regole su ticket, esenzioni e percorsi di tutela cambiano da Regione a Regione e il nuovo Piano nazionale delle liste d'attesa è in approvazione. Il riferimento è la tua ASL. Per quando serve una visita e quale, il riferimento è il pediatra.",
-   "domanda": "Come prenotare una visita"
+   "domanda": "Come prenotare una visita",
+   "titolo_seo": "Visita specialistica per un bambino",
+   "strumento": "pdf:domande-per-il-pediatra"
   },
   {
    "slug": "spostare-disdire-pagare-visita",
@@ -497,7 +507,9 @@
     "OR-07"
    ],
    "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Importi, canali di pagamento e termini di disdetta cambiano da Regione a Regione: fa fede quanto indicato dalla tua ASL al momento della prenotazione. I prezzi privati sono indicativi.",
-   "domanda": "Come disdire senza pagare"
+   "domanda": "Come disdire senza pagare",
+   "titolo_seo": "Disdire una visita e pagare il ticket",
+   "strumento": "gestionale"
   },
   {
    "slug": "pediatra-e-medico-di-base",
@@ -557,7 +569,9 @@
     "OR-05"
    ],
    "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Orari minimi, massimali e procedure derivano dagli accordi nazionali e possono variare per Regione e ASL: fa fede la tua ASL. Per la salute il riferimento resta il medico.",
-   "domanda": "Come cambiare pediatra"
+   "domanda": "Come cambiare pediatra",
+   "titolo_seo": "Pediatra e medico di base: scelta e cambio",
+   "strumento": "pdf:domande-per-il-pediatra"
   }
  ],
  "chi": {
@@ -629,5 +643,33 @@
    "guida": "cartellina-di-famiglia"
   }
  ],
- "gestionale_sheets_url": "https://docs.google.com/spreadsheets/d/1E43hAeihhSkNtOBqHiqZCjmWx2AgPL7LZtYuCh_o4Fk/copy"
+ "gestionale_sheets_url": "https://docs.google.com/spreadsheets/d/1E43hAeihhSkNtOBqHiqZCjmWx2AgPL7LZtYuCh_o4Fk/copy",
+ "frasi": [
+  {
+   "data": "2026-10-19",
+   "testo": "anche oggi hai fatto abbastanza. il resto può aspettare domani."
+  },
+  {
+   "data": "2026-10-25",
+   "testo": "a chi ricorda tutto per tutti: grazie."
+  },
+  {
+   "data": "2026-10-26",
+   "testo": "chi ti chiede come stai ti sta già tenendo per mano."
+  },
+  {
+   "data": "2026-10-28",
+   "parola": "BUONANOTTE",
+   "numero": 1,
+   "testo": "la parola che si dice almeno quattro volte prima che sia vera. L'ultima, sempre sottovoce."
+  },
+  {
+   "data": "2026-11-01",
+   "testo": "un abbraccio lungo vale più di una giornata perfetta."
+  },
+  {
+   "data": "2026-11-01",
+   "testo": "piano. non c'è nessuna gara."
+  }
+ ]
 }

@@ -38,6 +38,12 @@ for g in D['guide']:
     testo = ' '.join([g['titolo'], g['sommario']] + g['perche'] + [a + ' ' + b for a, b in g['passi']] + g.get('errori', []) + g.get('checklist', []))
     g['min'] = max(2, round(len(testo.split()) / 200))
 GUIDE = sorted(D['guide'], key=lambda g: g['data'], reverse=True)
+OGGI = datetime.date.today().isoformat()
+FRASI = sorted([f for f in D.get('frasi', []) if f['data'] <= OGGI], key=lambda f: f['data'], reverse=True)
+FRASI_ON = len(FRASI) >= 5  # la pagina entra nei menu quando ha almeno 5 frasi
+FRASI_LI = ''
+if FRASI_ON: FRASI_LI = '<li><a href="~/frasi/">Le frasi da mandare</a></li>'
+
 
 # ---------- icone (linea, 24px) ----------
 P = {
@@ -114,7 +120,7 @@ if(grid){
  var q=document.querySelector('[data-q]'),chips=document.querySelectorAll('[data-arg]'),none=document.querySelector('[data-none]'),cur='tutti';
  var p=new URLSearchParams(location.search);if(p.get('q'))q.value=p.get('q');if(location.hash.length>1)cur=location.hash.slice(1);
  function run(){var t=(q.value||'').toLowerCase().trim(),n=0;
-  grid.querySelectorAll('[data-a]').forEach(function(c){var ok=(cur==='tutti'||c.dataset.a===cur)&&(!t||c.dataset.t.indexOf(t)>-1);c.hidden=!ok;if(ok)n++});
+  grid.querySelectorAll('[data-a]').forEach(function(c){var ok=c.dataset.tool?(!!t&&cur==='tutti'&&c.dataset.t.indexOf(t)>-1):((cur==='tutti'||c.dataset.a===cur)&&(!t||c.dataset.t.indexOf(t)>-1));c.hidden=!ok;if(ok)n++});
   chips.forEach(function(ch){ch.setAttribute('aria-pressed',ch.dataset.arg===cur)});none.hidden=n>0}
  chips.forEach(function(ch){ch.onclick=function(){cur=ch.dataset.arg;history.replaceState(null,'',cur==='tutti'?location.pathname+location.search:'#'+cur);run()}});
  q.oninput=run;run();
@@ -122,9 +128,9 @@ if(grid){
 })();
 </script>"""
 
-def page(path, title, desc, body, ld=None, cls=''):
+def page(path, title, desc, body, ld=None, cls='', seo=None, og=None):
     canon = SITE + path
-    t = 'serenainmente · Serena, parole e idee per chi si prende cura della famiglia' if path == '/' else f'{title} · serenainmente'
+    t = 'serenainmente · Serena, parole e idee per chi si prende cura della famiglia' if path == '/' else f'{seo or title} · serenainmente'
     if path == '/' and not ld:
         ld = {"@context": "https://schema.org", "@graph": [
             {"@type": "WebSite", "name": "serenainmente", "alternateName": ["Serena", "Serena in mente"], "url": SITE + "/"},
@@ -145,7 +151,7 @@ def page(path, title, desc, body, ld=None, cls=''):
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{canon}">
 <meta property="og:type" content="{'article' if path.startswith('/guide/') and path != '/guide/' else 'website'}">
-<meta property="og:image" content="{SITE}/assets/og.png">
+<meta property="og:image" content="{SITE}/{og or "assets/og.png"}">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="it_IT">
@@ -180,7 +186,7 @@ def page(path, title, desc, body, ld=None, cls=''):
 <div class="ft-in">
 <div class="ft-brand"><a class="brand" href="~/">{LOGO}</a><p>Guide pratiche con le loro fonti, strumenti gratuiti e parole in cui ritrovarsi, per chi si prende cura della famiglia.</p>
 <a class="ft-ig" href="{IG}" rel="noopener" data-umami-event="instagram">{ic('insta')} @serenainmente</a></div>
-<div><h2>Esplora</h2><ul><li><a href="~/guide/">Articoli e guide</a></li><li><a href="~/risorse/">Risorse gratuite</a></li><li><a href="~/gestionale/">Il gestionale di famiglia</a></li></ul></div>
+<div><h2>Esplora</h2><ul><li><a href="~/guide/">Articoli e guide</a></li><li><a href="~/risorse/">Risorse gratuite</a></li><li><a href="~/gestionale/">Il gestionale di famiglia</a></li>{FRASI_LI}</ul></div>
 <div><h2>Serena</h2><ul><li><a href="~/chi-e-serena/">Chi è Serena</a></li><li><a href="~/metodo/">Il nostro metodo</a></li><li><a href="~/fonti/">Le fonti</a></li><li><a href="~/privacy/">Privacy</a></li><li><a href="~/note-legali/">Note legali</a></li></ul></div>
 <div><h2>Contatti</h2><ul><li><a href="mailto:{MAIL}">{MAIL}</a></li><li><a href="{IG}" rel="noopener">Messaggio su Instagram</a></li></ul></div>
 </div>
@@ -248,6 +254,21 @@ GEST_PUNTI = ['Prima gli impegni: cosa, quando e per chi', 'Scrivi una volta, si
 
 pages = []
 
+STAMPABILI = [('settimana-sul-frigo', 'La settimana di tutti', 'Un foglio da attaccare al frigo: chi va dove, visite, chi accompagna'),
+              ('domande-per-il-pediatra', 'Prima della visita dal pediatra', 'Cosa hai notato, le domande in ordine, cosa ha detto il medico'),
+              ('lista-delle-medicine', 'La lista delle medicine, scritta insieme', 'Per chi segue un genitore o un nonno: da compilare a quattro mani')]
+STN = {f: (t, d) for f, t, d in STAMPABILI}
+def strumento_box(key):
+    if not key: return ''
+    if key == 'gestionale':
+        return f'''<aside class="tool"><span class="eyebrow">Strumento gratuito</span><h2>Il gestionale di famiglia</h2><p>Visite, scadenze e documenti in un file solo: Excel o Fogli Google. I dati restano tuoi.</p><a class="btn" href="~/gestionale/" data-umami-event="guida-strumento" data-umami-event-tool="gestionale">Scopri il gestionale {ic('arrow','ic-s')}</a></aside>'''
+    f = key.split(':', 1)[1]; t, d = STN[f]
+    return f'''<aside class="tool"><span class="eyebrow">Da stampare, gratis</span><h2>{e(t)}</h2><p>{e(d)}. Un foglio A4 da compilare a penna.</p><a class="btn" href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}">{ic('download','ic-s')} Scarica il PDF</a></aside>'''
+TOOLS = [('~/gestionale/', 'Il gestionale di famiglia', 'Visite, scadenze, documenti e la settimana in un file', 'calendar', '', 'gestionale')] + \
+        [(f'~/scarica/{f}.pdf', t, d, 'download', ' download', f) for f, t, d in STAMPABILI]
+def tools_strip():
+    return '<ul class="tools">' + ''.join(f'<li><a href="{h}"{dl} data-umami-event="home-strumento" data-umami-event-tool="{k}"><span class="tic">{ic(i)}</span><span><b>{e(t)}</b><small>{e(d)}</small></span></a></li>' for h, t, d, i, dl, k in TOOLS) + '</ul>'
+
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.worksheet.datavalidation import DataValidation
@@ -303,6 +324,7 @@ for g in GUIDE:
 <dl class="facts"><div><dt>Tempo</dt><dd>{e(g['tempo'])}</dd></div><div><dt>Cosa serve</dt><dd>{e(g['serve'])}</dd></div></dl>
 <section><h2>Perché aiuta</h2>{''.join(f'<p>{e(p)}</p>' for p in g['perche'])}</section>
 <section><h2>Come si fa</h2><ol class="steps">{steps}</ol></section>
+{strumento_box(g.get('strumento'))}
 {f'<section class="box box-rosa"><h2>Errori comuni</h2><ul class="plain">{errori}</ul></section>' if errori else ''}
 {f'<section class="box box-salvia ck"><h2>Checklist</h2><ul class="check">{check}</ul><p class="small">Spunta qui: le spunte restano salvate su questo telefono o computer.</p><div class="row noprint"><button class="btn" type="button" hidden data-sharetext="{cktext}" data-umami-event="checklist-note">Salva in Note o Promemoria</button><button class="btn btn-line" type="button" data-copytext="{cktext}" data-done="Lista copiata" data-umami-event="checklist-copia">Copia la lista</button><a class="btn btn-line" href="~/guide/{g["slug"]}/checklist.xlsx" download data-umami-event="checklist-excel" data-umami-event-guida="{g["slug"]}">{ic("download","ic-s")} Excel</a><button class="btn btn-line" type="button" onclick="print()" data-umami-event="checklist-stampa">Stampa</button></div></section>' if check else ''}
 {f'<section><h2>Fonti</h2><ul class="sources">{fonti}</ul></section>' if fonti else ''}
@@ -310,15 +332,26 @@ for g in GUIDE:
 {share(f"/guide/{g['slug']}/", g['titolo'])}
 </div>
 <section class="related wrap"><div class="sec-hd"><h2>Continua a leggere</h2><a class="more" href="~/guide/">Tutti gli articoli {ic('arrow','ic-s')}</a></div>
-<div class="grid3">{''.join(card(x) for x in corr[:3])}</div></section>
+<div class="grid3 carousel">{''.join(card(x) for x in corr[:3])}</div></section>
 </article>'''
-    ld = {"@context": "https://schema.org", "@type": "Article", "headline": g['titolo'], "description": g['sommario'],
-          "datePublished": g['data'], "dateModified": g['data'], "inLanguage": "it", "articleSection": a[1],
-          "author": {"@type": "Organization", "name": "Serena"},
+    url = f"{SITE}/guide/{g['slug']}/"
+    art = {"@type": "Article", "headline": g['titolo'], "description": g['sommario'], "mainEntityOfPage": url,
+          "datePublished": g['data'], "dateModified": g.get('aggiornata', g['data']), "inLanguage": "it", "articleSection": a[1],
+          "isAccessibleForFree": True,
+          "author": {"@type": "Organization", "name": "Serena", "url": SITE + "/chi-e-serena/"},
           "publisher": {"@type": "Organization", "name": "Serena", "logo": {"@type": "ImageObject", "url": SITE + "/assets/brand/avatar-320.png"}}}
-    pages.append(page(f"/guide/{g['slug']}/", g['titolo'], g['sommario'], body, ld))
+    if os.path.exists(os.path.join(ROOT, 'assets', 'foto', f"{g['slug']}.webp")): art["image"] = f"{SITE}/assets/foto/{g['slug']}.webp"
+    if g.get('fonti'): art["citation"] = [{"@type": "CreativeWork", "name": FONTI[f]['titolo'], "url": FONTI[f]['url'], "publisher": FONTI[f]['ente']} for f in g['fonti']]
+    crumbs = {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Articoli e guide", "item": SITE + "/guide/"},
+        {"@type": "ListItem", "position": 2, "name": a[1], "item": SITE + "/guide/#" + a[0]},
+        {"@type": "ListItem", "position": 3, "name": g['titolo'], "item": url}]}
+    ld = {"@context": "https://schema.org", "@graph": [art, crumbs]}
+    ogp = f"assets/og/{g['slug']}.jpg" if os.path.exists(os.path.join(ROOT, 'assets', 'og', f"{g['slug']}.jpg")) else None
+    pages.append(page(f"/guide/{g['slug']}/", g['titolo'], g['sommario'], body, ld, seo=g.get('titolo_seo'), og=ogp))
 
 # ---------- articoli e guide ----------
+tool_cards = ''.join(f'<a class="acard tcard" href="{h}"{dl} data-tool="1" data-a="strumento" data-t="{e((t + " " + d + " strumento stampabile pdf scarica gratis").lower())}" hidden><div class="ac-b"><span class="chip c-t-malva">Strumento gratuito</span><h3>{e(t)}</h3><p>{e(d)}</p></div></a>' for h, t, d, i, dl, k in TOOLS)
 argc = {a[0]: sum(1 for g in GUIDE if g['arg'] == a[0]) for a in ARG}
 chips = '<button type="button" class="fchip" data-arg="tutti" aria-pressed="true">Tutti</button>' + ''.join(
     f'<button type="button" class="fchip" data-arg="{a[0]}" aria-pressed="false">{e(a[1])}</button>' for a in ARG if argc[a[0]])
@@ -332,7 +365,8 @@ pages.append(page('/guide/', 'Articoli e guide', 'Guide pratiche e approfondimen
 <label class="search">{ic('search')}<span class="sr">Cerca negli articoli</span><input type="search" data-q placeholder="Cerca: pediatra, ticket, nanna…" autocomplete="off"></label>
 <div class="fchips" role="group" aria-label="Filtra per argomento">{chips}</div>
 </div>
-<div class="grid3" data-grid>{''.join(card(g, eager=i < 3) for i, g in enumerate(GUIDE))}</div>
+<h2 class="sr">Elenco delle guide</h2>
+<div class="grid3" data-grid>{''.join(card(g, eager=i < 3) for i, g in enumerate(GUIDE))}{tool_cards}</div>
 <p class="none" data-none hidden>Nessun articolo trovato. Prova con un'altra parola o scegli «Tutti».</p>
 </section>''', cls='p-list'))
 
@@ -366,9 +400,6 @@ pages.append(page('/gestionale/', 'Il gestionale di famiglia', 'Un file gratuito
 
 # ---------- risorse gratuite ----------
 ck_rows = ''.join(f'''<li><a href="~/guide/{g['slug']}/"><b>{e(g['titolo'])}</b><span>{len(g['checklist'])} voci · {e(ARGN[g['arg']][1])}</span></a><a class="dl" href="~/guide/{g['slug']}/checklist.xlsx" download data-umami-event="checklist-excel" data-umami-event-guida="{g['slug']}" aria-label="Scarica la checklist in Excel">{ic('download')}</a></li>''' for g in GUIDE if g.get('checklist'))
-STAMPABILI = [('settimana-sul-frigo', 'La settimana di tutti', 'Un foglio da attaccare al frigo: chi va dove, visite, chi accompagna'),
-              ('domande-per-il-pediatra', 'Prima della visita dal pediatra', 'Cosa hai notato, le domande in ordine, cosa ha detto il medico'),
-              ('lista-delle-medicine', 'La lista delle medicine, scritta insieme', 'Per chi segue un genitore o un nonno: da compilare a quattro mani')]
 st_rows = ''.join(f'''<li><a href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}"><b>{e(t)}</b><span>PDF A4 · {e(d)}</span></a><a class="dl" href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}" aria-label="Scarica {e(t)} in PDF">{ic('download')}</a></li>''' for f, t, d in STAMPABILI)
 pages.append(page('/risorse/', 'Risorse gratuite', 'Strumenti gratuiti per la famiglia: il gestionale di famiglia, fogli da stampare e le checklist delle guide.', f'''
 <section class="ph-hd wrap"><div class="ph-txt"><h1>Risorse gratuite</h1><p class="lead">Strumenti da scaricare e usare subito. Gratuiti, senza registrazione: i tuoi dati restano sul tuo telefono o computer.</p></div></section>
@@ -450,6 +481,19 @@ pages.append(page('/fonti/', 'Le fonti di Serena', 'Le fonti dei dati citati nei
 <section class="ph-hd wrap"><div class="ph-txt"><h1>Le fonti</h1><p class="lead">Ogni dato citato nei post viene da qui. Apri un post per vedere cosa afferma e da quale fonte viene.</p></div></section>
 <section class="wrap-t"><ul class="postl">{''.join(post_cards)}</ul></section>'''))
 
+# ---------- le frasi di Serena ----------
+def frase_li(f):
+    txt = (f"{f['parola']}: " if f.get('parola') else '') + f['testo']
+    msg = txt + ' — da @serenainmente'
+    wa = 'https://wa.me/?text=' + e(urllib.parse.quote(msg))
+    head = f'<span class="eyebrow">Il vocabolario di Serena · n. {f["numero"]}</span><b class="parola">{e(f["parola"])}</b>' if f.get('parola') else ''
+    return f'''<li class="frase">{head}<p>{e(f['testo'])}</p><div class="row"><button class="btn btn-sm" type="button" hidden data-sharetext="{e(msg)}" data-umami-event="frase-condividi">Manda</button><a class="btn btn-sm btn-line" href="{wa}" rel="noopener" data-umami-event="frase-whatsapp">WhatsApp</a><button class="btn btn-sm btn-line" type="button" data-copytext="{e(msg)}" data-done="Copiata" data-umami-event="frase-copia">Copia</button></div><span class="small">{data_it(f['data'])}</span></li>'''
+if FRASI_ON:
+    pages.append(page('/frasi/', 'Le frasi di Serena', 'Frasi brevi da mandare a chi si prende cura della famiglia, e le parole del vocabolario di Serena.', f'''
+<section class="ph-hd wrap"><div class="ph-txt"><h1>Le frasi di Serena</h1><p class="lead">Parole brevi da mandare a chi ne ha bisogno oggi. Ogni settimana se ne aggiunge una.</p></div></section>
+<section class="wrap-t"><ul class="frasi">{''.join(frase_li(f) for f in FRASI)}</ul>{IGCARD}</section>'''))
+frase_home = (f'<section class="wrap rv"><div class="fr-band"><span class="eyebrow">La frase della settimana</span><p>{e(FRASI[0]["testo"])}</p><a class="more" href="~/frasi/">Tutte le frasi da mandare {ic("arrow","ic-s")}</a></div></section>') if FRASI_ON else ''
+
 # ---------- home ----------
 MAXROT = 5  # quante domande vede chi visita la home (scelte a caso ogni volta)
 DOMANDE = [(g['domanda'], f"/guide/{g['slug']}/") for g in GUIDE if g.get('domanda')] + [('Come organizzare la settimana', '/gestionale/')]
@@ -463,10 +507,12 @@ pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della fam
 <section class="hero wrap">
 <div class="hero-txt"><h1>Hai già abbastanza da tenere a mente.</h1>
 {ROT}
-<p class="lead">Guide chiare e strumenti gratuiti per chi si prende cura della famiglia.</p>
-<div class="row"><a class="btn" href="~/guide/">Scopri le guide</a><a class="btn btn-line" href="{IG}" rel="noopener" data-umami-event="instagram">Seguici su Instagram</a></div></div>
+<p class="lead">Risposte pratiche con le loro fonti, fogli da stampare e un gestionale gratuito: per visite, documenti e settimane di chi si prende cura della famiglia.</p>
+<div class="row"><a class="btn" href="~/guide/">Scopri le guide</a><a class="btn btn-line" href="~/risorse/">Strumenti gratuiti</a></div></div>
 {foto('hero', '', 'hero-img', tone='rosa', eager=True)}
 </section>
+<section class="wrap"><h2 class="sec-t">Pronti da usare, gratis</h2>{tools_strip()}</section>
+{frase_home}
 <section class="wrap">{valori('v-band')}</section>
 <section class="wrap rv"><div class="sec-hd"><h2>Ultimi approfondimenti</h2><a class="more" href="~/guide/">Vedi tutti {ic('arrow','ic-s')}</a></div>
 <div class="grid3 carousel">{''.join(card(g) for g in GUIDE[:3])}</div></section>
