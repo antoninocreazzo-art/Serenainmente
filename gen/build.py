@@ -181,7 +181,7 @@ def page(path, title, desc, body, ld=None, cls=''):
 <div class="ft-brand"><a class="brand" href="~/">{LOGO}</a><p>Guide pratiche con le loro fonti, strumenti gratuiti e parole in cui ritrovarsi, per chi si prende cura della famiglia.</p>
 <a class="ft-ig" href="{IG}" rel="noopener" data-umami-event="instagram">{ic('insta')} @serenainmente</a></div>
 <div><h2>Esplora</h2><ul><li><a href="~/guide/">Articoli e guide</a></li><li><a href="~/risorse/">Risorse gratuite</a></li><li><a href="~/gestionale/">Il gestionale di famiglia</a></li></ul></div>
-<div><h2>Serena</h2><ul><li><a href="~/chi-e-serena/">Chi è Serena</a></li><li><a href="~/metodo/">Il nostro metodo</a></li><li><a href="~/fonti/">Le fonti</a></li><li><a href="~/privacy/">Privacy</a></li></ul></div>
+<div><h2>Serena</h2><ul><li><a href="~/chi-e-serena/">Chi è Serena</a></li><li><a href="~/metodo/">Il nostro metodo</a></li><li><a href="~/fonti/">Le fonti</a></li><li><a href="~/privacy/">Privacy</a></li><li><a href="~/note-legali/">Note legali</a></li></ul></div>
 <div><h2>Contatti</h2><ul><li><a href="mailto:{MAIL}">{MAIL}</a></li><li><a href="{IG}" rel="noopener">Messaggio su Instagram</a></li></ul></div>
 </div>
 <div class="ft-low"><p>Serena è ideata e curata da una persona, con supporto AI per testi, immagini e verifica delle fonti. Informazioni generali: non sostituiscono il parere del pediatra o del medico.</p>
@@ -366,9 +366,14 @@ pages.append(page('/gestionale/', 'Il gestionale di famiglia', 'Un file gratuito
 
 # ---------- risorse gratuite ----------
 ck_rows = ''.join(f'''<li><a href="~/guide/{g['slug']}/"><b>{e(g['titolo'])}</b><span>{len(g['checklist'])} voci · {e(ARGN[g['arg']][1])}</span></a><a class="dl" href="~/guide/{g['slug']}/checklist.xlsx" download data-umami-event="checklist-excel" data-umami-event-guida="{g['slug']}" aria-label="Scarica la checklist in Excel">{ic('download')}</a></li>''' for g in GUIDE if g.get('checklist'))
-pages.append(page('/risorse/', 'Risorse gratuite', 'Strumenti gratuiti per la famiglia: il gestionale di famiglia e le checklist delle guide.', f'''
+STAMPABILI = [('settimana-sul-frigo', 'La settimana di tutti', 'Un foglio da attaccare al frigo: chi va dove, visite, chi accompagna'),
+              ('domande-per-il-pediatra', 'Prima della visita dal pediatra', 'Cosa hai notato, le domande in ordine, cosa ha detto il medico'),
+              ('lista-delle-medicine', 'La lista delle medicine, scritta insieme', 'Per chi segue un genitore o un nonno: da compilare a quattro mani')]
+st_rows = ''.join(f'''<li><a href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}"><b>{e(t)}</b><span>PDF A4 · {e(d)}</span></a><a class="dl" href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}" aria-label="Scarica {e(t)} in PDF">{ic('download')}</a></li>''' for f, t, d in STAMPABILI)
+pages.append(page('/risorse/', 'Risorse gratuite', 'Strumenti gratuiti per la famiglia: il gestionale di famiglia, fogli da stampare e le checklist delle guide.', f'''
 <section class="ph-hd wrap"><div class="ph-txt"><h1>Risorse gratuite</h1><p class="lead">Strumenti da scaricare e usare subito. Gratuiti, senza registrazione: i tuoi dati restano sul tuo telefono o computer.</p></div></section>
 <section class="wrap"><div class="gband rv">{devices('sm')}<div class="gb-txt"><span class="eyebrow">Il più usato</span><h2>Il gestionale di famiglia</h2><p>Uno strumento semplice per organizzare documenti, scadenze, visite e la settimana di tutti.</p><ul class="ticks">{''.join(f'<li>{ic("check","ic-s")}{p}</li>' for p in GEST_PUNTI[:3])}</ul><a class="btn" href="~/gestionale/">Scopri il gestionale {ic('arrow','ic-s')}</a></div></div></section>
+<section class="wrap-t"><h2>Da stampare</h2><p class="lead-s">Fogli A4 in PDF, da stampare a casa e compilare a penna.</p><ul class="cklist">{st_rows}</ul></section>
 <section class="wrap-t"><h2>Le checklist delle guide</h2><p class="lead-s">Ogni guida ha la sua lista: spuntala sul sito, salvala in Note o scaricala in Excel.</p><ul class="cklist">{ck_rows}</ul></section>'''))
 
 # ---------- chi è serena ----------
@@ -412,6 +417,19 @@ pages.append(page('/privacy/', 'Privacy', 'Come serenainmente.it tratta i dati: 
 <section class="ph-hd wrap"><div class="ph-txt"><h1>Privacy</h1><p class="lead">In breve: niente cookie, niente profilazione, nessun dato personale raccolto.</p></div></section>
 <section class="wrap-t prose">{''.join(f'<p>{e(p)}</p>' for p in CHI['Privacy'])}
 <h2>Contatti</h2><p>Per qualsiasi domanda: <a href="mailto:{MAIL}">{MAIL}</a>, oppure un messaggio privato su Instagram a <a href="{IG}" rel="noopener">@serenainmente</a>.</p>
+<p class="small">Ultimo aggiornamento: {data_it(datetime.date.today().isoformat())}.</p></section>'''))
+
+# ---------- note legali ----------
+pages.append(page('/note-legali/', 'Note legali', 'Chi cura serenainmente.it, come si possono usare i contenuti, informazioni sanitarie, link esterni e immagini.', f'''
+<section class="ph-hd wrap"><div class="ph-txt"><h1>Note legali</h1><p class="lead">Le regole del sito, in parole semplici.</p></div></section>
+<section class="wrap-t prose">
+<h2>Chi cura il sito</h2><p>serenainmente.it e il profilo Instagram <a href="{IG}" rel="noopener">@serenainmente</a> sono un progetto editoriale indipendente, ideato e curato da una persona, con supporto AI per testi, immagini e verifica delle fonti. Non ci sono sponsor né pubblicità. Per qualsiasi comunicazione: <a href="mailto:{MAIL}">{MAIL}</a>.</p>
+<h2>Uso dei contenuti</h2><p>Testi, grafiche, guide, checklist, fogli da stampare e il gestionale di famiglia sono di serenainmente.it. Puoi usarli gratuitamente per te e la tua famiglia, stamparli e condividerli con il link alla pagina originale. Non è consentito ripubblicarli, modificarli per distribuirli o usarli per scopi commerciali senza un consenso scritto: se ti servono per una scuola, un consultorio o un'associazione, scrivici e ne parliamo volentieri.</p>
+<h2>Informazioni sanitarie</h2><p>I contenuti sono informazioni generali tratte da fonti indicate pagina per pagina. Non sono diagnosi né indicazioni per una persona specifica e non sostituiscono il parere del pediatra, del medico o di altri professionisti. In caso di urgenza chiama il 112.</p>
+<h2>Link e fonti esterne</h2><p>Le fonti citate rimandano a siti di enti e istituzioni che non gestiamo. Controlliamo i collegamenti alla data indicata in ogni pagina, ma i loro contenuti possono cambiare: in quel caso aggiorniamo la pagina appena ce ne accorgiamo.</p>
+<h2>Immagini</h2><p>Le fotografie del sito e le grafiche sono generate o composte con strumenti digitali e AI e scelte da una persona: non ritraggono persone, luoghi o oggetti reali.</p>
+<h2>Marchi di terzi</h2><p>Microsoft Excel, Fogli Google, Numbers, Instagram e WhatsApp sono marchi dei rispettivi titolari: li citiamo solo per spiegare come usare gli strumenti.</p>
+<h2>Errori e segnalazioni</h2><p>Se trovi un errore, un dato superato o un link che non funziona, scrivici: correggiamo e indichiamo la data dell'aggiornamento. Come trattiamo i dati è spiegato nella pagina <a href="~/privacy/">Privacy</a>.</p>
 <p class="small">Ultimo aggiornamento: {data_it(datetime.date.today().isoformat())}.</p></section>'''))
 
 # ---------- fonti ----------
