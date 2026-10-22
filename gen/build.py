@@ -262,9 +262,11 @@ def strumento_box(key):
     if not key: return ''
     if key == 'gestionale':
         return f'''<aside class="tool"><span class="eyebrow">Strumento gratuito</span><h2>Il gestionale di famiglia</h2><p>Visite, scadenze e documenti in un file solo: Excel o Fogli Google. I dati restano tuoi.</p><a class="btn" href="~/gestionale/" data-umami-event="guida-strumento" data-umami-event-tool="gestionale">Scopri il gestionale {ic('arrow','ic-s')}</a></aside>'''
+    if key == 'preparo':
+        return f'''<aside class="tool"><span class="eyebrow">Strumento gratuito, dal telefono</span><h2>Preparo la visita</h2><p>Scrivi a casa cosa hai notato e le domande in ordine; in ambulatorio le hai davanti, con lo spazio per le risposte. Resta solo sul tuo telefono.</p><a class="btn" href="~/strumenti/preparo-la-visita/" data-umami-event="guida-strumento" data-umami-event-tool="preparo">Apri lo strumento {ic('arrow','ic-s')}</a></aside>'''
     f = key.split(':', 1)[1]; t, d = STN[f]
     return f'''<aside class="tool"><span class="eyebrow">Da stampare, gratis</span><h2>{e(t)}</h2><p>{e(d)}. Un foglio A4 da compilare a penna.</p><a class="btn" href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}">{ic('download','ic-s')} Scarica il PDF</a></aside>'''
-TOOLS = [('~/gestionale/', 'Il gestionale di famiglia', 'Visite, scadenze, documenti e la settimana in un file', 'calendar', '', 'gestionale')] + \
+TOOLS = [('~/strumenti/preparo-la-visita/', 'Preparo la visita', 'Domande in ordine e risposte, sul telefono', 'list', '', 'preparo'), ('~/gestionale/', 'Il gestionale di famiglia', 'Visite, scadenze, documenti e la settimana in un file', 'calendar', '', 'gestionale')] + \
         [(f'~/scarica/{f}.pdf', t, d, 'download', ' download', f) for f, t, d in STAMPABILI]
 def tools_strip():
     return '<ul class="tools">' + ''.join(f'<li><a href="{h}"{dl} data-umami-event="home-strumento" data-umami-event-tool="{k}"><span class="tic">{ic(i)}</span><span><b>{e(t)}</b><small>{e(d)}</small></span></a></li>' for h, t, d, i, dl, k in TOOLS) + '</ul>'
@@ -449,6 +451,22 @@ pages.append(page('/privacy/', 'Privacy', 'Come serenainmente.it tratta i dati: 
 <section class="wrap-t prose">{''.join(f'<p>{e(p)}</p>' for p in CHI['Privacy'])}
 <h2>Contatti</h2><p>Per qualsiasi domanda: <a href="mailto:{MAIL}">{MAIL}</a>, oppure un messaggio privato su Instagram a <a href="{IG}" rel="noopener">@serenainmente</a>.</p>
 <p class="small">Ultimo aggiornamento: {data_it(datetime.date.today().isoformat())}.</p></section>'''))
+
+# ---------- strumenti interattivi ----------
+PV = open(os.path.join(ROOT, 'gen', 'preparo.html'), encoding='utf-8').read().replace('{lock}', ic('lock','ic-s')).replace('{arrow}', ic('arrow','ic-s')).replace('{back}', '←')
+pages.append(page('/strumenti/preparo-la-visita/', 'Preparo la visita', 'Strumento gratuito: scrivi cosa hai notato e le domande per il pediatra o il medico, e in ambulatorio le hai davanti. Resta solo sul tuo telefono.', PV, seo='Preparo la visita: le domande per il medico', cls='p-tool'))
+
+# ---------- da instagram (link in bio) ----------
+IGL = sorted([x for x in D.get('instagram', []) if x['data'] <= OGGI], key=lambda x: x['data'], reverse=True)[:9]
+def ig_li(x):
+    dl = ' download' if x['link'].endswith('.pdf') else ''
+    tipo = {'strumento': 'Strumento', 'stampabile': 'Da stampare', 'guida': 'Guida', 'fonti': 'Le fonti'}.get(x.get('tipo'), 'Dal post')
+    return f'''<li><a href="~{x['link']}"{dl} data-umami-event="ig-link" data-umami-event-link="{e(x['link'])}"><span class="chip c-t-malva">{tipo}</span><b>{e(x['titolo'])}</b><small>Dal post del {data_it(x['data'])}</small></a></li>'''
+pages.append(page('/ig/', 'Da Instagram', 'Gli strumenti, i fogli e le guide dei post di @serenainmente, a portata di tocco.', f'''
+<section class="wrap-t ig-page"><div class="ig-hd"><img src="~/assets/brand/avatar-160.png" alt="" width="64" height="64"><div><h1>Dai post di Serena</h1><p class="lead-s">Tutto quello che trovi nei post, a un tocco. Gratis, senza registrazione.</p></div></div>
+{f'<h2 class="sec-t">Dagli ultimi post</h2><ul class="ig-list">' + ''.join(ig_li(x) for x in IGL) + '</ul>' if IGL else ''}
+<h2 class="sec-t">Sempre a portata di mano</h2>{tools_strip()}
+<div class="row"><a class="btn" href="~/guide/">Tutte le guide</a><a class="btn btn-line" href="~/">Il sito di Serena</a></div></section>''', cls='p-ig'))
 
 # ---------- note legali ----------
 pages.append(page('/note-legali/', 'Note legali', 'Chi cura serenainmente.it, come si possono usare i contenuti, informazioni sanitarie, link esterni e immagini.', f'''

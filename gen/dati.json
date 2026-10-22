@@ -324,7 +324,7 @@
    "avvertenza": "Consigli organizzativi generali per prepararsi a una visita. Non sostituiscono le indicazioni del pediatra o del medico.",
    "domanda": "Cosa chiedere al pediatra",
    "titolo_seo": "Domande da preparare per il pediatra",
-   "strumento": "pdf:domande-per-il-pediatra"
+   "strumento": "preparo"
   },
   {
    "slug": "documenti-sanitari-dove-trovarli",
@@ -447,7 +447,7 @@
    "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026: le regole su ticket, esenzioni e percorsi di tutela cambiano da Regione a Regione e il nuovo Piano nazionale delle liste d'attesa è in approvazione. Il riferimento è la tua ASL. Per quando serve una visita e quale, il riferimento è il pediatra.",
    "domanda": "Come prenotare una visita",
    "titolo_seo": "Visita specialistica per un bambino",
-   "strumento": "pdf:domande-per-il-pediatra"
+   "strumento": "preparo"
   },
   {
    "slug": "spostare-disdire-pagare-visita",
@@ -571,7 +571,7 @@
    "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Orari minimi, massimali e procedure derivano dagli accordi nazionali e possono variare per Regione e ASL: fa fede la tua ASL. Per la salute il riferimento resta il medico.",
    "domanda": "Come cambiare pediatra",
    "titolo_seo": "Pediatra e medico di base: scelta e cambio",
-   "strumento": "pdf:domande-per-il-pediatra"
+   "strumento": "preparo"
   }
  ],
  "chi": {
@@ -670,6 +670,44 @@
   {
    "data": "2026-11-01",
    "testo": "piano. non c'è nessuna gara."
+  }
+ ],
+ "instagram": [
+  {
+   "data": "2026-10-19",
+   "titolo": "La cartellina di famiglia: cinque documenti in un posto solo",
+   "link": "/guide/cartellina-di-famiglia/",
+   "tipo": "guida"
+  },
+  {
+   "data": "2026-10-20",
+   "titolo": "La sera che non finisce mai: la routine della nanna",
+   "link": "/guide/routine-della-nanna/",
+   "tipo": "guida"
+  },
+  {
+   "data": "2026-10-23",
+   "titolo": "Il sonno dei più piccoli: le fonti",
+   "link": "/fonti/il-sonno-dei-piu-piccoli/",
+   "tipo": "fonti"
+  },
+  {
+   "data": "2026-10-27",
+   "titolo": "Preparo la visita: le domande per il pediatra, sul telefono",
+   "link": "/strumenti/preparo-la-visita/",
+   "tipo": "strumento"
+  },
+  {
+   "data": "2026-10-30",
+   "titolo": "Vaccini e scadenze: dove trovare i documenti sanitari",
+   "link": "/guide/documenti-sanitari-dove-trovarli/",
+   "tipo": "guida"
+  },
+  {
+   "data": "2026-11-02",
+   "titolo": "La settimana di tutti, il foglio da attaccare al frigo",
+   "link": "/scarica/settimana-sul-frigo.pdf",
+   "tipo": "stampabile"
   }
  ]
 }
