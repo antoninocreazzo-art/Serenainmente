@@ -276,6 +276,27 @@ STAMPABILI = [('settimana-sul-frigo', 'La settimana di tutti', 'Un foglio da att
               ('domande-per-il-pediatra', 'Prima della visita dal pediatra', 'Cosa hai notato, le domande in ordine, cosa ha detto il medico'),
               ('lista-delle-medicine', 'La lista delle medicine, scritta insieme', 'Per chi segue un genitore o un nonno: da compilare a quattro mani')]
 STN = {f: (t, d) for f, t, d in STAMPABILI}
+# pagine dedicate ai fogli da stampare: /stampabili/<slug>/
+SP_INFO = {
+ 'settimana-sul-frigo': dict(
+   seo='Planner settimanale per la famiglia da stampare (PDF gratis)', h1='La settimana di tutti: il planner da stampare',
+   intro='Un foglio A4 orizzontale da attaccare al frigo: chi va dove, le visite, chi accompagna e chi va a prendere, cosa preparare. Lo vede tutta la famiglia, così non lo deve ricordare una persona sola.',
+   contiene=['I sette giorni, dal lunedì alla domenica', 'Chi va dove: scuola, lavoro, sport', 'Visite e appuntamenti', 'Chi accompagna, chi va a prendere', 'Cosa preparare o portare, e cosa c\'è a tavola'],
+   come=['Stampalo la domenica sera, anche in bianco e nero.', 'Scrivetelo insieme, a matita: le settimane cambiano, e va bene così.', 'Attaccalo dove passano tutti: il frigo, la porta d\'ingresso.'],
+   orient='orizzontale', guida='cartellina-di-famiglia', tool='gestionale'),
+ 'domande-per-il-pediatra': dict(
+   seo='Domande da fare al pediatra: il foglio da stampare (PDF gratis)', h1='Prima della visita dal pediatra: il foglio da stampare',
+   intro='Un foglio A4 da compilare a casa, con calma. In ambulatorio i minuti volano: qui le domande non si perdono, e c\'è lo spazio per scrivere cosa ha detto il medico.',
+   contiene=['Per chi, quando, quale medico', 'Perché andate e cosa hai notato', 'Le domande, la più importante per prima', 'Cosa fare a casa e quando richiamare', 'Cosa portare e cosa sapere prima di uscire'],
+   come=['Compilalo la sera prima, in cinque minuti.', 'Mettilo con la tessera sanitaria e il libretto.', 'In ambulatorio leggi le domande in ordine e scrivi le risposte.'],
+   orient='verticale', guida='domande-per-il-pediatra', tool='preparo'),
+ 'lista-delle-medicine': dict(
+   seo='Lista dei farmaci da stampare per anziani e familiari (PDF gratis)', h1='La lista delle medicine, scritta insieme',
+   intro='Un foglio A4 per chi segue un genitore o un nonno: le medicine di ogni giorno, quelle solo al bisogno, il medico e la farmacia. Si compila a quattro mani, con chi le prende: serve a ricordare, non a decidere.',
+   contiene=['Nome, medico di famiglia e farmacia', 'Allergie o medicine da evitare', 'Le medicine di ogni giorno: quanto, quando, fino a quando', 'Le medicine solo quando servono', 'Le domande per la prossima visita'],
+   come=['Scrivetela insieme, con le confezioni davanti.', 'Una copia nel portafoglio, una sul frigo.', 'Portatela a ogni visita e aggiornatela quando il medico cambia qualcosa.'],
+   orient='orizzontale', guida=None, tool='gestionale'),
+}
 def strumento_box(key):
     if not key: return ''
     if key == 'gestionale':
@@ -283,9 +304,9 @@ def strumento_box(key):
     if key == 'preparo':
         return f'''<aside class="tool"><span class="eyebrow">Strumento gratuito, dal telefono</span><h2>Preparo la visita</h2><p>Scrivi a casa cosa hai notato e le domande in ordine; in ambulatorio le hai davanti, con lo spazio per le risposte. Resta solo sul tuo telefono.</p><a class="btn" href="~/strumenti/preparo-la-visita/" data-umami-event="guida-strumento" data-umami-event-tool="preparo">Apri lo strumento {ic('arrow','ic-s')}</a></aside>'''
     f = key.split(':', 1)[1]; t, d = STN[f]
-    return f'''<aside class="tool"><span class="eyebrow">Da stampare, gratis</span><h2>{e(t)}</h2><p>{e(d)}. Un foglio A4 da compilare a penna.</p><a class="btn" href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}">{ic('download','ic-s')} Scarica il PDF</a></aside>'''
+    return f'''<aside class="tool"><span class="eyebrow">Da stampare, gratis</span><h2>{e(t)}</h2><p>{e(d)}. Un foglio A4 da compilare a penna.</p><div class="row"><a class="btn" href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}">{ic('download','ic-s')} Scarica il PDF</a><a class="btn btn-line" href="~/stampabili/{f}/">Guarda l'anteprima</a></div></aside>'''
 TOOLS = [('~/strumenti/preparo-la-visita/', 'Preparo la visita', 'Domande in ordine e risposte, sul telefono', 'list', '', 'preparo'), ('~/gestionale/', 'Il gestionale di famiglia', 'Visite, scadenze, documenti e la settimana in un file', 'calendar', '', 'gestionale')] + \
-        [(f'~/scarica/{f}.pdf', t, d, 'download', ' download', f) for f, t, d in STAMPABILI]
+        [(f'~/stampabili/{f}/', t, d, 'download', '', f) for f, t, d in STAMPABILI]
 def tools_strip():
     return '<ul class="tools">' + ''.join(f'<li><a href="{h}"{dl} data-umami-event="home-strumento" data-umami-event-tool="{k}"><span class="tic">{ic(i)}</span><span><b>{e(t)}</b><small>{e(d)}</small></span></a></li>' for h, t, d, i, dl, k in TOOLS) + '</ul>'
 
@@ -423,12 +444,44 @@ pages.append(page('/gestionale/', 'Il gestionale di famiglia', 'Un file gratuito
 
 # ---------- risorse gratuite ----------
 ck_rows = ''.join(f'''<li><a href="~/guide/{g['slug']}/"><b>{e(g['titolo'])}</b><span>{len(g['checklist'])} voci · {e(ARGN[g['arg']][1])}</span></a><a class="dl" href="~/guide/{g['slug']}/checklist.xlsx" download data-umami-event="checklist-excel" data-umami-event-guida="{g['slug']}" aria-label="Scarica la checklist in Excel">{ic('download')}</a></li>''' for g in GUIDE if g.get('checklist'))
-st_rows = ''.join(f'''<li><a href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}"><b>{e(t)}</b><span>PDF A4 · {e(d)}</span></a><a class="dl" href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}" aria-label="Scarica {e(t)} in PDF">{ic('download')}</a></li>''' for f, t, d in STAMPABILI)
+st_rows = ''.join(f'''<li><a href="~/stampabili/{f}/"><b>{e(t)}</b><span>PDF A4 · {e(d)}</span></a><a class="dl" href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}" aria-label="Scarica {e(t)} in PDF">{ic('download')}</a></li>''' for f, t, d in STAMPABILI)
 pages.append(page('/risorse/', 'Risorse gratuite', 'Strumenti gratuiti per la famiglia: il gestionale di famiglia, fogli da stampare e le checklist delle guide.', f'''
 <section class="ph-hd wrap"><div class="ph-txt"><h1>Risorse gratuite</h1><p class="lead">Strumenti da scaricare e usare subito. Gratuiti, senza registrazione: i tuoi dati restano sul tuo telefono o computer.</p></div></section>
 <section class="wrap"><div class="gband rv">{devices('sm')}<div class="gb-txt"><span class="eyebrow">In evidenza</span><h2>Il gestionale di famiglia</h2><p>Uno strumento semplice per organizzare documenti, scadenze, visite e la settimana di tutti.</p><ul class="ticks">{''.join(f'<li>{ic("check","ic-s")}{p}</li>' for p in GEST_PUNTI[:3])}</ul><a class="btn" href="~/gestionale/">Scopri il gestionale {ic('arrow','ic-s')}</a></div></div></section>
 <section class="wrap-t"><h2>Da stampare</h2><p class="lead-s">Fogli A4 in PDF, da stampare a casa e compilare a penna.</p><ul class="cklist">{st_rows}</ul></section>
 <section class="wrap-t"><h2>Le checklist delle guide</h2><p class="lead-s">Ogni guida ha la sua lista: spuntala sul sito, salvala in Note o scaricala in Excel.</p><ul class="cklist">{ck_rows}</ul></section>'''))
+
+# ---------- pagine dei fogli da stampare ----------
+for f, t, d in STAMPABILI:
+    I = SP_INFO[f]
+    g = next((x for x in D['guide'] if x['slug'] == I['guida']), None)
+    rel = ''
+    if I['tool'] == 'preparo':
+        rel += f'<li><a href="~/strumenti/preparo-la-visita/"><b>Preparo la visita</b><span>La stessa cosa, sul telefono: domande in ordine e risposte</span></a></li>'
+    if I['tool'] == 'gestionale':
+        rel += f'<li><a href="~/gestionale/"><b>Il gestionale di famiglia</b><span>Visite, scadenze, documenti e la settimana in un file</span></a></li>'
+    if g: rel += f'<li><a href="~/guide/{g["slug"]}/"><b>{e(g["titolo"])}</b><span>La guida, passo per passo</span></a></li>'
+    for f2, t2, d2 in STAMPABILI:
+        if f2 != f: rel += f'<li><a href="~/stampabili/{f2}/"><b>{e(t2)}</b><span>PDF A4 da stampare</span></a></li>'
+    ld = {"@context": "https://schema.org", "@type": "DigitalDocument", "name": I['h1'], "description": I['intro'], "encodingFormat": "application/pdf",
+          "url": f"{SITE}/stampabili/{f}/", "contentUrl": f"{SITE}/scarica/{f}.pdf", "image": f"{SITE}/assets/stampabili/{f}.webp", "isAccessibleForFree": True, "inLanguage": "it",
+          "publisher": {"@type": "Organization", "name": "Serena", "url": SITE}}
+    pages.append(page(f'/stampabili/{f}/', I['h1'], I['intro'][:155], f'''
+<section class="wrap sp-page">
+<nav class="crumbs" aria-label="Percorso"><a href="~/risorse/">Risorse gratuite</a> <span aria-hidden="true">›</span> <span>Da stampare</span></nav>
+<div class="sp-grid">
+<div class="sp-txt"><span class="eyebrow">PDF A4 {I['orient']} · gratis, senza registrazione</span><h1>{e(I['h1'])}</h1><p class="lead">{e(I['intro'])}</p>
+<div class="row"><a class="btn" href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}" data-umami-event-da="pagina">{ic('download','ic-s')} Scarica il PDF</a><a class="btn btn-line" href="~/scarica/{f}.pdf" target="_blank" rel="noopener" data-umami-event="stampabile-apri" data-umami-event-file="{f}">Apri e stampa</a></div>
+</div>
+<div class="sp-txt2"><h2>Cosa contiene</h2><ul class="ticks">{''.join(f'<li>{ic("check","ic-s")}{e(x)}</li>' for x in I['contiene'])}</ul>
+<h2>Come usarlo</h2><ol class="sp-come">{''.join(f'<li>{e(x)}</li>' for x in I['come'])}</ol>
+</div>
+<figure class="sp-prev sp-{I['orient']}"><img src="~/assets/stampabili/{f}.webp" srcset="~/assets/stampabili/{f}-sm.webp 560w, ~/assets/stampabili/{f}.webp 1100w" sizes="(min-width:900px) 46vw, 100vw" alt="Anteprima del foglio «{e(t)}»" loading="eager"><figcaption class="small">Anteprima del foglio. Si stampa anche in bianco e nero.</figcaption></figure>
+</div>
+</section>
+<section class="wrap-t"><h2>Ti può servire anche</h2><ul class="cklist">{rel}</ul>
+<p class="small">Stampabile gratuito, per uso personale e familiare. Strumento organizzativo: non sostituisce il parere del medico o del farmacista.</p>
+{share(f'/stampabili/{f}/', I['h1'])}</section>''', ld=ld, seo=I['seo'], og=f'assets/og/stampabili-{f}.jpg'))
 
 # ---------- chi è serena ----------
 CHI = {s[0]: s[1] for s in D['chi']['sezioni']}

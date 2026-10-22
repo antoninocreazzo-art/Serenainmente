@@ -44,5 +44,14 @@ h1{font-family:Fraunces,Georgia,serif;font-weight:400;line-height:1.12;margin-to
     await p.screenshot({ path: path.join(out, `${g.slug}.jpg`), type: 'jpeg', quality: 86 });
     console.log('ok', g.slug);
   }
+  // fogli da stampare: anteprima del PDF a destra
+  const SP = [['settimana-sul-frigo', 'Il planner della settimana, da stampare'], ['domande-per-il-pediatra', 'Le domande per il pediatra, da stampare'], ['lista-delle-medicine', 'La lista delle medicine, da stampare']];
+  for (const [f, t] of SP) {
+    const img = path.join(ROOT, 'assets', 'stampabili', `${f}.webp`);
+    await p.setContent(`<!doctype html><meta charset="utf-8"><style>${css}.p{background:#F4E9EC ${'url('}${img64(img)}) center/88% auto no-repeat;}</style><div class="c"><div class="t"><span class="chip">Da stampare, gratis</span><h1 style="--fs:54px">${esc(t)}</h1><div class="b">${LOGO}serenainmente.it</div></div><div class="p"></div></div>`);
+    await p.evaluate(() => document.fonts.ready);
+    await p.screenshot({ path: path.join(out, `stampabili-${f}.jpg`), type: 'jpeg', quality: 86 });
+    console.log('ok', f);
+  }
   await b.close();
 })();
