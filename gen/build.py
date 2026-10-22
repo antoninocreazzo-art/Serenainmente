@@ -170,7 +170,7 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None):
 <meta property="og:url" content="{canon}">
 <meta property="og:type" content="{'article' if path.startswith('/guide/') and path != '/guide/' else 'website'}">
 <meta property="og:image" content="{SITE}/{og or "assets/og.png"}">
-<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="p:domain_verify" content="82dca4ec0359bf826162f0392b29bb0c"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="it_IT">
 <meta name="theme-color" content="#F8F4EF">
