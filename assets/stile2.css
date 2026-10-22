@@ -433,3 +433,6 @@ h2.c{text-align:left}
 .sp-prev img{width:100%;height:auto;border-radius:6px;box-shadow:0 14px 34px -18px rgba(58,44,48,.45);background:#fff}
 .sp-verticale img{max-width:420px}
 .sp-prev figcaption{margin-top:10px}
+@media(min-width:1000px){.wrap-t .tools,.ig-page .tools{grid-template-columns:1fr 1fr}}
+.ig-page .tools b{font-size:16px}.ig-page .tools small{font-size:14px}
+@media(min-width:1100px){.wrap>.tools{grid-template-columns:repeat(5,1fr)}}
