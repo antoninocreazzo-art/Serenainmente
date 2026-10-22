@@ -39,6 +39,8 @@ for g in D['guide']:
     g['min'] = max(2, round(len(testo.split()) / 200))
 GUIDE = sorted(D['guide'], key=lambda g: g['data'], reverse=True)
 OGGI = datetime.date.today().isoformat()
+# i post compaiono (fonti, home, sitemap) solo dal giorno in cui escono su Instagram
+D['post'] = [x for x in D['post'] if x['data'] <= OGGI]
 FRASI = sorted([f for f in D.get('frasi', []) if f['data'] <= OGGI], key=lambda f: f['data'], reverse=True)
 FRASI_ON = len(FRASI) >= 5  # la pagina entra nei menu quando ha almeno 5 frasi
 FRASI_LI = ''
@@ -405,7 +407,7 @@ ck_rows = ''.join(f'''<li><a href="~/guide/{g['slug']}/"><b>{e(g['titolo'])}</b>
 st_rows = ''.join(f'''<li><a href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}"><b>{e(t)}</b><span>PDF A4 · {e(d)}</span></a><a class="dl" href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}" aria-label="Scarica {e(t)} in PDF">{ic('download')}</a></li>''' for f, t, d in STAMPABILI)
 pages.append(page('/risorse/', 'Risorse gratuite', 'Strumenti gratuiti per la famiglia: il gestionale di famiglia, fogli da stampare e le checklist delle guide.', f'''
 <section class="ph-hd wrap"><div class="ph-txt"><h1>Risorse gratuite</h1><p class="lead">Strumenti da scaricare e usare subito. Gratuiti, senza registrazione: i tuoi dati restano sul tuo telefono o computer.</p></div></section>
-<section class="wrap"><div class="gband rv">{devices('sm')}<div class="gb-txt"><span class="eyebrow">Il più usato</span><h2>Il gestionale di famiglia</h2><p>Uno strumento semplice per organizzare documenti, scadenze, visite e la settimana di tutti.</p><ul class="ticks">{''.join(f'<li>{ic("check","ic-s")}{p}</li>' for p in GEST_PUNTI[:3])}</ul><a class="btn" href="~/gestionale/">Scopri il gestionale {ic('arrow','ic-s')}</a></div></div></section>
+<section class="wrap"><div class="gband rv">{devices('sm')}<div class="gb-txt"><span class="eyebrow">In evidenza</span><h2>Il gestionale di famiglia</h2><p>Uno strumento semplice per organizzare documenti, scadenze, visite e la settimana di tutti.</p><ul class="ticks">{''.join(f'<li>{ic("check","ic-s")}{p}</li>' for p in GEST_PUNTI[:3])}</ul><a class="btn" href="~/gestionale/">Scopri il gestionale {ic('arrow','ic-s')}</a></div></div></section>
 <section class="wrap-t"><h2>Da stampare</h2><p class="lead-s">Fogli A4 in PDF, da stampare a casa e compilare a penna.</p><ul class="cklist">{st_rows}</ul></section>
 <section class="wrap-t"><h2>Le checklist delle guide</h2><p class="lead-s">Ogni guida ha la sua lista: spuntala sul sito, salvala in Note o scaricala in Excel.</p><ul class="cklist">{ck_rows}</ul></section>'''))
 
@@ -541,6 +543,11 @@ pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della fam
 ''', cls='p-home'))
 
 # ---------- sitemap, robots, file ----------
+fd = os.path.join(OUT, 'fonti')  # toglie le pagine fonti di post non ancora usciti
+if os.path.isdir(fd):
+    vivi = {x['slug'] for x in D['post']}
+    for n in os.listdir(fd):
+        if os.path.isdir(os.path.join(fd, n)) and n not in vivi: shutil.rmtree(os.path.join(fd, n))
 if not PREVIEW:
     today = datetime.date.today().isoformat()
     sm = ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in pages)

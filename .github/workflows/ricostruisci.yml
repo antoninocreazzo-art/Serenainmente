@@ -1,0 +1,26 @@
+name: Ricostruisci il sito ogni mattina
+# Pubblica le frasi e le pagine fonti nel giorno in cui escono su Instagram
+on:
+  schedule:
+    - cron: '30 4 * * *'   # 06:30 in Italia (ora legale), 05:30 d'inverno: sempre prima dei post delle 10
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install openpyxl
+      - run: python3 gen/build.py > /dev/null
+      - run: git checkout -- 'guide/*/checklist.xlsx' || true
+      - run: |
+          git config user.name "serena-bot"
+          git config user.email "serena-bot@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "Niente da aggiornare"; exit 0; fi
+          git commit -m "Aggiornamento automatico del $(date +%d/%m/%Y)"
+          git push

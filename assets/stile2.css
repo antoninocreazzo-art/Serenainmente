@@ -408,3 +408,4 @@ h2.c{text-align:left}
 .ig-list b{font-weight:500;font-size:16.5px;line-height:1.3}.ig-list small{color:var(--muted);font-size:13px}
 @media print{.privacy-note,.pv-act,.pv-foot,.hd,.ft{display:none!important}}
 .pv-card .qa span{display:inline;font-size:19px;color:var(--ink);margin:0}
+.pv-prev pre{font:inherit;font-size:15px;background:#FBF6F4;border-radius:12px;padding:14px;max-height:320px;overflow:auto;margin:10px 0 14px}

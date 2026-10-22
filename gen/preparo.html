@@ -41,7 +41,7 @@
 
 <div class="row pv-act">
 <button class="btn" type="button" data-go="visit" data-umami-event="preparo-visita-apri">Sono in ambulatorio {arrow}</button>
-<button class="btn btn-line" type="button" data-share data-umami-event="preparo-visita-manda">Manda a chi viene con te</button>
+<button class="btn btn-line" type="button" data-share data-umami-event="preparo-visita-manda">Manda quello che hai scritto</button>
 </div>
 </div>
 
@@ -63,7 +63,15 @@
 </div>
 </div>
 
+<div class="pv-card pv-prev" data-prev hidden>
+<h2>Stai per mandare questo testo</h2>
+<p class="small">Contiene quello che hai scritto: arriva solo alla persona che scegli tu.</p>
+<pre class="pv-text" data-prevtext></pre>
+<div class="row"><button class="btn" type="button" data-send data-umami-event="preparo-visita-manda-ok">Manda</button><button class="btn btn-line" type="button" data-cancel>Annulla</button></div>
+</div>
+
 <div class="row pv-foot">
+<button class="btn btn-line btn-sm" type="button" data-link data-umami-event="preparo-visita-link">Manda solo il link dello strumento</button>
 <button class="btn btn-line btn-sm" type="button" data-copy data-umami-event="preparo-visita-copia">Copia tutto</button>
 <button class="btn btn-line btn-sm" type="button" data-reset>Ricomincia da capo</button>
 </div>
@@ -101,7 +109,12 @@ function text(){var o=['Preparo la visita'+(S.chi?' · '+S.chi:''),when(),S.medi
  S.q.forEach(function(q,i){o.push((i+1)+'. '+q.t+(q.r?'\n   → '+q.r:''))});
  if(S.fare)o.push('','Cosa fare: '+S.fare);if(S.richiamare)o.push('Quando richiamare: '+S.richiamare);
  o.push('','Preparato con serenainmente.it/strumenti/preparo-la-visita/');return o.filter(function(x,i,a){return x!==''||a[i-1]!==''}).join('\n')}
-$$('[data-share]').forEach(function(b){b.onclick=function(){var t=text();if(navigator.share){navigator.share({text:t}).catch(function(){})}else{open('https://wa.me/?text='+encodeURIComponent(t))}}});
+function send(t){if(navigator.share){navigator.share({text:t}).catch(function(){})}else{open('https://wa.me/?text='+encodeURIComponent(t))}}
+var P=$('[data-prev]');
+$$('[data-share]').forEach(function(b){b.onclick=function(){$('[data-prevtext]').textContent=text();P.hidden=false;P.scrollIntoView({behavior:'smooth',block:'center'})}});
+$('[data-send]').onclick=function(){send(text());P.hidden=true};
+$('[data-cancel]').onclick=function(){P.hidden=true};
+$('[data-link]').onclick=function(){var u='https://serenainmente.it/strumenti/preparo-la-visita/',t='Uno strumento gratuito per preparare le domande prima di una visita: ';if(navigator.share){navigator.share({title:'Preparo la visita',text:t,url:u}).catch(function(){})}else{open('https://wa.me/?text='+encodeURIComponent(t+u))}};
 $('[data-copy]').onclick=function(){var b=this;navigator.clipboard&&navigator.clipboard.writeText(text()).then(function(){b.textContent='Copiato'})};
 var R=$('[data-reset]'),armed=false;R.onclick=function(){if(!armed){armed=true;R.textContent='Tocca di nuovo per cancellare tutto';setTimeout(function(){armed=false;R.textContent='Ricomincia da capo'},4000);return}
  S={q:[],c:{}};save();$$('[data-f]').forEach(function(el){el.value=''});$$('[data-c]').forEach(function(el){el.checked=false});list();go('prep');armed=false;R.textContent='Ricomincia da capo'};
