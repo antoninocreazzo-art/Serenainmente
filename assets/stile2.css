@@ -436,3 +436,9 @@ h2.c{text-align:left}
 @media(min-width:1000px){.wrap-t .tools,.ig-page .tools{grid-template-columns:1fr 1fr}}
 .ig-page .tools b{font-size:16px}.ig-page .tools small{font-size:14px}
 @media(min-width:1100px){.wrap>.tools{grid-template-columns:repeat(5,1fr)}}
+.tbl{overflow-x:auto;border-radius:var(--r-s);border:1px solid var(--line);background:var(--surface)}
+.tbl table{width:100%;border-collapse:collapse;font-size:16px}
+.tbl th,.tbl td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl thead th{background:var(--rosa);font-weight:600;font-size:14px;letter-spacing:.02em}
+.tbl tbody th{font-weight:600;white-space:nowrap}
+.tbl tr:last-child th,.tbl tr:last-child td{border-bottom:0}

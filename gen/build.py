@@ -297,6 +297,11 @@ SP_INFO = {
    come=['Scrivetela insieme, con le confezioni davanti.', 'Una copia nel portafoglio, una sul frigo.', 'Portatela a ogni visita e aggiornatela quando il medico cambia qualcosa.'],
    orient='orizzontale', guida=None, tool='gestionale'),
 }
+def tabella(t):
+    if not t: return ''
+    th=''.join(f'<th scope="col">{e(c)}</th>' for c in t['colonne'])
+    tr=''.join('<tr>'+''.join((f'<th scope="row">{e(c)}</th>' if i==0 else f'<td>{e(c)}</td>') for i,c in enumerate(r))+'</tr>' for r in t['righe'])
+    return f'<section><h2>{e(t["titolo"])}</h2><div class="tbl"><table><thead><tr>{th}</tr></thead><tbody>{tr}</tbody></table></div></section>'
 def strumento_box(key):
     if not key: return ''
     if key == 'gestionale':
@@ -363,7 +368,7 @@ for g in GUIDE:
 <div class="wrap-m">{foto(g['slug'], '', 'art-img', eager=True)}</div>
 <div class="art-body wrap-t">
 <dl class="facts"><div><dt>Tempo</dt><dd>{e(g['tempo'])}</dd></div><div><dt>Cosa serve</dt><dd>{e(g['serve'])}</dd></div></dl>
-<section><h2>Perché aiuta</h2>{''.join(f'<p>{e(p)}</p>' for p in g['perche'])}</section>
+<section><h2>Perché aiuta</h2>{''.join(f'<p>{e(p)}</p>' for p in g['perche'])}</section>{tabella(g.get('tabella'))}
 <section><h2>Come si fa</h2><ol class="steps">{steps}</ol></section>
 {strumento_box(g.get('strumento'))}
 {f'<section class="box box-rosa"><h2>Errori comuni</h2><ul class="plain">{errori}</ul></section>' if errori else ''}

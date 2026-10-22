@@ -87,6 +87,30 @@
    "titolo": "Si può avere il medico di base in un altro Comune? Residenza, domicilio e assistenza temporanea",
    "tipo": "Articolo divulgativo",
    "url": "https://www.money.it/avere-medico-base-altro-comune"
+  },
+  {
+   "id": "SB-02",
+   "ente": "American Academy of Sleep Medicine (AASM)",
+   "anno": 2016,
+   "titolo": "Recommended Amount of Sleep for Pediatric Populations: A Consensus Statement",
+   "tipo": "Raccomandazione (consensus statement)",
+   "url": "https://jcsm.aasm.org/doi/10.5664/jcsm.5866"
+  },
+  {
+   "id": "SB-07",
+   "ente": "Organizzazione Mondiale della Sanità (OMS)",
+   "anno": 2019,
+   "titolo": "To grow up healthy, children need to sit less and play more",
+   "tipo": "Linea guida",
+   "url": "https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more"
+  },
+  {
+   "id": "OR-13",
+   "ente": "Corte costituzionale",
+   "anno": 2018,
+   "titolo": "Sentenza n. 5/2018 sulla legge 119/2017 (obbligo vaccinale)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.cortecostituzionale.it/stampa-pdf-pronuncia/2018/5"
   }
  ],
  "post": [
@@ -571,6 +595,159 @@
    "domanda": "Come cambiare pediatra",
    "titolo_seo": "Pediatra e medico di base: scelta e cambio",
    "strumento": "preparo"
+  },
+  {
+   "slug": "quanto-dorme-un-bambino",
+   "categoria": "Stare bene",
+   "argomento": "crescita",
+   "data": "2026-10-22",
+   "titolo": "Quanto dorme un bambino: le ore di sonno età per età, e cosa conta davvero",
+   "titolo_seo": "Quante ore deve dormire un bambino",
+   "sommario": "Le indicazioni di OMS e pediatri del sonno, dai primi mesi all'adolescenza. Sono intervalli larghi, non un esame da superare.",
+   "tempo": "Qualche giorno di osservazione",
+   "serve": "Niente",
+   "perche": [
+    "Quando un bambino dorme poco, la prima domanda è sempre: è normale? Conoscere gli intervalli indicati da OMS e pediatri del sonno toglie un po' di ansia: sono larghi apposta, perché ogni bambino è diverso.",
+    "Le ore contano sulle 24 ore, sonnellini compresi fino a circa 5 anni. Più dei numeri conta la regolarità: orari simili ogni giorno per andare a letto e per svegliarsi."
+   ],
+   "tabella": {
+    "titolo": "Le ore, età per età (ogni 24 ore)",
+    "colonne": [
+     "Età",
+     "Ore di sonno",
+     "Fonte"
+    ],
+    "righe": [
+     [
+      "0-3 mesi",
+      "14-17, sonnellini compresi",
+      "OMS"
+     ],
+     [
+      "4-11 mesi",
+      "12-16, sonnellini compresi",
+      "OMS e AASM"
+     ],
+     [
+      "1-2 anni",
+      "11-14, sonnellini compresi",
+      "OMS e AASM"
+     ],
+     [
+      "3-5 anni",
+      "10-13, anche con un sonnellino",
+      "OMS (3-4 anni) e AASM"
+     ],
+     [
+      "6-12 anni",
+      "9-12",
+      "AASM"
+     ],
+     [
+      "13-18 anni",
+      "8-10",
+      "AASM"
+     ]
+    ]
+   },
+   "passi": [
+    [
+     "Conta una giornata intera",
+     "Notte più sonnellini, per qualche giorno di fila. Un giorno storto non dice niente."
+    ],
+    [
+     "Guarda l'intervallo, non il numero",
+     "11 o 14 ore a 2 anni sono entrambe nella norma."
+    ],
+    [
+     "Cura la regolarità",
+     "Orari simili ogni giorno, anche nel fine settimana, aiutano più di un'ora in più."
+    ],
+    [
+     "Schermi spenti prima di dormire",
+     "I pediatri consigliano almeno un'ora prima: c'è la guida sulla routine della nanna."
+    ],
+    [
+     "Se qualcosa ti preoccupa, parlane con il pediatra",
+     "Qualunque cosa del suo sonno ti sembri strana o cambiata merita una domanda, anche piccola."
+    ]
+   ],
+   "errori": [
+    "Confrontare il proprio figlio con quello degli altri.",
+    "Contare solo la notte e dimenticare i sonnellini.",
+    "Cercare un numero preciso dove le indicazioni danno un intervallo."
+   ],
+   "checklist": [
+    "Ho contato notte e sonnellini per qualche giorno",
+    "Le ore stanno nell'intervallo della sua età",
+    "Gli orari sono simili ogni giorno",
+    "Schermi spenti almeno un'ora prima",
+    "Ho scritto le domande per il pediatra, se ne ho"
+   ],
+   "fonti": [
+    "SB-07",
+    "SB-01",
+    "SB-02",
+    "OR-04"
+   ],
+   "avvertenza": "Indicazioni di popolazione, non valutazioni sul singolo bambino. Sotto i 4 mesi la variabilità è molto ampia. Informazioni generali, non sostituiscono il parere del pediatra o del medico.",
+   "domanda": "Quanto deve dormire"
+  },
+  {
+   "slug": "certificato-vaccinale",
+   "categoria": "Organizzarsi",
+   "argomento": "documenti",
+   "data": "2026-10-22",
+   "titolo": "Il certificato vaccinale: dove si scarica e quando serve",
+   "titolo_seo": "Certificato vaccinale: dove scaricarlo",
+   "sommario": "Per l'iscrizione al nido e alla scuola dell'infanzia serve la documentazione delle vaccinazioni. Ecco dove trovarla senza file all'ASL.",
+   "tempo": "10 minuti, la prima volta",
+   "serve": "SPID o CIE",
+   "strumento": "gestionale",
+   "perche": [
+    "Il certificato vaccinale serve proprio quando hai mille altre cose da fare: l'iscrizione al nido, alla scuola dell'infanzia, a volte un centro estivo. Sapere dove si trova ti evita una mattina persa allo sportello.",
+    "In Italia le vaccinazioni obbligatorie sono dieci, e per nidi e scuole dell'infanzia (0-6 anni) la documentazione vaccinale è un requisito per accedere. Dalla scuola primaria in poi non condiziona l'iscrizione."
+   ],
+   "passi": [
+    [
+     "Entra nel Fascicolo Sanitario Elettronico",
+     "fascicolosanitario.gov.it, scegli la tua Regione, accedi con SPID o CIE."
+    ],
+    [
+     "Apri il fascicolo di tuo figlio",
+     "Un genitore può vedere quello dei figli minorenni, dopo che l'ASL ha registrato il suo ruolo. Se non lo vedi, la tua Regione spiega come attivarlo."
+    ],
+    [
+     "Cerca il certificato vaccinale",
+     "Nel fascicolo ci sono la scheda e il certificato delle vaccinazioni. Scaricalo in PDF."
+    ],
+    [
+     "Salvalo dove lo ritrovi",
+     "Nella cartellina di famiglia e sul telefono. Nel gestionale puoi segnare dove sta."
+    ],
+    [
+     "Chiedi alla segreteria come consegnarlo",
+     "A volte la scuola lo verifica direttamente con l'ASL, a volte lo porti tu. Le modalità cambiano per Regione e per anno."
+    ]
+   ],
+   "errori": [
+    "Aspettare l'ultima settimana delle iscrizioni.",
+    "Cercare il certificato solo allo sportello, quando è già nel fascicolo.",
+    "Dare per scontato che serva anche per la scuola primaria."
+   ],
+   "checklist": [
+    "Ho SPID o CIE",
+    "Vedo il fascicolo di mio figlio",
+    "Ho scaricato il certificato vaccinale",
+    "L'ho salvato nella cartellina e sul telefono",
+    "Ho chiesto alla segreteria come consegnarlo"
+   ],
+   "fonti": [
+    "OR-05",
+    "OR-13"
+   ],
+   "avvertenza": "Informazioni generali sulle procedure, aggiornate a ottobre 2026. Per richiami, ritardi o esoneri il riferimento è il pediatra o il centro vaccinale dell'ASL.",
+   "domanda": "Dove scaricare il certificato vaccinale"
   }
  ],
  "chi": {
