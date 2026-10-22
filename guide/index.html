@@ -65,7 +65,8 @@
 <span class="meta"><svg class="ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 2 min di lettura <span aria-hidden="true">·</span> 16 ottobre 2026</span></div></a><a class="acard" href="/guide/domande-per-il-pediatra/" data-a="salute" data-t="prima della visita dal pediatra: le domande da preparare dieci minuti prima della visita per uscire dallo studio con le risposte che cercavi. salute e visite"><img class="ph ac-img" src="/assets/foto/domande-per-il-pediatra.webp" srcset="/assets/foto/domande-per-il-pediatra-sm.webp 768w, /assets/foto/domande-per-il-pediatra.webp 1536w" sizes="(min-width:900px) 50vw, 100vw" width="1536" height="1024" alt="" loading=lazy decoding="async">
 <div class="ac-b"><span class="chip c-t-salvia">Salute e visite</span><h3>Prima della visita dal pediatra: le domande da preparare</h3><p>Dieci minuti prima della visita per uscire dallo studio con le risposte che cercavi.</p>
 <span class="meta"><svg class="ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 2 min di lettura <span aria-hidden="true">·</span> 16 ottobre 2026</span></div></a><a class="acard tcard" href="/strumenti/preparo-la-visita/" data-tool="1" data-a="strumento" data-t="preparo la visita domande in ordine e risposte, sul telefono strumento stampabile pdf scarica gratis" hidden><div class="ac-b"><span class="chip c-t-malva">Strumento gratuito</span><h3>Preparo la visita</h3><p>Domande in ordine e risposte, sul telefono</p></div></a><a class="acard tcard" href="/gestionale/" data-tool="1" data-a="strumento" data-t="il gestionale di famiglia visite, scadenze, documenti e la settimana in un file strumento stampabile pdf scarica gratis" hidden><div class="ac-b"><span class="chip c-t-malva">Strumento gratuito</span><h3>Il gestionale di famiglia</h3><p>Visite, scadenze, documenti e la settimana in un file</p></div></a><a class="acard tcard" href="/scarica/settimana-sul-frigo.pdf" download data-tool="1" data-a="strumento" data-t="la settimana di tutti un foglio da attaccare al frigo: chi va dove, visite, chi accompagna strumento stampabile pdf scarica gratis" hidden><div class="ac-b"><span class="chip c-t-malva">Strumento gratuito</span><h3>La settimana di tutti</h3><p>Un foglio da attaccare al frigo: chi va dove, visite, chi accompagna</p></div></a><a class="acard tcard" href="/scarica/domande-per-il-pediatra.pdf" download data-tool="1" data-a="strumento" data-t="prima della visita dal pediatra cosa hai notato, le domande in ordine, cosa ha detto il medico strumento stampabile pdf scarica gratis" hidden><div class="ac-b"><span class="chip c-t-malva">Strumento gratuito</span><h3>Prima della visita dal pediatra</h3><p>Cosa hai notato, le domande in ordine, cosa ha detto il medico</p></div></a><a class="acard tcard" href="/scarica/lista-delle-medicine.pdf" download data-tool="1" data-a="strumento" data-t="la lista delle medicine, scritta insieme per chi segue un genitore o un nonno: da compilare a quattro mani strumento stampabile pdf scarica gratis" hidden><div class="ac-b"><span class="chip c-t-malva">Strumento gratuito</span><h3>La lista delle medicine, scritta insieme</h3><p>Per chi segue un genitore o un nonno: da compilare a quattro mani</p></div></a></div>
-<p class="none" data-none hidden>Nessun articolo trovato. Prova con un'altra parola o scegli «Tutti».</p>
+<p class="small fcount" data-count aria-live="polite"></p>
+<div class="none" data-none hidden><p>Non abbiamo trovato una guida con queste parole. Prova con un termine diverso, oppure guarda tutte le guide.</p><button class="btn btn-line btn-sm" type="button" data-clear>Azzera ricerca e filtri</button></div>
 </section>
 </main>
 <footer class="ft">
@@ -87,7 +88,20 @@ if(navigator.share&&mobile){
  document.querySelectorAll('[data-sharetext]').forEach(function(b){b.hidden=false;b.onclick=function(){navigator.share({text:b.dataset.sharetext}).catch(function(){})}});
 }
 document.querySelectorAll('[data-copytext]').forEach(function(b){b.onclick=function(){navigator.clipboard&&navigator.clipboard.writeText(b.dataset.copytext).then(function(){b.textContent=b.dataset.done||'Copiato'})}});
-try{document.querySelectorAll('input[data-ck]').forEach(function(c){var k='ck:'+c.dataset.ck;c.checked=localStorage.getItem(k)==='1';c.onchange=function(){localStorage.setItem(k,c.checked?'1':'0')}})}catch(x){}
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(x){}}
+document.querySelectorAll('.ck').forEach(function(box){
+ var cs=box.querySelectorAll('input[data-ck]'),N=box.querySelector('[data-ckn]'),Z=box.querySelector('[data-ckreset]'),armed=false;
+ function upd(){var n=0;cs.forEach(function(c){if(c.checked)n++});if(N)N.textContent=n?(n===cs.length?'Tutto fatto: '+n+' su '+n:n+' su '+cs.length+' fatte'):'';if(Z)Z.hidden=!n}
+ cs.forEach(function(c){var k='ck:'+c.dataset.ck;c.checked=ls(k)==='1';c.onchange=function(){ls(k,c.checked?'1':'0');upd()}});
+ if(Z)Z.onclick=function(){if(!armed){armed=true;Z.textContent='Tocca di nuovo per azzerare';setTimeout(function(){armed=false;Z.textContent='Azzera le spunte'},4000);return}
+  cs.forEach(function(c){c.checked=false;ls('ck:'+c.dataset.ck,'0')});armed=false;Z.textContent='Azzera le spunte';upd()};
+ upd()});
+// menu su telefono: si chiude con Esc, toccando fuori o scegliendo una voce
+var M=document.querySelector('.mnav');
+if(M){document.addEventListener('keydown',function(ev){if(ev.key==='Escape'&&M.open){M.open=false;M.querySelector('summary').focus()}});
+ document.addEventListener('click',function(ev){if(M.open&&!M.contains(ev.target))M.open=false});
+ M.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){M.open=false})});
+ M.addEventListener('toggle',function(){M.querySelector('summary').setAttribute('aria-label',M.open?'Chiudi il menu':'Apri il menu')})}
 // comparsa leggera delle sezioni
 if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
@@ -98,7 +112,7 @@ var R=document.querySelector('[data-rot]');
 if(R){
  var L=R.querySelectorAll('a'),k=0,stop=false,open=false,B=document.querySelector('.rot-all'),U=document.getElementById('tutte-domande');
  B.hidden=false;
- B.onclick=function(){open=!open;U.hidden=!open;R.hidden=open;B.setAttribute('aria-expanded',open);B.textContent=open?'Chiudi':'Vedi tutte'};
+ B.onclick=function(){open=!open;U.hidden=!open;R.hidden=open;B.setAttribute('aria-expanded',open);B.textContent=open?'Mostra meno':'Vedi tutte'};
  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
   R.addEventListener('mouseenter',function(){stop=true});R.addEventListener('mouseleave',function(){stop=false});
   R.addEventListener('focusin',function(){stop=true});R.addEventListener('focusout',function(){stop=false});
@@ -114,7 +128,10 @@ if(grid){
  var p=new URLSearchParams(location.search);if(p.get('q'))q.value=p.get('q');if(location.hash.length>1)cur=location.hash.slice(1);
  function run(){var t=(q.value||'').toLowerCase().trim(),n=0;
   grid.querySelectorAll('[data-a]').forEach(function(c){var ok=c.dataset.tool?(!!t&&cur==='tutti'&&c.dataset.t.indexOf(t)>-1):((cur==='tutti'||c.dataset.a===cur)&&(!t||c.dataset.t.indexOf(t)>-1));c.hidden=!ok;if(ok)n++});
-  chips.forEach(function(ch){ch.setAttribute('aria-pressed',ch.dataset.arg===cur)});none.hidden=n>0}
+  chips.forEach(function(ch){ch.setAttribute('aria-pressed',ch.dataset.arg===cur)});none.hidden=n>0;
+  cnt.textContent=(t||cur!=='tutti')?(n===1?'1 risultato':n+' risultati'):''}
+ var cnt=document.querySelector('[data-count]');
+ document.querySelector('[data-clear]').onclick=function(){q.value='';cur='tutti';history.replaceState(null,'',location.pathname);run();q.focus()};
  chips.forEach(function(ch){ch.onclick=function(){cur=ch.dataset.arg;history.replaceState(null,'',cur==='tutti'?location.pathname+location.search:'#'+cur);run()}});
  q.oninput=run;run();
 }

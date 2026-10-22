@@ -64,7 +64,20 @@ if(navigator.share&&mobile){
  document.querySelectorAll('[data-sharetext]').forEach(function(b){b.hidden=false;b.onclick=function(){navigator.share({text:b.dataset.sharetext}).catch(function(){})}});
 }
 document.querySelectorAll('[data-copytext]').forEach(function(b){b.onclick=function(){navigator.clipboard&&navigator.clipboard.writeText(b.dataset.copytext).then(function(){b.textContent=b.dataset.done||'Copiato'})}});
-try{document.querySelectorAll('input[data-ck]').forEach(function(c){var k='ck:'+c.dataset.ck;c.checked=localStorage.getItem(k)==='1';c.onchange=function(){localStorage.setItem(k,c.checked?'1':'0')}})}catch(x){}
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(x){}}
+document.querySelectorAll('.ck').forEach(function(box){
+ var cs=box.querySelectorAll('input[data-ck]'),N=box.querySelector('[data-ckn]'),Z=box.querySelector('[data-ckreset]'),armed=false;
+ function upd(){var n=0;cs.forEach(function(c){if(c.checked)n++});if(N)N.textContent=n?(n===cs.length?'Tutto fatto: '+n+' su '+n:n+' su '+cs.length+' fatte'):'';if(Z)Z.hidden=!n}
+ cs.forEach(function(c){var k='ck:'+c.dataset.ck;c.checked=ls(k)==='1';c.onchange=function(){ls(k,c.checked?'1':'0');upd()}});
+ if(Z)Z.onclick=function(){if(!armed){armed=true;Z.textContent='Tocca di nuovo per azzerare';setTimeout(function(){armed=false;Z.textContent='Azzera le spunte'},4000);return}
+  cs.forEach(function(c){c.checked=false;ls('ck:'+c.dataset.ck,'0')});armed=false;Z.textContent='Azzera le spunte';upd()};
+ upd()});
+// menu su telefono: si chiude con Esc, toccando fuori o scegliendo una voce
+var M=document.querySelector('.mnav');
+if(M){document.addEventListener('keydown',function(ev){if(ev.key==='Escape'&&M.open){M.open=false;M.querySelector('summary').focus()}});
+ document.addEventListener('click',function(ev){if(M.open&&!M.contains(ev.target))M.open=false});
+ M.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){M.open=false})});
+ M.addEventListener('toggle',function(){M.querySelector('summary').setAttribute('aria-label',M.open?'Chiudi il menu':'Apri il menu')})}
 // comparsa leggera delle sezioni
 if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
@@ -75,7 +88,7 @@ var R=document.querySelector('[data-rot]');
 if(R){
  var L=R.querySelectorAll('a'),k=0,stop=false,open=false,B=document.querySelector('.rot-all'),U=document.getElementById('tutte-domande');
  B.hidden=false;
- B.onclick=function(){open=!open;U.hidden=!open;R.hidden=open;B.setAttribute('aria-expanded',open);B.textContent=open?'Chiudi':'Vedi tutte'};
+ B.onclick=function(){open=!open;U.hidden=!open;R.hidden=open;B.setAttribute('aria-expanded',open);B.textContent=open?'Mostra meno':'Vedi tutte'};
  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
   R.addEventListener('mouseenter',function(){stop=true});R.addEventListener('mouseleave',function(){stop=false});
   R.addEventListener('focusin',function(){stop=true});R.addEventListener('focusout',function(){stop=false});
@@ -91,7 +104,10 @@ if(grid){
  var p=new URLSearchParams(location.search);if(p.get('q'))q.value=p.get('q');if(location.hash.length>1)cur=location.hash.slice(1);
  function run(){var t=(q.value||'').toLowerCase().trim(),n=0;
   grid.querySelectorAll('[data-a]').forEach(function(c){var ok=c.dataset.tool?(!!t&&cur==='tutti'&&c.dataset.t.indexOf(t)>-1):((cur==='tutti'||c.dataset.a===cur)&&(!t||c.dataset.t.indexOf(t)>-1));c.hidden=!ok;if(ok)n++});
-  chips.forEach(function(ch){ch.setAttribute('aria-pressed',ch.dataset.arg===cur)});none.hidden=n>0}
+  chips.forEach(function(ch){ch.setAttribute('aria-pressed',ch.dataset.arg===cur)});none.hidden=n>0;
+  cnt.textContent=(t||cur!=='tutti')?(n===1?'1 risultato':n+' risultati'):''}
+ var cnt=document.querySelector('[data-count]');
+ document.querySelector('[data-clear]').onclick=function(){q.value='';cur='tutti';history.replaceState(null,'',location.pathname);run();q.focus()};
  chips.forEach(function(ch){ch.onclick=function(){cur=ch.dataset.arg;history.replaceState(null,'',cur==='tutti'?location.pathname+location.search:'#'+cur);run()}});
  q.oninput=run;run();
 }

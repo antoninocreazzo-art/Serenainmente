@@ -96,7 +96,20 @@ if(navigator.share&&mobile){
  document.querySelectorAll('[data-sharetext]').forEach(function(b){b.hidden=false;b.onclick=function(){navigator.share({text:b.dataset.sharetext}).catch(function(){})}});
 }
 document.querySelectorAll('[data-copytext]').forEach(function(b){b.onclick=function(){navigator.clipboard&&navigator.clipboard.writeText(b.dataset.copytext).then(function(){b.textContent=b.dataset.done||'Copiato'})}});
-try{document.querySelectorAll('input[data-ck]').forEach(function(c){var k='ck:'+c.dataset.ck;c.checked=localStorage.getItem(k)==='1';c.onchange=function(){localStorage.setItem(k,c.checked?'1':'0')}})}catch(x){}
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(x){}}
+document.querySelectorAll('.ck').forEach(function(box){
+ var cs=box.querySelectorAll('input[data-ck]'),N=box.querySelector('[data-ckn]'),Z=box.querySelector('[data-ckreset]'),armed=false;
+ function upd(){var n=0;cs.forEach(function(c){if(c.checked)n++});if(N)N.textContent=n?(n===cs.length?'Tutto fatto: '+n+' su '+n:n+' su '+cs.length+' fatte'):'';if(Z)Z.hidden=!n}
+ cs.forEach(function(c){var k='ck:'+c.dataset.ck;c.checked=ls(k)==='1';c.onchange=function(){ls(k,c.checked?'1':'0');upd()}});
+ if(Z)Z.onclick=function(){if(!armed){armed=true;Z.textContent='Tocca di nuovo per azzerare';setTimeout(function(){armed=false;Z.textContent='Azzera le spunte'},4000);return}
+  cs.forEach(function(c){c.checked=false;ls('ck:'+c.dataset.ck,'0')});armed=false;Z.textContent='Azzera le spunte';upd()};
+ upd()});
+// menu su telefono: si chiude con Esc, toccando fuori o scegliendo una voce
+var M=document.querySelector('.mnav');
+if(M){document.addEventListener('keydown',function(ev){if(ev.key==='Escape'&&M.open){M.open=false;M.querySelector('summary').focus()}});
+ document.addEventListener('click',function(ev){if(M.open&&!M.contains(ev.target))M.open=false});
+ M.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){M.open=false})});
+ M.addEventListener('toggle',function(){M.querySelector('summary').setAttribute('aria-label',M.open?'Chiudi il menu':'Apri il menu')})}
 // comparsa leggera delle sezioni
 if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
@@ -107,7 +120,7 @@ var R=document.querySelector('[data-rot]');
 if(R){
  var L=R.querySelectorAll('a'),k=0,stop=false,open=false,B=document.querySelector('.rot-all'),U=document.getElementById('tutte-domande');
  B.hidden=false;
- B.onclick=function(){open=!open;U.hidden=!open;R.hidden=open;B.setAttribute('aria-expanded',open);B.textContent=open?'Chiudi':'Vedi tutte'};
+ B.onclick=function(){open=!open;U.hidden=!open;R.hidden=open;B.setAttribute('aria-expanded',open);B.textContent=open?'Mostra meno':'Vedi tutte'};
  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
   R.addEventListener('mouseenter',function(){stop=true});R.addEventListener('mouseleave',function(){stop=false});
   R.addEventListener('focusin',function(){stop=true});R.addEventListener('focusout',function(){stop=false});
@@ -123,7 +136,10 @@ if(grid){
  var p=new URLSearchParams(location.search);if(p.get('q'))q.value=p.get('q');if(location.hash.length>1)cur=location.hash.slice(1);
  function run(){var t=(q.value||'').toLowerCase().trim(),n=0;
   grid.querySelectorAll('[data-a]').forEach(function(c){var ok=c.dataset.tool?(!!t&&cur==='tutti'&&c.dataset.t.indexOf(t)>-1):((cur==='tutti'||c.dataset.a===cur)&&(!t||c.dataset.t.indexOf(t)>-1));c.hidden=!ok;if(ok)n++});
-  chips.forEach(function(ch){ch.setAttribute('aria-pressed',ch.dataset.arg===cur)});none.hidden=n>0}
+  chips.forEach(function(ch){ch.setAttribute('aria-pressed',ch.dataset.arg===cur)});none.hidden=n>0;
+  cnt.textContent=(t||cur!=='tutti')?(n===1?'1 risultato':n+' risultati'):''}
+ var cnt=document.querySelector('[data-count]');
+ document.querySelector('[data-clear]').onclick=function(){q.value='';cur='tutti';history.replaceState(null,'',location.pathname);run();q.focus()};
  chips.forEach(function(ch){ch.onclick=function(){cur=ch.dataset.arg;history.replaceState(null,'',cur==='tutti'?location.pathname+location.search:'#'+cur);run()}});
  q.oninput=run;run();
 }
@@ -330,7 +346,7 @@ for g in GUIDE:
 <section><h2>Come si fa</h2><ol class="steps">{steps}</ol></section>
 {strumento_box(g.get('strumento'))}
 {f'<section class="box box-rosa"><h2>Errori comuni</h2><ul class="plain">{errori}</ul></section>' if errori else ''}
-{f'<section class="box box-salvia ck"><h2>Checklist</h2><ul class="check">{check}</ul><p class="small">Spunta qui: le spunte restano salvate su questo telefono o computer.</p><div class="row noprint"><button class="btn" type="button" hidden data-sharetext="{cktext}" data-umami-event="checklist-note">Salva in Note o Promemoria</button><button class="btn btn-line" type="button" data-copytext="{cktext}" data-done="Lista copiata" data-umami-event="checklist-copia">Copia la lista</button><a class="btn btn-line" href="~/guide/{g["slug"]}/checklist.xlsx" download data-umami-event="checklist-excel" data-umami-event-guida="{g["slug"]}">{ic("download","ic-s")} Excel</a><button class="btn btn-line" type="button" onclick="print()" data-umami-event="checklist-stampa">Stampa</button></div></section>' if check else ''}
+{f'<section class="box box-salvia ck"><h2>Checklist</h2><p class="ck-n" data-ckn aria-live="polite"></p><ul class="check">{check}</ul><p class="small">Spunta qui: le spunte restano salvate su questo telefono o computer (se cancelli i dati del browser si perdono).</p><div class="row noprint"><button class="btn" type="button" hidden data-sharetext="{cktext}" data-umami-event="checklist-note">Salva in Note o Promemoria</button><button class="btn btn-line" type="button" data-copytext="{cktext}" data-done="Lista copiata" data-umami-event="checklist-copia">Copia la lista</button><a class="btn btn-line" href="~/guide/{g["slug"]}/checklist.xlsx" download data-umami-event="checklist-excel" data-umami-event-guida="{g["slug"]}">{ic("download","ic-s")} Excel</a><button class="btn btn-line" type="button" onclick="print()" data-umami-event="checklist-stampa">Stampa</button><button class="btn btn-line" type="button" data-ckreset hidden>Azzera le spunte</button></div></section>' if check else ''}
 {f'<section><h2>Fonti</h2><ul class="sources">{fonti}</ul></section>' if fonti else ''}
 <aside class="box box-line"><b>Da sapere</b><p>{e(g['avvertenza'])}</p></aside>
 {share(f"/guide/{g['slug']}/", g['titolo'])}
@@ -371,7 +387,8 @@ pages.append(page('/guide/', 'Articoli e guide', 'Guide pratiche e approfondimen
 </div>
 <h2 class="sr">Elenco delle guide</h2>
 <div class="grid3" data-grid>{''.join(card(g, eager=i < 3) for i, g in enumerate(GUIDE))}{tool_cards}</div>
-<p class="none" data-none hidden>Nessun articolo trovato. Prova con un'altra parola o scegli «Tutti».</p>
+<p class="small fcount" data-count aria-live="polite"></p>
+<div class="none" data-none hidden><p>Non abbiamo trovato una guida con queste parole. Prova con un termine diverso, oppure guarda tutte le guide.</p><button class="btn btn-line btn-sm" type="button" data-clear>Azzera ricerca e filtri</button></div>
 </section>''', cls='p-list'))
 
 # ---------- gestionale ----------
@@ -387,7 +404,9 @@ pages.append(page('/gestionale/', 'Il gestionale di famiglia', 'Un file gratuito
 <div class="gs-txt"><span class="eyebrow">Risorsa gratuita</span><h1>Il gestionale di famiglia</h1>
 <p class="lead">Apri il file e vedi subito cosa c'è da fare, entro quando e per chi. Visite, scadenze e documenti in un posto solo: si scrivono una volta e il resto si aggiorna da solo.</p>
 <div class="row"><a class="btn" href="{GEST}" download data-umami-event="gestionale-excel">{ic('download','ic-s')} Scarica il file Excel</a>{sheets_btn}</div>
-<p class="small">Dal telefono conviene Fogli Google: tocca «Apri in Fogli Google», poi «Crea una copia», e il file è tuo, nel tuo Drive. Nessun dato che inserisci arriva a noi.</p></div>
+<p class="small">Dal telefono conviene Fogli Google: tocca «Apri in Fogli Google», poi «Crea una copia», e il file è tuo, nel tuo Drive. Nessun dato che inserisci arriva a noi.</p>
+<details class="gs-how"><summary>Dal computer, in 3 passaggi</summary><ol><li>Scarica il file Excel e aprilo.</li><li>Nella scheda <b>Famiglia</b> scrivi i nomi di casa.</li><li>Aggiungi una visita o una scadenza, poi apri <b>Inizia da qui</b>: trovi il riepilogo.</li></ol></details>
+<details class="gs-how"><summary>Dal telefono, in 4 passaggi</summary><ol><li>Tocca «Apri in Fogli Google».</li><li>Google ti propone di fare una copia: tocca <b>Crea una copia</b>. È tua, nel tuo Drive.</li><li>Nella scheda <b>Famiglia</b> scrivi i nomi di casa.</li><li>Aggiungi il primo impegno e usa il file dall'app Fogli Google.</li></ol></details></div>
 {devices()}
 </section>
 <section class="wrap gs-pts rv">{''.join(f'<div class="gp"><span class="vic">{ic("check")}</span><span>{p}</span></div>' for p in GEST_PUNTI)}</section>
