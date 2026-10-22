@@ -55,7 +55,7 @@ const PINS = [
     const isPhone = img === 'PHONE';
     if (!isPhone && (!img || !fs.existsSync(path.join(ROOT, img)))) { console.log('salto', k); continue; }
     const src = isPhone ? '' : i64(path.join(ROOT, img));
-    await p.setContent(`<!doctype html><meta charset="utf-8"><style>${css}${PHONE_CSS}</style><div class="c" style="--bg:${bg};--w:${W}px;--h:${H}px;--pt:${PT}px;--pb:${PB}px"><span class="chip">${chip}</span><h1>${esc(t)}</h1><p>${esc(d)}</p><div class="im">${isPhone ? (H < 1400 ? PHONE.replace('class="ph"','class="ph compact"') : PHONE) : `<img src="${src}">`}</div><div class="b"><span>${LOGO}serenainmente.it</span><span class="g">${k === 'preparo-la-visita' ? 'Provalo gratis' : 'Scaricalo gratis'}</span></div></div>`);
+    await p.setContent(`<!doctype html><meta charset="utf-8"><style>${css}${PHONE_CSS}</style><div class="c" style="--bg:${bg};--w:${W}px;--h:${H}px;--pt:${PT}px;--pb:${PB}px"><span class="chip">${chip}</span><h1>${esc(t)}</h1><p>${esc(d)}</p><div class="im">${isPhone ? (H < 1400 ? PHONE.replace('class="ph"','class="ph compact"') : PHONE) : `<img src="${src}">`}</div><div class="b"><span>${LOGO}serenainmente.it</span><span class="g">${pre === 'story-' ? 'Link in bio' : (k === 'preparo-la-visita' ? 'Provalo gratis' : 'Scaricalo gratis')}</span></div></div>`);
     await p.evaluate(() => document.fonts.ready);
     await p.screenshot({ path: path.join(ROOT, 'assets', 'pin', `${pre}${k}.jpg`), type: 'jpeg', quality: 88 }); console.log('ok', pre + k);
   }
