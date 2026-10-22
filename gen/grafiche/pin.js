@@ -1,5 +1,5 @@
 // Pin verticali per Pinterest (1000x1500): assets/pin/<chiave>.jpg
-// Uso: cd gen/grafiche && node pin.js
+// Uso: cd gen/grafiche && node pin.js   (crea anche ig-<chiave>.jpg 1080x1350 per i post e story-<chiave>.jpg 1080x1920 per le storie)
 const fs = require('fs'); const path = require('path'); const { chromium } = require('playwright-core');
 const ROOT = path.join(__dirname, '..', '..'); const FONTS = path.join(ROOT, 'assets', 'fonts');
 const f64 = f => 'data:font/woff2;base64,' + fs.readFileSync(path.join(FONTS, f)).toString('base64');
@@ -11,7 +11,7 @@ const css = `@font-face{font-family:Fraunces;font-weight:400;src:url(${f64('frau
 @font-face{font-family:'DM Sans';font-weight:500;src:url(${f64('dm-sans-latin-500-normal.woff2')})}
 @font-face{font-family:'DM Sans';font-weight:400;src:url(${f64('dm-sans-latin-400-normal.woff2')})}
 *{margin:0;padding:0;box-sizing:border-box}
-.c{width:1000px;height:1500px;display:flex;flex-direction:column;padding:70px 70px 56px;color:#3A2C30;background:var(--bg)}
+.c{width:var(--w);height:var(--h);display:flex;flex-direction:column;padding:var(--pt) 70px var(--pb);color:#3A2C30;background:var(--bg)}
 .chip{align-self:flex-start;font:500 24px 'DM Sans';letter-spacing:.1em;text-transform:uppercase;color:#7F4E5C;background:#fff8;padding:10px 22px;border-radius:999px}
 h1{font:400 76px/1.08 Fraunces,serif;margin-top:34px}
 p{font:400 32px/1.4 'DM Sans';margin-top:22px;color:#5B4A4F}
@@ -27,13 +27,17 @@ const PINS = [
   ['preparo-la-visita', '#EBD3D9', 'Gratis, dal telefono', 'Prepara la visita dal pediatra', 'Cosa hai notato e le domande in ordine. In ambulatorio hai tutto davanti.', process.env.PREPARO || ''],
 ];
 (async () => {
-  const b = await chromium.launch({ executablePath: EXE }); const p = await b.newPage({ viewport: { width: 1000, height: 1500 } });
+  const b = await chromium.launch({ executablePath: EXE });
+  const FORMATI = [['', 1000, 1500, 70, 56], ['ig-', 1080, 1350, 70, 56], ['story-', 1080, 1920, 250, 260]];
+  for (const [pre, W, H, PT, PB] of FORMATI) {
+  const p = await b.newPage({ viewport: { width: W, height: H } });
   for (const [k, bg, chip, t, d, img] of PINS) {
     if (!img || !fs.existsSync(path.isAbsolute(img) ? img : path.join(ROOT, img))) { console.log('salto', k); continue; }
     const src = i64(path.isAbsolute(img) ? img : path.join(ROOT, img));
-    await p.setContent(`<!doctype html><meta charset="utf-8"><style>${css}</style><div class="c" style="--bg:${bg}"><span class="chip">${chip}</span><h1>${esc(t)}</h1><p>${esc(d)}</p><div class="im"><img src="${src}"></div><div class="b"><span>${LOGO}serenainmente.it</span><span class="g">${k === 'preparo-la-visita' ? 'Provalo gratis' : 'Scaricalo gratis'}</span></div></div>`);
+    await p.setContent(`<!doctype html><meta charset="utf-8"><style>${css}</style><div class="c" style="--bg:${bg};--w:${W}px;--h:${H}px;--pt:${PT}px;--pb:${PB}px"><span class="chip">${chip}</span><h1>${esc(t)}</h1><p>${esc(d)}</p><div class="im"><img src="${src}"></div><div class="b"><span>${LOGO}serenainmente.it</span><span class="g">${k === 'preparo-la-visita' ? 'Provalo gratis' : 'Scaricalo gratis'}</span></div></div>`);
     await p.evaluate(() => document.fonts.ready);
-    await p.screenshot({ path: path.join(ROOT, 'assets', 'pin', `${k}.jpg`), type: 'jpeg', quality: 88 }); console.log('ok', k);
+    await p.screenshot({ path: path.join(ROOT, 'assets', 'pin', `${pre}${k}.jpg`), type: 'jpeg', quality: 88 }); console.log('ok', pre + k);
   }
+  await p.close(); }
   await b.close();
 })();
