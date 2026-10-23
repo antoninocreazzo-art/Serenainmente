@@ -7,9 +7,9 @@ const fs=require('fs');const path=require('path');const {execSync}=require('chil
 const it=JSON.parse(process.argv[2]);
 if(it.tipo==='testo'){execSync(`ffmpeg -y -loglevel error -sseof -0.3 -i "${it.video}" -frames:v 1 -q:v 3 "${it.file}"`);console.log('ok',it.file);process.exit(0)}
 const ROOT=path.join(__dirname,'..','..');const FONTS=path.join(ROOT,'assets','fonts');const f64=n=>'data:font/woff2;base64,'+fs.readFileSync(path.join(FONTS,n)).toString('base64');
-// Simbolo su tinta piena (niente sfumature): per ogni colore della griglia c'è una versione più intensa della stessa tinta,
-// così la copertina risalta ma resta nella palette. Sempre toni di rosa (decisione di Antonino 23/10: niente sabbia/marroncino sul simbolo). "sfondo" = colore del reel nella rotazione (A/B/C/D).
-const PIENO={'#F4E9EC':'#DDB4BF','#FBF6F4':'#E6C6CD','#F2EBE3':'#D9ACB8','#EBD3D9':'#D3A4B1'};
+// Simbolo su tinta piena (niente sfumature), sempre nei toni del rosa (decisione di Antonino 23/10: niente sabbia o crema):
+// l'intensità cambia un poco con il colore del reel nella griglia, così risalta ma resta nella palette. Sempre toni di rosa (decisione di Antonino 23/10: niente sabbia/marroncino sul simbolo). "sfondo" = colore del reel nella rotazione (A/B/C/D).
+const PIENO={'#F4E9EC':'#DDB4BF','#FBF6F4':'#E8C6CF','#F2EBE3':'#E1BAC4','#EBD3D9':'#D3A4B1'};
 const bgc=PIENO[(it.sfondo||'#F4E9EC').toUpperCase()]||'#DDB4BF';
 const T={bg:bgc,c1:'#FBF5F6',c2:'#F1E2E6',s:'#C49AA6',w:'#7E4A5A'};
 const LOGO=fs.readFileSync(path.join(ROOT,'assets','brand','profilo-serena.svg'),'utf8').replace(/width="1080" height="1080"/,'width="540" height="540"').replace('#F5EDEA',T.c1).replace('#EDE0E3',T.c2).replace('#DCC6CC',T.s);
