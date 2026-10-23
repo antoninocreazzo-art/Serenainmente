@@ -153,7 +153,7 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None):
         ld = {"@context": "https://schema.org", "@graph": [
             {"@type": "WebSite", "name": "serenainmente", "alternateName": ["Serena", "Serena in mente"], "url": SITE + "/"},
             {"@type": "Organization", "name": "Serena", "alternateName": "serenainmente", "url": SITE + "/",
-             "logo": SITE + "/assets/brand/avatar-320.png", "sameAs": [IG]}]}
+             "logo": SITE + "/assets/brand/avatar-320.png", "sameAs": [IG, "https://www.pinterest.com/serenainmente/"]}]}
     ldj = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>' if ld else ''
     navl = ''.join(f'<a href="~{h}"{" aria-current=page" if path.startswith(h) else ""}>{l}</a>' for h, l in NAV)
     banner = '<div class="preview-bar">Anteprima del nuovo sito · non ancora pubblicata</div>' if PREVIEW else ''
