@@ -9,7 +9,10 @@ if(it.tipo==='testo'){execSync(`ffmpeg -y -loglevel error -sseof -0.3 -i "${it.v
 const ROOT=path.join(__dirname,'..','..');const FONTS=path.join(ROOT,'assets','fonts');const f64=n=>'data:font/woff2;base64,'+fs.readFileSync(path.join(FONTS,n)).toString('base64');
 // Simbolo su tinta piena (niente sfumature) dello STESSO colore che il reel ha nella rotazione della griglia, come i post (decisione di Antonino 23/10).
 // Il cerchio bianco con un'ombra leggera dà il risalto. "sfondo" = colore del reel nella rotazione (A/B/C/D).
-const bgc=it.sfondo||'#F4E9EC';
+// Palette precedente salvata (23/10, linea crema → rosa → rosa borgogna, tinte più intense dei post): si usa con "stile":"intenso".
+// Ancora prima, provata e non scelta: rosa pieno #C795A3 e prugna #7E4A5A.
+const INTENSO={'#FBF6F4':'#EAD6D1','#F4E9EC':'#E1BCC6','#F2EBE3':'#D8ADB9','#EBD3D9':'#CB9AA8'};
+const bgc=it.stile==='intenso'?(INTENSO[(it.sfondo||'#F4E9EC').toUpperCase()]||'#E1BCC6'):(it.sfondo||'#F4E9EC');
 const T={bg:bgc,c1:'#FFFFFF',c2:'#F1E2E6',s:'#C49AA6',w:'#7E4A5A'};
 const LOGO=fs.readFileSync(path.join(ROOT,'assets','brand','profilo-serena.svg'),'utf8').replace(/width="1080" height="1080"/,'width="540" height="540"').replace('#F5EDEA',T.c1).replace('#EDE0E3',T.c2).replace('#DCC6CC',T.s);
 const html=`<!doctype html><meta charset="utf-8"><style>@font-face{font-family:DM;font-weight:500;src:url(${f64('dm-sans-latin-500-normal.woff2')})}
