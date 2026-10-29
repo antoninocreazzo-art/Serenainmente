@@ -1,0 +1,36 @@
+[
+ {
+  "file": "2026-11-16-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "pratico · 3 passi",
+  "titolo": "Il referto\narriva per email.\nE poi?",
+  "sottotitolo": "Tre gesti per ritrovarlo\nquando serve davvero.",
+  "sfondo": "#F2EBE3"
+ },
+ {
+  "file": "2026-11-16-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "Rinominalo subito",
+  "testo": "Data, nome, tipo di visita:\n«2026-11 · Nome · visita»\ninvece di «documento(3).pdf»."
+ },
+ {
+  "file": "2026-11-16-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Una cartella\nper persona",
+  "testo": "Sul telefono o sul computer:\n«Salute · Nome».\nTutti i referti di ognuno, insieme."
+ },
+ {
+  "file": "2026-11-16-4.jpg",
+  "tipo": "passo",
+  "numero": "3",
+  "titolo": "I più importanti,\nanche su carta",
+  "testo": "Quelli che ti chiedono spesso\nvanno nella cartellina di casa.\nDue minuti di stampa."
+ },
+ {
+  "file": "2026-11-16-5.jpg",
+  "tipo": "chiusura",
+  "titolo": "Cinque minuti oggi.\nLa prossima volta\nlo trovi al primo colpo."
+ }
+]

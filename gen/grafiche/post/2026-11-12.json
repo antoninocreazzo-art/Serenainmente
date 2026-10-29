@@ -1,0 +1,42 @@
+[
+ {
+  "file": "2026-11-12-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "prendersi cura · con fonte",
+  "titolo": "Non sei\nl'unica persona",
+  "sottotitolo": "a dividerti tra figli,\nlavoro e genitori.",
+  "sfondo": "#F2EBE3"
+ },
+ {
+  "file": "2026-11-12-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "Quasi un adulto\nsu quattro",
+  "testo": "Nel 2024, secondo l'ISTAT,\nil 24,9% delle persone adulte\nsi prendeva cura di qualcuno,\nin casa o fuori casa.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-12-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Spesso è\nun genitore",
+  "testo": "Tra chi aiuta qualcuno\nche non vive con lui,\nquasi una persona su cinque\naiuta la propria madre,\nuna su dieci il padre.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-12-4.jpg",
+  "tipo": "passo",
+  "numero": "3",
+  "titolo": "Prima di tutto,\nun grazie",
+  "testo": "Sono le persone\nche ci hanno cresciuto.\nStare accanto a loro,\ncon i loro tempi,\nè un modo di restituire.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-12-5.jpg",
+  "tipo": "chiusura",
+  "titolo": "Una cosa piccola, oggi",
+  "testo": "Una telefonata senza\nun motivo pratico.\nSolo per sentirli.",
+  "fonte": "Fonte: ISTAT, Aiuti dati, ricevuti e reti di solidarietà · Anno 2024, 2026",
+  "sfondo": "#FBF6F4"
+ }
+]

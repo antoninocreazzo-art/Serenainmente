@@ -1,0 +1,77 @@
+{
+ "nota": "Settimana 11-17/11/2026, adattata il 29/10 al nuovo schema: reel = Vocabolario n. 11-17 (vocabolario-2026-11.json); qui solo le storie delle 12.",
+ "reel": [],
+ "storie": [
+  {
+   "data": "2026-11-11",
+   "tipo": "post",
+   "sfondo": "#F4E9EC",
+   "chip": "Oggi sul profilo",
+   "titolo": "Prima delle nove, un turno intero.",
+   "testo": "Per chi stamattina ha già fatto tutto prima di uscire."
+  },
+  {
+   "data": "2026-11-12",
+   "tipo": "guida",
+   "sfondo": "#EBD3D9",
+   "chip": "Guida gratuita",
+   "titolo": "Il pediatra si può cambiare.",
+   "testo": "Dove si fa, cosa serve e cosa puoi chiedere. Senza timidezza.",
+   "immagine": "assets/foto/pediatra-e-medico-di-base.webp",
+   "card": "Pediatra e medico di base: scelta e cambio",
+   "link": "/guide/pediatra-e-medico-di-base/",
+   "linkTitolo": "Pediatra e medico di base: come si sceglie e si cambia",
+   "linkTipo": "guida"
+  },
+  {
+   "data": "2026-11-13",
+   "tipo": "post",
+   "sfondo": "#FBF6F4",
+   "chip": "Oggi sul profilo",
+   "titolo": "Cinque minuti in sala d'attesa.",
+   "testo": "Le domande in ordine, le risposte segnate. Lo strumento è gratis."
+  },
+  {
+   "data": "2026-11-14",
+   "tipo": "guida",
+   "sfondo": "#F2EBE3",
+   "chip": "Guida gratuita",
+   "titolo": "Quanto dorme un bambino?",
+   "testo": "Le indicazioni età per età, con le fonti. Intervalli larghi, non un esame.",
+   "immagine": "assets/foto/quanto-dorme-un-bambino.webp",
+   "card": "Quante ore deve dormire un bambino",
+   "link": "/guide/quanto-dorme-un-bambino/",
+   "linkTitolo": "Quante ore deve dormire un bambino, età per età",
+   "linkTipo": "guida"
+  },
+  {
+   "data": "2026-11-15",
+   "tipo": "post",
+   "sfondo": "#F4E9EC",
+   "chip": "Oggi sul profilo",
+   "titolo": "Le parole della settimana.",
+   "testo": "Sei voci del vocabolario di Serena. Quale aggiungeresti tu?"
+  },
+  {
+   "data": "2026-11-16",
+   "tipo": "guida",
+   "sfondo": "#EBD3D9",
+   "chip": "Guida gratuita",
+   "titolo": "Una cartellina, tutti i documenti.",
+   "testo": "Cosa metterci e dove tenerla, perché la trovino tutti.",
+   "immagine": "assets/foto/cartellina-di-famiglia.webp",
+   "card": "La cartellina di famiglia",
+   "link": "/guide/cartellina-di-famiglia/",
+   "linkTitolo": "La cartellina di famiglia: i documenti in un posto solo",
+   "linkTipo": "guida"
+  },
+  {
+   "data": "2026-11-17",
+   "tipo": "post",
+   "sfondo": "#F2EBE3",
+   "chip": "Oggi sul profilo",
+   "titolo": "Hai già spostato tre appuntamenti?",
+   "testo": "Oggi una cosa può slittare. Te lo dice il post di oggi."
+  }
+ ]
+}

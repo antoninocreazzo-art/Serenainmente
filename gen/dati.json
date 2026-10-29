@@ -135,6 +135,14 @@
    "titolo": "Bonus nido INPS 2026: domanda online, canali e importi in base all'ISEE minorenni",
    "tipo": "Articolo divulgativo",
    "url": "https://www.informazionefiscale.it/bonus-nido-inps-2026-domanda-online-come-fare-istruzioni"
+  },
+  {
+   "id": "CC-06",
+   "ente": "ISTAT",
+   "anno": 2026,
+   "titolo": "Aiuti dati, ricevuti e reti di solidarietà | Anno 2024",
+   "tipo": "Dato statistico",
+   "url": "https://www.istat.it/comunicato-stampa/aiuti-dati-ricevuti-e-reti-di-solidarieta-anno-2024/"
   }
  ],
  "post": [
@@ -206,7 +214,7 @@
   },
   {
    "slug": "ultima-ora-prima-della-nanna",
-   "data": "2026-11-08",
+   "data": "2026-11-04",
    "controllo": "2026-10-18",
    "titolo": "L'ultima ora prima della nanna",
    "guida": "routine-della-nanna",
@@ -215,6 +223,18 @@
    ],
    "fonti": [
     "OR-04"
+   ]
+  },
+  {
+   "slug": "non-sei-l-unica-persona",
+   "data": "2026-11-12",
+   "controllo": "2026-10-20",
+   "titolo": "Non sei l'unica persona",
+   "affermazioni": [
+    "Secondo l'ISTAT, nel 2024 quasi una persona adulta su quattro (24,9%) si prendeva cura di qualcuno, in casa o fuori casa. Tra chi aiuta persone che non vivono con lui, quasi una su cinque aiuta la propria madre (18,9%) e una su dieci il padre (9,8%)."
+   ],
+   "fonti": [
+    "CC-06"
    ]
   }
  ],
@@ -1029,6 +1049,24 @@
    "titolo": "La lista delle medicine, scritta insieme",
    "link": "/stampabili/lista-delle-medicine/",
    "tipo": "stampabile"
+  },
+  {
+   "data": "2026-11-12",
+   "titolo": "Non sei l'unica persona: le fonti",
+   "link": "/fonti/non-sei-l-unica-persona/",
+   "tipo": "fonti"
+  },
+  {
+   "data": "2026-11-12",
+   "titolo": "Pediatra e medico di base: come si sceglie e si cambia",
+   "link": "/guide/pediatra-e-medico-di-base/",
+   "tipo": "guida"
+  },
+  {
+   "data": "2026-11-14",
+   "titolo": "Quante ore deve dormire un bambino, età per età",
+   "link": "/guide/quanto-dorme-un-bambino/",
+   "tipo": "guida"
   }
  ]
 }

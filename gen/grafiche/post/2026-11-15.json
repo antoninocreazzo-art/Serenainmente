@@ -1,0 +1,58 @@
+[
+ {
+  "file": "2026-11-15-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "il vocabolario di Serena",
+  "titolo": "Le parole\ndella settimana",
+  "sottotitolo": "Sei parole della vita di casa,\ndal 9 al 14 novembre.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-15-2.jpg",
+  "tipo": "frase",
+  "parola": "Frigo",
+  "numero": "9",
+  "frase": "La bacheca di famiglia.\nDisegni, orari, avvisi:\nse è lì sopra,\nesiste.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-15-3.jpg",
+  "tipo": "frase",
+  "parola": "Grazie",
+  "numero": "10",
+  "frase": "La parola più corta\nper dire «ho visto\ntutto quello che fai».",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-15-4.jpg",
+  "tipo": "frase",
+  "parola": "Lavatrice",
+  "numero": "11",
+  "frase": "Non finisce mai.\nAppena la svuoti,\nil cesto dei panni\nè di nuovo pieno.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-15-5.jpg",
+  "tipo": "frase",
+  "parola": "Perché",
+  "numero": "12",
+  "frase": "La domanda preferita\ndai tre ai sei anni.\nNon cerca la risposta giusta.\nCerca qualcuno che ascolti.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-15-6.jpg",
+  "tipo": "frase",
+  "parola": "Calendario",
+  "numero": "13",
+  "frase": "Il posto dove la settimana\nsta tutta in fila.\nAlmeno sulla carta,\nalmeno fino a lunedì.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-15-7.jpg",
+  "tipo": "frase",
+  "parola": "Lucina",
+  "numero": "14",
+  "frase": "La luce piccola\nche resta accesa\nper i mostri. E per chi\ncontrolla che dormano.",
+  "sfondo": "#FBF6F4"
+ }
+]
