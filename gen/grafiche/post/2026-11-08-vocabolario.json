@@ -1,0 +1,58 @@
+[
+ {
+  "file": "2026-11-08-voc-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "il vocabolario di Serena",
+  "titolo": "Le parole\ndella settimana",
+  "sottotitolo": "Sei parole della vita di casa,\ndal 2 al 7 novembre.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-08-voc-2.jpg",
+  "tipo": "frase",
+  "parola": "Merenda",
+  "numero": "2",
+  "frase": "Il pasto più importante\ndella giornata, secondo chi\nla mangia. Si prepara la sera\ne torna sempre a metà.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-08-voc-3.jpg",
+  "tipo": "frase",
+  "parola": "Cinque minuti",
+  "numero": "3",
+  "frase": "Unità di misura elastica.\nAl parco durano un'ora.\nQuando c'è da uscire,\ntrenta secondi.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-08-voc-4.jpg",
+  "tipo": "frase",
+  "parola": "Cartellina",
+  "numero": "4",
+  "frase": "Il posto di ogni\n«tanto me lo ricordo».\nE dove lo ritrovi,\nquando no.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-08-voc-5.jpg",
+  "tipo": "frase",
+  "parola": "Zaino",
+  "numero": "5",
+  "frase": "Contenitore di merende\nmezze mangiate e calzini\nspaiati. In fondo, sempre,\nun avviso da firmare per ieri.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-08-voc-6.jpg",
+  "tipo": "frase",
+  "parola": "Venerdì",
+  "numero": "6",
+  "frase": "Il giorno in cui la settimana\nsmette di correre.\nE tu ti siedi davvero,\nper almeno dieci minuti.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-08-voc-7.jpg",
+  "tipo": "frase",
+  "parola": "Ancora uno",
+  "numero": "7",
+  "frase": "Formula magica per cartoni,\nstorie e spinte sull'altalena.\nNon è mai l'ultimo.\nE va bene così.",
+  "sfondo": "#FBF6F4"
+ }
+]
