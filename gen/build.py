@@ -295,7 +295,7 @@ SP_INFO = {
    intro='Un foglio A4 per chi segue un genitore o un nonno: le medicine di ogni giorno, quelle solo al bisogno, il medico e la farmacia. Si compila a quattro mani, con chi le prende: serve a ricordare, non a decidere.',
    contiene=['Nome, medico di famiglia e farmacia', 'Allergie o medicine da evitare', 'Le medicine di ogni giorno: quanto, quando, fino a quando', 'Le medicine solo quando servono', 'Le domande per la prossima visita'],
    come=['Scrivetela insieme, con le confezioni davanti.', 'Una copia nel portafoglio, una sul frigo.', 'Portatela a ogni visita e aggiornatela quando il medico cambia qualcosa.'],
-   orient='orizzontale', guida=None, tool='gestionale'),
+   orient='orizzontale', guida='lista-medicine-genitore-anziano', tool='gestionale'),
 }
 def tabella(t):
     if not t: return ''

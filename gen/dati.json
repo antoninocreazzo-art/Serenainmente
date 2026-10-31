@@ -143,6 +143,30 @@
    "titolo": "Aiuti dati, ricevuti e reti di solidarietà | Anno 2024",
    "tipo": "Dato statistico",
    "url": "https://www.istat.it/comunicato-stampa/aiuti-dati-ricevuti-e-reti-di-solidarieta-anno-2024/"
+  },
+  {
+   "id": "OR-17",
+   "ente": "AIFA – Agenzia Italiana del Farmaco",
+   "anno": 2016,
+   "titolo": "Pazienti anziani: dall'FDA 4 consigli utili per utilizzare i farmaci in sicurezza",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.aifa.gov.it/-/pazienti-anziani-dall-fda-4-consigli-utili-per-utilizzare-i-farmaci-in-sicurezza"
+  },
+  {
+   "id": "OR-18",
+   "ente": "Regione Lombardia",
+   "anno": 2026,
+   "titolo": "Riconciliazione della terapia farmacologica: cosa è importante sapere",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.lombardia.it/sanita/farmaci-protesi-e-assistenza-integrata/riconciliazione-terapia-farmacologica"
+  },
+  {
+   "id": "OR-19",
+   "ente": "Ministero della Salute, ISS, AIFA, AGENAS e Regioni (pagina dell'ASL di Novara)",
+   "anno": 2022,
+   "titolo": "«Maneggiami con cura»: Giornata nazionale per la sicurezza delle cure e della persona assistita",
+   "tipo": "Guida per i cittadini",
+   "url": "https://prd-www-asl-novara.portali.csi.it/media/459/download"
   }
  ],
  "post": [
@@ -889,6 +913,82 @@
    ],
    "avvertenza": "Informazioni generali aggiornate a ottobre 2026, con le regole dell'anno scolastico 2026/2027. Le date del 2027/2028 non sono ancora uscite: la nota del Ministero arriva di solito a dicembre e aggiorneremo questa pagina. Per il nido valgono il bando e le regole del tuo Comune. Esiste anche un contributo INPS per le rette del nido (bonus nido), che si chiede online sul sito INPS o tramite patronato: l'importo dipende dall'ISEE.",
    "domanda": "Quando e come si fa l'iscrizione a nido e scuola"
+  },
+  {
+   "slug": "lista-medicine-genitore-anziano",
+   "categoria": "Organizzarsi",
+   "argomento": "organizzazione",
+   "data": "2026-10-31",
+   "titolo": "La lista delle medicine di un genitore anziano: cosa scriverci e dove tenerla",
+   "titolo_seo": "Lista delle medicine per un genitore anziano: come farla",
+   "sommario": "Un foglio solo, scritto insieme, con le medicine di ogni giorno e quelle al bisogno. Serve a ricordare, non a decidere: a ogni visita, in pronto soccorso, a chi dà una mano.",
+   "tempo": "30 minuti la prima volta, poi pochi minuti a ogni cambio",
+   "serve": "Le confezioni delle medicine, le ultime ricette o lettere del medico, una penna",
+   "strumento": "stampabile:lista-delle-medicine",
+   "perche": [
+    "Quando un medico deve decidere una cura nuova, in una visita, in un ricovero o in pronto soccorso, ha bisogno di sapere con precisione quali medicine si prendono già. Le indicazioni regionali consigliano di avere sempre con sé una lista ordinata e aggiornata, da mostrare quando serve: la può portare chi le prende o chi lo accompagna.",
+    "Ricordarle tutte a memoria è difficile per chiunque, soprattutto in un momento di agitazione. Un foglio scritto con calma, a casa, toglie questo peso a tutti: a tuo padre o a tua madre, a te, a un fratello o a chi passa a dare una mano.",
+    "La lista si scrive insieme, con chi prende le medicine. È la sua terapia e la sua storia: nessuno la conosce meglio di lui o di lei. Spesso sono proprio i nostri genitori ad averci insegnato a tenere in ordine le cose importanti. Il foglio non sostituisce il medico e non serve a cambiare nulla: serve a ricordare."
+   ],
+   "passi": [
+    [
+     "Sedetevi insieme, con le confezioni davanti",
+     "Prendete le scatole delle medicine, le ultime ricette e le lettere del medico. Chiedi a tuo padre o a tua madre come preferisce organizzare il foglio: scrive lui o lei, oppure tu sotto dettatura."
+    ],
+    [
+     "Scrivete il nome come sulla confezione",
+     "Copiate il nome del farmaco esattamente com'è stampato sulla scatola, senza abbreviazioni. Se il medico ha cambiato marca, scrivete quella che c'è in casa."
+    ],
+    [
+     "Accanto, a cosa serve e quando si prende",
+     "Una parola su a cosa serve, con le parole del medico (\"per la pressione\", \"per lo stomaco\"), e il momento della giornata: mattina, pranzo, sera. Per tutto il resto vale quello che ha scritto il medico: il foglio lo ricorda, non lo decide."
+    ],
+    [
+     "Chi l'ha prescritto",
+     "Il medico di famiglia o uno specialista: scrivetelo accanto a ogni medicina. Così, a ogni visita, è chiaro a chi chiedere se c'è un dubbio."
+    ],
+    [
+     "Allergie e medicine al bisogno, in un riquadro a parte",
+     "In alto, ben visibili, le allergie o le medicine da evitare. In un riquadro separato le medicine che si prendono solo quando servono. Aggiungete anche integratori e prodotti erboristici, se ce ne sono: anche quelli vanno detti al medico."
+    ],
+    [
+     "Medico, farmacia e data",
+     "In fondo il nome e il numero del medico di famiglia e della farmacia abituale, e la data dell'ultimo aggiornamento."
+    ],
+    [
+     "Una copia nel portafoglio, una sul frigo, una sul telefono",
+     "Una copia piegata nel portafoglio o nella borsa, una sul frigo o vicino al telefono di casa, una foto sul telefono di chi lo accompagna più spesso. Se volete, una copia anche a una persona di fiducia."
+    ],
+    [
+     "Portatela a ogni visita e aggiornatela lì",
+     "Mostratela al medico all'inizio della visita. Quando qualcosa cambia, correggete subito il foglio insieme e cambiate la data. Una volta all'anno chiedete al medico di ripassarla tutta."
+    ]
+   ],
+   "errori": [
+    "Scrivere la lista da soli, senza chi prende le medicine.",
+    "Dimenticare le medicine al bisogno, gli integratori o le allergie.",
+    "Avere tre copie diverse: quando cambia qualcosa, si aggiornano tutte e si rifà la foto.",
+    "Usare la lista per cambiare una cura: per qualsiasi dubbio si chiede al medico o al farmacista."
+   ],
+   "checklist": [
+    "Lista scritta insieme, con le confezioni davanti",
+    "Nome di ogni medicina come sulla confezione",
+    "A cosa serve, secondo il medico, e quando si prende",
+    "Chi l'ha prescritta",
+    "Allergie o medicine da evitare, in alto",
+    "Medicine al bisogno e integratori, a parte",
+    "Medico di famiglia e farmacia con i numeri",
+    "Data dell'ultimo aggiornamento",
+    "Copie nel portafoglio, sul frigo e sul telefono",
+    "Lista portata all'ultima visita"
+   ],
+   "fonti": [
+    "OR-18",
+    "OR-17",
+    "OR-19"
+   ],
+   "avvertenza": "Informazioni generali per organizzarsi, aggiornate a ottobre 2026. La lista serve a ricordare la terapia decisa dal medico, non a scegliere o cambiare una medicina: per dosi, orari e qualsiasi dubbio chiedete sempre al medico o al farmacista. Il foglio da stampare è gratuito su serenainmente.it/stampabili/lista-delle-medicine/.",
+   "domanda": "Come fare la lista delle medicine di un genitore anziano"
   }
  ],
  "chi": {
