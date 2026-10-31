@@ -1,0 +1,74 @@
+[
+ {
+  "file": "2026-11-03-p1.jpg",
+  "tipo": "frase",
+  "stile": "",
+  "sfondo": "#EBD3D9",
+  "frase": "tra vent'anni\nnon si ricorderà…",
+  "freccia": true
+ },
+ {
+  "file": "2026-11-03-p2.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "frase": "se il pavimento era lavato.\nSe la cena era\npasta al pomodoro\nper la terza volta\nin una settimana."
+ },
+ {
+  "file": "2026-11-03-p3.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "frase": "Non si ricorderà\nla montagna di panni\nsulla sedia della camera,\nquella che non diventa\nmai un armadio."
+ },
+ {
+  "file": "2026-11-03-p4.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "frase": "Non si ricorderà\nche quel giorno eri in ritardo,\nche hai dimenticato la merenda,\nche hai alzato la voce\ne poi gli hai chiesto scusa."
+ },
+ {
+  "file": "2026-11-03-p5.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "frase": "Sai cosa si ricorderà,\ninvece?",
+  "freccia": true
+ },
+ {
+  "file": "2026-11-03-p6.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "frase": "La canzone inventata\nin macchina,\ncon le parole sbagliate\napposta."
+ },
+ {
+  "file": "2026-11-03-p7.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "frase": "Le tue mani fredde\nsulle guance,\nd'inverno,\nsolo per farlo ridere."
+ },
+ {
+  "file": "2026-11-03-p8.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "frase": "Il libro letto cento volte,\ne quella pagina\nche saltavi sempre.\nLui se ne accorgeva sempre."
+ },
+ {
+  "file": "2026-11-03-p9.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "frase": "Si ricorderà che c'eri.\nNon perfetta.\nLì."
+ },
+ {
+  "file": "2026-11-03-p10.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "frase": "E tu, cosa ricordi\ndella tua infanzia?\n\nScrivilo qui sotto: magari\nè proprio quello che stai\ngià regalando a lui."
+ }
+]

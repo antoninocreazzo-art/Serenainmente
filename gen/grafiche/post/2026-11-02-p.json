@@ -1,0 +1,66 @@
+[
+ {
+  "file": "2026-11-02-p1.jpg",
+  "tipo": "frase",
+  "stile": "",
+  "sfondo": "#F2EBE3",
+  "frase": "questa è per te,\nche sei sempre l'ultima\nad andare a letto.",
+  "freccia": true
+ },
+ {
+  "file": "2026-11-02-p2.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F2EBE3",
+  "frase": "Hai controllato\nche la porta fosse chiusa.\nDue volte."
+ },
+ {
+  "file": "2026-11-02-p3.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F2EBE3",
+  "frase": "Hai messo lo zaino\nvicino alle scarpe,\nperché domattina\nnon c'è tempo."
+ },
+ {
+  "file": "2026-11-02-p4.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F2EBE3",
+  "frase": "Sai a memoria\nil numero del pediatra,\nla taglia delle scarpe\ndi adesso\ne quella che servirà\na primavera."
+ },
+ {
+  "file": "2026-11-02-p5.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F2EBE3",
+  "frase": "Hai mangiato in piedi\nl'ultimo pezzo di pane."
+ },
+ {
+  "file": "2026-11-02-p6.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F2EBE3",
+  "frase": "Hai riso a una storia\nsentita cento volte,\nperché era così fiero\ndi raccontarla."
+ },
+ {
+  "file": "2026-11-02-p7.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F2EBE3",
+  "frase": "Hai rimboccato una coperta\nche tra un'ora\nsarà di nuovo per terra.\nL'hai rimboccata lo stesso."
+ },
+ {
+  "file": "2026-11-02-p8.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F2EBE3",
+  "frase": "Quasi nessuno se ne accorge,\ne va bene così.\nMa oggi qualcuno l'ha visto."
+ },
+ {
+  "file": "2026-11-02-p9.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F2EBE3",
+  "frase": "Tutto questo ha un nome.\nSi chiama cura.\n\nHai fatto abbastanza.\nAnche oggi."
+ }
+]

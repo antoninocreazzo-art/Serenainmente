@@ -1,0 +1,73 @@
+[
+ {
+  "file": "2026-11-04-p1.jpg",
+  "tipo": "frase",
+  "stile": "",
+  "sfondo": "#F4E9EC",
+  "frase": "ai nonni\ndel martedì\npomeriggio.",
+  "freccia": true
+ },
+ {
+  "file": "2026-11-04-p2.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Quelli che arrivano\ndieci minuti prima,\n«così non hai fretta»."
+ },
+ {
+  "file": "2026-11-04-p3.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Che in borsa hanno\nun pacchetto di cracker,\nun fazzoletto stirato\ne una caramella\nche tu non avresti dato."
+ },
+ {
+  "file": "2026-11-04-p4.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Che all'uscita di scuola\nsono già lì\nprima che suoni la campanella."
+ },
+ {
+  "file": "2026-11-04-p5.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Sempre davanti al cancello,\nsempre nello stesso punto."
+ },
+ {
+  "file": "2026-11-04-p6.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Che dicono «ai miei tempi…»\ne poi fanno esattamente\ncome hai chiesto tu."
+ },
+ {
+  "file": "2026-11-04-p7.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Che si nascondono\ndietro una tenda\nda cui spuntano i piedi,\ne per dieci minuti fingono\ndi non essere stati trovati."
+ },
+ {
+  "file": "2026-11-04-p8.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Che la sera,\nquando lo riporti a casa,\ndicono «è stato bravissimo».\nAnche quando non è vero."
+ },
+ {
+  "file": "2026-11-04-p9.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Hanno cresciuto te.\nAdesso, senza farselo\nchiedere due volte,\naiutano a crescere lui."
+ },
+ {
+  "file": "2026-11-04-p10.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Grazie non basta.\nMa oggi diciamolo\nlo stesso.\n\nScrivi qui sotto\ncome si chiamano i tuoi."
+ }
+]
