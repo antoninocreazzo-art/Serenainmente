@@ -1,0 +1,88 @@
+[
+ {
+  "file": "2026-11-11-p1.jpg",
+  "tipo": "frase",
+  "stile": "",
+  "sfondo": "#F4E9EC",
+  "frase": "alla mamma\nche domani\ntorna al lavoro.",
+  "freccia": true
+ },
+ {
+  "file": "2026-11-11-p2.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Hai preparato la borsa\nper il nido due volte."
+ },
+ {
+  "file": "2026-11-11-p3.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Sul foglietto hai scritto\ngli orari della pappa,\nanche se li sanno già."
+ },
+ {
+  "file": "2026-11-11-p4.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Stanotte ti sei svegliata\nalle quattro\ne hai pensato:\ne se piange?"
+ },
+ {
+  "file": "2026-11-11-p5.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Domattina lo saluterai\nsulla porta.\nForse lui non si girerà\nnemmeno.\nE tu farai finta\nche vada tutto bene."
+ },
+ {
+  "file": "2026-11-11-p6.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "In macchina, magari,\npiangerai un po'.\nVa bene anche questo."
+ },
+ {
+  "file": "2026-11-11-p7.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Poi in ufficio qualcuno\nti chiederà\n«com'è andata\nla maternità?».\nE non saprai\nda dove cominciare."
+ },
+ {
+  "file": "2026-11-11-p8.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Ti sembrerà di essere\na metà in due posti.",
+  "freccia": true
+ },
+ {
+  "file": "2026-11-11-p9.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Non sei a metà.\nSei intera\nin tutti e due."
+ },
+ {
+  "file": "2026-11-11-p10.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Stasera, quando lo riprendi,\nti correrà incontro.\nE ti racconterà,\na modo suo,\nuna giornata tutta sua."
+ },
+ {
+  "file": "2026-11-11-p11.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Non lo stai lasciando.\nGli stai insegnando\nche torni sempre."
+ },
+ {
+  "file": "2026-11-11-p12.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "E tu, ti ricordi\nil primo giorno?\n\nScrivilo qui sotto."
+ }
+]

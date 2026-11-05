@@ -1,0 +1,74 @@
+[
+ {
+  "file": "2026-11-13-p1.jpg",
+  "tipo": "frase",
+  "stile": "",
+  "sfondo": "#FBF6F4",
+  "frase": "le frasi\ndelle nove\ndi sera.",
+  "freccia": true
+ },
+ {
+  "file": "2026-11-13-p2.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#FBF6F4",
+  "frase": "«Ho sete.»\n\nHa già bevuto.\nDue volte."
+ },
+ {
+  "file": "2026-11-13-p3.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#FBF6F4",
+  "frase": "«Devo fare la pipì.»\n\nFatta anche quella."
+ },
+ {
+  "file": "2026-11-13-p4.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#FBF6F4",
+  "frase": "«C'è un rumore.»\n\nÈ la lavatrice.\nÈ sempre la lavatrice."
+ },
+ {
+  "file": "2026-11-13-p5.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#FBF6F4",
+  "frase": "«Mi racconti\nun'altra storia?\nCorta corta.»\n\nNon è mai corta."
+ },
+ {
+  "file": "2026-11-13-p6.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#FBF6F4",
+  "frase": "«Domani cosa facciamo?»\n\nDomani è tra dieci ore.\nMa lui vuole saperlo\nadesso."
+ },
+ {
+  "file": "2026-11-13-p7.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#FBF6F4",
+  "frase": "«Mamma… niente.»",
+  "freccia": true
+ },
+ {
+  "file": "2026-11-13-p8.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#FBF6F4",
+  "frase": "E dopo un minuto:\n\n«Ti voglio bene.»"
+ },
+ {
+  "file": "2026-11-13-p9.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#FBF6F4",
+  "frase": "È sempre l'ultima, quella.\nE vale tutta la fatica\ndella sera."
+ },
+ {
+  "file": "2026-11-13-p10.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#FBF6F4",
+  "frase": "Qual è la frase\nche il tuo dice sempre\nprima di dormire?\n\nScrivila qui sotto."
+ }
+]
