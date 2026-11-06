@@ -28,7 +28,9 @@ const ease = t => t < 0 ? 0 : t > 1 ? 1 : 1 - Math.pow(1 - t, 3);
   const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
   for (const v of voci) {
     const lines = v.frase.split('\n');
-    const html = `<!doctype html><meta charset="utf-8"><style>${css}</style><div class="c" style="background:${v.sfondo}">
+    // dal 6/11: le voci con esempio d'uso possono avere 6-7 righe → corpo un po' più piccolo, stesso disegno
+    const extra = lines.length > 5 ? '.f{font-size:50px;line-height:1.32}' : '';
+    const html = `<!doctype html><meta charset="utf-8"><style>${css}${extra}</style><div class="c" style="background:${v.sfondo}">
 <div class="lab">${esc(v.parola)}<small>il vocabolario di Serena · n. ${esc(v.numero)}</small></div>
 <div class="f">${lines.map(l => `<div class="l">${esc(l)}</div>`).join('')}</div>
 <svg class="t" viewBox="0 0 1080 200"><path d="M 300 128 C 380 128 400 62 470 62 C 540 62 552 138 620 138 C 690 138 700 84 760 84" fill="none" stroke="#97606F" stroke-width="7" stroke-linecap="round"/><circle cx="792" cy="84" r="9" fill="#C99AA6"/></svg>
