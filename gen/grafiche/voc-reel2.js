@@ -10,10 +10,11 @@ const f64 = n => 'data:font/woff2;base64,' + fs.readFileSync(path.join(FONTS, n)
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const FPS = 30;
 // Il filo (la «s» di sempre) entra da sinistra e, senza staccarsi, continua verso destra e disegna a una linea continua
-// una donna di 35-40 anni di profilo, quasi a tutta pagina: capelli, ciuffo, fronte, naso, labbra, mento, collo, spalla.
+// una donna di profilo che guarda a sinistra, quasi a tutta pagina: piccolo nodo alla base del collo, collo, mento, labbra, naso,
+// fronte, poi i capelli che salgono a punta (come una foglia) e ridiscendono dietro la nuca.
 // Lo stile resta sempre a una linea continua (decisione di Antonino, 6/11/2026).
-const FILO = 'M -20 1560 C -2 1560 58 1570 90 1560 C 122 1550 143 1510 170 1500 C 197 1490 223 1488 250 1500 C 277 1512 303 1562 330 1575 C 357 1588 387 1584 410 1575 C 433 1566 460 1529 470 1520';
-const DONNA = 'M 470 1520 C 471 1511 481 1483 478 1468 C 475 1453 462 1441 452 1430 C 442 1419 428 1417 418 1400 C 408 1383 401 1363 392 1330 C 383 1297 369 1248 362 1200 C 355 1152 347 1093 352 1040 C 357 987 371 929 392 880 C 413 831 445 780 480 745 C 515 710 558 684 600 668 C 642 652 693 648 730 652 C 767 656 798 674 820 690 C 842 706 857 728 862 745 C 867 762 860 781 850 790 C 840 799 813 802 800 800 C 787 798 772 787 770 780 C 768 773 779 761 790 760 C 801 759 823 763 835 775 C 847 787 856 808 862 830 C 868 852 868 882 870 905 C 872 928 877 950 876 968 C 875 986 865 998 866 1010 C 867 1022 872 1028 880 1042 C 888 1056 903 1080 914 1094 C 925 1108 942 1117 946 1126 C 950 1135 945 1143 938 1148 C 931 1153 908 1154 904 1158 C 900 1162 907 1169 912 1174 C 917 1179 931 1185 934 1190 C 937 1195 932 1200 928 1204 C 924 1208 910 1209 910 1212 C 910 1215 924 1218 928 1222 C 932 1226 934 1233 932 1238 C 930 1243 923 1249 918 1254 C 913 1259 904 1260 904 1268 C 904 1276 917 1290 917 1302 C 917 1314 912 1329 904 1338 C 896 1347 883 1352 872 1357 C 861 1362 847 1359 838 1366 C 829 1373 820 1381 816 1400 C 812 1419 809 1453 812 1480 C 815 1507 817 1538 832 1560 C 847 1582 855 1595 900 1610 C 945 1625 1067 1643 1100 1650';
+const FILO = 'M -20 1630 C 60 1630 100 1575 160 1575 C 230 1575 260 1645 320 1645 C 390 1645 420 1605 470 1605';
+const DONNA = 'M 470 1605 C 510 1600 560 1595 558 1568 C 556 1545 522 1540 518 1562 C 515 1582 540 1590 548 1568 C 556 1530 520 1470 470 1455 C 440 1455 395 1440 392 1402 C 390 1380 405 1370 404 1360 C 403 1348 382 1348 381 1335 C 380 1323 398 1321 400 1318 C 396 1314 378 1310 380 1298 C 382 1288 400 1288 402 1280 C 395 1274 362 1270 362 1258 C 362 1240 392 1205 398 1180 C 402 1165 396 1150 398 1135 C 400 1090 410 1040 425 1005 C 460 920 580 840 670 805 C 720 786 760 750 772 728 C 800 770 900 880 880 1080 C 868 1220 820 1330 826 1450 C 832 1560 870 1650 910 1730';
 const css = `@font-face{font-family:Fr;src:url(${f64('fraunces-latin-400-normal.woff2')})}
 @font-face{font-family:DM;font-weight:500;src:url(${f64('dm-sans-latin-500-normal.woff2')})}
 @font-face{font-family:DM;font-weight:800;src:url(${f64('dm-sans-latin-800-normal.woff2')})}
@@ -28,7 +29,7 @@ svg.d{position:absolute;left:0;top:0;width:1080px;height:1920px}
 .e{margin-top:42px;opacity:0}
 .e b{display:block;font:500 24px DM;letter-spacing:3px;text-transform:uppercase;color:#97606F;margin-bottom:6px}
 .e div{font-family:Fr;font-size:42px;line-height:1.3;color:#6E4552;white-space:nowrap}
-.s{position:absolute;left:0;right:0;text-align:center;top:1625px;font:500 28px DM;letter-spacing:4px;color:#97606F;opacity:0}`;
+.s{position:absolute;left:0;right:0;text-align:center;top:1655px;font:500 28px DM;letter-spacing:4px;color:#97606F;opacity:0}`;
 const ease = t => t < 0 ? 0 : t > 1 ? 1 : 1 - Math.pow(1 - t, 3);
 (async () => {
   const [file, solo, outDir] = process.argv.slice(2);
