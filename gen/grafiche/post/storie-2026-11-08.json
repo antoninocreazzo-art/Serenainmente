@@ -1,15 +1,15 @@
 {
- "nota": "Storie con adesivo dal 8/11/2026 (decisione di Antonino del 6/11): pubblicazione con notifica di Metricool, l'adesivo lo aggiunge Antonino dall'app. Piano completo (decisione di Antonino del 6/11: «pensa a cosa è meglio», non al suo tempo): ogni giorno storia 1 con adesivo alle 12 (notifica), poi storia 2 = condivisione del post del giorno dall'app; giovedì in più la storia Rivela con la parola del giorno dopo.",
+ "nota": "Storie con adesivo dal 8/11/2026 (decisione di Antonino del 6/11): pubblicazione con notifica di Metricool, l'adesivo lo aggiunge Antonino dall'app. Piano completo (decisione di Antonino del 6/11: «pensa a cosa è meglio», non al suo tempo): ogni giorno storia 1 con adesivo alle 12 (notifica), poi storia 2 = condivisione del post del giorno dall'app; giovedì in più la storia Rivela con la parola del giorno dopo. Dal 6/11 sera: un solo adesivo per storia e sondaggi con le risposte Sì/No già pronte di Instagram, così Antonino incolla una sola cosa (decisione: «mi devi preparare tutto tu»).",
  "reel": [],
  "storie": [
   {
    "data": "2026-11-08",
    "sfondo": "#F4E9EC",
    "chip": "La domanda della domenica",
-   "titolo": "Com'è andata questa settimana?",
-   "testo": "Vota qui sotto. E se ti va, scrivi cosa ti è pesato di più: le risposte restano anonime.",
+   "titolo": "Questa settimana è stata più lunga del previsto?",
+   "testo": "Un tocco qui sotto. Così vediamo se non sei l'unica.",
    "tipo": "adesivo",
-   "file": "2026-11-08-storia-v3.jpg"
+   "file": "2026-11-08-storia-v4.jpg"
   },
   {
    "data": "2026-11-09",
@@ -32,20 +32,20 @@
   {
    "data": "2026-11-11",
    "sfondo": "#EBD3D9",
-   "chip": "Vero o falso? Il quiz",
-   "titolo": "Quante ore dovrebbe dormire un bambino di 3-4 anni?",
-   "testo": "Compresi i sonnellini, secondo l'Organizzazione Mondiale della Sanità. Domani la risposta, con la fonte.",
+   "chip": "Vero o falso?",
+   "titolo": "A un bambino di 3-4 anni bastano 8 ore di sonno?",
+   "testo": "Sonnellini compresi. Vota qui sotto: domani la risposta, con la fonte.",
    "tipo": "adesivo",
-   "file": "2026-11-11-storia-v3.jpg"
+   "file": "2026-11-11-storia-v4.jpg"
   },
   {
    "data": "2026-11-12",
    "sfondo": "#F4E9EC",
    "chip": "La risposta di ieri",
-   "titolo": "10-13 ore, sonnellini compresi.",
-   "testo": "Per i bambini di 3-4 anni. Sono intervalli larghi: ogni bambino ha i suoi tempi. Fonte: OMS, 2019. La guida completa è qui sotto.",
+   "titolo": "No: ne servono 10-13.",
+   "testo": "Per i bambini di 3-4 anni, sonnellini compresi, secondo l'OMS (2019). Sono intervalli larghi: ogni bambino ha i suoi tempi. La guida completa è qui sotto.",
    "tipo": "adesivo",
-   "file": "2026-11-12-storia-v3.jpg"
+   "file": "2026-11-12-storia-v4.jpg"
   },
   {
    "data": "2026-11-13",
