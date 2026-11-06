@@ -1,0 +1,69 @@
+{
+ "nota": "Storie con adesivo dal 8/11/2026 (decisione di Antonino del 6/11): pubblicazione con notifica di Metricool, l'adesivo lo aggiunge Antonino dall'app.",
+ "reel": [],
+ "storie": [
+  {
+   "data": "2026-11-08",
+   "sfondo": "#F4E9EC",
+   "chip": "La domanda della domenica",
+   "titolo": "Cosa ti è pesato di più, questa settimana?",
+   "testo": "Scrivilo qui sotto. Le risposte restano anonime: in settimana ne leggiamo qualcuna insieme.",
+   "tipo": "adesivo",
+   "file": "2026-11-08-storia-v3.jpg"
+  },
+  {
+   "data": "2026-11-09",
+   "sfondo": "#FBF6F4",
+   "chip": "Com'è iniziata?",
+   "titolo": "Lunedì: da 1 a «portatemi un caffè».",
+   "testo": "Sposta il cursore e dicci com'è cominciata la settimana a casa vostra.",
+   "tipo": "adesivo",
+   "file": "2026-11-09-storia-v3.jpg"
+  },
+  {
+   "data": "2026-11-10",
+   "sfondo": "#F2EBE3",
+   "chip": "Questo o quello",
+   "titolo": "Il pigiama: prima o dopo cena?",
+   "testo": "Ogni casa ha la sua regola. Qual è la vostra?",
+   "tipo": "adesivo",
+   "file": "2026-11-10-storia-v3.jpg"
+  },
+  {
+   "data": "2026-11-11",
+   "sfondo": "#EBD3D9",
+   "chip": "Vero o falso? Il quiz",
+   "titolo": "Quante ore dovrebbe dormire un bambino di 3-4 anni?",
+   "testo": "Compresi i sonnellini, secondo l'Organizzazione Mondiale della Sanità. Domani la risposta, con la fonte.",
+   "tipo": "adesivo",
+   "file": "2026-11-11-storia-v3.jpg"
+  },
+  {
+   "data": "2026-11-12",
+   "sfondo": "#F4E9EC",
+   "chip": "La risposta di ieri",
+   "titolo": "10-13 ore, sonnellini compresi.",
+   "testo": "Per i bambini di 3-4 anni. Sono intervalli larghi: ogni bambino ha i suoi tempi. Fonte: OMS, 2019. La guida completa è qui sotto.",
+   "tipo": "adesivo",
+   "file": "2026-11-12-storia-v3.jpg"
+  },
+  {
+   "data": "2026-11-13",
+   "sfondo": "#FBF6F4",
+   "chip": "Lo strumento del venerdì",
+   "titolo": "Il weekend di tutti, su un foglio solo.",
+   "testo": "Il foglio della settimana da stampare e attaccare al frigo. Gratis, senza registrazione.",
+   "tipo": "adesivo",
+   "file": "2026-11-13-storia-v3.jpg"
+  },
+  {
+   "data": "2026-11-14",
+   "sfondo": "#F2EBE3",
+   "chip": "Aggiungi il tuo",
+   "titolo": "Il caffè che oggi sei riuscita a bere caldo.",
+   "testo": "Una foto della tua tazza, niente volti. Aggiungi la tua e guarda quelle degli altri.",
+   "tipo": "adesivo",
+   "file": "2026-11-14-storia-v3.jpg"
+  }
+ ]
+}
