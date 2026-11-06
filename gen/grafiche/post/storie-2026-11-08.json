@@ -1,13 +1,13 @@
 {
- "nota": "Storie con adesivo dal 8/11/2026 (decisione di Antonino del 6/11): pubblicazione con notifica di Metricool, l'adesivo lo aggiunge Antonino dall'app.",
+ "nota": "Storie con adesivo dal 8/11/2026 (decisione di Antonino del 6/11): pubblicazione con notifica di Metricool, l'adesivo lo aggiunge Antonino dall'app. Piano completo (decisione di Antonino del 6/11: «pensa a cosa è meglio», non al suo tempo): ogni giorno storia 1 con adesivo alle 12 (notifica), poi storia 2 = condivisione del post del giorno dall'app; giovedì in più la storia Rivela con la parola del giorno dopo.",
  "reel": [],
  "storie": [
   {
    "data": "2026-11-08",
    "sfondo": "#F4E9EC",
    "chip": "La domanda della domenica",
-   "titolo": "Cosa ti è pesato di più, questa settimana?",
-   "testo": "Scrivilo qui sotto. Le risposte restano anonime: in settimana ne leggiamo qualcuna insieme.",
+   "titolo": "Com'è andata questa settimana?",
+   "testo": "Vota qui sotto. E se ti va, scrivi cosa ti è pesato di più: le risposte restano anonime.",
    "tipo": "adesivo",
    "file": "2026-11-08-storia-v3.jpg"
   },
@@ -64,6 +64,15 @@
    "testo": "Una foto della tua tazza, niente volti. Aggiungi la tua e guarda quelle degli altri.",
    "tipo": "adesivo",
    "file": "2026-11-14-storia-v3.jpg"
+  },
+  {
+   "data": "2026-11-12",
+   "tipo": "adesivo",
+   "file": "2026-11-12-storia-b-v3.jpg",
+   "sfondo": "#FBF6F4",
+   "chip": "Il vocabolario di domani",
+   "titolo": "Calendario",
+   "testo": "Domani alle 18, la definizione. Chi la scopre oggi può già dirci la sua."
   }
  ]
 }
