@@ -167,6 +167,46 @@
    "titolo": "«Maneggiami con cura»: Giornata nazionale per la sicurezza delle cure e della persona assistita",
    "tipo": "Guida per i cittadini",
    "url": "https://prd-www-asl-novara.portali.csi.it/media/459/download"
+  },
+  {
+   "id": "OR-20",
+   "ente": "Ministero dell'Interno – Carta d'identità elettronica",
+   "anno": 2026,
+   "titolo": "Rilascio e rinnovo minorenni",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.cartaidentita.interno.gov.it/richiedi/rilascio-e-rinnovo-minorenni/"
+  },
+  {
+   "id": "OR-21",
+   "ente": "Ministero dell'Interno – Carta d'identità elettronica",
+   "anno": 2026,
+   "titolo": "Rilascio e rinnovo in Italia",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.cartaidentita.interno.gov.it/richiedi/rilascio-e-rinnovo-in-italia/"
+  },
+  {
+   "id": "OR-22",
+   "ente": "Ministero dell'Interno – Carta d'identità elettronica",
+   "anno": 2026,
+   "titolo": "Modalità di acquisizione delle foto",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.cartaidentita.interno.gov.it/richiedi/modalita-di-acquisizione-delle-foto/"
+  },
+  {
+   "id": "OR-23",
+   "ente": "Ministero dell'Interno – Carta d'identità elettronica",
+   "anno": 2026,
+   "titolo": "Sistema di prenotazione della CIE (Prenotazioni CIE)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.cartaidentita.interno.gov.it/richiedi/sistema-di-prenotazione-della-cie/"
+  },
+  {
+   "id": "OR-24",
+   "ente": "Ministero dell'Interno – Dipartimento per gli Affari Interni e Territoriali",
+   "anno": 2011,
+   "titolo": "Circolare del 26 maggio 2011: rilascio della carta d'identità ai minori",
+   "tipo": "Documento istituzionale",
+   "url": "https://dait.interno.gov.it/documenti/circ_015_servdemo_26-05-2011.pdf"
   }
  ],
  "post": [
@@ -989,6 +1029,99 @@
    ],
    "avvertenza": "Informazioni generali per organizzarsi, aggiornate a ottobre 2026. La lista serve a ricordare la terapia decisa dal medico, non a scegliere o cambiare una medicina: per dosi, orari e qualsiasi dubbio chiedete sempre al medico o al farmacista. Il foglio da stampare è gratuito su serenainmente.it/stampabili/lista-delle-medicine/.",
    "domanda": "Come fare la lista delle medicine di un genitore anziano"
+  },
+  {
+   "slug": "carta-identita-bambini",
+   "categoria": "Organizzarsi",
+   "argomento": "documenti",
+   "data": "2026-11-07",
+   "titolo": "Carta d'identità per i bambini: come si fa",
+   "titolo_seo": "Carta d'identità per bambini: età, validità, documenti",
+   "sommario": "Si può fare fin dalla nascita. Quanto dura, dove si chiede, cosa portare e cosa serve perché valga per l'espatrio.",
+   "tempo": "15 minuti per preparare tutto, più l'appuntamento in Comune",
+   "serve": "Fototessera recente, codice fiscale o tessera sanitaria del bambino, i genitori presenti",
+   "strumento": "gestionale",
+   "perche": [
+    "La carta d'identità elettronica (CIE) si può chiedere per un bambino cittadino italiano fin dalla nascita. Per i più piccoli dura meno che per gli adulti: per questo conviene segnare la scadenza appena arriva.",
+    "Se la carta deve valere per l'espatrio, cioè per i viaggi all'estero, servono l'assenso dei genitori e, secondo il Ministero dell'Interno, entrambi i genitori presenti al rilascio. Sotto i 14 anni, poi, il bambino può usarla all'estero solo se viaggia con un genitore o con una dichiarazione di accompagnamento."
+   ],
+   "tabella": {
+    "titolo": "Quanto dura la carta d'identità di un bambino",
+    "colonne": [
+     "Età al rilascio",
+     "Validità",
+     "Quando scade"
+    ],
+    "righe": [
+     [
+      "Meno di 3 anni",
+      "3 anni",
+      "Al primo compleanno dopo 3 anni dall'emissione"
+     ],
+     [
+      "Da 3 a 18 anni",
+      "5 anni",
+      "Al primo compleanno dopo 5 anni dall'emissione"
+     ],
+     [
+      "Maggiorenni (per confronto)",
+      "Fino a 10 anni",
+      "Al compleanno"
+     ]
+    ]
+   },
+   "passi": [
+    [
+     "Prenota l'appuntamento in Comune",
+     "Si chiede al Comune di residenza o di dimora. Se il tuo Comune ha attivato la prenotazione online, si prenota su Prenotazioni CIE (prenotazionicie.interno.gov.it), che ha preso il posto della vecchia Agenda CIE. Altrimenti chiedi all'anagrafe come fare."
+    ],
+    [
+     "Fai la fototessera",
+     "Formato passaporto, scattata da non più di sei mesi, sfondo uniforme e chiaro, bocca chiusa e occhi aperti. Se hai prenotato online puoi caricarla in digitale, altrimenti portala su carta."
+    ],
+    [
+     "Porta il codice fiscale o la tessera sanitaria",
+     "Non è obbligatoria, ma il Ministero consiglia di averla: velocizza la registrazione. Se è un rinnovo, porta anche la vecchia carta, che va consegnata."
+    ],
+    [
+     "Andate in Comune insieme",
+     "Per la carta valida per l'espatrio servono entrambi i genitori presenti, che danno l'assenso. Se uno dei due non può venire, chiedi al Comune come far arrivare il suo assenso scritto. Dai 12 anni il ragazzo firma la carta e gli vengono prese due impronte digitali."
+    ],
+    [
+     "Paga e scegli dove riceverla",
+     "Il costo è di 16,79 euro, più i diritti fissi e di segreteria del Comune quando previsti. La carta arriva entro 6 giorni lavorativi: si ritira in Comune o si fa spedire a un indirizzo. Conserva il modulo che ti danno."
+    ],
+    [
+     "Sotto i 14 anni, prima di partire",
+     "All'estero il bambino può usarla solo se viaggia con un genitore (o con chi ne fa le veci), oppure con una dichiarazione convalidata dalla Questura che indica a chi è affidato. Su richiesta, sul retro della carta si possono stampare i nomi dei genitori."
+    ]
+   ],
+   "errori": [
+    "Pensare a tutto la settimana del viaggio: la carta arriva entro 6 giorni lavorativi, ma prima serve l'appuntamento.",
+    "Portare una foto vecchia: deve essere di non più di sei mesi, e i bambini cambiano in fretta.",
+    "Presentarsi con un solo genitore quando serve la carta valida per l'espatrio.",
+    "Dimenticare che la carta di un bambino sotto i 3 anni dura 3 anni, non 10.",
+    "Dare per scontato che, sotto i 14 anni, basti la carta per un viaggio all'estero con i nonni o con altri adulti: serve la dichiarazione di accompagnamento."
+   ],
+   "checklist": [
+    "Appuntamento in Comune prenotato",
+    "Fototessera di meno di sei mesi",
+    "Codice fiscale o tessera sanitaria del bambino",
+    "Vecchia carta (se è un rinnovo)",
+    "Entrambi i genitori presenti, o assenso scritto (per l'espatrio)",
+    "Modulo della richiesta conservato",
+    "Scadenza della carta segnata in calendario",
+    "Dichiarazione di accompagnamento (sotto i 14 anni, se viaggia senza genitori)"
+   ],
+   "fonti": [
+    "OR-20",
+    "OR-21",
+    "OR-22",
+    "OR-23",
+    "OR-24"
+   ],
+   "avvertenza": "Informazioni generali aggiornate a novembre 2026, dal sito della Carta d'identità elettronica del Ministero dell'Interno. Prenotazione, orari e diritti di segreteria dipendono dal tuo Comune: controlla la pagina dell'anagrafe. Per i casi particolari (un genitore che non può dare l'assenso, minori residenti all'estero, dichiarazione di accompagnamento) chiedi al Comune o alla Questura.",
+   "domanda": "Come si fa la carta d'identità a un bambino"
   }
  ],
  "chi": {
