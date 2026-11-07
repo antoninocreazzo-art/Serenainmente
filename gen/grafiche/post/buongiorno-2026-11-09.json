@@ -1,5 +1,5 @@
 {
- "nota": "Il buongiorno di Serena, storia automatica alle 6:30 dall'8/11/2026. Decisione di Antonino del 7/11: frasi calde e profonde che danno comprensione, augurano una buona giornata e danno forza. Rivisto il 7/11 su sua richiesta: «Buongiorno» grande, frase finale motivazionale e più in evidenza (file -v2).",
+ "nota": "Il buongiorno di Serena, storia automatica alle 6:30 dall'8/11/2026. Decisione di Antonino del 7/11: frasi calde e profonde che danno comprensione, augurano una buona giornata e danno forza. Rivisto il 7/11 su sua richiesta: «Buongiorno» grande, frase finale motivazionale e più in evidenza (file -v2). Poi, su sua indicazione: tornano gli auguri di prima nel riquadro, la parte motivazionale chiude la frase centrale (file -v3).",
  "reel": [],
  "storie": [
   {
@@ -7,72 +7,72 @@
    "tipo": "buongiorno",
    "sfondo": "#F4E9EC",
    "saluto": "Buongiorno",
-   "titolo": "La settimana è passata, con tutto quello che ti ha chiesto. E l'hai portata fino in fondo, anche nei giorni storti.",
-   "testo": "Hai fatto più di quanto pensi. Oggi rallenta: te lo sei meritato.",
-   "file": "2026-11-08-buongiorno-v2.jpg"
+   "titolo": "La settimana è passata, con tutto quello che ti ha chiesto. Hai fatto più di quanto pensi: oggi puoi rallentare senza sentirti in colpa.",
+   "testo": "Buona domenica, a te e a chi ami.",
+   "file": "2026-11-08-buongiorno-v3.jpg"
   },
   {
    "data": "2026-11-09",
    "tipo": "buongiorno",
    "sfondo": "#FBF6F4",
    "saluto": "Buongiorno",
-   "titolo": "a chi riparte con la stanchezza di venerdì ancora addosso. Non serve avere tutto chiaro: basta il primo passo, poi il secondo.",
-   "testo": "Hai già superato lunedì peggiori di questo. Vai, ce la fai.",
-   "file": "2026-11-09-buongiorno-v2.jpg"
+   "titolo": "a chi riparte con la stanchezza di venerdì ancora addosso. Non serve avere tutto chiaro: basta il primo passo. Hai già superato lunedì peggiori di questo.",
+   "testo": "Che sia una settimana gentile con te.",
+   "file": "2026-11-09-buongiorno-v3.jpg"
   },
   {
    "data": "2026-11-10",
    "tipo": "buongiorno",
    "sfondo": "#F4E9EC",
    "saluto": "Buongiorno",
-   "titolo": "a chi stanotte si è alzata più di una volta. La forza di oggi non deve essere tanta: deve bastare fino a stasera.",
-   "testo": "E basterà. Sei più forte della notte che hai passato.",
-   "file": "2026-11-10-buongiorno-v2.jpg"
+   "titolo": "a chi stanotte si è alzata più di una volta. La forza di oggi non deve essere tanta: deve bastare fino a stasera. E basterà: sei più forte della notte che hai passato.",
+   "testo": "Buona giornata, piano piano.",
+   "file": "2026-11-10-buongiorno-v3.jpg"
   },
   {
    "data": "2026-11-11",
    "tipo": "buongiorno",
    "sfondo": "#F2EBE3",
    "saluto": "Buongiorno",
-   "titolo": "Se oggi qualcosa resterà indietro, non vuol dire che sei indietro tu. Vuol dire che hai scelto cosa contava di più.",
-   "testo": "Metà settimana è fatta. Tieni il tuo passo: è quello giusto.",
-   "file": "2026-11-11-buongiorno-v2.jpg"
+   "titolo": "Se oggi qualcosa resterà indietro, non vuol dire che sei indietro tu. Vuol dire che hai scelto cosa contava di più. Tieni il tuo passo: è quello giusto.",
+   "testo": "Che la giornata ti restituisca un po' di quello che dai.",
+   "file": "2026-11-11-buongiorno-v3.jpg"
   },
   {
    "data": "2026-11-12",
    "tipo": "buongiorno",
    "sfondo": "#FBF6F4",
    "saluto": "Buongiorno",
-   "titolo": "a chi pensa agli altri prima ancora del suo caffè. Quello che fai ogni mattina vale tantissimo, anche quando nessuno lo dice.",
-   "testo": "Oggi lo diciamo noi: grazie. E vai avanti a testa alta.",
-   "file": "2026-11-12-buongiorno-v2.jpg"
+   "titolo": "a chi pensa agli altri prima ancora del suo caffè. Quello che fai ogni mattina vale tantissimo, anche quando nessuno lo dice. Vai avanti a testa alta.",
+   "testo": "Oggi lo diciamo noi: grazie. Buona giornata.",
+   "file": "2026-11-12-buongiorno-v3.jpg"
   },
   {
    "data": "2026-11-13",
    "tipo": "buongiorno",
    "sfondo": "#F4E9EC",
    "saluto": "Buongiorno",
-   "titolo": "È venerdì, e la settimana pesa tutta su queste ultime ore. Ancora un po' di strada, e stasera potrai fermarti davvero.",
-   "testo": "L'ultimo tratto è il più corto. Forza, ci sei quasi.",
-   "file": "2026-11-13-buongiorno-v2.jpg"
+   "titolo": "È venerdì, e la settimana pesa tutta su queste ultime ore. L'ultimo tratto è il più corto: stasera potrai fermarti davvero.",
+   "testo": "Te lo sei guadagnato. Forza.",
+   "file": "2026-11-13-buongiorno-v3.jpg"
   },
   {
    "data": "2026-11-14",
    "tipo": "buongiorno",
    "sfondo": "#F2EBE3",
    "saluto": "Buongiorno",
-   "titolo": "a chi oggi non ha la sveglia, ma alle sei era già in piedi lo stesso. Che sia una giornata lenta, con una colazione seduta.",
-   "testo": "Ricaricati. Anche chi si prende cura di tutti ha bisogno di cura.",
-   "file": "2026-11-14-buongiorno-v2.jpg"
+   "titolo": "a chi oggi non ha la sveglia, ma alle sei era già in piedi lo stesso. Anche chi si prende cura di tutti ha bisogno di cura: che sia una giornata lenta.",
+   "testo": "E un abbraccio lungo, di quelli che ricaricano.",
+   "file": "2026-11-14-buongiorno-v3.jpg"
   },
   {
    "data": "2026-11-15",
    "tipo": "buongiorno",
    "sfondo": "#FBF6F4",
    "saluto": "Buongiorno",
-   "titolo": "Oggi non c'è niente da dimostrare a nessuno. Solo tempo da stare insieme, anche se la casa resta in disordine.",
-   "testo": "Riposa bene: domani riparti più forte.",
-   "file": "2026-11-15-buongiorno-v2.jpg"
+   "titolo": "Oggi non c'è niente da dimostrare a nessuno. Solo tempo da stare insieme, anche se la casa resta in disordine. Domani ripartirai più forte.",
+   "testo": "Buona domenica, che ti somigli.",
+   "file": "2026-11-15-buongiorno-v3.jpg"
   }
  ]
 }
