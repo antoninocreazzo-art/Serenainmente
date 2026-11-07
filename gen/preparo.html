@@ -41,7 +41,7 @@
 
 <div class="row pv-act">
 <button class="btn" type="button" data-go="visit" data-umami-event="preparo-visita-apri">Sono in ambulatorio {arrow}</button>
-<button class="btn btn-line" type="button" data-share data-umami-event="preparo-visita-manda">Manda quello che hai scritto</button>
+<button class="btn btn-line" type="button" data-manda data-umami-event="preparo-visita-manda">Manda quello che hai scritto</button>
 </div>
 </div>
 
@@ -58,7 +58,7 @@
 </div>
 <div class="row pv-act">
 <button class="btn btn-line" type="button" data-go="prep">{back} Torna a preparare</button>
-<button class="btn btn-line" type="button" data-share data-umami-event="preparo-visita-manda">Manda il riepilogo</button>
+<button class="btn btn-line" type="button" data-manda data-umami-event="preparo-visita-manda">Manda il riepilogo</button>
 <button class="btn btn-line" type="button" onclick="print()">Stampa</button>
 </div>
 </div>
@@ -117,7 +117,7 @@ function text(){var o=['Preparo la visita'+(S.chi?' · '+S.chi:''),when(),S.medi
  o.push('','Preparato con serenainmente.it/strumenti/preparo-la-visita/');return o.filter(function(x,i,a){return x!==''||a[i-1]!==''}).join('\n')}
 function send(t){if(navigator.share){navigator.share({text:t}).catch(function(){})}else{open('https://wa.me/?text='+encodeURIComponent(t))}}
 var P=$('[data-prev]');
-$$('[data-share]').forEach(function(b){b.onclick=function(){$('[data-prevtext]').textContent=text();P.hidden=false;P.scrollIntoView({behavior:'smooth',block:'center'})}});
+$$('[data-manda]').forEach(function(b){b.onclick=function(){$('[data-prevtext]').textContent=text();P.hidden=false;P.scrollIntoView({behavior:'smooth',block:'center'})}});
 $('[data-send]').onclick=function(){send(text());P.hidden=true};
 $('[data-cancel]').onclick=function(){P.hidden=true};
 $('[data-link]').onclick=function(){var u='https://serenainmente.it/strumenti/preparo-la-visita/',t='Uno strumento gratuito per preparare le domande prima di una visita: ';if(navigator.share){navigator.share({title:'Preparo la visita',text:t,url:u}).catch(function(){})}else{open('https://wa.me/?text='+encodeURIComponent(t+u))}};

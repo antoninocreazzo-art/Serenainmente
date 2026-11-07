@@ -84,7 +84,7 @@ def foto(key, alt, cls='', tone=None, eager=False):
     return f'<div class="ph ph-{t} {cls}" role="img" aria-label="{e(alt)}">{sun}</div>'
 
 # ---------- pagina ----------
-UMAMI = '<script defer src="https://cloud.umami.is/script.js" data-website-id="301edcb4-f5b2-444e-a1e5-8b8614d0100a" data-domains="serenainmente.it"></script>'
+UMAMI = '<script defer src="https://cloud.umami.is/script.js" data-website-id="301edcb4-f5b2-444e-a1e5-8b8614d0100a" data-domains="serenainmente.it" data-exclude-search="true" data-exclude-hash="true"></script>'
 LOGO = '<img class="logo-mark" src="~/assets/brand/mark-96.png" alt="" width="36" height="36"><span>serenainmente</span>'
 NAV = [('/guide/', 'Articoli e guide'), ('/risorse/', 'Risorse gratuite'), ('/chi-e-serena/', 'Chi è Serena'), ('/metodo/', 'Il nostro metodo')]
 
@@ -525,11 +525,15 @@ pages.append(page('/metodo/', 'Il nostro metodo', 'Come nascono e si controllano
 </section>'''))
 
 # ---------- privacy ----------
+# Data vera dell'ultima modifica dei testi (non la data di oggi: il sito si
+# rigenera ogni mattina). Si cambia a mano quando cambia il testo.
+AGG_PRIVACY = '2026-10-18'
+AGG_NOTE_LEGALI = '2026-10-21'
 pages.append(page('/privacy/', 'Privacy', 'Come serenainmente.it tratta i dati: niente cookie, niente profilazione, statistiche anonime.', f'''
 <section class="ph-hd wrap"><div class="ph-txt"><h1>Privacy</h1><p class="lead">In breve: niente cookie, niente profilazione, nessun dato personale raccolto.</p></div></section>
 <section class="wrap-t prose">{''.join(f'<p>{e(p)}</p>' for p in CHI['Privacy'])}
 <h2>Contatti</h2><p>Per qualsiasi domanda: <a href="mailto:{MAIL}">{MAIL}</a>, oppure un messaggio privato su Instagram a <a href="{IG}" rel="noopener">@serenainmente</a>.</p>
-<p class="small">Ultimo aggiornamento: {data_it(datetime.date.today().isoformat())}.</p></section>'''))
+<p class="small">Ultimo aggiornamento: {data_it(AGG_PRIVACY)}.</p></section>'''))
 
 # ---------- strumenti interattivi ----------
 PV = open(os.path.join(ROOT, 'gen', 'preparo.html'), encoding='utf-8').read().replace('{lock}', ic('lock','ic-s')).replace('{arrow}', ic('arrow','ic-s')).replace('{back}', '←')
@@ -558,7 +562,7 @@ pages.append(page('/note-legali/', 'Note legali', 'Chi cura serenainmente.it, co
 <h2>Immagini</h2><p>Le fotografie del sito e le grafiche sono generate o composte con strumenti digitali e AI e scelte da una persona: non ritraggono persone, luoghi o oggetti reali.</p>
 <h2>Marchi di terzi</h2><p>Microsoft Excel, Fogli Google, Numbers, Instagram e WhatsApp sono marchi dei rispettivi titolari: li citiamo solo per spiegare come usare gli strumenti.</p>
 <h2>Errori e segnalazioni</h2><p>Se trovi un errore, un dato superato o un link che non funziona, scrivici: correggiamo e indichiamo la data dell'aggiornamento. Come trattiamo i dati è spiegato nella pagina <a href="~/privacy/">Privacy</a>.</p>
-<p class="small">Ultimo aggiornamento: {data_it(datetime.date.today().isoformat())}.</p></section>'''))
+<p class="small">Ultimo aggiornamento: {data_it(AGG_NOTE_LEGALI)}.</p></section>'''))
 
 # ---------- fonti ----------
 post_cards = []
