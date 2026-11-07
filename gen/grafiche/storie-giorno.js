@@ -5,6 +5,7 @@
 //  - "strumento" / "guida": uno strumento o una guida del sito, con l'anteprima e «Link in bio».
 //  - "adesivo" (dal 8/11/2026): domanda grande in alto e spazio vuoto al centro per l'adesivo (sondaggio, quiz, domande,
 //    cursore, link, «aggiungi il tuo») che Antonino aggiunge dall'app quando arriva la notifica di Metricool. Campo facoltativo "file".
+//  - "buongiorno" (dal 9/11/2026): «Il buongiorno di Serena» alle 6:30, in automatico. Frase calda al centro (titolo) e augurio sotto (testo).
 // Zona sicura di Instagram: niente testo nei primi 250 px e negli ultimi 260 px.
 const fs=require('fs'),path=require('path'),{chromium}=require('playwright-core');
 const ROOT=path.join(__dirname,'..','..'),FONTS=path.join(ROOT,'assets','fonts');
@@ -27,13 +28,15 @@ p{font:400 36px/1.4 'DM Sans';margin-top:26px;color:#5B4A4F}
 .card .t{font:400 46px/1.12 Fraunces;padding:12px 36px 34px}
 .f{display:flex;align-items:center;justify-content:space-between;font:500 30px 'DM Sans';color:#97606F}
 .f .g{background:#97606F;color:#fff;padding:16px 30px;border-radius:999px;font-size:28px}
-.adesivo h1{font-size:92px;margin-top:44px}.adesivo .f{justify-content:center}`;
+.adesivo h1{font-size:92px;margin-top:44px}.adesivo .f{justify-content:center}
+.buongiorno .bg{flex:1;display:flex;flex-direction:column;justify-content:center;gap:40px}.buongiorno h1{font-size:68px;line-height:1.2;margin:0}.buongiorno p{font:400 46px/1.3 Fraunces,serif;color:#97606F;margin:0}.buongiorno .f{justify-content:center}`;
 const piano=JSON.parse(fs.readFileSync(process.argv[2],'utf8'));
 const copertina=d=>['-1g.jpg','-1.jpg'].map(s=>`img/${d}${s}`).find(f=>fs.existsSync(path.join(ROOT,f)));
 const corpo=s=>{
   let mid='',pill='Link in bio';
   if(s.tipo==='post'){const c=copertina(s.data);if(!c)throw new Error('manca la copertina del post '+s.data);mid=`<img class="thumb" src="${img64(c)}">`;pill='Il post è sul profilo'}
   else if(s.tipo==='adesivo'){return `<span class="chip">${esc(s.chip)}</span><h1>${esc(s.titolo)}</h1><p>${esc(s.testo)}</p><div class="mid"></div><div class="f"><span>serenainmente</span></div>`}
+  else if(s.tipo==='buongiorno'){return `<span class="chip">${esc(s.chip||'Il buongiorno di Serena')}</span><div class="bg"><h1>${esc(s.titolo)}</h1><p>${esc(s.testo)}</p></div><div class="f"><span>serenainmente</span></div>`}
   else if(s.tipo==='guida'){mid=`<div class="card"><img src="${img64(s.immagine)}"><div class="k">Guida gratuita, con le fonti</div><div class="t">${esc(s.card)}</div></div>`}
   else{mid=`<img class="thumb" src="${img64(s.immagine)}">`}
   return `<span class="chip">${esc(s.chip)}</span><h1>${esc(s.titolo)}</h1><p>${esc(s.testo)}</p><div class="mid">${mid}</div><div class="f"><span>serenainmente.it</span><span class="g">${pill}</span></div>`;

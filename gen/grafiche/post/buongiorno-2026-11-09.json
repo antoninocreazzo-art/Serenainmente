@@ -1,0 +1,62 @@
+{
+ "nota": "Il buongiorno di Serena, storia automatica alle 6:30 dal 9/11/2026 (decisione di Antonino del 7/11: frasi calde e profonde che danno comprensione, augurano una buona giornata e danno forza).",
+ "reel": [],
+ "storie": [
+  {
+   "data": "2026-11-09",
+   "tipo": "buongiorno",
+   "sfondo": "#FBF6F4",
+   "titolo": "Buongiorno a chi stamattina riparte con la stanchezza di venerdì ancora addosso. Non serve avere tutto chiaro: basta il primo passo, poi il secondo.",
+   "testo": "Che sia una settimana gentile con te.",
+   "file": "2026-11-09-buongiorno.jpg"
+  },
+  {
+   "data": "2026-11-10",
+   "tipo": "buongiorno",
+   "sfondo": "#F4E9EC",
+   "titolo": "Buongiorno a chi stanotte si è alzata più di una volta. La forza di oggi non deve essere tanta: deve bastare fino a stasera. E basterà.",
+   "testo": "Buona giornata, piano piano.",
+   "file": "2026-11-10-buongiorno.jpg"
+  },
+  {
+   "data": "2026-11-11",
+   "tipo": "buongiorno",
+   "sfondo": "#F2EBE3",
+   "titolo": "Buongiorno. Se oggi qualcosa resterà indietro, non vuol dire che sei indietro tu. Vuol dire che hai scelto cosa contava di più.",
+   "testo": "Che la giornata ti restituisca un po' di quello che dai.",
+   "file": "2026-11-11-buongiorno.jpg"
+  },
+  {
+   "data": "2026-11-12",
+   "tipo": "buongiorno",
+   "sfondo": "#FBF6F4",
+   "titolo": "Buongiorno a chi pensa agli altri prima ancora del suo caffè. Quello che fai ogni mattina vale tantissimo, anche quando nessuno lo dice.",
+   "testo": "Oggi lo diciamo noi: grazie. Buona giornata.",
+   "file": "2026-11-12-buongiorno.jpg"
+  },
+  {
+   "data": "2026-11-13",
+   "tipo": "buongiorno",
+   "sfondo": "#F4E9EC",
+   "titolo": "Buongiorno. È venerdì, e la settimana pesa tutta su queste ultime ore. Ancora un po' di strada, e stasera potrai fermarti davvero.",
+   "testo": "Te lo sei guadagnato. Forza.",
+   "file": "2026-11-13-buongiorno.jpg"
+  },
+  {
+   "data": "2026-11-14",
+   "tipo": "buongiorno",
+   "sfondo": "#F2EBE3",
+   "titolo": "Buongiorno a chi oggi non ha la sveglia, ma alle sei era già in piedi lo stesso. Che sia una giornata lenta, con una colazione seduta.",
+   "testo": "E un abbraccio lungo, di quelli che ricaricano.",
+   "file": "2026-11-14-buongiorno.jpg"
+  },
+  {
+   "data": "2026-11-15",
+   "tipo": "buongiorno",
+   "sfondo": "#FBF6F4",
+   "titolo": "Buongiorno. Oggi non c'è niente da dimostrare a nessuno. Solo tempo da stare insieme, anche se la casa resta in disordine.",
+   "testo": "Buona domenica, che ti somigli.",
+   "file": "2026-11-15-buongiorno.jpg"
+  }
+ ]
+}
