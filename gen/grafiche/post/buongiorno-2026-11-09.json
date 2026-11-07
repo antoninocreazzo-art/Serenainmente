@@ -3,6 +3,14 @@
  "reel": [],
  "storie": [
   {
+   "data": "2026-11-08",
+   "tipo": "buongiorno",
+   "sfondo": "#F4E9EC",
+   "titolo": "Buongiorno. La settimana è passata, con tutto quello che ti ha chiesto. Oggi puoi rallentare senza sentirti in colpa.",
+   "testo": "Buona domenica, a te e a chi ami.",
+   "file": "2026-11-08-buongiorno.jpg"
+  },
+  {
    "data": "2026-11-09",
    "tipo": "buongiorno",
    "sfondo": "#FBF6F4",
