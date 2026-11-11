@@ -41,11 +41,12 @@
   {
    "data": "2026-11-12",
    "sfondo": "#F4E9EC",
-   "chip": "La risposta di ieri",
-   "titolo": "No: ne servono 10-13.",
-   "testo": "Per i bambini di 3-4 anni, sonnellini compresi, secondo l'OMS (2019). Sono intervalli larghi: ogni bambino ha i suoi tempi. La guida completa è qui sotto.",
+   "chip": "Questo o quello",
+   "titolo": "Giovedì sera: cena cucinata o «quello che c'è»?",
+   "testo": "A metà settimana vale tutto. Da voi come va?",
    "tipo": "adesivo",
-   "file": "2026-11-12-storia-v4.jpg"
+   "file": "2026-11-12-storia-v5.jpg",
+   "nota": "Sostituisce la risposta al quiz dell'11/11, non pubblicato: Antonino non vuole quiz («noi non dobbiamo interrogare nessuno», 11/11)."
   },
   {
    "data": "2026-11-13",
