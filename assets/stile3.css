@@ -7,8 +7,8 @@
 @font-face{font-family:Nunito;font-weight:400 800;font-display:swap;src:url(fonts/nunito-it.woff2) format("woff2")}
 
 :root{
-  --bg:#FBF6F4; --ink:#3A2C30; --muted:#67555A;
-  --marca:#97606F; --marca-t:#7F4E5C; --marca-tt:#6B3F4C; --su-marca:#fff;
+  --bg:#FBF6F4; --ink:#3A2C30; --muted:#5F4D52;
+  --marca:#97606F; --marca-t:#774757; --marca-tt:#6B3F4C; --su-marca:#fff;
   --fermo:rgba(255,255,255,.66); --vivo:rgba(251,246,244,.78); --alto:#FFFBF9; --bordo:rgba(255,255,255,.95);
   --linea:rgba(58,44,48,.12); --tinta:rgba(151,96,111,.10); --tinta2:rgba(151,96,111,.18);
   --ok:#3F5A3C; --ok-bg:rgba(98,112,92,.14);
@@ -23,8 +23,8 @@
 }
 :root[data-ora=mattino]{--luce1:#FFD6BD;--luce2:#F8CAD6}
 :root[data-ora=giorno]{--luce1:#F6C9D4;--luce2:#F4E3DA}
-:root[data-ora=sera]{--luce1:#DFC3DE;--luce2:#F3CDD8}
-:root[data-ora=notte]{--luce1:#D2CBF0;--luce2:#E2CFE6}
+:root[data-ora=sera]{--luce1:#E3CAE2;--luce2:#F3CDD8}
+:root[data-ora=notte]{--luce1:#D8D2F2;--luce2:#E2CFE6}
 :root[data-tema=scuro]{
   --bg:#1C1618; --ink:#F6ECEE; --muted:#CFBEC3;
   --marca:#C9909E; --marca-t:#EDC3CD; --marca-tt:#F6DCE2; --su-marca:#2B1C21;
