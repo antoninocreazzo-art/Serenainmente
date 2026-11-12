@@ -164,20 +164,24 @@ function msg(t){var e=document.createElement('div');e.className='toast';e.setAtt
    e il numero di versione (SEQUENCE) cresce: così il file nuovo aggiorna i promemoria di prima. Le ore tolte arrivano come «annullate». */
 $('[data-ics]').onclick=function(){var Cal=window.SerenaCal;if(!Cal)return;
  var per={};S.m.forEach(function(m){ORD.forEach(function(q){if(m.q&&m.q[q]){(per[m.q[q]]=per[m.q[q]]||[]).push(m)}})});var ore=Object.keys(per).sort();
- if(!ore.length&&!(S.exp||[]).length){msg('Serena prepara i promemoria appena una medicina ha un orario');return}
+ if(!ore.length&&!(S.exp||[]).length&&!(S.vecchi||[]).some(function(v){return (v.exp||[]).length})){msg('Serena prepara i promemoria appena una medicina ha un orario');return}
  S.seq=(S.seq||0)+1;var day=Cal.giorno(new Date()),st=Cal.ora(),righe=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//serenainmente.it//IT','METHOD:PUBLISH'];
  function uid(ora){return 'medicine-'+S.cod+'-'+ora.replace(':','')+'@serenainmente.it'}
  ore.forEach(function(ora){var L=per[ora],tit='Medicine'+(S.chi?' di '+S.chi:'')+': '+L.map(function(m){return m.nome}).join(', '),des=L.map(function(m){return m.nome+(m.quanto?' — '+m.quanto:'')+(m.note?' ('+m.note+')':'')}).join('\n')+'\nCome ha scritto il medico. Promemoria creato con serenainmente.it';
   righe.push('BEGIN:VEVENT','UID:'+uid(ora),'SEQUENCE:'+S.seq,'DTSTAMP:'+st,'DTSTART:'+day+'T'+ora.replace(':','')+'00','DURATION:PT10M','RRULE:FREQ=DAILY','SUMMARY:'+Cal.e(tit),'DESCRIPTION:'+Cal.e(des),'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+Cal.e(tit),'TRIGGER:PT0M','END:VALARM','END:VEVENT')});
- (S.exp||[]).filter(function(o){return ore.indexOf(o)<0}).forEach(function(ora){righe.push('BEGIN:VEVENT','UID:'+uid(ora),'SEQUENCE:'+S.seq,'DTSTAMP:'+st,'DTSTART:'+day+'T'+ora.replace(':','')+'00','DURATION:PT10M','STATUS:CANCELLED','SUMMARY:'+Cal.e('Medicine: promemoria tolto'),'END:VEVENT')});
+ function annulla(cod,ora,seq){righe.push('BEGIN:VEVENT','UID:medicine-'+cod+'-'+ora.replace(':','')+'@serenainmente.it','SEQUENCE:'+seq,'DTSTAMP:'+st,'DTSTART:'+day+'T'+ora.replace(':','')+'00','DURATION:PT10M','STATUS:CANCELLED','SUMMARY:'+Cal.e('Medicine: promemoria tolto'),'END:VEVENT')}
+ (S.exp||[]).filter(function(o){return ore.indexOf(o)<0}).forEach(function(ora){annulla(S.cod,ora,S.seq)});
+ var nvecchi=(S.vecchi||[]).length;(S.vecchi||[]).forEach(function(v){(v.exp||[]).forEach(function(ora){annulla(v.cod,ora,(v.seq||0)+1)})});S.vecchi=[];
  righe.push('END:VCALENDAR');var prima=S.seq>1;S.exp=ore;save();Cal.file(righe,'medicine-di-casa.ics');if(Cal.nota)Cal.nota('Orari delle medicine','/strumenti/medicine-di-casa/');
  /* niente avviso a comparsa sopra le istruzioni: le istruzioni stesse dicono cosa fare */
- var C=$('[data-come]');$('[data-come-t]').textContent=!ore.length?'Questo file annulla i promemoria di prima: aprilo e scegli Calendario':(prima?'Questo file aggiorna i promemoria di prima: aprilo e scegli Calendario':'Apri il file scaricato per metterli nel calendario');C.hidden=false;C.scrollIntoView({block:'center'})};
+ var C=$('[data-come]');$('[data-come-t]').textContent=!ore.length?'Questo file annulla i promemoria di prima: aprilo e scegli Calendario':(nvecchi?'Questo file mette i promemoria nuovi e annulla quelli della lista di prima: aprilo e scegli Calendario':prima?'Questo file aggiorna i promemoria di prima: aprilo e scegli Calendario':'Apri il file scaricato per metterli nel calendario');C.hidden=false;C.scrollIntoView({block:'center'})};
 /* una copia in un file: resta a chi usa, serve per cambiare telefono */
 $('[data-copia-salva]').onclick=function(){var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify({serena:'medicine-di-casa',versione:1,salvata:new Date().toISOString().slice(0,10),dati:S})],{type:'application/json'}));a.download='medicine-di-casa-copia.json';document.body.appendChild(a);a.click();a.remove();msg('Copia salvata: la trovi tra i file scaricati')};
-$('[data-copia-apri]').onchange=function(){var f=this.files[0],el=this;if(!f)return;var r=new FileReader();r.onload=function(){try{var o=JSON.parse(r.result);if(o.serena!=='medicine-di-casa'||!o.dati||!Array.isArray(o.dati.m))throw 0;S=Object.assign({m:[],seq:0,exp:[]},o.dati);if(!S.cod)S.cod=codice();save();campi();vuota();list();msg('Copia riaperta: '+S.m.length+(S.m.length===1?' medicina':' medicine'))}catch(x){msg('Questo file non è una copia di Medicine di casa')}el.value=''};r.readAsText(f)};
+$('[data-copia-apri]').onchange=function(){var f=this.files[0],el=this;if(!f)return;var r=new FileReader();r.onload=function(){try{var o=JSON.parse(r.result);if(o.serena!=='medicine-di-casa'||!o.dati||!Array.isArray(o.dati.m))throw 0;var v=(S.vecchi||[]).slice();if((S.exp||[]).length&&S.cod!==o.dati.cod)v.push({cod:S.cod,exp:S.exp,seq:S.seq||0}); /* la lista che c'era prima: i suoi promemoria si annullano al prossimo file */
+  S=Object.assign({m:[],seq:0,exp:[]},o.dati);if(!S.cod)S.cod=codice();S.vecchi=v.filter(function(x){return x.cod!==S.cod});save();campi();vuota();list();msg('Copia riaperta: '+S.m.length+(S.m.length===1?' medicina':' medicine'))}catch(x){msg('Questo file non è una copia di Medicine di casa')}el.value=''};r.readAsText(f)};
 var R=$('[data-reset]'),armed=false;R.onclick=function(){if(!armed){armed=true;R.textContent='Tocca di nuovo per cancellare tutto';setTimeout(function(){armed=false;R.textContent='Cancella tutto'},4000);return}
- var e=S.exp||[],q=S.seq||0,c=S.cod;S={m:[],seq:q,exp:e,cod:c};save();campi();vuota();list();armed=false;R.textContent='Cancella tutto';
+ /* lista nuova, codice nuovo: i promemoria della lista cancellata restano annullabili col loro codice */
+ var e=S.exp||[],v=(S.vecchi||[]).slice();if(e.length)v.push({cod:S.cod,exp:e,seq:S.seq||0});S={m:[],seq:0,exp:[],cod:codice(),vecchi:v};save();campi();vuota();list();armed=false;R.textContent='Cancella tutto';
  if(e.length){var C=$('[data-come]');$('[data-come-t]').textContent='Lista cancellata. I promemoria già nel calendario restano: tocca «Ricordami gli orari» per scaricare il file che li annulla';C.hidden=false;C.scrollIntoView({block:'center'})}else msg('Lista cancellata')};
 $$('[data-f]').forEach(function(el){el.addEventListener('input',stampa)});
 list();
@@ -205,6 +209,6 @@ list();
 <div class="fg-body"><div data-prima><h2>Per esempio</h2><ul class="esempi"><li><button type="button" data-q="non vuole dormire">non vuole dormire</button></li><li><button type="button" data-q="domani ho il pediatra">domani ho il pediatra</button></li><li><button type="button" data-q="spostare una visita">spostare una visita</button></li><li><button type="button" data-q="le medicine di mamma">le medicine di mamma</button></li><li><button type="button" data-q="iscrizione al nido">iscrizione al nido</button></li><li><button type="button" data-q="dove trovo un referto">dove trovo un referto</button></li></ul><p class="small" style="margin-top:14px">La ricerca guarda nelle guide e negli strumenti di Serena. Quello che scrivi resta su questo telefono o computer.</p></div>
 <div class="fg-esiti" data-esiti aria-live="polite"></div></div></div>
 </dialog>
-<script defer src="/assets/sito.js?v=a40e02d4"></script>
+<script defer src="/assets/sito.js?v=22c46463"></script>
 </body>
 </html>
