@@ -56,7 +56,7 @@ CHIAVI = {
  'risvegli-notturni': 'si sveglia risvegli notturni notte piange non dorme sonno svegliarsi dormire 18 mesi due anni',
  'certificato-sport-bambini': 'sport certificato medico sportivo non agonistico palestra piscina calcio nuoto danza ginnastica attività fisica movimento elettrocardiogramma',
  'quanto-dorme-un-bambino': 'quante ore dorme poco troppo sonnellino pisolino sveglia notte neonato',
- 'domande-per-il-pediatra': 'visita pediatra domande dottore bilancio di salute controllo domani appuntamento',
+ 'domande-per-il-pediatra': 'visita pediatra domande dottore bilancio di salute controllo domani appuntamento chiedo chiedere chiedergli',
  'visita-specialistica-come-funziona': 'specialista impegnativa ricetta cup prenotare lista d\'attesa',
  'spostare-disdire-pagare-visita': 'spostare disdire annullare rimandare cancellare visita cup ticket pagare',
  'documenti-sanitari-dove-trovarli': 'referto esami analisi fascicolo sanitario fse spid gruppo sanguigno',
@@ -627,7 +627,20 @@ pages.append(page('/privacy/', 'Privacy', 'Come serenainmente.it tratta i dati: 
 <p class="small">Ultimo aggiornamento: {data_it(AGG_PRIVACY)}.</p></section>'''))
 
 # ---------- strumenti interattivi ----------
-PV = open(os.path.join(ROOT, 'gen', 'preparo.html'), encoding='utf-8').read().replace('{lock}', ic('lock','ic-s')).replace('{arrow}', ic('arrow','ic-s')).replace('{back}', '←').replace('{salva}', salva('/strumenti/preparo-la-visita/', 'Preparo la visita'))
+# Domande pronte: una sola fonte, usata da «Preparo la visita» e dalla ricerca. Sono domande da fare al medico o cose da raccontare, mai risposte.
+TEMI = [('Sonno', ['Quante ore di sonno sono normali alla sua età?', 'Si sveglia spesso di notte: cosa possiamo provare?', 'C\'è qualcosa nel suo sonno che conviene controllare?']),
+        ('Mangiare', ['Mangia abbastanza per la sua età?', 'Come capisco se cresce bene con quello che mangia?', 'Ci sono cibi da aggiungere o da aspettare?']),
+        ('Crescita', ['Peso e altezza vanno bene per la sua età?', 'Cosa è normale che sappia fare, a questa età?', 'Quando è il prossimo controllo?']),
+        ('Febbre o malessere', ['Da raccontare: da quando è cominciato e come è cambiato', 'Da raccontare: come mangia, beve e dorme in questi giorni', 'Da raccontare: cosa abbiamo già fatto a casa', 'Quali segnali devo tenere d\'occhio, e quando richiamo?']),
+        ('Specialista', ['Servono altri esami? Dove si prenotano?', 'Chi mi comunica il risultato, e quando?', 'Cosa devo riferire al pediatra o al medico di famiglia?']),
+        ('Sport e scuola', ['Serve un certificato per lo sport che fa?', 'Ha già fatto un elettrocardiogramma?', 'C\'è qualcosa da sapere prima di cominciare?']),
+        ('Persona anziana', ['Le medicine che prende vanno ancora tutte bene?', 'C\'è qualcosa da controllare a casa?', 'Chi chiamo se ho un dubbio?'])]
+# quali argomenti vengono prima, per età (i numeri sono le posizioni in TEMI)
+TEMI_ETA = {'0-1': [2, 1, 0], '1-3': [0, 1, 2], '3-6': [2, 0, 1], '6-12': [5, 2, 0], '13-18': [5, 2], 'anziano': [6, 4], '': [2, 0, 1]}
+PRONTE = ('<details class="pv-pronte"><summary>Domande pronte</summary><p class="small" style="margin-top:10px">Scegli un argomento e tocca le domande che ti servono: finiscono nella tua lista.</p><div class="pv-temi" role="group" aria-label="Argomento delle domande">'
+          + ''.join(f'<button type="button" class="fchip" data-tema-q="{k}" aria-pressed="{"true" if k == 0 else "false"}">{e(t)}</button>' for k, (t, _) in enumerate(TEMI)) + '</div>'
+          + ''.join(f'<ul class="esempi" data-gruppo="{k}"{"" if k == 0 else " hidden"}>' + ''.join(f'<li><button type="button" data-pronta>{e(q)}</button></li>' for q in v) + '</ul>' for k, (t, v) in enumerate(TEMI)) + '</details>')
+PV = open(os.path.join(ROOT, 'gen', 'preparo.html'), encoding='utf-8').read().replace('{lock}', ic('lock','ic-s')).replace('{arrow}', ic('arrow','ic-s')).replace('{back}', '←').replace('{salva}', salva('/strumenti/preparo-la-visita/', 'Preparo la visita')).replace('{pronte}', PRONTE)
 pages.append(page('/strumenti/preparo-la-visita/', 'Preparo la visita', 'Strumento gratuito: scrivi cosa hai notato e le domande per il pediatra o il medico, e in ambulatorio le hai davanti. Resta solo sul tuo telefono.', PV, seo='Preparo la visita: le domande per il medico', cls='p-tool'))
 
 MD = open(os.path.join(ROOT, 'gen', 'medicine.html'), encoding='utf-8').read().replace('{lock}', ic('lock','ic-s')).replace('{check}', ic('check','ic-s')).replace('{salva}', salva('/strumenti/medicine-di-casa/', 'Medicine di casa'))
@@ -772,12 +785,13 @@ for g in GUIDE:
     if g['slug'] in DATI: v['g'] = 'dati'
     if mini(g['slug']): v['i'] = mini(g['slug'])
     if g['slug'] in PIU_CERCATE: v['top'] = 1
+    if g['slug'] == 'domande-per-il-pediatra': v['dq'] = 1
     t = g.get('tabella')
     if per_eta(t):
         v['eta'] = dict(c=t['colonne'], r=[list(eta_mesi(r[0])) + r for r in t['righe']])
     IDX.append(v)
 IDX.append(voce('/strumenti/preparo-la-visita/', 'Preparo la visita', 'Scrivi a casa cosa hai notato e le domande in ordine; in ambulatorio le hai davanti, con lo spazio per le risposte.', 'Strumento gratuito',
-                'preparo la visita domande pediatra medico dottore ambulatorio domani appuntamento', 'strumento telefono appuntare risposte specialista', az='Apri lo strumento', c='bambino anziano', fa=TUTTE_ETA))
+                'preparo la visita domande pediatra medico dottore ambulatorio domani appuntamento', 'strumento telefono appuntare risposte specialista chiedo chiedere', az='Apri lo strumento', c='bambino anziano', fa=TUTTE_ETA, dq=1))
 IDX.append(voce('/strumenti/medicine-di-casa/', 'Medicine di casa', 'La lista delle medicine di una persona: la stampi grande, la mandi a un familiare o al medico, e il telefono ti ricorda gli orari.', 'Strumento gratuito',
                 'medicine di casa lista medicine farmaci pastiglie pillole compresse terapia promemoria orari ricordare', 'anziano anziana nonna nonno mamma papà badante stampare grande', az='Apri lo strumento', c='anziano', fa=[]))
 IDX.append(voce('/gestionale/', 'Il gestionale di famiglia', 'Visite, scadenze e documenti in un file solo, gratuito.', 'File gratuito',
@@ -792,7 +806,7 @@ IDX.append(voce('/privacy/', 'Privacy', 'Niente cookie, niente profilazione: cos
 if FRASI_ON: IDX.append(voce('/frasi/', 'Le frasi di Serena', 'Parole brevi da mandare a chi ne ha bisogno oggi.', 'Pagina', 'frasi frase parole mandare vocabolario', ''))
 for p in D['post']:
     IDX.append(voce(f"/fonti/{p['slug']}/", p['titolo'], p['affermazioni'][0][:180], 'Le fonti di un post', p['titolo'] + ' post instagram', '', az='Apri le fonti'))
-idx_js = 'window.SERENA_INDICE=' + json.dumps(IDX, ensure_ascii=False, separators=(',', ':')) + ';'
+idx_js = 'window.SERENA_INDICE=' + json.dumps(IDX, ensure_ascii=False, separators=(',', ':')) + ';window.SERENA_DOMANDE=' + json.dumps({'t': TEMI, 'e': TEMI_ETA}, ensure_ascii=False, separators=(',', ':')) + ';'
 open(os.path.join(OUT, 'assets', 'cerca-dati.js'), 'w', encoding='utf-8').write(idx_js)
 idx_v = hashlib.md5(idx_js.encode('utf-8')).hexdigest()[:8]
 for f in SCRITTI:

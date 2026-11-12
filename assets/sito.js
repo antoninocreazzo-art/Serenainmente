@@ -142,9 +142,18 @@ var STOP=' il lo la i gli le un uno una di a da in con su per tra fra e ed o ma 
 function norm(x){return (x||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,' ').trim()}
 var SUF=['azione','azioni','izione','izioni','amento','amenti','mente','ando','endo','iamo','are','ere','ire','ato','ata','ati','ate','uto','uta','ito','ita','ano','ono','ale','ali'];
 function radice(w){if(w.length<=4)return w;for(var i=0;i<SUF.length;i++){var s=SUF[i];if(w.length-s.length>=4&&w.slice(-s.length)===s)return w.slice(0,-s.length)}var r=w.replace(/[aeiou]+$/,'');return r.length>=3?r:w}
-/* sintomi, medicine da dosare, cadute: Serena non risponde, indica a chi chiedere. Queste parole non danno punti */
-var SINT='febbr toss vomit diarre raffredd dolor mal male eruzion sfog respir convuls cadut cade casc dos dose dosi dosagg tachipirin antibiotic paracetamol ibuprofen gocc sciropp suppost ferit ustion sangue svenut sveniment otit bronch prurit influenz infezion allergi pancia gola orecch dentin testa botta trauma emergenz urgent pronto'.split(' ');
-function sintomo(r){return SINT.some(function(s){return s.length<5?r===s:r.indexOf(s)===0})}
+/* PRIMA LA SITUAZIONE, POI LE PAROLE.
+   1) urgenza: se la frase parla di un'urgenza o di un sintomo, Serena non risponde con una guida: indica a chi chiedere, con il 112 in vista.
+   Le liste si riducono alla radice come le parole di chi scrive, così il confronto è alla pari. Queste parole non danno punti. */
+var URG_FRASI=[/ non si sveglia /,/ non respira /,/ respira (male|a fatica|con fatica) /,/ fa(tica)? (fatica )?a respirare /,/ non riesce (a|ad|piu a|piu ad) (parlare|respirare|muovere|muoversi|alzarsi|svegliarsi|stare in piedi) /,/ (pres[oaie]|dat[oaie]|ingerit[oaie]) troppe? /,/ troppe (pastiglie|medicine|gocce|pillole|compresse) /,/ sbagliat\w* (le |la |il )?(pastigli\w*|medicin\w*|dose|dosi|farmac\w*) /,/ (dolore|male|peso|fitta) al petto /,/ pronto soccorso /,/ (battuto|sbattuto|picchiato|preso un colpo) (la |alla |in )?testa /,/ perde (molto )?sangue /,/ sangue (dal|dalla|dalle|nel|nelle|in) /,/ non risponde /,/ labbra (blu|viola) /,/ confus\w* (improvvis\w*|all improvviso) /,/ (improvvis\w*|all improvviso) confus\w* /,/ bocca storta /,/ (chiamo|chiamare) (il |l )?(112|118|ambulanza) /,/ 112 /,/ 118 /,/ ha (bevuto|mangiato) (la |il |un |una |del |della )?(candeggina|detersivo|medicin\w*|pastigli\w*|pillol\w*) /,/ non (mi )?riconosce /,/ parla (male|strano) /,/ si e (bruciat|ustionat|scottat)\w* /];
+var URG='svenuto svenuta svenimento svenire convulsioni soffoca soffocando ingoiato ingerito inghiottito avvelenamento veleno bruciato ustione scottato trauma botta emorragia incosciente ictus infarto paralisi annegato folgorato emergenza urgente urgenza caduta caduto cade cadere cadendo cascata cascato sbattuto ambulanza'.split(' ').map(radice);
+var SINT='febbre tosse vomito vomitato diarrea raffreddore dolore mal male eruzione sfogo respiro convulsione dose dosi dosaggio tachipirina antibiotico paracetamolo ibuprofene gocce sciroppo supposta ferita sangue otite bronchite prurito influenza infezione allergia allergica pancia gola orecchio dentini puntura morso lividi livido macchie bolle gonfio gonfia sanguina catarro muco stitico stitichezza disidratato pallido'.split(' ').map(radice);
+var NON_SINT=['allergolog','sanguign'];
+function tra(L,r){if(NON_SINT.some(function(n){return r.indexOf(n)===0}))return false;return L.some(function(s){return s.length<4||r.length<4?r===s:(r.indexOf(s)===0||(r.length>=5&&s.length-r.length<=2&&s.indexOf(r)===0))})}
+function sintomo(r){return tra(SINT,r)||tra(URG,r)}
+function situazione(t){var raw=' '+norm(t)+' ',T=norm(t).split(' ').filter(function(w){return w.length>1}).map(radice);
+ if(URG_FRASI.some(function(f){return f.test(raw)})||T.some(function(r){return tra(URG,r)}))return 2;
+ return T.some(function(r){return tra(SINT,r)})?1:0}
 function radici(t){return norm(t).split(' ').filter(function(w){return w.length>1&&STOP.indexOf(w)<0&&!/^\d+$/.test(w)}).map(radice)}
 function simile(a,b){if(a.length<4||b.length<4)return a===b;if((a==='medic'&&b.indexOf('medicin')===0)||(b==='medic'&&a.indexOf('medicin')===0))return false; /* medico non è medicina */return a.indexOf(b)===0||b.indexOf(a)===0}
 /* parole diverse, stessa cosa */
@@ -158,38 +167,45 @@ function fasciaDi(m){for(var k in FASCE)if(FASCE[k][0]<=m&&m<=FASCE[k][1])return
 function punti(x,r){var p=0;if(x.A.some(function(w){return simile(w,r)}))p=6;else if(x.B.some(function(w){return simile(w,r)}))p=2;else if(x.C.some(function(w){return simile(w,r)}))p=1;
  var g=gruppi(r);if(g.some(function(i){return x.GA.indexOf(i)>-1}))p=Math.max(p,4);else if(!p&&g.some(function(i){return x.GB.indexOf(i)>-1}))p=1;return p}
 /* cerca(t) → {sint, sicura, esiti:[{x,s}], R} */
-function cerca(t){var raw=' '+norm(t)+' ',T=radici(t),sint=T.some(sintomo),R=T.filter(function(r){return !sintomo(r)});
- if(sint)return {sint:true,sicura:false,esiti:[],R:R};
+function cerca(t){var raw=' '+norm(t)+' ',T=radici(t),sint=situazione(t),R=T.filter(function(r){return !sintomo(r)});
+ if(sint)return {sint:sint,sicura:false,esiti:[],R:R};
  if(!R.length)return {sint:false,sicura:false,esiti:[],R:R};
  var problema=/ (non|mai|sveglia|svegli\w*|piange|rifiuta|capricci|fatica|aiuto|cosa fare|come fare|come faccio|come si fa) /.test(raw),dato=/ (quant[oaie]|ore|quando|entro|scade|scadenza|vale|validita|dura|eta) /.test(raw);
  var m=mesi(t),fq=m===null?null:fasciaDi(m),out=[],df=R.map(function(){return 0});
+ var anz=/ (nonn[oaie]|anzian\w*|suocer[oa]|mia madre|mio padre|mamma anziana|papa anziano|badante) /.test(raw),bimbo=m!==null&&m<216||/ (figli[oae]?|bimb[oaie]|bambin[oaie]|neonat[oaie]|piccol[oa]) /.test(raw);
  IDX.forEach(function(x){var s=0,k=0,forti=0;R.forEach(function(r,i){var p=punti(x,r);if(p){k++;s+=p;df[i]++;if(p>=4)forti++}});
   if(!k)return;s+=k*3;R.forEach(function(r){if(x.T.some(function(w){return simile(w,r)}))s+=2});
   if(problema&&!dato)s+=x.g==='dati'?-5:(x.k==='Guida'?2:0);if(dato&&x.g==='dati')s+=4;
   if(fq&&x.fa&&x.fa.indexOf(fq)>-1&&x.fa.length<5)s+=3;
+  if(anz&&!bimbo)s+=x.c==='anziano'?3:(x.c==='bambino'?-4:0);if(bimbo&&!anz&&x.c==='anziano')s-=4;
   s+=adatto(x.c,x.fa)*1.5;if(x.k.indexOf('fonti')>-1)s-=3;else if(x.k!=='Pagina')s+=2;
   out.push({x:x,s:s,k:k,forti:forti})});
  out.sort(function(a,b){return b.s-a.s});
  var n=R.length,vuote=df.filter(function(v){return !v}).length,top=out[0],sicura=!!top&&top.forti>=1&&(n<=3?vuote===0:vuote<=1&&vuote<n/2)&&top.k>=Math.ceil(n*.6);
- var lim=top?top.s*.5:0;return {sint:false,sicura:sicura,esiti:out.filter(function(o){return o.s>=lim}).slice(0,sicura?4:3),R:R,dato:dato,problema:problema}}
+ var lim=top?top.s*.5:0;return {fq:fq,anz:anz,sint:0,sicura:sicura,esiti:out.filter(function(o){return o.s>=lim}).slice(0,sicura?4:3),R:R,dato:dato,problema:problema}}
 function etaRiga(x,t){if(!x.eta)return '';var m=mesi(t),rows;
  if(m!==null)rows=x.eta.r.filter(function(r){return r[0]<=m&&m<=r[1]});else if(CU.eta.length)rows=x.eta.r.filter(function(r){return CU.eta.some(function(k){var f=FASCE[k];return r[0]<=f[1]&&r[1]>=f[0]})});else return '';
  return rows.map(function(r){return '<p class="eta"><b>'+esc(r[2])+':</b> '+esc(r[3])+(r[4]?'. <span class="small">'+esc(x.eta.c[2])+': '+esc(r[4])+'</span>':'')+'</p>'}).join('')}
 function passo(x,R){if(!x.PS||!x.PS.length)return null;var best=0,bp=-1;x.PS.forEach(function(s,i){var p=0;R.forEach(function(r){if(s[0].some(function(w){return simile(w,r)}))p+=2;else if(s[1].some(function(w){return simile(w,r)}))p+=1});if(p>bp){bp=p;best=i}});return {i:best,s:x.ps[best],p:bp}}
+function domande(E){var Dm=window.SERENA_DOMANDE;if(!Dm)return '';var k=E.anz?'anziano':(E.fq||(CU.eta.length===1?CU.eta[0]:(CU.chi.length===1&&CU.chi[0]==='anziano'?'anziano':''))),ord=Dm.e[k]||Dm.e[''],qs=[];
+ ord.forEach(function(i){Dm.t[i][1].slice(0,2).forEach(function(q){if(qs.length<5)qs.push(q)})});
+ return '<div class="gesto dq"><span class="eyebrow">Domande pronte'+(k&&k!=='anziano'?' · '+({'0-1':'meno di 1 anno','1-3':'1-3 anni','3-6':'3-6 anni','6-12':'6-12 anni','13-18':'13-18 anni'})[k]:'')+'</span><ol>'+qs.map(function(q){return '<li>'+esc(q)+'</li>'}).join('')+'</ol><button class="btn" type="button" data-porta="'+esc(JSON.stringify(qs))+'" data-umami-event="cerca-domande-pronte">Portale in «Preparo la visita»</button></div>'}
 function riga(x){return '<li><a class="rowl" href="'+esc(href(x.u))+'">'+(x.i?'<img src="'+esc(href(x.i))+'" alt="" width="64" height="64" loading="lazy">':'')+'<span class="t"><b>'+esc(x.t)+'</b><small>'+esc(x.k)+(x.m?' · '+x.m+' min':'')+'</small></span></a></li>'}
 function mostra(){var t=Q.value.trim();if(!IDX){return}
  if(norm(t).length<2){OUT.innerHTML='';PRE.hidden=false;return}
  PRE.hidden=true;var E=cerca(t),h='';
- if(E.sint){
-  h='<div class="avviso sicuro"><p><b>Su sintomi, medicine e cadute Serena non dà indicazioni.</b></p><ul><li>Chiama il pediatra o il medico di famiglia.</li><li>Di notte e nei giorni festivi c\'è la guardia medica.</li><li>Se è urgente, chiama il 112.</li></ul><p>Intanto puoi scrivere cosa hai notato, per raccontarlo bene.</p><a class="btn" href="'+esc(href('/strumenti/preparo-la-visita/'))+'" data-umami-event="cerca-sintomi-preparo">Apri «Preparo la visita»</a></div>';
+ if(E.sint===2){
+  h='<div class="avviso sicuro urgente"><p class="u112"><b>Se è un\'urgenza, chiama subito il 112.</b></p><a class="btn" href="tel:112" data-umami-event="cerca-urgenza-112">Chiama il 112</a><ul><li>Se non è urgente, chiama il pediatra o il medico di famiglia.</li><li>Di notte e nei giorni festivi c\'è la guardia medica.</li></ul><p class="small">Su sintomi, medicine e cadute Serena non dà indicazioni: non ha una guida da proporti qui.</p></div>';
+ }else if(E.sint){
+  h='<div class="avviso sicuro"><p><b>Su sintomi e medicine Serena non dà indicazioni.</b></p><ul><li>Chiama il pediatra o il medico di famiglia.</li><li>Di notte e nei giorni festivi c\'è la guardia medica.</li><li><b>Se è urgente, chiama il 112.</b></li></ul><p>Intanto puoi scrivere cosa hai notato, per raccontarlo bene.</p><a class="btn" href="'+esc(href('/strumenti/preparo-la-visita/'))+'" data-umami-event="cerca-sintomi-preparo">Apri «Preparo la visita»</a></div>';
  }else if(E.sicura){var x=E.esiti[0].x,ps=passo(x,E.R),er=(E.dato||x.g==='dati')?etaRiga(x,t):'';if(ps&&er)ps=null;else if(ps&&ps.p<2)ps={i:0,s:x.ps[0],p:0};
   h='<article class="risp vetro"><span class="chip">'+esc(x.k)+(x.m?' · '+x.m+' min':'')+'</span><h3>'+esc(x.t)+'</h3>'+er+
    (er?'<p>'+esc(x.d)+'</p>':'')+(ps?'<div class="gesto"><span class="eyebrow">'+(ps.i===0?'Per cominciare':'Il punto che cerchi')+'</span><p><b>'+esc(ps.s[0])+'.</b> '+esc(ps.s[1])+'</p></div>':(er?'':'<p>'+esc(x.d)+'</p>'))+
    (x.ag?'<p class="small">Dalla guida di Serena · fonti controllate il '+esc(x.ag)+'</p>':'')+
-   '<a class="btn" href="'+esc(href(x.u)+(ps&&ps.i>0?'#passo-'+(ps.i+1):''))+'" data-umami-event="cerca-apri">'+esc(x.az||'Apri')+(x.m?' · '+x.m+' min':'')+'</a></article>';
+   (x.dq?domande(E):'')+'<a class="btn'+(x.dq?' btn-line':'')+'" href="'+esc(href(x.u)+(ps&&ps.i>0?'#passo-'+(ps.i+1):''))+'" data-umami-event="cerca-apri">'+esc(x.az||'Apri')+(x.m?' · '+x.m+' min':'')+'</a></article>';
   if(E.esiti.length>1)h+='<h2>Può servirti anche</h2><ul class="rows">'+E.esiti.slice(1).map(function(o){return riga(o.x)}).join('')+'</ul>';
  }else{
-  h='<p class="avviso">Serena non ha ancora una guida su questo. Se vuoi, scrivilo a privacy@serenainmente.it: le prossime guide nascono così.</p>';
+  h='<p class="avviso">Serena non ha ancora una guida su questo. Se vuoi, scrivilo a privacy@serenainmente.it: le prossime guide nascono così. <b>Se è urgente, chiama il 112.</b></p>';
   if(E.esiti.length)h+='<h2>Le più vicine</h2><ul class="rows">'+E.esiti.map(function(o){return riga(o.x)}).join('')+'</ul>';
   else h+='<h2>Le più cercate</h2><ul class="rows">'+IDX.filter(function(x){return x.top}).slice(0,4).map(riga).join('')+'</ul>';
   if(window.umami&&!F.dataset.vuota){F.dataset.vuota=1;try{umami.track('cerca-senza-esito')}catch(e){}}
@@ -198,12 +214,13 @@ function mostra(){var t=Q.value.trim();if(!IDX){return}
 function apri(q){if(!F.open)F.showModal();if(q!==undefined)Q.value=q;Q.focus();
  if(!IDX&&!carica){carica=true;var s=d.createElement('script');s.src=F.dataset.src;s.onload=function(){IDX=window.SERENA_INDICE||[];prepara();mostra()};d.head.appendChild(s)}else mostra()}
 Q.addEventListener('input',mostra);
-$('form',F).onsubmit=function(e){e.preventDefault();var a=$('.risp .btn',OUT);if(a)location.href=a.href};
+OUT.addEventListener('click',function(e){var b=e.target.closest('[data-porta]');if(!b)return;var S0=lsj('serena:preparo-visita',{q:[],c:{}});S0.q=S0.q||[];JSON.parse(b.dataset.porta).forEach(function(t){if(!S0.q.some(function(q){return q.t===t}))S0.q.push({t:t,ok:false,r:''})});ls('serena:preparo-visita',JSON.stringify(S0));location.href=href('/strumenti/preparo-la-visita/')});
+$('form',F).onsubmit=function(e){e.preventDefault();var a=$('.risp a.btn',OUT);if(a)location.href=a.href};
 $('[data-chiudi]',F).onclick=function(){F.close()};
 F.addEventListener('click',function(e){if(e.target===F)F.close()});
 $$('[data-cerca]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();apri(b.dataset.cerca||undefined)})});
 $$('[data-q]',F).forEach(function(b){b.onclick=function(){Q.value=b.dataset.q;mostra();Q.focus()}});
 d.addEventListener('keydown',function(e){if(e.key==='/'&&!/INPUT|TEXTAREA|SELECT/.test((d.activeElement||{}).tagName||'')&&!e.metaKey&&!e.ctrlKey){e.preventDefault();apri()}});
 var qp=new URLSearchParams(location.search).get('q');if(qp||location.hash==='#cerca')apri(qp||undefined);
-window.SerenaCerca={apri:apri,prova:function(t){var E=cerca(t);return {sint:E.sint,sicura:E.sicura,u:E.esiti.map(function(o){return o.x.u})}}};
+window.SerenaCerca={apri:apri,situazione:situazione,prova:function(t){var E=cerca(t);return {sint:E.sint,sicura:E.sicura,u:E.esiti.map(function(o){return o.x.u})}}};
 })();
