@@ -533,3 +533,6 @@ dialog.foglio::backdrop{background:rgba(30,20,24,.45)}
 .postl a>span:not(.date){color:var(--muted);font-size:1rem}
 label.btn{cursor:pointer}
 @media print{.passi summary::after{display:none}.passi details p{margin-left:0}}
+details.fatta{border-bottom:1px solid var(--linea)}
+details.fatta>ul{color:var(--muted)}
+.fatta-r a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}

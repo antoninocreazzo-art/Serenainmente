@@ -445,10 +445,11 @@ for g in GUIDE:
 {strumento_box(g.get('strumento')) if g.get('strumento') == 'gestionale' else ''}
 {foto(g['slug'], '', 'art-img', sizes='(min-width:760px) 700px, 100vw')}
 {f'<section id="fonti"><h2>Le fonti</h2><p class="small">Ogni dato di questa pagina viene da qui.</p><ul class="sources">{fonti}</ul></section>' if fonti else ''}
-<section class="box box-line fatta" id="come-e-fatta"><h2>Come è stata fatta questa guida</h2>
+<details class="piega fatta" id="come-e-fatta"><summary>Come è stata fatta questa guida</summary>
 <ul class="plain"><li>{f'{nf} {"fonte" if nf == 1 else "fonti"}, aperte e lette prima di scrivere' if nf else 'Consigli organizzativi: non cita dati sanitari'}.</li><li>Fonti controllate il {data_it(g['agg'])}. Prossimo controllo entro {prossimo}.</li><li>Scritta con il supporto dell'intelligenza artificiale; letta e approvata da una persona prima di uscire.</li></ul>
 <p class="small"><b>Cosa è cambiato.</b> {' '.join(f"{data_it(d)}: {e(t)}" for d, t in storia(g))}</p>
-<div class="row noprint"><a class="btn btn-line btn-sm" href="~/metodo/">Il metodo</a><a class="btn btn-line btn-sm" href="~/correzioni/">Tutte le correzioni</a><a class="btn btn-line btn-sm" href="{segnala}" data-umami-event="segnala-errore">Segnala un errore</a></div></section>
+<div class="row noprint"><a class="btn btn-line btn-sm" href="~/metodo/">Il metodo</a><a class="btn btn-line btn-sm" href="~/correzioni/">Tutte le correzioni</a></div></details>
+<p class="small fatta-r">Fonti controllate il {data_it(g['agg'])}; prossimo controllo entro {prossimo}. <a href="{segnala}" data-umami-event="segnala-errore">Segnala un errore</a></p>
 <aside class="box box-line"><b>Da sapere</b><p data-leggi>{e(g['avvertenza'])}</p></aside>
 {share(gp, g['titolo'])}
 </div>
@@ -630,7 +631,7 @@ pages.append(page('/correzioni/', 'Correzioni e aggiornamenti', 'Cosa è stato c
 <section class="ph-hd wrap-t"><h1>Correzioni e aggiornamenti</h1><p class="lead">Quando una guida cambia, lo scriviamo qui: cosa, quando e perché. Le guide nuove non compaiono: hanno la loro data.</p></section>
 <section class="wrap-t"><ul class="postl">{''.join(f'<li><a href="~/guide/{g["slug"]}/#come-e-fatta"><span class="date">{data_it(d)}</span><b>{e(g["titolo"])}</b><span>{e(t)}</span></a></li>' for d, t, g in corr)}</ul></section>
 <section class="wrap-t prose"><section class="box box-rosa"><h2>Hai trovato un errore?</h2><p>Scrivi a {MAIL}, anche solo due righe. Correggiamo e lo scriviamo in questa pagina.</p><a class="btn" href="{SEGNALA}" data-umami-event="segnala-errore">Segnala un errore</a></section>
-<p><a href="~/metodo/">Come nasce una guida</a></p></section>'''))
+<div class="row"><a class="btn btn-line" href="~/metodo/">Come nasce una guida</a></div></section>'''))
 
 # ---------- i tuoi salvati (tutto nel browser) ----------
 pages.append(page('/salvati/', 'I tuoi salvati', 'Le pagine salvate, i promemoria creati e le liste cominciate: restano su questo telefono o computer.', f'''
