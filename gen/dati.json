@@ -272,6 +272,38 @@
    "titolo": "Intesa del 18 marzo 2026 (Rep. atti n. 29/CSR): cronoprogramma della proroga di un anno del Piano nazionale della prevenzione vaccinale 2023-2025",
    "tipo": "Documento istituzionale",
    "url": "https://www.statoregioni.it/media/eqpdiws2/p-3-csr-atto-rep-n29-18marzo2026.pdf"
+  },
+  {
+   "id": "OR-29",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Indennità di accompagnamento agli invalidi civili (pagina aggiornata il 20 luglio 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit-di-accompagnamento-agli-invalidi-civili.html"
+  },
+  {
+   "id": "OR-30",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Domanda di invalidità civile e accertamento sanitario (pagina aggiornata il 5 giugno 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.domanda-invalidita-civile-e-accertamento-sanitario-50004.accertamento-sanitario.html"
+  },
+  {
+   "id": "OR-31",
+   "ente": "Regione Emilia-Romagna – Salute",
+   "anno": 2023,
+   "titolo": "Requisiti per l'esenzione dal ticket per reddito e come presentare l'autocertificazione",
+   "tipo": "Documento istituzionale",
+   "url": "https://salute.regione.emilia-romagna.it/notizie/regione/2023/marzo/allegato_requisiti_per_esenzione_ticket_come_presentare_autocertificazione.pdf"
+  },
+  {
+   "id": "OR-32",
+   "ente": "Regione Lombardia",
+   "anno": 2018,
+   "titolo": "Tabella aggiornata delle esenzioni per reddito (con i pareri del Ministero della Salute richiamati)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/TABELLA+AGGIORNATA+DELLE+ESENZIONI+PER+REDDI.pdf"
   }
  ],
  "post": [
@@ -422,7 +454,13 @@
    "domanda": "Dove tenere i documenti",
    "titolo_seo": "La cartellina di famiglia",
    "strumento": "gestionale",
-   "aggiornata": "2026-11-12"
+   "aggiornata": "2026-11-12",
+   "storia": [
+    [
+     "2026-11-12",
+     "aggiunta la fonte sulla proroga di un anno del Piano nazionale di prevenzione vaccinale 2023-2025."
+    ]
+   ]
   },
   {
    "slug": "routine-della-nanna",
@@ -585,7 +623,13 @@
    "domanda": "Dove trovare un referto",
    "titolo_seo": "Documenti sanitari di famiglia: dove trovarli",
    "strumento": "gestionale",
-   "aggiornata": "2026-11-12"
+   "aggiornata": "2026-11-12",
+   "storia": [
+    [
+     "2026-11-12",
+     "aggiunta la fonte sulla proroga di un anno del Piano nazionale di prevenzione vaccinale 2023-2025."
+    ]
+   ]
   },
   {
    "slug": "visita-specialistica-come-funziona",
@@ -1279,6 +1323,10 @@
      "Il certificato lo rilasciano il pediatra di libera scelta o il medico di medicina generale ai propri assistiti, oppure un medico specialista in medicina dello sport."
     ],
     [
+     "Chiedi quanto costa, quando prenoti",
+     "Il prezzo non è uguale dappertutto: cambia da medico a medico e da Regione a Regione. Per le attività organizzate dalla scuola, chiedi alla segreteria se è gratuito."
+    ],
+    [
      "Porta l'elettrocardiogramma, se l'ha già fatto",
      "Le linee guida chiedono un elettrocardiogramma a riposo, con il referto, fatto almeno una volta nella vita. Se non l'ha mai fatto, il medico ti dice come farlo."
     ],
@@ -1291,8 +1339,8 @@
      "Il certificato vale un anno dalla data di rilascio. Mettila in calendario un mese prima."
     ],
     [
-     "Se ha meno di 6 anni",
-     "Un decreto del 28 febbraio 2018 ha tolto l'obbligo del certificato per l'attività sportiva in età prescolare, da 0 a 6 anni, salvo i casi indicati dal pediatra."
+     "Se non ha ancora compiuto 6 anni",
+     "Un decreto del 28 febbraio 2018 ha tolto l'obbligo del certificato per l'attività sportiva in età prescolare, fino al compimento dei 6 anni, salvo i casi indicati dal pediatra. Una palestra o una piscina privata può comunque chiederlo: è una sua regola, non un obbligo di legge."
     ]
    ],
    "errori": [
@@ -1303,6 +1351,7 @@
    "checklist": [
     "Ho chiesto alla società quale certificato serve",
     "Ho prenotato la visita",
+    "Ho chiesto il costo",
     "Ho il referto dell'elettrocardiogramma, o so come farlo",
     "Ho consegnato il certificato",
     "Ho segnato la scadenza tra un anno"
@@ -1315,6 +1364,156 @@
    ],
    "avvertenza": "Informazioni generali sulle regole nazionali, aggiornate a novembre 2026. Costi e modalità cambiano tra medici e Regioni, e la società sportiva può chiedere altro. Per la salute di tuo figlio il riferimento resta il pediatra. Non sostituiscono il parere del pediatra o del medico.",
    "domanda": "Che certificato serve per lo sport"
+  },
+  {
+   "slug": "indennita-di-accompagnamento",
+   "categoria": "Organizzarsi",
+   "argomento": "documenti",
+   "data": "2026-11-12",
+   "titolo": "Invalidità civile e indennità di accompagnamento: come si chiede per un genitore anziano",
+   "titolo_seo": "Indennità di accompagnamento: requisiti e domanda",
+   "sommario": "Quando una persona non riesce più a camminare o a fare da sola le cose di ogni giorno, può avere diritto a un aiuto economico dell'INPS. Ecco i passi, in ordine.",
+   "tempo": "Qualche mese, dalla domanda al verbale",
+   "serve": "SPID o CIE della persona, oppure un patronato",
+   "strumento": "preparo",
+   "perche": [
+    "L'indennità di accompagnamento è un aiuto economico dell'INPS per chi è invalido totale e non può camminare senza un accompagnatore, o non riesce a compiere da solo gli atti quotidiani della vita. Non dipende dal reddito né dall'età.",
+    "Per il 2026 l'INPS indica 551,53 euro al mese, per 12 mensilità. La strada passa sempre da una visita medico-legale: conviene conoscerla prima di cominciare."
+   ],
+   "passi": [
+    [
+     "Parti dal medico: il certificato introduttivo",
+     "Il medico di famiglia, o un altro medico certificatore, compila online il certificato medico introduttivo e lo invia all'INPS. Ti consegna una ricevuta con un numero: tienila."
+    ],
+    [
+     "Fai la domanda entro 90 giorni",
+     "Il certificato vale 90 giorni per presentare la domanda. Si fa online sul sito INPS con SPID, CIE o CNS della persona, oppure tramite un patronato o un'associazione di categoria."
+    ],
+    [
+     "Prepara la visita",
+     "La visita la fa una Commissione medico-legale. Servono un documento di riconoscimento e la documentazione sanitaria. La persona può farsi assistere da un medico di fiducia."
+    ],
+    [
+     "Se non può muoversi da casa",
+     "Il medico certificatore può chiedere la visita a domicilio: la richiesta va inviata almeno cinque giorni prima della data già fissata."
+    ],
+    [
+     "Leggi il verbale",
+     "Arriva in due copie: una con tutti i dati sanitari, una con il solo giudizio finale. Se è prevista una revisione, il verbale ne indica la data."
+    ],
+    [
+     "Da quando si riceve",
+     "Di norma l'indennità parte dal primo giorno del mese successivo alla domanda. Viene sospesa se la persona è ricoverata a totale carico dello Stato per più di 29 giorni."
+    ],
+    [
+     "Dove vivi cambia la procedura",
+     "In alcune province è in corso una sperimentazione: lì la procedura parte dal medico, senza una domanda separata. Nel resto d'Italia la domanda resta obbligatoria fino al 31 dicembre 2026. Chiedi al medico o al patronato quale vale da te."
+    ]
+   ],
+   "errori": [
+    "Lasciar passare i 90 giorni del certificato.",
+    "Andare alla visita senza la documentazione sanitaria.",
+    "Saltare la convocazione: dopo la seconda, un'altra assenza vale come rinuncia."
+   ],
+   "checklist": [
+    "Ho il certificato medico introduttivo e la ricevuta",
+    "Ho presentato la domanda entro 90 giorni",
+    "Ho raccolto la documentazione sanitaria",
+    "So la data della visita",
+    "Ho letto il verbale e segnato l'eventuale revisione"
+   ],
+   "fonti": [
+    "OR-29",
+    "OR-30"
+   ],
+   "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS, aggiornate a novembre 2026. Importi e procedure cambiano: prima di muoverti controlla il sito INPS o chiedi a un patronato. Non è una valutazione del singolo caso. Non sostituiscono il parere del pediatra o del medico.",
+   "domanda": "Come si chiede l'accompagnamento"
+  },
+  {
+   "slug": "esenzione-ticket",
+   "categoria": "Organizzarsi",
+   "argomento": "documenti",
+   "data": "2026-11-12",
+   "titolo": "Esenzione dal ticket per età e reddito: chi non paga visite ed esami",
+   "titolo_seo": "Esenzione ticket per età e reddito (E01-E04)",
+   "sommario": "Sotto i 6 anni e sopra i 65, con un reddito familiare entro una soglia, visite ed esami specialistici non si pagano. Ecco i codici e come si controlla.",
+   "tempo": "Dieci minuti per controllare",
+   "serve": "Il reddito familiare dell'anno scorso; SPID o CIE",
+   "tabella": {
+    "titolo": "I quattro codici validi in tutta Italia",
+    "colonne": [
+     "Codice",
+     "Chi riguarda",
+     "Reddito familiare"
+    ],
+    "righe": [
+     [
+      "E01",
+      "Bambini con meno di 6 anni e persone con più di 65 anni",
+      "Non superiore a 36.151,98 euro"
+     ],
+     [
+      "E02",
+      "Disoccupati e familiari a carico",
+      "Inferiore a 8.263,31 euro; 11.362,05 con il coniuge, più 516,46 per ogni figlio a carico"
+     ],
+     [
+      "E03",
+      "Titolari di assegno sociale e familiari a carico",
+      "Vale il diritto all'assegno sociale"
+     ],
+     [
+      "E04",
+      "Titolari di pensione al minimo con più di 60 anni e familiari a carico",
+      "Inferiore a 8.263,31 euro; 11.362,05 con il coniuge, più 516,46 per ogni figlio a carico"
+     ]
+    ]
+   },
+   "perche": [
+    "Il ticket è la quota che si paga per visite ed esami specialistici. Chi rientra in uno di questi quattro codici non la paga. Per chi ha più di 65 anni l'esenzione è personale: non si estende ai familiari.",
+    "Le Regioni possono aggiungere altre esenzioni, e le regole sui farmaci cambiano da Regione a Regione. Qui trovi solo i codici validi in tutta Italia, come li riportano le Regioni Emilia-Romagna e Lombardia."
+   ],
+   "passi": [
+    [
+     "Guarda quale codice ti riguarda",
+     "Per un genitore con più di 65 anni di solito è l'E01: conta il reddito familiare complessivo dell'anno precedente."
+    ],
+    [
+     "Controlla se l'esenzione risulta già",
+     "In Emilia-Romagna, per esempio, si vede e si autocertifica dal Fascicolo sanitario elettronico, con i dati già compilati. Nella tua Regione chiedi all'ASL o al medico di famiglia, o guarda nel fascicolo."
+    ],
+    [
+     "Se non risulta, autocertifica",
+     "Si dichiara di avere i requisiti. È una dichiarazione sotto la propria responsabilità: va fatta solo se i numeri tornano."
+    ],
+    [
+     "Dillo al medico quando prescrive",
+     "Il diritto va verificato al momento della prescrizione: il codice deve comparire sulla ricetta."
+    ],
+    [
+     "Segna la scadenza",
+     "L'esenzione ha una scadenza e va rinnovata: annotala, e ricontrolla se il reddito cambia."
+    ]
+   ],
+   "errori": [
+    "Pensare che valga per tutta la famiglia: sopra i 65 anni è personale.",
+    "Dare per scontato che copra anche i farmaci: dipende dalla Regione.",
+    "Dimenticare la scadenza."
+   ],
+   "checklist": [
+    "So quale codice mi riguarda",
+    "Ho controllato il reddito familiare dell'anno scorso",
+    "Ho verificato se l'esenzione risulta già",
+    "Il codice è sulla ricetta",
+    "Ho segnato la scadenza"
+   ],
+   "fonti": [
+    "OR-31",
+    "OR-32",
+    "OR-05"
+   ],
+   "avvertenza": "Informazioni generali sui codici nazionali, tratte da documenti delle Regioni Emilia-Romagna e Lombardia e aggiornate a novembre 2026. Soglie e modalità possono cambiare, e ogni Regione ha regole proprie: prima di autocertificare chiedi all'ASL o al medico di famiglia. Non sostituiscono il parere del pediatra o del medico.",
+   "domanda": "Chi non paga il ticket"
   }
  ],
  "chi": {

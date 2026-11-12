@@ -82,7 +82,7 @@ function adatto(chi,eta){ /* 0 = non c'entra, 1 = per quella persona, 2 = propri
  if(!CU.chi.length)return 0;var v=0;chi=chi||'';eta=eta||[];
  if(CU.chi.indexOf('anziano')>-1&&chi.indexOf('anziano')>-1)v=chi==='anziano'?2:1;
  if(CU.chi.indexOf('bambino')>-1&&chi.indexOf('bambino')>-1){var e=CU.eta.filter(function(x){return eta.indexOf(x)>-1}).length;
-  if(!CU.eta.length)v=Math.max(v,1);else if(e)v=Math.max(v,eta.length<5?2:1)}
+  if(!CU.eta.length)v=Math.max(v,1);else if(e)v=Math.max(v,eta.length<=2?2:(eta.length<5?1.5:1))}
  return v}
 var PT=$('.per-te');
 if(PT){PT.hidden=false;var EB=$('[data-eta-box]',PT),DM=$('[data-dimentica]',PT),UL=$('[data-partenze]'),LI=$$('li',UL);
@@ -90,7 +90,7 @@ if(PT){PT.hidden=false;var EB=$('[data-eta-box]',PT),DM=$('[data-dimentica]',PT)
  function pt(){$$('[data-cura]',PT).forEach(function(b){b.setAttribute('aria-pressed',CU.chi.indexOf(b.dataset.cura)>-1)});
   $$('[data-eta]',PT).forEach(function(b){b.setAttribute('aria-pressed',CU.eta.indexOf(b.dataset.eta)>-1)});
   EB.hidden=CU.chi.indexOf('bambino')<0;DM.hidden=!CU.chi.length;
-  var ord=LI.map(function(li){return {li:li,v:CU.chi.length?adatto(li.dataset.tag,li.dataset.eta?li.dataset.eta.split(' '):[]):(li.dataset.base==='1'?1:0),i:+li.dataset.i}});
+  var ord=LI.map(function(li){return {li:li,v:CU.chi.length?adatto(li.dataset.tag,li.dataset.fasce?li.dataset.fasce.split(' '):[]):(li.dataset.base==='1'?1:0),i:+li.dataset.i}});
   ord.sort(function(a,b){return b.v-a.v||(CU.chi.length?(+(b.li.dataset.pri||0))-(+(a.li.dataset.pri||0)):0)||a.i-b.i});var n=0;
   ord.forEach(function(o){UL.appendChild(o.li);var ok=o.v>0&&n<(CU.chi.length?5:4);o.li.hidden=!ok;if(ok)n++});
   var T=$('[data-partenze-t]'),PV=$('[data-per-voi]'),CASA=$('[data-partenze-casa]');if(T)T.textContent=CU.chi.length?'Serena ha messo in cima queste':'Le ultime guide';

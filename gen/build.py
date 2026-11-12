@@ -35,7 +35,7 @@ ARG = [
     ('crescita', 'Bambini e crescita', 'Sonno, routine e piccoli passi', 'sprout'),
 ]
 ARGN = {a[0]: a for a in ARG}
-GUIDA_ARG = {'risvegli-notturni': 'crescita', 'certificato-sport-bambini': 'salute', 'domande-per-il-pediatra': 'salute', 'visita-specialistica-come-funziona': 'salute',
+GUIDA_ARG = {'indennita-di-accompagnamento': 'documenti', 'esenzione-ticket': 'documenti', 'risvegli-notturni': 'crescita', 'certificato-sport-bambini': 'salute', 'domande-per-il-pediatra': 'salute', 'visita-specialistica-come-funziona': 'salute',
              'spostare-disdire-pagare-visita': 'salute', 'documenti-sanitari-dove-trovarli': 'documenti',
              'pediatra-e-medico-di-base': 'documenti', 'cartellina-di-famiglia': 'organizzazione',
              'routine-della-nanna': 'crescita'}
@@ -45,7 +45,8 @@ PER = {'routine-della-nanna': ('bambino', ['0-1', '1-3', '3-6']), 'risvegli-nott
        'quanto-dorme-un-bambino': ('bambino', TUTTE_ETA), 'domande-per-il-pediatra': ('bambino', TUTTE_ETA),
        'iscrizioni-nido-e-scuola': ('bambino', ['0-1', '1-3', '3-6']), 'carta-identita-bambini': ('bambino', TUTTE_ETA),
        'certificato-vaccinale': ('bambino', ['0-1', '1-3', '3-6']), 'visita-specialistica-come-funziona': ('bambino', TUTTE_ETA),
-       'certificato-sport-bambini': ('bambino', ['6-12', '13-18']), 'lista-medicine-genitore-anziano': ('anziano', [])}
+       'certificato-sport-bambini': ('bambino', ['6-12', '13-18']), 'lista-medicine-genitore-anziano': ('anziano', []),
+       'indennita-di-accompagnamento': ('anziano', []), 'esenzione-ticket': ('bambino anziano', ['0-1', '1-3', '3-6'])}
 def per(slug): return PER.get(slug, ('bambino anziano', TUTTE_ETA))
 # guide che danno numeri e regole (le altre dicono cosa fare): la ricerca mette prima il «cosa fare» quando chi scrive ha un problema
 DATI = {'quanto-dorme-un-bambino'}
@@ -53,6 +54,8 @@ DATI = {'quanto-dorme-un-bambino'}
 # parole in più per la ricerca (come le dice chi cerca), non compaiono nella pagina
 CHIAVI = {
  'routine-della-nanna': 'non dorme non vuole dormire addormentare addormenta sera nanna sonno letto capricci',
+ 'indennita-di-accompagnamento': 'invalidità civile accompagnamento indennità inps assegno invalido non autosufficiente patronato verbale commissione 104 aiuto economico soldi',
+ 'esenzione-ticket': 'esenzione ticket esente non pagare reddito e01 e02 e03 e04 over 65 pensione minima disoccupato autocertificazione costo visite esami',
  'risvegli-notturni': 'si sveglia risvegli notturni notte piange non dorme sonno svegliarsi dormire 18 mesi due anni',
  'certificato-sport-bambini': 'sport certificato medico sportivo non agonistico palestra piscina calcio nuoto danza ginnastica attività fisica movimento elettrocardiogramma',
  'quanto-dorme-un-bambino': 'quante ore dorme poco troppo sonnellino pisolino sveglia notte neonato',
@@ -773,7 +776,7 @@ ORA = {'mattino': ('/strumenti/preparo-la-visita/', 'list', 'Una visita tra poch
        'notte': ('/guide/quanto-dorme-un-bambino/', 'moon', 'Quanto deve dormire, alla sua età?', 'Le ore età per età, con le fonti. Sono intervalli larghi.')}
 ora_cards = ''.join(f'<a class="ora-card vetro cede" data-per="{k}" href="~{h}" data-umami-event="home-ora" data-umami-event-ora="{k}"><span class="tic">{ic(i)}</span><span><b>{e(t)}</b><small>{e(s)}</small></span>{ic("arrow","ic-s")}</a>' for k, (h, i, t, s) in ORA.items())
 # «da dove partire»: tutte le guide e gli strumenti, il sito mostra i primi 4 adatti a chi legge
-def tag_li(chi, eta, base): return f' data-tag="{chi}" data-eta="{" ".join(eta)}" data-base="{base}"'
+def tag_li(chi, eta, base): return f' data-tag="{chi}" data-fasce="{" ".join(eta)}" data-base="{base}"'
 partenze = [riga_guida(g, li=tag_li(*per(g['slug']), 1 if i < 4 else 0) + (' data-pri="1"' if g['arg'] == 'crescita' or per(g['slug'])[0] == 'anziano' else '')) for i, g in enumerate(GUIDE)]
 partenze += [riga('~' + t[0], t[1], t[7] + ' · gratis', t[6], t[3], li=tag_li(t[5], [] if t[5] == 'anziano' else TUTTE_ETA, 0) + (' data-pri="1"' if t[5] == 'anziano' else '')) for t in TOOLS]
 ordine = partenze

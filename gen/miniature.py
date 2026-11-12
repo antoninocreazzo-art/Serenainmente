@@ -16,6 +16,11 @@ for f in glob.glob(os.path.join(ROOT, 'assets/foto/*.webp')):
     if not f.endswith('-sm.webp'): crop(f, os.path.join(ROOT, 'assets/mini', os.path.basename(f)), 160, 160)
 for f in glob.glob(os.path.join(ROOT, 'assets/stampabili/*.webp')):
     if not f.endswith('-sm.webp'): crop(f, os.path.join(ROOT, 'assets/mini', 'foglio-' + os.path.basename(f)), 160, 160, top=True)
+# guide senza una foto propria: una miniatura da un'altra foto, con un taglio diverso (finché non arriva la foto giusta)
+for nuovo, da in [('risvegli-notturni', 'quanto-dorme-un-bambino')]:
+    src = os.path.join(ROOT, 'assets/foto', da + '.webp'); dst = os.path.join(ROOT, 'assets/mini', nuovo + '.webp')
+    if os.path.exists(src) and not os.path.exists(dst):
+        im = Image.open(src).convert('RGB'); w, h = im.size; im.crop((w - h, 0, w, h)).resize((160, 160), Image.LANCZOS).save(dst, 'WEBP', quality=72, method=6); print(dst)
 crop(os.path.join(ROOT, 'assets/gestionale/inizia-telefono.webp'), os.path.join(ROOT, 'assets/mini/gestionale.webp'), 160, 160, top=True)
 # la foto del gestionale, più leggera per il telefono
 src = os.path.join(ROOT, 'assets/gestionale/inizia.webp'); dst = os.path.join(ROOT, 'assets/gestionale/inizia-sm.webp')
