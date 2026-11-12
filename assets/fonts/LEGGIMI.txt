@@ -3,10 +3,19 @@ Caratteri del sito, ospitati qui (nessuna richiesta a Google Fonts o ad altri).
   - fraunces-it-400.woff2: titoli, con le grazie.
   - fraunces-it-400-corsivo.woff2: il corsivo, solo per la parte colorata dei titoli («tenere a mente.», «oggi?»…).
     Fatto dal Fraunces Italic variabile (@fontsource-variable/fraunces 5.3.0, file fraunces-latin-standard-italic.woff2),
-    fermato a peso 400 e grandezza ottica 72 (più elegante nei titoli grandi), ridotto alle stesse lettere di fraunces-it-400.woff2:
-      python3 -c "from fontTools.ttLib import TTFont;from fontTools.varLib import instancer;from fontTools import subset
-U=sorted(TTFont('fraunces-it-400.woff2').getBestCmap());i=instancer.instantiateVariableFont(TTFont('fraunces-latin-standard-italic.woff2'),{'wght':400,'opsz':72})
-o=subset.Options();o.flavor='woff2';o.layout_features=['kern','liga','calt'];s=subset.Subsetter(o);s.populate(unicodes=U);s.subset(i);i.flavor='woff2';i.save('fraunces-it-400-corsivo.woff2')"
+    fermato a peso 400 e grandezza ottica 72 (più elegante nei titoli grandi). Per pesare poco (11 KB) contiene solo
+    lettere, lettere accentate e punteggiatura, senza cifre: se un titolo in corsivo ha un numero, quel segno esce col
+    carattere di sistema. Come rifarlo: salvare queste righe in un file .py e lanciarlo dalla cartella del pacchetto
+    (serve fontTools):
+      import string
+      from fontTools.ttLib import TTFont
+      from fontTools.varLib import instancer
+      from fontTools import subset
+      T = ' \u00a0!"\'(),-.:;?' + string.ascii_letters + 'ÀÈÉÌÒÙàèéìòù«»–—‘’“”…·'
+      i = instancer.instantiateVariableFont(TTFont('files/fraunces-latin-standard-italic.woff2'), {'wght': 400, 'opsz': 72})
+      o = subset.Options(); o.flavor = 'woff2'; o.layout_features = ['kern']; o.name_IDs = [0, 1, 2, 3, 4, 5, 6]
+      s = subset.Subsetter(o); s.populate(unicodes=[ord(c) for c in T]); s.subset(i)
+      i.flavor = 'woff2'; i.save('fraunces-it-400-corsivo.woff2')
     Licenza: la stessa del Fraunces (LICENZA-fraunces.txt, SIL OFL 1.1).
   - dm-sans-it-400.woff2, dm-sans-it-500.woff2, dm-sans-it-800.woff2: testi, pulsanti e menu.
   Sono versioni ridotte alle lettere dell'italiano. I tre DM Sans si fanno da dm-sans-latin-*-normal.woff2 con

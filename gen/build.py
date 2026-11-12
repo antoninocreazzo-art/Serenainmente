@@ -154,7 +154,7 @@ ESEMPI = ['non vuole dormire', 'domani ho il pediatra', 'spostare una visita', '
 # Lo stile sta dentro ogni pagina (10 KB compressi): la pagina compare senza aspettare un secondo file. La fonte resta assets/stile3.css.
 STILE = re.sub(r'\s*([{};,])\s*', r'\1', re.sub(r'/\*.*?\*/', '', open(os.path.join(ROOT, 'assets', 'stile3.css'), encoding='utf-8').read(), flags=re.S)).replace(';}', '}').strip()
 SCRITTI = []
-def page(path, title, desc, body, ld=None, cls='', seo=None, og=None):
+def page(path, title, desc, body, ld=None, cls='', seo=None, og=None, pre=''):
     canon = SITE + path
     t = 'serenainmente · Serena, parole e idee per chi si prende cura della famiglia' if path == '/' else f'{seo or title} · serenainmente'
     if path == '/' and not ld:
@@ -190,7 +190,7 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None):
 <link rel="apple-touch-icon" href="~/assets/brand/apple-touch-icon.png">
 <link rel="preload" href="{rel if REL else '/'}assets/fonts/fraunces-it-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{rel if REL else '/'}assets/fonts/dm-sans-it-400.woff2" as="font" type="font/woff2" crossorigin>{f'<link rel="preload" href="{rel if REL else "/"}assets/fonts/fraunces-it-400-corsivo.woff2" as="font" type="font/woff2" crossorigin>' if re.search(r'<h1[^>]*>(?:(?!</h1>).)*<em>', body, re.S) else ''}
-<style>{STILE.replace('url(fonts/', 'url(' + (rel if REL else '/') + 'assets/fonts/')}</style>
+{pre}<style>{STILE.replace('url(fonts/', 'url(' + (rel if REL else '/') + 'assets/fonts/')}</style>
 {PRIMA}
 {'' if PREVIEW else UMAMI}
 {ldj}
@@ -359,13 +359,14 @@ def anteprima(k):
     cb = '<i class="an-cb">' + ic('check', 'ic-s') + '</i>'
     if k == 'preparo':
         righe = (f'<span class="an-r an-fatta">{cb}<span>Febbre da ieri</span></span>'
-                 f'<span class="an-r an-nuova"><i class="an-cb"></i><span class="an-scrive">Quando torna al nido?</span></span>')
-        hd = 'Visita di giovedì'
+                 f'<span class="an-r"><i class="an-cb"></i><span>Mangia poco</span></span>'
+                 f'<span class="an-r an-nuova"><i class="an-cb"></i><span class="an-scrive">Torna al nido?</span></span>')
+        hd = 'Dal pediatra'
     elif k == 'medicine':
-        righe = ('<span class="an-r"><b>08:00</b><span>Medicina A</span></span>'
-                 '<span class="an-r"><b>13:00</b><span>Medicina B</span></span>'
-                 f'<span class="an-r an-entra"><b>20:00</b><span>Medicina A</span><i class="an-avviso">{ic("clock", "ic-s")}</i></span>')
-        hd = 'La lista di papà'
+        righe = ('<span class="an-r"><b>08:00</b><span>Farmaco A</span></span>'
+                 '<span class="an-r"><b>13:00</b><span>Farmaco B</span></span>'
+                 '<span class="an-r an-entra"><b>20:00</b><span>Farmaco A</span></span>')
+        hd = 'Per papà'
     else: return ''
     return f'<span class="ante an-{k}" data-ante aria-hidden="true"><span class="an-hd"><span>{hd}</span><em>esempio</em></span>{righe}</span>'
 def tools_fila():
@@ -819,6 +820,14 @@ def foto_hero():
         im = f'<picture><source media="(max-width:959px)" srcset="~/assets/foto/hero-telefono.webp 1080w" sizes="100vw">{im}</picture>'
     # la cornice morbida (al computer) e il bollino in corsivo; la foto si avvicina piano, una volta (stile3.css, «wow»)
     return f'<div class="cornice">{im}</div><span class="bollino" aria-hidden="true">una cosa<br>alla volta</span>'
+def hero_pre():
+    """la foto del primo schermo si chiede già dalla testata (prima dello stile): arriva prima, l'elemento principale compare prima"""
+    xs = '~/assets/foto/hero-xs.webp 480w, ' if esiste('assets', 'foto', 'hero-xs.webp') else ''
+    pc = f'imagesrcset="{xs}~/assets/foto/hero-sm.webp 768w, ~/assets/foto/hero.webp 1536w" imagesizes="(min-width:960px) 600px, 100vw"'
+    if esiste('assets', 'foto', 'hero-telefono.webp'):
+        return (f'<link rel="preload" as="image" media="(max-width:959px)" imagesrcset="~/assets/foto/hero-telefono.webp 1080w" imagesizes="100vw" fetchpriority="high">'
+                f'<link rel="preload" as="image" media="(min-width:960px)" {pc} fetchpriority="high">')
+    return f'<link rel="preload" as="image" {pc} fetchpriority="high">'
 def parole(t, da=0):
     """Il titolo compare parola per parola (solo CSS: senza script il testo c'è già, col movimento ridotto è fermo)"""
     return ' '.join(f'<span class="pa" style="--i:{da + i}">{e(w)}</span>' for i, w in enumerate(t.split()))
@@ -902,7 +911,7 @@ pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della fam
 {frase_home}
 <section class="wrap"><div class="chi-band"><div style="display:flex;flex-direction:column;gap:14px;align-items:flex-start"><h2>Chi è <em>Serena</em></h2><p>Serena è il nome di un progetto per chi si prende cura della famiglia. Lo cura una persona, con il supporto dell'intelligenza artificiale: ogni dato ha la sua fonte, ogni pagina è letta prima di uscire.</p><a class="btn btn-line" href="~/chi-e-serena/">Chi c'è dietro e come lavora {ic('arrow','ic-s')}</a></div>
 <div style="display:flex;flex-direction:column;gap:20px">{valori()}{IGCARD}</div></div></section>
-''', cls='p-home'))
+''', cls='p-home', pre=hero_pre()))
 
 # ---------- pagina non trovata ----------
 pages_404 = page('/404/', 'Questa pagina non c\'è', 'Pagina non trovata.', f'''

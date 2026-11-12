@@ -875,17 +875,17 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--corsivo);letter-
 }
 
 /* --- strumenti vivi: anteprima con dati di esempio --- */
-.ante{display:flex;flex-direction:column;gap:7px;padding:12px;margin-bottom:8px;border-radius:10px;background:var(--bg);border:1px solid var(--linea2);font:400 1rem/1.3 var(--testo);color:var(--ink);text-decoration:none}
+.ante{display:flex;flex-direction:column;gap:7px;padding:10px;margin-bottom:8px;border-radius:10px;background:var(--bg);border:1px solid var(--linea2);font:400 1rem/1.3 var(--testo);color:var(--ink);text-decoration:none}
 .an-hd{display:flex;align-items:baseline;justify-content:space-between;gap:10px;font:500 1rem/1.3 var(--titoli);color:var(--muted)}
 .an-hd em{font:italic 400 1rem/1 var(--parole);color:var(--marca-t)}
-.an-r{display:flex;align-items:center;gap:10px;min-height:36px;padding:4px 10px;border-radius:8px;background:var(--carta);white-space:nowrap;overflow:hidden}
+.an-r{display:flex;align-items:center;gap:8px;min-height:36px;padding:4px 8px;border-radius:8px;background:var(--carta);white-space:nowrap;overflow:hidden}
 .an-r>span{overflow:hidden;text-overflow:ellipsis;min-width:0}
 .an-cb{display:grid;place-items:center;width:22px;height:22px;flex:none;border-radius:7px;border:2px solid var(--ok);color:transparent}
 .an-cb .ic-s{width:14px;height:14px;stroke-width:2.6}
 .an-fatta .an-cb{background:var(--ok);color:var(--carta)}
 .an-fatta>span{text-decoration:line-through;text-decoration-color:var(--muted);color:var(--muted)}
 .an-medicine .an-r b{font:500 1rem var(--titoli);font-variant-numeric:tabular-nums;color:var(--marca-tt);background:var(--tinta);padding:2px 9px;border-radius:999px}
-.an-avviso{margin-left:auto;display:grid;place-items:center;color:var(--marca-t)}
+.an-entra b{transform-origin:center}
 .vivi{list-style:none;margin:0;padding:0;display:grid;gap:14px}
 @media(min-width:640px){.vivi{grid-template-columns:1fr 1fr;gap:20px}}
 .an-nota{margin-top:12px}
@@ -910,7 +910,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--corsivo);letter-
 @keyframes an-spunta{0%{background:transparent;color:transparent;transform:scale(.85)}60%{transform:scale(1.15)}100%{background:var(--ok);color:var(--carta);transform:none}}
 @keyframes an-barra{from{text-decoration-color:transparent;color:var(--ink)}to{text-decoration-color:var(--muted);color:var(--muted)}}
 @keyframes an-entra{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-@keyframes an-suona{0%,100%{transform:none}20%{transform:rotate(-14deg)}40%{transform:rotate(12deg)}60%{transform:rotate(-8deg)}80%{transform:rotate(5deg)}}
+@keyframes an-batte{0%,100%{transform:none}40%{transform:scale(1.14)}}
 @media(prefers-reduced-motion:no-preference){
  .hero-img{animation:avvicina 18s cubic-bezier(.3,.5,.3,1) both;transform-origin:55% 45%}
  .parole .pa{animation:parola .42s cubic-bezier(.2,.7,.2,1) calc(var(--i)*58ms) both}
@@ -926,7 +926,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--corsivo);letter-
  .gira .an-fatta .an-cb{animation:an-spunta .4s ease 2s both}
  .gira .an-fatta>span{animation:an-barra .35s ease 2.15s both}
  .gira .an-entra{animation:an-entra .55s cubic-bezier(.2,.7,.2,1) .5s both}
- .gira .an-avviso{animation:an-suona .7s ease 1.2s both}
+ .gira .an-entra b{animation:an-batte .6s ease 1.15s both}
  /* passaggio tra le pagine: il titolo della scheda «vola» fino al titolo della guida */
  .art-hd h1{view-transition-name:titolo}
  ::view-transition-group(titolo){animation-duration:.42s;animation-timing-function:cubic-bezier(.2,.7,.2,1)}
