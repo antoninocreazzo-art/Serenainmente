@@ -2,7 +2,7 @@
 // Uso: cd gen/grafiche && node stampabili.js   → scrive i PDF in ../../scarica/
 const fs = require('fs');
 const path = require('path');
-const { chromium } = require('playwright-core');
+let chromium; try { ({ chromium } = require('playwright-core')); } catch (e) { ({ chromium } = require('playwright')); }
 
 const ROOT = path.join(__dirname, '..', '..');
 const FONTS = path.join(ROOT, 'assets', 'fonts');
@@ -69,31 +69,42 @@ ${[1, 2, 3, 4, 5].map(n => `<div class="q"><b>${n}</b><div class="ln"></div></di
 <p class="note">Informazioni generali, non sostituiscono il parere del pediatra o del medico. La guida completa è su serenainmente.it/guide/domande-per-il-pediatra</p>
 ${foot('Se una parola non è chiara, chiedere di ripeterla è normale.')}</div>`;
 
-const medicine = `<div class="pg">
-${head('La lista delle medicine, scritta insieme', 'Da compilare con chi le prende, a quattro mani. Serve a ricordare, non a decidere: le scelte sulle terapie restano sue e del suo medico.')}
-<div class="fld"><div style="flex:1.4"><span class="lab">Nome</span><div class="ln"></div></div><div><span class="lab">Medico di famiglia</span><div class="ln"></div></div><div><span class="lab">Telefono del medico</span><div class="ln"></div></div></div>
-<div class="fld" style="margin-top:6px"><div><span class="lab">Allergie o medicine da evitare, se ce ne sono</span><div class="ln"></div></div><div><span class="lab">Farmacia di fiducia</span><div class="ln"></div></div></div>
+// Lista delle medicine: A4 verticale, caratteri grandi (12-14 pt), 12 righe. Due facciate: si stampa fronte e retro.
+const G = `<style>.big{font-size:13pt}.big .hd h1{font-size:24pt}.big .hd p{font-size:12pt;line-height:1.35}.big .lab{font-size:12pt;text-transform:none;letter-spacing:0;color:#3A2C30}
+.big .ln{height:28px}.big h2{font-size:16pt;margin:12px 0 6px}.big th{font-size:12pt;padding:8px}.big td{height:45px;font-size:12pt}
+.big .when{font-size:12pt;gap:10px;flex-wrap:wrap;color:#3A2C30}.big .when span:before{width:14px;height:14px;border-width:1.5px}
+.big .note{font-size:12pt}.big .ft{font-size:10pt}.big .fld{margin-top:10px}.pb{break-after:page}</style>`;
+const medicine = `${G}<div class="pg big pb">
+${head('La lista delle medicine', 'Da compilare insieme a chi le prende. Serve a ricordare, non a decidere: le scelte restano sue e del suo medico.')}
+<div class="fld"><div style="flex:1.3"><span class="lab">Nome</span><div class="ln"></div></div><div><span class="lab">Aggiornata il</span><div class="ln"></div></div></div>
+<div class="fld"><div><span class="lab">Medico di famiglia</span><div class="ln"></div></div><div><span class="lab">Telefono del medico</span><div class="ln"></div></div></div>
+<div class="fld"><div><span class="lab">Allergie o medicine da evitare</span><div class="ln"></div></div><div><span class="lab">Farmacia</span><div class="ln"></div></div></div>
 <h2>Le medicine di ogni giorno</h2>
-<table><thead><tr><th style="width:22%">Medicina</th><th style="width:17%">A cosa serve, in parole sue</th><th style="width:11%">Quanto</th><th style="width:28%">Quando</th><th style="width:10%">Fino a</th><th>Note</th></tr></thead><tbody>
-${Array.from({ length: 7 }, () => `<tr><td></td><td></td><td></td><td><div class="when"><span>mattina</span><span>pranzo</span><span>sera</span><span>notte</span></div></td><td></td><td></td></tr>`).join('')}
+<table><thead><tr><th style="width:32%">Medicina</th><th style="width:20%">Quanto, come ha scritto il medico</th><th>Quando</th></tr></thead><tbody>
+${Array.from({ length: 12 }, () => `<tr><td></td><td></td><td><div class="when"><span>mattina</span><span>pranzo</span><span>sera</span><span>notte</span></div></td></tr>`).join('')}
 </tbody></table>
+${foot('Pagina 1 di 2 · dietro: le medicine solo quando servono e le domande per il medico')}</div>
+<div class="pg big">
+${head('La lista delle medicine', 'Seconda pagina.')}
 <h2>Solo quando serve</h2>
-<table><tbody>${Array.from({ length: 2 }, () => '<tr><td style="width:22%"></td><td></td></tr>').join('')}</tbody></table>
-<div class="fld" style="margin-top:12px"><div class="box"><span class="lab">Domande da fare al medico alla prossima visita</span>${lines(2)}</div>
-<div class="box"><span class="lab">Aggiornata il</span><div class="ln"></div><span class="lab" style="display:block;margin-top:6px">Scritta insieme da</span><div class="ln"></div></div></div>
-<p class="note" style="margin-top:6px">Una copia in borsa o nel portafoglio, una sul frigo. Si porta a ogni visita e si aggiorna insieme quando il medico cambia qualcosa.</p>
+<table><thead><tr><th style="width:32%">Medicina</th><th>Quando si prende, come ha detto il medico</th></tr></thead><tbody>${Array.from({ length: 5 }, () => '<tr><td></td><td></td></tr>').join('')}</tbody></table>
+<h2>Fino a quando, e altre note</h2>${lines(5)}
+<h2>Domande da fare al medico alla prossima visita</h2>${lines(5)}
+<div class="fld" style="margin-top:18px"><div><span class="lab">Scritta insieme da</span><div class="ln"></div></div><div><span class="lab">Chi chiamare se c'è un dubbio</span><div class="ln"></div></div></div>
+<p class="note" style="margin-top:14px">Una copia in borsa o nel portafoglio, una sul frigo. Si porta a ogni visita e si aggiorna insieme quando il medico cambia qualcosa.</p>
 ${foot('Con chi ci ha insegnato tanto, si decide insieme.')}</div>`;
 
 const DOCS = [
   { file: 'settimana-sul-frigo.pdf', html: settimana, landscape: true },
   { file: 'domande-per-il-pediatra.pdf', html: pediatra },
-  { file: 'lista-delle-medicine.pdf', html: medicine, landscape: true },
+  { file: 'lista-delle-medicine.pdf', html: medicine },
 ];
 
 (async () => {
-  const b = await chromium.launch({ executablePath: EXE });
+  const b = await chromium.launch(fs.existsSync(EXE) ? { executablePath: EXE } : {});
   const p = await b.newPage();
   for (const d of DOCS) {
+    if (process.env.SOLO && d.file !== process.env.SOLO) continue; // SOLO=nome.pdf rifà un foglio soltanto
     await p.setContent(`<!doctype html><meta charset="utf-8"><style>${css} .pg{height:${d.landscape ? 186 : 273}mm}</style>${d.html}`);
     await p.evaluate(() => document.fonts.ready);
     const out = path.join(ROOT, 'scarica', d.file);

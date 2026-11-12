@@ -4,7 +4,9 @@ Sito di Serena: parole e idee per chi si prende cura della famiglia.
 
 - Contenuti e fonti: `gen/dati.json`
 - Generatore delle pagine: `python3 gen/build.py`
-- Stile: `assets/stile.css`
+- Stile: `assets/stile3.css` · Script: `assets/sito.js` · Indice della ricerca: `assets/cerca-dati.js` (lo scrive `build.py`)
+- Miniature per ricerca e pagina /ig: `python3 gen/miniature.py` (serve Pillow), quando arriva una foto o un post nuovo
+- Caratteri: `assets/fonts/LEGGIMI.txt`
 - Immagini dei post: `img/`
 
 Pubblicato con GitHub Pages su serenainmente.it.

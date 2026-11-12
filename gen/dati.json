@@ -22,7 +22,8 @@
    "anno": 2023,
    "titolo": "Piano nazionale di prevenzione vaccinale (PNPV) 2023-2025",
    "tipo": "Documento istituzionale",
-   "url": "https://www.epicentro.iss.it/vaccini/piano-nazionale-vaccini-2023-2025"
+   "url": "https://www.epicentro.iss.it/vaccini/piano-nazionale-vaccini-2023-2025",
+   "nota": "Il Piano 2023-2025 è stato prorogato di un anno, con un'intesa in Conferenza Stato-Regioni del 18 dicembre 2025. La fonte qui sotto è l'intesa del 18 marzo 2026, che richiama quella proroga."
   },
   {
    "id": "TI-01",
@@ -207,6 +208,118 @@
    "titolo": "Circolare del 26 maggio 2011: rilascio della carta d'identità ai minori",
    "tipo": "Documento istituzionale",
    "url": "https://dait.interno.gov.it/documenti/circ_015_servdemo_26-05-2011.pdf"
+  },
+  {
+   "id": "SB-08",
+   "ente": "American Academy of Pediatrics – HealthyChildren.org",
+   "anno": 2026,
+   "titolo": "Toddler Won't Go to Sleep? 7 Tips to Help End Bedtime Battles",
+   "tipo": "Raccomandazione",
+   "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/bedtime-trouble.aspx"
+  },
+  {
+   "id": "SB-09",
+   "ente": "American Academy of Pediatrics – HealthyChildren.org",
+   "anno": 2023,
+   "titolo": "Sleeping Like a Baby: Stories & Tips From the Front Lines",
+   "tipo": "Articolo divulgativo di una società scientifica",
+   "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/sleeping-like-a-baby-restless-nights-and-tips-from-the-front-lines.aspx"
+  },
+  {
+   "id": "SB-10",
+   "ente": "Regione Emilia-Romagna – Direzione generale Cura della persona, salute e welfare (SaPeRiDoc)",
+   "anno": 2025,
+   "titolo": "Il sonno. Messaggi chiave",
+   "tipo": "Documento istituzionale",
+   "url": "https://static-www.saperidoc.it/wp-content/uploads/2025/11/9_sonno.pdf"
+  },
+  {
+   "id": "SB-11",
+   "ente": "Organizzazione Mondiale della Sanità (OMS) – Ufficio regionale per l'Europa",
+   "anno": 2021,
+   "titolo": "Physical activity (scheda informativa)",
+   "tipo": "Linea guida",
+   "url": "https://www.who.int/europe/news-room/fact-sheets/item/physical-activity"
+  },
+  {
+   "id": "OR-25",
+   "ente": "Ministero della Salute",
+   "anno": 2013,
+   "titolo": "Decreto 24 aprile 2013: disciplina della certificazione dell'attività sportiva non agonistica e amatoriale (Gazzetta Ufficiale n. 169 del 20 luglio 2013)",
+   "tipo": "Norma",
+   "url": "https://regione.vda.it/allegato.aspx?pk=36551"
+  },
+  {
+   "id": "OR-26",
+   "ente": "Ministero della Salute",
+   "anno": 2014,
+   "titolo": "Decreto 8 agosto 2014: linee guida di indirizzo in materia di certificati medici per l'attività sportiva non agonistica",
+   "tipo": "Norma",
+   "url": "https://basilicata.coni.it/images/basilicata/DM_08Ago2014_certificazione.pdf"
+  },
+  {
+   "id": "OR-27",
+   "ente": "Federazione Medico Sportiva Italiana (FMSI)",
+   "anno": 2018,
+   "titolo": "Il punto sui certificati medico sportivi (riporta il decreto del Ministro della Salute del 28 febbraio 2018 sui bambini da 0 a 6 anni)",
+   "tipo": "Documento di una federazione medica",
+   "url": "https://www.fmsi.it/images/img/news/CERTIFICATI_MEDICO_SPORTIVI_15-03-2018.pdf"
+  },
+  {
+   "id": "OR-28",
+   "ente": "Conferenza Stato-Regioni",
+   "anno": 2026,
+   "titolo": "Intesa del 18 marzo 2026 (Rep. atti n. 29/CSR): cronoprogramma della proroga di un anno del Piano nazionale della prevenzione vaccinale 2023-2025",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.statoregioni.it/media/eqpdiws2/p-3-csr-atto-rep-n29-18marzo2026.pdf"
+  },
+  {
+   "id": "OR-29",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Indennità di accompagnamento agli invalidi civili (pagina aggiornata il 20 luglio 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit-di-accompagnamento-agli-invalidi-civili.html"
+  },
+  {
+   "id": "OR-30",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Domanda di invalidità civile e accertamento sanitario (pagina aggiornata il 5 giugno 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.domanda-invalidita-civile-e-accertamento-sanitario-50004.accertamento-sanitario.html"
+  },
+  {
+   "id": "OR-31",
+   "ente": "Regione Emilia-Romagna – Salute",
+   "anno": 2023,
+   "titolo": "Requisiti per l'esenzione dal ticket per reddito e come presentare l'autocertificazione",
+   "tipo": "Documento istituzionale",
+   "url": "https://salute.regione.emilia-romagna.it/notizie/regione/2023/marzo/allegato_requisiti_per_esenzione_ticket_come_presentare_autocertificazione.pdf"
+  },
+  {
+   "id": "OR-32",
+   "ente": "Regione Lombardia",
+   "anno": 2018,
+   "titolo": "Tabella aggiornata delle esenzioni per reddito (con i pareri del Ministero della Salute richiamati)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/TABELLA+AGGIORNATA+DELLE+ESENZIONI+PER+REDDI.pdf"
+  },
+  {
+   "id": "OR-33",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 1994,
+   "titolo": "Legge 23 dicembre 1994, n. 724, articolo 1, comma 3: sostituisce l'articolo 8, comma 16, della legge 24 dicembre 1993, n. 537 (chi è esente dal ticket per età e reddito)",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/eli/stato/LEGGE/1994/12/23/724/CONSOLIDATED"
+  },
+  {
+   "id": "OR-34",
+   "ente": "Ministero dell'economia e delle finanze, con il Ministero della salute",
+   "anno": 2009,
+   "titolo": "Decreto 11 dicembre 2009: verifica delle esenzioni per reddito tramite il Sistema tessera sanitaria (Gazzetta Ufficiale n. 302 del 30 dicembre 2009)",
+   "tipo": "Norma",
+   "url": "https://www.fnob.it/wp-content/uploads/2013/10/decreto11dicembre2009.pdf"
   }
  ],
  "post": [
@@ -350,12 +463,20 @@
     "Tutti in casa sanno dov'è"
    ],
    "fonti": [
-    "OR-02"
+    "OR-02",
+    "OR-28"
    ],
    "avvertenza": "Consigli organizzativi generali. Per vaccinazioni, terapie e documenti sanitari specifici il riferimento resta il pediatra, il medico o la ASL.",
    "domanda": "Dove tenere i documenti",
    "titolo_seo": "La cartellina di famiglia",
-   "strumento": "gestionale"
+   "strumento": "gestionale",
+   "aggiornata": "2026-11-12",
+   "storia": [
+    [
+     "2026-11-12",
+     "aggiunta la fonte sulla proroga di un anno del Piano nazionale di prevenzione vaccinale 2023-2025."
+    ]
+   ]
   },
   {
    "slug": "routine-della-nanna",
@@ -511,12 +632,20 @@
    ],
    "fonti": [
     "OR-05",
-    "OR-02"
+    "OR-02",
+    "OR-28"
    ],
-   "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Le modalità di attivazione cambiano da Regione a Regione: il riferimento è la tua ASL. Per la salute dei tuoi bambini il riferimento resta il pediatra.",
+   "avvertenza": "Informazioni organizzative generali, aggiornate a novembre 2026. Le modalità di attivazione cambiano da Regione a Regione: il riferimento è la tua ASL. Per la salute dei tuoi bambini il riferimento resta il pediatra.",
    "domanda": "Dove trovare un referto",
    "titolo_seo": "Documenti sanitari di famiglia: dove trovarli",
-   "strumento": "gestionale"
+   "strumento": "gestionale",
+   "aggiornata": "2026-11-12",
+   "storia": [
+    [
+     "2026-11-12",
+     "aggiunta la fonte sulla proroga di un anno del Piano nazionale di prevenzione vaccinale 2023-2025."
+    ]
+   ]
   },
   {
    "slug": "visita-specialistica-come-funziona",
@@ -964,7 +1093,7 @@
    "sommario": "Un foglio solo, scritto insieme, con le medicine di ogni giorno e quelle al bisogno. Serve a ricordare, non a decidere: a ogni visita, in pronto soccorso, a chi dà una mano.",
    "tempo": "30 minuti la prima volta, poi pochi minuti a ogni cambio",
    "serve": "Le confezioni delle medicine, le ultime ricette o lettere del medico, una penna",
-   "strumento": "stampabile:lista-delle-medicine",
+   "strumento": "medicine",
    "perche": [
     "Quando un medico deve decidere una cura nuova, in una visita, in un ricovero o in pronto soccorso, ha bisogno di sapere con precisione quali medicine si prendono già. Le indicazioni regionali consigliano di avere sempre con sé una lista ordinata e aggiornata, da mostrare quando serve: la può portare chi le prende o chi lo accompagna.",
     "Ricordarle tutte a memoria è difficile per chiunque, soprattutto in un momento di agitazione. Un foglio scritto con calma, a casa, toglie questo peso a tutti: a tuo padre o a tua madre, a te, a un fratello o a chi passa a dare una mano.",
@@ -1122,6 +1251,289 @@
    ],
    "avvertenza": "Informazioni generali aggiornate a novembre 2026, dal sito della Carta d'identità elettronica del Ministero dell'Interno. Prenotazione, orari e diritti di segreteria dipendono dal tuo Comune: controlla la pagina dell'anagrafe. Per i casi particolari (un genitore che non può dare l'assenso, minori residenti all'estero, dichiarazione di accompagnamento) chiedi al Comune o alla Questura.",
    "domanda": "Come si fa la carta d'identità a un bambino"
+  },
+  {
+   "slug": "risvegli-notturni",
+   "categoria": "Stare bene",
+   "argomento": "crescita",
+   "data": "2026-11-12",
+   "titolo": "Si sveglia di notte: cosa provare da stasera, da 1 a 3 anni",
+   "titolo_seo": "Risvegli notturni da 1 a 3 anni: cosa fare",
+   "sommario": "Nei primi anni i risvegli notturni vanno e vengono, e sono comuni. Poche cose semplici da provare, e quando parlarne con il pediatra.",
+   "tempo": "Qualche sera di fila",
+   "serve": "Pazienza, e un accordo tra chi lo mette a letto",
+   "strumento": "preparo",
+   "perche": [
+    "Secondo l'American Academy of Pediatrics i risvegli notturni vanno e vengono nei primi anni di vita, spesso senza una spiegazione. I messaggi sul sonno della Regione Emilia-Romagna li descrivono come fisiologici nel bambino piccolo: molte volte indicano bisogno di contatto e di vicinanza.",
+    "Sapere che è comune non toglie la stanchezza, ma toglie un peso: non stai sbagliando qualcosa. Quello che aiuta è fare le stesse cose ogni sera e ogni notte, con calma."
+   ],
+   "passi": [
+    [
+     "Stasera: stessa ora, stessi gesti calmi",
+     "L'American Academy of Pediatrics consiglia la stessa ora ogni sera e una routine tranquilla prima di dormire: un bagno, una storia, musica bassa. Niente giochi movimentati subito prima."
+    ],
+    [
+     "Prima di spegnere la luce, i suoi bisogni",
+     "Acqua, una lucina, la porta un po' aperta: pensaci prima, così non diventano un modo per rimandare il sonno."
+    ],
+    [
+     "Un oggetto che consola",
+     "A questa età va bene dormire con un orsetto, una copertina o un gioco preferito. Controlla che non abbia bottoni, nastri o parti che si staccano."
+    ],
+    [
+     "Di notte: luci basse, poche parole",
+     "Se si sveglia, aspetta un momento: a volte si riaddormenta. Se continua a piangere, tieni le luci basse, controlla che stia bene e rassicuralo con una carezza."
+    ],
+    [
+     "Quanto restare vicino, decidetelo insieme",
+     "Le fonti non dicono tutte la stessa cosa. L'American Academy of Pediatrics invita a lasciargli il tempo di riaddormentarsi da solo. La Regione Emilia-Romagna ricorda che vicinanza e contatto sono associati a meno pianto, e che lasciarlo piangere per tempi sempre più lunghi non è sostenuto da studi. Scegliete una strada e tenetela, tutti e due."
+    ],
+    [
+     "Se dura o ti preoccupa, parlane con il pediatra",
+     "Può dirti se è una fase della crescita o se conviene guardare meglio. Porta due o tre notti scritte: a che ora, quanto dura, cosa lo calma."
+    ]
+   ],
+   "errori": [
+    "Cambiare risposta ogni notte.",
+    "Pensare che sia colpa tua.",
+    "Rispondere con rabbia: la stanchezza è vera, ma una risposta brusca a volte peggiora le cose."
+   ],
+   "checklist": [
+    "Stessa ora e stessi gesti, stasera",
+    "Acqua e lucina prima di spegnere",
+    "Il suo oggetto che consola è nel letto",
+    "Abbiamo deciso insieme come rispondere di notte",
+    "Ho scritto due o tre notti per il pediatra"
+   ],
+   "fonti": [
+    "SB-08",
+    "SB-09",
+    "SB-10",
+    "OR-04"
+   ],
+   "avvertenza": "Informazioni generali, non valutazioni sul singolo bambino. Le fonti non sono tutte d'accordo su come rispondere ai risvegli: per i dubbi sul sonno di tuo figlio il riferimento è il pediatra. Non sostituiscono il parere del pediatra o del medico.",
+   "domanda": "Si sveglia di notte"
+  },
+  {
+   "slug": "certificato-sport-bambini",
+   "categoria": "Organizzarsi",
+   "argomento": "salute",
+   "data": "2026-11-12",
+   "titolo": "Sport dai 6 ai 12 anni: il certificato medico non agonistico e quanto movimento serve",
+   "titolo_seo": "Certificato medico sportivo non agonistico per bambini",
+   "sommario": "Per palestra, piscina o calcetto la società chiede un certificato. Chi lo fa, quanto dura e cosa portare alla visita.",
+   "tempo": "Una visita, una volta l'anno",
+   "serve": "Il referto dell'elettrocardiogramma, se l'ha già fatto",
+   "strumento": "gestionale",
+   "perche": [
+    "Il certificato per l'attività sportiva non agonistica è regolato da due decreti del Ministero della Salute, del 24 aprile 2013 e dell'8 agosto 2014. Riguarda chi fa sport con società affiliate al CONI o con enti di promozione sportiva senza essere atleta agonista, e alcune attività sportive organizzate dalla scuola.",
+    "Quanto movimento serve? L'Organizzazione Mondiale della Sanità raccomanda a bambini e ragazzi da 5 a 17 anni in media almeno 60 minuti al giorno di attività da moderata a intensa, e almeno tre giorni a settimana attività che rinforzano muscoli e ossa."
+   ],
+   "passi": [
+    [
+     "Chiedi alla società quale certificato serve",
+     "Agonistico o non agonistico: sono due percorsi diversi. Questa guida riguarda il non agonistico."
+    ],
+    [
+     "Prenota dal pediatra o dal medico di famiglia",
+     "Il certificato lo rilasciano il pediatra di libera scelta o il medico di medicina generale ai propri assistiti, oppure un medico specialista in medicina dello sport."
+    ],
+    [
+     "Chiedi quanto costa, quando prenoti",
+     "Il prezzo non è uguale dappertutto: cambia da medico a medico e da Regione a Regione. Per le attività organizzate dalla scuola, chiedi alla segreteria se è gratuito."
+    ],
+    [
+     "Porta l'elettrocardiogramma, se l'ha già fatto",
+     "Le linee guida chiedono un elettrocardiogramma a riposo, con il referto, fatto almeno una volta nella vita. Se non l'ha mai fatto, il medico ti dice come farlo."
+    ],
+    [
+     "La visita",
+     "Il medico raccoglie la storia di salute, visita il bambino e misura la pressione. Se serve, può chiedere altri accertamenti."
+    ],
+    [
+     "Segna la scadenza",
+     "Il certificato vale un anno dalla data di rilascio. Mettila in calendario un mese prima."
+    ],
+    [
+     "Se non ha ancora compiuto 6 anni",
+     "Un decreto del 28 febbraio 2018 ha tolto l'obbligo del certificato per l'attività sportiva in età prescolare, fino al compimento dei 6 anni, salvo i casi indicati dal pediatra. Una palestra o una piscina privata può comunque chiederlo: è una sua regola, non un obbligo di legge."
+    ]
+   ],
+   "errori": [
+    "Aspettare l'ultima settimana prima dell'iscrizione.",
+    "Perdere il referto dell'elettrocardiogramma: tienilo con i documenti.",
+    "Confondere il certificato non agonistico con quello agonistico."
+   ],
+   "checklist": [
+    "Ho chiesto alla società quale certificato serve",
+    "Ho prenotato la visita",
+    "Ho chiesto il costo",
+    "Ho il referto dell'elettrocardiogramma, o so come farlo",
+    "Ho consegnato il certificato",
+    "Ho segnato la scadenza tra un anno"
+   ],
+   "fonti": [
+    "OR-25",
+    "OR-26",
+    "OR-27",
+    "SB-11"
+   ],
+   "avvertenza": "Informazioni generali sulle regole nazionali, aggiornate a novembre 2026. Costi e modalità cambiano tra medici e Regioni, e la società sportiva può chiedere altro. Per la salute di tuo figlio il riferimento resta il pediatra. Non sostituiscono il parere del pediatra o del medico.",
+   "domanda": "Che certificato serve per lo sport"
+  },
+  {
+   "slug": "indennita-di-accompagnamento",
+   "categoria": "Organizzarsi",
+   "argomento": "documenti",
+   "data": "2026-11-12",
+   "titolo": "Invalidità civile e indennità di accompagnamento: come si chiede per un genitore anziano",
+   "titolo_seo": "Indennità di accompagnamento: requisiti e domanda",
+   "sommario": "Quando una persona non riesce più a camminare o a fare da sola le cose di ogni giorno, può avere diritto a un aiuto economico dell'INPS. Ecco i passi, in ordine.",
+   "tempo": "Qualche mese, dalla domanda al verbale",
+   "serve": "SPID o CIE della persona, oppure un patronato",
+   "strumento": "preparo",
+   "perche": [
+    "L'indennità di accompagnamento è un aiuto economico dell'INPS per chi è invalido totale e non può camminare senza un accompagnatore, o non riesce a compiere da solo gli atti quotidiani della vita. Non dipende dal reddito né dall'età.",
+    "Per il 2026 l'INPS indica 551,53 euro al mese, per 12 mensilità. La strada passa sempre da una visita medico-legale: conviene conoscerla prima di cominciare."
+   ],
+   "passi": [
+    [
+     "Parti dal medico: il certificato introduttivo",
+     "Il medico di famiglia, o un altro medico certificatore, compila online il certificato medico introduttivo e lo invia all'INPS. Ti consegna una ricevuta con un numero: tienila."
+    ],
+    [
+     "Fai la domanda entro 90 giorni",
+     "Il certificato vale 90 giorni per presentare la domanda. Si fa online sul sito INPS con SPID, CIE o CNS della persona, oppure tramite un patronato o un'associazione di categoria."
+    ],
+    [
+     "Prepara la visita",
+     "La visita la fa una Commissione medico-legale. Servono un documento di riconoscimento e la documentazione sanitaria. La persona può farsi assistere da un medico di fiducia."
+    ],
+    [
+     "Se non può muoversi da casa",
+     "Il medico certificatore può chiedere la visita a domicilio: la richiesta va inviata almeno cinque giorni prima della data già fissata."
+    ],
+    [
+     "Leggi il verbale",
+     "Arriva in due copie: una con tutti i dati sanitari, una con il solo giudizio finale. Se è prevista una revisione, il verbale ne indica la data."
+    ],
+    [
+     "Da quando si riceve",
+     "Di norma l'indennità parte dal primo giorno del mese successivo alla domanda. Viene sospesa se la persona è ricoverata a totale carico dello Stato per più di 29 giorni."
+    ],
+    [
+     "Dove vivi cambia la procedura",
+     "In alcune province è in corso una sperimentazione: lì la procedura parte dal medico, senza una domanda separata. Nel resto d'Italia la domanda resta obbligatoria fino al 31 dicembre 2026. Chiedi al medico o al patronato quale vale da te."
+    ]
+   ],
+   "errori": [
+    "Lasciar passare i 90 giorni del certificato.",
+    "Andare alla visita senza la documentazione sanitaria.",
+    "Saltare la convocazione: dopo la seconda, un'altra assenza vale come rinuncia."
+   ],
+   "checklist": [
+    "Ho il certificato medico introduttivo e la ricevuta",
+    "Ho presentato la domanda entro 90 giorni",
+    "Ho raccolto la documentazione sanitaria",
+    "So la data della visita",
+    "Ho letto il verbale e segnato l'eventuale revisione"
+   ],
+   "fonti": [
+    "OR-29",
+    "OR-30"
+   ],
+   "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS, aggiornate a novembre 2026. Importi e procedure cambiano: prima di muoverti controlla il sito INPS o chiedi a un patronato. Non è una valutazione del singolo caso. Non sostituiscono il parere del pediatra o del medico.",
+   "domanda": "Come si chiede l'accompagnamento",
+   "ricontrolla": "2027-01"
+  },
+  {
+   "slug": "esenzione-ticket",
+   "categoria": "Organizzarsi",
+   "argomento": "documenti",
+   "data": "2026-11-12",
+   "titolo": "Esenzione dal ticket per età e reddito: chi non paga visite ed esami",
+   "titolo_seo": "Esenzione ticket per età e reddito (E01-E04)",
+   "sommario": "Sotto i 6 anni e sopra i 65, con un reddito familiare entro una soglia, visite ed esami specialistici non si pagano. Ecco i codici e come si controlla.",
+   "tempo": "Dieci minuti per controllare",
+   "serve": "Il reddito familiare dell'anno scorso; SPID o CIE",
+   "tabella": {
+    "titolo": "I quattro codici validi in tutta Italia",
+    "colonne": [
+     "Codice",
+     "Chi riguarda",
+     "Reddito familiare"
+    ],
+    "righe": [
+     [
+      "E01",
+      "Bambini con meno di 6 anni e persone con più di 65 anni",
+      "Non superiore a 36.151,98 euro"
+     ],
+     [
+      "E02",
+      "Disoccupati che hanno perso un lavoro dipendente, e familiari a carico",
+      "Inferiore a 8.263,31 euro; 11.362,05 con il coniuge, più 516,46 per ogni figlio a carico"
+     ],
+     [
+      "E03",
+      "Titolari di assegno sociale e familiari a carico",
+      "Nessuna soglia di reddito nella legge"
+     ],
+     [
+      "E04",
+      "Titolari di pensione al minimo con più di 60 anni e familiari a carico",
+      "Inferiore a 8.263,31 euro; 11.362,05 con il coniuge, più 516,46 per ogni figlio a carico"
+     ]
+    ]
+   },
+   "perche": [
+    "Il ticket è la quota che si paga per visite ed esami specialistici. Chi rientra in uno di questi quattro codici non la paga. Per chi ha più di 65 anni l'esenzione è personale: non si estende ai familiari.",
+    "Le regole vengono da una legge nazionale (la n. 537 del 1993, come modificata nel 1994) e da un decreto del 2009 che affida il controllo al Sistema tessera sanitaria. Le Regioni possono aggiungere altre esenzioni, e le regole sui farmaci cambiano da Regione a Regione."
+   ],
+   "passi": [
+    [
+     "Guarda quale codice ti riguarda",
+     "Per un genitore con più di 65 anni di solito è l'E01: conta il reddito familiare complessivo dell'anno precedente."
+    ],
+    [
+     "Controlla se l'esenzione risulta già",
+     "Il Sistema tessera sanitaria incrocia i redditi e assegna il codice: medico e ASL lo vedono. In Emilia-Romagna, per esempio, si controlla anche dal Fascicolo sanitario elettronico. Nella tua Regione chiedi all'ASL o al medico di famiglia."
+    ],
+    [
+     "Se non risulta, autocertifica all'ASL",
+     "Si chiede all'ASL un certificato provvisorio, dichiarando reddito e nucleo familiare. Vale per l'anno solare in corso. È una dichiarazione sotto la propria responsabilità, e l'ASL la controlla: va fatta solo se i numeri tornano."
+    ],
+    [
+     "Dillo al medico quando prescrive",
+     "Il diritto va verificato al momento della prescrizione: il codice deve comparire sulla ricetta."
+    ],
+    [
+     "Segna la scadenza",
+     "L'esenzione ha una scadenza e va rinnovata: annotala, e ricontrolla se il reddito cambia."
+    ]
+   ],
+   "errori": [
+    "Pensare che valga per tutta la famiglia: sopra i 65 anni è personale.",
+    "Dare per scontato che copra anche i farmaci: dipende dalla Regione.",
+    "Dimenticare la scadenza."
+   ],
+   "checklist": [
+    "So quale codice mi riguarda",
+    "Ho controllato il reddito familiare dell'anno scorso",
+    "Ho verificato se l'esenzione risulta già",
+    "Il codice è sulla ricetta",
+    "Ho segnato la scadenza"
+   ],
+   "fonti": [
+    "OR-33",
+    "OR-34",
+    "OR-31",
+    "OR-32",
+    "OR-05"
+   ],
+   "avvertenza": "Informazioni generali sui codici nazionali, tratte dalla legge, dal decreto del 2009 e da documenti delle Regioni Emilia-Romagna e Lombardia, aggiornate a novembre 2026. Soglie e modalità possono cambiare, e ogni Regione ha regole proprie: prima di autocertificare chiedi all'ASL o al medico di famiglia. Non sostituiscono il parere del pediatra o del medico.",
+   "domanda": "Chi non paga il ticket",
+   "ricontrolla": "2027-01"
   }
  ],
  "chi": {

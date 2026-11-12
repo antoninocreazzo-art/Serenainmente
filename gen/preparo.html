@@ -1,10 +1,11 @@
 <section class="wrap-t tool-page" id="pv">
-<nav class="crumbs" aria-label="Percorso"><a href="~/risorse/">Strumenti gratuiti</a></nav>
-<span class="eyebrow">Strumento gratuito · si usa dal telefono</span>
+<nav class="crumbs" aria-label="Percorso"><a href="~/risorse/">‹ Strumenti gratuiti</a></nav>
+<span class="chip" style="align-self:flex-start">Strumento gratuito · si usa dal telefono</span>
 <h1>Preparo la visita</h1>
 <p class="lead">Cinque minuti a casa, e in ambulatorio hai tutto davanti: cosa hai notato, le domande in ordine, lo spazio per le risposte.</p>
 <p class="privacy-note">{lock} Quello che scrivi resta solo su questo telefono o computer: non arriva a nessuno, nemmeno a noi. Se usi la navigazione in incognito, alla chiusura si cancella.</p>
 
+<div class="azioni">{salva}</div>
 <div data-mode="prep">
 <div class="pv-card">
 <h2>La visita</h2>
@@ -19,12 +20,13 @@
 <div class="pv-card">
 <h2>Cosa ho notato</h2>
 <p class="small">Da quando, quante volte, cosa migliora o peggiora. Poche righe bastano.</p>
-<textarea data-f="notato" rows="4" placeholder="Es.: tosse da lunedì, soprattutto di notte; niente febbre"></textarea>
+<textarea data-f="notato" rows="4" aria-label="Cosa ho notato" placeholder="Es.: tosse da lunedì, soprattutto di notte; niente febbre"></textarea>
 </div>
 
 <div class="pv-card">
 <h2>Le domande, la più importante per prima</h2>
 <ol class="pv-q" data-list></ol>
+{pronte}
 <form class="pv-add" data-add><input data-new placeholder="Scrivi una domanda" autocomplete="off" aria-label="Nuova domanda"><button class="btn btn-sm" type="submit">Aggiungi</button></form>
 <p class="small">Usa le frecce per cambiare l'ordine. Tre o quattro domande sono l'ideale.</p>
 </div>
@@ -48,6 +50,8 @@
 <div data-mode="visit" hidden>
 <div class="pv-card pv-big">
 <p class="pv-head" data-head></p>
+<div data-motivo-box><h2>Perché andiamo</h2>
+<p data-show="motivo" class="pv-text"></p></div>
 <h2>Cosa ho notato</h2>
 <p data-show="notato" class="pv-text"></p>
 <h2>Le domande</h2>
@@ -75,7 +79,7 @@
 <button class="btn btn-line btn-sm" type="button" data-copy data-umami-event="preparo-visita-copia">Copia tutto</button>
 <button class="btn btn-line btn-sm" type="button" data-reset>Ricomincia da capo</button>
 </div>
-<p class="small">Preferisci la carta? <a href="~/scarica/domande-per-il-pediatra.pdf" download data-umami-event="stampabile" data-umami-event-file="domande-per-il-pediatra">Scarica il foglio da stampare</a>. Come prepararsi, passo per passo: <a href="~/guide/domande-per-il-pediatra/">la guida</a>.</p>
+<div class="row pv-foot"><a class="btn btn-line btn-sm" href="~/scarica/domande-per-il-pediatra.pdf" download data-umami-event="stampabile" data-umami-event-file="domande-per-il-pediatra">Preferisci la carta? Scarica il foglio</a><a class="btn btn-line btn-sm" href="~/guide/domande-per-il-pediatra/">Leggi la guida</a></div>
 <p class="small">Strumento organizzativo: non sostituisce il parere del pediatra o del medico. In caso di urgenza chiama il 112.</p>
 </section>
 <script>
@@ -103,12 +107,12 @@ function undo(q,i){if(U)U.remove();clearTimeout(UT);U=document.createElement('di
  document.body.appendChild(U);UT=setTimeout(function(){if(U){U.remove();U=null}},6000)}
 function when(){if(!S.quando)return '';var d=new Date(S.quando);return isNaN(d)?S.quando:d.toLocaleString('it-IT',{weekday:'long',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit'})}
 function visit(){var h=[S.chi,S.medico,when()].filter(Boolean).join(' · ');$('[data-head]').textContent=h||'La visita';
- $('[data-show=notato]').textContent=S.notato||'—';
+ $('[data-show=notato]').textContent=S.notato||'Niente di scritto: puoi raccontarlo al medico.';$('[data-show=motivo]').textContent=S.motivo||'';$('[data-motivo-box]').hidden=!S.motivo;
  var A=$('[data-ans]');A.innerHTML='';S.q.forEach(function(q){var li=document.createElement('li');
   li.innerHTML='<label class="qa"><input type="checkbox"'+(q.ok?' checked':'')+'><span>'+esc(q.t)+'</span></label><textarea rows="2" placeholder="Risposta"></textarea>';
   var c=li.querySelector('input'),r=li.querySelector('textarea');r.value=q.r||'';
   c.onchange=function(){q.ok=c.checked;save()};r.oninput=function(){q.r=r.value;save()};A.appendChild(li)});
- if(!S.q.length)A.innerHTML='<li class="small">Nessuna domanda: tornate a prepararle, bastano due minuti.</li>';}
+ if(!S.q.length)A.innerHTML='<li class="small">Le domande si scrivono in «Torna a preparare»: bastano due minuti.</li>';}
 function go(m){$$('[data-mode]').forEach(function(s){s.hidden=s.dataset.mode!==m});if(m==='visit')visit();window.scrollTo(0,root.offsetTop-10)}
 $$('[data-go]').forEach(function(b){b.onclick=function(){go(b.dataset.go)}});
 function text(){var o=['Preparo la visita'+(S.chi?' · '+S.chi:''),when(),S.medico||'','',S.motivo?'Perché: '+S.motivo:'',S.notato?'Cosa ho notato: '+S.notato:'','','Domande:'];
@@ -124,6 +128,8 @@ $('[data-link]').onclick=function(){var u='https://serenainmente.it/strumenti/pr
 $('[data-copy]').onclick=function(){var b=this;navigator.clipboard&&navigator.clipboard.writeText(text()).then(function(){b.textContent='Copiato'})};
 var R=$('[data-reset]'),armed=false;R.onclick=function(){if(!armed){armed=true;R.textContent='Tocca di nuovo per cancellare tutto';setTimeout(function(){armed=false;R.textContent='Ricomincia da capo'},4000);return}
  S={q:[],c:{}};save();$$('[data-f]').forEach(function(el){el.value=''});$$('[data-c]').forEach(function(el){el.checked=false});list();go('prep');armed=false;R.textContent='Ricomincia da capo'};
+$$('[data-pronta]').forEach(function(b){b.onclick=function(){var t=b.textContent;if(!S.q.some(function(q){return q.t===t})){S.q.push({t:t,ok:false,r:''});save();list();var L=$('[data-list]').lastChild;if(L)L.classList.add('new')}b.disabled=true;b.style.opacity=.5}});
+$$('[data-tema-q]').forEach(function(b){b.onclick=function(){$$('[data-tema-q]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});$$('[data-gruppo]').forEach(function(u){u.hidden=u.dataset.gruppo!==b.dataset.temaQ})}});
 list();
 })();
 </script>

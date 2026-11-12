@@ -1,0 +1,7 @@
+Caratteri del sito, ospitati qui (nessuna richiesta a Google Fonts o ad altri).
+- fraunces-it-400.woff2, plus-jakarta-sans-it.woff2, nunito-it.woff2: usati dal sito (assets/stile3.css).
+  Sono versioni ridotte alle lettere dell'italiano e ai pesi 400-800, fatte con fonttools
+  (varLib.instancer wght=400:800, poi pyftsubset) a partire dai file di @fontsource-variable.
+  Se nei testi compare un segno nuovo che manca, il browser usa il carattere di sistema: va rifatto il sottoinsieme.
+- dm-sans-*, fraunces-latin-*: usati dalle grafiche di Instagram (gen/grafiche). Non toccare.
+Licenze: SIL Open Font License 1.1 (vedi i file LICENZA-*).
