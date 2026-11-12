@@ -1,0 +1,23 @@
+Foto del sito (direzione B «Sportello»). Quelle di oggi sono segnaposto: si sostituiscono con le foto vere
+tenendo lo STESSO NOME di file. Formato WebP. Niente volti riconoscibili, nessun telefono con lo schermo acceso.
+
+Primo schermo
+- hero.webp            computer, orizzontale 16:10, 2400 × 1500 px (oggi 1536 × 1024, segnaposto), massimo 250 KB
+- hero-telefono.webp   telefono, verticale 4:5, 1080 × 1350 px. Oggi non c'è: il telefono ritaglia hero.webp.
+                       Appena il file c'è, build.py lo usa da solo per il telefono.
+
+I cinque argomenti della pagina iniziale (4:3, 1200 × 900 px, massimo 120 KB ciascuna)
+- routine-della-nanna.webp                Sonno e nanna
+- domande-per-il-pediatra.webp            Visite e pediatra
+- documenti-sanitari-dove-trovarli.webp   Documenti
+- lista-medicine-genitore-anziano.webp    Genitori anziani
+- iscrizioni-nido-e-scuola.webp           Nido e scuola
+Le stesse foto compaiono anche nella guida dallo stesso nome (colonna laterale al computer).
+
+Per ogni foto servono anche le versioni piccole, con lo stesso nome più -sm (768 px di larghezza) e -xs (480 px).
+Si fanno così, dalla cartella del sito:
+  python3 -c "from PIL import Image;import sys
+for n in sys.argv[1:]:
+  im=Image.open(f'assets/foto/{n}.webp').convert('RGB')
+  for suf,w,q in (('-sm',768,72),('-xs',480,62)): im.resize((w,round(im.height*w/im.width)),Image.LANCZOS).save(f'assets/foto/{n}{suf}.webp','WEBP',quality=q,method=6)" hero routine-della-nanna
+Poi: python3 gen/build.py

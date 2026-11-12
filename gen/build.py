@@ -111,13 +111,16 @@ P = {
  'bookmark': '<path d="M6 4h12v17l-6-4.5L6 21z"/>',
  'sound': '<path d="M4 10v4h3l5 4V6L7 10z"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/>',
  'zoom': '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/>',
+ 'menu': '<path d="M4 6.5h16M4 12h16M4 17.5h16"/>',
+ 'chev': '<path d="m9 6 6 6-6 6"/>',
 }
 def ic(n, cls='ic'):
     return f'<svg class="{cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{P[n]}</svg>'
 
 def foto(key, alt, cls='', eager=False, sizes='(min-width:900px) 50vw, 100vw'):
     if not esiste('assets', 'foto', f'{key}.webp'): return ''
-    return (f'<img class="ph {cls}" src="~/assets/foto/{key}-sm.webp" srcset="~/assets/foto/{key}-sm.webp 768w, ~/assets/foto/{key}.webp 1536w" '
+    xs = f'~/assets/foto/{key}-xs.webp 480w, ' if esiste('assets', 'foto', f'{key}-xs.webp') else ''  # 480 px: telefoni e schede piccole
+    return (f'<img class="ph {cls}" src="~/assets/foto/{key}-sm.webp" srcset="{xs}~/assets/foto/{key}-sm.webp 768w, ~/assets/foto/{key}.webp 1536w" '
             f'sizes="{sizes}" width="1536" height="1024" alt="{e(alt)}" {"" if eager else "loading=lazy"} decoding="async">')
 def mini(nome):
     """miniatura quadrata da 160 px, se c'è"""
@@ -130,7 +133,13 @@ def riga_guida(g, li=''):
 
 # ---------- pagina ----------
 UMAMI = '<script defer src="https://cloud.umami.is/script.js" data-website-id="301edcb4-f5b2-444e-a1e5-8b8614d0100a" data-domains="serenainmente.it" data-do-not-track="true" data-exclude-search="true" data-exclude-hash="true"></script>'
-LOGO = '<img class="logo-mark" src="~/assets/brand/mark-96.png" alt="" width="34" height="34"><span>serenainmente</span>'
+# il logo vero (assets/brand/profilo-serena.svg, con la s), copiato dentro la pagina: niente richiesta in più
+_LOGO_SVG = open(os.path.join(ROOT, 'assets', 'brand', 'profilo-serena.svg'), encoding='utf-8').read().strip()
+def logo_svg(uid, cls='logo-mark', lato=44):
+    t = _LOGO_SVG.replace('id="c"', f'id="lc{uid}"').replace('url(#c)', f'url(#lc{uid})').replace('\n', '')
+    return t.replace('width="1080" height="1080"', f'width="{lato}" height="{lato}" class="{cls}" aria-hidden="true" focusable="false"', 1)
+LOGO = logo_svg('h') + '<span>serenainmente</span>'
+LOGO_PIEDE = logo_svg('f') + '<span>serenainmente</span>'
 NAV = [('/guide/', 'Guide'), ('/risorse/', 'Strumenti'), ('/chi-e-serena/', 'Chi è Serena'), ('/metodo/', 'Il metodo'), ('/fonti/', 'Le fonti')]
 ZONE = {'/risorse/': ('/risorse/', '/gestionale/', '/stampabili/', '/strumenti/'), '/chi-e-serena/': ('/chi-e-serena/', '/metodo/', '/fonti/', '/privacy/', '/note-legali/', '/frasi/')}
 def qui(path, h):
@@ -156,7 +165,7 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None):
              "logo": SITE + "/assets/brand/avatar-320.png", "sameAs": [IG, "https://www.pinterest.com/serenainmente/"]}]}
     ldj = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>' if ld else ''
     navl = ''.join(f'<a href="~{h}"{" aria-current=page" if qui(path, h) else ""}>{l}</a>' for h, l in NAV)
-    def tab(h, l, i): return f'<a href="~{h}"{" aria-current=page" if qui(path, h) else ""}>{ic(i)}<span>{l}</span></a>'
+    navl_m = ''.join(f'<a href="~{h}" aria-label="{l}"{" aria-current=page" if qui(path, h) else ""}><span>{l}</span>{ic("chev","ic-s")}</a>' for h, l in [('/', 'Inizio')] + NAV)
     banner = '<div class="preview-bar">Anteprima del nuovo sito · non ancora pubblicata</div>' if PREVIEW else ''
     rel = '../' * len([x for x in path.strip('/').split('/') if x])
     out = f'''<!doctype html>
@@ -175,10 +184,12 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None):
 <meta name="p:domain_verify" content="82dca4ec0359bf826162f0392b29bb0c"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="it_IT">
-<meta name="theme-color" content="#FBF6F4">
+<meta name="theme-color" content="#7F4E5C">
 <meta name="google-site-verification" content="urb5XcUNd0QsSnqqtO49dSjLHeByMvfosPu2Gs2IMlY">
 <link rel="icon" type="image/png" href="~/assets/brand/favicon-48.png">
 <link rel="apple-touch-icon" href="~/assets/brand/apple-touch-icon.png">
+<link rel="preload" href="{rel if REL else '/'}assets/fonts/fraunces-it-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{rel if REL else '/'}assets/fonts/dm-sans-it-400.woff2" as="font" type="font/woff2" crossorigin>
 <style>{STILE.replace('url(fonts/', 'url(' + (rel if REL else '/') + 'assets/fonts/')}</style>
 {PRIMA}
 {'' if PREVIEW else UMAMI}
@@ -187,23 +198,25 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None):
 <body class="{cls}" data-base="{rel if REL else '/'}"{' data-rel="1"' if REL else ''}>
 {banner}
 <a class="skip" href="#contenuto">Vai al contenuto</a>
-<header class="hd vivo">
+<header class="hd">
 <div class="hd-in">
 <a class="brand" href="~/" aria-label="serenainmente, pagina iniziale">{LOGO}</a>
-<nav class="nav-d" aria-label="Menu principale">{navl}</nav>
+<a class="campo-hd" href="~/guide/#cerca" data-cerca role="button" data-umami-event="cerca-apri-casella"><span>Cerca: scrivi cosa ti serve</span><i>{ic('search')}</i></a>
 <div class="hd-act">
-<a class="cerca-d" href="~/guide/#cerca" data-cerca role="button">{ic('search')}<span>Cerca</span><kbd aria-hidden="true">/</kbd></a>
 <button class="icbtn" type="button" data-aa aria-label="Cambia la grandezza del testo"><b aria-hidden="true">A+</b></button>
 <button class="icbtn tema" type="button" data-tema-btn aria-label="Cambia aspetto"><span class="luna">{ic('moon')}</span><span class="sole">{ic('sun')}</span></button>
+<details class="menu-m"><summary class="icbtn" aria-label="Menu"><span class="ap">{ic('menu')}<span>Menu</span></span><span class="ch">{ic('close')}<span>Chiudi</span></span></summary>
+<nav class="menu-p" aria-label="Menu">{navl_m}</nav></details>
 </div>
 </div>
+<nav class="nav-d" aria-label="Menu principale"><div class="nav-in">{navl}</div></nav>
 </header>
 <main id="contenuto">
 {body}
 </main>
 <footer class="ft">
 <div class="ft-in">
-<div class="ft-brand"><a class="brand" href="~/">{LOGO}</a><p>Guide brevi con le loro fonti, strumenti gratuiti e parole in cui ritrovarsi, per chi si prende cura della famiglia.</p>
+<div class="ft-brand"><a class="brand" href="~/">{LOGO_PIEDE}</a><p>Guide brevi con le loro fonti, strumenti gratuiti e parole in cui ritrovarsi, per chi si prende cura della famiglia.</p>
 <a class="ft-ig" href="{IG}" rel="noopener" data-umami-event="instagram">{ic('insta')} Segui @serenainmente</a></div>
 <nav aria-label="Esplora"><h2>Esplora</h2><ul><li><a href="~/guide/">Guide</a></li><li><a href="~/risorse/">Strumenti gratuiti</a></li><li><a href="~/gestionale/">Il gestionale di famiglia</a></li>{FRASI_LI}</ul></nav>
 <nav aria-label="Serena"><h2>Serena</h2><ul><li><a href="~/chi-e-serena/">Chi è Serena</a></li><li><a href="~/metodo/">Il metodo</a></li><li><a href="~/fonti/">Le fonti</a></li><li><a href="~/correzioni/">Correzioni</a></li><li><a href="~/salvati/">I tuoi salvati</a></li><li><a href="~/privacy/">Privacy</a></li><li><a href="~/note-legali/">Note legali</a></li><li><a href="mailto:{MAIL}?subject=Segnalazione">Scrivi o segnala un errore</a></li></ul></nav>
@@ -211,11 +224,6 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None):
 <div class="ft-low"><p>Serena è ideata e curata da una persona, con il supporto dell'intelligenza artificiale per testi, immagini e verifica delle fonti. Informazioni generali: non sostituiscono il parere del pediatra o del medico.</p>
 <p>Questo sito non usa cookie e non ti chiede dati. Come contiamo le visite: <a href="~/privacy/">Privacy</a>. © {datetime.date.today().year} serenainmente.it <button class="btn btn-line btn-sm" type="button" data-tema-auto hidden>Torna all'aspetto che segue l'ora</button></p></div>
 </footer>
-<nav class="tab vivo" aria-label="Menu">
-{tab('/', 'Inizio', 'home')}{tab('/guide/', 'Guide', 'book')}
-<a class="tab-c" href="~/guide/#cerca" data-cerca role="button"{' hidden data-con-casella' if 'class="chiedi' in body else ''}><span class="o">{ic('search')}</span><span>Cerca</span></a>
-{tab('/risorse/', 'Strumenti', 'tools')}{tab('/chi-e-serena/', 'Serena', 'leaf')}
-</nav>
 <dialog class="foglio" id="cerca" data-src="~/assets/cerca-dati.js?v={INDICE_V}" aria-label="Cerca nel sito">
 <div class="fg-in"><form class="fg-top" role="search">{ic('search')}<label class="sr" for="q">Cerca nelle guide di Serena</label><input id="q" type="search" placeholder="Che cosa cerchi?" autocomplete="off" enterkeyhint="search"><button type="button" class="icbtn" data-chiudi aria-label="Chiudi la ricerca">{ic('close')}</button></form>
 <div class="fg-body"><div data-prima><h2>Per esempio</h2><ul class="esempi">{''.join(f'<li><button type="button" data-q="{e(x)}">{e(x)}</button></li>' for x in ESEMPI)}</ul><p class="small" style="margin-top:14px">La ricerca guarda nelle guide e negli strumenti di Serena. Quello che scrivi resta su questo telefono o computer.</p></div>
@@ -423,17 +431,19 @@ for g in GUIDE:
     nf = len(g['fonti'])
     corr = [x for x in GUIDE if x is not g and x['arg'] == g['arg']] + [x for x in GUIDE if x is not g and x['arg'] != g['arg']]
     gp = f"/guide/{g['slug']}/"
+    indice = ''.join(f'<li><a href="#{h}">{t}</a></li>' for h, t, ok in [('passo-1', 'Come si fa', True), ('perche', 'Perché aiuta', True), ('errori', 'Errori comuni', bool(g.get('errori'))), ('lista', 'La lista da spuntare', bool(g.get('checklist'))), ('fonti', 'Le fonti', bool(g['fonti']))] if ok)
     fonti_meta = f'<a href="#fonti">{nf} {"fonte" if nf == 1 else "fonti"}, da aprire</a>' if nf else ''
     lista = (f'<section class="box box-salvia ck" id="lista" data-titolo="{e(g["titolo"])}" data-url="{SITE}{gp}"><div class="ck-hd"><svg class="anello" viewBox="0 0 48 48" aria-hidden="true"><circle class="p" cx="24" cy="24" r="20"/><circle class="v" cx="24" cy="24" r="20"/></svg><div><h2>La lista da spuntare</h2><p class="ck-n" data-ckn aria-live="polite"></p></div></div>'
              f'<ul class="check">{check}</ul><p class="small noprint">Le spunte restano salvate su questo telefono o computer.</p>{azioni_lista(g, cktext)}</section>') if check else ''
     body = f'''<article class="art">
-<header class="art-hd wrap-t">
-<nav class="crumbs" aria-label="Percorso"><a href="~/guide/#{a[0]}">‹ Guide · {e(a[1])}</a></nav>
+<header class="art-hd wrap">
+<nav class="crumbs" aria-label="Percorso"><span class="corta"><a href="~/guide/#{a[0]}">{ic('chev','ic-s ind')}{e(a[1])}</a></span><span class="lunga"><a href="~/">Inizio</a>{ic('chev','ic-s')}<a href="~/guide/">Guide</a>{ic('chev','ic-s')}<a href="~/guide/#{a[0]}">{e(a[1])}</a></span></nav>
+<p class="occhiello">{e(a[1])} · {g['min']} minuti</p>
 <h1 data-leggi>{e(g['titolo'])}</h1>
 <div class="azioni noprint"><button class="btn btn-line btn-sm" type="button" hidden data-ascolta aria-pressed="false" data-umami-event="ascolta-guida">{ic('sound','ic-s')}<span>Ascolta la guida</span></button></div>
 </header>
-<div class="art-body wrap-t">
-<section class="breve vetro" aria-label="In breve"><p data-leggi>{e(g['sommario'])}</p>
+<div class="art-body wrap">
+<section class="breve vetro" aria-label="In breve"><p class="breve-t" aria-hidden="true">In breve</p><p data-leggi>{e(g['sommario'])}</p>
 {tabella(g.get('tabella')) if per_eta(g.get('tabella')) else ''}
 {strumento_breve(g.get('strumento'))}
 <h2 class="passi-t">Come si fa, un passo alla volta</h2>
@@ -441,13 +451,13 @@ for g in GUIDE:
 <dl class="facts"><div><dt>Tempo</dt><dd>{e(g['tempo'])}</dd></div><div><dt>Cosa serve</dt><dd>{e(g['serve'])}</dd></div></dl></section>
 <div class="sotto-breve"><p class="meta"><span>{ic('clock','ic-s')} {g['min']} min di lettura</span><span>Aggiornata il {data_it(g['agg'])}</span>{fonti_meta}</p>
 <div class="azioni noprint">{salva(gp, g['titolo'])}</div></div>
+<div class="lato noprint">{foto(g['slug'], '', 'art-img', sizes='(min-width:960px) 300px, 100vw')}<nav class="indice-p" aria-label="In questa pagina"><h2>In questa pagina</h2><ul>{indice}</ul></nav></div>
 {'' if per_eta(g.get('tabella')) else tabella(g.get('tabella'))}
 {calcolo(g)}
-<section><h2 data-leggi>Perché aiuta</h2>{''.join(f'<p data-leggi>{e(p)}</p>' for p in g['perche'])}</section>
-{f'<section class="box box-rosa"><h2 data-leggi>Errori comuni</h2><ul class="plain">{errori}</ul></section>' if errori else ''}
+<section id="perche"><h2 data-leggi>Perché aiuta</h2>{''.join(f'<p data-leggi>{e(p)}</p>' for p in g['perche'])}</section>
+{f'<section class="box box-rosa" id="errori"><h2 data-leggi>Errori comuni</h2><ul class="plain">{errori}</ul></section>' if errori else ''}
 {lista}
 {strumento_box(g.get('strumento')) if g.get('strumento') == 'gestionale' else ''}
-{foto(g['slug'], '', 'art-img', sizes='(min-width:760px) 700px, 100vw')}
 {f'<section id="fonti"><h2>Le fonti</h2><p class="small">Ogni dato di questa pagina viene da qui.</p><ul class="sources">{fonti}</ul></section>' if fonti else ''}
 <details class="piega fatta" id="come-e-fatta"><summary>Come è stata fatta questa guida</summary>
 <ul class="plain"><li>{f'{nf} {"fonte" if nf == 1 else "fonti"}, aperte e lette prima di scrivere' if nf else 'Consigli organizzativi: non cita dati sanitari'}.</li><li>Fonti controllate il {data_it(g['agg'])}. Prossimo controllo entro {prossimo}.</li><li>Scritta con il supporto dell'intelligenza artificiale; letta e approvata da una persona prima di uscire.</li></ul>
@@ -457,7 +467,7 @@ for g in GUIDE:
 <aside class="box box-line"><b>Da sapere</b><p data-leggi>{e(g['avvertenza'])}</p></aside>
 {share(gp, g['titolo'])}
 </div>
-<section class="related wrap-t noprint"><div class="sec-hd"><h2>Continua a leggere</h2><a class="more" href="~/guide/">Tutte le guide {ic('arrow','ic-s')}</a></div>
+<section class="related wrap noprint"><div class="sec-hd"><h2>Continua a leggere</h2><a class="more" href="~/guide/">Tutte le guide {ic('arrow','ic-s')}</a></div>
 <ul class="rows">{''.join(riga_guida(x) for x in corr[:3])}</ul></section>
 </article>'''
     url = f"{SITE}{gp}"
@@ -486,7 +496,6 @@ def riga_elenco(g):
 pages.append(page('/guide/', 'Guide', 'Guide pratiche e brevi per la vita di famiglia, con le fonti quando servono.', f'''
 <section class="ph-hd wrap-t">
 <h1>Guide</h1><p class="lead">Piccoli metodi per giornate più leggere e le regole che nessuno ti spiega. Si leggono in due minuti, con le fonti.</p>
-{CHIEDI}
 </section>
 <section class="wrap-t list">
 <div class="fchips" role="group" aria-label="Scegli un argomento">{chips}</div>
@@ -712,7 +721,6 @@ ig_altri = [t for t in TOOLS if t[0] not in visti]
 pages.append(page('/ig/', 'Da Instagram', 'Gli strumenti, i fogli e le guide dei post di @serenainmente, a portata di tocco.', f'''
 <section class="wrap-t ig-page"><div class="ig-hd"><img src="~/assets/brand/avatar-160.png" alt="" width="56" height="56"><div><h1>Dai post di Serena</h1><p class="small">Tutto quello che hai visto su Instagram. Gratis, senza registrazione.</p></div></div>
 {ig_primo}
-{CHIEDI}
 <section data-salvati hidden><h2 class="sec-t"></h2><ul class="rows"></ul></section>
 {f'<section><h2 class="sec-t">Dai post precedenti</h2><ul class="rows">' + ''.join(ig_li(x) for x in IGU[1:8]) + '</ul></section>' if len(IGU) > 1 else ''}
 {'<section><h2 class="sec-t">Sempre a portata di mano</h2><ul class="rows">' + ''.join(riga('~' + t[0], t[1], t[2], t[6], t[3]) for t in ig_altri) + '</ul></section>' if ig_altri else ''}
@@ -767,8 +775,8 @@ if FRASI_ON:
 <section class="wrap-t"><ul class="frasi">{''.join(frase_li(f) for f in FRASI)}</ul>{IGCARD}</section>'''))
 if FRASI_ON:
     f0 = next(f for f in FRASI if not f.get('parola')); m0 = f0['testo'] + ' — da @serenainmente'
-    frase_home = (f'<section class="wrap-t"><div class="frase vetro"><span class="eyebrow">La frase della settimana</span><p>{e(f0["testo"])}</p>'
-                  f'<div class="row" style="justify-content:center"><button class="btn btn-sm" type="button" hidden data-sharetext="{e(m0)}" data-umami-event="frase-condividi">Mandala a qualcuno</button><a class="more" href="~/frasi/">Tutte le frasi {ic("arrow","ic-s")}</a></div></div></section>')
+    frase_home = (f'<section class="frase-b"><div class="wrap frase"><span class="alone">{logo_svg("g", "logo-g", 200)}</span><div class="frase-t"><span class="eyebrow">La frase della settimana</span><p>{e(f0["testo"])}</p>'
+                  f'<div class="row"><button class="btn btn-sm" type="button" hidden data-sharetext="{e(m0)}" data-umami-event="frase-condividi">Mandala a qualcuno</button><a class="more" href="~/frasi/">Tutte le frasi {ic("arrow","ic-s")}</a></div></div></div></section>')
 else: frase_home = ''
 
 # ---------- pagina iniziale ----------
@@ -787,25 +795,45 @@ def tag_li(chi, eta, base): return f' data-tag="{chi}" data-fasce="{" ".join(eta
 partenze = [riga_guida(g, li=tag_li(*per(g['slug']), 1 if i < 4 else 0) + (' data-pri="1"' if g['arg'] == 'crescita' or per(g['slug'])[0] == 'anziano' else '')) for i, g in enumerate(GUIDE)]
 partenze += [riga('~' + t[0], t[1], t[7] + ' · gratis', t[6], t[3], li=tag_li(t[5], [] if t[5] == 'anziano' else TUTTE_ETA, 0) + (' data-pri="1"' if t[5] == 'anziano' else '')) for t in TOOLS]
 ordine = partenze
+def foto_hero():
+    """La foto del primo schermo. Al computer assets/foto/hero.webp (orizzontale 16:10); al telefono, se c'è,
+    assets/foto/hero-telefono.webp (verticale 4:5), altrimenti la stessa foto ritagliata. Elenco in assets/foto/LEGGIMI.txt."""
+    im = foto('hero', '', 'hero-img', eager=True, sizes='(min-width:960px) 640px, 100vw').replace(' decoding="async"', ' decoding="async" fetchpriority="high"')
+    if not esiste('assets', 'foto', 'hero-telefono.webp'): return im
+    return f'<picture><source media="(max-width:959px)" srcset="~/assets/foto/hero-telefono.webp 1080w" sizes="100vw">{im}</picture>'
+DOMANDA = {'mattino': 'Cosa ti serve oggi?', 'giorno': 'Cosa ti serve oggi?', 'sera': 'Cosa ti serve stasera?', 'notte': 'Cosa ti serve stasera?'}
+ESEMPI_D = {'non vuole dormire': 'Cosa provare da stasera, e quando parlarne con il pediatra.', 'domani ho il pediatra': 'Le domande da preparare, in cinque minuti.',
+            'spostare una visita': 'Come si fa, ed entro quando disdire.', 'le medicine di mamma': 'La lista da scrivere e tenere a portata di mano.'}
+def scheda(href, titolo, sotto, attr=''):
+    return f'<li><a class="scheda" href="{href}"{attr}><span><b>{e(titolo)}</b><small>{e(sotto)}</small></span><i>{ic("arrow")}</i></a></li>'
+# le cinque foto degli argomenti (si sostituiscono in assets/foto/, stesso nome): titolo, sotto, foto, ricerca
+ARG_FOTO = [('Sonno e nanna', 'Risvegli, routine della sera, quante ore', 'routine-della-nanna', 'sonno'),
+            ('Visite e pediatra', 'Pediatra, specialisti, certificati', 'domande-per-il-pediatra', 'visita dal pediatra'),
+            ('Documenti', 'Dove trovarli, come chiederli, esenzioni', 'documenti-sanitari-dove-trovarli', 'documenti sanitari'),
+            ('Genitori anziani', 'Medicine, indennità, cosa preparare', 'lista-medicine-genitore-anziano', 'genitore anziano'),
+            ('Nido e scuola', 'Iscrizioni: età, date e documenti', 'iscrizioni-nido-e-scuola', 'iscrizione al nido')]
+argf = ''.join(f'<li><a class="argf" href="~/guide/?q={urllib.parse.quote(q)}" data-cerca="{e(q)}" role="button" data-umami-event="home-argomento">{foto(f, "", "argf-img", sizes="(min-width:960px) 360px, 50vw")}<span class="t"><b>{e(t)}</b><small>{e(d)}</small></span></a></li>' for t, d, f, q in ARG_FOTO)
+argf += f'<li class="tutte"><a class="argf" href="~/guide/"><span class="t"><b>Tutte le guide {ic("arrow","ic-s")}</b><small>{len(GUIDE)} guide brevi, ognuna con le sue fonti.</small></span></a></li>'
 pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della famiglia: guide pratiche, dati con le loro fonti, strumenti gratuiti.', f'''
-<section class="hero wrap">
+<section class="hero">
+<div class="hero-foto">{foto_hero()}</div>
 <div class="hero-txt"><p class="eyebrow">{''.join(f'<span data-per="{k}">{v}</span>' for k, v in SALUTO.items())}</p>
 <h1>Hai già abbastanza da tenere a mente.</h1>
-<p class="lead">{''.join(f'<span data-per="{k}">{e(v)}</span>' for k, v in INVITO.items())}</p>
-{CHIEDI}
-<div class="per-voi" data-per-voi hidden></div>
-<ul class="esempi" aria-label="Esempi" data-esempi>{''.join(f'<li><a href="~/guide/?q={urllib.parse.quote(x)}" data-cerca="{e(x)}" role="button">{e(x)}</a></li>' for x in ESEMPI[:3])}</ul>
-{ora_cards}
-<p class="small">Guide brevi con le loro fonti, fogli da stampare e strumenti gratuiti. Senza registrazione e senza pubblicità.</p></div>
-{foto('hero', '', 'hero-img')}
+<p class="lead">{''.join(f'<span data-per="{k}">{e(v)}</span>' for k, v in INVITO.items())}</p></div>
 </section>
 <section class="wrap blocco-s" data-salvati hidden><h2 class="sec-t"></h2><ul class="rows"></ul><a class="more" href="~/salvati/">I tuoi salvati {ic('arrow','ic-s')}</a></section>
+<section class="wrap subito"><h2 class="sec-t">{''.join(f'<span data-per="{k}">{v}</span>' for k, v in DOMANDA.items())}</h2>
+<div class="per-voi" data-per-voi hidden></div>
+{ora_cards}
+<ul class="schede due" aria-label="Esempi" data-esempi>{''.join(scheda(f"~/guide/?q={urllib.parse.quote(x)}", x[0].upper() + x[1:], ESEMPI_D[x], f' data-cerca="{e(x)}" role="button"') for x in ESEMPI[:4])}</ul>
+</section>
+<section class="wrap"><h2 class="sec-t">Per argomento</h2><ul class="argomenti">{argf}</ul></section>
 <section class="wrap blocco-s">
 <div class="per-te" hidden><h2>Di chi ti prendi cura?</h2><p class="lead-s">Scegli anche più di una persona: Serena mette in cima quello che vi serve, qui e nella ricerca.</p>
 <ul class="esempi"><li><button type="button" data-cura="bambino" aria-pressed="false">Di un bambino</button></li><li><button type="button" data-cura="anziano" aria-pressed="false">Di una persona anziana</button></li></ul>
 <div data-eta-box hidden><p class="lead-s" style="margin-top:14px">Quanti anni hanno i bambini? Puoi sceglierne più di una.</p><ul class="esempi">{''.join(f'<li><button type="button" data-eta="{k}" aria-pressed="false">{v}</button></li>' for k, v in [('0-1', 'Meno di 1 anno'), ('1-3', '1-3 anni'), ('3-6', '3-6 anni'), ('6-12', '6-12 anni'), ('13-18', '13-18 anni')])}</ul></div>
 <p class="small" style="margin:12px 0 4px">Lo ricorda solo questo telefono o computer. <button class="btn btn-line btn-sm" type="button" data-dimentica hidden>Dimentica</button></p></div>
-<div data-partenze-casa><h3 class="sec-t" data-partenze-t style="margin-top:18px">Le ultime guide</h3>
+<div data-partenze-casa><h2 class="sec-t" data-partenze-t>Le ultime guide</h2>
 <ul class="rows" data-partenze>{''.join(ordine)}</ul>
 </div><a class="more" href="~/guide/">Tutte le guide {ic('arrow','ic-s')}</a>
 </section>

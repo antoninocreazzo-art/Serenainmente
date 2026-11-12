@@ -1,7 +1,14 @@
 Caratteri del sito, ospitati qui (nessuna richiesta a Google Fonts o ad altri).
-- fraunces-it-400.woff2, plus-jakarta-sans-it.woff2, nunito-it.woff2: usati dal sito (assets/stile3.css).
-  Sono versioni ridotte alle lettere dell'italiano e ai pesi 400-800, fatte con fonttools
-  (varLib.instancer wght=400:800, poi pyftsubset) a partire dai file di @fontsource-variable.
+- Usati dal sito (assets/stile3.css, direzione B «Sportello», novembre 2026):
+  - fraunces-it-400.woff2: titoli, con le grazie.
+  - dm-sans-it-400.woff2, dm-sans-it-500.woff2, dm-sans-it-800.woff2: testi, pulsanti e menu.
+  Sono versioni ridotte alle lettere dell'italiano. I tre DM Sans si fanno da dm-sans-latin-*-normal.woff2 con
+  pyftsubset, usando le stesse lettere di fraunces-it-400.woff2 (vedi sotto).
   Se nei testi compare un segno nuovo che manca, il browser usa il carattere di sistema: va rifatto il sottoinsieme.
-- dm-sans-*, fraunces-latin-*: usati dalle grafiche di Instagram (gen/grafiche). Non toccare.
+- plus-jakarta-sans-it.woff2, nunito-it.woff2: usati dalla direzione precedente «Luce». Oggi il sito non li carica;
+  restano per tornare indietro se serve.
+- dm-sans-latin-*, fraunces-latin-*: usati dalle grafiche di Instagram (gen/grafiche). Non toccare.
+Come rifare i DM Sans ridotti (dalla cartella assets/fonts):
+  U=$(python3 -c "from fontTools.ttLib import TTFont;print(','.join('U+%04X'%x for x in sorted(TTFont('fraunces-it-400.woff2').getBestCmap())))")
+  for w in 400 500 800; do pyftsubset dm-sans-latin-$w-normal.woff2 --unicodes="$U" --flavor=woff2 --layout-features='kern,liga,calt,tnum,lnum' --output-file=dm-sans-it-$w.woff2; done
 Licenze: SIL Open Font License 1.1 (vedi i file LICENZA-*).
