@@ -17,6 +17,10 @@ for f in glob.glob(os.path.join(ROOT, 'assets/foto/*.webp')):
 for f in glob.glob(os.path.join(ROOT, 'assets/stampabili/*.webp')):
     if not f.endswith('-sm.webp'): crop(f, os.path.join(ROOT, 'assets/mini', 'foglio-' + os.path.basename(f)), 160, 160, top=True)
 crop(os.path.join(ROOT, 'assets/gestionale/inizia-telefono.webp'), os.path.join(ROOT, 'assets/mini/gestionale.webp'), 160, 160, top=True)
+# la foto del gestionale, più leggera per il telefono
+src = os.path.join(ROOT, 'assets/gestionale/inizia.webp'); dst = os.path.join(ROOT, 'assets/gestionale/inizia-sm.webp')
+if not os.path.exists(dst):
+    im = Image.open(src).convert('RGB'); im.resize((800, 500), Image.LANCZOS).save(dst, 'WEBP', quality=70, method=6); print(dst)
 D = json.load(open(os.path.join(ROOT, 'gen', 'dati.json'), encoding='utf-8'))
 for x in D.get('instagram', []):
     s = os.path.join(ROOT, 'img', x['data'] + '-1.jpg')
