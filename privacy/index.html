@@ -100,9 +100,15 @@ if(R){
 var grid=document.querySelector('[data-grid]');
 if(grid){
  var q=document.querySelector('[data-q]'),chips=document.querySelectorAll('[data-arg]'),none=document.querySelector('[data-none]'),cur='tutti';
- var p=new URLSearchParams(location.search);if(p.get('q'))q.value=p.get('q');if(location.hash.length>1)cur=location.hash.slice(1);
- function run(){var t=(q.value||'').toLowerCase().trim(),n=0;
-  grid.querySelectorAll('[data-a]').forEach(function(c){var ok=c.dataset.tool?(!!t&&cur==='tutti'&&c.dataset.t.indexOf(t)>-1):((cur==='tutti'||c.dataset.a===cur)&&(!t||c.dataset.t.indexOf(t)>-1));c.hidden=!ok;if(ok)n++});
+ var p=new URLSearchParams(location.search);if(p.get('q'))q.value=p.get('q');var h=location.hash.slice(1);
+ if(h==='cerca'){q.focus();q.scrollIntoView({block:'center'})}else if(h&&[].some.call(chips,function(c){return c.dataset.arg===h}))cur=h;
+ var STOP=' che chi con per non una uno gli del della dei delle nel nella sul sulla come cosa cose mio mia miei mie suo sua tuo tua ho hai ha sono domani oggi stasera vuole fare devo posso quando dove anni mesi mese anno figlio figlia bambino bambina bimbo bimba '.split(' ');
+ function norm(x){return (x||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
+ var SIN={dorm:['sonn','nann'],sonn:['dorm','nann'],nann:['sonn','dorm'],past:['medic'],pill:['medic'],farm:['medic'],medi:['medic'],vacc:['vacc'],dott:['medic','pedi'],ospe:['visi'],esam:['refe','visi'],anal:['refe'],nonn:['anzi'],madr:['anzi','geni'],padr:['anzi','geni'],scuo:['iscr','nido'],asil:['nido','iscr']};
+ function radici(t){var r=[];norm(t).split(/[^a-z]+/).filter(function(w){return w.length>2&&STOP.indexOf(w)<0}).forEach(function(w){var k=w.length>4?w.slice(0,4):w;r.push(SIN[k]?[k].concat(SIN[k]):[k])});return r}
+ function run(){var t=(q.value||'').toLowerCase().trim(),n=0,r=radici(t),cards=grid.querySelectorAll('[data-a]'),best=0,sc=[];
+  cards.forEach(function(c,i){var d=norm(c.dataset.t),k=0;r.forEach(function(g){if(g.some(function(w){return d.indexOf(w)>-1}))k++});sc[i]=k;if(k>best)best=k});
+  cards.forEach(function(c,i){var m=!t||(r.length?(best>0&&sc[i]===best):norm(c.dataset.t).indexOf(norm(t))>-1);var ok=c.dataset.tool?(!!t&&cur==='tutti'&&m):((cur==='tutti'||c.dataset.a===cur)&&m);c.hidden=!ok;if(ok)n++});
   chips.forEach(function(ch){ch.setAttribute('aria-pressed',ch.dataset.arg===cur)});none.hidden=n>0;
   cnt.textContent=(t||cur!=='tutti')?(n===1?'1 risultato':n+' risultati'):''}
  var cnt=document.querySelector('[data-count]');
