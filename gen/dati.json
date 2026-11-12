@@ -23,7 +23,7 @@
    "titolo": "Piano nazionale di prevenzione vaccinale (PNPV) 2023-2025",
    "tipo": "Documento istituzionale",
    "url": "https://www.epicentro.iss.it/vaccini/piano-nazionale-vaccini-2023-2025",
-   "nota": "Il Piano 2023-2025 è stato prorogato di un anno con un'intesa in Conferenza Stato-Regioni (18 dicembre 2025): vedi la fonte successiva."
+   "nota": "Il Piano 2023-2025 è stato prorogato di un anno, con un'intesa in Conferenza Stato-Regioni del 18 dicembre 2025. La fonte qui sotto è l'intesa del 18 marzo 2026, che richiama quella proroga."
   },
   {
    "id": "TI-01",
@@ -259,11 +259,11 @@
   },
   {
    "id": "OR-27",
-   "ente": "Federazione Italiana Sport Orientamento – monitoraggio dell'attività legislativa",
+   "ente": "Federazione Medico Sportiva Italiana (FMSI)",
    "anno": 2018,
-   "titolo": "Sintesi del decreto del Ministro della Salute 28 febbraio 2018: bambini da 0 a 6 anni e certificazione medica",
-   "tipo": "Sintesi di una norma",
-   "url": "https://www.fiso.it/_files/f_media/2019/05/18437.pdf"
+   "titolo": "Il punto sui certificati medico sportivi (riporta il decreto del Ministro della Salute del 28 febbraio 2018 sui bambini da 0 a 6 anni)",
+   "tipo": "Documento di una federazione medica",
+   "url": "https://www.fmsi.it/images/img/news/CERTIFICATI_MEDICO_SPORTIVI_15-03-2018.pdf"
   },
   {
    "id": "OR-28",
@@ -304,6 +304,22 @@
    "titolo": "Tabella aggiornata delle esenzioni per reddito (con i pareri del Ministero della Salute richiamati)",
    "tipo": "Documento istituzionale",
    "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/TABELLA+AGGIORNATA+DELLE+ESENZIONI+PER+REDDI.pdf"
+  },
+  {
+   "id": "OR-33",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 1994,
+   "titolo": "Legge 23 dicembre 1994, n. 724, articolo 1, comma 3: sostituisce l'articolo 8, comma 16, della legge 24 dicembre 1993, n. 537 (chi è esente dal ticket per età e reddito)",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/eli/stato/LEGGE/1994/12/23/724/CONSOLIDATED"
+  },
+  {
+   "id": "OR-34",
+   "ente": "Ministero dell'economia e delle finanze, con il Ministero della salute",
+   "anno": 2009,
+   "titolo": "Decreto 11 dicembre 2009: verifica delle esenzioni per reddito tramite il Sistema tessera sanitaria (Gazzetta Ufficiale n. 302 del 30 dicembre 2009)",
+   "tipo": "Norma",
+   "url": "https://www.fnob.it/wp-content/uploads/2013/10/decreto11dicembre2009.pdf"
   }
  ],
  "post": [
@@ -619,7 +635,7 @@
     "OR-02",
     "OR-28"
    ],
-   "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Le modalità di attivazione cambiano da Regione a Regione: il riferimento è la tua ASL. Per la salute dei tuoi bambini il riferimento resta il pediatra.",
+   "avvertenza": "Informazioni organizzative generali, aggiornate a novembre 2026. Le modalità di attivazione cambiano da Regione a Regione: il riferimento è la tua ASL. Per la salute dei tuoi bambini il riferimento resta il pediatra.",
    "domanda": "Dove trovare un referto",
    "titolo_seo": "Documenti sanitari di famiglia: dove trovarli",
    "strumento": "gestionale",
@@ -1427,7 +1443,8 @@
     "OR-30"
    ],
    "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS, aggiornate a novembre 2026. Importi e procedure cambiano: prima di muoverti controlla il sito INPS o chiedi a un patronato. Non è una valutazione del singolo caso. Non sostituiscono il parere del pediatra o del medico.",
-   "domanda": "Come si chiede l'accompagnamento"
+   "domanda": "Come si chiede l'accompagnamento",
+   "ricontrolla": "2027-01"
   },
   {
    "slug": "esenzione-ticket",
@@ -1454,13 +1471,13 @@
      ],
      [
       "E02",
-      "Disoccupati e familiari a carico",
+      "Disoccupati che hanno perso un lavoro dipendente, e familiari a carico",
       "Inferiore a 8.263,31 euro; 11.362,05 con il coniuge, più 516,46 per ogni figlio a carico"
      ],
      [
       "E03",
       "Titolari di assegno sociale e familiari a carico",
-      "Vale il diritto all'assegno sociale"
+      "Nessuna soglia di reddito nella legge"
      ],
      [
       "E04",
@@ -1471,7 +1488,7 @@
    },
    "perche": [
     "Il ticket è la quota che si paga per visite ed esami specialistici. Chi rientra in uno di questi quattro codici non la paga. Per chi ha più di 65 anni l'esenzione è personale: non si estende ai familiari.",
-    "Le Regioni possono aggiungere altre esenzioni, e le regole sui farmaci cambiano da Regione a Regione. Qui trovi solo i codici validi in tutta Italia, come li riportano le Regioni Emilia-Romagna e Lombardia."
+    "Le regole vengono da una legge nazionale (la n. 537 del 1993, come modificata nel 1994) e da un decreto del 2009 che affida il controllo al Sistema tessera sanitaria. Le Regioni possono aggiungere altre esenzioni, e le regole sui farmaci cambiano da Regione a Regione."
    ],
    "passi": [
     [
@@ -1480,11 +1497,11 @@
     ],
     [
      "Controlla se l'esenzione risulta già",
-     "In Emilia-Romagna, per esempio, si vede e si autocertifica dal Fascicolo sanitario elettronico, con i dati già compilati. Nella tua Regione chiedi all'ASL o al medico di famiglia, o guarda nel fascicolo."
+     "Il Sistema tessera sanitaria incrocia i redditi e assegna il codice: medico e ASL lo vedono. In Emilia-Romagna, per esempio, si controlla anche dal Fascicolo sanitario elettronico. Nella tua Regione chiedi all'ASL o al medico di famiglia."
     ],
     [
-     "Se non risulta, autocertifica",
-     "Si dichiara di avere i requisiti. È una dichiarazione sotto la propria responsabilità: va fatta solo se i numeri tornano."
+     "Se non risulta, autocertifica all'ASL",
+     "Si chiede all'ASL un certificato provvisorio, dichiarando reddito e nucleo familiare. Vale per l'anno solare in corso. È una dichiarazione sotto la propria responsabilità, e l'ASL la controlla: va fatta solo se i numeri tornano."
     ],
     [
      "Dillo al medico quando prescrive",
@@ -1508,12 +1525,15 @@
     "Ho segnato la scadenza"
    ],
    "fonti": [
+    "OR-33",
+    "OR-34",
     "OR-31",
     "OR-32",
     "OR-05"
    ],
-   "avvertenza": "Informazioni generali sui codici nazionali, tratte da documenti delle Regioni Emilia-Romagna e Lombardia e aggiornate a novembre 2026. Soglie e modalità possono cambiare, e ogni Regione ha regole proprie: prima di autocertificare chiedi all'ASL o al medico di famiglia. Non sostituiscono il parere del pediatra o del medico.",
-   "domanda": "Chi non paga il ticket"
+   "avvertenza": "Informazioni generali sui codici nazionali, tratte dalla legge, dal decreto del 2009 e da documenti delle Regioni Emilia-Romagna e Lombardia, aggiornate a novembre 2026. Soglie e modalità possono cambiare, e ogni Regione ha regole proprie: prima di autocertificare chiedi all'ASL o al medico di famiglia. Non sostituiscono il parere del pediatra o del medico.",
+   "domanda": "Chi non paga il ticket",
+   "ricontrolla": "2027-01"
   }
  ],
  "chi": {

@@ -472,7 +472,7 @@ dialog.foglio::backdrop{background:rgba(30,20,24,.45)}
 .gesto{background:var(--tinta);border-radius:var(--r4);padding:14px 16px;display:flex;flex-direction:column;gap:4px;align-self:stretch}
 .gesto p{font-size:1.0625rem;line-height:1.5}
 .risp .eta{align-self:stretch;font-weight:400}.risp .eta b{font-weight:800}
-.avviso.sicuro{display:flex;flex-direction:column;gap:10px;align-items:flex-start;padding:18px}
+.avviso.sicuro,.avviso.manca{display:flex;flex-direction:column;gap:10px;align-items:flex-start;padding:18px}
 .avviso.sicuro ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
 .ticks.no .ic-s{color:var(--marca-t)}
 .calc label span,.md-add label span{display:block;font-size:1rem;font-weight:700;color:var(--muted);margin-bottom:4px}
@@ -502,15 +502,20 @@ dialog.foglio::backdrop{background:rgba(30,20,24,.45)}
 @media print{
  #md>*{display:none!important}
  #md>.md-stampa{display:block!important;color:#000;font-family:var(--testo)}
- .ms-t{font:800 24pt/1.15 var(--titoli);margin:0 0 3pt}
- .ms-s{font-size:12pt;margin:0 0 8pt;padding-bottom:6pt;border-bottom:1.5pt solid #000}
- .md-stampa section{break-inside:avoid;margin:0 0 7pt}
- .md-stampa h2{font:800 17pt/1.2 var(--titoli);margin:0 0 2pt;color:#000}
- .md-stampa ul{margin:0;padding-left:16pt}
- .md-stampa li{font-size:15pt;line-height:1.3;margin:0 0 2pt}
+ /* la grandezza segue il numero di medicine: fino a 5 molto grande, fino a 8 grande (una pagina), oltre resta leggibile su più pagine */
+ .ms-g{--mf:24pt;--mh:22pt;--mg:13pt}.ms-m{--mf:20pt;--mh:19pt;--mg:6pt}.ms-p8{--mf:20pt;--mh:19pt;--mg:6pt}
+ .ms-t{font:800 28pt/1.1 var(--titoli);margin:0 0 2pt}
+ .ms-s{font-size:12pt;margin:0 0 6pt}
+ .ms-capo{font-size:15pt;line-height:1.35;margin:0 0 var(--mg);padding:6pt 0;border-top:1.5pt solid #000;border-bottom:1.5pt solid #000}
+ .md-stampa section{break-inside:avoid;margin:0 0 var(--mg)}
+ .md-stampa h2{font:800 var(--mh)/1.15 var(--titoli);margin:0 0 3pt;color:#000;border-bottom:1pt solid #000;padding-bottom:1pt}
+ .md-stampa ul{margin:0;padding:0;list-style:none}
+ .md-stampa li{display:flex;gap:9pt;align-items:flex-start;font-size:var(--mf);line-height:1.2;margin:0 0 3pt}
  .md-stampa li b{font-weight:800}
- .ms-p{font-size:10.5pt;margin-top:8pt;padding-top:5pt;border-top:1pt solid #000}
- @page{size:A4 portrait;margin:13mm}
+ .md-stampa li i{display:block;font-style:normal;font-size:14pt}
+ .ms-c{flex:none;width:19pt;height:19pt;border:1.8pt solid #000;border-radius:3pt;margin-top:2pt}
+ .ms-p{font-size:11pt;margin-top:6pt;padding-top:4pt;border-top:1pt solid #000}
+ @page{size:A4 portrait;margin:11mm}
 }
 /* terza tornata */
 .avviso.urgente{background:var(--tinta2);border:2px solid var(--marca-t)}
@@ -536,3 +541,14 @@ label.btn{cursor:pointer}
 details.fatta{border-bottom:1px solid var(--linea)}
 details.fatta>ul{color:var(--muted)}
 .fatta-r a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
+.dq-k{font:700 1rem var(--titoli);margin-top:6px}
+@media(max-width:560px){
+ .tbl.pila{border:0;background:none;overflow:visible}
+ .tbl.pila table,.tbl.pila tbody,.tbl.pila tr,.tbl.pila th,.tbl.pila td{display:block;width:auto}
+ .tbl.pila thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+ .tbl.pila tr{border:1px solid var(--linea);border-radius:var(--r4);background:var(--alto);padding:12px 14px;margin-bottom:10px}
+ .tbl.pila tbody th{white-space:normal;font:800 1.125rem/1.3 var(--titoli);padding:0 0 6px;border:0}
+ .tbl.pila td{padding:4px 0;border:0;font-size:1rem;line-height:1.45}
+ .tbl.pila td::before{content:attr(data-l) ": ";font-weight:800}
+ .tbl.pila tr.tua{background:var(--tinta2)}.tbl.pila tr.tua>*{background:none}
+}

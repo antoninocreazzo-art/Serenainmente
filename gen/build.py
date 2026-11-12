@@ -50,6 +50,8 @@ PER = {'routine-della-nanna': ('bambino', ['0-1', '1-3', '3-6']), 'risvegli-nott
 def per(slug): return PER.get(slug, ('bambino anziano', TUTTE_ETA))
 # guide che danno numeri e regole (le altre dicono cosa fare): la ricerca mette prima il «cosa fare» quando chi scrive ha un problema
 DATI = {'quanto-dorme-un-bambino'}
+# modi di dire che portano dritti a una guida (espressioni regolari, sul testo senza accenti)
+FRASI_GUIDA = {'esenzione-ticket': ['non (si |devo |deve |voglio |vuole )?pag', 'chi non paga', 'senza pagare', 'gratis'], 'spostare-disdire-pagare-visita': ['(devo|dove|come) (si )?pag']}
 # quando una guida ha la precedenza sulle altre dello stesso argomento per un'età (es. sonno a 1-3 anni)
 # parole in più per la ricerca (come le dice chi cerca), non compaiono nella pagina
 CHIAVI = {
@@ -316,11 +318,12 @@ def tabella(t):
     if not t: return ''
     pe = per_eta(t)
     th = ''.join(f'<th scope="col">{e(c)}</th>' for c in t['colonne'])
+    pila = max(len(c) for r in t['righe'] for c in r) > 34
     def tr(r):
         at = ' data-eta="%d-%d"' % eta_mesi(r[0]) if pe else ''
-        return f'<tr{at}>' + ''.join((f'<th scope="row">{e(c)}</th>' if i == 0 else f'<td>{e(c)}</td>') for i, c in enumerate(r)) + '</tr>'
+        return f'<tr{at}>' + ''.join((f'<th scope="row">{e(c)}</th>' if i == 0 else f'<td data-l="{e(t["colonne"][i])}">{e(c)}</td>') for i, c in enumerate(r)) + '</tr>'
     nota = '<p class="tua-n" data-tua-n hidden>In evidenza le righe delle età che hai indicato nella pagina iniziale.</p>' if pe else ''
-    return f'<section><h2>{e(t["titolo"])}</h2><div class="tbl"><table><thead><tr>{th}</tr></thead><tbody>{"".join(tr(r) for r in t["righe"])}</tbody></table></div>{nota}</section>'
+    return f'<section><h2>{e(t["titolo"])}</h2><div class="tbl{' pila' if pila else ''}"><table><thead><tr>{th}</tr></thead><tbody>{"".join(tr(r) for r in t["righe"])}</tbody></table></div>{nota}</section>'
 def strumento_breve(key):
     if not key: return ''
     h, t = {'gestionale': ('/gestionale/', 'Il gestionale di famiglia'), 'preparo': ('/strumenti/preparo-la-visita/', 'Apri «Preparo la visita»'), 'medicine': ('/strumenti/medicine-di-casa/', 'Apri «Medicine di casa»')}.get(key, (None, None))
@@ -414,6 +417,7 @@ for g in GUIDE:
     check = ''.join(f'<li><label><input type="checkbox" data-ck="{g["slug"]}-{i}"><span class="cbx" aria-hidden="true">{ic("check","ic-s")}</span><span>{e(x)}</span></label></li>' for i, x in enumerate(g.get('checklist', [])))
     cktext = e(g['titolo'] + '\n' + '\n'.join('☐ ' + x for x in g.get('checklist', [])) + '\nserenainmente.it/guide/' + g['slug'] + '/')
     d0 = datetime.date.fromisoformat(g['agg']); m6 = d0.month + 6; prossimo = f"{MESI[(m6 - 1) % 12]} {d0.year + (m6 - 1) // 12}"
+    if g.get('ricontrolla'): prossimo = f"{MESI[int(g['ricontrolla'][5:7]) - 1]} {g['ricontrolla'][:4]}"
     segnala = 'mailto:' + MAIL + '?subject=' + urllib.parse.quote('Segnalazione: ' + g['titolo'])
     fonti = ''.join(src_block(fid) for fid in g['fonti'])
     nf = len(g['fonti'])
@@ -640,7 +644,7 @@ pages.append(page('/salvati/', 'I tuoi salvati', 'Le pagine salvate, i promemori
 <section data-t-salvati hidden><h2 class="sec-t">Pagine salvate</h2><ul class="rows"></ul></section>
 <section data-t-liste hidden><h2 class="sec-t">Liste cominciate</h2><ul class="rows"></ul></section>
 <section data-t-strumenti hidden><h2 class="sec-t">Quello che hai scritto negli strumenti</h2><ul class="rows"></ul></section>
-<section data-t-promemoria hidden><h2 class="sec-t">Promemoria creati</h2><ul class="rows"></ul><p class="small">Sono nel calendario del tuo telefono: qui Serena ricorda solo di averli preparati.</p></section>
+<section data-t-promemoria hidden><h2 class="sec-t">Promemoria preparati</h2><ul class="rows"></ul><p class="small">Serena ha preparato il file. Il promemoria è nel calendario solo se hai aperto il file e scelto Calendario.</p></section>
 <section data-t-inizio><h2 class="sec-t">Da dove cominciare</h2><ul class="rows">{riga('~/guide/', 'Le guide', 'In ogni guida c\'è «Salva per dopo»', icona='book')}{riga('~/risorse/', 'Gli strumenti gratuiti', 'Quello che scrivi resta qui', icona='tools')}</ul></section>
 <p class="small"><button class="btn btn-line btn-sm" type="button" data-t-svuota hidden>Dimentica tutto quello che è in questa pagina</button></p>
 </section>''', cls='p-tuoi'))
@@ -830,6 +834,7 @@ for g in GUIDE:
     if mini(g['slug']): v['i'] = mini(g['slug'])
     if g['slug'] in PIU_CERCATE: v['top'] = 1
     if g['slug'] == 'domande-per-il-pediatra': v['dq'] = 1
+    if g['slug'] in FRASI_GUIDA: v['fr'] = FRASI_GUIDA[g['slug']]
     t = g.get('tabella')
     if per_eta(t):
         v['eta'] = dict(c=t['colonne'], r=[list(eta_mesi(r[0])) + r for r in t['righe']])
