@@ -333,12 +333,19 @@ W.addEventListener('pageswap',function(e){pulisci();if(RM||!e.viewTransition||!e
  var a=$$('main a[href]').filter(function(x){return x.pathname.replace(/index\.html$/,'')===u&&x.getClientRects().length&&x.querySelector('b')})[0];if(!a)return;
  var h=d.querySelector('.art-hd h1');if(h)h.style.viewTransitionName='none';T=a.querySelector('b');T.style.viewTransitionName='titolo'});
 })();
-/* Menu del telefono: si chiude anche toccando fuori, scorrendo la pagina, con Esc o scegliendo una voce. */
+/* Menu del telefono: resta aperto finché il dito è sul menu; la pagina dietro si attenua; si chiude toccando fuori (solo chiude), scorrendo molto la pagina
+   (almeno 40% dello schermo, minimo 240 px), con Esc o scegliendo una voce. */
 (function(){var m=document.querySelector('details.menu-m');if(!m)return;
+ var dentro=false,y0=0;
  function chiudi(){if(m.open)m.open=false}
- document.addEventListener('click',function(e){if(m.open&&!m.contains(e.target))chiudi()},true);
- var y0=0;m.addEventListener('toggle',function(){y0=window.scrollY});
- window.addEventListener('scroll',function(){if(m.open&&Math.abs(window.scrollY-y0)>24)chiudi()},{passive:true});
+ m.addEventListener('toggle',function(){y0=window.scrollY;document.documentElement.classList.toggle('menu-aperto',m.open)});
+ m.addEventListener('touchstart',function(){dentro=true},{passive:true});
+ document.addEventListener('touchend',function(){setTimeout(function(){dentro=false;y0=window.scrollY},50)},{passive:true});
+ document.addEventListener('touchcancel',function(){dentro=false},{passive:true});
+ /* il primo tocco fuori chiude soltanto: non apre per sbaglio quello che c'è sotto */
+ document.addEventListener('click',function(e){if(m.open&&!m.contains(e.target)){e.preventDefault();e.stopPropagation();chiudi()}},true);
+ window.addEventListener('scroll',function(){if(!m.open||dentro)return;
+  if(Math.abs(window.scrollY-y0)>Math.max(240,window.innerHeight*.4))chiudi()},{passive:true});
  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.open){chiudi();m.querySelector('summary').focus()}});
  m.addEventListener('click',function(e){if(e.target.closest('.menu-p a'))chiudi()});
 })();

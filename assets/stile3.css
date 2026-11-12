@@ -939,3 +939,8 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--corsivo);letter-
 @keyframes vt-qui{from{opacity:0}}
 @keyframes vt-sale{from{opacity:0;transform:translateY(8px)}}
 @media print{.rivela{opacity:1!important;transform:none!important}.vg-scena,.vg-indice,.ante{display:none!important}.vg-foto-m{display:none!important}}
+
+/* menu del telefono aperto: la pagina dietro si attenua, così è chiaro che toccandola il menu si chiude */
+main,footer{transition:opacity .15s}
+html.menu-aperto main,html.menu-aperto footer{opacity:.45}
+@media(prefers-reduced-motion:reduce){main,footer{transition:none}}
