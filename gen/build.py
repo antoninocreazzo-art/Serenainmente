@@ -15,7 +15,7 @@ PREVIEW = OUT != ROOT
 D = json.load(open(os.path.join(ROOT, 'gen', 'dati.json'), encoding='utf-8'))
 SITE = 'https://serenainmente.it'
 IG = 'https://www.instagram.com/serenainmente/'
-MAIL = 'privacy@serenainmente.it'   # indirizzo col dominio del sito (prima: gmail) — decisione da confermare
+MAIL = 'privacy@serenainmente.it'   # unico indirizzo di contatto (deciso dal presidente il 12/11/2026)
 e = html.escape
 MESI = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre']
 def data_it(s):
@@ -36,17 +36,26 @@ ARG = [
     ('crescita', 'Bambini e crescita', 'Sonno, routine e piccoli passi', 'sprout'),
 ]
 ARGN = {a[0]: a for a in ARG}
-GUIDA_ARG = {'domande-per-il-pediatra': 'salute', 'visita-specialistica-come-funziona': 'salute',
+GUIDA_ARG = {'risvegli-notturni': 'crescita', 'certificato-sport-bambini': 'salute', 'domande-per-il-pediatra': 'salute', 'visita-specialistica-come-funziona': 'salute',
              'spostare-disdire-pagare-visita': 'salute', 'documenti-sanitari-dove-trovarli': 'documenti',
              'pediatra-e-medico-di-base': 'documenti', 'cartellina-di-famiglia': 'organizzazione',
              'routine-della-nanna': 'crescita'}
 # per chi è utile ogni pagina («Di chi ti prendi cura?» in home). Non è contenuto: è un'etichetta per ordinare.
-PER = {'routine-della-nanna': 'bambino', 'quanto-dorme-un-bambino': 'bambino', 'domande-per-il-pediatra': 'bambino',
-       'iscrizioni-nido-e-scuola': 'bambino', 'carta-identita-bambini': 'bambino', 'certificato-vaccinale': 'bambino',
-       'visita-specialistica-come-funziona': 'bambino', 'lista-medicine-genitore-anziano': 'anziano'}
+TUTTE_ETA = ['0-1', '1-3', '3-6', '6-12', '13-18']
+PER = {'routine-della-nanna': ('bambino', ['0-1', '1-3', '3-6']), 'risvegli-notturni': ('bambino', ['1-3']),
+       'quanto-dorme-un-bambino': ('bambino', TUTTE_ETA), 'domande-per-il-pediatra': ('bambino', TUTTE_ETA),
+       'iscrizioni-nido-e-scuola': ('bambino', ['0-1', '1-3', '3-6']), 'carta-identita-bambini': ('bambino', TUTTE_ETA),
+       'certificato-vaccinale': ('bambino', ['0-1', '1-3', '3-6']), 'visita-specialistica-come-funziona': ('bambino', TUTTE_ETA),
+       'certificato-sport-bambini': ('bambino', ['6-12', '13-18']), 'lista-medicine-genitore-anziano': ('anziano', [])}
+def per(slug): return PER.get(slug, ('bambino anziano', TUTTE_ETA))
+# guide che danno numeri e regole (le altre dicono cosa fare): la ricerca mette prima il «cosa fare» quando chi scrive ha un problema
+DATI = {'quanto-dorme-un-bambino'}
+# quando una guida ha la precedenza sulle altre dello stesso argomento per un'età (es. sonno a 1-3 anni)
 # parole in più per la ricerca (come le dice chi cerca), non compaiono nella pagina
 CHIAVI = {
  'routine-della-nanna': 'non dorme non vuole dormire addormentare addormenta sera nanna sonno letto capricci',
+ 'risvegli-notturni': 'si sveglia risvegli notturni notte piange non dorme sonno svegliarsi dormire 18 mesi due anni',
+ 'certificato-sport-bambini': 'sport certificato medico sportivo non agonistico palestra piscina calcio nuoto danza ginnastica attività fisica movimento elettrocardiogramma',
  'quanto-dorme-un-bambino': 'quante ore dorme poco troppo sonnellino pisolino sveglia notte neonato',
  'domande-per-il-pediatra': 'visita pediatra domande dottore bilancio di salute controllo domani appuntamento',
  'visita-specialistica-come-funziona': 'specialista impegnativa ricetta cup prenotare lista d\'attesa',
@@ -96,6 +105,7 @@ P = {
  'sun': '<path d="M5 17h14M8 21h8"/><path d="M6 17a6 6 0 0 1 12 0"/><path d="M12 5v2M4.5 9.5 6 11M19.5 9.5 18 11"/>',
  'moon': '<path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z"/>',
  'bookmark': '<path d="M6 4h12v17l-6-4.5L6 21z"/>',
+ 'sound': '<path d="M4 10v4h3l5 4V6L7 10z"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/>',
  'zoom': '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/>',
 }
 def ic(n, cls='ic'):
@@ -190,7 +200,7 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None):
 <div class="ft-brand"><a class="brand" href="~/">{LOGO}</a><p>Guide brevi con le loro fonti, strumenti gratuiti e parole in cui ritrovarsi, per chi si prende cura della famiglia.</p>
 <a class="ft-ig" href="{IG}" rel="noopener" data-umami-event="instagram">{ic('insta')} Segui @serenainmente</a></div>
 <nav aria-label="Esplora"><h2>Esplora</h2><ul><li><a href="~/guide/">Guide</a></li><li><a href="~/risorse/">Strumenti gratuiti</a></li><li><a href="~/gestionale/">Il gestionale di famiglia</a></li>{FRASI_LI}</ul></nav>
-<nav aria-label="Serena"><h2>Serena</h2><ul><li><a href="~/chi-e-serena/">Chi è Serena</a></li><li><a href="~/metodo/">Il metodo</a></li><li><a href="~/fonti/">Le fonti</a></li><li><a href="~/privacy/">Privacy</a></li><li><a href="~/note-legali/">Note legali</a></li><li><a href="mailto:{MAIL}">Scrivi a Serena</a></li></ul></nav>
+<nav aria-label="Serena"><h2>Serena</h2><ul><li><a href="~/chi-e-serena/">Chi è Serena</a></li><li><a href="~/metodo/">Il metodo</a></li><li><a href="~/fonti/">Le fonti</a></li><li><a href="~/privacy/">Privacy</a></li><li><a href="~/note-legali/">Note legali</a></li><li><a href="mailto:{MAIL}?subject=Segnalazione">Scrivi o segnala un errore</a></li></ul></nav>
 </div>
 <div class="ft-low"><p>Serena è ideata e curata da una persona, con il supporto dell'intelligenza artificiale per testi, immagini e verifica delle fonti. Informazioni generali: non sostituiscono il parere del pediatra o del medico.</p>
 <p>Questo sito non usa cookie e non ti chiede dati. Come contiamo le visite: <a href="~/privacy/">Privacy</a>. © {datetime.date.today().year} serenainmente.it <button class="btn btn-line btn-sm" type="button" data-tema-auto hidden>Torna all'aspetto che segue l'ora</button></p></div>
@@ -230,7 +240,9 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None):
 FONTI = {f['id']: f for f in D['fonti']}
 def src_block(fid):
     f = FONTI[fid]; dom = f['url'].split('/')[2].replace('www.', '')
-    return f'''<li class="src"><span class="org">{e(f['ente'])}, {e(str(f['anno']))}</span><span class="ttl">{e(f['titolo'])}</span><span class="type">{e(f['tipo'])}</span><a href="{e(f['url'])}" rel="noopener">Apri la fonte su {e(dom)} {ic('arrow','ic-s')}</a></li>'''
+    it = dom.endswith('.it') or dom.endswith('.gov.it')
+    nota = f'<span class="type">{e(f["nota"])}</span>' if f.get('nota') else ''
+    return f'''<li class="src"><span class="org">{e(f['ente'])}, {e(str(f['anno']))}</span><span class="ttl">{e(f['titolo'])}</span><span class="type">{e(f['tipo'])}{'' if it else ' · pagina in inglese'}</span>{nota}<a href="{e(f['url'])}" rel="noopener">Apri la fonte su {e(dom)} {ic('arrow','ic-s')}</a></li>'''
 
 def share(path, title, domanda='Ti è utile? Mandala a chi ne ha bisogno.'):
     url = SITE + path
@@ -277,10 +289,10 @@ SP_INFO = {
    orient='verticale', guida='domande-per-il-pediatra', tool='preparo'),
  'lista-delle-medicine': dict(
    seo='Lista dei farmaci da stampare per anziani e familiari (PDF gratis)', h1='La lista delle medicine, scritta insieme',
-   intro='Un foglio A4 per chi segue un genitore o un nonno: le medicine di ogni giorno, quelle solo al bisogno, il medico e la farmacia. Si compila a quattro mani, con chi le prende: serve a ricordare, non a decidere.',
-   contiene=['Nome, medico di famiglia e farmacia', 'Allergie o medicine da evitare', 'Le medicine di ogni giorno: quanto, quando, fino a quando', 'Le medicine solo quando servono', 'Le domande per la prossima visita'],
-   come=['Scrivetela insieme, con le confezioni davanti.', 'Una copia nel portafoglio, una sul frigo.', 'Portatela a ogni visita e aggiornatela quando il medico cambia qualcosa.'],
-   orient='orizzontale', guida='lista-medicine-genitore-anziano', tool='gestionale'),
+   intro='Un foglio A4 verticale, a caratteri grandi, per chi segue un genitore o un nonno: le medicine di ogni giorno, quelle solo al bisogno, il medico e la farmacia. Si compila a quattro mani, con chi le prende: serve a ricordare, non a decidere.',
+   contiene=['Nome, medico di famiglia e farmacia', 'Allergie o medicine da evitare', 'Dodici righe per le medicine di ogni giorno: quanto e quando', 'Dietro: le medicine solo quando servono', 'Le domande per la prossima visita'],
+   come=['Scrivetela insieme, con le confezioni davanti.', 'Stampala fronte e retro: sono due pagine.', 'Una copia nel portafoglio, una sul frigo.', 'Portatela a ogni visita e aggiornatela quando il medico cambia qualcosa.'],
+   orient='verticale', guida='lista-medicine-genitore-anziano', tool='medicine'),
 }
 def eta_mesi(s):
     """«0-3 mesi» → (0, 3); «1-2 anni» → (12, 35). Serve a evidenziare la riga giusta."""
@@ -297,16 +309,25 @@ def tabella(t):
         return f'<tr{at}>' + ''.join((f'<th scope="row">{e(c)}</th>' if i == 0 else f'<td>{e(c)}</td>') for i, c in enumerate(r)) + '</tr>'
     nota = '<p class="tua-n" data-tua-n hidden>In evidenza la riga dell\'età che hai indicato nella pagina iniziale.</p>' if per_eta else ''
     return f'<section><h2>{e(t["titolo"])}</h2><div class="tbl"><table><thead><tr>{th}</tr></thead><tbody>{"".join(tr(r) for r in t["righe"])}</tbody></table></div>{nota}</section>'
+def strumento_breve(key):
+    if not key: return ''
+    h, t = {'gestionale': ('/gestionale/', 'Il gestionale di famiglia'), 'preparo': ('/strumenti/preparo-la-visita/', 'Apri «Preparo la visita»'), 'medicine': ('/strumenti/medicine-di-casa/', 'Apri «Medicine di casa»')}.get(key, (None, None))
+    if key == 'gestionale': return ''
+    if not h: f = key.split(':', 1)[1]; h, t = f'/stampabili/{f}/', 'Guarda il foglio da stampare'
+    return f'<a class="btn btn-full" href="~{h}" data-umami-event="guida-strumento-alto">{t} {ic("arrow","ic-s")}</a>'
 def strumento_box(key):
     if not key: return ''
     if key == 'gestionale':
         return f'''<aside class="tool"><span class="chip">Strumento gratuito</span><h2>Il gestionale di famiglia</h2><p>Visite, scadenze e documenti in un file solo. I dati restano tuoi.</p><a class="btn" href="~/gestionale/" data-umami-event="guida-strumento" data-umami-event-tool="gestionale">Scopri il gestionale {ic('arrow','ic-s')}</a></aside>'''
     if key == 'preparo':
         return f'''<aside class="tool"><span class="chip">Strumento gratuito, dal telefono</span><h2>Preparo la visita</h2><p>Scrivi a casa cosa hai notato e le domande in ordine; in ambulatorio le hai davanti, con lo spazio per le risposte. Resta solo sul tuo telefono.</p><a class="btn" href="~/strumenti/preparo-la-visita/" data-umami-event="guida-strumento" data-umami-event-tool="preparo">Apri lo strumento {ic('arrow','ic-s')}</a></aside>'''
+    if key == 'medicine':
+        return f'''<aside class="tool"><span class="chip">Strumento gratuito, dal telefono</span><h2>Medicine di casa</h2><p>Scrivi la lista una volta: la stampi grande, la mandi a un familiare o al medico, e il telefono ti ricorda gli orari. Resta solo sul tuo telefono.</p><div class="row"><a class="btn" href="~/strumenti/medicine-di-casa/" data-umami-event="guida-strumento" data-umami-event-tool="medicine">Apri lo strumento {ic('arrow','ic-s')}</a><a class="btn btn-line" href="~/stampabili/lista-delle-medicine/">Oppure il foglio da stampare</a></div></aside>'''
     f = key.split(':', 1)[1]; t, d = STN[f]
     return f'''<aside class="tool"><span class="chip">Foglio da stampare, gratis</span><h2>{e(t)}</h2><p>{e(d)}. Un foglio da compilare a penna.</p><div class="row"><a class="btn" href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}">{ic('download','ic-s')} Scarica il foglio (PDF)</a><a class="btn btn-line" href="~/stampabili/{f}/">Guardalo prima</a></div></aside>'''
 # (indirizzo, titolo, descrizione, icona, chiave, per chi, miniatura, etichetta)
 TOOLS = [('/strumenti/preparo-la-visita/', 'Preparo la visita', 'Le domande in ordine e lo spazio per le risposte. Si usa dal telefono.', 'list', 'preparo', 'bambino anziano', None, 'Dal telefono'),
+         ('/strumenti/medicine-di-casa/', 'Medicine di casa', 'La lista delle medicine, da stampare grande o mandare, con i promemoria degli orari.', 'clock', 'medicine', 'anziano', None, 'Dal telefono'),
          ('/gestionale/', 'Il gestionale di famiglia', 'Visite, scadenze, documenti e la settimana in un file solo.', 'calendar', 'gestionale', 'bambino anziano', mini('gestionale'), 'File gratuito')] + \
         [(f'/stampabili/{f}/', t, d + '.', 'download', f, ST_PER[f], mini('foglio-' + f), 'Da stampare') for f, t, d in STAMPABILI]
 def tools_fila():
@@ -318,32 +339,38 @@ def tools_fila():
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.worksheet.datavalidation import DataValidation
+from openpyxl.formatting.rule import FormulaRule
 def checklist_xlsx(g):
-    """Crea guide/<slug>/checklist.xlsx con la checklist della guida."""
-    wb = Workbook(); ws = wb.active; ws.title = 'Checklist'
-    malva, ink, rosa = '97606F', '3A2C30', 'F4E9EC'
-    ws.column_dimensions['A'].width = 8; ws.column_dimensions['B'].width = 60; ws.column_dimensions['C'].width = 28
+    """Crea guide/<slug>/checklist.xlsx: nella colonna «Fatto» si sceglie Sì da un menu, e la riga si colora e si barra."""
+    wb = Workbook(); ws = wb.active; ws.title = 'Lista'
+    malva, ink = '97606F', '3A2C30'
+    ws.column_dimensions['A'].width = 11; ws.column_dimensions['B'].width = 60; ws.column_dimensions['C'].width = 28
     ws['A1'] = g['titolo']; ws['A1'].font = Font(name='Georgia', size=16, bold=True, color=ink); ws.merge_cells('A1:C1')
-    ws['A2'] = g['sommario']; ws['A2'].font = Font(size=11, italic=True, color='7A6569'); ws.merge_cells('A2:C2')
+    ws['A2'] = 'Tocca una casella della colonna «Fatto» e scegli Sì: la riga si colora.'; ws['A2'].font = Font(size=11, italic=True, color='5F4D52'); ws.merge_cells('A2:C2')
     ws.row_dimensions[1].height = 28; ws.row_dimensions[2].height = 20
     for col, t in zip('ABC', ['Fatto', 'Cosa', 'Note']):
         c = ws[f'{col}4']; c.value = t; c.font = Font(bold=True, color='FFFFFF'); c.fill = PatternFill('solid', fgColor=malva)
         c.alignment = Alignment(vertical='center'); ws.row_dimensions[4].height = 22
-    thin = Side(style='thin', color='EADCDF')
-    dv = DataValidation(type='list', formula1='"☐,☑"', allow_blank=True); ws.add_data_validation(dv)
+    thin = Side(style='thin', color='EADCDF'); box = Side(style='medium', color=malva)
+    dv = DataValidation(type='list', formula1='"Sì,No"', allow_blank=True, showDropDown=False)
+    dv.promptTitle = 'Fatto?'; dv.prompt = 'Scegli Sì quando è fatto'; dv.showInputMessage = True; ws.add_data_validation(dv)
+    n = len(g.get('checklist', []))
     for i, item in enumerate(g.get('checklist', []), start=5):
-        ws[f'A{i}'] = '☐'; ws[f'A{i}'].alignment = Alignment(horizontal='center', vertical='center'); ws[f'A{i}'].font = Font(size=14, color=malva)
-        ws[f'B{i}'] = item; ws[f'B{i}'].alignment = Alignment(wrap_text=True, vertical='center'); ws.row_dimensions[i].height = 24
+        ws[f'A{i}'].alignment = Alignment(horizontal='center', vertical='center'); ws[f'A{i}'].font = Font(size=12, bold=True, color=malva)
+        ws[f'A{i}'].border = Border(left=box, right=box, top=box, bottom=box)
+        ws[f'B{i}'] = item; ws[f'B{i}'].alignment = Alignment(wrap_text=True, vertical='center'); ws.row_dimensions[i].height = 26
         dv.add(ws[f'A{i}'])
-        for col in 'ABC':
-            ws[f'{col}{i}'].border = Border(bottom=thin)
-            if i % 2: ws[f'{col}{i}'].fill = PatternFill('solid', fgColor='FBF6F4')
-    n = 5 + len(g.get('checklist', [])) + 1
-    ws[f'B{n}'] = f"Da serenainmente.it/guide/{g['slug']}/ · {g['avvertenza']}"; ws[f'B{n}'].font = Font(size=9, color='7A6569'); ws[f'B{n}'].alignment = Alignment(wrap_text=True); ws.merge_cells(f'B{n}:C{n}'); ws.row_dimensions[n].height = 40
+        for col in 'BC': ws[f'{col}{i}'].border = Border(bottom=thin)
+    if n:
+        ws.conditional_formatting.add(f'A5:C{4 + n}', FormulaRule(formula=['$A5="Sì"'], fill=PatternFill('solid', bgColor='E3ECDD', fgColor='E3ECDD'), font=Font(strike=True, color='5F4D52')))
+        ws[f'B{6 + n}'] = '=COUNTIF(A5:A%d,"Sì")&" su %d fatte"' % (4 + n, n); ws[f'B{6 + n}'].font = Font(bold=True, color=malva)
+    k = 8 + n
+    ws[f'B{k}'] = f"Da serenainmente.it/guide/{g['slug']}/ · {g['avvertenza']}"; ws[f'B{k}'].font = Font(size=9, color='5F4D52'); ws[f'B{k}'].alignment = Alignment(wrap_text=True, vertical='top'); ws.merge_cells(f'B{k}:C{k}'); ws.row_dimensions[k].height = 54
     ws.freeze_panes = 'A5'; ws.sheet_view.showGridLines = False
     ws.page_setup.orientation = 'portrait'; ws.page_setup.fitToWidth = 1; ws.print_options.horizontalCentered = True
     d = os.path.join(ROOT, 'guide', g['slug']); os.makedirs(d, exist_ok=True)
     wb.save(os.path.join(d, 'checklist.xlsx'))
+
 
 # ---------- guide ----------
 def azioni_lista(g, cktext):
@@ -356,11 +383,13 @@ def azioni_lista(g, cktext):
 for g in GUIDE:
     a = ARGN[g['arg']]
     if g.get('checklist'): checklist_xlsx(g)
-    steps = ''.join(f'<li id="passo-{i+1}"><b>{e(s[0])}</b><span>{e(s[1])}</span></li>' for i, s in enumerate(g['passi']))
+    steps = ''.join(f'<li id="passo-{i+1}" data-leggi><b>{e(s[0])}</b><span>{e(s[1])}</span></li>' for i, s in enumerate(g['passi']))
     breve = ''.join(f'<li><a href="#passo-{i+1}">{e(s[0])}</a></li>' for i, s in enumerate(g['passi']))
-    errori = ''.join(f'<li>{e(x)}</li>' for x in g.get('errori', []))
+    errori = ''.join(f'<li data-leggi>{e(x)}</li>' for x in g.get('errori', []))
     check = ''.join(f'<li><label><input type="checkbox" data-ck="{g["slug"]}-{i}"><span class="cbx" aria-hidden="true">{ic("check","ic-s")}</span><span>{e(x)}</span></label></li>' for i, x in enumerate(g.get('checklist', [])))
     cktext = e(g['titolo'] + '\n' + '\n'.join('☐ ' + x for x in g.get('checklist', [])) + '\nserenainmente.it/guide/' + g['slug'] + '/')
+    d0 = datetime.date.fromisoformat(g['agg']); m6 = d0.month + 6; prossimo = f"{MESI[(m6 - 1) % 12]} {d0.year + (m6 - 1) // 12}"
+    segnala = 'mailto:' + MAIL + '?subject=' + urllib.parse.quote('Segnalazione: ' + (g.get('titolo_seo') or g['titolo']))
     fonti = ''.join(src_block(fid) for fid in g['fonti'])
     nf = len(g['fonti'])
     corr = [x for x in GUIDE if x is not g and x['arg'] == g['arg']] + [x for x in GUIDE if x is not g and x['arg'] != g['arg']]
@@ -371,23 +400,23 @@ for g in GUIDE:
     body = f'''<article class="art">
 <header class="art-hd wrap-t">
 <nav class="crumbs" aria-label="Percorso"><a href="~/guide/#{a[0]}">‹ Guide · {e(a[1])}</a></nav>
-<h1>{e(g['titolo'])}</h1>
+<h1 data-leggi>{e(g['titolo'])}</h1>
 <p class="meta"><span>{ic('clock','ic-s')} {g['min']} min di lettura</span><span>Aggiornata il {data_it(g['agg'])}</span>{fonti_meta}</p>
-<div class="azioni noprint">{salva(gp, g.get('titolo_seo') or g['titolo'])}</div>
+<div class="azioni noprint">{salva(gp, g.get('titolo_seo') or g['titolo'])}<button class="btn btn-line btn-sm" type="button" hidden data-ascolta data-umami-event="ascolta-guida">{ic('sound','ic-s')}<span>Ascolta la guida</span></button></div>
 </header>
 <div class="art-body wrap-t">
-<section class="breve vetro" aria-label="In breve"><p>{e(g['sommario'])}</p>
+<section class="breve vetro" aria-label="In breve"><p data-leggi>{e(g['sommario'])}</p>
 <dl class="facts"><div><dt>Tempo</dt><dd>{e(g['tempo'])}</dd></div><div><dt>Cosa serve</dt><dd>{e(g['serve'])}</dd></div></dl>
-<ol>{breve}</ol></section>
+<ol>{breve}</ol>{strumento_breve(g.get('strumento'))}</section>
 {tabella(g.get('tabella'))}
-<section><h2>Come si fa</h2><ol class="steps">{steps}</ol></section>
+<section><h2 data-leggi>Come si fa</h2><ol class="steps">{steps}</ol></section>
+<section><h2 data-leggi>Perché aiuta</h2>{''.join(f'<p data-leggi>{e(p)}</p>' for p in g['perche'])}</section>
+{f'<section class="box box-rosa"><h2 data-leggi>Errori comuni</h2><ul class="plain">{errori}</ul></section>' if errori else ''}
+{lista}
 {strumento_box(g.get('strumento'))}
 {foto(g['slug'], '', 'art-img', sizes='(min-width:760px) 700px, 100vw')}
-<section><h2>Perché aiuta</h2>{''.join(f'<p>{e(p)}</p>' for p in g['perche'])}</section>
-{f'<section class="box box-rosa"><h2>Errori comuni</h2><ul class="plain">{errori}</ul></section>' if errori else ''}
-{lista}
-{f'<section id="fonti"><h2>Le fonti</h2><p class="small">Ogni dato di questa pagina viene da qui. Collegamenti controllati il {data_it(g["agg"])}.</p><ul class="sources">{fonti}</ul></section>' if fonti else ''}
-<aside class="box box-line"><b>Da sapere</b><p>{e(g['avvertenza'])}</p><p class="small"><a href="~/metodo/">Come nascono e chi controlla le guide di Serena</a></p></aside>
+{f'<section id="fonti"><h2>Le fonti</h2><p class="small">Ogni dato di questa pagina viene da qui. Fonti controllate il {data_it(g["agg"])}; prossimo controllo entro {prossimo}.</p><ul class="sources">{fonti}</ul></section>' if fonti else ''}
+<aside class="box box-line"><b>Da sapere</b><p data-leggi>{e(g['avvertenza'])}</p><div class="row"><a class="btn btn-line btn-sm" href="~/metodo/">Come nasce una guida</a><a class="btn btn-line btn-sm" href="{segnala}" data-umami-event="segnala-errore">Segnala un errore</a></div></aside>
 {share(gp, g['titolo'])}
 </div>
 <section class="related wrap-t noprint"><div class="sec-hd"><h2>Continua a leggere</h2><a class="more" href="~/guide/">Tutte le guide {ic('arrow','ic-s')}</a></div>
@@ -463,7 +492,7 @@ pages.append(page('/gestionale/', 'Il gestionale di famiglia', 'Un file gratuito
 {''.join(f'<details class="piega"><summary>{e(a)}</summary><p>{e(b)}</p></details>' for a, b in SCHEDE)}</section>
 <figure class="shot"><img src="~/assets/gestionale/visite.webp" alt="La scheda Visite: data, ora, per chi, medico o struttura, stato, data entro cui disdire e ticket" loading="lazy" decoding="async" width="1800" height="478"><figcaption>La scheda Visite, con le righe di esempio che trovi nel file.</figcaption></figure>
 <section class="box box-salvia"><h2>Come si usa</h2><ul class="plain"><li>Comincia dalla scheda Famiglia: scrivi i nomi di casa.</li><li>Le celle da compilare hanno il testo blu; quelle nere si calcolano da sole. Le righe di esempio vanno cancellate.</li><li>Sul computer aprilo con Excel; sul telefono usa la copia in Fogli Google.</li><li>Il file non manda notifiche: ti mostra cosa arriva ogni volta che lo apri.</li><li>Non è un archivio medico: scrivi solo quello che serve. Il file resta dove lo salvi tu, e nessun dato arriva a Serena.</li></ul></section>
-<section><h2>Preferisci qualcosa di più semplice?</h2><ul class="rows">{riga('~/strumenti/preparo-la-visita/', 'Preparo la visita', 'Si usa dal telefono, senza scaricare niente', icona='list')}{riga('~/stampabili/settimana-sul-frigo/', 'La settimana di tutti', 'Un foglio da stampare e attaccare al frigo', mini('foglio-settimana-sul-frigo'))}</ul></section>
+<section><h2>Preferisci qualcosa di più semplice?</h2><ul class="rows">{riga('~/strumenti/preparo-la-visita/', 'Preparo la visita', 'Si usa dal telefono, senza scaricare niente', icona='list')}{riga('~/strumenti/medicine-di-casa/', 'Medicine di casa', 'Per chi segue una persona anziana: lista, stampa grande e promemoria', icona='clock')}{riga('~/stampabili/settimana-sul-frigo/', 'La settimana di tutti', 'Un foglio da stampare e attaccare al frigo', mini('foglio-settimana-sul-frigo'))}</ul></section>
 <p class="small">Informazioni organizzative generali. Per vaccini, terapie e documenti sanitari il riferimento resta il pediatra, il medico o la ASL.</p>
 {share('/gestionale/', 'Il gestionale di famiglia')}
 </section>'''))
@@ -473,7 +502,7 @@ ck_rows = ''.join(f'''<li class="due"><a class="rowl" href="~/guide/{g['slug']}/
 st_rows = ''.join(f'''<li class="due"><a class="rowl" href="~/stampabili/{f}/"><img src="~{mini('foglio-' + f)}" alt="" width="64" height="64" loading="lazy"><span class="t"><b>{e(t)}</b><small>{e(d)}</small></span></a><a class="dl" href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}" aria-label="Scarica «{e(t)}» in PDF">{ic('download','ic-s')} PDF</a></li>''' for f, t, d in STAMPABILI)
 pages.append(page('/risorse/', 'Strumenti gratuiti', 'Strumenti gratuiti per la famiglia: Preparo la visita, il gestionale di famiglia, fogli da stampare e le liste delle guide.', f'''
 <section class="ph-hd wrap-t"><h1>Strumenti gratuiti</h1><p class="lead">Da usare subito, senza registrazione. Quello che scrivi resta sul tuo telefono o computer.</p></section>
-<section class="wrap-t"><h2 class="sec-t">Dal telefono, senza scaricare niente</h2><ul class="rows">{riga('~/strumenti/preparo-la-visita/', 'Preparo la visita', 'Le domande in ordine e lo spazio per le risposte del medico', icona='list')}</ul></section>
+<section class="wrap-t"><h2 class="sec-t">Dal telefono, senza scaricare niente</h2><ul class="rows">{riga('~/strumenti/preparo-la-visita/', 'Preparo la visita', 'Le domande in ordine e lo spazio per le risposte del medico', icona='list')}{riga('~/strumenti/medicine-di-casa/', 'Medicine di casa', 'La lista delle medicine: si stampa grande, si manda, ricorda gli orari', icona='clock')}</ul></section>
 <section class="wrap-t"><h2 class="sec-t">Fogli da stampare</h2><ul class="rows">{st_rows}</ul></section>
 <section class="wrap-t"><h2 class="sec-t">Per chi usa il computer</h2><ul class="rows">{riga('~/gestionale/', 'Il gestionale di famiglia', 'Visite, scadenze, documenti e la settimana in un file Excel', mini('gestionale'))}</ul></section>
 <section class="wrap-t"><h2>Le liste da spuntare delle guide</h2><p class="lead-s">Ogni guida ha la sua lista: la spunti sul sito, la salvi in Note o la metti in calendario.</p><ul class="rows">{ck_rows}</ul></section>'''))
@@ -485,6 +514,8 @@ for f, t, d in STAMPABILI:
     rel = ''
     if I['tool'] == 'preparo':
         rel += riga('~/strumenti/preparo-la-visita/', 'Preparo la visita', 'La stessa cosa sul telefono, senza stampare', icona='list')
+    if I['tool'] == 'medicine':
+        rel += riga('~/strumenti/medicine-di-casa/', 'Medicine di casa', 'La stessa lista sul telefono, con i promemoria degli orari', icona='clock')
     if g: rel += riga_guida(g)
     if I['tool'] == 'gestionale':
         rel += riga('~/gestionale/', 'Il gestionale di famiglia', 'Visite, scadenze, documenti e la settimana in un file', mini('gestionale'))
@@ -504,7 +535,7 @@ for f, t, d in STAMPABILI:
 </div>
 <figure class="sp-prev"><button type="button" data-zoom aria-label="Guarda il foglio da vicino"><img src="~/assets/stampabili/{f}-sm.webp" srcset="~/assets/stampabili/{f}-sm.webp 560w, ~/assets/stampabili/{f}.webp 1100w" sizes="(min-width:960px) 46vw, 92vw" alt="Anteprima del foglio «{e(t)}»" width="{1100 if I['orient'] == 'orizzontale' else 778}" height="{778 if I['orient'] == 'orizzontale' else 1100}"></button><span class="lente">{ic('zoom','ic-s')} Guardalo da vicino</span></figure>
 <div class="sp-altro">
-<section class="box box-rosa noprint"><h2>Non hai una stampante adesso?</h2><div class="row">{salva(sp, t)}<button class="btn btn-line btn-sm" type="button" hidden data-share data-title="{e(I['h1'])}" data-url="{SITE}{sp}" data-umami-event="stampabile-manda">Mandalo a chi può stamparlo</button>{'<a class="btn btn-line btn-sm" href="~/strumenti/preparo-la-visita/">Fallo dal telefono</a>' if I['tool'] == 'preparo' else ''}</div></section>
+<section class="box box-rosa noprint"><h2>Non hai una stampante adesso?</h2><div class="row">{salva(sp, t)}<button class="btn btn-line btn-sm" type="button" hidden data-share data-title="{e(I['h1'])}" data-url="{SITE}{sp}" data-umami-event="stampabile-manda">Mandalo a chi può stamparlo</button>{'<a class="btn btn-line btn-sm" href="~/strumenti/preparo-la-visita/">Fallo dal telefono</a>' if I['tool'] == 'preparo' else ''}{'<a class="btn btn-line btn-sm" href="~/strumenti/medicine-di-casa/">Scrivila dal telefono</a>' if I['tool'] == 'medicine' else ''}</div></section>
 <section><h2>Cosa contiene</h2><ul class="ticks">{''.join(f'<li>{ic("check","ic-s")}<span>{e(x)}</span></li>' for x in I['contiene'])}</ul></section>
 <section><h2>Come usarlo</h2><ol class="sp-come">{''.join(f'<li>{e(x)}</li>' for x in I['come'])}</ol></section>
 </div>
@@ -559,14 +590,13 @@ pages.append(page('/metodo/', 'Il metodo', 'Come nascono e si controllano i cont
 # ---------- privacy ----------
 # Data vera dell'ultima modifica dei testi (non la data di oggi: il sito si
 # rigenera ogni mattina). Si cambia a mano quando cambia il testo.
-# Testo della pagina approvato dal presidente il 7/11/2026 (verifica privacy del sito).
-AGG_PRIVACY = '2026-11-07'
+# Testo della pagina approvato dal presidente il 7/11/2026 (verifica privacy del sito); righe sul sito 2035 approvate il 12/11/2026.
+AGG_PRIVACY = '2026-11-12'
 AGG_NOTE_LEGALI = '2026-10-21'
 PRIVACY_BODY = '<h2>Chi è responsabile dei dati</h2><p>Questo sito lo cura Antonino Creazzo, persona fisica. È il titolare del trattamento dei pochi dati descritti in questa pagina.</p><p>Per qualsiasi domanda sulla privacy scrivi a <a href="mailto:privacy@serenainmente.it">privacy@serenainmente.it</a>.</p><h2>In breve</h2><p>Non ti chiediamo dati. Non ci sono iscrizioni, moduli o account.</p><p>Quello che scrivi negli strumenti del sito resta sul tuo telefono o computer. A noi non arriva.</p><p>Ci sono solo due cose che, come per quasi tutti i siti, partono dal tuo browser:</p><ul><li>la richiesta delle pagine, che passa dal servizio che ospita il sito;</li><li>un conteggio delle visite, senza cookie.</li></ul><h2>Quando apri una pagina</h2><p>Il sito è ospitato da GitHub (GitHub, Inc., Stati Uniti). Come ogni servizio di questo tipo, GitHub riceve l\'indirizzo di rete (IP) da cui arriva la richiesta, il tipo di browser e la pagina richiesta. Li conserva per motivi di sicurezza, secondo le sue regole.</p><p>Senza questi dati la pagina non può arrivare al tuo schermo. Il motivo è il nostro interesse legittimo a far funzionare il sito e a proteggerlo.</p><p>Noi non vediamo questi dati.</p><h2>Come contiamo le visite</h2><p>Per capire quali pagine sono utili usiamo Umami (Umami Software, Inc., Stati Uniti). Umami non usa cookie e non salva niente sul tuo dispositivo.</p><p>A ogni pagina Umami riceve:</p><ul><li>l\'indirizzo di rete, che usa solo al momento e non conserva nelle statistiche;</li><li>il tipo di browser e di dispositivo, la lingua e la dimensione dello schermo;</li><li>la pagina visitata e il sito da cui arrivi;</li><li>i tocchi su alcuni pulsanti, come «Scarica il PDF». Mai quello che scrivi.</li></ul><p>Dall\'indirizzo di rete Umami ricava il Paese e la città approssimativi, e un codice di visita che non dice chi sei.</p><p>Noi vediamo solo totali: quante persone leggono una pagina, da quale canale arrivano, quanti scaricano un file. Non sappiamo chi sei e non creiamo profili.</p><p>Il motivo è il nostro interesse legittimo a capire quali contenuti servono. Per questo non c\'è un banner e non ti chiediamo il consenso.</p><p>Se nel browser hai attivato «Non tracciare», Umami non conta la tua visita. Puoi anche bloccare il conteggio con un blocco contenuti del browser: il sito funziona lo stesso.</p><p>Umami conserva le statistiche per 6 mesi. Le archivia su server nell\'Unione europea. Alcuni servizi tecnici di Umami, come la rete che distribuisce i file e i registri di sicurezza, si trovano comunque negli Stati Uniti. Umami tratta questi dati per conto nostro, con un contratto che lo obbliga a proteggerli.</p><h2>Cosa resta sul tuo telefono o computer</h2><p>Alcune parti del sito ricordano quello che fai usando la memoria del tuo browser. Non sono cookie e non arrivano a noi:</p><ul><li>le <b>spunte delle checklist</b> nelle guide;</li><li>quello che scrivi in <b>Preparo la visita</b>.</li></ul><p>Servono solo a ritrovare le cose quando torni. Puoi cancellarle quando vuoi:</p><ul><li>con «Azzera le spunte» o «Ricomincia da capo»;</li><li>cancellando i dati del sito dalle impostazioni del browser.</li></ul><p>Se il telefono o il computer lo usano anche altre persone, alla fine tocca «Ricomincia da capo».</p><h2>I file che scarichi</h2><p>Il gestionale di famiglia, i fogli da stampare e le checklist in Excel sono file. Restano dove li salvi tu.</p><p>Se usi «Apri in Fogli Google», la copia è tua, nel tuo Drive, con le regole di Google. Quello che ci scrivi non arriva a noi.</p><h2>Quando ci scrivi</h2><p>Se ci scrivi a <a href="mailto:privacy@serenainmente.it">privacy@serenainmente.it</a> o con un messaggio su Instagram, riceviamo il tuo indirizzo o il tuo nome utente e quello che scrivi.</p><p>Li usiamo solo per risponderti. Li teniamo per 12 mesi dall\'ultimo messaggio, poi li cancelliamo.</p><p>L\'email passa da Google (Gmail). I messaggi su Instagram passano da Meta, ciascuno con le sue regole.</p><p>Per favore, non mandarci dati sulla salute tua o dei tuoi figli: non possiamo darti indicazioni mediche.</p><h2>Quando esci dal sito</h2><p>I link alle fonti, a Instagram, a WhatsApp e a Fogli Google ti portano su altri siti, con le loro regole. Noi non riceviamo niente di quello che fai lì.</p><p>Se mandi qualcosa con WhatsApp o con «Condividi», il testo lo mandi tu, con l\'app che scegli.</p><h2>Fuori dall\'Unione europea</h2><p>GitHub e Umami sono aziende degli Stati Uniti. I dati tecnici descritti sopra possono quindi essere trattati negli Stati Uniti.</p><p>Questo avviene con le garanzie previste dal GDPR: la decisione della Commissione europea sul Data Privacy Framework UE‑USA, per i fornitori che vi aderiscono, e le clausole contrattuali tipo approvate dalla Commissione.</p><h2>I tuoi diritti</h2><p>Puoi chiederci in ogni momento di sapere quali dati tuoi abbiamo, di correggerli o di cancellarli, e di limitarne l\'uso.</p><p>Puoi anche <b>opporti</b> all\'uso dei tuoi dati basato sul nostro interesse legittimo, per esempio al conteggio delle visite.</p><p>Scrivi a <a href="mailto:privacy@serenainmente.it">privacy@serenainmente.it</a>: ti rispondiamo entro un mese. Tieni conto che da un indirizzo di rete spesso non è possibile risalire a una persona, e che i dati delle statistiche non ci dicono chi sei.</p><p>Puoi anche presentare reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" rel="noopener">garanteprivacy.it</a>).</p><h2>Bambini</h2><p>Il sito è pensato per adulti. Non chiediamo dati a nessuno, nemmeno sui bambini.</p><h2>Se questa pagina cambia</h2><p>Se cambiamo il modo in cui trattiamo i dati, aggiorniamo questa pagina e la data qui sotto.</p>'
-# PROPOSTA 2035, DA APPROVARE prima di pubblicare (e poi aggiornare AGG_PRIVACY): il prototipo ricorda in locale
-# tre cose in più, quindi la pagina le deve elencare.
+# Righe aggiunte con il sito 2035 e approvate dal presidente il 12/11/2026: il sito ricorda in locale alcune cose in più.
 PRIVACY_BODY = PRIVACY_BODY.replace('<li>quello che scrivi in <b>Preparo la visita</b>.</li>',
-    '<li>quello che scrivi in <b>Preparo la visita</b>;</li><li>le pagine che <b>salvi per dopo</b>;</li><li>di chi ti prendi cura, se lo indichi nella pagina iniziale;</li><li>l\'aspetto chiaro o scuro e la grandezza del testo che scegli.</li></ul><p>Anche le parole che scrivi nella ricerca restano sul tuo telefono o computer: la ricerca lavora lì, senza mandarle a nessuno.</p><ul hidden>')
+    '<li>quello che scrivi in <b>Preparo la visita</b> e in <b>Medicine di casa</b>;</li><li>le pagine che <b>salvi per dopo</b>;</li><li>di chi ti prendi cura, se lo indichi nella pagina iniziale;</li><li>l\'aspetto chiaro o scuro e la grandezza del testo che scegli.</li></ul><p>Anche le parole che scrivi nella ricerca restano sul tuo telefono o computer: la ricerca lavora lì, senza mandarle a nessuno.</p><ul hidden>')
 PRIVACY_BODY = PRIVACY_BODY.replace('<ul hidden></ul>', '').replace('con «Azzera le spunte» o «Ricomincia da capo»;', 'con «Azzera le spunte», «Ricomincia da capo» o «Dimentica»;')
 pages.append(page('/privacy/', 'Privacy', 'Come serenainmente.it tratta i dati: niente cookie, niente profilazione, statistiche solo aggregate.', f'''
 <section class="ph-hd wrap-t"><h1>Privacy</h1><p class="lead">In breve: niente cookie, niente profilazione. Contiamo le visite solo in forma aggregata, e quello che scrivi negli strumenti resta sul tuo telefono.</p></section>
@@ -576,6 +606,9 @@ pages.append(page('/privacy/', 'Privacy', 'Come serenainmente.it tratta i dati: 
 # ---------- strumenti interattivi ----------
 PV = open(os.path.join(ROOT, 'gen', 'preparo.html'), encoding='utf-8').read().replace('{lock}', ic('lock','ic-s')).replace('{arrow}', ic('arrow','ic-s')).replace('{back}', '←').replace('{salva}', salva('/strumenti/preparo-la-visita/', 'Preparo la visita'))
 pages.append(page('/strumenti/preparo-la-visita/', 'Preparo la visita', 'Strumento gratuito: scrivi cosa hai notato e le domande per il pediatra o il medico, e in ambulatorio le hai davanti. Resta solo sul tuo telefono.', PV, seo='Preparo la visita: le domande per il medico', cls='p-tool'))
+
+MD = open(os.path.join(ROOT, 'gen', 'medicine.html'), encoding='utf-8').read().replace('{lock}', ic('lock','ic-s')).replace('{check}', ic('check','ic-s')).replace('{salva}', salva('/strumenti/medicine-di-casa/', 'Medicine di casa'))
+pages.append(page('/strumenti/medicine-di-casa/', 'Medicine di casa', 'Strumento gratuito: la lista delle medicine di una persona, da stampare grande o mandare, con i promemoria degli orari. Resta solo sul tuo telefono.', MD, seo='Medicine di casa: la lista dei farmaci sul telefono', cls='p-tool'))
 
 # ---------- da instagram (link in bio) ----------
 IGL = sorted([x for x in D.get('instagram', []) if x['data'] <= OGGI], key=lambda x: x['data'], reverse=True)
@@ -667,9 +700,10 @@ ORA = {'mattino': ('/strumenti/preparo-la-visita/', 'list', 'Una visita tra poch
        'notte': ('/guide/quanto-dorme-un-bambino/', 'moon', 'Quanto deve dormire, alla sua età?', 'Le ore età per età, con le fonti. Sono intervalli larghi.')}
 ora_cards = ''.join(f'<a class="ora-card vetro cede" data-per="{k}" href="~{h}" data-umami-event="home-ora" data-umami-event-ora="{k}"><span class="tic">{ic(i)}</span><span><b>{e(t)}</b><small>{e(s)}</small></span>{ic("arrow","ic-s")}</a>' for k, (h, i, t, s) in ORA.items())
 # «da dove partire»: tutte le guide e gli strumenti, il sito mostra i primi 4 adatti a chi legge
-partenze = [riga_guida(g, li=f' data-tag="{PER.get(g["slug"], "bambino anziano")}" data-base="{1 if i < 4 else 0}"') for i, g in enumerate(GUIDE)]
-partenze_a = [riga('~' + t[0], t[1], t[7] + ' · gratis', t[6], t[3], li=f' data-tag="{t[5]}" data-base="0"') for t in TOOLS if 'anziano' in t[5]]
-ordine = sorted(partenze_a + partenze, key=lambda s: 0 if 'data-tag="anziano"' in s else 1)  # con «anziano» scelto, in cima ciò che è fatto apposta
+def tag_li(chi, eta, base): return f' data-tag="{chi}" data-eta="{" ".join(eta)}" data-base="{base}"'
+partenze = [riga_guida(g, li=tag_li(*per(g['slug']), 1 if i < 4 else 0)) for i, g in enumerate(GUIDE)]
+partenze += [riga('~' + t[0], t[1], t[7] + ' · gratis', t[6], t[3], li=tag_li(t[5], [] if t[5] == 'anziano' else TUTTE_ETA, 0)) for t in TOOLS]
+ordine = partenze
 pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della famiglia: guide pratiche, dati con le loro fonti, strumenti gratuiti.', f'''
 <section class="hero wrap">
 <div class="hero-txt"><p class="eyebrow">{''.join(f'<span data-per="{k}">{v}</span>' for k, v in SALUTO.items())}</p>
@@ -681,11 +715,11 @@ pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della fam
 <p class="small">Guide brevi con le loro fonti, fogli da stampare e strumenti gratuiti. Senza registrazione e senza pubblicità.</p></div>
 {foto('hero', '', 'hero-img')}
 </section>
-<section class="wrap-t" data-salvati hidden><h2 class="sec-t"></h2><ul class="rows"></ul></section>
-<section class="wrap-t">
-<div class="per-te" hidden><h2>Di chi ti prendi cura?</h2><p class="lead-s">Serena mette in cima quello che ti serve.</p>
+<section class="wrap blocco-s" data-salvati hidden><h2 class="sec-t"></h2><ul class="rows"></ul></section>
+<section class="wrap blocco-s">
+<div class="per-te" hidden><h2>Di chi ti prendi cura?</h2><p class="lead-s">Scegli anche più di una persona: Serena mette in cima quello che vi serve, qui e nella ricerca.</p>
 <ul class="esempi"><li><button type="button" data-cura="bambino" aria-pressed="false">Di un bambino</button></li><li><button type="button" data-cura="anziano" aria-pressed="false">Di una persona anziana</button></li></ul>
-<div data-eta-box hidden><p class="lead-s" style="margin-top:14px">Quanti anni ha?</p><ul class="esempi">{''.join(f'<li><button type="button" data-eta="{k}" aria-pressed="false">{v}</button></li>' for k, v in [('0-1', 'Meno di 1'), ('1-3', '1-3'), ('3-6', '3-6'), ('6-12', '6-12'), ('13-18', '13-18')])}</ul></div>
+<div data-eta-box hidden><p class="lead-s" style="margin-top:14px">Quanti anni hanno i bambini? Puoi sceglierne più di una.</p><ul class="esempi">{''.join(f'<li><button type="button" data-eta="{k}" aria-pressed="false">{v}</button></li>' for k, v in [('0-1', 'Meno di 1 anno'), ('1-3', '1-3 anni'), ('3-6', '3-6 anni'), ('6-12', '6-12 anni'), ('13-18', '13-18 anni')])}</ul></div>
 <p class="small" style="margin:12px 0 4px">Lo ricorda solo questo telefono o computer. <button class="btn btn-line btn-sm" type="button" data-dimentica hidden>Dimentica</button></p></div>
 <ul class="rows" data-partenze>{''.join(ordine)}</ul>
 <a class="more" href="~/guide/">Tutte le guide {ic('arrow','ic-s')}</a>
@@ -705,12 +739,13 @@ pages_404 = page('/404/', 'Questa pagina non c\'è', 'Pagina non trovata.', f'''
 def voce(u, t, d, k, a, b='', **altro):
     return dict(u=u, t=t, d=d, k=k, a=a, b=b, **altro)
 IDX = []
-PIU_CERCATE = ['routine-della-nanna', 'domande-per-il-pediatra', 'spostare-disdire-pagare-visita', 'lista-medicine-genitore-anziano']
+PIU_CERCATE = ['routine-della-nanna', 'risvegli-notturni', 'domande-per-il-pediatra', 'spostare-disdire-pagare-visita', 'lista-medicine-genitore-anziano']
 for g in GUIDE:
     v = voce(f"/guide/{g['slug']}/", g.get('titolo_seo') or g['titolo'], g['sommario'], 'Guida',
              ' '.join([g['titolo'], g.get('titolo_seo', ''), g.get('domanda', ''), CHIAVI.get(g['slug'], '')]),
              ' '.join([g['sommario'], ARGN[g['arg']][1]] + [x for x, y in g['passi']] + g.get('checklist', [])),
-             m=g['min'], p=[s[0] for s in g['passi']], az='Leggi la guida')
+             m=g['min'], p=[s[0] for s in g['passi']], p1=g['passi'][0], az='Tutti i passi', c=per(g['slug'])[0], fa=per(g['slug'])[1])
+    if g['slug'] in DATI: v['g'] = 'dati'
     if mini(g['slug']): v['i'] = mini(g['slug'])
     if g['slug'] in PIU_CERCATE: v['top'] = 1
     t = g.get('tabella')
@@ -718,12 +753,14 @@ for g in GUIDE:
         v['eta'] = dict(c=t['colonne'], r=[list(eta_mesi(r[0])) + r for r in t['righe']])
     IDX.append(v)
 IDX.append(voce('/strumenti/preparo-la-visita/', 'Preparo la visita', 'Scrivi a casa cosa hai notato e le domande in ordine; in ambulatorio le hai davanti, con lo spazio per le risposte.', 'Strumento gratuito',
-                'preparo la visita domande pediatra medico dottore ambulatorio domani appuntamento', 'strumento telefono appuntare risposte specialista', az='Apri lo strumento'))
+                'preparo la visita domande pediatra medico dottore ambulatorio domani appuntamento', 'strumento telefono appuntare risposte specialista', az='Apri lo strumento', c='bambino anziano', fa=TUTTE_ETA))
+IDX.append(voce('/strumenti/medicine-di-casa/', 'Medicine di casa', 'La lista delle medicine di una persona: la stampi grande, la mandi a un familiare o al medico, e il telefono ti ricorda gli orari.', 'Strumento gratuito',
+                'medicine di casa lista medicine farmaci pastiglie pillole compresse terapia promemoria orari ricordare', 'anziano anziana nonna nonno mamma papà badante stampare grande', az='Apri lo strumento', c='anziano', fa=[]))
 IDX.append(voce('/gestionale/', 'Il gestionale di famiglia', 'Visite, scadenze e documenti in un file solo, gratuito.', 'File gratuito',
                 'gestionale di famiglia organizzare settimana scadenze calendario agenda promemoria excel fogli google', 'visite documenti impegni file scaricare', az='Scopri il gestionale', i=mini('gestionale')))
 for f, t, d in STAMPABILI:
     IDX.append(voce(f'/stampabili/{f}/', t, d + '.', 'Foglio da stampare', t + ' stampare foglio pdf planner ' + {'settimana-sul-frigo': 'settimana organizzare frigo', 'domande-per-il-pediatra': 'pediatra visita domande', 'lista-delle-medicine': 'medicine farmaci pastiglie anziano nonna nonno mamma papà terapia'}[f],
-                    d + ' ' + ' '.join(SP_INFO[f]['contiene']), az='Guarda il foglio', i=mini('foglio-' + f)))
+                    d + ' ' + ' '.join(SP_INFO[f]['contiene']), az='Guarda il foglio', i=mini('foglio-' + f), c=ST_PER[f], fa=[] if ST_PER[f] == 'anziano' else TUTTE_ETA))
 IDX.append(voce('/chi-e-serena/', 'Chi è Serena', D['chi']['sommario'], 'Pagina', 'chi è serena siamo siete dietro autore progetto persona', 'trasparenza indipendenza valori'))
 IDX.append(voce('/metodo/', 'Il metodo', 'Come nasce un contenuto di Serena, da dove vengono i dati e chi decide cosa pubblicare.', 'Pagina', 'metodo come lavoriamo intelligenza artificiale ai affidabile fidarsi', 'fonti controllo revisione'))
 IDX.append(voce('/fonti/', 'Le fonti', 'Le fonti dei dati citati nelle guide e nei post, con i link alle pagine originali.', 'Pagina', 'fonti fonte studi dati oms istituto superiore di sanità', ''))
