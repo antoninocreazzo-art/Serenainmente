@@ -2,8 +2,8 @@ Foto del sito (direzione B «Sportello»). Dal 12/11/2026 il primo schermo, le q
 certificato-sport-bambini e indennita-di-accompagnamento hanno le foto definitive. Per cambiarne una si tiene lo STESSO NOME di file. Formato WebP. Niente volti riconoscibili, nessun telefono con lo schermo acceso.
 
 Primo schermo
-- hero.webp            computer, orizzontale 16:10, 2400 × 1500 px (oggi 1586 × 992: l'ingresso con l'appendiabiti), massimo 250 KB
-- hero-telefono.webp   telefono, verticale 4:5, 1080 × 1350 px. Oggi: la stessa scena in verticale; al telefono si vede la parte alta (object-position 50% 20%).
+- hero.webp            computer, orizzontale 16:10, 2400 × 1500 px (oggi 1586 × 992: l'ingresso con la panca e la porta aperta), massimo 250 KB
+- hero-telefono.webp   telefono, verticale 4:5, 1080 × 1350 px. Oggi: la stessa scena in verticale; al telefono si vede la parte alta (object-position 50% 12%).
 
 I cinque argomenti della pagina iniziale (4:3, 1200 × 900 px, massimo 120 KB ciascuna)
 - routine-della-nanna.webp                Sonno e nanna
