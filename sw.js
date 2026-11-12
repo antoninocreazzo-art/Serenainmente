@@ -1,7 +1,7 @@
 // serenainmente.it — le pagine già aperte o salvate si rileggono anche senza rete (per esempio in ambulatorio).
 // Non installa niente e non mostra inviti: tiene solo una copia nel browser. Si registra a pagina già caricata.
 // Il nome della copia porta la versione: quando cambia, le copie vecchie si cancellano.
-const VERSIONE = '3';
+const VERSIONE = '4';
 const C = 'serena-pagine-v' + VERSIONE, SENZA_RETE = '/senza-rete/';
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(C).then(k => k.add(SENZA_RETE)).catch(() => {})); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(k => Promise.all(k.filter(n => n !== C).map(n => caches.delete(n)))).then(() => self.clients.claim())));

@@ -159,7 +159,7 @@ $$('[data-calc]').forEach(function(box){var tipo=box.dataset.calc,N=$('[data-nas
    sc=new Date(n);sc.setFullYear(min.getFullYear());if(sc<min)sc.setFullYear(sc.getFullYear()+1);
    O.textContent='Rilasciata a '+(eta<3?'meno di 3 anni':eta<18?'un\'età tra 3 e 18 anni':'più di 18 anni')+': vale '+anni+' anni e scade al compleanno successivo, il '+fmt(sc)+'.'}
   var oggi=new Date();oggi.setHours(12,0,0,0);
-  if(sc<oggi){var gg=Math.round((oggi-sc)/86400000),mm=Math.floor(gg/30.44);O.textContent='È già scaduto da '+(mm>=2?mm+' mesi':gg+(gg===1?' giorno':' giorni'))+' (il '+fmt(sc)+'): va rinnovato.';sc=null;return}
+  if(sc<oggi){var gg=Math.round((oggi-sc)/86400000),mm=Math.floor(gg/30.44);O.textContent=(tipo==='cie'?'È già scaduta da ':'È già scaduto da ')+(mm>=2?mm+' mesi':gg+(gg===1?' giorno':' giorni'))+' (il '+fmt(sc)+'): va '+(tipo==='cie'?'rinnovata.':'rinnovato.');sc=null;return}
   B.hidden=false}
  [N,R].forEach(function(el){if(el)el.addEventListener('input',calc)});
  B.onclick=function(){if(!sc)return;var av=new Date(sc);av.setMonth(av.getMonth()-(tipo==='anno'?1:2));var dom=new Date();dom.setDate(dom.getDate()+1);dom.setHours(12,0,0,0);if(av<dom)av=dom; /* mai un promemoria nel passato */var tit=box.dataset.titolo+' entro il '+fmt(sc);
