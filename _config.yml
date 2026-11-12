@@ -1,0 +1,4 @@
+# GitHub Pages: la cartella gen/ (generatore, grafiche, appunti interni) e il README non si pubblicano.
+exclude:
+  - gen
+  - README.md
