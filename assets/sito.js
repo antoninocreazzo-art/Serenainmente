@@ -292,3 +292,44 @@ d.addEventListener('keydown',function(e){if(e.key==='/'&&!/INPUT|TEXTAREA|SELECT
 var qp=new URLSearchParams(location.search).get('q');if(qp||location.hash==='#cerca')apri(qp||undefined);
 window.SerenaCerca={apri:apri,situazione:situazione,prova:function(t){var E=cerca(t);return {sint:E.sint,sicura:E.sicura,u:E.esiti.map(function(o){return o.x.u})}}};
 })();
+
+/* «wow»: comparsa dei blocchi, primo schermo che segue il mouse, viaggio in quattro tappe, anteprime degli strumenti,
+   titolo che vola dalla scheda alla guida. Tutto facoltativo: senza questo script la pagina è completa e ferma.
+   Non tocca la ricerca, le urgenze né il resto qui sopra. */
+(function(){
+var d=document,W=window,RM=matchMedia('(prefers-reduced-motion: reduce)').matches,IO='IntersectionObserver' in W;
+function $$(s,r){return [].slice.call((r||d).querySelectorAll(s))}
+/* si prepara a pagina caricata: niente lavoro in più prima che compaia la foto del primo schermo */
+function via(){
+function vedi(els,fn,o){if(!IO){els.forEach(fn);return}var io=new IntersectionObserver(function(L){L.forEach(function(x){if(x.isIntersecting){io.unobserve(x.target);fn(x.target)}})},o);els.forEach(function(e){io.observe(e)})}
+/* i blocchi più in basso compaiono quando arrivano (una volta); quelli già nel primo schermo non si toccano */
+if(!RM&&IO){var R=[],h=innerHeight;
+ $$('main>section:not(.hero):not(.viaggio),.vg-hd,.vg-capo,.argomenti>li,.fila>li,.vivi>li,.art-body>section,.related').forEach(function(e){if(e.getBoundingClientRect().top>h*.92&&R.indexOf(e)<0&&!e.closest('[hidden]'))R.push(e)});
+ R.forEach(function(e){var p=e.parentNode,i=[].indexOf.call(p.children,e);if(/LI/.test(e.tagName))e.style.transitionDelay=(i%3)*70+'ms';e.classList.add('rivela')});
+ vedi(R,function(e){e.classList.add('visto');setTimeout(function(){e.style.transitionDelay=''},1200)},{rootMargin:'0px 0px -8% 0px'})}
+/* anteprime vive: girano una volta, quando si vedono */
+vedi($$('[data-ante]'),function(e){e.classList.add('gira')},{threshold:.6});
+/* primo schermo al computer: la foto segue appena il mouse (al massimo 8 px) */
+var HE=d.querySelector('.p-home .hero');
+if(HE&&!RM&&matchMedia('(pointer:fine) and (min-width:960px)').matches){var raf=0,X=0,Y=0;
+ HE.addEventListener('pointermove',function(e){var r=HE.getBoundingClientRect();X=((e.clientX-r.left)/r.width-.5)*16;Y=((e.clientY-r.top)/r.height-.5)*16;
+  if(!raf)raf=requestAnimationFrame(function(){raf=0;HE.style.setProperty('--mx',X.toFixed(1)+'px');HE.style.setProperty('--my',Y.toFixed(1)+'px')})},{passive:true});
+ HE.addEventListener('pointerleave',function(){HE.style.setProperty('--mx','0px');HE.style.setProperty('--my','0px')})}
+/* il viaggio: la tappa al centro dello schermo decide foto, colore di fondo e indicatore */
+var VG=d.querySelector('.viaggio');
+if(VG){var C=$$('.vg-capo',VG),Q=$$('.vg-quadro',VG),I=$$('.vg-indice a',VG),N=VG.querySelector('[data-vg-n]');
+ var va=function(i){VG.dataset.tono=C[i].dataset.tono;VG.style.setProperty('--vgp',(i+1)*25+'%');if(N)N.textContent='0'+(i+1);
+  Q.forEach(function(q,k){q.classList.toggle('on',k===i)});I.forEach(function(a,k){if(k===i)a.setAttribute('aria-current','step');else a.removeAttribute('aria-current')})};
+ if(IO){var io=new IntersectionObserver(function(L){L.forEach(function(x){if(x.isIntersecting)va(+x.target.dataset.i)})},{rootMargin:'-50% 0px -50% 0px'});C.forEach(function(c){io.observe(c)})}
+ $$('.vg-indice a,.giro').forEach(function(a){a.addEventListener('click',function(e){var t=d.querySelector(a.getAttribute('href'));if(!t)return;e.preventDefault();
+  t.scrollIntoView({behavior:RM?'auto':'smooth',block:t.classList.contains('vg-capo')?'center':'start'});t.setAttribute('tabindex','-1');t.focus({preventScroll:true})})})}
+}
+if(d.readyState==='complete')via();else W.addEventListener('load',via);
+/* passaggio tra le pagine: il titolo della scheda cliccata diventa il titolo della guida */
+var T=null;function pulisci(){if(T){T.style.viewTransitionName='';T=null}var h=d.querySelector('.art-hd h1');if(h)h.style.viewTransitionName=''}
+W.addEventListener('pageshow',pulisci);
+W.addEventListener('pageswap',function(e){pulisci();if(RM||!e.viewTransition||!e.activation||!e.activation.entry)return;
+ var u=new URL(e.activation.entry.url).pathname.replace(/index\.html$/,'');if(!/\/guide\/[^\/]+\/$/.test(u))return;
+ var a=$$('main a[href]').filter(function(x){return x.pathname.replace(/index\.html$/,'')===u&&x.getClientRects().length&&x.querySelector('b')})[0];if(!a)return;
+ var h=d.querySelector('.art-hd h1');if(h)h.style.viewTransitionName='none';T=a.querySelector('b');T.style.viewTransitionName='titolo'});
+})();

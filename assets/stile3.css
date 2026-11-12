@@ -8,6 +8,8 @@
 /* Fraunces solo nel peso 400: copre tutti i pesi richiesti, così il browser non inventa un grassetto finto.
    DM Sans in tre file: 400 per il testo, 500 per pulsanti e etichette (copre 500-700), 800 per il grassetto nel testo. */
 @font-face{font-family:Fraunces;font-weight:400 900;font-display:swap;src:url(fonts/fraunces-it-400.woff2) format("woff2")}
+/* corsivo: solo per le parole che firmano i titoli (fraunces-it-400-corsivo.woff2, stessa riduzione all'italiano) */
+@font-face{font-family:Fraunces;font-style:italic;font-weight:400 900;font-display:swap;src:url(fonts/fraunces-it-400-corsivo.woff2) format("woff2")}
 @font-face{font-family:"DM Sans";font-weight:400;font-display:swap;src:url(fonts/dm-sans-it-400.woff2) format("woff2")}
 @font-face{font-family:"DM Sans";font-weight:500 700;font-display:swap;src:url(fonts/dm-sans-it-500.woff2) format("woff2")}
 @font-face{font-family:"DM Sans";font-weight:800 900;font-display:swap;src:url(fonts/dm-sans-it-800.woff2) format("woff2")}
@@ -773,3 +775,167 @@ dialog.foglio{background:var(--bg)}
  main .rows{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px}
  main .rows>li[hidden]{display:none}
 }
+
+/* ===================== «wow»: l'atmosfera da rivista dentro il sito vero (novembre 2026) =====================
+   Una parola in corsivo colorato nei titoli; il primo schermo che si muove piano; il viaggio in quattro tappe;
+   gli strumenti con un'anteprima viva; le schede che si sollevano; il passaggio morbido tra le pagine.
+   Regole: solo transform e opacity; col movimento ridotto tutto è fermo e completo; senza script il testo c'è tutto. */
+:root{--corsivo:var(--marca-t);--vg-rosa:#F6E8EB;--vg-crema:#F4EDE4;--vg-salvia:#EBF0E7;--orbita:rgba(127,78,92,.10);--filo:rgba(127,78,92,.34)}
+:root[data-tema=scuro]{--vg-rosa:#251B1F;--vg-crema:#221C1B;--vg-salvia:#1B201C;--orbita:rgba(231,185,197,.08);--filo:rgba(231,185,197,.30)}
+h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--corsivo);letter-spacing:-.005em}
+.frase-b h2 em{color:inherit}
+
+/* --- primo schermo --- */
+.cornice{position:relative;overflow:hidden}
+.hero,.viaggio{overflow-x:clip}
+.hero .bollino,.giro{display:none}
+.hero h1 em{color:#F7D3DC}
+.parole .pa{display:inline-block}
+/* finché il carattere dei titoli non è arrivato (al massimo 1,2 s, vedi build.py «ATTESA») il titolo resta fermo e invisibile */
+.attesa .hero-tit{opacity:0}
+.attesa .parole .pa{animation-play-state:paused}
+@media(min-width:960px){.attesa .hero-txt{opacity:0}}
+@media(min-width:960px){
+ .hero{width:100%;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,5vw,72px);padding-top:40px}
+ .hero h1{font-size:clamp(4rem,2.4rem + 2.6vw,4.625rem);line-height:1.03;letter-spacing:-.022em;max-width:10.5ch}
+ .hero h1 em{color:var(--corsivo)}
+ .hero .eyebrow{display:flex;align-items:center;gap:14px}
+ .hero .eyebrow::before{content:"";width:32px;height:1px;background:currentColor;flex:none}
+ .hero .lead{font-size:1.25rem;max-width:34ch}
+ .giro{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;min-height:44px;font:500 1.0625rem var(--titoli);color:var(--marca-t);text-underline-offset:5px}
+ .giro .giu{transform:rotate(90deg);width:18px;height:18px}
+ .hero-foto{position:relative;isolation:isolate;margin:6px 4% 0 6%}
+ .hero-foto::before{content:"";position:absolute;inset:5% -5% -4% 7%;border:1px solid var(--filo);border-radius:46% 46% 24% 24% / 26% 26% 13% 13%;transform:rotate(6deg);pointer-events:none;z-index:-1}
+ .hero-foto::after{display:block;content:"";position:absolute;inset:auto;width:116%;aspect-ratio:1;left:-2%;top:50%;transform:translateY(-50%);border-radius:50%;background:radial-gradient(circle at 38% 42%,rgba(255,255,255,.55),transparent 60%),var(--orbita);z-index:-2}
+ [data-tema=scuro] .hero-foto::after{background:var(--orbita)}
+ .hero .cornice{border-radius:46% 46% 24% 24% / 26% 26% 13% 13%;transform:translate3d(var(--mx,0px),var(--my,0px),0);transition:transform .35s cubic-bezier(.2,.7,.2,1);box-shadow:0 30px 60px -34px rgba(43,32,36,.45)}
+ .hero-foto .hero-img{aspect-ratio:1/1.08;border-radius:0;object-position:46% 50%}
+ .hero .bollino{display:flex;position:absolute;left:-9%;bottom:11%;transform:translate3d(calc(var(--mx,0px)*-.7),calc(var(--my,0px)*-.7),0);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+}
+.bollino{align-items:center;justify-content:center;text-align:center;width:124px;height:124px;border-radius:50%;padding:14px;background:var(--carta);color:var(--marca-t);font:italic 400 1.0625rem/1.2 var(--parole);box-shadow:0 14px 34px -14px rgba(43,32,36,.32)}
+
+/* --- il viaggio in quattro tappe --- */
+.viaggio{--vg:var(--vg-rosa);padding:8px 0 0}
+.viaggio[data-tono=crema]{--vg:var(--vg-crema)}
+.viaggio[data-tono=salvia]{--vg:var(--vg-salvia)}
+.vg-hd{display:flex;flex-direction:column;gap:10px;margin-bottom:26px}
+.vg-hd h2{font-size:clamp(1.875rem,1.15rem + 3vw,3.25rem);line-height:1.08;max-width:15ch}
+.vg-capi{list-style:none;margin:0;padding:0}
+.vg-capo{--vgc:var(--vg-rosa);position:relative;margin-inline:calc(var(--gut)*-1);padding:30px var(--gut) 36px;background:var(--vgc);scroll-margin-top:24px}
+.vg-capo[data-tono=crema]{--vgc:var(--vg-crema)}
+.vg-capo[data-tono=salvia]{--vgc:var(--vg-salvia)}
+.vg-foto-m{position:relative;width:min(74%,340px);margin:0 4% 24px auto}
+.vg-foto-m::before{content:"";position:absolute;inset:4% -5% -4% 6%;border:1px solid var(--filo);border-radius:46% 46% 22% 22% / 30% 30% 14% 14%;transform:rotate(5deg);pointer-events:none}
+.vg-img{display:block;width:100%;height:100%;object-fit:cover}
+.vg-foto-m .vg-img{position:relative;aspect-ratio:1/1.05;height:auto;border-radius:46% 46% 22% 22% / 30% 30% 14% 14%;background:var(--tinta)}
+.vg-foto-m .bollino{display:flex;position:absolute;left:-30%;bottom:10%;width:96px;height:96px;font-size:1rem;padding:10px}
+.vg-hd .eyebrow{font-size:1rem}
+.vg-n{display:flex;align-items:center;gap:12px;font:500 1rem/1.3 var(--titoli);letter-spacing:.12em;text-transform:uppercase;color:var(--marca-t);margin-bottom:10px}
+.vg-n::before{content:"";width:28px;height:1px;background:currentColor;flex:none}
+.vg-testo h3{font-size:clamp(2rem,1.3rem + 3vw,3.375rem);line-height:1.06;letter-spacing:-.018em;max-width:13ch;margin-bottom:14px}
+.vg-testo>p:not(.vg-n){color:var(--muted);font-size:1.0625rem;max-width:42ch;margin-bottom:20px}
+.vg-altri{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column}
+.vg-altri a{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:var(--marca-t);font:500 1.0625rem var(--titoli);text-underline-offset:4px}
+.vg-scena,.vg-indice{display:none}
+@media(min-width:960px){
+ .viaggio{background:var(--vg);padding:96px 0 104px;transition:background-color .9s ease}
+ .vg-hd{margin-bottom:8px}
+ .js .vg-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) 48px;column-gap:56px;align-items:start}
+ .vg-capi{grid-column:1;grid-row:1}
+ .vg-capo{margin:0;padding:48px 0;background:none;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:56px;align-items:center}
+ .vg-foto-m{grid-column:2;grid-row:1;width:min(76%,380px);margin:0 auto}
+ .vg-testo{grid-column:1;grid-row:1}
+ .js .vg-capo{padding:0}
+ .js .vg-capo{min-height:min(84vh,780px);display:flex;align-items:center}
+ .js .vg-capo:first-child{min-height:min(68vh,620px)}
+ .js .vg-foto-m{display:none}
+ .vg-testo h3{max-width:11ch}
+ .vg-testo>p:not(.vg-n){font-size:1.1875rem;max-width:36ch}
+ .js .vg-scena{display:block;grid-column:2;grid-row:1;position:sticky;top:calc(50vh - min(37vh,330px));margin-top:calc(min(68vh,620px)/2 - min(37vh,330px))}
+ .vg-cornice{position:relative;height:min(66vh,600px);margin:0 4% 0 10%;isolation:isolate}
+ .vg-cornice::before{content:"";position:absolute;inset:4% -5% -3% 7%;border:1px solid var(--filo);border-radius:46% 46% 24% 24% / 26% 26% 13% 13%;transform:rotate(6deg);z-index:-1}
+ .vg-cornice::after{content:"";position:absolute;width:150%;aspect-ratio:1;left:-14%;top:50%;transform:translateY(-50%);border-radius:50%;background:radial-gradient(circle at 38% 42%,rgba(255,255,255,.5),transparent 62%),var(--orbita);z-index:-2}
+ [data-tema=scuro] .vg-cornice::after{background:var(--orbita)}
+ .vg-quadro{position:absolute;inset:0;opacity:0;transition:opacity .8s ease}
+ .vg-quadro.on{opacity:1}
+ .vg-quadro .vg-img{border-radius:46% 46% 24% 24% / 26% 26% 13% 13%;transform:scale(1.06);transition:transform 1.6s cubic-bezier(.2,.7,.2,1);box-shadow:0 30px 60px -34px rgba(43,32,36,.45);background:var(--tinta)}
+ .vg-quadro.on .vg-img{transform:none}
+ .vg-quadro .bollino{display:flex;position:absolute;left:-14%;bottom:12%;transform:translateY(10px);transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+ .vg-quadro.on .bollino{transform:none}
+ .vg-conta{display:flex;align-items:center;gap:14px;margin:26px 0 0 10%;font:500 1rem var(--titoli);letter-spacing:.12em;color:var(--muted);font-variant-numeric:tabular-nums}
+ .vg-conta .barra{position:relative;width:140px;height:1px;background:var(--filo)}
+ .vg-conta .barra b{position:absolute;left:0;top:-1px;height:3px;width:var(--vgp,25%);background:var(--marca-t);transition:width .5s ease}
+ .js .vg-indice{display:block;grid-column:3;grid-row:1;position:sticky;top:calc(50vh - 100px);margin-top:calc(min(68vh,620px)/2 - 100px)}
+ .vg-indice ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;align-items:center}
+ .vg-indice a{position:relative;display:grid;place-items:center;width:44px;height:48px;text-decoration:none;color:var(--ink)}
+ .vg-indice .pt{width:13px;height:13px;border-radius:50%;border:1.5px solid var(--marca-t);transition:transform .25s,background .25s}
+ .vg-indice a[aria-current] .pt{background:var(--marca-t);transform:scale(1.3)}
+ .vg-indice .lab{position:absolute;right:46px;top:50%;transform:translateY(-50%);white-space:nowrap;font:500 1rem var(--titoli);background:var(--carta);color:var(--ink);padding:6px 12px;border-radius:999px;box-shadow:0 8px 20px -12px rgba(43,32,36,.4);opacity:0;pointer-events:none;transition:opacity .2s}
+ .vg-indice a:hover .lab,.vg-indice a:focus-visible .lab{opacity:1}
+}
+
+/* --- strumenti vivi: anteprima con dati di esempio --- */
+.ante{display:flex;flex-direction:column;gap:7px;padding:12px;margin-bottom:8px;border-radius:10px;background:var(--bg);border:1px solid var(--linea2);font:400 1rem/1.3 var(--testo);color:var(--ink);text-decoration:none}
+.an-hd{display:flex;align-items:baseline;justify-content:space-between;gap:10px;font:500 1rem/1.3 var(--titoli);color:var(--muted)}
+.an-hd em{font:italic 400 1rem/1 var(--parole);color:var(--marca-t)}
+.an-r{display:flex;align-items:center;gap:10px;min-height:36px;padding:4px 10px;border-radius:8px;background:var(--carta);white-space:nowrap;overflow:hidden}
+.an-r>span{overflow:hidden;text-overflow:ellipsis;min-width:0}
+.an-cb{display:grid;place-items:center;width:22px;height:22px;flex:none;border-radius:7px;border:2px solid var(--ok);color:transparent}
+.an-cb .ic-s{width:14px;height:14px;stroke-width:2.6}
+.an-fatta .an-cb{background:var(--ok);color:var(--carta)}
+.an-fatta>span{text-decoration:line-through;text-decoration-color:var(--muted);color:var(--muted)}
+.an-medicine .an-r b{font:500 1rem var(--titoli);font-variant-numeric:tabular-nums;color:var(--marca-tt);background:var(--tinta);padding:2px 9px;border-radius:999px}
+.an-avviso{margin-left:auto;display:grid;place-items:center;color:var(--marca-t)}
+.vivi{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+@media(min-width:640px){.vivi{grid-template-columns:1fr 1fr;gap:20px}}
+.an-nota{margin-top:12px}
+.vivo-t .chip{font-size:1rem}
+
+/* --- schede che si sollevano, pulsanti che si premono --- */
+.scheda,.argf,.tcard,.rowl,.ora-card{transition:transform .22s cubic-bezier(.2,.7,.2,1),box-shadow .22s ease}
+.argf-img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+@media(hover:hover) and (pointer:fine){
+ .scheda:hover,.argf:hover,.tcard:hover,.rowl:hover,.ora-card:hover{transform:translateY(-2px);box-shadow:0 14px 28px -18px rgba(43,32,36,.42)}
+ [data-tema=scuro] .scheda:hover,[data-tema=scuro] .argf:hover,[data-tema=scuro] .tcard:hover,[data-tema=scuro] .rowl:hover,[data-tema=scuro] .ora-card:hover{box-shadow:0 14px 28px -16px rgba(0,0,0,.7)}
+ .argf:hover .argf-img{transform:scale(1.03)}
+ .btn:hover{transform:translateY(-1px)}
+}
+.scheda:active,.argf:active,.tcard:active,.rowl:active,.ora-card:active{transform:scale(.985);transition-duration:.08s}
+.btn:active{transform:scale(.97)}
+
+/* --- movimenti: solo se chi legge non ha chiesto di ridurli --- */
+@keyframes avvicina{from{transform:scale(1)}to{transform:scale(1.06)}}
+@keyframes parola{from{opacity:0;transform:translateY(.3em)}to{opacity:1;transform:none}}
+@keyframes an-scrive{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes an-spunta{0%{background:transparent;color:transparent;transform:scale(.85)}60%{transform:scale(1.15)}100%{background:var(--ok);color:var(--carta);transform:none}}
+@keyframes an-barra{from{text-decoration-color:transparent;color:var(--ink)}to{text-decoration-color:var(--muted);color:var(--muted)}}
+@keyframes an-entra{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes an-suona{0%,100%{transform:none}20%{transform:rotate(-14deg)}40%{transform:rotate(12deg)}60%{transform:rotate(-8deg)}80%{transform:rotate(5deg)}}
+@media(prefers-reduced-motion:no-preference){
+ .hero-img{animation:avvicina 18s cubic-bezier(.3,.5,.3,1) both;transform-origin:55% 45%}
+ .parole .pa{animation:parola .42s cubic-bezier(.2,.7,.2,1) calc(var(--i)*58ms) both}
+ .js .rivela{opacity:0;transform:translateY(12px)}
+ .js .rivela.visto{opacity:1;transform:none;transition:opacity .6s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+ .js .vg-capo.rivela .vg-foto-m{transform:translateY(16px) scale(.97);transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+ .js .vg-capo.rivela.visto .vg-foto-m{transform:none}
+ .js .ante:not(.gira) .an-scrive{clip-path:inset(0 100% 0 0)}
+ .js .ante:not(.gira) .an-fatta .an-cb{background:transparent;color:transparent}
+ .js .ante:not(.gira) .an-fatta>span{text-decoration-color:transparent;color:var(--ink)}
+ .js .ante:not(.gira) .an-entra{opacity:0}
+ .gira .an-scrive{animation:an-scrive 1.4s steps(24,end) .35s both}
+ .gira .an-fatta .an-cb{animation:an-spunta .4s ease 2s both}
+ .gira .an-fatta>span{animation:an-barra .35s ease 2.15s both}
+ .gira .an-entra{animation:an-entra .55s cubic-bezier(.2,.7,.2,1) .5s both}
+ .gira .an-avviso{animation:an-suona .7s ease 1.2s both}
+ /* passaggio tra le pagine: il titolo della scheda «vola» fino al titolo della guida */
+ .art-hd h1{view-transition-name:titolo}
+ ::view-transition-group(titolo){animation-duration:.42s;animation-timing-function:cubic-bezier(.2,.7,.2,1)}
+ ::view-transition-old(titolo),::view-transition-new(titolo){height:100%;width:auto;object-fit:none;object-position:left top;overflow:clip}
+ ::view-transition-old(titolo){animation:.2s ease both vt-via}
+ ::view-transition-new(titolo){animation:.42s ease both vt-qui}
+ ::view-transition-new(root){animation:.32s cubic-bezier(.2,.7,.2,1) both vt-sale}
+}
+@keyframes vt-via{to{opacity:0}}
+@keyframes vt-qui{from{opacity:0}}
+@keyframes vt-sale{from{opacity:0;transform:translateY(8px)}}
+@media print{.rivela{opacity:1!important;transform:none!important}.vg-scena,.vg-indice,.ante{display:none!important}.vg-foto-m{display:none!important}}

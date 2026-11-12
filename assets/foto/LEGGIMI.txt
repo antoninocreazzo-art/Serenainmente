@@ -14,6 +14,14 @@ I cinque argomenti della pagina iniziale (4:3, 1200 × 900 px, massimo 120 KB ci
 - iscrizioni-nido-e-scuola.webp           Nido e scuola
 Le stesse foto compaiono anche nella guida dallo stesso nome (colonna laterale al computer).
 
+Il viaggio in quattro tappe della pagina iniziale (3:2, 1200 × 800 px, massimo 120 KB ciascuna; al computer
+si vedono in una cornice ad arco verticale, al telefono quasi quadrata: tenere il soggetto al centro)
+- viaggio-crescita.webp   01 Crescita        (oggi: la culla con la coperta verde, la stessa di quanto-dorme-un-bambino)
+- viaggio-cura.webp       02 Cura            (oggi: il portapillole, la stessa di lista-medicine-genitore-anziano)
+- viaggio-ordine.webp     03 Meno cose sparse (oggi: il raccoglitore verde, preso dal prototipo «viaggio»; l'originale era 1150 px)
+- viaggio-spazio.webp     04 Il tuo spazio   (oggi: la mensola con i fiori secchi, la stessa di chi.webp)
+Non usare la foto del primo schermo (hero.webp). Servono anche -sm (768 px) e -xs (480 px), come sopra.
+
 Per ogni foto servono anche le versioni piccole, con lo stesso nome più -sm (768 px di larghezza) e -xs (480 px).
 Si fanno così, dalla cartella del sito:
   python3 -c "from PIL import Image;import sys
