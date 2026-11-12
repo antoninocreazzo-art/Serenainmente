@@ -19,7 +19,7 @@ MAIL = 'privacy@serenainmente.it'   # unico indirizzo di contatto (deciso dal pr
 e = html.escape
 MESI = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre']
 def data_it(s):
-    d = datetime.date.fromisoformat(s); return f"{d.day} {MESI[d.month-1]} {d.year}"
+    d = datetime.date.fromisoformat(s); return f"{d.day}{'°' if d.day == 1 else ''} {MESI[d.month-1]} {d.year}"
 def esiste(*p): return os.path.exists(os.path.join(ROOT, *p))
 def ver(*p):
     """?v=… dall'impronta del file: cambia solo se cambia il contenuto (così la ricostruzione del mattino non tocca tutte le pagine)"""
@@ -121,7 +121,7 @@ def riga(href, titolo, sotto, img=None, icona='arrow', attr='', li=''):
     im = f'<img src="~{img}" alt="" width="64" height="64" loading="lazy" decoding="async">' if img else f'<span class="tic">{ic(icona)}</span>'
     return f'<li{li}><a class="rowl" href="{href}"{attr}>{im}<span class="t"><b>{e(titolo)}</b><small>{e(sotto)}</small></span></a></li>'
 def riga_guida(g, li=''):
-    return riga(f"~/guide/{g['slug']}/", g['titolo_seo'] if g.get('titolo_seo') else g['titolo'], f"Guida · {g['min']} min · {ARGN[g['arg']][1]}", mini(g['slug']), li=li)
+    return riga(f"~/guide/{g['slug']}/", g['titolo'], f"Guida · {g['min']} min · {ARGN[g['arg']][1]}", mini(g['slug']), 'book', li=li)
 
 # ---------- pagina ----------
 UMAMI = '<script defer src="https://cloud.umami.is/script.js" data-website-id="301edcb4-f5b2-444e-a1e5-8b8614d0100a" data-domains="serenainmente.it" data-do-not-track="true" data-exclude-search="true" data-exclude-hash="true"></script>'
@@ -159,7 +159,7 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{e(t)}</title>
 <meta name="description" content="{e(desc)}">
-<link rel="canonical" href="{canon}">{'<meta name="robots" content="noindex">' if path in ('/privacy/', '/404/') else ''}
+<link rel="canonical" href="{canon}">{'<meta name="robots" content="noindex">' if path in ('/privacy/', '/404/', '/salvati/', '/senza-rete/') else ''}
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{canon}">
@@ -199,14 +199,14 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None):
 <div class="ft-brand"><a class="brand" href="~/">{LOGO}</a><p>Guide brevi con le loro fonti, strumenti gratuiti e parole in cui ritrovarsi, per chi si prende cura della famiglia.</p>
 <a class="ft-ig" href="{IG}" rel="noopener" data-umami-event="instagram">{ic('insta')} Segui @serenainmente</a></div>
 <nav aria-label="Esplora"><h2>Esplora</h2><ul><li><a href="~/guide/">Guide</a></li><li><a href="~/risorse/">Strumenti gratuiti</a></li><li><a href="~/gestionale/">Il gestionale di famiglia</a></li>{FRASI_LI}</ul></nav>
-<nav aria-label="Serena"><h2>Serena</h2><ul><li><a href="~/chi-e-serena/">Chi è Serena</a></li><li><a href="~/metodo/">Il metodo</a></li><li><a href="~/fonti/">Le fonti</a></li><li><a href="~/privacy/">Privacy</a></li><li><a href="~/note-legali/">Note legali</a></li><li><a href="mailto:{MAIL}?subject=Segnalazione">Scrivi o segnala un errore</a></li></ul></nav>
+<nav aria-label="Serena"><h2>Serena</h2><ul><li><a href="~/chi-e-serena/">Chi è Serena</a></li><li><a href="~/metodo/">Il metodo</a></li><li><a href="~/fonti/">Le fonti</a></li><li><a href="~/correzioni/">Correzioni</a></li><li><a href="~/salvati/">I tuoi salvati</a></li><li><a href="~/privacy/">Privacy</a></li><li><a href="~/note-legali/">Note legali</a></li><li><a href="mailto:{MAIL}?subject=Segnalazione">Scrivi o segnala un errore</a></li></ul></nav>
 </div>
 <div class="ft-low"><p>Serena è ideata e curata da una persona, con il supporto dell'intelligenza artificiale per testi, immagini e verifica delle fonti. Informazioni generali: non sostituiscono il parere del pediatra o del medico.</p>
 <p>Questo sito non usa cookie e non ti chiede dati. Come contiamo le visite: <a href="~/privacy/">Privacy</a>. © {datetime.date.today().year} serenainmente.it <button class="btn btn-line btn-sm" type="button" data-tema-auto hidden>Torna all'aspetto che segue l'ora</button></p></div>
 </footer>
-<nav class="tab vivo{' tab4' if 'class="chiedi' in body else ''}" aria-label="Menu">
+<nav class="tab vivo" aria-label="Menu">
 {tab('/', 'Inizio', 'home')}{tab('/guide/', 'Guide', 'book')}
-{'' if 'class="chiedi' in body else f'''<a class="tab-c" href="~/guide/#cerca" data-cerca role="button"><span class="o">{ic('search')}</span><span>Cerca</span></a>'''}
+<a class="tab-c" href="~/guide/#cerca" data-cerca role="button"{' hidden data-con-casella' if 'class="chiedi' in body else ''}><span class="o">{ic('search')}</span><span>Cerca</span></a>
 {tab('/risorse/', 'Strumenti', 'tools')}{tab('/chi-e-serena/', 'Serena', 'leaf')}
 </nav>
 <dialog class="foglio" id="cerca" data-src="~/assets/cerca-dati.js?v={INDICE_V}" aria-label="Cerca nel sito">
@@ -249,7 +249,8 @@ def share(path, title, domanda='Ti è utile? Mandala a chi ne ha bisogno.'):
     return f'''<div class="share noprint"><p>{domanda}</p>
 <div class="row"><button class="btn" type="button" hidden data-share data-umami-event="condividi" data-title="{e(title)}" data-url="{url}">Manda o salva in Note</button><a class="btn btn-line" href="{wa}" rel="noopener" data-umami-event="whatsapp">Manda su WhatsApp</a><button class="btn btn-line" type="button" data-copytext="{url}" data-done="Indirizzo copiato" data-umami-event="copia-link">Copia l'indirizzo</button></div></div>'''
 def salva(path, title):
-    return f'<button class="btn btn-line btn-sm" type="button" hidden data-salva="{path}" data-title="{e(title)}" aria-pressed="false" data-umami-event="salva-per-dopo">{ic("bookmark","ic-s")}<span>Salva per dopo</span></button>'
+    return (f'<button class="btn btn-line btn-sm" type="button" hidden data-salva="{path}" data-title="{e(title)}" aria-pressed="false" data-umami-event="salva-per-dopo">{ic("bookmark","ic-s")}<span>Salva per dopo</span></button>'
+            f'<button class="btn btn-line btn-sm" type="button" hidden data-ricorda="{path}" data-title="{e(title)}" data-umami-event="ricorda-domattina">{ic("calendar","ic-s")}<span>Ricordamelo domattina</span></button>')
 
 VALORI = [('book', 'Fonti aperte', 'Ogni dato con la sua fonte, da aprire'),
           ('list', 'Cose pratiche', 'Da fare oggi, in pochi minuti'),
@@ -380,6 +381,9 @@ def checklist_xlsx(g):
 
 # ---------- guide ----------
 # «Calcola la scadenza»: il conto lo fa il telefono con la regola scritta nella guida (vedi assets/sito.js)
+def storia(g):
+    """Cosa è cambiato in una guida: voci scritte a mano in dati.json («storia»: [[data, testo], …]), più la prima versione."""
+    return sorted([tuple(x) for x in g.get('storia', [])], reverse=True) + [(g['data'], 'prima versione.')]
 CALC = {'carta-identita-bambini': ('cie', 'Rinnovare la carta d\'identità'), 'certificato-sport-bambini': ('anno', 'Rinnovare il certificato per lo sport')}
 def calcolo(g):
     if g['slug'] not in CALC: return ''
@@ -399,13 +403,13 @@ def azioni_lista(g, cktext):
 for g in GUIDE:
     a = ARGN[g['arg']]
     if g.get('checklist'): checklist_xlsx(g)
-    steps = ''.join(f'<li id="passo-{i+1}" data-leggi><b>{e(s[0])}</b><span>{e(s[1])}</span></li>' for i, s in enumerate(g['passi']))
+    steps = ''.join(f'<li><details id="passo-{i+1}"{" open" if i == 0 else ""}><summary data-leggi>{e(s[0])}</summary><p data-leggi>{e(s[1])}</p></details></li>' for i, s in enumerate(g['passi']))
     breve = ''.join(f'<li><a href="#passo-{i+1}">{e(s[0])}</a></li>' for i, s in enumerate(g['passi']))
     errori = ''.join(f'<li data-leggi>{e(x)}</li>' for x in g.get('errori', []))
     check = ''.join(f'<li><label><input type="checkbox" data-ck="{g["slug"]}-{i}"><span class="cbx" aria-hidden="true">{ic("check","ic-s")}</span><span>{e(x)}</span></label></li>' for i, x in enumerate(g.get('checklist', [])))
     cktext = e(g['titolo'] + '\n' + '\n'.join('☐ ' + x for x in g.get('checklist', [])) + '\nserenainmente.it/guide/' + g['slug'] + '/')
     d0 = datetime.date.fromisoformat(g['agg']); m6 = d0.month + 6; prossimo = f"{MESI[(m6 - 1) % 12]} {d0.year + (m6 - 1) // 12}"
-    segnala = 'mailto:' + MAIL + '?subject=' + urllib.parse.quote('Segnalazione: ' + (g.get('titolo_seo') or g['titolo']))
+    segnala = 'mailto:' + MAIL + '?subject=' + urllib.parse.quote('Segnalazione: ' + g['titolo'])
     fonti = ''.join(src_block(fid) for fid in g['fonti'])
     nf = len(g['fonti'])
     corr = [x for x in GUIDE if x is not g and x['arg'] == g['arg']] + [x for x in GUIDE if x is not g and x['arg'] != g['arg']]
@@ -417,25 +421,30 @@ for g in GUIDE:
 <header class="art-hd wrap-t">
 <nav class="crumbs" aria-label="Percorso"><a href="~/guide/#{a[0]}">‹ Guide · {e(a[1])}</a></nav>
 <h1 data-leggi>{e(g['titolo'])}</h1>
+<div class="azioni noprint"><button class="btn btn-line btn-sm" type="button" hidden data-ascolta aria-pressed="false" data-umami-event="ascolta-guida">{ic('sound','ic-s')}<span>Ascolta la guida</span></button></div>
 </header>
 <div class="art-body wrap-t">
 <section class="breve vetro" aria-label="In breve"><p data-leggi>{e(g['sommario'])}</p>
 {tabella(g.get('tabella')) if per_eta(g.get('tabella')) else ''}
 {strumento_breve(g.get('strumento'))}
-<ol>{breve}</ol>
+<h2 class="passi-t">Come si fa, un passo alla volta</h2>
+<ol class="passi">{steps}</ol>
 <dl class="facts"><div><dt>Tempo</dt><dd>{e(g['tempo'])}</dd></div><div><dt>Cosa serve</dt><dd>{e(g['serve'])}</dd></div></dl></section>
 <div class="sotto-breve"><p class="meta"><span>{ic('clock','ic-s')} {g['min']} min di lettura</span><span>Aggiornata il {data_it(g['agg'])}</span>{fonti_meta}</p>
-<div class="azioni noprint">{salva(gp, g.get('titolo_seo') or g['titolo'])}<button class="btn btn-line btn-sm" type="button" hidden data-ascolta aria-pressed="false" data-umami-event="ascolta-guida">{ic('sound','ic-s')}<span>Ascolta la guida</span></button></div></div>
+<div class="azioni noprint">{salva(gp, g['titolo'])}</div></div>
 {'' if per_eta(g.get('tabella')) else tabella(g.get('tabella'))}
 {calcolo(g)}
-<section><h2 data-leggi>Come si fa</h2><ol class="steps">{steps}</ol></section>
 <section><h2 data-leggi>Perché aiuta</h2>{''.join(f'<p data-leggi>{e(p)}</p>' for p in g['perche'])}</section>
 {f'<section class="box box-rosa"><h2 data-leggi>Errori comuni</h2><ul class="plain">{errori}</ul></section>' if errori else ''}
 {lista}
-{strumento_box(g.get('strumento'))}
+{strumento_box(g.get('strumento')) if g.get('strumento') == 'gestionale' else ''}
 {foto(g['slug'], '', 'art-img', sizes='(min-width:760px) 700px, 100vw')}
-{f'<section id="fonti"><h2>Le fonti</h2><p class="small">Ogni dato di questa pagina viene da qui. Fonti controllate il {data_it(g["agg"])}; prossimo controllo entro {prossimo}.</p><ul class="sources">{fonti}</ul></section>' if fonti else ''}
-<aside class="box box-line"><b>Da sapere</b><p data-leggi>{e(g['avvertenza'])}</p><div class="row"><a class="btn btn-line btn-sm" href="~/metodo/">Come nasce una guida</a><a class="btn btn-line btn-sm" href="{segnala}" data-umami-event="segnala-errore">Segnala un errore</a></div></aside>
+{f'<section id="fonti"><h2>Le fonti</h2><p class="small">Ogni dato di questa pagina viene da qui.</p><ul class="sources">{fonti}</ul></section>' if fonti else ''}
+<section class="box box-line fatta" id="come-e-fatta"><h2>Come è stata fatta questa guida</h2>
+<ul class="plain"><li>{f'{nf} {"fonte" if nf == 1 else "fonti"}, aperte e lette prima di scrivere' if nf else 'Consigli organizzativi: non cita dati sanitari'}.</li><li>Fonti controllate il {data_it(g['agg'])}. Prossimo controllo entro {prossimo}.</li><li>Scritta con il supporto dell'intelligenza artificiale; letta e approvata da una persona prima di uscire.</li></ul>
+<p class="small"><b>Cosa è cambiato.</b> {' '.join(f"{data_it(d)}: {e(t)}" for d, t in storia(g))}</p>
+<div class="row noprint"><a class="btn btn-line btn-sm" href="~/metodo/">Il metodo</a><a class="btn btn-line btn-sm" href="~/correzioni/">Tutte le correzioni</a><a class="btn btn-line btn-sm" href="{segnala}" data-umami-event="segnala-errore">Segnala un errore</a></div></section>
+<aside class="box box-line"><b>Da sapere</b><p data-leggi>{e(g['avvertenza'])}</p></aside>
 {share(gp, g['titolo'])}
 </div>
 <section class="related wrap-t noprint"><div class="sec-hd"><h2>Continua a leggere</h2><a class="more" href="~/guide/">Tutte le guide {ic('arrow','ic-s')}</a></div>
@@ -463,7 +472,7 @@ argc = {a[0]: sum(1 for g in GUIDE if g['arg'] == a[0]) for a in ARG}
 chips = '<button type="button" class="fchip" data-arg="tutti" aria-pressed="true">Tutte</button>' + ''.join(
     f'<button type="button" class="fchip" data-arg="{a[0]}" aria-pressed="false">{e(a[1])}</button>' for a in ARG if argc[a[0]])
 def riga_elenco(g):
-    return riga(f"~/guide/{g['slug']}/", g['titolo'], f"{g['min']} min · {ARGN[g['arg']][1]} · {data_it(g['agg'])}", mini(g['slug']), li=f' data-a="{g["arg"]}"')
+    return riga(f"~/guide/{g['slug']}/", g['titolo'], f"{g['min']} min · {ARGN[g['arg']][1]} · {data_it(g['agg'])}", mini(g['slug']), 'book', li=f' data-a="{g["arg"]}"')
 pages.append(page('/guide/', 'Guide', 'Guide pratiche e brevi per la vita di famiglia, con le fonti quando servono.', f'''
 <section class="ph-hd wrap-t">
 <h1>Guide</h1><p class="lead">Piccoli metodi per giornate più leggere e le regole che nessuno ti spiega. Si leggono in due minuti, con le fonti.</p>
@@ -517,7 +526,7 @@ pages.append(page('/gestionale/', 'Il gestionale di famiglia', 'Un file gratuito
 </section>'''))
 
 # ---------- strumenti gratuiti ----------
-ck_rows = ''.join(f'''<li class="due"><a class="rowl" href="~/guide/{g['slug']}/#lista"><span class="t"><b>{e(g.get('titolo_seo') or g['titolo'])}</b><small>{len(g['checklist'])} cose da spuntare · si usa sul sito</small></span></a><a class="dl" href="~/guide/{g['slug']}/checklist.xlsx" download data-umami-event="checklist-excel" data-umami-event-guida="{g['slug']}" aria-label="Scarica la lista «{e(g.get('titolo_seo') or g['titolo'])}» in Excel">{ic('download','ic-s')} Excel</a></li>''' for g in GUIDE if g.get('checklist'))
+ck_rows = ''.join(f'''<li class="due"><a class="rowl" href="~/guide/{g['slug']}/#lista"><span class="t"><b>{e(g['titolo'])}</b><small>{len(g['checklist'])} cose da spuntare · si usa sul sito</small></span></a><a class="dl" href="~/guide/{g['slug']}/checklist.xlsx" download data-umami-event="checklist-excel" data-umami-event-guida="{g['slug']}" aria-label="Scarica la lista «{e(g.get('titolo_seo') or g['titolo'])}» in Excel">{ic('download','ic-s')} Excel</a></li>''' for g in GUIDE if g.get('checklist'))
 st_rows = ''.join(f'''<li class="due"><a class="rowl" href="~/stampabili/{f}/"><img src="~{mini('foglio-' + f)}" alt="" width="64" height="64" loading="lazy"><span class="t"><b>{e(t)}</b><small>{e(d)}</small></span></a><a class="dl" href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}" aria-label="Scarica «{e(t)}» in PDF">{ic('download','ic-s')} PDF</a></li>''' for f, t, d in STAMPABILI)
 pages.append(page('/risorse/', 'Strumenti gratuiti', 'Strumenti gratuiti per la famiglia: Preparo la visita, il gestionale di famiglia, fogli da stampare e le liste delle guide.', f'''
 <section class="ph-hd wrap-t"><h1>Strumenti gratuiti</h1><p class="lead">Da usare subito, senza registrazione. Quello che scrivi resta sul tuo telefono o computer.</p></section>
@@ -610,6 +619,30 @@ pages.append(page('/metodo/', 'Il metodo', 'Come nascono e si controllano le gui
 <a class="more" href="~/fonti/">Tutte le fonti {ic('arrow','ic-s')}</a>
 </section>'''))
 
+# ---------- correzioni ----------
+corr = sorted([(d, t, g) for g in GUIDE for d, t in g.get('storia', [])], key=lambda x: x[0], reverse=True)
+pages.append(page('/correzioni/', 'Correzioni e aggiornamenti', 'Cosa è stato corretto o aggiornato nelle guide di Serena, con la data.', f'''
+<section class="ph-hd wrap-t"><h1>Correzioni e aggiornamenti</h1><p class="lead">Quando una guida cambia, lo scriviamo qui: cosa, quando e perché. Le guide nuove non compaiono: hanno la loro data.</p></section>
+<section class="wrap-t"><ul class="postl">{''.join(f'<li><a href="~/guide/{g["slug"]}/#come-e-fatta"><span class="date">{data_it(d)}</span><b>{e(g["titolo"])}</b><span>{e(t)}</span></a></li>' for d, t, g in corr)}</ul></section>
+<section class="wrap-t prose"><section class="box box-rosa"><h2>Hai trovato un errore?</h2><p>Scrivi a {MAIL}, anche solo due righe. Correggiamo e lo scriviamo in questa pagina.</p><a class="btn" href="{SEGNALA}" data-umami-event="segnala-errore">Segnala un errore</a></section>
+<p><a href="~/metodo/">Come nasce una guida</a></p></section>'''))
+
+# ---------- i tuoi salvati (tutto nel browser) ----------
+pages.append(page('/salvati/', 'I tuoi salvati', 'Le pagine salvate, i promemoria creati e le liste cominciate: restano su questo telefono o computer.', f'''
+<section class="ph-hd wrap-t"><h1>I tuoi salvati</h1><p class="lead">Serena tiene qui quello che hai messo da parte. Resta su questo telefono o computer: a noi non arriva.</p></section>
+<section class="wrap-t tuoi" data-tuoi data-guide="{e(json.dumps({g['slug']: g['titolo'] for g in GUIDE}, ensure_ascii=False))}">
+<section data-t-salvati hidden><h2 class="sec-t">Pagine salvate</h2><ul class="rows"></ul></section>
+<section data-t-liste hidden><h2 class="sec-t">Liste cominciate</h2><ul class="rows"></ul></section>
+<section data-t-strumenti hidden><h2 class="sec-t">Quello che hai scritto negli strumenti</h2><ul class="rows"></ul></section>
+<section data-t-promemoria hidden><h2 class="sec-t">Promemoria creati</h2><ul class="rows"></ul><p class="small">Sono nel calendario del tuo telefono: qui Serena ricorda solo di averli preparati.</p></section>
+<section data-t-inizio><h2 class="sec-t">Da dove cominciare</h2><ul class="rows">{riga('~/guide/', 'Le guide', 'In ogni guida c\'è «Salva per dopo»', icona='book')}{riga('~/risorse/', 'Gli strumenti gratuiti', 'Quello che scrivi resta qui', icona='tools')}</ul></section>
+<p class="small"><button class="btn btn-line btn-sm" type="button" data-t-svuota hidden>Dimentica tutto quello che è in questa pagina</button></p>
+</section>''', cls='p-tuoi'))
+pages.append(page('/senza-rete/', 'Questa pagina non è salvata sul telefono', 'Pagina mostrata quando manca la rete.', f'''
+<section class="ph-hd wrap-t"><h1>Questa pagina non è salvata sul telefono.</h1><p class="lead">Adesso manca la rete: la pagina si apre appena torna. Le pagine che avevi già aperto o salvato, invece, si leggono anche così.</p>
+<div class="row"><a class="btn" href="~/salvati/">I tuoi salvati</a><a class="btn btn-line" href="~/">Pagina iniziale</a></div>
+<p class="small">Se è urgente, chiama il 112.</p></section>'''))
+
 # ---------- privacy ----------
 # Data vera dell'ultima modifica dei testi (non la data di oggi: il sito si
 # rigenera ogni mattina). Si cambia a mano quando cambia il testo.
@@ -619,7 +652,7 @@ AGG_NOTE_LEGALI = '2026-10-21'
 PRIVACY_BODY = '<h2>Chi è responsabile dei dati</h2><p>Questo sito lo cura Antonino Creazzo, persona fisica. È il titolare del trattamento dei pochi dati descritti in questa pagina.</p><p>Per qualsiasi domanda sulla privacy scrivi a <a href="mailto:privacy@serenainmente.it">privacy@serenainmente.it</a>.</p><h2>In breve</h2><p>Non ti chiediamo dati. Non ci sono iscrizioni, moduli o account.</p><p>Quello che scrivi negli strumenti del sito resta sul tuo telefono o computer. A noi non arriva.</p><p>Ci sono solo due cose che, come per quasi tutti i siti, partono dal tuo browser:</p><ul><li>la richiesta delle pagine, che passa dal servizio che ospita il sito;</li><li>un conteggio delle visite, senza cookie.</li></ul><h2>Quando apri una pagina</h2><p>Il sito è ospitato da GitHub (GitHub, Inc., Stati Uniti). Come ogni servizio di questo tipo, GitHub riceve l\'indirizzo di rete (IP) da cui arriva la richiesta, il tipo di browser e la pagina richiesta. Li conserva per motivi di sicurezza, secondo le sue regole.</p><p>Senza questi dati la pagina non può arrivare al tuo schermo. Il motivo è il nostro interesse legittimo a far funzionare il sito e a proteggerlo.</p><p>Noi non vediamo questi dati.</p><h2>Come contiamo le visite</h2><p>Per capire quali pagine sono utili usiamo Umami (Umami Software, Inc., Stati Uniti). Umami non usa cookie e non salva niente sul tuo dispositivo.</p><p>A ogni pagina Umami riceve:</p><ul><li>l\'indirizzo di rete, che usa solo al momento e non conserva nelle statistiche;</li><li>il tipo di browser e di dispositivo, la lingua e la dimensione dello schermo;</li><li>la pagina visitata e il sito da cui arrivi;</li><li>i tocchi su alcuni pulsanti, come «Scarica il PDF». Mai quello che scrivi.</li></ul><p>Dall\'indirizzo di rete Umami ricava il Paese e la città approssimativi, e un codice di visita che non dice chi sei.</p><p>Noi vediamo solo totali: quante persone leggono una pagina, da quale canale arrivano, quanti scaricano un file. Non sappiamo chi sei e non creiamo profili.</p><p>Il motivo è il nostro interesse legittimo a capire quali contenuti servono. Per questo non c\'è un banner e non ti chiediamo il consenso.</p><p>Se nel browser hai attivato «Non tracciare», Umami non conta la tua visita. Puoi anche bloccare il conteggio con un blocco contenuti del browser: il sito funziona lo stesso.</p><p>Umami conserva le statistiche per 6 mesi. Le archivia su server nell\'Unione europea. Alcuni servizi tecnici di Umami, come la rete che distribuisce i file e i registri di sicurezza, si trovano comunque negli Stati Uniti. Umami tratta questi dati per conto nostro, con un contratto che lo obbliga a proteggerli.</p><h2>Cosa resta sul tuo telefono o computer</h2><p>Alcune parti del sito ricordano quello che fai usando la memoria del tuo browser. Non sono cookie e non arrivano a noi:</p><ul><li>le <b>spunte delle checklist</b> nelle guide;</li><li>quello che scrivi in <b>Preparo la visita</b>.</li></ul><p>Servono solo a ritrovare le cose quando torni. Puoi cancellarle quando vuoi:</p><ul><li>con «Azzera le spunte» o «Ricomincia da capo»;</li><li>cancellando i dati del sito dalle impostazioni del browser.</li></ul><p>Se il telefono o il computer lo usano anche altre persone, alla fine tocca «Ricomincia da capo».</p><h2>I file che scarichi</h2><p>Il gestionale di famiglia, i fogli da stampare e le checklist in Excel sono file. Restano dove li salvi tu.</p><p>Se usi «Apri in Fogli Google», la copia è tua, nel tuo Drive, con le regole di Google. Quello che ci scrivi non arriva a noi.</p><h2>Quando ci scrivi</h2><p>Se ci scrivi a <a href="mailto:privacy@serenainmente.it">privacy@serenainmente.it</a> o con un messaggio su Instagram, riceviamo il tuo indirizzo o il tuo nome utente e quello che scrivi.</p><p>Li usiamo solo per risponderti. Li teniamo per 12 mesi dall\'ultimo messaggio, poi li cancelliamo.</p><p>L\'email passa da Google (Gmail). I messaggi su Instagram passano da Meta, ciascuno con le sue regole.</p><p>Per favore, non mandarci dati sulla salute tua o dei tuoi figli: non possiamo darti indicazioni mediche.</p><h2>Quando esci dal sito</h2><p>I link alle fonti, a Instagram, a WhatsApp e a Fogli Google ti portano su altri siti, con le loro regole. Noi non riceviamo niente di quello che fai lì.</p><p>Se mandi qualcosa con WhatsApp o con «Condividi», il testo lo mandi tu, con l\'app che scegli.</p><h2>Fuori dall\'Unione europea</h2><p>GitHub e Umami sono aziende degli Stati Uniti. I dati tecnici descritti sopra possono quindi essere trattati negli Stati Uniti.</p><p>Questo avviene con le garanzie previste dal GDPR: la decisione della Commissione europea sul Data Privacy Framework UE‑USA, per i fornitori che vi aderiscono, e le clausole contrattuali tipo approvate dalla Commissione.</p><h2>I tuoi diritti</h2><p>Puoi chiederci in ogni momento di sapere quali dati tuoi abbiamo, di correggerli o di cancellarli, e di limitarne l\'uso.</p><p>Puoi anche <b>opporti</b> all\'uso dei tuoi dati basato sul nostro interesse legittimo, per esempio al conteggio delle visite.</p><p>Scrivi a <a href="mailto:privacy@serenainmente.it">privacy@serenainmente.it</a>: ti rispondiamo entro un mese. Tieni conto che da un indirizzo di rete spesso non è possibile risalire a una persona, e che i dati delle statistiche non ci dicono chi sei.</p><p>Puoi anche presentare reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" rel="noopener">garanteprivacy.it</a>).</p><h2>Bambini</h2><p>Il sito è pensato per adulti. Non chiediamo dati a nessuno, nemmeno sui bambini.</p><h2>Se questa pagina cambia</h2><p>Se cambiamo il modo in cui trattiamo i dati, aggiorniamo questa pagina e la data qui sotto.</p>'
 # Righe aggiunte con il sito 2035 e approvate dal presidente il 12/11/2026: il sito ricorda in locale alcune cose in più.
 PRIVACY_BODY = PRIVACY_BODY.replace('<li>quello che scrivi in <b>Preparo la visita</b>.</li>',
-    '<li>quello che scrivi in <b>Preparo la visita</b> e in <b>Medicine di casa</b>;</li><li>le pagine che <b>salvi per dopo</b>;</li><li>di chi ti prendi cura, se lo indichi nella pagina iniziale;</li><li>l\'aspetto chiaro o scuro e la grandezza del testo che scegli;</li><li>una copia delle pagine che hai aperto o salvato, per rileggerle anche senza rete.</li></ul><p>Anche le parole che scrivi nella ricerca restano sul tuo telefono o computer: la ricerca lavora lì, senza mandarle a nessuno.</p><ul hidden>')
+    '<li>quello che scrivi in <b>Preparo la visita</b> e in <b>Medicine di casa</b>;</li><li>le pagine che <b>salvi per dopo</b>;</li><li>di chi ti prendi cura, se lo indichi nella pagina iniziale;</li><li>l\'aspetto chiaro o scuro e la grandezza del testo che scegli;</li><li>una copia delle pagine che hai aperto o salvato, per rileggerle anche senza rete;</li><li>il titolo dei promemoria che hai creato, per ritrovarli in «I tuoi salvati».</li></ul><p>«Salva una copia» in Medicine di casa crea un file sul tuo telefono: lo tieni tu, a noi non arriva.</p><p>Anche le parole che scrivi nella ricerca restano sul tuo telefono o computer: la ricerca lavora lì, senza mandarle a nessuno.</p><ul hidden>')
 PRIVACY_BODY = PRIVACY_BODY.replace('<ul hidden></ul>', '').replace('con «Azzera le spunte» o «Ricomincia da capo»;', 'con «Azzera le spunte», «Ricomincia da capo» o «Dimentica»;')
 pages.append(page('/privacy/', 'Privacy', 'Come serenainmente.it tratta i dati: niente cookie, niente profilazione, statistiche solo aggregate.', f'''
 <section class="ph-hd wrap-t"><h1>Privacy</h1><p class="lead">In breve: niente cookie, niente profilazione. Contiamo le visite solo in forma aggregata, e quello che scrivi negli strumenti resta sul tuo telefono.</p></section>
@@ -647,7 +680,7 @@ MD = open(os.path.join(ROOT, 'gen', 'medicine.html'), encoding='utf-8').read().r
 pages.append(page('/strumenti/medicine-di-casa/', 'Medicine di casa', 'Strumento gratuito: la lista delle medicine di una persona, da stampare grande o mandare, con i promemoria degli orari. Resta solo sul tuo telefono.', MD, seo='Medicine di casa: la lista dei farmaci sul telefono', cls='p-tool'))
 
 # ---------- da instagram (link in bio) ----------
-IGL = sorted([x for x in D.get('instagram', []) if x['data'] <= OGGI], key=lambda x: x['data'], reverse=True)
+IGL = sorted([x for x in D.get('instagram', []) if x['data'] <= OGGI], key=lambda x: (x['data'], x.get('tipo') != 'fonti'), reverse=True)
 visti = set(); IGU = []
 for x in IGL:  # ogni pagina una volta sola: vale il post più recente
     if x['link'] not in visti: visti.add(x['link']); IGU.append(x)
@@ -661,7 +694,10 @@ ig_primo = ''
 if IGU:
     x = IGU[0]; im = ig_img(x, True)
     az = {'strumento': 'Apri lo strumento', 'stampabile': 'Guarda il foglio', 'guida': 'Leggi la guida', 'fonti': 'Leggi cosa dice, in breve'}.get(x.get('tipo'), 'Apri')
-    ig_primo = f'''<a class="ig-primo vetro cede" href="~{x['link']}" data-umami-event="ig-link" data-umami-event-link="{e(x['link'])}">{f'<img src="~{im}" alt="" width="720" height="450" decoding="async">' if im else ''}<span class="b"><span class="chip">Dall'ultimo post · {data_it(x['data'])}</span><h2>{e(x['titolo'])}</h2><span class="btn">{az} {ic('arrow','ic-s')}</span></span></a>'''
+    post0 = next((q for q in D['post'] if x.get('tipo') == 'fonti' and x['link'].strip('/').endswith(q['slug'])), None)
+    detto = f'<p>{e(post0["affermazioni"][0])}</p>' if post0 else ''
+    if post0: az = 'Da dove viene questo dato'
+    ig_primo = f'''<a class="ig-primo vetro cede" href="~{x['link']}" data-umami-event="ig-link" data-umami-event-link="{e(x['link'])}">{f'<img src="~{im}" alt="" width="720" height="450" decoding="async">' if im else ''}<span class="b"><span class="chip">Dall'ultimo post · {data_it(x['data'])}</span><h2>{e(post0['titolo'] if post0 else x['titolo'])}</h2>{detto}<span class="btn">{az} {ic('arrow','ic-s')}</span></span></a>'''
 ig_altri = [t for t in TOOLS if t[0] not in visti]
 pages.append(page('/ig/', 'Da Instagram', 'Gli strumenti, i fogli e le guide dei post di @serenainmente, a portata di tocco.', f'''
 <section class="wrap-t ig-page"><div class="ig-hd"><img src="~/assets/brand/avatar-160.png" alt="" width="56" height="56"><div><h1>Dai post di Serena</h1><p class="small">Tutto quello che hai visto su Instagram. Gratis, senza registrazione.</p></div></div>
@@ -689,6 +725,7 @@ pages.append(page('/note-legali/', 'Note legali', 'Chi cura serenainmente.it, co
 post_cards = []
 for p in sorted(D['post'], key=lambda x: x['data'], reverse=True):
     claims = ''.join(f'<li>{e(c)}</li>' for c in p['affermazioni'])
+    if 'OR-02' in p['fonti'] and 'OR-28' not in p['fonti']: p['fonti'].insert(p['fonti'].index('OR-02') + 1, 'OR-28')
     fonti = ''.join(src_block(fid) for fid in p['fonti'])
     guida = GN.get(p.get('guida'))
     gl = f'<a class="btn" href="~/guide/{guida["slug"]}/">Leggi la guida</a>' if guida else ''
@@ -699,7 +736,7 @@ for p in sorted(D['post'], key=lambda x: x['data'], reverse=True):
 <p class="small">Collegamenti controllati il {data_it(p['controllo'])}. Informazioni generali, non sostituiscono il parere del pediatra o del medico.</p>
 <div class="row">{gl}<a class="btn btn-line" href="{IG}" rel="noopener" data-umami-event="instagram">Vai al profilo Instagram</a></div></section>'''))
     post_cards.append(f'<li><a href="~/fonti/{p["slug"]}/"><span class="date">{data_it(p["data"])} · {len(p["fonti"])} {"fonte" if len(p["fonti"]) == 1 else "fonti"}</span><b>{e(p["titolo"])}</b></a></li>')
-guide_fonti = ''.join(f'<li><a href="~/guide/{g["slug"]}/#fonti"><span class="date">Controllate il {data_it(g["agg"])} · {len(g["fonti"])} {"fonte" if len(g["fonti"]) == 1 else "fonti"}</span><b>{e(g.get("titolo_seo") or g["titolo"])}</b></a></li>' for g in GUIDE if g['fonti'])
+guide_fonti = ''.join(f'<li><a href="~/guide/{g["slug"]}/#fonti"><span class="date">Controllate il {data_it(g["agg"])} · {len(g["fonti"])} {"fonte" if len(g["fonti"]) == 1 else "fonti"}</span><b>{e(g["titolo"])}</b></a></li>' for g in GUIDE if g['fonti'])
 enti = sorted({FONTI[f]['ente'] for g in GUIDE for f in g['fonti']} | {FONTI[f]['ente'] for p in D['post'] for f in p['fonti']})
 pages.append(page('/fonti/', 'Le fonti di Serena', 'Le fonti dei dati citati nelle guide e nei post di @serenainmente, con i link alle pagine originali.', f'''
 <section class="ph-hd wrap-t"><h1>Le fonti</h1><p class="lead">Ogni dato di Serena viene da un ente o da un'istituzione che puoi aprire e leggere. Qui le trovi tutte, guida per guida e post per post.</p></section>
@@ -746,20 +783,21 @@ pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della fam
 <h1>Hai già abbastanza da tenere a mente.</h1>
 <p class="lead">{''.join(f'<span data-per="{k}">{e(v)}</span>' for k, v in INVITO.items())}</p>
 {CHIEDI}
-<ul class="esempi" aria-label="Esempi">{''.join(f'<li><a href="~/guide/?q={urllib.parse.quote(x)}" data-cerca="{e(x)}" role="button">{e(x)}</a></li>' for x in ESEMPI[:3])}</ul>
+<div class="per-voi" data-per-voi hidden></div>
+<ul class="esempi" aria-label="Esempi" data-esempi>{''.join(f'<li><a href="~/guide/?q={urllib.parse.quote(x)}" data-cerca="{e(x)}" role="button">{e(x)}</a></li>' for x in ESEMPI[:3])}</ul>
 {ora_cards}
 <p class="small">Guide brevi con le loro fonti, fogli da stampare e strumenti gratuiti. Senza registrazione e senza pubblicità.</p></div>
 {foto('hero', '', 'hero-img')}
 </section>
-<section class="wrap blocco-s" data-salvati hidden><h2 class="sec-t"></h2><ul class="rows"></ul></section>
+<section class="wrap blocco-s" data-salvati hidden><h2 class="sec-t"></h2><ul class="rows"></ul><a class="more" href="~/salvati/">I tuoi salvati {ic('arrow','ic-s')}</a></section>
 <section class="wrap blocco-s">
 <div class="per-te" hidden><h2>Di chi ti prendi cura?</h2><p class="lead-s">Scegli anche più di una persona: Serena mette in cima quello che vi serve, qui e nella ricerca.</p>
 <ul class="esempi"><li><button type="button" data-cura="bambino" aria-pressed="false">Di un bambino</button></li><li><button type="button" data-cura="anziano" aria-pressed="false">Di una persona anziana</button></li></ul>
 <div data-eta-box hidden><p class="lead-s" style="margin-top:14px">Quanti anni hanno i bambini? Puoi sceglierne più di una.</p><ul class="esempi">{''.join(f'<li><button type="button" data-eta="{k}" aria-pressed="false">{v}</button></li>' for k, v in [('0-1', 'Meno di 1 anno'), ('1-3', '1-3 anni'), ('3-6', '3-6 anni'), ('6-12', '6-12 anni'), ('13-18', '13-18 anni')])}</ul></div>
 <p class="small" style="margin:12px 0 4px">Lo ricorda solo questo telefono o computer. <button class="btn btn-line btn-sm" type="button" data-dimentica hidden>Dimentica</button></p></div>
-<h3 class="sec-t" data-partenze-t style="margin-top:18px">Le ultime guide</h3>
+<div data-partenze-casa><h3 class="sec-t" data-partenze-t style="margin-top:18px">Le ultime guide</h3>
 <ul class="rows" data-partenze>{''.join(ordine)}</ul>
-<a class="more" href="~/guide/">Tutte le guide {ic('arrow','ic-s')}</a>
+</div><a class="more" href="~/guide/">Tutte le guide {ic('arrow','ic-s')}</a>
 </section>
 <section class="wrap"><div class="sec-hd"><h2>Strumenti gratuiti</h2><a class="more" href="~/risorse/">Tutti {ic('arrow','ic-s')}</a></div>{tools_fila()}</section>
 {frase_home}
@@ -778,7 +816,7 @@ def voce(u, t, d, k, a, b='', **altro):
 IDX = []
 PIU_CERCATE = ['routine-della-nanna', 'risvegli-notturni', 'domande-per-il-pediatra', 'spostare-disdire-pagare-visita', 'lista-medicine-genitore-anziano']
 for g in GUIDE:
-    v = voce(f"/guide/{g['slug']}/", g.get('titolo_seo') or g['titolo'], g['sommario'], 'Guida',
+    v = voce(f"/guide/{g['slug']}/", g['titolo'], g['sommario'], 'Guida',
              ' '.join([g['titolo'], g.get('titolo_seo', ''), g.get('domanda', ''), CHIAVI.get(g['slug'], '')]),
              ' '.join([g['sommario'], ARGN[g['arg']][1]] + [x for x, y in g['passi']] + g.get('checklist', [])),
              m=g['min'], ps=g['passi'], ag=data_it(g['agg']), c2=' '.join(g['perche'] + g.get('errori', []) + [y for x, y in g['passi']]), az='Tutti i passi', c=per(g['slug'])[0], fa=per(g['slug'])[1])
@@ -821,7 +859,7 @@ if os.path.isdir(fd):
         if os.path.isdir(os.path.join(fd, n)) and n not in vivi: shutil.rmtree(os.path.join(fd, n))
 if not PREVIEW:
     today = datetime.date.today().isoformat()
-    sm = ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in pages if p != '/privacy/')  # la pagina Privacy (col nome del titolare) resta fuori dai motori di ricerca
+    sm = ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in pages if p not in ('/privacy/', '/salvati/', '/senza-rete/'))  # la pagina Privacy (col nome del titolare) resta fuori dai motori di ricerca
     open(os.path.join(OUT, 'sitemap.xml'), 'w').write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sm}</urlset>')
 else:
     for d in ['assets/fonts', 'assets/brand', 'assets/gestionale', 'assets/foto', 'assets/mini', 'assets/ig', 'assets/stampabili', 'scarica']:

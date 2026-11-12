@@ -18,7 +18,7 @@
 <meta name="google-site-verification" content="urb5XcUNd0QsSnqqtO49dSjLHeByMvfosPu2Gs2IMlY">
 <link rel="icon" type="image/png" href="/assets/brand/favicon-48.png">
 <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/stile3.css?v=c76cb08c">
+<link rel="stylesheet" href="/assets/stile3.css?v=58c282ba">
 <script>(function(){var d=document.documentElement,h=new Date().getHours(),s=location.search,m=/[?&]ora=(mattino|giorno|sera|notte)/.exec(s),f=/[?&]tema=(chiaro|scuro)/.exec(s),o=m?m[1]:h<5?'notte':h<12?'mattino':h<18?'giorno':h<22?'sera':'notte',t=null,z=0;try{t=localStorage.getItem('serena:aspetto');z=+localStorage.getItem('serena:testo')||0}catch(e){}if(f)t=f[1];d.className='js';d.dataset.ora=o;d.dataset.tema=(t==='scuro'||(t!=='chiaro'&&(o==='notte'||matchMedia('(prefers-color-scheme: dark)').matches)))?'scuro':'chiaro';if(z)d.style.fontSize=['','112.5%','128%'][z]})()</script>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="301edcb4-f5b2-444e-a1e5-8b8614d0100a" data-domains="serenainmente.it" data-do-not-track="true" data-exclude-search="true" data-exclude-hash="true"></script>
 
@@ -45,7 +45,7 @@
 <p class="lead noprint">La lista delle medicine di una persona, scritta una volta e sempre in tasca. La stampi grande, la mandi a un familiare o al medico, e il telefono ti ricorda gli orari.</p>
 <p class="privacy-note noprint"><svg class="ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> Quello che scrivi resta solo su questo telefono o computer: non arriva a nessuno, nemmeno a noi.</p>
 <p class="privacy-note md-regola"><svg class="ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg> Serve a ricordare, non a decidere. Scrivi solo quello che ha indicato il medico, con le sue parole: Serena non suggerisce medicine né quantità.</p>
-<div class="azioni noprint"><button class="btn btn-line btn-sm" type="button" hidden data-salva="/strumenti/medicine-di-casa/" data-title="Medicine di casa" aria-pressed="false" data-umami-event="salva-per-dopo"><svg class="ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12v17l-6-4.5L6 21z"/></svg><span>Salva per dopo</span></button></div>
+<div class="azioni noprint"><button class="btn btn-line btn-sm" type="button" hidden data-salva="/strumenti/medicine-di-casa/" data-title="Medicine di casa" aria-pressed="false" data-umami-event="salva-per-dopo"><svg class="ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12v17l-6-4.5L6 21z"/></svg><span>Salva per dopo</span></button><button class="btn btn-line btn-sm" type="button" hidden data-ricorda="/strumenti/medicine-di-casa/" data-title="Medicine di casa" data-umami-event="ricorda-domattina"><svg class="ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M16 3v4M8 3v4M3 10h18"/></svg><span>Ricordamelo domattina</span></button></div>
 
 <div class="pv-card">
 <h2>Per chi</h2>
@@ -65,12 +65,13 @@
 <h3 data-add-t>Aggiungi una medicina</h3>
 <label class="pv-full"><span>Nome della medicina, come è scritto sulla scatola</span><input data-n="nome" autocomplete="off" required></label>
 <label class="pv-full"><span>Quanto, come ha scritto il medico</span><input data-n="quanto" autocomplete="off" placeholder="Copia le parole della ricetta"></label>
-<fieldset class="md-quando"><legend>Quando</legend>
-<label><input type="checkbox" data-q="mattina"> <span>Mattina</span> <input type="time" data-o="mattina" value="08:00" aria-label="Ora della mattina"></label>
-<label><input type="checkbox" data-q="pranzo"> <span>Pranzo</span> <input type="time" data-o="pranzo" value="13:00" aria-label="Ora del pranzo"></label>
-<label><input type="checkbox" data-q="sera"> <span>Sera</span> <input type="time" data-o="sera" value="20:00" aria-label="Ora della sera"></label>
-<label><input type="checkbox" data-q="notte"> <span>Prima di dormire</span> <input type="time" data-o="notte" value="22:00" aria-label="Ora prima di dormire"></label>
+<fieldset class="md-quando"><legend>Quando: spunta e scrivi l'ora indicata dal medico</legend>
+<label><input type="checkbox" data-q="mattina"> <span>Mattina</span> <input type="time" data-o="mattina" aria-label="Mattina: l'ora indicata dal medico"></label>
+<label><input type="checkbox" data-q="pranzo"> <span>Pranzo</span> <input type="time" data-o="pranzo" aria-label="Pranzo: l'ora indicata dal medico"></label>
+<label><input type="checkbox" data-q="sera"> <span>Sera</span> <input type="time" data-o="sera" aria-label="Sera: l'ora indicata dal medico"></label>
+<label><input type="checkbox" data-q="notte"> <span>Prima di dormire</span> <input type="time" data-o="notte" aria-label="Prima di dormire: l'ora indicata dal medico"></label>
 <label><input type="checkbox" data-q="bisogno"> <span>Solo quando serve, come ha detto il medico</span></label>
+<p class="small" data-ora-manca hidden role="alert">Manca l'ora: scrivi quella indicata dal medico accanto alla casella spuntata.</p>
 </fieldset>
 <label class="pv-full"><span>Note: fino a quando, a cosa serve con parole sue</span><input data-n="note" autocomplete="off"></label>
 <div class="row"><button class="btn" type="submit" data-add-b>Aggiungi alla lista</button><button class="btn btn-line" type="button" data-add-x hidden>Annulla</button></div>
@@ -78,11 +79,18 @@
 </div>
 
 <div class="row pv-act noprint">
-<button class="btn" type="button" onclick="print()" data-umami-event="medicine-stampa">Stampa grande</button>
+<button class="btn" type="button" data-stampa-b data-umami-event="medicine-stampa">Stampa grande</button>
 <button class="btn btn-line" type="button" data-manda data-umami-event="medicine-manda">Manda la lista</button>
 <button class="btn btn-line" type="button" data-ics data-umami-event="medicine-calendario">Ricordami gli orari</button>
 </div>
-<p class="small noprint">«Ricordami gli orari» crea un promemoria che si ripete ogni giorno nel calendario del telefono. Lo togli quando vuoi dal calendario.</p>
+<div class="box box-salvia noprint" data-come hidden><h2>Come si mettono nel calendario</h2><ol class="sp-come"><li>Tocca il file appena scaricato, «medicine-di-casa.ics»: lo trovi tra le notifiche o nella cartella Download.</li><li>Scegli <b>Calendario</b>.</li><li>Tocca <b>Salva</b> o <b>Aggiungi tutti</b>.</li></ol>
+<p class="small">Se cambi una medicina o un orario, tocca di nuovo «Ricordami gli orari» e apri il file nuovo: aggiorna i promemoria di prima e toglie quelli che non servono più. Se nel calendario li vedi doppi, cancella a mano quelli vecchi. I nomi delle medicine restano nel file e nel tuo calendario: non passano da nessun sito.</p></div>
+<div class="row noprint">
+<button class="btn btn-line btn-sm" type="button" data-copia-salva data-umami-event="medicine-copia-salva">Salva una copia sul telefono</button>
+<label class="btn btn-line btn-sm">Riapri una copia<input type="file" accept=".json,application/json" data-copia-apri class="sr"></label>
+</div>
+<p class="small noprint">«Salva una copia» crea un file con la lista: tienilo tu. Se cambi telefono, lo riapri da qui e ritrovi tutto.</p>
+<div class="md-stampa" data-stampa aria-hidden="true"></div>
 
 <div class="pv-card pv-prev noprint" data-prev hidden>
 <h2>Stai per mandare questo testo</h2>
@@ -100,29 +108,43 @@
 </section>
 <script>
 (function(){
-var K='serena:medicine',S={m:[]},root=document.getElementById('md'),mod=-1;
+var K='serena:medicine',S={m:[],seq:0,exp:[]},root=document.getElementById('md'),mod=-1;
 try{S=Object.assign(S,JSON.parse(localStorage.getItem(K)||'{}'))}catch(x){}
 function save(){try{localStorage.setItem(K,JSON.stringify(S))}catch(x){}}
 function $(s){return root.querySelector(s)} function $$(s){return [].slice.call(root.querySelectorAll(s))}
 function esc(t){var d=document.createElement('div');d.textContent=t||'';return d.innerHTML}
-$$('[data-f]').forEach(function(el){var k=el.dataset.f;if(S[k])el.value=S[k];el.addEventListener('input',function(){S[k]=el.value;save()})});
-var NOMI={mattina:'mattina',pranzo:'pranzo',sera:'sera',notte:'prima di dormire'},ORD=['mattina','pranzo','sera','notte'];
-function quando(m){var o=ORD.filter(function(k){return m.q&&m.q[k]}).map(function(k){return NOMI[k]+' ('+m.q[k]+')'});if(m.bisogno)o.push('solo quando serve');return o.join(', ')}
-$('[data-oggi]').textContent=new Date().toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'});
+function campi(){$$('[data-f]').forEach(function(el){el.value=S[el.dataset.f]||''})}
+$$('[data-f]').forEach(function(el){var k=el.dataset.f;el.addEventListener('input',function(){S[k]=el.value;save()})});campi();
+var NOMI={mattina:'Mattina',pranzo:'Pranzo',sera:'Sera',notte:'Prima di dormire'},ORD=['mattina','pranzo','sera','notte'];
+function quando(m){var o=ORD.filter(function(k){return m.q&&m.q[k]}).map(function(k){return NOMI[k].toLowerCase()+' ('+m.q[k]+')'});if(m.bisogno)o.push('solo quando serve');return o.join(', ')}
+var OGGI=new Date().toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'});$('[data-oggi]').textContent=OGGI;
 function list(){var L=$('[data-list]');L.innerHTML='';S.m.forEach(function(m,i){var li=document.createElement('li');
  li.innerHTML='<div class="md-t"><b>'+esc(m.nome)+'</b>'+(m.quanto?'<span>'+esc(m.quanto)+'</span>':'')+(quando(m)?'<span class="md-q">'+esc(quando(m))+'</span>':'')+(m.note?'<span>'+esc(m.note)+'</span>':'')+'</div><div class="md-b noprint"><button type="button" class="btn btn-line btn-sm">Cambia</button><button type="button" class="btn btn-line btn-sm">Togli</button></div>';
- var b=li.querySelectorAll('button');b[0].onclick=function(){apri(i)};b[1].onclick=function(){var t=S.m.splice(i,1)[0];save();list();undo(t,i)};L.appendChild(li)})}
-function vuota(){$$('[data-n]').forEach(function(e){e.value=''});$$('[data-q]').forEach(function(e){e.checked=false});mod=-1;$('[data-add-t]').textContent='Aggiungi una medicina';$('[data-add-b]').textContent='Aggiungi alla lista';$('[data-add-x]').hidden=true}
-function apri(i){var m=S.m[i];mod=i;$$('[data-n]').forEach(function(e){e.value=m[e.dataset.n]||''});$$('[data-q]').forEach(function(e){var k=e.dataset.q;e.checked=k==='bisogno'?!!m.bisogno:!!(m.q&&m.q[k]);var o=$('[data-o="'+k+'"]');if(o&&m.q&&m.q[k])o.value=m.q[k]});
+ var b=li.querySelectorAll('button');b[0].onclick=function(){apri(i)};b[1].onclick=function(){var t=S.m.splice(i,1)[0];save();list();undo(t,i)};L.appendChild(li)});stampa()}
+/* la stampa è ordinata per ora del giorno: sotto ogni ora, le medicine */
+function stampa(){var P=$('[data-stampa]'),per={},h='';S.m.forEach(function(m){ORD.forEach(function(q){if(m.q&&m.q[q]){var k=m.q[q]+'|'+q;(per[k]=per[k]||[]).push(m)}})});
+ var capo=[S.medico?'Medico: '+S.medico+(S.tel?' · '+S.tel:''):'',S.farmacia?'Farmacia: '+S.farmacia:'',S.allergie?'Allergie o medicine da evitare: '+S.allergie:''].filter(Boolean);
+ h+='<p class="ms-t">Le medicine'+(S.chi?' di '+esc(S.chi):'')+'</p><p class="ms-s">Aggiornata il '+OGGI+(capo.length?' · '+capo.map(esc).join(' · '):'')+'</p>';
+ Object.keys(per).sort().forEach(function(k){var p=k.split('|');h+='<section><h2>'+p[0]+' · '+NOMI[p[1]]+'</h2><ul>'+per[k].map(function(m){return '<li><b>'+esc(m.nome)+'</b>'+(m.quanto?' — '+esc(m.quanto):'')+(m.note?' <i>('+esc(m.note)+')</i>':'')+'</li>'}).join('')+'</ul></section>'});
+ var bis=S.m.filter(function(m){return m.bisogno});if(bis.length)h+='<section><h2>Solo quando serve</h2><ul>'+bis.map(function(m){return '<li><b>'+esc(m.nome)+'</b>'+(m.quanto?' — '+esc(m.quanto):'')+(m.note?' <i>('+esc(m.note)+')</i>':'')+'</li>'}).join('')+'</ul></section>';
+ var senza=S.m.filter(function(m){return !m.bisogno&&!ORD.some(function(q){return m.q&&m.q[q]})});if(senza.length)h+='<section><h2>Senza un orario scritto</h2><ul>'+senza.map(function(m){return '<li><b>'+esc(m.nome)+'</b>'+(m.quanto?' — '+esc(m.quanto):'')+'</li>'}).join('')+'</ul></section>';
+ h+='<p class="ms-p">Scritta come ha indicato il medico. Serve a ricordare, non a decidere. · serenainmente.it</p>';P.innerHTML=h}
+$('[data-stampa-b]').onclick=function(){stampa();print()};
+function vuota(){$$('[data-n]').forEach(function(e){e.value=''});$$('[data-q]').forEach(function(e){e.checked=false});$$('[data-o]').forEach(function(e){e.value=''});$('[data-ora-manca]').hidden=true;mod=-1;$('[data-add-t]').textContent='Aggiungi una medicina';$('[data-add-b]').textContent='Aggiungi alla lista';$('[data-add-x]').hidden=true}
+function apri(i){var m=S.m[i];vuota();mod=i;$$('[data-n]').forEach(function(e){e.value=m[e.dataset.n]||''});$$('[data-q]').forEach(function(e){var k=e.dataset.q;e.checked=k==='bisogno'?!!m.bisogno:!!(m.q&&m.q[k]);var o=$('[data-o="'+k+'"]');if(o&&m.q&&m.q[k])o.value=m.q[k]});
  $('[data-add-t]').textContent='Cambia questa medicina';$('[data-add-b]').textContent='Salva';$('[data-add-x]').hidden=false;$('[data-add]').scrollIntoView({block:'start'});$('[data-n=nome]').focus()}
 $('[data-add-x]').onclick=vuota;
-$('[data-add]').onsubmit=function(ev){ev.preventDefault();var m={q:{}};$$('[data-n]').forEach(function(e){m[e.dataset.n]=e.value.trim()});if(!m.nome)return;
- $$('[data-q]').forEach(function(e){var k=e.dataset.q;if(!e.checked)return;if(k==='bisogno')m.bisogno=true;else m.q[k]=$('[data-o="'+k+'"]').value||''});
- if(mod>-1)S.m[mod]=m;else S.m.push(m);save();vuota();list();var L=$('[data-list]').children[mod>-1?mod:S.m.length-1];if(L)L.classList.add('new')};
+/* l'ora la scrive chi usa: se spunti una casella, l'ora è obbligatoria; se scrivi un'ora, la casella si spunta */
+$$('[data-o]').forEach(function(o){o.addEventListener('input',function(){if(o.value)$('[data-q="'+o.dataset.o+'"]').checked=true})});
+$('[data-add]').onsubmit=function(ev){ev.preventDefault();var m={q:{}},manca=null;$$('[data-n]').forEach(function(e){m[e.dataset.n]=e.value.trim()});if(!m.nome)return;
+ $$('[data-q]').forEach(function(e){var k=e.dataset.q;if(!e.checked)return;if(k==='bisogno'){m.bisogno=true;return}var o=$('[data-o="'+k+'"]');if(!o.value){manca=manca||o;return}m.q[k]=o.value});
+ if(manca){$('[data-ora-manca]').hidden=false;manca.focus();return}
+ m.id=mod>-1&&S.m[mod].id?S.m[mod].id:Date.now().toString(36);
+ if(mod>-1)S.m[mod]=m;else S.m.push(m);var qui=mod>-1?mod:S.m.length-1;save();vuota();list();var L=$('[data-list]').children[qui];if(L)L.classList.add('new')};
 var U=null,UT=null;
 function undo(m,i){if(U)U.remove();clearTimeout(UT);U=document.createElement('div');U.className='pv-undo';U.setAttribute('role','status');U.innerHTML='<span>Medicina tolta</span><button type="button">Annulla</button>';
  U.querySelector('button').onclick=function(){S.m.splice(Math.min(i,S.m.length),0,m);save();list();U.remove();U=null};document.body.appendChild(U);UT=setTimeout(function(){if(U){U.remove();U=null}},6000)}
-function text(){var o=['Le medicine'+(S.chi?' di '+S.chi:''),'Aggiornata il '+$('[data-oggi]').textContent,''];
+function text(){var o=['Le medicine'+(S.chi?' di '+S.chi:''),'Aggiornata il '+OGGI,''];
  if(S.medico)o.push('Medico: '+S.medico+(S.tel?' · '+S.tel:''));if(S.farmacia)o.push('Farmacia: '+S.farmacia);if(S.allergie)o.push('Allergie o medicine da evitare: '+S.allergie);o.push('');
  S.m.forEach(function(m,i){o.push((i+1)+'. '+m.nome+(m.quanto?' — '+m.quanto:''));var q=quando(m);if(q)o.push('   '+q);if(m.note)o.push('   '+m.note)});
  o.push('','Scritta con serenainmente.it/strumenti/medicine-di-casa/');return o.join('\n')}
@@ -131,17 +153,24 @@ $('[data-manda]').onclick=function(){$('[data-prevtext]').textContent=text();P.h
 $('[data-send]').onclick=function(){var t=text();if(navigator.share){navigator.share({text:t}).catch(function(){})}else{open('https://wa.me/?text='+encodeURIComponent(t))}P.hidden=true};
 $('[data-cancel]').onclick=function(){P.hidden=true};
 function msg(t){var e=document.createElement('div');e.className='toast';e.setAttribute('role','status');e.textContent=t;document.body.appendChild(e);setTimeout(function(){e.remove()},3200)}
-$('[data-ics]').onclick=function(){
- function p(n){return (n<10?'0':'')+n} function e(s){return String(s).replace(/\\/g,'\\\\').replace(/([,;])/g,'\\$1').replace(/\n/g,'\\n')}
- var n=new Date(),day=''+n.getFullYear()+p(n.getMonth()+1)+p(n.getDate()),st=n.getUTCFullYear()+p(n.getUTCMonth()+1)+p(n.getUTCDate())+'T'+p(n.getUTCHours())+p(n.getUTCMinutes())+'00Z';
- var per={},k=0;S.m.forEach(function(m){ORD.forEach(function(q){if(m.q&&m.q[q]){(per[m.q[q]]=per[m.q[q]]||[]).push(m)}})});
- var ev=Object.keys(per).sort().map(function(ora){var L=per[ora],tit='Medicine'+(S.chi?' di '+S.chi:'')+': '+L.map(function(m){return m.nome}).join(', '),des=L.map(function(m){return m.nome+(m.quanto?' — '+m.quanto:'')+(m.note?' ('+m.note+')':'')}).join('\n')+'\nCome ha scritto il medico. Promemoria creato con serenainmente.it';
-  return ['BEGIN:VEVENT','UID:'+Date.now()+'-'+(k++)+'@serenainmente.it','DTSTAMP:'+st,'DTSTART:'+day+'T'+ora.replace(':','')+'00','DURATION:PT10M','RRULE:FREQ=DAILY','SUMMARY:'+e(tit),'DESCRIPTION:'+e(des),'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+e(tit),'TRIGGER:PT0M','END:VALARM','END:VEVENT'].join('\r\n')});
- if(!ev.length){msg('Serena prepara i promemoria appena una medicina ha un orario');return}
- var ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//serenainmente.it//IT'].concat(ev,['END:VCALENDAR']).join('\r\n'),a=document.createElement('a');
- a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));a.download='medicine-di-casa.ics';document.body.appendChild(a);a.click();a.remove();msg(ev.length===1?'Un promemoria al giorno, pronto per il calendario':ev.length+' promemoria al giorno, pronti per il calendario')};
+/* promemoria: un evento per ogni ora, che si ripete ogni giorno. Il nome dell'evento (UID) resta lo stesso da un file all'altro
+   e il numero di versione (SEQUENCE) cresce: così il file nuovo aggiorna i promemoria di prima. Le ore tolte arrivano come «annullate». */
+$('[data-ics]').onclick=function(){var Cal=window.SerenaCal;if(!Cal)return;
+ var per={};S.m.forEach(function(m){ORD.forEach(function(q){if(m.q&&m.q[q]){(per[m.q[q]]=per[m.q[q]]||[]).push(m)}})});var ore=Object.keys(per).sort();
+ if(!ore.length&&!(S.exp||[]).length){msg('Serena prepara i promemoria appena una medicina ha un orario');return}
+ S.seq=(S.seq||0)+1;var day=Cal.giorno(new Date()),st=Cal.ora(),righe=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//serenainmente.it//IT','METHOD:PUBLISH'];
+ function uid(ora){return 'medicine-'+ora.replace(':','')+'@serenainmente.it'}
+ ore.forEach(function(ora){var L=per[ora],tit='Medicine'+(S.chi?' di '+S.chi:'')+': '+L.map(function(m){return m.nome}).join(', '),des=L.map(function(m){return m.nome+(m.quanto?' — '+m.quanto:'')+(m.note?' ('+m.note+')':'')}).join('\n')+'\nCome ha scritto il medico. Promemoria creato con serenainmente.it';
+  righe.push('BEGIN:VEVENT','UID:'+uid(ora),'SEQUENCE:'+S.seq,'DTSTAMP:'+st,'DTSTART:'+day+'T'+ora.replace(':','')+'00','DURATION:PT10M','RRULE:FREQ=DAILY','SUMMARY:'+Cal.e(tit),'DESCRIPTION:'+Cal.e(des),'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+Cal.e(tit),'TRIGGER:PT0M','END:VALARM','END:VEVENT')});
+ (S.exp||[]).filter(function(o){return ore.indexOf(o)<0}).forEach(function(ora){righe.push('BEGIN:VEVENT','UID:'+uid(ora),'SEQUENCE:'+S.seq,'DTSTAMP:'+st,'DTSTART:'+day+'T'+ora.replace(':','')+'00','DURATION:PT10M','STATUS:CANCELLED','SUMMARY:'+Cal.e('Medicine: promemoria tolto'),'END:VEVENT')});
+ righe.push('END:VCALENDAR');S.exp=ore;save();Cal.file(righe,'medicine-di-casa.ics');if(Cal.nota)Cal.nota('Orari delle medicine','/strumenti/medicine-di-casa/');
+ $('[data-come]').hidden=false;msg(ore.length===1?'Un promemoria al giorno, pronto per il calendario':ore.length+' promemoria al giorno, pronti per il calendario')};
+/* una copia in un file: resta a chi usa, serve per cambiare telefono */
+$('[data-copia-salva]').onclick=function(){var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify({serena:'medicine-di-casa',versione:1,salvata:new Date().toISOString().slice(0,10),dati:S})],{type:'application/json'}));a.download='medicine-di-casa-copia.json';document.body.appendChild(a);a.click();a.remove();msg('Copia salvata: la trovi tra i file scaricati')};
+$('[data-copia-apri]').onchange=function(){var f=this.files[0],el=this;if(!f)return;var r=new FileReader();r.onload=function(){try{var o=JSON.parse(r.result);if(o.serena!=='medicine-di-casa'||!o.dati||!Array.isArray(o.dati.m))throw 0;S=Object.assign({m:[],seq:0,exp:[]},o.dati);save();campi();vuota();list();msg('Copia riaperta: '+S.m.length+(S.m.length===1?' medicina':' medicine'))}catch(x){msg('Questo file non è una copia di Medicine di casa')}el.value=''};r.readAsText(f)};
 var R=$('[data-reset]'),armed=false;R.onclick=function(){if(!armed){armed=true;R.textContent='Tocca di nuovo per cancellare tutto';setTimeout(function(){armed=false;R.textContent='Cancella tutto'},4000);return}
- S={m:[]};save();$$('[data-f]').forEach(function(el){el.value=''});vuota();list();armed=false;R.textContent='Cancella tutto'};
+ var e=S.exp||[],q=S.seq||0;S={m:[],seq:q,exp:e};save();campi();vuota();list();armed=false;R.textContent='Cancella tutto'};
+$$('[data-f]').forEach(function(el){el.addEventListener('input',stampa)});
 list();
 })();
 </script>
@@ -152,7 +181,7 @@ list();
 <div class="ft-brand"><a class="brand" href="/"><img class="logo-mark" src="/assets/brand/mark-96.png" alt="" width="34" height="34"><span>serenainmente</span></a><p>Guide brevi con le loro fonti, strumenti gratuiti e parole in cui ritrovarsi, per chi si prende cura della famiglia.</p>
 <a class="ft-ig" href="https://www.instagram.com/serenainmente/" rel="noopener" data-umami-event="instagram"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg> Segui @serenainmente</a></div>
 <nav aria-label="Esplora"><h2>Esplora</h2><ul><li><a href="/guide/">Guide</a></li><li><a href="/risorse/">Strumenti gratuiti</a></li><li><a href="/gestionale/">Il gestionale di famiglia</a></li><li><a href="/frasi/">Le frasi da mandare</a></li></ul></nav>
-<nav aria-label="Serena"><h2>Serena</h2><ul><li><a href="/chi-e-serena/">Chi è Serena</a></li><li><a href="/metodo/">Il metodo</a></li><li><a href="/fonti/">Le fonti</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/note-legali/">Note legali</a></li><li><a href="mailto:privacy@serenainmente.it?subject=Segnalazione">Scrivi o segnala un errore</a></li></ul></nav>
+<nav aria-label="Serena"><h2>Serena</h2><ul><li><a href="/chi-e-serena/">Chi è Serena</a></li><li><a href="/metodo/">Il metodo</a></li><li><a href="/fonti/">Le fonti</a></li><li><a href="/correzioni/">Correzioni</a></li><li><a href="/salvati/">I tuoi salvati</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/note-legali/">Note legali</a></li><li><a href="mailto:privacy@serenainmente.it?subject=Segnalazione">Scrivi o segnala un errore</a></li></ul></nav>
 </div>
 <div class="ft-low"><p>Serena è ideata e curata da una persona, con il supporto dell'intelligenza artificiale per testi, immagini e verifica delle fonti. Informazioni generali: non sostituiscono il parere del pediatra o del medico.</p>
 <p>Questo sito non usa cookie e non ti chiede dati. Come contiamo le visite: <a href="/privacy/">Privacy</a>. © 2026 serenainmente.it <button class="btn btn-line btn-sm" type="button" data-tema-auto hidden>Torna all'aspetto che segue l'ora</button></p></div>
@@ -162,11 +191,11 @@ list();
 <a class="tab-c" href="/guide/#cerca" data-cerca role="button"><span class="o"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span><span>Cerca</span></a>
 <a href="/risorse/" aria-current=page><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="7" height="7" rx="2"/><rect x="13.5" y="13.5" width="7" height="7" rx="2"/></svg><span>Strumenti</span></a><a href="/chi-e-serena/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10Z"/><path d="M2 21c0-3 1.9-5.4 5.1-6 2.4-.5 4.9-2 5.9-3"/></svg><span>Serena</span></a>
 </nav>
-<dialog class="foglio" id="cerca" data-src="/assets/cerca-dati.js?v=82db21cd" aria-label="Cerca nel sito">
+<dialog class="foglio" id="cerca" data-src="/assets/cerca-dati.js?v=866d0ea5" aria-label="Cerca nel sito">
 <div class="fg-in"><form class="fg-top" role="search"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><label class="sr" for="q">Cerca nelle guide di Serena</label><input id="q" type="search" placeholder="Che cosa cerchi?" autocomplete="off" enterkeyhint="search"><button type="button" class="icbtn" data-chiudi aria-label="Chiudi la ricerca"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></form>
 <div class="fg-body"><div data-prima><h2>Per esempio</h2><ul class="esempi"><li><button type="button" data-q="non vuole dormire">non vuole dormire</button></li><li><button type="button" data-q="domani ho il pediatra">domani ho il pediatra</button></li><li><button type="button" data-q="spostare una visita">spostare una visita</button></li><li><button type="button" data-q="le medicine di mamma">le medicine di mamma</button></li><li><button type="button" data-q="iscrizione al nido">iscrizione al nido</button></li><li><button type="button" data-q="dove trovo un referto">dove trovo un referto</button></li></ul><p class="small" style="margin-top:14px">La ricerca guarda nelle guide e negli strumenti di Serena. Quello che scrivi resta su questo telefono o computer.</p></div>
 <div class="fg-esiti" data-esiti aria-live="polite"></div></div></div>
 </dialog>
-<script defer src="/assets/sito.js?v=468e2acb"></script>
+<script defer src="/assets/sito.js?v=ed9140a8"></script>
 </body>
 </html>

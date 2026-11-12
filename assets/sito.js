@@ -17,7 +17,8 @@ function icsFile(righe,nome){var out=[];righe.forEach(function(r){var b=unescape
  var a=d.createElement('a');a.href=URL.createObjectURL(new Blob([out.join('\r\n')+'\r\n'],{type:'text/calendar'}));a.download=nome;d.body.appendChild(a);a.click();a.remove()}
 function icsOra(){var n=new Date();return n.getUTCFullYear()+p2(n.getUTCMonth()+1)+p2(n.getUTCDate())+'T'+p2(n.getUTCHours())+p2(n.getUTCMinutes())+'00Z'}
 function icsGiorno(t){return ''+t.getFullYear()+p2(t.getMonth()+1)+p2(t.getDate())}
-window.SerenaCal={e:icsE,file:icsFile,ora:icsOra,giorno:icsGiorno};
+function nota(t,u){var L=lsj('serena:promemoria',[]);L=L.filter(function(x){return x.t!==t});L.unshift({t:t,u:u||location.pathname,q:new Date().toISOString().slice(0,10)});ls('serena:promemoria',JSON.stringify(L.slice(0,20)))}
+window.SerenaCal={e:icsE,file:icsFile,ora:icsOra,giorno:icsGiorno,nota:nota};
 
 /* aspetto chiaro o scuro, e grandezza del testo */
 var TB=$('[data-tema-btn]');
@@ -53,7 +54,7 @@ $$('.ck').forEach(function(box){
  var I=$('[data-ics]',box);if(I)I.onclick=function(){
   var t=new Date();t.setDate(t.getDate()+1);
   var voci=cs.map(function(c){return (c.checked?'[x] ':'[ ] ')+voce(c)}).join('\n');
-  icsFile(['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//serenainmente.it//IT','BEGIN:VEVENT','UID:'+Date.now()+'@serenainmente.it','DTSTAMP:'+icsOra(),'DTSTART:'+icsGiorno(t)+'T090000','DURATION:PT15M','SUMMARY:'+icsE(box.dataset.titolo),'DESCRIPTION:'+icsE(voci+'\n'+box.dataset.url),'URL:'+box.dataset.url,'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+icsE(box.dataset.titolo),'TRIGGER:PT0M','END:VALARM','END:VEVENT','END:VCALENDAR'],'promemoria-serena.ics');
+  icsFile(['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//serenainmente.it//IT','BEGIN:VEVENT','UID:'+Date.now()+'@serenainmente.it','DTSTAMP:'+icsOra(),'DTSTART:'+icsGiorno(t)+'T090000','DURATION:PT15M','SUMMARY:'+icsE(box.dataset.titolo),'DESCRIPTION:'+icsE(voci+'\n'+box.dataset.url),'URL:'+box.dataset.url,'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+icsE(box.dataset.titolo),'TRIGGER:PT0M','END:VALARM','END:VEVENT','END:VCALENDAR'],'promemoria-serena.ics');nota(box.dataset.titolo,location.pathname+'#lista');
   toast('Promemoria per domattina alle 9')};
  upd()});
 addEventListener('afterprint',function(){d.body.classList.remove('solo-lista')});
@@ -61,9 +62,13 @@ addEventListener('afterprint',function(){d.body.classList.remove('solo-lista')})
 /* «Salva per dopo»: resta in questo browser, e la pagina si rilegge anche senza rete */
 function salvati(){return lsj('serena:salvati',[])}
 function sw(m){try{if(navigator.serviceWorker&&navigator.serviceWorker.controller)navigator.serviceWorker.controller.postMessage(m)}catch(x){}}
-$$('[data-salva]').forEach(function(b){var u=b.dataset.salva,t=b.dataset.title;
- function st(){var on=salvati().some(function(x){return x.u===u});b.setAttribute('aria-pressed',on);$('span',b).textContent=on?'Salvata per dopo':'Salva per dopo'}
- b.hidden=false;b.onclick=function(){var L=salvati(),i=-1;L.forEach(function(x,k){if(x.u===u)i=k});if(i>-1)L.splice(i,1);else{L.unshift({u:u,t:t});sw({salva:[u]})}ls('serena:salvati',JSON.stringify(L.slice(0,12)));st();toast(i>-1?'Tolta dalle cose salvate':'Serena la tiene da parte: la ritrovi nella pagina iniziale, anche senza rete')};st()});
+function domattina(titolo,url){var t=new Date();t.setDate(t.getDate()+1);
+ icsFile(['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//serenainmente.it//IT','BEGIN:VEVENT','UID:'+Date.now()+'@serenainmente.it','DTSTAMP:'+icsOra(),'DTSTART:'+icsGiorno(t)+'T090000','DURATION:PT15M','SUMMARY:'+icsE('Da rileggere: '+titolo),'DESCRIPTION:'+icsE(url),'URL:'+url,'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+icsE(titolo),'TRIGGER:PT0M','END:VALARM','END:VEVENT','END:VCALENDAR'],'promemoria-serena.ics');
+ nota(titolo,url.replace(/^https?:\/\/[^/]+/,''));toast('Promemoria per domattina alle 9')}
+$$('[data-salva]').forEach(function(b){var u=b.dataset.salva,t=b.dataset.title,RB=$('[data-ricorda="'+u+'"]');
+ function st(){var on=salvati().some(function(x){return x.u===u});b.setAttribute('aria-pressed',on);$('span',b).textContent=on?'Salvata per dopo':'Salva per dopo';if(RB)RB.hidden=!on}
+ b.hidden=false;b.onclick=function(){var L=salvati(),i=-1;L.forEach(function(x,k){if(x.u===u)i=k});if(i>-1)L.splice(i,1);else{L.unshift({u:u,t:t});sw({salva:[u]})}ls('serena:salvati',JSON.stringify(L.slice(0,12)));st();toast(i>-1?'Tolta dalle cose salvate':'Serena la tiene da parte: la ritrovi in «I tuoi salvati», anche senza rete')};
+ if(RB)RB.onclick=function(){domattina(t,'https://serenainmente.it'+u)};st()});
 function href(u){var B=d.body.dataset.base||'/';return d.body.dataset.rel?B+u.slice(1)+(u.slice(-1)==='/'?'index.html':''):u}
 var SV=$('[data-salvati]');
 if(SV){var L0=salvati();if(L0.length){SV.hidden=false;$('h2',SV).textContent=L0.length===1?'Serena ti ha tenuto da parte una cosa':'Serena ti ha tenuto da parte '+L0.length+' cose';
@@ -88,11 +93,25 @@ if(PT){PT.hidden=false;var EB=$('[data-eta-box]',PT),DM=$('[data-dimentica]',PT)
   var ord=LI.map(function(li){return {li:li,v:CU.chi.length?adatto(li.dataset.tag,li.dataset.eta?li.dataset.eta.split(' '):[]):(li.dataset.base==='1'?1:0),i:+li.dataset.i}});
   ord.sort(function(a,b){return b.v-a.v||(CU.chi.length?(+(b.li.dataset.pri||0))-(+(a.li.dataset.pri||0)):0)||a.i-b.i});var n=0;
   ord.forEach(function(o){UL.appendChild(o.li);var ok=o.v>0&&n<(CU.chi.length?5:4);o.li.hidden=!ok;if(ok)n++});
-  var T=$('[data-partenze-t]');if(T)T.textContent=CU.chi.length?'Serena ha messo in cima queste':'Le ultime guide'}
+  var T=$('[data-partenze-t]'),PV=$('[data-per-voi]'),CASA=$('[data-partenze-casa]');if(T)T.textContent=CU.chi.length?'Serena ha messo in cima queste':'Le ultime guide';
+  /* con una scelta fatta, l'elenco sale in cima alla pagina, subito sotto la casella, e prende il posto della scheda dell'ora */
+  if(PV&&CASA){var su=CU.chi.length>0;if(su){PV.appendChild(T);PV.appendChild(UL)}else{CASA.appendChild(T);CASA.appendChild(UL)}PV.hidden=!su;$$('.ora-card').forEach(function(c){c.hidden=su});var EX=$('[data-esempi]');if(EX)EX.hidden=su}}
  $$('[data-cura]',PT).forEach(function(b){b.onclick=function(){var i=CU.chi.indexOf(b.dataset.cura);if(i>-1)CU.chi.splice(i,1);else CU.chi.push(b.dataset.cura);if(CU.chi.indexOf('bambino')<0)CU.eta=[];salvaCU();pt()}});
  $$('[data-eta]',PT).forEach(function(b){b.onclick=function(){var i=CU.eta.indexOf(b.dataset.eta);if(i>-1)CU.eta.splice(i,1);else CU.eta.push(b.dataset.eta);salvaCU();pt()}});
  DM.onclick=function(){CU={chi:[],eta:[]};salvaCU();pt();toast('Fatto: Serena non lo ricorda più')};
  pt()}
+/* «I tuoi salvati»: pagine salvate, liste cominciate, strumenti, promemoria. Tutto letto dal browser, niente da un server */
+var TU=$('[data-tuoi]');
+if(TU){var GT=JSON.parse(TU.dataset.guide||'{}'),qualcosa=false;
+ function sez(nome,righe){var S1=$('[data-t-'+nome+']',TU);if(!righe.length)return;qualcosa=true;S1.hidden=false;$('ul',S1).innerHTML=righe.join('')}
+ function r(u,t,sotto){return '<li><a class="rowl" href="'+esc(href(u))+'"><span class="t"><b>'+esc(t)+'</b>'+(sotto?'<small>'+esc(sotto)+'</small>':'')+'</span></a></li>'}
+ sez('salvati',salvati().map(function(x){return r(x.u,x.t,'')}));
+ var liste=[];Object.keys(GT).forEach(function(sl){var n=0;for(var i=0;i<12;i++)if(ls('ck:'+sl+'-'+i)==='1')n++;if(n)liste.push(r('/guide/'+sl+'/#lista',GT[sl],n+(n===1?' cosa spuntata':' cose spuntate')))});sez('liste',liste);
+ var st=[],pv=lsj('serena:preparo-visita',null),md=lsj('serena:medicine',null);
+ if(pv&&((pv.q&&pv.q.length)||pv.chi||pv.notato))st.push(r('/strumenti/preparo-la-visita/','Preparo la visita',(pv.q&&pv.q.length?pv.q.length+(pv.q.length===1?' domanda':' domande'):'Cominciata')+(pv.chi?' · per '+pv.chi:'')));
+ if(md&&md.m&&md.m.length)st.push(r('/strumenti/medicine-di-casa/','Medicine di casa',md.m.length+(md.m.length===1?' medicina in lista':' medicine in lista')));sez('strumenti',st);
+ sez('promemoria',lsj('serena:promemoria',[]).map(function(x){var g=new Date(x.q+'T12:00');return r(x.u,x.t,'Preparato il '+g.toLocaleDateString('it-IT',{day:'numeric',month:'long'}))}));
+ if(qualcosa){$('[data-t-inizio]',TU).hidden=true;var SVU=$('[data-t-svuota]',TU),arm=false;SVU.hidden=false;SVU.onclick=function(){if(!arm){arm=true;SVU.textContent='Tocca di nuovo: pagine salvate e promemoria spariscono da qui';setTimeout(function(){arm=false;SVU.textContent='Dimentica tutto quello che è in questa pagina'},4000);return}ls('serena:salvati',null);ls('serena:promemoria',null);location.reload()}}}
 /* nelle tabelle per età, le righe che riguardano chi legge */
 (function(){if(!CU.eta.length)return;var n=0;$$('tr[data-eta]').forEach(function(tr){var p=tr.dataset.eta.split('-');if(CU.eta.some(function(k){var f=FASCE[k];return f&&+p[0]<=f[1]&&+p[1]>=f[0]})){tr.classList.add('tua');n++}});
  if(n)$$('[data-tua-n]').forEach(function(x){x.hidden=false})})();
@@ -104,6 +123,14 @@ if(grid){var chips=$$('[data-arg]'),cur='tutti',h=location.hash.slice(1);
  function run(){$$('[data-a]',grid).forEach(function(c){c.hidden=!(cur==='tutti'||c.dataset.a===cur)});chips.forEach(function(ch){ch.setAttribute('aria-pressed',ch.dataset.arg===cur)})}
  chips.forEach(function(ch){ch.onclick=function(){cur=ch.dataset.arg;history.replaceState(null,'',cur==='tutti'?location.pathname:'#'+cur);run()}});run()}
 
+/* una sola via alla volta: dove la casella è in pagina, «Cerca» nella barra in basso compare solo quando la casella non si vede più */
+var TC=$('.tab-c[data-con-casella]'),CA=$('main .chiedi');
+if(TC&&CA&&'IntersectionObserver' in window)new IntersectionObserver(function(es){TC.hidden=es[0].isIntersecting}).observe(CA);
+/* passi richiudibili: l'indirizzo #passo-3 lo apre; in stampa si aprono tutti */
+function apriPasso(){var x=location.hash&&d.getElementById(location.hash.slice(1));if(x&&x.tagName==='DETAILS'){x.open=true;x.scrollIntoView({block:'start'})}}
+addEventListener('hashchange',apriPasso);apriPasso();
+addEventListener('beforeprint',function(){$$('.passi details').forEach(function(x){x.dataset.era=x.open?'1':'';x.open=true})});
+addEventListener('afterprint',function(){$$('.passi details').forEach(function(x){if(x.dataset.era==='')x.open=false})});
 /* anteprima del foglio da vicino */
 $$('[data-zoom]').forEach(function(b){var D=$('dialog.zoom');if(!D||!D.showModal)return;b.onclick=function(){D.showModal()};$('.x',D).onclick=function(){D.close()}});
 
@@ -111,9 +138,11 @@ $$('[data-zoom]').forEach(function(b){var D=$('dialog.zoom');if(!D||!D.showModal
 var AB=$('[data-ascolta]');
 if(AB&&'speechSynthesis' in window&&window.SpeechSynthesisUtterance){AB.hidden=false;var parla=false;
  function fine(){parla=false;$('span',AB).textContent='Ascolta la guida';AB.setAttribute('aria-pressed','false')}
+ function scegli(){var V=speechSynthesis.getVoices().filter(function(v){return /^it/i.test(v.lang)});return V.filter(function(v){return v.localService})[0]||V[0]||null}
+ try{speechSynthesis.getVoices()}catch(x){}
  AB.onclick=function(){if(parla){speechSynthesis.cancel();fine();return}
-  var pezzi=$$('[data-leggi]').map(function(el){return el.innerText.replace(/\s+/g,' ').trim()}).filter(Boolean);speechSynthesis.cancel();
-  pezzi.forEach(function(t,i){var u=new SpeechSynthesisUtterance(t);u.lang='it-IT';u.rate=.95;if(i===pezzi.length-1)u.onend=fine;speechSynthesis.speak(u)});
+  var pezzi=$$('[data-leggi]').map(function(el){return el.textContent.replace(/\s+/g,' ').trim()}).filter(Boolean),v=scegli();speechSynthesis.cancel();
+  pezzi.forEach(function(t,i){var u=new SpeechSynthesisUtterance(t);u.lang='it-IT';if(v)u.voice=v;u.rate=.95;if(i===pezzi.length-1)u.onend=fine;speechSynthesis.speak(u)});
   parla=true;$('span',AB).textContent='Ferma la lettura';AB.setAttribute('aria-pressed','true')};
  addEventListener('pagehide',function(){speechSynthesis.cancel()})}
 
@@ -125,10 +154,12 @@ $$('[data-calc]').forEach(function(box){var tipo=box.dataset.calc,N=$('[data-nas
   else{if(!N.value)return;var n=new Date(N.value+'T12:00');if(isNaN(n)||n>r)return;var eta=(r-n)/31557600000,anni=eta<3?3:eta<18?5:10,min=new Date(r);min.setFullYear(min.getFullYear()+anni);
    sc=new Date(n);sc.setFullYear(min.getFullYear());if(sc<min)sc.setFullYear(sc.getFullYear()+1);
    O.textContent='Rilasciata a '+(eta<3?'meno di 3 anni':eta<18?'un\'età tra 3 e 18 anni':'più di 18 anni')+': vale '+anni+' anni e scade al compleanno successivo, il '+fmt(sc)+'.'}
+  var oggi=new Date();oggi.setHours(12,0,0,0);
+  if(sc<oggi){var gg=Math.round((oggi-sc)/86400000),mm=Math.floor(gg/30.44);O.textContent='È già scaduto da '+(mm>=2?mm+' mesi':gg+(gg===1?' giorno':' giorni'))+' (il '+fmt(sc)+'): va rinnovato.';sc=null;return}
   B.hidden=false}
  [N,R].forEach(function(el){if(el)el.addEventListener('input',calc)});
- B.onclick=function(){if(!sc)return;var av=new Date(sc);av.setMonth(av.getMonth()-(tipo==='anno'?1:2));var tit=box.dataset.titolo+' entro il '+fmt(sc);
-  icsFile(['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//serenainmente.it//IT','BEGIN:VEVENT','UID:'+Date.now()+'@serenainmente.it','DTSTAMP:'+icsOra(),'DTSTART;VALUE=DATE:'+icsGiorno(av),'SUMMARY:'+icsE(tit),'DESCRIPTION:'+icsE('Scadenza calcolata con '+box.dataset.url+'\nFa fede la data scritta sul documento.'),'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+icsE(tit),'TRIGGER:PT9H','END:VALARM','END:VEVENT','END:VCALENDAR'],'scadenza-serena.ics');
+ B.onclick=function(){if(!sc)return;var av=new Date(sc);av.setMonth(av.getMonth()-(tipo==='anno'?1:2));var dom=new Date();dom.setDate(dom.getDate()+1);dom.setHours(12,0,0,0);if(av<dom)av=dom; /* mai un promemoria nel passato */var tit=box.dataset.titolo+' entro il '+fmt(sc);
+  icsFile(['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//serenainmente.it//IT','BEGIN:VEVENT','UID:'+Date.now()+'@serenainmente.it','DTSTAMP:'+icsOra(),'DTSTART;VALUE=DATE:'+icsGiorno(av),'SUMMARY:'+icsE(tit),'DESCRIPTION:'+icsE('Scadenza calcolata con '+box.dataset.url+'\nFa fede la data scritta sul documento.'),'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+icsE(tit),'TRIGGER:PT9H','END:VALARM','END:VEVENT','END:VCALENDAR'],'scadenza-serena.ics');nota(tit,location.pathname);
   toast('Promemoria pronto per il calendario')}});
 
 /* le pagine già aperte si rileggono anche senza rete (per esempio in ambulatorio). Si prepara a pagina caricata, senza rallentarla */
