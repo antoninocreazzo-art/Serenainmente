@@ -3,7 +3,8 @@ certificato-sport-bambini e indennita-di-accompagnamento hanno le foto definitiv
 
 Primo schermo
 - hero.webp            computer, orizzontale 16:10, 2400 × 1500 px (oggi 1586 × 992: l'ingresso con la panca e la porta aperta), massimo 250 KB
-- hero-telefono.webp   telefono, verticale 4:5, 1080 × 1350 px. Oggi: la stessa scena in verticale; al telefono si vede la parte alta (object-position 50% 12%).
+- hero-telefono.webp   telefono, verticale 4:5. Dal 12/11/2026 NON si usa: per scelta del presidente anche il telefono
+                       mostra hero.webp intera (l'ingresso con la panca). Se il file torna, build.py lo usa da solo.
 
 I cinque argomenti della pagina iniziale (4:3, 1200 × 900 px, massimo 120 KB ciascuna)
 - routine-della-nanna.webp                Sonno e nanna
