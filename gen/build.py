@@ -113,6 +113,7 @@ P = {
  'zoom': '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/>',
  'menu': '<path d="M4 6.5h16M4 12h16M4 17.5h16"/>',
  'chev': '<path d="m9 6 6 6-6 6"/>',
+ 'esterno': '<path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v4.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10"/>',
 }
 def ic(n, cls='ic'):
     return f'<svg class="{cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{P[n]}</svg>'
@@ -148,7 +149,10 @@ def qui(path, h):
 PRIMA = ("<script>(function(){var d=document.documentElement,h=new Date().getHours(),s=location.search,m=/[?&]ora=(mattino|giorno|sera|notte)/.exec(s),f=/[?&]tema=(chiaro|scuro)/.exec(s),"
          "o=m?m[1]:h<5?'notte':h<12?'mattino':h<18?'giorno':h<22?'sera':'notte',t=null,z=0;try{t=localStorage.getItem('serena:aspetto');z=+localStorage.getItem('serena:testo')||0}catch(e){}"
          "if(f)t=f[1];d.className='js';d.dataset.ora=o;d.dataset.tema=(t==='scuro'||(t!=='chiaro'&&(o==='notte'||matchMedia('(prefers-color-scheme: dark)').matches)))?'scuro':'chiaro';"
-         "if(z)d.style.fontSize=['','112.5%','128%'][z]})()</script>")
+         "if(z){d.style.fontSize=['','112.5%','128%'][z];d.dataset.testo=z}})()</script>")
+# il numero accanto a «I tuoi salvati» lo scrive assets/sito.js leggendo il browser; senza niente salvato non compare
+CONTA = '<em class="conta" data-conta hidden></em>'
+AA_SCELTE = ''.join(f'<button type="button" data-aa-v="{i}" aria-pressed="false"><b aria-hidden="true">{a}</b><span>{t}</span></button>' for i, (a, t) in enumerate([('A', 'Normale'), ('A+', 'Grande'), ('A++', 'Molto grande')]))
 ESEMPI = ['non vuole dormire', 'domani ho il pediatra', 'spostare una visita', 'le medicine di mamma', 'iscrizione al nido', 'dove trovo un referto']
 
 # Lo stile sta dentro ogni pagina (10 KB compressi): la pagina compare senza aspettare un secondo file. La fonte resta assets/stile3.css.
@@ -165,7 +169,11 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None, pre=''):
              "logo": SITE + "/assets/brand/avatar-320.png", "sameAs": [IG, "https://www.pinterest.com/serenainmente/"]}]}
     ldj = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>' if ld else ''
     navl = ''.join(f'<a href="~{h}"{" aria-current=page" if qui(path, h) else ""}>{l}</a>' for h, l in NAV)
-    navl_m = ''.join(f'<a href="~{h}" aria-label="{l}"{" aria-current=page" if qui(path, h) else ""}><span>{l}</span>{ic("chev","ic-s")}</a>' for h, l in [('/', 'Inizio')] + NAV)
+    sv_cur = ' aria-current=page' if path == '/salvati/' else ''
+    navl += f'<a class="nav-salvati" href="~/salvati/"{sv_cur}>{ic("bookmark","ic-s")}<span>I tuoi salvati</span>{CONTA}</a>'
+    navl_m = ''.join(f'<a href="~{h}"{" aria-current=page" if qui(path, h) else ""}><span>{l}</span>{ic("chev","ic-s")}</a>' for h, l in [('/', 'Inizio')] + NAV)
+    navl_m += f'<a class="menu-salvati" href="~/salvati/"{sv_cur}><span>I tuoi salvati{CONTA}</span>{ic("chev","ic-s")}</a>'
+    navl_m += f'<button class="menu-tema" type="button" data-tema-btn aria-label="Cambia aspetto"><span>Aspetto chiaro o scuro</span><span class="luna">{ic("moon")}</span><span class="sole">{ic("sun")}</span></button>'
     banner = '<div class="preview-bar">Anteprima del nuovo sito · non ancora pubblicata</div>' if PREVIEW else ''
     rel = '../' * len([x for x in path.strip('/').split('/') if x])
     out = f'''<!doctype html>
@@ -201,13 +209,14 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None, pre=''):
 <header class="hd">
 <div class="hd-in">
 <a class="brand" href="~/" aria-label="serenainmente, pagina iniziale">{LOGO}</a>
-<a class="campo-hd" href="~/guide/#cerca" data-cerca role="button" data-umami-event="cerca-apri-casella"><span>Cerca: scrivi cosa ti serve</span><i>{ic('search')}</i></a>
+<a class="campo-hd" href="~/guide/#cerca" data-cerca role="button" data-umami-event="cerca-apri-casella"><span>Cerca: scrivi cosa ti serve</span><i>{ic('search')}<b>Cerca</b></i></a>
 <div class="hd-act">
-<button class="icbtn" type="button" data-aa aria-label="Cambia la grandezza del testo"><b aria-hidden="true">A+</b></button>
+<button class="icbtn aa" type="button" data-aa aria-expanded="false" aria-controls="aa-p" aria-label="Grandezza del testo: normale. Tocca per cambiarla"><b aria-hidden="true"></b><small aria-hidden="true">Testo</small></button>
 <button class="icbtn tema" type="button" data-tema-btn aria-label="Cambia aspetto"><span class="luna">{ic('moon')}</span><span class="sole">{ic('sun')}</span></button>
 <details class="menu-m"><summary class="icbtn" aria-label="Menu"><span class="ap">{ic('menu')}<span>Menu</span></span><span class="ch">{ic('close')}<span>Chiudi</span></span></summary>
 <nav class="menu-p" aria-label="Menu">{navl_m}</nav></details>
 </div>
+<div class="aa-p" id="aa-p" role="group" aria-labelledby="aa-t" hidden><p id="aa-t">Grandezza del testo</p><div class="aa-s">{AA_SCELTE}</div></div>
 </div>
 <nav class="nav-d" aria-label="Menu principale"><div class="nav-in">{navl}</div></nav>
 </header>
@@ -256,7 +265,7 @@ def src_block(fid):
     f = FONTI[fid]; dom = f['url'].split('/')[2].replace('www.', '')
     it = dom.endswith('.it') or dom.endswith('.gov.it')
     nota = f'<span class="type">{e(f["nota"])}</span>' if f.get('nota') else ''
-    return f'''<li class="src"><span class="org">{e(f['ente'])}, {e(str(f['anno']))}</span><span class="ttl">{e(f['titolo'])}</span><span class="type">{e(f['tipo'])}{'' if it else ' · pagina in inglese'}</span>{nota}<a href="{e(f['url'])}" rel="noopener">Apri la fonte su {e(dom)} {ic('arrow','ic-s')}</a></li>'''
+    return f'''<li class="src"><span class="org">{e(f['ente'])}, {e(str(f['anno']))}</span><span class="ttl">{e(f['titolo'])}</span><span class="type">{e(f['tipo'])}{'' if it else ' · pagina in inglese'}</span>{nota}<a href="{e(f['url'])}" target="_blank" rel="noopener">Apri la fonte su {e(dom)}<span class="sr"> (si apre in una nuova scheda)</span> {ic('esterno','ic-s')}</a></li>'''
 
 def share(path, title, domanda='Ti è utile? Mandala a chi ne ha bisogno.'):
     url = SITE + path
@@ -345,12 +354,12 @@ def strumento_box(key):
     if key == 'preparo':
         return f'''<aside class="tool"><span class="chip">Strumento gratuito, dal telefono</span><h2>Preparo la visita</h2><p>Scrivi a casa cosa hai notato e le domande in ordine; in ambulatorio le hai davanti, con lo spazio per le risposte. Resta solo sul tuo telefono.</p><a class="btn" href="~/strumenti/preparo-la-visita/" data-umami-event="guida-strumento" data-umami-event-tool="preparo">Apri lo strumento {ic('arrow','ic-s')}</a></aside>'''
     if key == 'medicine':
-        return f'''<aside class="tool"><span class="chip">Strumento gratuito, dal telefono</span><h2>Medicine di casa</h2><p>Scrivi la lista una volta: la stampi grande, la mandi a un familiare o al medico, e il telefono ti ricorda gli orari. Resta solo sul tuo telefono.</p><div class="row"><a class="btn" href="~/strumenti/medicine-di-casa/" data-umami-event="guida-strumento" data-umami-event-tool="medicine">Apri lo strumento {ic('arrow','ic-s')}</a><a class="btn btn-line" href="~/stampabili/lista-delle-medicine/">Oppure il foglio da stampare</a></div></aside>'''
+        return f'''<aside class="tool"><span class="chip">Strumento gratuito, dal telefono o dal computer</span><h2>Medicine di casa</h2><p>Scrivi la lista una volta: la stampi grande, la mandi a un familiare o al medico, e il calendario ti ricorda gli orari. Resta solo sul tuo telefono o computer.</p><div class="row"><a class="btn" href="~/strumenti/medicine-di-casa/" data-umami-event="guida-strumento" data-umami-event-tool="medicine">Apri lo strumento {ic('arrow','ic-s')}</a><a class="btn btn-line" href="~/stampabili/lista-delle-medicine/">Oppure il foglio da stampare</a></div></aside>'''
     f = key.split(':', 1)[1]; t, d = STN[f]
     return f'''<aside class="tool"><span class="chip">Foglio da stampare, gratis</span><h2>{e(t)}</h2><p>{e(d)}. Un foglio da compilare a penna.</p><div class="row"><a class="btn" href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}">{ic('download','ic-s')} Scarica il foglio (PDF)</a><a class="btn btn-line" href="~/stampabili/{f}/">Guardalo prima</a></div></aside>'''
 # (indirizzo, titolo, descrizione, icona, chiave, per chi, miniatura, etichetta)
 TOOLS = [('/strumenti/preparo-la-visita/', 'Preparo la visita', 'Le domande in ordine e lo spazio per le risposte. Si usa dal telefono.', 'list', 'preparo', 'bambino anziano', None, 'Dal telefono'),
-         ('/strumenti/medicine-di-casa/', 'Medicine di casa', 'La lista delle medicine, da stampare grande o mandare, con i promemoria degli orari.', 'clock', 'medicine', 'anziano', None, 'Dal telefono'),
+         ('/strumenti/medicine-di-casa/', 'Medicine di casa', 'La lista delle medicine, da stampare grande o mandare, con i promemoria degli orari.', 'clock', 'medicine', 'anziano', None, 'Telefono e computer'),
          ('/gestionale/', 'Il gestionale di famiglia', 'Visite, scadenze, documenti e la settimana in un file solo.', 'calendar', 'gestionale', 'bambino anziano', mini('gestionale'), 'File gratuito')] + \
         [(f'/stampabili/{f}/', t, d + '.', 'download', f, ST_PER[f], mini('foglio-' + f), 'Da stampare') for f, t, d in STAMPABILI]
 def anteprima(k):
@@ -360,7 +369,7 @@ def anteprima(k):
     if k == 'preparo':
         righe = (f'<span class="an-r an-fatta">{cb}<span>Febbre da ieri</span></span>'
                  f'<span class="an-r"><i class="an-cb"></i><span>Mangia poco</span></span>'
-                 f'<span class="an-r an-nuova"><i class="an-cb"></i><span class="an-scrive">Torna al nido?</span></span>')
+                 f'<span class="an-r an-nuova an-entra"><i class="an-cb"></i><span>Torna al nido?</span></span>')
         hd = 'Dal pediatra'
     elif k == 'medicine':
         righe = ('<span class="an-r"><b>08:00</b><span>Farmaco A</span></span>'
@@ -416,6 +425,9 @@ def checklist_xlsx(g):
 def storia(g):
     """Cosa è cambiato in una guida: voci scritte a mano in dati.json («storia»: [[data, testo], …]), più la prima versione."""
     return sorted([tuple(x) for x in g.get('storia', [])], reverse=True) + [(g['data'], 'prima versione.')]
+# nelle guide di pratiche e documenti la sezione «perché» dice chi ne ha diritto o cosa sapere prima: il titolo segue il contenuto
+PERCHE_T = {'indennita-di-accompagnamento': 'Chi ne ha diritto', 'esenzione-ticket': 'Chi ne ha diritto', 'carta-identita-bambini': 'Da sapere prima',
+            'iscrizioni-nido-e-scuola': 'Date e regole, in breve', 'certificato-vaccinale': 'Quando serve', 'certificato-sport-bambini': 'Le regole, in breve'}
 CALC = {'carta-identita-bambini': ('cie', 'Rinnovare la carta d\'identità'), 'certificato-sport-bambini': ('anno', 'Rinnovare il certificato per lo sport')}
 def calcolo(g):
     if g['slug'] not in CALC: return ''
@@ -447,7 +459,8 @@ for g in GUIDE:
     nf = len(g['fonti'])
     corr = [x for x in GUIDE if x is not g and x['arg'] == g['arg']] + [x for x in GUIDE if x is not g and x['arg'] != g['arg']]
     gp = f"/guide/{g['slug']}/"
-    indice = ''.join(f'<li><a href="#{h}">{t}</a></li>' for h, t, ok in [('passo-1', 'Come si fa', True), ('perche', 'Perché aiuta', True), ('errori', 'Errori comuni', bool(g.get('errori'))), ('lista', 'La lista da spuntare', bool(g.get('checklist'))), ('fonti', 'Le fonti', bool(g['fonti']))] if ok)
+    pt = PERCHE_T.get(g['slug'], 'Perché aiuta')
+    indice = ''.join(f'<li><a href="#{h}">{t}</a></li>' for h, t, ok in [('passo-1', 'Come si fa', True), ('perche', pt, True), ('errori', 'Errori comuni', bool(g.get('errori'))), ('lista', 'La lista da spuntare', bool(g.get('checklist'))), ('fonti', 'Le fonti', bool(g['fonti']))] if ok)
     fonti_meta = f'<a href="#fonti">{nf} {"fonte" if nf == 1 else "fonti"}, da aprire</a>' if nf else ''
     lista = (f'<section class="box box-salvia ck" id="lista" data-titolo="{e(g["titolo"])}" data-url="{SITE}{gp}"><div class="ck-hd"><svg class="anello" viewBox="0 0 48 48" aria-hidden="true"><circle class="p" cx="24" cy="24" r="20"/><circle class="v" cx="24" cy="24" r="20"/></svg><div><h2>La lista da spuntare</h2><p class="ck-n" data-ckn aria-live="polite"></p></div></div>'
              f'<ul class="check">{check}</ul><p class="small noprint">Le spunte restano salvate su questo telefono o computer.</p>{azioni_lista(g, cktext)}</section>') if check else ''
@@ -470,7 +483,7 @@ for g in GUIDE:
 <div class="lato noprint">{foto(g['slug'], '', 'art-img', sizes='(min-width:960px) 300px, 100vw')}<nav class="indice-p" aria-label="In questa pagina"><h2>In questa pagina</h2><ul>{indice}</ul></nav></div>
 {'' if per_eta(g.get('tabella')) else tabella(g.get('tabella'))}
 {calcolo(g)}
-<section id="perche"><h2 data-leggi>Perché aiuta</h2>{''.join(f'<p data-leggi>{e(p)}</p>' for p in g['perche'])}</section>
+<section id="perche"><h2 data-leggi>{pt}</h2>{''.join(f'<p data-leggi>{e(p)}</p>' for p in g['perche'])}</section>
 {f'<section class="box box-rosa" id="errori"><h2 data-leggi>Errori comuni</h2><ul class="plain">{errori}</ul></section>' if errori else ''}
 {lista}
 {strumento_box(g.get('strumento')) if g.get('strumento') == 'gestionale' else ''}
@@ -599,7 +612,7 @@ for f, t, d in STAMPABILI:
 </div>
 <figure class="sp-prev"><button type="button" data-zoom aria-label="Guarda il foglio da vicino"><img src="~/assets/stampabili/{f}-sm.webp" srcset="~/assets/stampabili/{f}-sm.webp 560w, ~/assets/stampabili/{f}.webp 1100w" sizes="(min-width:960px) 46vw, 92vw" alt="Anteprima del foglio «{e(t)}»" fetchpriority="high" decoding="async" width="{1100 if I['orient'] == 'orizzontale' else 778}" height="{778 if I['orient'] == 'orizzontale' else 1100}"></button><span class="lente">{ic('zoom','ic-s')} Guardalo da vicino</span></figure>
 <div class="sp-altro">
-<section class="box box-rosa noprint"><h2>Non hai una stampante adesso?</h2><div class="row">{salva(sp, t)}<button class="btn btn-line btn-sm" type="button" hidden data-share data-title="{e(I['h1'])}" data-url="{SITE}{sp}" data-umami-event="stampabile-manda">Mandalo a chi può stamparlo</button>{'<a class="btn btn-line btn-sm" href="~/strumenti/preparo-la-visita/">Fallo dal telefono</a>' if I['tool'] == 'preparo' else ''}{'<a class="btn btn-line btn-sm" href="~/strumenti/medicine-di-casa/">Scrivila dal telefono</a>' if I['tool'] == 'medicine' else ''}</div></section>
+<section class="box box-rosa noprint"><h2>Non hai una stampante adesso?</h2><div class="row">{salva(sp, t)}<button class="btn btn-line btn-sm" type="button" hidden data-share data-title="{e(I['h1'])}" data-url="{SITE}{sp}" data-umami-event="stampabile-manda">Mandalo a chi può stamparlo</button>{'<a class="btn btn-line btn-sm" href="~/strumenti/preparo-la-visita/">Fallo dal telefono</a>' if I['tool'] == 'preparo' else ''}{'<a class="btn btn-line btn-sm" href="~/strumenti/medicine-di-casa/">Scrivila sul telefono o sul computer</a>' if I['tool'] == 'medicine' else ''}</div></section>
 <section><h2>Cosa contiene</h2><ul class="ticks">{''.join(f'<li>{ic("check","ic-s")}<span>{e(x)}</span></li>' for x in I['contiene'])}</ul></section>
 <section><h2>Come usarlo</h2><ol class="sp-come">{''.join(f'<li>{e(x)}</li>' for x in I['come'])}</ol></section>
 </div>
@@ -713,7 +726,7 @@ PV = open(os.path.join(ROOT, 'gen', 'preparo.html'), encoding='utf-8').read().re
 pages.append(page('/strumenti/preparo-la-visita/', 'Preparo la visita', 'Strumento gratuito: scrivi cosa hai notato e le domande per il pediatra o il medico, e in ambulatorio le hai davanti. Resta solo sul tuo telefono.', PV, seo='Preparo la visita: le domande per il medico', cls='p-tool'))
 
 MD = open(os.path.join(ROOT, 'gen', 'medicine.html'), encoding='utf-8').read().replace('{lock}', ic('lock','ic-s')).replace('{check}', ic('check','ic-s')).replace('{salva}', salva('/strumenti/medicine-di-casa/', 'Medicine di casa'))
-pages.append(page('/strumenti/medicine-di-casa/', 'Medicine di casa', 'Strumento gratuito: la lista delle medicine di una persona, da stampare grande o mandare, con i promemoria degli orari. Resta solo sul tuo telefono.', MD, seo='Medicine di casa: la lista dei farmaci sul telefono', cls='p-tool'))
+pages.append(page('/strumenti/medicine-di-casa/', 'Medicine di casa', 'Strumento gratuito: la lista delle medicine di una persona, da stampare grande o mandare, con i promemoria degli orari. Resta solo sul tuo telefono o computer.', MD, seo='Medicine di casa: la lista dei farmaci sul telefono', cls='p-tool'))
 
 # ---------- da instagram (link in bio) ----------
 IGL = sorted([x for x in D.get('instagram', []) if x['data'] <= OGGI], key=lambda x: (x['data'], x.get('tipo') != 'fonti'), reverse=True)
@@ -806,7 +819,7 @@ ORA = {'mattino': ('/strumenti/preparo-la-visita/', 'list', 'Una visita tra poch
        'giorno': ('/guide/spostare-disdire-pagare-visita/', 'calendar', 'Una visita da spostare o da disdire?', 'Come si fa, e entro quando. Si legge in 2 minuti.'),
        'sera': ('/guide/routine-della-nanna/', 'moon', 'La sera che non finisce mai', 'Una routine della nanna in quattro mosse. Si legge in 2 minuti.'),
        'notte': ('/guide/quanto-dorme-un-bambino/', 'moon', 'Quanto deve dormire, alla sua età?', 'Le ore età per età, con le fonti. Sono intervalli larghi.')}
-ora_cards = ''.join(f'<a class="ora-card vetro cede" data-per="{k}" href="~{h}" data-umami-event="home-ora" data-umami-event-ora="{k}"><span class="tic">{ic(i)}</span><span><b>{e(t)}</b><small>{e(s)}</small></span>{ic("arrow","ic-s")}</a>' for k, (h, i, t, s) in ORA.items())
+ora_cards = ''.join(f'<a class="ora-card vetro cede" data-per="{k}" href="~{h}" data-umami-event="home-ora" data-umami-event-ora="{k}"><span class="tic">{ic(i)}</span><span><b>{e(t)}</b><small>{e(s)}</small></span><i>{ic("arrow")}</i></a>' for k, (h, i, t, s) in ORA.items())
 # «da dove partire»: tutte le guide e gli strumenti, il sito mostra i primi 4 adatti a chi legge
 def tag_li(chi, eta, base): return f' data-tag="{chi}" data-fasce="{" ".join(eta)}" data-base="{base}"'
 partenze = [riga_guida(g, li=tag_li(*per(g['slug']), 1 if i < 4 else 0) + (' data-pri="1"' if g['arg'] == 'crescita' or per(g['slug'])[0] == 'anziano' else '')) for i, g in enumerate(GUIDE)]
@@ -852,7 +865,7 @@ TAPPE = [('01', 'Crescita', 'rosa', 'Ogni giorno è una', 'prima volta.', 'Il so
          ('02', 'Cura', 'crema', 'Prendersi cura è anche', 'ricordare.', 'Medicine, visite, un genitore anziano da seguire: quando i dettagli sono tanti, basta un posto dove scriverli una volta sola.',
           'con<br>attenzione', 'viaggio-cura', ('/strumenti/medicine-di-casa/', 'Apri «Medicine di casa»'),
           [('/guide/lista-medicine-genitore-anziano/', 'Le medicine di un genitore anziano'), ('/guide/visita-specialistica-come-funziona/', 'La visita specialistica, passo per passo')]),
-         ('03', 'Meno cose sparse', 'salvia', 'Meno cose sparse.', 'Più spazio per te.', 'Documenti, domande per il medico, scadenze: strumenti gratuiti per fare ordine senza aggiungere fatica.',
+         ('03', 'Organizzazione', 'salvia', 'Meno cose sparse.', 'Più spazio per te.', 'Documenti, domande per il medico, scadenze: strumenti gratuiti per fare ordine senza aggiungere fatica.',
           'meno<br>pensieri', 'viaggio-ordine', ('/strumenti/preparo-la-visita/', 'Prepara la prossima visita'),
           [('/gestionale/', 'Il gestionale di famiglia'), ('/guide/documenti-sanitari-dove-trovarli/', 'Dove trovare i documenti sanitari')]),
          ('04', 'Il tuo spazio', 'crema', 'Quello che ti serve,', 'a\u00a0portata di mano.', 'In ogni guida c\'è «Salva per dopo»: Serena la tiene da parte su questo telefono o computer, e la ritrovi anche senza rete. Niente account, niente dati che partono.',
@@ -927,7 +940,7 @@ for g in GUIDE:
     v = voce(f"/guide/{g['slug']}/", g['titolo'], g['sommario'], 'Guida',
              ' '.join([g['titolo'], g.get('titolo_seo', ''), g.get('domanda', ''), CHIAVI.get(g['slug'], '')]),
              ' '.join([g['sommario'], ARGN[g['arg']][1]] + [x for x, y in g['passi']] + g.get('checklist', [])),
-             m=g['min'], ps=g['passi'], ag=data_it(g['agg']), c2=' '.join(g['perche'] + g.get('errori', []) + [y for x, y in g['passi']]), az='Tutti i passi', c=per(g['slug'])[0], fa=per(g['slug'])[1])
+             m=g['min'], ps=g['passi'], ag=data_it(g['agg']), c2=' '.join(g['perche'] + g.get('errori', []) + [y for x, y in g['passi']]), az='Tutti i passi', c=per(g['slug'])[0], fa=per(g['slug'])[1], ar=g['arg'])
     if g['slug'] in DATI: v['g'] = 'dati'
     if mini(g['slug']): v['i'] = mini(g['slug'])
     if g['slug'] in PIU_CERCATE: v['top'] = 1
@@ -938,14 +951,14 @@ for g in GUIDE:
         v['eta'] = dict(c=t['colonne'], r=[list(eta_mesi(r[0])) + r for r in t['righe']])
     IDX.append(v)
 IDX.append(voce('/strumenti/preparo-la-visita/', 'Preparo la visita', 'Scrivi a casa cosa hai notato e le domande in ordine; in ambulatorio le hai davanti, con lo spazio per le risposte.', 'Strumento gratuito',
-                'preparo la visita domande pediatra medico dottore ambulatorio domani appuntamento', 'strumento telefono appuntare risposte specialista chiedo chiedere', az='Apri lo strumento', c='bambino anziano', fa=TUTTE_ETA, dq=1))
-IDX.append(voce('/strumenti/medicine-di-casa/', 'Medicine di casa', 'La lista delle medicine di una persona: la stampi grande, la mandi a un familiare o al medico, e il telefono ti ricorda gli orari.', 'Strumento gratuito',
-                'medicine di casa lista medicine farmaci pastiglie pillole compresse terapia promemoria orari ricordare', 'anziano anziana nonna nonno mamma papà badante stampare grande', az='Apri lo strumento', c='anziano', fa=[]))
+                'preparo la visita domande pediatra medico dottore ambulatorio domani appuntamento', 'strumento telefono appuntare risposte specialista chiedo chiedere', az='Apri lo strumento', c='bambino anziano', fa=TUTTE_ETA, dq=1, ar='salute'))
+IDX.append(voce('/strumenti/medicine-di-casa/', 'Medicine di casa', 'La lista delle medicine di una persona: la stampi grande, la mandi a un familiare o al medico, e il calendario ti ricorda gli orari.', 'Strumento gratuito',
+                'medicine di casa lista medicine farmaci pastiglie pillole compresse terapia promemoria orari ricordare', 'anziano anziana nonna nonno mamma papà badante stampare grande', az='Apri lo strumento', c='anziano', fa=[], ar='organizzazione'))
 IDX.append(voce('/gestionale/', 'Il gestionale di famiglia', 'Visite, scadenze e documenti in un file solo, gratuito.', 'File gratuito',
-                'gestionale di famiglia organizzare settimana scadenze calendario agenda promemoria excel fogli google', 'visite documenti impegni file scaricare', az='Scopri il gestionale', i=mini('gestionale')))
+                'gestionale di famiglia organizzare settimana scadenze calendario agenda promemoria excel fogli google', 'visite documenti impegni file scaricare', az='Scopri il gestionale', i=mini('gestionale'), ar='organizzazione'))
 for f, t, d in STAMPABILI:
     IDX.append(voce(f'/stampabili/{f}/', t, d + '.', 'Foglio da stampare', t + ' stampare foglio pdf planner ' + {'settimana-sul-frigo': 'settimana organizzare frigo', 'domande-per-il-pediatra': 'pediatra visita domande', 'lista-delle-medicine': 'medicine farmaci pastiglie anziano nonna nonno mamma papà terapia'}[f],
-                    d + ' ' + ' '.join(SP_INFO[f]['contiene']), az='Guarda il foglio', i=mini('foglio-' + f), c=ST_PER[f], fa=[] if ST_PER[f] == 'anziano' else TUTTE_ETA))
+                    d + ' ' + ' '.join(SP_INFO[f]['contiene']), az='Guarda il foglio', i=mini('foglio-' + f), c=ST_PER[f], fa=[] if ST_PER[f] == 'anziano' else TUTTE_ETA, ar=GN[SP_INFO[f]['guida']]['arg']))
 IDX.append(voce('/chi-e-serena/', 'Chi è Serena', D['chi']['sommario'], 'Pagina', 'chi è serena siamo siete dietro autore progetto persona', 'trasparenza indipendenza valori'))
 IDX.append(voce('/metodo/', 'Il metodo', 'Come nasce un contenuto di Serena, da dove vengono i dati e chi decide cosa pubblicare.', 'Pagina', 'metodo come lavoriamo intelligenza artificiale ai affidabile fidarsi', 'fonti controllo revisione'))
 IDX.append(voce('/fonti/', 'Le fonti', 'Le fonti dei dati citati nelle guide e nei post, con i link alle pagine originali.', 'Pagina', 'fonti fonte studi dati oms istituto superiore di sanità', ''))
