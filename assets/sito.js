@@ -176,7 +176,7 @@ function radice(w){if(w.length<=4)return w;for(var i=0;i<SUF.length;i++){var s=S
 /* PRIMA LA SITUAZIONE, POI LE PAROLE.
    1) urgenza: se la frase parla di un'urgenza o di un sintomo, Serena non risponde con una guida: indica a chi chiedere, con il 112 in vista.
    Le liste si riducono alla radice come le parole di chi scrive, così il confronto è alla pari. Queste parole non danno punti. */
-var URG_FRASI=[/ non si sveglia /,/ non respira /,/ respira (male|a fatica|con fatica) /,/ fa(tica)? (fatica )?a respirare /,/ non riesce (a|ad|piu a|piu ad) (parlare|respirare|muovere|muoversi|alzarsi|svegliarsi|stare in piedi) /,/ (pres[oaie]|dat[oaie]|ingerit[oaie]) troppe? /,/ troppe (pastiglie|medicine|gocce|pillole|compresse) /,/ sbagliat\w* (le |la |il )?(pastigli\w*|medicin\w*|dose|dosi|farmac\w*) /,/ (dolore|male|peso|fitta) al petto /,/ pronto soccorso /,/ (battuto|sbattuto|picchiato|preso un colpo) (la |alla |in )?testa /,/ perde (molto )?sangue /,/ sangue (dal|dalla|dalle|nel|nelle|in) /,/ non risponde /,/ labbra (blu|viola) /,/ confus\w* (improvvis\w*|all improvviso) /,/ (improvvis\w*|all improvviso) confus\w* /,/ bocca storta /,/ (chiamo|chiamare) (il |l )?(112|118|ambulanza) /,/ 112 /,/ 118 /,/ ha (bevuto|mangiato) (la |il |un |una |del |della )?(candeggina|detersivo|medicin\w*|pastigli\w*|pillol\w*) /,/ non (mi )?riconosce /,/ parla (male|strano) /,/ si e (bruciat|ustionat|scottat)\w* /];
+var URG_FRASI=[/ non si sveglia /,/ non respira /,/ respira (male|a fatica|con fatica) /,/ fa(tica)? (fatica )?a respirare /,/ non riesce (a|ad|piu a|piu ad) (parlare|respirare|muovere|muoversi|alzarsi|svegliarsi|stare in piedi) /,/ (pres[oaie]|dat[oaie]|ingerit[oaie]) troppe? /,/ troppe (pastiglie|medicine|gocce|pillole|compresse) /,/ sbagliat\w* (le |la |il )?(pastigli\w*|medicin\w*|dose|dosi|farmac\w*) /,/ (dolore|male|peso|fitta) al petto /,/ pronto soccorso /,/ (battuto|battuta|batte|sbattuto|sbattuta|sbatte|picchiato|picchia|preso un colpo|colpo) (la |alla |in |con la )?testa /,/ perde (molto )?sangue /,/ sangue (dal|dalla|dalle|nel|nelle|in) /,/ non risponde /,/ labbra (blu|viola) /,/ confus\w* (improvvis\w*|all improvviso) /,/ (improvvis\w*|all improvviso) confus\w* /,/ bocca storta /,/ (chiamo|chiamare) (il |l )?(112|118|ambulanza) /,/ 112 /,/ 118 /,/ ha (bevuto|mangiato) (la |il |un |una |del |della )?(candeggina|detersivo|medicin\w*|pastigli\w*|pillol\w*) /,/ non (mi )?riconosce /,/ parla (male|strano) /,/ si e (bruciat|ustionat|scottat)\w* /];
 var URG='svenuto svenuta svenimento svenire convulsioni soffoca soffocando ingoiato ingerito inghiottito avvelenamento veleno bruciato ustione scottato trauma botta emorragia incosciente ictus infarto paralisi annegato folgorato emergenza urgente urgenza caduta caduto cade cadere cadendo cascata cascato sbattuto ambulanza'.split(' ').map(radice);
 var SINT='febbre tosse vomito vomitato diarrea raffreddore dolore mal male eruzione sfogo respiro convulsione dose dosi dosaggio tachipirina antibiotico paracetamolo ibuprofene gocce sciroppo supposta ferita sangue otite bronchite prurito influenza infezione allergia allergica pancia gola orecchio dentini puntura morso lividi livido macchie bolle gonfio gonfia sanguina catarro muco stitico stitichezza disidratato pallido'.split(' ').map(radice);
 var NON_SINT=['allergolog','sanguign'];
@@ -184,7 +184,7 @@ function tra(L,r){if(NON_SINT.some(function(n){return r.indexOf(n)===0}))return 
 function sintomo(r){return tra(SINT,r)||tra(URG,r)}
 function situazione(t){var raw=' '+norm(t)+' ',T=norm(t).split(' ').filter(function(w){return w.length>1}).map(radice);
  if(URG_FRASI.some(function(f){return f.test(raw)})||T.some(function(r){return tra(URG,r)}))return 2;
- return T.some(function(r){return tra(SINT,r)})?1:0}
+ return (T.some(function(r){return tra(SINT,r)})||/ (testa|petto|cuore|occhio|occhi|orecchie|schiena|stomaco) /.test(raw))?1:0} /* parti del corpo: parole intere, non radici («testa» non deve diventare «testo») */
 function radici(t){return norm(t).split(' ').filter(function(w){return w.length>1&&STOP.indexOf(w)<0&&!/^\d+$/.test(w)}).map(radice)}
 function simile(a,b){if(a.length<4||b.length<4)return a===b;if((a==='medic'&&b.indexOf('medicin')===0)||(b==='medic'&&a.indexOf('medicin')===0))return false; /* medico non è medicina */return a.indexOf(b)===0||b.indexOf(a)===0}
 /* parole diverse, stessa cosa */
@@ -209,7 +209,7 @@ function cerca(t){var raw=' '+norm(t)+' ',T=radici(t),sint=situazione(t),R=T.fil
   if(problema&&!dato)s+=x.g==='dati'?-5:(x.k==='Guida'?2:0);if(dato&&x.g==='dati')s+=4;
   if(fq&&x.fa&&x.fa.indexOf(fq)>-1&&x.fa.length<5)s+=3;
   if(anz&&!bimbo)s+=x.c==='anziano'?3:(x.c==='bambino'?-4:0);if(bimbo&&!anz&&x.c==='anziano')s-=4;
-  s+=adatto(x.c,x.fa)*1.5;if(x.k.indexOf('fonti')>-1)s-=3;else if(x.k!=='Pagina')s+=2;
+  s+=adatto(x.c,x.fa)*3;if(!dato&&!problema&&x.g==='dati')s-=1;if(x.k.indexOf('fonti')>-1)s-=3;else if(x.k!=='Pagina')s+=2;
   out.push({x:x,s:s,k:k,forti:forti})});
  out.sort(function(a,b){return b.s-a.s});
  var n=R.length,vuote=df.filter(function(v){return !v}).length,top=out[0],sicura=!!top&&top.forti>=1&&(n<=3?vuote===0:vuote<=1&&vuote<n/2)&&top.k>=Math.ceil(n*.6);

@@ -140,6 +140,8 @@ PRIMA = ("<script>(function(){var d=document.documentElement,h=new Date().getHou
          "if(z)d.style.fontSize=['','112.5%','128%'][z]})()</script>")
 ESEMPI = ['non vuole dormire', 'domani ho il pediatra', 'spostare una visita', 'le medicine di mamma', 'iscrizione al nido', 'dove trovo un referto']
 
+# Lo stile sta dentro ogni pagina (10 KB compressi): la pagina compare senza aspettare un secondo file. La fonte resta assets/stile3.css.
+STILE = re.sub(r'\s*([{};,])\s*', r'\1', re.sub(r'/\*.*?\*/', '', open(os.path.join(ROOT, 'assets', 'stile3.css'), encoding='utf-8').read(), flags=re.S)).replace(';}', '}').strip()
 SCRITTI = []
 def page(path, title, desc, body, ld=None, cls='', seo=None, og=None):
     canon = SITE + path
@@ -175,7 +177,7 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None):
 <meta name="google-site-verification" content="urb5XcUNd0QsSnqqtO49dSjLHeByMvfosPu2Gs2IMlY">
 <link rel="icon" type="image/png" href="~/assets/brand/favicon-48.png">
 <link rel="apple-touch-icon" href="~/assets/brand/apple-touch-icon.png">
-<link rel="stylesheet" href="~/assets/stile3.css?v={ver('assets', 'stile3.css')}">
+<style>{STILE.replace('url(fonts/', 'url(' + (rel if REL else '/') + 'assets/fonts/')}</style>
 {PRIMA}
 {'' if PREVIEW else UMAMI}
 {ldj}
@@ -564,7 +566,7 @@ for f, t, d in STAMPABILI:
 <div class="row"><a class="btn" href="~/scarica/{f}.pdf" download data-umami-event="stampabile" data-umami-event-file="{f}" data-umami-event-da="pagina">{ic('download','ic-s')} Scarica il foglio (PDF)</a><a class="btn btn-line solo-mouse" href="~/scarica/{f}.pdf" target="_blank" rel="noopener" data-umami-event="stampabile-apri" data-umami-event-file="{f}">Apri e stampa</a></div>
 <p class="small">Un foglio A4 {I['orient']}. Si stampa anche in bianco e nero.</p>
 </div>
-<figure class="sp-prev"><button type="button" data-zoom aria-label="Guarda il foglio da vicino"><img src="~/assets/stampabili/{f}-sm.webp" srcset="~/assets/stampabili/{f}-sm.webp 560w, ~/assets/stampabili/{f}.webp 1100w" sizes="(min-width:960px) 46vw, 92vw" alt="Anteprima del foglio «{e(t)}»" width="{1100 if I['orient'] == 'orizzontale' else 778}" height="{778 if I['orient'] == 'orizzontale' else 1100}"></button><span class="lente">{ic('zoom','ic-s')} Guardalo da vicino</span></figure>
+<figure class="sp-prev"><button type="button" data-zoom aria-label="Guarda il foglio da vicino"><img src="~/assets/stampabili/{f}-sm.webp" srcset="~/assets/stampabili/{f}-sm.webp 560w, ~/assets/stampabili/{f}.webp 1100w" sizes="(min-width:960px) 46vw, 92vw" alt="Anteprima del foglio «{e(t)}»" fetchpriority="high" decoding="async" width="{1100 if I['orient'] == 'orizzontale' else 778}" height="{778 if I['orient'] == 'orizzontale' else 1100}"></button><span class="lente">{ic('zoom','ic-s')} Guardalo da vicino</span></figure>
 <div class="sp-altro">
 <section class="box box-rosa noprint"><h2>Non hai una stampante adesso?</h2><div class="row">{salva(sp, t)}<button class="btn btn-line btn-sm" type="button" hidden data-share data-title="{e(I['h1'])}" data-url="{SITE}{sp}" data-umami-event="stampabile-manda">Mandalo a chi può stamparlo</button>{'<a class="btn btn-line btn-sm" href="~/strumenti/preparo-la-visita/">Fallo dal telefono</a>' if I['tool'] == 'preparo' else ''}{'<a class="btn btn-line btn-sm" href="~/strumenti/medicine-di-casa/">Scrivila dal telefono</a>' if I['tool'] == 'medicine' else ''}</div></section>
 <section><h2>Cosa contiene</h2><ul class="ticks">{''.join(f'<li>{ic("check","ic-s")}<span>{e(x)}</span></li>' for x in I['contiene'])}</ul></section>
@@ -700,7 +702,7 @@ if IGU:
     post0 = next((q for q in D['post'] if x.get('tipo') == 'fonti' and x['link'].strip('/').endswith(q['slug'])), None)
     detto = f'<p>{e(post0["affermazioni"][0])}</p>' if post0 else ''
     if post0: az = 'Da dove viene questo dato'
-    ig_primo = f'''<a class="ig-primo vetro cede" href="~{x['link']}" data-umami-event="ig-link" data-umami-event-link="{e(x['link'])}">{f'<img src="~{im}" alt="" width="720" height="450" decoding="async">' if im else ''}<span class="b"><span class="chip">Dall'ultimo post · {data_it(x['data'])}</span><h2>{e(post0['titolo'] if post0 else x['titolo'])}</h2>{detto}<span class="btn">{az} {ic('arrow','ic-s')}</span></span></a>'''
+    ig_primo = f'''<a class="ig-primo vetro cede" href="~{x['link']}" data-umami-event="ig-link" data-umami-event-link="{e(x['link'])}">{f'<img src="~{im}" alt="" width="720" height="450" decoding="async" fetchpriority="high">' if im else ''}<span class="b"><span class="chip">Dall'ultimo post · {data_it(x['data'])}</span><h2>{e(post0['titolo'] if post0 else x['titolo'])}</h2>{detto}<span class="btn">{az} {ic('arrow','ic-s')}</span></span></a>'''
 ig_altri = [t for t in TOOLS if t[0] not in visti]
 pages.append(page('/ig/', 'Da Instagram', 'Gli strumenti, i fogli e le guide dei post di @serenainmente, a portata di tocco.', f'''
 <section class="wrap-t ig-page"><div class="ig-hd"><img src="~/assets/brand/avatar-160.png" alt="" width="56" height="56"><div><h1>Dai post di Serena</h1><p class="small">Tutto quello che hai visto su Instagram. Gratis, senza registrazione.</p></div></div>
