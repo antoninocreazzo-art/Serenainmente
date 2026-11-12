@@ -817,8 +817,8 @@ argf += f'<li class="tutte"><a class="argf" href="~/guide/"><span class="t"><b>T
 pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della famiglia: guide pratiche, dati con le loro fonti, strumenti gratuiti.', f'''
 <section class="hero">
 <div class="hero-foto">{foto_hero()}</div>
-<div class="hero-txt"><p class="eyebrow">{''.join(f'<span data-per="{k}">{v}</span>' for k, v in SALUTO.items())}</p>
-<h1>Hai già abbastanza da tenere a mente.</h1>
+<div class="hero-txt"><div class="hero-tit"><p class="eyebrow">{''.join(f'<span data-per="{k}">{v}</span>' for k, v in SALUTO.items())}</p>
+<h1>Hai già abbastanza da tenere a mente.</h1></div>
 <p class="lead">{''.join(f'<span data-per="{k}">{e(v)}</span>' for k, v in INVITO.items())}</p></div>
 </section>
 <section class="wrap blocco-s" data-salvati hidden><h2 class="sec-t"></h2><ul class="rows"></ul><a class="more" href="~/salvati/">I tuoi salvati {ic('arrow','ic-s')}</a></section>
