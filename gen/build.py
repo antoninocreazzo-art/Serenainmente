@@ -447,7 +447,7 @@ pages.append(page('/gestionale/', 'Il gestionale di famiglia', 'Un file gratuito
 <p class="small solo-tocco">Dal telefono conviene Fogli Google: tocca «Apri in Fogli Google», poi «Crea una copia», e il file è tuo. Nessun dato che scrivi arriva a Serena.</p>
 <p class="small solo-mouse">Sul computer si apre con Excel o Numbers. Nessun dato che scrivi arriva a Serena.</p>
 <div class="azioni">{salva('/gestionale/', 'Il gestionale di famiglia')}</div></div>
-<img class="gs-shot" src="~/assets/gestionale/inizia.webp" alt="La prima scheda del file, «Inizia da qui»: le scadenze dei prossimi giorni e i prossimi impegni" width="1600" height="1000" decoding="async">
+<img class="gs-shot" src="~/assets/gestionale/inizia.webp" alt="La prima scheda del file, «Inizia da qui»: le scadenze dei prossimi giorni e i prossimi impegni" width="1600" height="1000" decoding="async" fetchpriority="high">
 </section>
 <section class="wrap-t gs-body">
 <section><h2>Come si comincia</h2>
@@ -661,7 +661,7 @@ INVITO = {'mattino': 'Una cosa alla volta. Scrivi quella di oggi: Serena la cerc
           'giorno': 'Una visita, un documento, una scadenza? Scrivilo qui: Serena cerca la risposta tra le sue guide.',
           'sera': 'Stasera basta una cosa. Scrivila qui: Serena la cerca tra le sue guide.',
           'notte': 'Basta una cosa. Scrivila qui: Serena la cerca tra le sue guide. Il resto può aspettare domani.'}
-ORA = {'mattino': ('/strumenti/preparo-la-visita/', 'list', 'Una visita in arrivo?', 'Prepara le domande in cinque minuti, dal telefono.'),
+ORA = {'mattino': ('/strumenti/preparo-la-visita/', 'list', 'Una visita tra pochi giorni?', 'Prepara le domande in cinque minuti, dal telefono.'),
        'giorno': ('/guide/spostare-disdire-pagare-visita/', 'calendar', 'Una visita da spostare o da disdire?', 'Come si fa, e entro quando. Si legge in 2 minuti.'),
        'sera': ('/guide/routine-della-nanna/', 'moon', 'La sera che non finisce mai', 'Una routine della nanna in quattro mosse. Si legge in 2 minuti.'),
        'notte': ('/guide/quanto-dorme-un-bambino/', 'moon', 'Quanto deve dormire, alla sua età?', 'Le ore età per età, con le fonti. Sono intervalli larghi.')}

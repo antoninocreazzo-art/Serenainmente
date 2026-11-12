@@ -19,7 +19,7 @@
 <link rel="icon" type="image/png" href="/assets/brand/favicon-48.png">
 <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/nunito-it.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/stile3.css?v=466216">
+<link rel="stylesheet" href="/assets/stile3.css?v=466731">
 <script>(function(){var d=document.documentElement,h=new Date().getHours(),s=location.search,m=/[?&]ora=(mattino|giorno|sera|notte)/.exec(s),f=/[?&]tema=(chiaro|scuro)/.exec(s),o=m?m[1]:h<5?'notte':h<12?'mattino':h<18?'giorno':h<22?'sera':'notte',t=null,z=0;try{t=localStorage.getItem('serena:aspetto');z=+localStorage.getItem('serena:testo')||0}catch(e){}if(f)t=f[1];d.className='js';d.dataset.ora=o;d.dataset.tema=(t==='scuro'||(t!=='chiaro'&&(o==='notte'||matchMedia('(prefers-color-scheme: dark)').matches)))?'scuro':'chiaro';if(z)d.style.fontSize=['','112.5%','128%'][z]})()</script>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="301edcb4-f5b2-444e-a1e5-8b8614d0100a" data-domains="serenainmente.it" data-do-not-track="true" data-exclude-search="true" data-exclude-hash="true"></script>
 
@@ -48,7 +48,7 @@
 <p class="small solo-tocco">Dal telefono conviene Fogli Google: tocca «Apri in Fogli Google», poi «Crea una copia», e il file è tuo. Nessun dato che scrivi arriva a Serena.</p>
 <p class="small solo-mouse">Sul computer si apre con Excel o Numbers. Nessun dato che scrivi arriva a Serena.</p>
 <div class="azioni"><button class="btn btn-line btn-sm" type="button" hidden data-salva="/gestionale/" data-title="Il gestionale di famiglia" aria-pressed="false" data-umami-event="salva-per-dopo"><svg class="ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12v17l-6-4.5L6 21z"/></svg><span>Salva per dopo</span></button></div></div>
-<img class="gs-shot" src="/assets/gestionale/inizia.webp" alt="La prima scheda del file, «Inizia da qui»: le scadenze dei prossimi giorni e i prossimi impegni" width="1600" height="1000" decoding="async">
+<img class="gs-shot" src="/assets/gestionale/inizia.webp" alt="La prima scheda del file, «Inizia da qui»: le scadenze dei prossimi giorni e i prossimi impegni" width="1600" height="1000" decoding="async" fetchpriority="high">
 </section>
 <section class="wrap-t gs-body">
 <section><h2>Come si comincia</h2>
