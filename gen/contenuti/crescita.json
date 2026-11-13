@@ -303,6 +303,30 @@
    "titolo": "Pediculosi: il pidocchio del capo",
    "tipo": "Documento istituzionale",
    "url": "https://www.epicentro.iss.it/pediculosi/"
+  },
+  {
+   "id": "CR-39",
+   "ente": "Presidenza del Consiglio dei ministri – Dipartimento per le politiche della famiglia",
+   "anno": 2026,
+   "titolo": "Fondo per le attività socio-educative a favore dei minori, destinato al finanziamento di iniziative dei Comuni: linea guida sulle spese ammissibili, anno 2026 (art. 1, comma 222, legge 199/2025)",
+   "tipo": "Documento istituzionale",
+   "url": "https://famiglia.governo.it/media/wqbpypkb/linea-guida.pdf"
+  },
+  {
+   "id": "CR-40",
+   "ente": "Comune di Firenze – Servizi educativi e scolastici",
+   "anno": 2026,
+   "titolo": "Determinazione n. 999 del 13 febbraio 2026: proroga al 21 febbraio 2026 delle iscrizioni, a seguito dell'avviso del Ministero dell'Istruzione e del Merito n. 33781 del 12 febbraio 2026",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.comune.firenze.it/istruzione/system/files/2026-02/dd-999-del-13.2.26-proroga-iscrizioni.pdf"
+  },
+  {
+   "id": "CR-41",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 2026,
+   "titolo": "Decreto-legge 30 settembre 2026, n. 170: misure urgenti per l'avvio dell'anno scolastico 2026/2027 (art. 1: sostegno didattico agli alunni con disabilità, modifiche al d.lgs. 66/2017), in attesa di conversione in legge",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/eli/id/2026/09/30/26G00190/ORIGINAL"
   }
  ],
  "guide": [
@@ -855,11 +879,11 @@
     ],
     [
      "Controlla quale procedura vale da voi",
-     "Nelle 60 province dove è attiva la riforma basta il certificato del medico, senza una domanda separata, e la valutazione la fa l'INPS. Nelle altre resta la procedura di prima: il certificato del medico e poi la domanda all'INPS. Un patronato può aiutarti."
+     "Nelle 60 province dove è attiva la riforma basta il certificato del medico, senza una domanda separata, e la valutazione la fa l'INPS. Nelle altre resta la procedura di prima: il certificato del medico e poi, entro 90 giorni, la domanda all'INPS. Un patronato può aiutarti."
     ],
     [
      "Il Profilo di funzionamento",
-     "Lo scrivono gli specialisti, partendo dal verbale, ed è la base su cui la scuola costruisce il PEI. Dove non è ancora pronto si usa la Diagnosi funzionale. Tempi e uffici cambiano da Regione a Regione: in Veneto, per esempio, la richiesta si fa al Distretto sociosanitario entro il 31 gennaio, per l'anno scolastico dopo."
+     "Lo scrivono gli specialisti, partendo dal verbale, ed è la base su cui la scuola costruisce il PEI. Dove non è ancora pronto si usa la Diagnosi funzionale. Tempi e uffici cambiano da Regione a Regione: in provincia di Venezia, per esempio, la richiesta si fa al Distretto sociosanitario entro il 31 gennaio, per l'anno scolastico dopo."
     ],
     [
      "Consegna i documenti alla scuola",
@@ -871,22 +895,22 @@
     ],
     [
      "Il PEI, ogni anno",
-     "Il GLO scrive e approva il PEI, di norma entro ottobre. Alla prima certificazione se ne scrive uno provvisorio entro giugno, per preparare l'anno dopo. Durante l'anno si verifica e si può modificare in qualsiasi momento; a fine anno c'è la verifica finale."
+     "Il GLO scrive e approva il PEI, e nel PEI indica anche, con le motivazioni, le ore di sostegno per la classe. Le date le ha cambiate il decreto-legge 170 del 30 settembre 2026, in vigore dal 1° ottobre e in attesa di essere convertito in legge dal Parlamento. Se tuo figlio è già iscritto in quella scuola, il PEI definitivo si scrive entro giugno, per l'anno dopo, e si può aggiornare entro le prime due settimane di ottobre. Se è un nuovo iscritto o ha una nuova certificazione, si scrive un PEI provvisorio entro giugno e quello definitivo entro il 15 ottobre. Si può modificare anche dopo, se cambia la situazione di tuo figlio. Con la conversione in legge le date possono cambiare: chiedi alla scuola."
     ],
     [
-     "Sostegno a scuola, assistenza dal Comune",
-     "L'insegnante di sostegno lo assegna la scuola: il dirigente rileva il bisogno e chiede le risorse agli uffici competenti. L'assistenza per l'autonomia e la comunicazione la dà invece il Comune, in base alle ore proposte dal GLO e chieste dal dirigente. Alcuni Comuni hanno anche un trasporto dedicato agli alunni con disabilità certificata: a Teramo, per esempio, dalla scuola dell'infanzia alle superiori."
+     "Sostegno a scuola, assistenza dall'ente locale",
+     "Le ore di sostegno per la classe le indica il PEI; il dirigente scolastico chiede le risorse agli uffici competenti. L'assistenza per l'autonomia e la comunicazione la dà invece l'ente locale, per esempio il Comune, in base alle ore proposte dal GLO e chieste dal dirigente. Alcuni Comuni hanno anche un trasporto dedicato agli alunni con disabilità certificata: a Teramo, per esempio, dalla scuola dell'infanzia alle superiori."
     ],
     [
      "A chi rivolgerti",
-     "Per la certificazione: il pediatra e un patronato. Per il Profilo di funzionamento: l'Azienda sanitaria. A scuola: il dirigente scolastico e gli insegnanti della classe. Per assistenza e trasporto: l'ufficio scuola del Comune."
+     "Per la certificazione: il pediatra e un patronato. Per il Profilo di funzionamento: l'Azienda sanitaria. A scuola: il dirigente scolastico e gli insegnanti della classe. Per assistenza e trasporto: l'ufficio scuola del Comune, o l'ente locale che ti indica la scuola."
     ]
    ],
    "errori": [
     "Consegnare i documenti a ridosso di settembre: la scuola li usa già in primavera per preparare l'anno dopo.",
     "Non andare agli incontri del GLO: il punto di vista dei genitori fa parte del PEI.",
     "Lasciar passare la data di revisione scritta nel verbale.",
-    "Confondere il sostegno della scuola con l'assistenza del Comune: si chiedono in modo diverso."
+    "Confondere il sostegno della scuola con l'assistenza dell'ente locale: si chiedono in modo diverso."
    ],
    "checklist": [
     "Certificato introduttivo chiesto al pediatra",
@@ -906,9 +930,10 @@
     "CR-26",
     "CR-27",
     "CR-28",
-    "CR-15"
+    "CR-15",
+    "CR-41"
    ],
-   "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS, del Ministero dell'Istruzione e del Merito e di un suo ufficio territoriale, aggiornate a novembre 2026. La procedura di certificazione sta cambiando e tempi e uffici variano da Regione a Regione: ricontrolleremo questa pagina a gennaio, quando la riforma della disabilità dovrebbe valere in tutta Italia. Per il tuo caso chiedi al pediatra, all'Azienda sanitaria, alla scuola o a un patronato.",
+   "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS, del Ministero dell'Istruzione e del Merito e di un suo ufficio territoriale, aggiornate a novembre 2026. La procedura di certificazione sta cambiando, le date del PEI sono in un decreto-legge non ancora convertito in legge, e tempi e uffici variano da Regione a Regione: ricontrolleremo questa pagina a gennaio, quando la riforma della disabilità dovrebbe valere in tutta Italia. Per il tuo caso chiedi al pediatra, all'Azienda sanitaria, alla scuola o a un patronato.",
    "domanda": "Come funzionano certificazione, sostegno e PEI a scuola",
    "ricontrolla": "2027-01",
    "correlate": [
@@ -949,7 +974,7 @@
    "strumento": "gestionale",
    "perche_titolo": "Da sapere prima",
    "perche": [
-    "La legge 170 del 2010 riconosce come disturbi specifici di apprendimento, i DSA, la dislessia, la disgrafia, la disortografia e la discalculia. Riguardano la lettura, la scrittura e il calcolo, in bambini con capacità cognitive adeguate, e si manifestano con l'inizio della scuola.",
+    "La legge 170 del 2010 riconosce come disturbi specifici di apprendimento, i DSA, la dislessia, la disgrafia, la disortografia e la discalculia. Riguardano la lettura, la scrittura e il calcolo, in bambini con capacità cognitive adeguate e senza malattie neurologiche o deficit sensoriali.",
     "Con la diagnosi, la scuola scrive un Piano didattico personalizzato, il PDP, con gli strumenti compensativi e le misure dispensative che servono. L'obiettivo è che tuo figlio raggiunga gli stessi traguardi dei compagni."
    ],
    "passi": [
@@ -1046,7 +1071,7 @@
    "perche_titolo": "Cosa esiste, in breve",
    "perche": [
     "Nel 2026 non esiste un «bonus centri estivi» nazionale che spetti a tutte le famiglie. Esistono aiuti diversi, che si chiedono a enti diversi: l'INPS, per i figli dei dipendenti e dei pensionati pubblici, e i Comuni, che usano fondi dello Stato o della Regione e decidono requisiti, importi e date.",
-    "Per il 2026 il Dipartimento per le politiche della famiglia ha assegnato ai Comuni 60 milioni di euro, divisi in base al numero di minori residenti. Ogni Comune decide come usarli: a Taranto, per esempio, sono diventati un rimborso alle famiglie per il centro estivo scelto."
+    "Per il 2026 la legge di bilancio ha finanziato un fondo per i Comuni, gestito dal Dipartimento per le politiche della famiglia, per centri estivi e attività educative dei minori: i fondi sono stati divisi fra i Comuni in base al numero di minori residenti. Ogni Comune decide come usarli: a Taranto, per esempio, sono diventati un rimborso alle famiglie per il centro estivo scelto."
    ],
    "tabella": {
     "pila": true,
@@ -1080,7 +1105,7 @@
     ],
     [
      "Prepara l'ISEE per i minorenni",
-     "Gli aiuti del 2026 che abbiamo controllato dipendono dall'ISEE: a Taranto la soglia era 25.000 euro, a Bologna 26.000 o 35.000 (lì senza ISEE per i bambini con disabilità certificata). Con un ISEE già pronto, la domanda si fa in pochi minuti."
+     "Gli aiuti del 2026 che abbiamo controllato dipendono dall'ISEE: a Taranto la soglia era 25.000 euro, a Bologna 26.000 o 35.000 (per il contributo regionale, senza ISEE per i bambini con disabilità certificata). Con un ISEE già pronto, la domanda si fa in pochi minuti."
     ],
     [
      "Scegli un centro in regola",
@@ -1118,7 +1143,8 @@
     "CR-34",
     "CR-35",
     "CR-36",
-    "CR-37"
+    "CR-37",
+    "CR-39"
    ],
    "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS e dagli avvisi 2026 dei Comuni di Bologna e di Taranto, aggiornate a novembre 2026. Per l'estate 2027 bandi e avvisi non sono ancora usciti: ricontrolleremo questa pagina a gennaio e in primavera. Requisiti e importi li decide ogni ente, ogni anno.",
    "domanda": "Quali aiuti ci sono per i centri estivi",
@@ -1156,7 +1182,7 @@
    "strumento": "gestionale",
    "perche_titolo": "Le regole, in breve",
    "perche": [
-    "La domanda per la primaria statale si fa online sulla Piattaforma Unica del Ministero. Per l'anno 2026/2027 la finestra è stata dal 13 gennaio al 14 febbraio 2026; le date per il 2027/2028 arrivano con la nota del Ministero, di solito a dicembre. Età, anticipo e date sono spiegati nella guida sulle iscrizioni a nido e scuola.",
+    "La domanda per la primaria statale si fa online sulla Piattaforma Unica del Ministero. Per l'anno 2026/2027 la finestra è stata dal 13 gennaio al 21 febbraio 2026: la nota del Ministero indicava il 14 febbraio, poi il Ministero ha concesso una settimana in più; le date per il 2027/2028 arrivano con la nota del Ministero, di solito a dicembre. Età, anticipo e date sono spiegati nella guida sulle iscrizioni a nido e scuola.",
     "Nella domanda si scelgono la scuola, fino a due scuole di riserva, l'orario settimanale e se avvalersi dell'insegnamento della religione cattolica. Sono scelte da fare con calma, prima che le iscrizioni si aprano."
    ],
    "passi": [
@@ -1213,7 +1239,8 @@
    "fonti": [
     "CR-23",
     "CR-24",
-    "CR-13"
+    "CR-13",
+    "CR-40"
    ],
    "avvertenza": "Informazioni generali tratte dalla nota del Ministero dell'Istruzione e del Merito per le iscrizioni all'anno scolastico 2026/2027, aggiornate a novembre 2026. Le regole del 2027/2028 non sono ancora uscite: la nota arriva di solito a dicembre e aggiorneremo questa pagina a gennaio. Per le scuole paritarie e per l'istruzione parentale valgono modalità diverse: chiedi alla scuola.",
    "domanda": "Come scegliere orario e religione alla primaria",
@@ -1265,7 +1292,7 @@
     ],
     [
      "Chiedi la tariffa ridotta con l'ISEE",
-     "Senza ISEE si paga di solito la tariffa massima. Ci sono sconti per i fratelli: a Firenze il 20% dal secondo figlio, a Teramo il 50% per il secondo. A Teramo non pagano i residenti con ISEE sotto gli 8.000 euro e gli alunni con disabilità."
+     "Senza ISEE si paga di solito la tariffa massima. Ci sono sconti per i fratelli: a Firenze il 20% dal secondo figlio, a Teramo il 50% per il secondo, ma solo con ISEE fino a 10.600 euro. A Teramo non pagano i residenti con ISEE sotto gli 8.000 euro e gli alunni con disabilità."
     ],
     [
      "Paga entro le scadenze",
@@ -1369,7 +1396,7 @@
     ],
     [
      "Il rientro a scuola",
-     "In Emilia-Romagna il bambino può rientrare il giorno dopo il trattamento, senza certificato: lo scrivono l'Azienda USL della Romagna e quella di Bologna. In altre Regioni le regole possono essere diverse: chiedi alla scuola se serve un modulo."
+     "In Emilia-Romagna si torna a scuola dopo aver fatto il trattamento, senza certificato: l'Azienda USL di Bologna chiede il trattamento fatto, quella della Romagna scrive che si può rientrare il giorno dopo. In altre Regioni le regole possono essere diverse: chiedi alla scuola se serve un certificato o un modulo."
     ],
     [
      "Pettini, cappelli e sciarpe: ognuno i suoi",
@@ -1688,7 +1715,7 @@
    "slug": "chi-puo-ritirare-il-bambino-da-scuola",
    "gruppo": "crescita",
    "domanda": "Chi può andare a prendere il bambino al nido o a scuola?",
-   "risposta": "I genitori, oppure le persone che i genitori delegano per iscritto. Di solito i delegati devono essere maggiorenni.",
+   "risposta": "I genitori, oppure le persone che i genitori delegano per iscritto, con le regole e il modulo del tuo nido o della tua scuola.",
    "righe": [
     {
      "t": "Alla scuola dell'infanzia comunale di Prato, per esempio, i genitori possono delegare persone con più di 18 anni: la delega si firma davanti al personale, con la fotocopia della carta d'identità di chi è delegato.",
@@ -1705,11 +1732,11 @@
      "p": "Gli alunni «non potranno essere affidati dagli assistenti scuolabus a persone non formalmente delegate»; modulo delega con documenti di deleganti e delegati; modulo delega giornaliera per casi urgenti."
     },
     {
-     "t": "Per i ragazzi più grandi: sotto i 14 anni possono usare lo scuolabus da soli solo se i genitori li autorizzano per iscritto, con un'autorizzazione data al Comune.",
+     "t": "Per i ragazzi sotto i 14 anni, i genitori possono autorizzare la scuola a farli uscire da soli a fine lezione, e il Comune a far loro usare lo scuolabus da soli. Senza questa autorizzazione, scuola e scuolabus restano responsabili della vigilanza.",
      "f": [
       2
      ],
-     "p": "Art. 19-bis, c. 2, DL 148/2017: l'autorizzazione ad usufruire in modo autonomo del servizio di trasporto scolastico, rilasciata dai genitori dei minori di 14 anni agli enti locali, esonera dalla responsabilità di vigilanza nella salita, discesa e sosta alla fermata."
+     "p": "Art. 19-bis, DL 148/2017: i genitori dei minori di 14 anni possono autorizzare le istituzioni scolastiche a consentirne l'uscita autonoma dai locali scolastici al termine delle lezioni (c. 1) e gli enti locali all'uso autonomo del trasporto scolastico (c. 2); l'autorizzazione esonera dalla responsabilità connessa all'obbligo di vigilanza."
     },
     {
      "t": "Ogni nido e ogni scuola ha il suo modulo: chiedilo in segreteria all'inizio dell'anno, e aggiornalo quando cambia qualcosa.",
@@ -1830,11 +1857,12 @@
      "p": "Dalla classe quarta, l'educazione motoria con docenti specialisti aggiunge fino a due ore settimanali; non incide sul tempo pieno, perché rientra nelle 40 ore."
     },
     {
-     "t": "L'orario si sceglie nella domanda online sulla Piattaforma Unica: per il 2026/2027 dal 13 gennaio al 14 febbraio 2026.",
+     "t": "L'orario si sceglie nella domanda online sulla Piattaforma Unica: per il 2026/2027 dal 13 gennaio al 21 febbraio 2026, dopo la proroga di una settimana decisa dal Ministero.",
      "f": [
-      0
+      0,
+      1
      ],
-     "p": "Domanda online sulla Piattaforma Unica, dalle 8:00 del 13 gennaio 2026 alle 20:00 del 14 febbraio 2026."
+     "p": "Nota: domanda online sulla Piattaforma Unica, dalle 8:00 del 13 gennaio 2026 alle 20:00 del 14 febbraio 2026. Comune di Firenze: il Ministero, con l'avviso n. 33781 del 12 febbraio 2026, ha prorogato le iscrizioni al 21 febbraio 2026."
     },
     {
      "t": "Agli open day chiedi quali orari la scuola riesce davvero ad attivare.",
@@ -1857,6 +1885,12 @@
      "pagina": "Nota prot. 100847 del 17 dicembre 2025: iscrizioni per l'a.s. 2026/2027",
      "url": "https://www.icluccacentrostorico.edu.it/wp-content/uploads/2026/01/m_pi.AOODGOSV.REGISTRO-UFFICIALEU.0100847.17-12-2025.pdf",
      "data": "2025-12-17"
+    },
+    {
+     "ente": "Comune di Firenze",
+     "pagina": "Determinazione n. 999 del 13 febbraio 2026: proroga delle iscrizioni al 21 febbraio 2026 (avviso del Ministero n. 33781 del 12 febbraio 2026)",
+     "url": "https://www.comune.firenze.it/istruzione/system/files/2026-02/dd-999-del-13.2.26-proroga-iscrizioni.pdf",
+     "data": "2026-02-13"
     }
    ]
   },
@@ -1918,7 +1952,7 @@
    "slug": "certificato-medico-dopo-assenza-scuola",
    "gruppo": "scuola",
    "domanda": "Serve il certificato medico per tornare a scuola dopo un'assenza?",
-   "risposta": "Dipende dalla Regione: in molte non serve più. In Emilia-Romagna e in Toscana, per esempio, non è obbligatorio.",
+   "risposta": "Dipende dalla Regione. In Emilia-Romagna, per esempio, non serve più, salvo casi particolari decisi dall'Azienda sanitaria.",
    "righe": [
     {
      "t": "In Emilia-Romagna la legge regionale 9 del 2015 ha tolto l'obbligo del certificato medico per le assenze scolastiche. Resta solo nei casi in cui lo chieda l'Azienda sanitaria, per situazioni particolari.",
@@ -2115,7 +2149,7 @@
    "slug": "la-scuola-puo-dare-medicine",
    "gruppo": "scuola",
    "domanda": "La scuola può dare una medicina a mio figlio?",
-   "risposta": "Solo nei casi autorizzati dal pediatra, con un modulo apposito. Di regola a scuola le medicine non si danno.",
+   "risposta": "Solo nei casi autorizzati dal pediatra o dal medico, con un modulo apposito. Di regola a scuola le medicine non si danno.",
    "righe": [
     {
      "t": "L'Azienda USL di Bologna lo scrive così: a scuola non sono somministrati farmaci, salvo i casi autorizzati dal pediatra di libera scelta su apposita modulistica, con il modulo compilato dai genitori.",
@@ -2132,11 +2166,11 @@
      "p": "Solo farmaci indispensabili per malattie croniche e farmaci salvavita; prescrizione del medico curante; certificazione della Pediatria di comunità; la famiglia consegna certificazione, modulo e farmaco in confezione integra al dirigente."
     },
     {
-     "t": "In Romagna la prescrizione vale per tutto il ciclo scolastico, salvo modifiche o sospensioni documentate.",
+     "t": "In Romagna la prescrizione vale per tutto il ciclo scolastico, salvo modifiche, sospensioni documentate o cambio di scuola.",
      "f": [
       1
      ],
-     "p": "La prescrizione vale per l'intero ciclo scolastico, salvo modifiche o sospensioni documentate."
+     "p": "Le prescrizioni di farmaci a scuola sono valide per tutto il ciclo scolastico della scuola frequentata, salvo modifiche, sospensioni documentate o cambio di scuola."
     },
     {
      "t": "Se tuo figlio ne ha bisogno, parlane prima con il pediatra e con la scuola, e chiedi quale modulo vale da voi.",
@@ -2178,28 +2212,29 @@
    "risposta": "Il PEI sì: si scrive ogni anno, e lì si decidono gli aiuti. La certificazione invece si rinnova solo alla scadenza scritta nel verbale.",
    "righe": [
     {
-     "t": "Il PEI, il Piano educativo individualizzato, lo elabora e lo approva ogni anno il GLO, il gruppo di lavoro con gli insegnanti e i genitori, di norma entro ottobre. A fine anno c'è la verifica finale.",
+     "t": "Il PEI, il Piano educativo individualizzato, lo elabora e lo approva ogni anno il GLO, il gruppo di lavoro con gli insegnanti e i genitori. Nel PEI si indicano anche le ore di sostegno per la classe, e a fine anno c'è la verifica finale.",
      "f": [
-      0
+      0,
+      2
      ],
-     "p": "Il PEI è elaborato e approvato dal GLO; definitivo di norma entro il mese di ottobre; verifica conclusiva a fine anno; modificabile in qualsiasi momento."
+     "p": "Slide MIM: il PEI è elaborato e approvato dal GLO; verifica conclusiva a fine anno. Decreto-legge 170/2026: il PEI «definisce, con adeguata motivazione, il numero di ore di sostegno da assegnare alla classe»."
     },
     {
-     "t": "Alla prima certificazione si scrive un PEI provvisorio entro giugno, per preparare l'anno dopo.",
+     "t": "Le date le ha cambiate il decreto-legge 170 del 2026, in attesa di conversione in legge: per chi è già iscritto nella stessa scuola il PEI definitivo si scrive entro giugno e si aggiorna entro metà ottobre; per i nuovi iscritti o le nuove certificazioni, provvisorio entro giugno e definitivo entro il 15 ottobre.",
      "f": [
-      0
+      2
      ],
-     "p": "PEI provvisorio redatto entro giugno, solo per la prima certificazione."
+     "p": "Nuova lettera g) dell'art. 7, c. 2, d.lgs. 66/2017: nuova iscrizione o certificazione, PEI provvisorio entro giugno e definitivo «entro e non oltre il 15 ottobre»; già iscritti nella stessa scuola, definitivo entro giugno, aggiornamenti «entro e non oltre le prime due settimane del mese di ottobre»."
     },
     {
-     "t": "Le risorse le chiede il dirigente scolastico, in base ai bisogni rilevati; l'assistenza per l'autonomia la dà il Comune, sulle ore proposte dal GLO.",
+     "t": "Le risorse le chiede il dirigente scolastico, in base ai bisogni rilevati; l'assistenza per l'autonomia la dà l'ente locale, per esempio il Comune, sulle ore proposte dal GLO.",
      "f": [
       1
      ],
-     "p": "Il Dirigente rileva la necessità di risorse e ne formula la richiesta; l'assistenza è assegnata dal Comune in base al monte ore proposto dal GLO e richiesto dal Dirigente."
+     "p": "Il Dirigente rileva la necessità di risorse e ne formula la richiesta; il monte ore di assistenza, proposto dal GLO e richiesto dal Dirigente, è attribuito dall'Ente territoriale."
     },
     {
-     "t": "Se nel verbale c'è una data di revisione, la richiesta di rinnovo va fatta per tempo: in Veneto, per esempio, entro il 31 gennaio.",
+     "t": "Se nel verbale c'è una data di revisione, la richiesta di rinnovo va fatta per tempo: in provincia di Venezia, per esempio, entro il 31 gennaio.",
      "f": [
       1
      ],
@@ -2228,6 +2263,12 @@
      "pagina": "Vademecum provinciale per l'inclusione scolastica",
      "url": "https://venezia.istruzioneveneto.gov.it/wp-content/uploads/2024/12/20241125-Vademecum-Ufficiale.pdf",
      "data": "2024-11-25"
+    },
+    {
+     "ente": "Parlamento italiano – Normattiva",
+     "pagina": "Decreto-legge 30 settembre 2026, n. 170, art. 1 (modifiche all'art. 7 del d.lgs. 66/2017), in attesa di conversione",
+     "url": "https://www.normattiva.it/eli/id/2026/09/30/26G00190/ORIGINAL",
+     "data": "2026-09-30"
     }
    ]
   },
@@ -2259,11 +2300,12 @@
      "p": "I genitori sono interlocutori essenziali: il GLO ascolta le loro esigenze, ne valorizza il contributo e viene verbalizzato."
     },
     {
-     "t": "La base del PEI sono il verbale di accertamento e il Profilo di funzionamento. Il PEI definitivo si scrive di norma entro ottobre, e si può modificare in qualsiasi momento; alla prima certificazione se ne scrive uno provvisorio entro giugno.",
+     "t": "La base del PEI sono il verbale di accertamento e il Profilo di funzionamento. Con il decreto-legge 170 del 2026, in attesa di conversione in legge, il PEI definitivo si scrive entro giugno per chi è già iscritto, ed entro il 15 ottobre per i nuovi iscritti; si può modificare anche dopo, se cambia la situazione.",
      "f": [
-      0
+      0,
+      2
      ],
-     "p": "PEI provvisorio entro giugno per la prima certificazione. Documenti di partenza: verbale di accertamento, profilo di funzionamento; definitivo di norma entro ottobre; modificabile in qualsiasi momento."
+     "p": "Slide MIM: documenti di partenza verbale di accertamento e profilo di funzionamento. Decreto-legge 170/2026: già iscritti, PEI definitivo entro giugno; nuova iscrizione o certificazione, provvisorio entro giugno e definitivo entro il 15 ottobre; modificabile in presenza di nuove condizioni."
     }
    ],
    "guide": [
@@ -2288,6 +2330,12 @@
      "pagina": "Vademecum provinciale per l'inclusione scolastica",
      "url": "https://venezia.istruzioneveneto.gov.it/wp-content/uploads/2024/12/20241125-Vademecum-Ufficiale.pdf",
      "data": "2024-11-25"
+    },
+    {
+     "ente": "Parlamento italiano – Normattiva",
+     "pagina": "Decreto-legge 30 settembre 2026, n. 170, art. 1 (modifiche all'art. 7 del d.lgs. 66/2017), in attesa di conversione",
+     "url": "https://www.normattiva.it/eli/id/2026/09/30/26G00190/ORIGINAL",
+     "data": "2026-09-30"
     }
    ]
   },
@@ -2451,7 +2499,7 @@
      "p": "Evitare lo scambio di oggetti personali quali pettini, cappelli, sciarpe; controllo sistematico a tutti i componenti della famiglia."
     },
     {
-     "t": "Nelle altre Regioni le regole possono essere diverse: chiedi alla scuola se serve un modulo per il rientro.",
+     "t": "Nelle altre Regioni le regole possono essere diverse: chiedi alla scuola se serve un certificato o un modulo per il rientro.",
      "f": [],
      "p": ""
     }
@@ -2502,11 +2550,12 @@
      "p": "Scheda: minori 3-14 anni, figli o orfani di dipendenti o pensionati PA iscritti alla Gestione Unitaria; durata da una a quattro settimane; contributo in base all'ISEE. Notizia: domande dalle 12 del 4 giugno alle 12 del 25 giugno 2026."
     },
     {
-     "t": "Per il 2026 lo Stato ha dato ai Comuni 60 milioni di euro per le attività estive dei minori. A Taranto, per esempio, sono diventati un rimborso fino a 400 euro, per i residenti da 3 a 14 anni con ISEE fino a 25.000 euro.",
+     "t": "Per il 2026 lo Stato ha finanziato i Comuni, attraverso il Dipartimento per le politiche della famiglia, per centri estivi e attività educative dei minori. A Taranto, per esempio, i fondi sono diventati un rimborso fino a 400 euro, per i residenti da 3 a 14 anni con ISEE fino a 25.000 euro.",
      "f": [
+      3,
       2
      ],
-     "p": "Il Dipartimento per le Politiche della famiglia assegna ai comuni 60 milioni di euro per il 2026, in base alla popolazione minorile residente; rimborso fino a 400 € (800 € con disabilità); ISEE 25.000 €; 3-14 anni."
+     "p": "Dipartimento: fondo per le attività socio-educative dei minori, art. 1, comma 222, legge 199/2025, attività dal 1° giugno al 31 dicembre 2026. Taranto: fondi del Dipartimento ripartiti in base alla popolazione minorile residente; rimborso fino a 400 € (800 € con disabilità); ISEE 25.000 €; 3-14 anni."
     },
     {
      "t": "Per il 2027 controlla il sito del tuo Comune da marzo e il sito dell'INPS a fine maggio.",
@@ -2544,6 +2593,12 @@
      "pagina": "Avviso centri estivi 2026",
      "url": "https://taranto-api.municipiumapp.it/s3/7152/allegati/avviso-centri-estivi-2026.pdf",
      "data": "2026-05-14"
+    },
+    {
+     "ente": "Presidenza del Consiglio dei ministri – Dipartimento per le politiche della famiglia",
+     "pagina": "Fondo per le attività socio-educative a favore dei minori: linea guida sulle spese ammissibili, anno 2026",
+     "url": "https://famiglia.governo.it/media/wqbpypkb/linea-guida.pdf",
+     "data": "2026"
     }
    ]
   }
