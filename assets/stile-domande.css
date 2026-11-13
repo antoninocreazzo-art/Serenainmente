@@ -1,0 +1,42 @@
+/* serenainmente.it — «Domande rapide» e «Il vocabolario di Serena».
+   Si aggiunge solo alle loro pagine (gen/domande.py lo copia dentro la pagina, prima di stile3.css):
+   le regole hanno davanti la classe della pagina, così valgono anche se stile3.css viene dopo.
+   Stessi caratteri e colori del sito: Fraunces per le parole, DM Sans per il resto, i colori da stile3.css. */
+
+/* la risposta in una riga: la prima cosa che si legge */
+.p-dq .dq-risp{font:400 clamp(1.3125rem,3.6vw,1.5rem)/1.35 var(--parole);color:var(--ink);margin:0}
+.p-dq .ds-testo p{margin:0}
+.p-dq .dq-piu{display:flex;flex-direction:column;gap:6px}
+.p-dq .dq-piu h2,.p-dq .ds-fonti h2{margin:0}
+
+/* l'indice delle domande: si salta all'argomento */
+.p-dq-i .dq-salti{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.p-dq-i .dq-salti .fchip{display:inline-flex;align-items:center;text-decoration:none}
+.p-dq-i .dq-gruppo{scroll-margin-top:24px;margin-top:8px}
+.p-dq-i .dq-fondo{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+
+/* il vocabolario: pagine di un dizionario di casa */
+.p-voc .voc-hd .eyebrow{margin:0}
+.p-voc .voc-indice ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px}
+.p-voc .voc-indice a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border-radius:999px;border:1.5px solid var(--tinta2);color:var(--marca-tt);font:500 1rem var(--titoli);text-decoration:none}
+.p-voc .voc-indice a:hover{background:var(--tinta)}
+.p-voc .voc{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:14px}
+.p-voc .voc-v{position:relative;background:var(--carta);border-bottom:3px solid var(--linea2);border-radius:6px;padding:22px 20px 24px;scroll-margin-top:24px;transition:background .3s}
+.p-voc .voc-v:nth-child(3n+2){background:linear-gradient(var(--tinta),var(--tinta)),var(--carta)}
+.p-voc .voc-n{margin:0 0 4px;font:500 1rem/1.3 var(--titoli);letter-spacing:.08em;text-transform:uppercase;color:var(--marca-t)}
+.p-voc .voc-p{margin:0 0 10px;font:400 clamp(2rem,7vw,2.5rem)/1.05 var(--parole);color:var(--marca-tt);letter-spacing:-.01em}
+.p-voc .voc-d{margin:0;font-size:1.125rem;line-height:1.6;color:var(--ink);max-width:46ch}
+.p-voc .voc-ultima{background:linear-gradient(var(--tinta2),var(--tinta2)),var(--carta);border-bottom-color:var(--marca)}
+.p-voc .voc-ultima .voc-p{font-size:clamp(2.5rem,10vw,3.5rem)}
+.p-voc .voc-v:target{outline:2.5px solid var(--marca-t);outline-offset:3px}
+.p-voc .voc-fondo{display:flex;flex-direction:column;gap:20px;margin-top:8px}
+@media(min-width:760px){
+ .p-voc .voc{grid-template-columns:1fr 1fr;gap:18px}
+ .p-voc .voc-ultima{grid-column:1/-1;padding:32px 32px 34px}
+ .p-voc .voc-v{padding:26px 26px 28px}
+}
+@media print{
+ .p-voc .voc-v{break-inside:avoid;background:#fff!important;border:1px solid #bbb}
+ .p-voc .voc-indice{display:none}
+}
+

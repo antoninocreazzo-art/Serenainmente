@@ -1,0 +1,1220 @@
+{
+ "nota": "Domande rapide (/domande/). Ogni domanda: risposta (prima riga, diretta), righe di contesto [{t, f: indici delle fonti, p: cosa dice la fonte}], guide e schede collegate, fonti {ente, pagina, url, data}. Fatti controllati il 13/11/2026. Il campo p non va in pagina: serve a chi ricontrolla.",
+ "controllo": "2026-11-13",
+ "revisione": "2027-05-13",
+ "gruppi": [
+  [
+   "salute",
+   "Medico, fascicolo e salute"
+  ],
+  [
+   "scuola",
+   "Vaccini, scuola e sport"
+  ],
+  [
+   "documenti",
+   "Tessera sanitaria e carta d'identità"
+  ],
+  [
+   "soldi",
+   "ISEE, assegno, ticket e spese"
+  ]
+ ],
+ "domande": [
+  {
+   "slug": "cambiare-pediatra-in-qualsiasi-momento",
+   "gruppo": "salute",
+   "domanda": "Il pediatra si può cambiare in qualsiasi momento?",
+   "risposta": "Sì. Il pediatra si può cambiare quando vuoi, senza dover spiegare perché.",
+   "righe": [
+    {
+     "t": "La Regione Piemonte lo scrive così: in qualsiasi momento si può cambiare idea e revocare la scelta.",
+     "f": [
+      0
+     ],
+     "p": "«In qualsiasi momento si può cambiare idea e revocare la scelta.»"
+    },
+    {
+     "t": "Si sceglie tra i pediatri che non hanno ancora raggiunto il numero massimo di assistiti fissato dall'Azienda sanitaria.",
+     "f": [
+      0
+     ],
+     "p": "si può scegliere tra i medici che non abbiano superato il «numero massimo di assistiti» fissato dall'Azienda sanitaria"
+    },
+    {
+     "t": "Il modo cambia da Regione a Regione. In Piemonte si fa online o allo sportello Scelta e revoca del distretto; in Lombardia il cambio online si fa dal Fascicolo sanitario in ogni periodo dell'anno, ma dopo un cambio bisogna aspettare almeno 30 giorni prima di farne un altro.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Piemonte: Ufficio Scelta e revoca del Distretto oppure servizio online. Lombardia: cambio dal sito del Fascicolo Sanitario Elettronico, «possibile in qualsiasi periodo dell'anno»; dopo un cambio online «attendere almeno 30 giorni» prima di un altro."
+    },
+    {
+     "t": "Nella tua Regione cerca «scelta e revoca» sul portale sanitario, oppure chiedi all'ASL.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "pediatra-e-medico-di-base"
+   ],
+   "schede": [],
+   "chiavi": "cambiare pediatra medico scegliere revoca scelta",
+   "fonti": [
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Medico di famiglia e pediatra di libera scelta",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/accesso-ai-servizi-sanitari/medico-famiglia-pediatra-libera-scelta",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Cambio medico",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+     "data": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "slug": "dove-trovo-i-referti-online",
+   "gruppo": "salute",
+   "domanda": "Dove trovo i referti online?",
+   "risposta": "Nel Fascicolo sanitario elettronico della tua Regione: ci entri con SPID, con la carta d'identità elettronica o con la tessera sanitaria abilitata.",
+   "righe": [
+    {
+     "t": "In Toscana, per esempio, nel fascicolo ci sono i referti degli esami del sangue e di radiologia, le lettere di dimissione, gli accessi al pronto soccorso, le vaccinazioni e le prescrizioni.",
+     "f": [
+      0
+     ],
+     "p": "Contenuti: vaccinazioni; referti di esami del sangue e di radiologia; ricoveri, lettere di dimissione e accessi al pronto soccorso; prescrizioni specialistiche e farmaceutiche."
+    },
+    {
+     "t": "Ogni Regione ha il suo fascicolo, e le credenziali accettate cambiano un po': in Toscana si entra con SPID o con la tessera sanitaria, in Lombardia anche con la carta d'identità elettronica.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Toscana: accesso con Carta sanitaria elettronica (TS/CNS) oppure SPID di livello 2. Lombardia: accesso al Fascicolo con SPID, CIE oppure CNS con PIN e lettore."
+    },
+    {
+     "t": "C'è anche il consenso alla consultazione: se lo dai, i medici del Servizio sanitario possono vedere il fascicolo mentre ti curano, e ogni accesso resta registrato.",
+     "f": [
+      0
+     ],
+     "p": "Con il consenso alla consultazione i professionisti del SSN possono consultare il fascicolo durante la cura; «Ogni accesso è tracciato e reso visibile sul tuo fascicolo»."
+    }
+   ],
+   "guide": [
+    "documenti-sanitari-dove-trovarli"
+   ],
+   "schede": [],
+   "chiavi": "referti referto analisi esami online fascicolo sanitario fse scaricare",
+   "fonti": [
+    {
+     "ente": "Regione Toscana",
+     "pagina": "Fascicolo sanitario elettronico",
+     "url": "https://www.regione.toscana.it/-/fascicolo-sanitario-elettronico",
+     "data": "2026-11-05"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Cambio medico (accesso al Fascicolo sanitario elettronico)",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+     "data": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "slug": "fascicolo-sanitario-di-mio-figlio",
+   "gruppo": "salute",
+   "domanda": "Come vedo il fascicolo sanitario di mio figlio?",
+   "risposta": "Con le tue credenziali, dopo aver attivato la delega da genitore: come si attiva lo decide la tua Regione.",
+   "righe": [
+    {
+     "t": "In Toscana la delega si rilascia nella sezione «deleghe» del fascicolo, oppure allo sportello con codice fiscale, documento d'identità e tessera sanitaria; ciascun genitore poi entra con le proprie credenziali.",
+     "f": [
+      0
+     ],
+     "p": "La delega si rilascia nella sezione «deleghe» del fascicolo, nell'app Toscana Salute o allo sportello (per i genitori servono codice fiscale, documento di identità e tessera sanitaria); ciascuno dei due genitori accede con le proprie credenziali (TS/CNS, SPID o CIE)."
+    },
+    {
+     "t": "La delega vale fino ai 18 anni del figlio: a quel punto decade.",
+     "f": [
+      0
+     ],
+     "p": "La delega decade al compimento della maggiore età del figlio."
+    },
+    {
+     "t": "Sempre in Toscana, i genitori hanno il controllo completo del fascicolo del figlio.",
+     "f": [
+      0
+     ],
+     "p": "I genitori «hanno il controllo completo del fascicolo del figlio»."
+    },
+    {
+     "t": "In Lombardia, per un figlio minorenne, il genitore entra e dichiara online di essere genitore.",
+     "f": [
+      1
+     ],
+     "p": "Per un figlio minorenne accede un genitore o un legale rappresentante, che autocertifica online la propria qualità."
+    },
+    {
+     "t": "Dentro trovi anche le vaccinazioni: è il posto più veloce per il certificato vaccinale.",
+     "f": [
+      0
+     ],
+     "p": "Il fascicolo contiene le vaccinazioni."
+    }
+   ],
+   "guide": [
+    "documenti-sanitari-dove-trovarli",
+    "certificato-vaccinale"
+   ],
+   "schede": [],
+   "chiavi": "fascicolo sanitario figlio figlia bambino minorenne genitore delega vedere",
+   "fonti": [
+    {
+     "ente": "Regione Toscana",
+     "pagina": "Fascicolo sanitario elettronico",
+     "url": "https://www.regione.toscana.it/-/fascicolo-sanitario-elettronico",
+     "data": "2026-11-05"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Cambio medico (accesso al Fascicolo per un figlio minorenne)",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+     "data": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "slug": "foglietto-illustrativo-online",
+   "gruppo": "salute",
+   "domanda": "Dove trovo il foglietto illustrativo di un farmaco online?",
+   "risposta": "Nella Banca Dati dei Farmaci dell'AIFA, su medicinali.aifa.gov.it: ci sono i fogli illustrativi di tutti i medicinali autorizzati in Italia.",
+   "righe": [
+    {
+     "t": "Il foglio illustrativo è approvato dall'AIFA o dalla Commissione Europea, insieme all'autorizzazione del medicinale.",
+     "f": [
+      0
+     ],
+     "p": "Il RCP, il FI e le etichette sono approvati dall'AIFA o dalla Commissione Europea e fanno parte integrante del provvedimento di AIC."
+    },
+    {
+     "t": "È un documento che si aggiorna nel tempo: online trovi la versione più recente, che può essere diversa dal foglio che hai nella scatola.",
+     "f": [
+      0
+     ],
+     "p": "Il RCP e il FI sono documenti «dinamici», costantemente aggiornati su richiesta dell'azienda o delle autorità."
+    },
+    {
+     "t": "Per i medicinali approvati con procedura europea, il foglio si trova anche sul sito dell'Agenzia europea dei medicinali.",
+     "f": [
+      0
+     ],
+     "p": "Per i farmaci approvati con procedura centralizzata, i documenti sono anche sul sito EMA e della Commissione Europea."
+    },
+    {
+     "t": "Per trovarlo, cerca il nome del medicinale come è stampato sulla confezione.",
+     "f": [],
+     "p": ""
+    },
+    {
+     "t": "Serena non dà indicazioni su quanto o come prendere un medicinale: per ogni dubbio, chiedi al medico o al farmacista.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "lista-medicine-genitore-anziano"
+   ],
+   "schede": [
+    "foglietto-illustrativo"
+   ],
+   "chiavi": "foglietto illustrativo foglio bugiardino farmaco medicina online banca dati aifa",
+   "c": "bambino anziano",
+   "medico": true,
+   "fonti": [
+    {
+     "ente": "AIFA",
+     "pagina": "Riassunto delle Caratteristiche del Prodotto e Foglio Illustrativo",
+     "url": "https://www.aifa.gov.it/riassunto-caratteristiche-e-foglio-illustrativo",
+     "data": "pagina senza data"
+    }
+   ]
+  },
+  {
+   "slug": "quante-ore-dorme-un-bambino-di-2-anni",
+   "gruppo": "salute",
+   "domanda": "Quante ore deve dormire un bambino di 2 anni?",
+   "risposta": "Tra 11 e 14 ore ogni 24 ore, sonnellini compresi: è l'intervallo indicato dall'Organizzazione Mondiale della Sanità per i bambini da 1 a 2 anni.",
+   "righe": [
+    {
+     "t": "L'OMS chiede anche orari regolari per andare a dormire e per svegliarsi.",
+     "f": [
+      0
+     ],
+     "p": "«11-14 hours of good quality sleep, including naps, with regular sleep and wake-up times»"
+    },
+    {
+     "t": "Da 3 a 4 anni l'intervallo diventa di 10-13 ore, con o senza sonnellino.",
+     "f": [
+      0
+     ],
+     "p": "«10–13h of good quality sleep, which may include a nap, with regular sleep and wake-up times»"
+    },
+    {
+     "t": "Per i più piccoli l'OMS indica 14-17 ore fino a 3 mesi e 12-16 ore da 4 a 11 mesi.",
+     "f": [
+      0
+     ],
+     "p": "«Have 14–17h (0–3 months of age) or 12–16h (4–11 months of age) of good quality sleep, including naps»"
+    },
+    {
+     "t": "È un intervallo largo apposta: 11 ore e 14 ore sono entrambe nella norma, e conta una giornata intera, non una notte sola.",
+     "f": [],
+     "p": ""
+    },
+    {
+     "t": "Se il suo sonno ti preoccupa, parlane con il pediatra.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "quanto-dorme-un-bambino",
+    "routine-della-nanna"
+   ],
+   "schede": [],
+   "chiavi": "quante ore dorme dormire sonno bambino 2 anni due anni sonnellino",
+   "medico": true,
+   "fa": [
+    "1-3"
+   ],
+   "fonti": [
+    {
+     "ente": "Organizzazione Mondiale della Sanità (OMS)",
+     "pagina": "To grow up healthy, children need to sit less and play more (pagina in inglese)",
+     "url": "https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more",
+     "data": "2019-04-24"
+    }
+   ]
+  },
+  {
+   "slug": "certificato-vaccinale-scuola-elementare",
+   "gruppo": "scuola",
+   "domanda": "Il certificato vaccinale serve per iscriversi alla scuola elementare?",
+   "risposta": "No: per la scuola primaria essere in regola con le vaccinazioni non è un requisito per iscriversi. Lo è per il nido e per la scuola dell'infanzia.",
+   "righe": [
+    {
+     "t": "Lo prevede il decreto-legge 73 del 2017, convertito dalla legge 119 dello stesso anno.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Corte costituzionale, sentenza 5/2018, che descrive l'art. 3 del d.l. 73/2017: la presentazione della documentazione «costituisce requisito per accedere ai servizi educativi» per l'infanzia e alle scuole dell'infanzia, «ma non alla scuola o agli esami negli altri gradi di istruzione»."
+    },
+    {
+     "t": "La Corte costituzionale, nella sentenza 5 del 2018, lo riassume così: la documentazione vaccinale è un requisito per entrare nei servizi educativi e nelle scuole dell'infanzia, non per la scuola o per gli esami negli altri gradi.",
+     "f": [
+      1
+     ],
+     "p": "Come sopra; nella seconda formulazione: la presentazione non «condiziona l'accesso alle scuole di altri gradi o ai centri di formazione professionale, né ai relativi esami»."
+    },
+    {
+     "t": "Le vaccinazioni obbligatorie restano tali fino ai 16 anni, anche se non condizionano l'iscrizione.",
+     "f": [
+      0
+     ],
+     "p": "Art. 1, comma 1: obbligatorie e gratuite «per i minori di età compresa tra zero e sedici anni»."
+    },
+    {
+     "t": "Quando serve, il certificato vaccinale si scarica dal Fascicolo sanitario elettronico, dove ci sono le vaccinazioni.",
+     "f": [
+      2
+     ],
+     "p": "Il fascicolo contiene le vaccinazioni (Toscana)."
+    }
+   ],
+   "guide": [
+    "certificato-vaccinale",
+    "iscrizioni-nido-e-scuola"
+   ],
+   "schede": [
+    "calendario-vaccinale"
+   ],
+   "chiavi": "certificato vaccinale vaccini scuola elementare primaria iscrizione obbligo serve",
+   "fa": [
+    "3-6",
+    "6-12"
+   ],
+   "fonti": [
+    {
+     "ente": "Normattiva",
+     "pagina": "Decreto-legge 7 giugno 2017, n. 73, convertito dalla legge 31 luglio 2017, n. 119 (testo vigente)",
+     "url": "https://www.normattiva.it/eli/id/2017/06/07/17G00095/CONSOLIDATED",
+     "data": "2017-06-07"
+    },
+    {
+     "ente": "Corte costituzionale",
+     "pagina": "Sentenza n. 5 del 2018 sull'obbligo vaccinale",
+     "url": "https://www.cortecostituzionale.it/stampa-pdf-pronuncia/2018/5",
+     "data": "2018"
+    },
+    {
+     "ente": "Regione Toscana",
+     "pagina": "Fascicolo sanitario elettronico",
+     "url": "https://www.regione.toscana.it/-/fascicolo-sanitario-elettronico",
+     "data": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "slug": "quante-sono-le-vaccinazioni-obbligatorie",
+   "gruppo": "scuola",
+   "domanda": "Quante sono le vaccinazioni obbligatorie per i bambini?",
+   "risposta": "Dieci, obbligatorie e gratuite per i minori da 0 a 16 anni.",
+   "righe": [
+    {
+     "t": "Sono le vaccinazioni contro poliomielite, difterite, tetano, epatite B, pertosse, Haemophilus influenzae di tipo b, morbillo, rosolia, parotite e varicella.",
+     "f": [
+      0
+     ],
+     "p": "Art. 1, comma 1: anti-poliomielitica, anti-difterica, anti-tetanica, anti-epatite B, anti-pertosse, anti-Haemophilus influenzae tipo b. Comma 1-bis: anti-morbillo, anti-rosolia, anti-parotite, anti-varicella."
+    },
+    {
+     "t": "Le stabilisce il decreto-legge 73 del 2017, e si fanno secondo il Calendario vaccinale nazionale, per anno di nascita.",
+     "f": [
+      0
+     ],
+     "p": "Art. 1, comma 1: «obbligatorie e gratuite» in base alle specifiche indicazioni del Calendario vaccinale nazionale relativo a ciascuna coorte di nascita."
+    },
+    {
+     "t": "Si possono omettere o rimandare solo se c'è un pericolo accertato per la salute, documentato dal medico di famiglia o dal pediatra.",
+     "f": [
+      0
+     ],
+     "p": "Art. 1, comma 3: le vaccinazioni «possono essere omesse o differite solo in caso di accertato pericolo per la salute», documentato dal medico di medicina generale o dal pediatra di libera scelta."
+    },
+    {
+     "t": "Per il nido e la scuola dell'infanzia essere in regola con queste vaccinazioni è un requisito per entrare.",
+     "f": [
+      1
+     ],
+     "p": "La documentazione «costituisce requisito per accedere ai servizi educativi» per l'infanzia e alle scuole dell'infanzia."
+    },
+    {
+     "t": "Il Calendario offre gratis anche altre vaccinazioni raccomandate. Quali toccano ai tuoi figli, e quando, te lo dicono il pediatra e il servizio vaccinale della tua ASL.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "certificato-vaccinale"
+   ],
+   "schede": [
+    "calendario-vaccinale",
+    "piano-vaccinale"
+   ],
+   "chiavi": "vaccinazioni obbligatorie vaccini obbligatori quanti quante dieci elenco",
+   "medico": true,
+   "fonti": [
+    {
+     "ente": "Normattiva",
+     "pagina": "Decreto-legge 7 giugno 2017, n. 73, articolo 1, commi 1 e 1-bis (testo vigente)",
+     "url": "https://www.normattiva.it/eli/id/2017/06/07/17G00095/CONSOLIDATED",
+     "data": "2017-06-07"
+    },
+    {
+     "ente": "Corte costituzionale",
+     "pagina": "Sentenza n. 5 del 2018 sull'obbligo vaccinale",
+     "url": "https://www.cortecostituzionale.it/stampa-pdf-pronuncia/2018/5",
+     "data": "2018"
+    }
+   ]
+  },
+  {
+   "slug": "a-che-eta-si-va-alla-scuola-dell-infanzia",
+   "gruppo": "scuola",
+   "domanda": "A che età si può iscrivere un bambino alla scuola dell'infanzia?",
+   "risposta": "A 3 anni: si iscrive chi li compie entro il 31 dicembre dell'anno in cui comincia la scuola.",
+   "righe": [
+    {
+     "t": "Su richiesta della famiglia si possono iscrivere anche i bambini che compiono 3 anni entro il 30 aprile successivo.",
+     "f": [
+      0
+     ],
+     "p": "Comma 2: possono essere iscritti anche i bambini che compiono tre anni «entro il 30 aprile dell'anno scolastico di riferimento»."
+    },
+    {
+     "t": "Per questo anticipo servono alcune condizioni: posti disponibili, liste d'attesa esaurite, locali adatti ai più piccoli e il parere dei docenti sull'accoglienza.",
+     "f": [
+      0
+     ],
+     "p": "Condizioni: disponibilità di posti; esaurimento delle liste d'attesa; locali e dotazioni idonei; valutazione del collegio dei docenti su tempi e modalità dell'accoglienza."
+    },
+    {
+     "t": "Chi compie 3 anni dopo il 30 aprile comincia l'anno scolastico successivo.",
+     "f": [
+      0
+     ],
+     "p": "Deduzione dai commi 1 e 2: iscrizione per chi compie tre anni entro il 31 dicembre, anticipo fino al 30 aprile."
+    },
+    {
+     "t": "Per la scuola dell'infanzia, come per il nido, bisogna essere in regola con le vaccinazioni obbligatorie.",
+     "f": [
+      1
+     ],
+     "p": "La documentazione vaccinale «costituisce requisito per accedere ai servizi educativi» per l'infanzia e alle scuole dell'infanzia."
+    },
+    {
+     "t": "Le date delle iscrizioni le fissa ogni anno il Ministero dell'Istruzione e del Merito.",
+     "f": [],
+     "p": ""
+    },
+    {
+     "t": "Per il nido valgono invece le regole del bando del tuo Comune.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "iscrizioni-nido-e-scuola"
+   ],
+   "schede": [],
+   "chiavi": "scuola dell'infanzia materna asilo età anni iscrivere iscrizione anticipo anticipatari 3 anni",
+   "fa": [
+    "1-3",
+    "3-6"
+   ],
+   "fonti": [
+    {
+     "ente": "Centro nazionale di documentazione per l'infanzia e l'adolescenza (minori.gov.it)",
+     "pagina": "Decreto del Presidente della Repubblica 20 marzo 2009, n. 89, articolo 2, commi 1 e 2",
+     "url": "https://www.minori.gov.it/sites/default/files/dpr_89_2009_art._2_c._1_e_2.pdf",
+     "data": "2009-03-20"
+    },
+    {
+     "ente": "Corte costituzionale",
+     "pagina": "Sentenza n. 5 del 2018 sull'obbligo vaccinale",
+     "url": "https://www.cortecostituzionale.it/stampa-pdf-pronuncia/2018/5",
+     "data": "2018"
+    }
+   ]
+  },
+  {
+   "slug": "chi-firma-il-certificato-sport-non-agonistico",
+   "gruppo": "scuola",
+   "domanda": "Chi firma il certificato per lo sport non agonistico?",
+   "risposta": "Il pediatra di libera scelta o il medico di famiglia, per i propri assistiti, oppure un medico specialista in medicina dello sport.",
+   "righe": [
+    {
+     "t": "Lo stabilisce il decreto del Ministero della Salute del 24 aprile 2013, che prevede un controllo medico ogni anno.",
+     "f": [
+      0
+     ],
+     "p": "Art. 3, comma 2: i praticanti si sottopongono a «controllo medico annuale»; il certificato è rilasciato dal medico di medicina generale o dal pediatra di libera scelta, per i propri assistiti, oppure dal medico specialista in medicina dello sport."
+    },
+    {
+     "t": "Serve per chi fa sport con società affiliate alle federazioni o agli enti di promozione sportiva riconosciuti dal CONI, senza essere atleta agonista, e per alcune attività sportive organizzate dalla scuola.",
+     "f": [
+      0
+     ],
+     "p": "Art. 3, comma 1: attività degli alunni organizzate dalla scuola; praticanti di attività organizzate dal CONI o da società affiliate a federazioni, discipline associate o enti di promozione sportiva, non atleti agonisti; giochi sportivi studenteschi nelle fasi precedenti a quella nazionale."
+    },
+    {
+     "t": "Se ci sono dubbi o malattie croniche, il decreto raccomanda il parere del medico specialista in medicina dello sport.",
+     "f": [
+      0
+     ],
+     "p": "Art. 3, comma 4: in caso di sospetto diagnostico o patologie croniche conclamate si raccomanda la consulenza del medico specialista in medicina dello sport."
+    },
+    {
+     "t": "Il prezzo non è uguale dappertutto: chiedilo quando prenoti. Se la società chiede un certificato agonistico, il percorso è un altro.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "certificato-sport-bambini"
+   ],
+   "schede": [],
+   "chiavi": "certificato sportivo non agonistico chi lo fa firma rilascia pediatra medico palestra piscina calcio",
+   "fa": [
+    "6-12",
+    "13-18"
+   ],
+   "fonti": [
+    {
+     "ente": "Ministero della Salute (testo pubblicato dalla Regione Valle d'Aosta)",
+     "pagina": "Decreto 24 aprile 2013: certificazione dell'attività sportiva non agonistica e amatoriale (Gazzetta Ufficiale n. 169 del 20 luglio 2013)",
+     "url": "https://regione.vda.it/allegato.aspx?pk=36551",
+     "data": "2013-07-20"
+    }
+   ]
+  },
+  {
+   "slug": "quanto-dura-il-certificato-sport-non-agonistico",
+   "gruppo": "scuola",
+   "domanda": "Quanto dura il certificato medico per lo sport non agonistico?",
+   "risposta": "Un anno, a partire dalla data in cui viene rilasciato.",
+   "righe": [
+    {
+     "t": "Lo dice il modello di certificato allegato al decreto del Ministero della Salute del 24 aprile 2013: «validità annuale dalla data del rilascio».",
+     "f": [
+      0
+     ],
+     "p": "Allegato C: il certificato ha «validità annuale dalla data del rilascio»."
+    },
+    {
+     "t": "Il decreto prevede infatti un controllo medico ogni anno per chi fa sport non agonistico.",
+     "f": [
+      0
+     ],
+     "p": "Art. 3, comma 2: «controllo medico annuale»."
+    },
+    {
+     "t": "Serve a chi fa sport con società affiliate alle federazioni o agli enti di promozione sportiva riconosciuti dal CONI, senza essere atleta agonista.",
+     "f": [
+      0
+     ],
+     "p": "Art. 3, comma 1 (vedi sopra)."
+    },
+    {
+     "t": "Lo rilasciano il pediatra o il medico di famiglia ai propri assistiti, oppure un medico specialista in medicina dello sport.",
+     "f": [
+      0
+     ],
+     "p": "Art. 3, comma 2."
+    },
+    {
+     "t": "Conviene segnare la scadenza appena hai il certificato, e prenotare la visita un mese prima: così l'allenamento non si ferma.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "certificato-sport-bambini"
+   ],
+   "schede": [],
+   "chiavi": "certificato sportivo quanto dura durata scadenza scade validità anno rinnovo",
+   "fa": [
+    "6-12",
+    "13-18"
+   ],
+   "fonti": [
+    {
+     "ente": "Ministero della Salute (testo pubblicato dalla Regione Valle d'Aosta)",
+     "pagina": "Decreto 24 aprile 2013, articolo 3 e allegato C (Gazzetta Ufficiale n. 169 del 20 luglio 2013)",
+     "url": "https://regione.vda.it/allegato.aspx?pk=36551",
+     "data": "2013-07-20"
+    }
+   ]
+  },
+  {
+   "slug": "certificato-sport-sotto-i-6-anni",
+   "gruppo": "scuola",
+   "domanda": "Serve il certificato medico per lo sport sotto i 6 anni?",
+   "risposta": "No: fino a 6 anni il certificato medico per l'attività sportiva non è obbligatorio, salvo i casi indicati dal pediatra.",
+   "righe": [
+    {
+     "t": "Lo ha stabilito un decreto del Ministro della Salute, con il Ministro per lo Sport, del 28 febbraio 2018.",
+     "f": [
+      0
+     ],
+     "p": "Decreto del 28 febbraio 2018: «non sono sottoposti ad obbligo di certificazione medica, per l'esercizio dell'attività sportiva in età prescolare, i bambini di età compresa tra 0 e 6 anni, ad eccezione dei casi specifici indicati dal pediatra»."
+    },
+    {
+     "t": "Riguarda l'attività sportiva dei bambini in età prescolare.",
+     "f": [
+      0
+     ],
+     "p": "«per l'esercizio dell'attività sportiva in età prescolare»"
+    },
+    {
+     "t": "Dai 6 anni, per lo sport non agonistico con società affiliate alle federazioni o agli enti riconosciuti dal CONI, il certificato serve e vale un anno.",
+     "f": [
+      1
+     ],
+     "p": "DM 24 aprile 2013, art. 3, commi 1 e 2 (controllo medico annuale); allegato C: «validità annuale dalla data del rilascio»."
+    },
+    {
+     "t": "Da quell'età lo rilasciano il pediatra o il medico di famiglia ai propri assistiti, oppure un medico specialista in medicina dello sport.",
+     "f": [
+      1
+     ],
+     "p": "DM 24 aprile 2013, art. 3, comma 2."
+    },
+    {
+     "t": "Se la società sportiva lo chiede lo stesso, o se tuo figlio ha un problema di salute, parlane con il pediatra.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "certificato-sport-bambini"
+   ],
+   "schede": [],
+   "chiavi": "certificato sportivo sotto 6 anni piccoli prescolare nuoto piscina psicomotricità obbligo serve",
+   "fa": [
+    "0-1",
+    "1-3",
+    "3-6"
+   ],
+   "fonti": [
+    {
+     "ente": "Federazione Medico Sportiva Italiana (FMSI)",
+     "pagina": "Il punto sui certificati medico sportivi (riporta il decreto del 28 febbraio 2018)",
+     "url": "https://www.fmsi.it/images/img/news/CERTIFICATI_MEDICO_SPORTIVI_15-03-2018.pdf",
+     "data": "2018-03-15"
+    },
+    {
+     "ente": "Ministero della Salute (testo pubblicato dalla Regione Valle d'Aosta)",
+     "pagina": "Decreto 24 aprile 2013: certificazione dell'attività sportiva non agonistica e amatoriale (Gazzetta Ufficiale n. 169 del 20 luglio 2013)",
+     "url": "https://regione.vda.it/allegato.aspx?pk=36551",
+     "data": "2013-07-20"
+    }
+   ]
+  },
+  {
+   "slug": "tessera-sanitaria-scaduta-vale",
+   "gruppo": "documenti",
+   "domanda": "La tessera sanitaria scaduta vale ancora?",
+   "risposta": "Per farti curare sì: anche con la tessera scaduta le prestazioni sanitarie restano garantite, con la ricetta rossa o con quella elettronica.",
+   "righe": [
+    {
+     "t": "La tessera sanitaria vale di norma sei anni.",
+     "f": [
+      0
+     ],
+     "p": "«La tessera sanitaria vale di norma sei anni.»"
+    },
+    {
+     "t": "Alla scadenza ne arriva una nuova in automatico, all'indirizzo di residenza che risulta all'Agenzia delle Entrate.",
+     "f": [
+      0
+     ],
+     "p": "Alla scadenza una nuova tessera viene inviata automaticamente all'indirizzo di residenza registrato in Anagrafe Tributaria."
+    },
+    {
+     "t": "Se la nuova non arriva, o se la tessera si perde o si rovina, si chiede un duplicato: online sul sito dell'Agenzia delle Entrate, via e-mail o PEC, in un suo ufficio con appuntamento, oppure alla propria ASL.",
+     "f": [
+      0
+     ],
+     "p": "Duplicato: online (servizio a libero accesso o area riservata), via e-mail o PEC con il modello AA4/8, presso un ufficio dell'Agenzia previo appuntamento, presso la propria ASL."
+    },
+    {
+     "t": "Per le tessere scadute dal 2020 in poi, la tessera si può anche scaricare e stampare dal servizio Sistema tessera sanitaria.",
+     "f": [
+      0
+     ],
+     "p": "Il servizio web «Sistema tessera sanitaria» permette di scaricare e stampare la tessera (per scadenze dal 2020 in poi)."
+    },
+    {
+     "t": "Per un viaggio all'estero prima che arrivi la nuova, la ASL rilascia un certificato che sostituisce la tessera europea.",
+     "f": [
+      0
+     ],
+     "p": "Chi deve recarsi all'estero senza aver ricevuto la nuova tessera può chiedere alla propria ASL un certificato sostitutivo della T.E.A.M."
+    }
+   ],
+   "guide": [
+    "cartellina-di-famiglia"
+   ],
+   "schede": [
+    "tessera-sanitaria"
+   ],
+   "chiavi": "tessera sanitaria scaduta vale ancora scadenza rinnovo nuova duplicato",
+   "c": "bambino anziano",
+   "fonti": [
+    {
+     "ente": "Agenzia delle Entrate",
+     "pagina": "Tessera sanitaria – Vademecum (ottobre 2023)",
+     "url": "https://www1.agenziaentrate.gov.it/web_app_entrate/tessera_sanitaria.html",
+     "data": "2023-10"
+    }
+   ]
+  },
+  {
+   "slug": "gruppo-sanguigno-sulla-tessera-sanitaria",
+   "gruppo": "documenti",
+   "domanda": "Il gruppo sanguigno è scritto sulla tessera sanitaria?",
+   "risposta": "No. Sulla tessera sanitaria ci sono il codice fiscale, i dati anagrafici e la data di scadenza; sul retro c'è la tessera europea di assicurazione malattia.",
+   "righe": [
+    {
+     "t": "La tessera europea sul retro serve per farsi curare nei Paesi dell'Unione Europea, in Norvegia, Islanda, Liechtenstein e Svizzera.",
+     "f": [
+      0
+     ],
+     "p": "Retro: la T.E.A.M., che garantisce assistenza sanitaria nell'Unione Europea, in Norvegia, Islanda, Liechtenstein e Svizzera."
+    },
+    {
+     "t": "Il gruppo sanguigno si trova nei referti delle analisi che lo hanno determinato: se ne hai, cercali nel Fascicolo sanitario, dove ci sono anche i referti degli esami del sangue.",
+     "f": [
+      1
+     ],
+     "p": "Il fascicolo contiene i referti di esami del sangue e di radiologia."
+    },
+    {
+     "t": "Se non lo trovi da nessuna parte, chiedi al pediatra o al medico di famiglia. Quando lo hai, scrivi dove sta nella cartellina di famiglia.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "documenti-sanitari-dove-trovarli",
+    "cartellina-di-famiglia"
+   ],
+   "schede": [
+    "tessera-sanitaria"
+   ],
+   "chiavi": "gruppo sanguigno tessera sanitaria scritto dove trovo sangue",
+   "c": "bambino anziano",
+   "fonti": [
+    {
+     "ente": "Agenzia delle Entrate",
+     "pagina": "Tessera sanitaria – Vademecum (ottobre 2023)",
+     "url": "https://www1.agenziaentrate.gov.it/web_app_entrate/tessera_sanitaria.html",
+     "data": "2023-10"
+    },
+    {
+     "ente": "Regione Toscana",
+     "pagina": "Fascicolo sanitario elettronico",
+     "url": "https://www.regione.toscana.it/-/fascicolo-sanitario-elettronico",
+     "data": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "slug": "carta-identita-valida-per-espatrio-a-che-eta",
+   "gruppo": "documenti",
+   "domanda": "A che età si può fare la carta d'identità valida per l'espatrio?",
+   "risposta": "Fin dalla nascita. Per i minorenni vale per l'espatrio se entrambi i genitori sono presenti quando la carta viene emessa.",
+   "righe": [
+    {
+     "t": "Lo indica il Ministero dell'Interno sul sito della carta d'identità elettronica.",
+     "f": [
+      0
+     ],
+     "p": "I minori possono richiedere il documento valido per l'espatrio «se entrambi i genitori sono presenti al momento dell'emissione» della CIE."
+    },
+    {
+     "t": "Se uno dei due genitori non può venire, chiedi prima al tuo Comune come far arrivare il suo assenso.",
+     "f": [],
+     "p": ""
+    },
+    {
+     "t": "Dai 12 anni compiuti al ragazzo vengono prese due impronte digitali, e firma il documento.",
+     "f": [
+      0
+     ],
+     "p": "«A partire dai 12 anni compiuti al minore sono rilevate due impronte digitali», e il minore appone la propria firma."
+    },
+    {
+     "t": "La carta di un bambino dura 3 anni se ha meno di 3 anni, e 5 anni dai 3 ai 18.",
+     "f": [
+      0
+     ],
+     "p": "«3 anni per i minori di 3 anni»; «5 anni per i minori di età compresa fra 3 e 18 anni»."
+    },
+    {
+     "t": "Sotto i 14 anni, all'estero, il bambino deve viaggiare con un genitore o con una dichiarazione di accompagnamento.",
+     "f": [
+      1
+     ],
+     "p": "Circolare 26/05/2011: l'uso della carta ai fini dell'espatrio è subordinato alla condizione che il minore viaggi in compagnia di uno dei genitori o di chi ne fa le veci, o con una dichiarazione convalidata dalla questura o dalle autorità consolari."
+    },
+    {
+     "t": "Sotto i 14 anni, sul retro della carta si possono far stampare i nomi dei genitori.",
+     "f": [
+      0
+     ],
+     "p": "«Per i minori di 14 anni è possibile richiedere anche l'indicazione dei nomi dei genitori»."
+    }
+   ],
+   "guide": [
+    "carta-identita-bambini"
+   ],
+   "schede": [
+    "carta-identita-figli"
+   ],
+   "chiavi": "carta d'identità cie espatrio età neonato bambino estero viaggio genitori",
+   "fonti": [
+    {
+     "ente": "Ministero dell'Interno · Carta d'identità elettronica",
+     "pagina": "Rilascio e rinnovo minorenni",
+     "url": "https://www.cartaidentita.interno.gov.it/richiedi/rilascio-e-rinnovo-minorenni/",
+     "data": "2024-06-18"
+    },
+    {
+     "ente": "Ministero dell'Interno · Dipartimento per gli Affari Interni e Territoriali",
+     "pagina": "Circolare del 26 maggio 2011 sul rilascio della carta d'identità ai minori",
+     "url": "https://dait.interno.gov.it/documenti/circ_015_servdemo_26-05-2011.pdf",
+     "data": "2011-05-26"
+    }
+   ]
+  },
+  {
+   "slug": "quanto-dura-la-carta-d-identita-di-un-bambino",
+   "gruppo": "documenti",
+   "domanda": "Quanto dura la carta d'identità di un bambino?",
+   "risposta": "3 anni se il bambino ha meno di 3 anni, 5 anni dai 3 ai 18 anni.",
+   "righe": [
+    {
+     "t": "Sono le durate indicate dal Ministero dell'Interno per la carta d'identità elettronica dei minorenni.",
+     "f": [
+      0
+     ],
+     "p": "«3 anni per i minori di 3 anni»; «5 anni per i minori di età compresa fra 3 e 18 anni»."
+    },
+    {
+     "t": "La carta nuova si può chiedere al Comune a partire da 180 giorni prima della scadenza, e arriva entro 6 giorni lavorativi dalla richiesta.",
+     "f": [
+      1
+     ],
+     "p": "La CIE si richiede a partire da 180 giorni prima della scadenza del documento; «La CIE sarà consegnata entro 6 giorni lavorativi dalla richiesta»."
+    },
+    {
+     "t": "Costa 16,79 euro, più i diritti fissi e di segreteria che alcuni Comuni aggiungono.",
+     "f": [
+      1
+     ],
+     "p": "«somma di € 16,79 oltre i diritti fissi e di segreteria qualora previsti»"
+    },
+    {
+     "t": "Per valere per l'espatrio, quando la carta viene emessa devono essere presenti entrambi i genitori.",
+     "f": [
+      0
+     ],
+     "p": "I minori possono avere il documento valido per l'espatrio «se entrambi i genitori sono presenti al momento dell'emissione»."
+    },
+    {
+     "t": "Dai 12 anni compiuti il ragazzo firma la carta e gli vengono prese due impronte digitali.",
+     "f": [
+      0
+     ],
+     "p": "«A partire dai 12 anni compiuti al minore sono rilevate due impronte digitali»; il minore appone la firma."
+    },
+    {
+     "t": "Segna la scadenza appena la carta arriva: per i più piccoli arriva prima di quanto si pensi.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "carta-identita-bambini"
+   ],
+   "schede": [
+    "carta-identita-figli"
+   ],
+   "chiavi": "carta d'identità cie bambino quanto dura durata scadenza validità anni costo",
+   "fonti": [
+    {
+     "ente": "Ministero dell'Interno · Carta d'identità elettronica",
+     "pagina": "Rilascio e rinnovo minorenni",
+     "url": "https://www.cartaidentita.interno.gov.it/richiedi/rilascio-e-rinnovo-minorenni/",
+     "data": "2024-06-18"
+    },
+    {
+     "ente": "Ministero dell'Interno · Carta d'identità elettronica",
+     "pagina": "Rilascio e rinnovo in Italia",
+     "url": "https://www.cartaidentita.interno.gov.it/richiedi/rilascio-e-rinnovo-in-italia/",
+     "data": "2024-10-16"
+    }
+   ]
+  },
+  {
+   "slug": "bambino-sotto-14-anni-estero-con-i-nonni",
+   "gruppo": "documenti",
+   "domanda": "Un bambino sotto i 14 anni può andare all'estero con i nonni?",
+   "risposta": "Sì, ma serve una dichiarazione dei genitori che dice a chi è affidato, convalidata dalla Questura.",
+   "righe": [
+    {
+     "t": "Sotto i 14 anni il bambino può usare la carta d'identità per l'espatrio solo se viaggia con uno dei genitori, o con chi ne fa le veci.",
+     "f": [
+      0
+     ],
+     "p": "«l'uso della carta d'identità ai fini dell'espatrio sia subordinato alla condizione che il minore viaggi in compagnia di uno dei genitori o di chi ne fa le veci»"
+    },
+    {
+     "t": "In alternativa serve una dichiarazione, firmata da chi può dare l'assenso, con il nome della persona, dell'ente o della compagnia di trasporto a cui il bambino è affidato.",
+     "f": [
+      0
+     ],
+     "p": "«o che venga menzionato - su una dichiarazione rilasciata da chi può dare l'assenso o l'autorizzazione [...] il nome della persona, dell'ente o della compagnia di trasporto a cui il minore medesimo è affidato»"
+    },
+    {
+     "t": "La dichiarazione va convalidata dalla Questura, o dalle autorità consolari se siete all'estero. Chiedi alla tua Questura con qualche settimana di anticipo come si presenta.",
+     "f": [
+      0
+     ],
+     "p": "«convalidata dalla questura o dalle autorità consolari»"
+    },
+    {
+     "t": "Sotto i 14 anni, sul retro della carta si possono far stampare i nomi dei genitori.",
+     "f": [
+      1
+     ],
+     "p": "«Per i minori di 14 anni è possibile richiedere anche l'indicazione dei nomi dei genitori» sul retro del documento."
+    }
+   ],
+   "guide": [
+    "carta-identita-bambini"
+   ],
+   "schede": [
+    "carta-identita-figli"
+   ],
+   "chiavi": "estero viaggio nonni nonno nonna zii minore 14 anni dichiarazione accompagnamento questura espatrio vacanza",
+   "fa": [
+    "0-1",
+    "1-3",
+    "3-6",
+    "6-12",
+    "13-18"
+   ],
+   "fonti": [
+    {
+     "ente": "Ministero dell'Interno · Dipartimento per gli Affari Interni e Territoriali",
+     "pagina": "Circolare del 26 maggio 2011 sul rilascio della carta d'identità ai minori",
+     "url": "https://dait.interno.gov.it/documenti/circ_015_servdemo_26-05-2011.pdf",
+     "data": "2011-05-26"
+    },
+    {
+     "ente": "Ministero dell'Interno · Carta d'identità elettronica",
+     "pagina": "Rilascio e rinnovo minorenni",
+     "url": "https://www.cartaidentita.interno.gov.it/richiedi/rilascio-e-rinnovo-minorenni/",
+     "data": "2024-06-18"
+    }
+   ]
+  },
+  {
+   "slug": "ogni-quanto-si-rinnova-l-isee",
+   "gruppo": "soldi",
+   "domanda": "Ogni quanto si rinnova l'ISEE?",
+   "risposta": "Ogni anno: l'ISEE vale fino al 31 dicembre dell'anno in cui hai presentato la DSU, la dichiarazione che serve per ottenerlo.",
+   "righe": [
+    {
+     "t": "Vuol dire che un ISEE fatto a novembre vale solo fino a fine dicembre: dal 1° gennaio va rifatto.",
+     "f": [
+      0
+     ],
+     "p": "«L'ISEE ha validità fino al 31 dicembre dell'anno di presentazione della DSU.»"
+    },
+    {
+     "t": "La DSU si può presentare online sul Portale unico ISEE dell'INPS, anche precompilata, entrando con SPID, CIE o CNS.",
+     "f": [
+      0
+     ],
+     "p": "La DSU precompilata si acquisisce attraverso il servizio online «Portale unico ISEE», con SPID, CIE o CNS."
+    },
+    {
+     "t": "Per la versione precompilata serve l'autorizzazione di tutti i componenti maggiorenni della famiglia.",
+     "f": [
+      0
+     ],
+     "p": "Per la DSU precompilata si ottiene l'autorizzazione alla precompilazione da tutti i componenti maggiorenni del nucleo."
+    },
+    {
+     "t": "Se il reddito della famiglia cambia molto, per esempio per la perdita del lavoro, esiste l'ISEE corrente: se aggiorna solo i redditi vale sei mesi.",
+     "f": [
+      0
+     ],
+     "p": "ISEE corrente in caso di rilevanti variazioni del reddito o di eventi avversi come la perdita del posto di lavoro; validità «di sei mesi dalla data di presentazione della DSU ISEE corrente, se vengono aggiornati solo i redditi»."
+    },
+    {
+     "t": "Metti un promemoria a gennaio: chi ha l'assegno unico o una retta legata all'ISEE ne ha bisogno presto.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "iscrizioni-nido-e-scuola"
+   ],
+   "schede": [
+    "isee",
+    "assegno-unico"
+   ],
+   "chiavi": "isee rinnovo rinnovare scadenza scade quando dsu ogni anno 31 dicembre",
+   "c": "bambino anziano",
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Portale unico ISEE",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.Portale-unico-ISEE.html",
+     "data": "2026-01-20"
+    }
+   ]
+  },
+  {
+   "slug": "assegno-unico-va-rinnovato-ogni-anno",
+   "gruppo": "soldi",
+   "domanda": "L'assegno unico va rinnovato ogni anno?",
+   "risposta": "La domanda no: per chi vive in Italia l'INPS continua a pagarlo d'ufficio. Ogni anno va rinnovato invece l'ISEE.",
+   "righe": [
+    {
+     "t": "L'INPS scrive che continuerà a pagare l'assegno senza bisogno di una nuova domanda, ma chiede di rinnovare l'ISEE per ricevere l'importo corretto.",
+     "f": [
+      0
+     ],
+     "p": "L'INPS «continuerà a erogare d'ufficio la misura, senza la necessità di presentare una nuova domanda»; gli utenti devono «rinnovare l'ISEE per continuare a percepire l'importo in misura corretta»."
+    },
+    {
+     "t": "L'assegno spetta per i figli a carico fino ai 21 anni, alle condizioni indicate dall'INPS, e senza limiti di età per i figli con disabilità.",
+     "f": [
+      0
+     ],
+     "p": "Descrizione della scheda: sostegno «fino ai 21 anni e senza limiti di età per i figli disabili»."
+    },
+    {
+     "t": "Senza ISEE l'assegno arriva lo stesso, ma con gli importi minimi.",
+     "f": [
+      0
+     ],
+     "p": "La misura può essere richiesta anche senza ISEE: in tal caso si ricevono gli importi minimi."
+    },
+    {
+     "t": "Se presenti l'ISEE entro il 30 giugno, l'INPS riconosce anche gli arretrati dell'anno in corso.",
+     "f": [
+      0
+     ],
+     "p": "Arretrati dell'anno in corso se risulta un ISEE relativo a una DSU «presentata entro il 30 giugno»."
+    },
+    {
+     "t": "È diverso per chi lavora in Italia ma non vi risiede: lì la domanda va ripresentata ogni anno, dal 1° marzo.",
+     "f": [
+      0
+     ],
+     "p": "Per i lavoratori non residenti la domanda va «ripresentata annualmente a decorrere dal 1° marzo»."
+    },
+    {
+     "t": "Un promemoria a gennaio per l'ISEE nuovo evita di ricevere per mesi l'importo minimo.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [],
+   "schede": [
+    "assegno-unico",
+    "isee"
+   ],
+   "chiavi": "assegno unico universale auu rinnovo rinnovare domanda ogni anno inps isee figli",
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Assegno unico e universale per i figli a carico",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-55984.assegno-unico-e-universale-per-i-figli-a-carico.html",
+     "data": "2026-09-10"
+    }
+   ]
+  },
+  {
+   "slug": "il-ticket-si-paga-per-i-bambini",
+   "gruppo": "soldi",
+   "domanda": "Il ticket si paga anche per i bambini?",
+   "risposta": "Dipende dal reddito: sotto i 6 anni non si paga se il reddito complessivo della famiglia, nell'anno prima, non supera 36.151,98 euro.",
+   "righe": [
+    {
+     "t": "È l'esenzione per età e reddito che sulla ricetta compare con il codice E01; la stessa regola vale per chi ha più di 65 anni.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Legge 724/1994, art. 1, c. 3: esenti i cittadini «di età inferiore a sei anni e di età superiore a sessantacinque anni» con reddito complessivo del nucleo «riferito all'anno precedente non superiore a lire 70 milioni». Emilia-Romagna: codice E01, soglia di 36.151,98 euro, reddito dell'anno precedente."
+    },
+    {
+     "t": "Viene da una legge nazionale del 1993, modificata nel 1994: la soglia, scritta in lire, era di 70 milioni.",
+     "f": [
+      0
+     ],
+     "p": "Comma 16 dell'art. 8 della legge 537/1993, sostituito dall'art. 1, comma 3, della legge 724/1994, «A decorrere dal 1 gennaio 1995»."
+    },
+    {
+     "t": "Sopra la soglia, o dai 6 anni in su, il ticket si paga come per gli adulti, salvo altre esenzioni. Quanto si paga, e se ci sono esenzioni in più, dipende dalla tua Regione: chiedi al pediatra o all'ASL.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "esenzione-ticket"
+   ],
+   "schede": [],
+   "chiavi": "ticket bambini bambino figli pagare paga esenzione e01 sei anni gratis",
+   "fa": [
+    "0-1",
+    "1-3",
+    "3-6"
+   ],
+   "fonti": [
+    {
+     "ente": "Normattiva",
+     "pagina": "Legge 23 dicembre 1994, n. 724, articolo 1, comma 3 (sostituisce l'articolo 8, comma 16, della legge 24 dicembre 1993, n. 537)",
+     "url": "https://www.normattiva.it/eli/stato/LEGGE/1994/12/23/724/CONSOLIDATED",
+     "data": "1994-12-23"
+    },
+    {
+     "ente": "Regione Emilia-Romagna · Salute",
+     "pagina": "Requisiti di reddito necessari per essere esentati dal ticket (data ricavata dall'indirizzo del file)",
+     "url": "https://salute.regione.emilia-romagna.it/notizie/regione/2023/marzo/allegato_requisiti_per_esenzione_ticket_come_presentare_autocertificazione.pdf",
+     "data": "2023-03"
+    }
+   ]
+  },
+  {
+   "slug": "spese-mediche-in-contanti-detraibili",
+   "gruppo": "soldi",
+   "domanda": "Le spese mediche pagate in contanti si possono detrarre?",
+   "risposta": "Solo alcune: medicinali, dispositivi medici e prestazioni di strutture pubbliche o private accreditate al Servizio sanitario nazionale. Per il resto serve un pagamento tracciabile.",
+   "righe": [
+    {
+     "t": "Dal 2020 la detrazione del 19% spetta solo se si paga con carta, bancomat, bonifico o assegno; i tre casi qui sopra sono le eccezioni.",
+     "f": [
+      0
+     ],
+     "p": "La detrazione spetta solo se il pagamento avviene «con versamento bancario o postale» o con altri sistemi tracciabili (carte, assegni); legge di bilancio 2020, art. 1, commi 679 e 680, L. 160/2019. Contanti ammessi per medicinali, dispositivi medici, prestazioni di strutture pubbliche o private accreditate al SSN."
+    },
+    {
+     "t": "Quindi una visita in uno studio privato non convenzionato va pagata in modo tracciabile, se vuoi detrarla.",
+     "f": [
+      0
+     ],
+     "p": "Deduzione: le eccezioni riguardano solo strutture pubbliche o private accreditate; il resto richiede pagamento tracciabile."
+    },
+    {
+     "t": "Per i farmaci serve lo scontrino «parlante», con il codice fiscale di chi li compra.",
+     "f": [
+      0
+     ],
+     "p": "Lo scontrino deve riportare natura, qualità e quantità del prodotto, oltre al codice fiscale dell'acquirente."
+    },
+    {
+     "t": "Si detraggono anche le spese per i familiari fiscalmente a carico, come i figli.",
+     "f": [
+      0
+     ],
+     "p": "Le spese sanitarie sostenute per i familiari fiscalmente a carico sono detraibili."
+    },
+    {
+     "t": "Tieni fatture, ricevute e scontrini nella cartellina di famiglia, insieme alle ricevute del ticket.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "spostare-disdire-pagare-visita"
+   ],
+   "schede": [
+    "spese-sanitarie-da-detrarre"
+   ],
+   "chiavi": "spese mediche sanitarie contanti detrarre detrazione 730 tracciabile bancomat carta scontrino",
+   "c": "bambino anziano",
+   "fonti": [
+    {
+     "ente": "Agenzia delle Entrate",
+     "pagina": "Le agevolazioni fiscali sulle spese sanitarie (guida)",
+     "url": "https://www1.agenziaentrate.gov.it/web_app_entrate/spese_sanitarie.html",
+     "data": "2021-05"
+    }
+   ]
+  }
+ ]
+}

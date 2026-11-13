@@ -250,9 +250,9 @@ function cerca(t){var raw0=' '+norm(t)+' ',raw=pulisci(raw0),inn=innocua(raw0),p
  if(sint)return {sint:sint,sicura:false,esiti:[],R:R};
  if(!R.length)return {sint:0,sicura:false,esiti:[],R:R,persona:persona,fondo:segn};
  var problema=/ (non|mai|sveglia|svegli\w*|piange|rifiuta|capricci|fatica|aiuto|cosa fare|come fare|come faccio|come si fa) /.test(raw),dato=/ (quant[oaie]|ore|quando|entro|scade|scadenza|vale|validita|dura|eta) /.test(raw);
- var m=mesi(t),fq=m===null?null:fasciaDi(m),out=[],SC=[],df=R.map(function(){return 0}),dfS=R.map(function(){return 0});
+ var m=mesi(t),fq=m===null?null:fasciaDi(m),out=[],SC=[],DQ=[],df=R.map(function(){return 0}),dfS=R.map(function(){return 0}),dfQ=R.map(function(){return 0});
  var anz=/ (nonn[oaie]|anzian\w*|suocer[oa]|mia madre|mio padre|mamma anziana|papa anziano|badante) /.test(raw),bimbo=m!==null&&m<216||/ (figli[oae]?|bimb[oaie]|bambin[oaie]|neonat[oaie]|piccol[oa]) /.test(raw);
- IDX.forEach(function(x){var s=0,k=0,forti=0,dir=0,sc=x.k==='Scheda';R.forEach(function(r,i){var p=punti(x,r);if(p){k++;s+=p;(sc?dfS:df)[i]++;if(p>=4)forti++;if(p>=6)dir++}});
+ IDX.forEach(function(x){var s=0,k=0,forti=0,dir=0,sc=x.k==='Scheda',dq=x.k==='Domanda';R.forEach(function(r,i){var p=punti(x,r);if(p){k++;s+=p;(dq?dfQ:sc?dfS:df)[i]++;if(p>=4)forti++;if(p>=6)dir++}});
   if(!k)return;s+=k*3;R.forEach(function(r){if(x.T.some(function(w){return simile(w,r)}))s+=2});
   if(problema&&!dato)s+=x.g==='dati'?-5:(x.k==='Guida'?2:0);if(dato&&x.g==='dati')s+=4;
   if(fq&&x.fa&&x.fa.indexOf(fq)>-1&&x.fa.length<5)s+=3;
@@ -260,7 +260,7 @@ function cerca(t){var raw0=' '+norm(t)+' ',raw=pulisci(raw0),inn=innocua(raw0),p
   if(!anz&&CU.chi.length===1&&CU.chi[0]==='bambino'&&x.c==='anziano')s-=8; /* scelti solo bambini: niente guide per anziani */
   if(x.fr&&x.fr.some(function(f){return new RegExp(' '+f).test(raw)}))s+=9; /* modi di dire che portano a una guida precisa */
   s+=adatto(x.c,x.fa)*3;if(!dato&&!problema&&x.g==='dati')s-=1;if(x.k.indexOf('fonti')>-1)s-=3;else if(x.k!=='Pagina')s+=2;
-  (sc?SC:out).push({x:x,s:s,k:k,forti:forti,dir:dir})});
+  (dq?DQ:sc?SC:out).push({x:x,s:s,k:k,forti:forti,dir:dir})});
  out.sort(function(a,b){return b.s-a.s});SC.sort(function(a,b){return b.s-a.s});
  var n=R.length,vuote=df.filter(function(v){return !v}).length,top=out[0],sicura=!!top&&top.forti>=1&&(n<=3?(vuote===0||(n>=2&&vuote===1&&top.dir>=1)):vuote<=1&&vuote<n/2)&&top.k>=Math.ceil(n*.6-.01);
  var lim=top?top.s*.5:0;if(top&&top.s<=0)sicura=false;
@@ -273,6 +273,14 @@ function cerca(t){var raw0=' '+norm(t)+' ',raw=pulisci(raw0),inn=innocua(raw0),p
   if(sicura)esiti=esiti.concat(SC.filter(function(o){return o.s>=top.s*.7&&forte(o,top.x)}).slice(0,2));
   else{var ts=SC[0],va=df.filter(function(v,i){return !v&&!dfS[i]}).length,ok=ts.s>0&&ts.forti>=1&&(n<=3?(va===0||(n>=2&&va===1&&ts.dir>=1)):va<=1&&va<n/2)&&ts.k>=Math.ceil(n*.6-.01)&&!(segn&&va>0);
    if(ok&&ts.dir>=1){sicura=true;var lS=ts.s*.5;esiti=[ts].concat(SC.slice(1).filter(function(o){return o.s>=lS&&o.dir>=1&&o.k>=Math.ceil(n*.6-.01)}),out.filter(function(o){return o.s>=lS})).slice(0,4)}}}
+ /* LE DOMANDE RAPIDE si contano a parte, dopo guide e schede, che restano esattamente come prima.
+    Sotto una risposta si aggiunge al massimo una domanda, se corrisponde per intero e rimanda a una delle pagine trovate.
+    Diventa lei la risposta solo se né guide né schede lo sono, se corrisponde per intero e se nella frase non c'è un segnale di salute:
+    così le urgenze, i sintomi e il 112 non cambiano. */
+ if(DQ.length){DQ.sort(function(a,b){return b.s-a.s});var nq=Math.ceil(n*.6-.01),piena=function(o){return o.s>0&&o.dir>=1&&o.forti>=Math.min(n,2)&&o.k>=nq&&!(anz&&!bimbo&&o.x.c==='bambino')&&!(fq&&o.x.fa&&o.x.fa.length<5&&o.x.fa.indexOf(fq)<0)}; /* un'età scritta nella frase deve essere quella della domanda */
+  if(sicura){var dq0=DQ.filter(function(o){return piena(o)&&o.s>=esiti[0].s*.6&&esiti.some(function(z){return (o.x.gd||[]).indexOf(z.x.u)>-1})})[0];if(dq0)esiti=esiti.concat([dq0])}
+  else if(!segn){var tq=DQ[0],vq=df.filter(function(v,i){return !v&&!dfS[i]&&!dfQ[i]}).length;
+   if(piena(tq)&&(n<=3?vq===0:vq<=1&&vq<n/2)){sicura=true;esiti=[tq].concat(out.filter(function(o){return (tq.x.gd||[]).indexOf(o.x.u)>-1}).slice(0,2),SC.filter(function(o){return (tq.x.gd||[]).indexOf(o.x.u)>-1}).slice(0,1),DQ.slice(1).filter(function(o){return piena(o)&&o.s>=tq.s*.8}).slice(0,1))}}}
  return {persona:persona,fondo:segn&&!sicura,salute:diSalute(R),fq:fq,anz:anz,bimbo:bimbo,sint:0,sicura:sicura,esiti:esiti,R:R,dato:dato,problema:problema}}
 function etaRiga(x,t){if(!x.eta)return '';var m=mesi(t),rows;
  if(m!==null)rows=x.eta.r.filter(function(r){return r[0]<=m&&m<=r[1]});else if(CU.eta.length)rows=x.eta.r.filter(function(r){return CU.eta.some(function(k){var f=FASCE[k];return r[0]<=f[1]&&r[1]>=f[0]})});else return '';
@@ -303,7 +311,7 @@ function mostra(){var t=Q.value.trim();if(!IDX){return}
    (er?'<p>'+esc(x.d)+'</p>':'')+(ps?'<div class="gesto"><span class="eyebrow">'+(ps.i===0?'Per cominciare':'Il punto che cerchi')+'</span><p><b>'+esc(ps.s[0])+'.</b> '+esc(ps.s[1])+'</p></div>':(er?'':'<p>'+esc(x.d)+'</p>'))+
    (x.ag?'<p class="small">Dalla guida di Serena · fonti controllate il '+esc(x.ag)+'</p>':'')+
    (x.dq?domande(E):'')+'<a class="btn'+(x.dq?' btn-line':'')+'" href="'+esc(href(x.u)+(ps&&ps.i>0?'#passo-'+(ps.i+1):''))+'" data-umami-event="cerca-apri">'+esc(x.az||'Apri')+(x.m?' · '+x.m+' min':'')+'</a></article>';
-  var altri=E.esiti.slice(1).filter(function(o){return (o.x.k==='Scheda'&&x.k!=='Scheda')||vicina(o.x,x,E)}); /* le schede sotto una guida sono già scelte in cerca() */
+  var altri=E.esiti.slice(1).filter(function(o){return (o.x.k==='Scheda'&&x.k!=='Scheda')||o.x.k==='Domanda'||x.k==='Domanda'||vicina(o.x,x,E)}); /* le domande e quello che sta sotto una domanda sono già scelti in cerca() */ /* le schede sotto una guida sono già scelte in cerca() */
   if(altri.length)h+='<h2>Può servirti anche</h2><ul class="rows">'+altri.map(function(o){return riga(o.x)}).join('')+'</ul>';
  }else{
   if(E.fondo){h='<div class="avviso sicuro fondo"><p><b>Serena non ha ancora una guida su questo.</b></p><p><b>Se è urgente, chiama il 112.</b></p><a class="btn" href="tel:112" data-umami-event="cerca-manca-112">Chiama il 112</a><ul><li>Se non è urgente, chiedi al pediatra o al medico di famiglia.</li><li>Di notte e nei giorni festivi c\'è la guardia medica.</li></ul><p class="small">Se vuoi, scrivi a privacy@serenainmente.it cosa cercavi: le prossime guide nascono così.</p></div>';OUT.innerHTML=h;return}
