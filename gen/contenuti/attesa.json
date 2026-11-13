@@ -287,6 +287,38 @@
    "titolo": "Carta dei servizi 2026 di una compagnia aerea italiana: le regole per i bambini sotto i due anni",
    "tipo": "Carta dei servizi di una compagnia aerea, pubblicata dall'ENAC",
    "url": "https://www.enac.gov.it/app/uploads/2026/08/Carta-dei-servizi-2026-NEOS.pdf"
+  },
+  {
+   "id": "AT-37",
+   "ente": "Presidenza del Consiglio dei ministri – Gazzetta Ufficiale",
+   "anno": 2026,
+   "titolo": "Rivalutazione per l'anno 2026 della misura e dei requisiti economici dell'assegno di maternità (art. 74 del d.lgs. 151/2001), Gazzetta Ufficiale n. 32 del 9 febbraio 2026, pag. 56",
+   "tipo": "Norma",
+   "url": "https://www.gazzettaufficiale.it/eli/gu/2026/02/09/32/sg/pdf"
+  },
+  {
+   "id": "AT-38",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Assegno di maternità e soglia ISEE: aggiornamenti per il 2026 (notizia dell'11 febbraio 2026, circolare n. 16/2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.assegno-di-maternit-e-soglia-isee-aggiornamenti-per-il-2026.html"
+  },
+  {
+   "id": "AT-39",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 2001,
+   "titolo": "Decreto legislativo 26 marzo 2001, n. 151, art. 55: dimissioni, testo vigente",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2001-04-26&atto.codiceRedazionale=001G0200&atto.articolo.numero=55&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0"
+  },
+  {
+   "id": "AT-40",
+   "ente": "Ministero della Salute – Gazzetta Ufficiale",
+   "anno": 2026,
+   "titolo": "DPCM 7 agosto 2026 e DM 3 agosto 2026: aggiornamento dei Livelli essenziali di assistenza, anche per il controllo della gravidanza (Gazzetta Ufficiale n. 227 del 30 settembre 2026)",
+   "tipo": "Norma",
+   "url": "https://www.gazzettaufficiale.it/eli/gu/2026/09/30/227/sg/pdf"
   }
  ],
  "guide": [
@@ -303,7 +335,7 @@
    "strumento": "gestionale",
    "perche_titolo": "Da sapere prima",
    "perche": [
-    "Il Servizio sanitario nazionale offre gratis le visite e gli esami che servono a seguire la gravidanza. Sono gratuiti negli ospedali e negli ambulatori pubblici, nelle strutture private accreditate e nei consultori familiari. L'elenco è nazionale, ma ogni Regione lo organizza a modo suo.",
+    "Il Servizio sanitario nazionale offre gratis le visite e gli esami che servono a seguire la gravidanza. Sono gratuiti negli ospedali e negli ambulatori pubblici, nelle strutture private accreditate e nei consultori familiari. L'elenco è nazionale, ma ogni Regione lo organizza a modo suo. Dal 30 ottobre 2026 è in vigore un aggiornamento dell'elenco nazionale, che riguarda anche gli esami della gravidanza: chiedi al consultorio cosa cambia per te.",
     "Alcuni esami in più servono solo in certe situazioni. Sono gratuiti quando c'è il motivo per farli: per esempio gli esami di diagnosi prenatale, come l'amniocentesi, quando c'è un rischio aumentato e li prescrive lo specialista."
    ],
    "passi": [
@@ -317,7 +349,7 @@
     ],
     [
      "Le ecografie",
-     "Le linee guida nazionali e internazionali raccomandano due ecografie se la gravidanza non ha complicanze. Quella del quinto mese si fa tra la 19ª e la 21ª settimana. L'ecografia del terzo trimestre è gratuita quando il medico trova un motivo, nella mamma o nel bambino, per farla."
+     "Le linee guida nazionali e internazionali raccomandano due ecografie se la gravidanza non ha complicanze. Quella del quinto mese si fa tra la 19ª e la 21ª settimana. Secondo l'elenco nazionale del 2017, l'ecografia del terzo trimestre è gratuita quando il medico trova un motivo, nella mamma o nel bambino, per farla."
     ],
     [
      "Gli esami per tutte e quelli solo se servono",
@@ -353,9 +385,10 @@
     "AT-01",
     "AT-02",
     "AT-03",
-    "AT-12"
+    "AT-12",
+    "AT-40"
    ],
-   "avvertenza": "Informazioni generali aggiornate a novembre 2026, tratte da un opuscolo dell'Istituto Superiore di Sanità sui Livelli essenziali di assistenza, dalle pagine delle Regioni Lombardia e Toscana e dalla carta dei servizi di un ospedale pubblico. L'elenco nazionale degli esami gratuiti può essere aggiornato e ogni Regione lo organizza a modo suo: ricontrolleremo a gennaio. Per il tuo caso chiedi al consultorio o a chi ti segue. Quali esami fare, e quando, lo decide con te il medico o l'ostetrica.",
+   "avvertenza": "Informazioni generali aggiornate a novembre 2026, tratte da un opuscolo dell'Istituto Superiore di Sanità sui Livelli essenziali di assistenza, dalle pagine delle Regioni Lombardia e Toscana e dalla carta dei servizi di un ospedale pubblico. L'elenco nazionale degli esami gratuiti è stato aggiornato con decreti pubblicati nella Gazzetta Ufficiale del 30 settembre 2026 e ogni Regione lo organizza a modo suo: ricontrolleremo a gennaio le novità per la gravidanza. Per il tuo caso chiedi al consultorio o a chi ti segue. Quali esami fare, e quando, lo decide con te il medico o l'ostetrica.",
    "domanda": "Quali esami in gravidanza sono gratis",
    "ricontrolla": "2027-01",
    "per": [
@@ -607,7 +640,7 @@
     ],
     [
      "A chi rivolgerti",
-     "Per un dubbio parla prima con l'ufficio del personale. Se qualcosa non va, puoi chiedere a un patronato, a un sindacato o all'Ispettorato territoriale del lavoro. Per un licenziamento rivolgiti subito a un sindacato, a un patronato o a un avvocato."
+     "Per un dubbio parla prima con l'ufficio del personale. Se qualcosa non va, puoi chiedere a un patronato, a un sindacato o all'Ispettorato territoriale del lavoro. Per un licenziamento rivolgiti subito a un sindacato, a un patronato o a un avvocato. Se in gravidanza ti dimetti, o firmi un accordo per lasciare il lavoro, le dimissioni hanno effetto solo dopo la convalida dell'Ispettorato del lavoro: vale anche nei primi tre anni del bambino."
     ]
    ],
    "errori": [
@@ -626,7 +659,8 @@
     "AT-10",
     "AT-11",
     "AT-09",
-    "AT-04"
+    "AT-04",
+    "AT-39"
    ],
    "avvertenza": "Informazioni generali sulle regole per le lavoratrici dipendenti, tratte dal Testo unico sulla maternità (Normattiva) e dalle pagine dell'INPS, aggiornate a novembre 2026. Non sono una consulenza legale: per il tuo caso rivolgiti a un patronato, a un sindacato, all'Ispettorato del lavoro o a un avvocato.",
    "domanda": "Si può essere licenziate in gravidanza",
@@ -863,7 +897,7 @@
     ],
     [
      "Lo screening neonatale, già fatto in ospedale",
-     "Tra le 48 e le 72 ore di vita a tutti i neonati si fa una piccola puntura sul tallone: qualche goccia di sangue serve a cercare alcune malattie rare. È gratuito e la legge lo rende obbligatorio in tutta Italia. Se non ti richiamano, il risultato è negativo. Se ti richiamano, non vuol dire che il bambino sia malato: servono altri controlli."
+     "Tra le 48 e le 72 ore di vita a tutti i neonati si fa una piccola puntura sul tallone: qualche goccia di sangue serve a cercare alcune malattie rare. È gratuito e la legge lo rende obbligatorio in tutta Italia. Chiedi in ospedale come ti daranno il risultato: in Toscana, per esempio, i risultati normali non vengono comunicati, e se non ti richiamano è negativo. Se ti richiamano, non vuol dire che il bambino sia malato: servono altri controlli."
     ],
     [
      "I bilanci di salute",
@@ -877,7 +911,7 @@
    "errori": [
     "Perdere le lettere di dimissione: servono al pediatra.",
     "Pensare che il consultorio serva solo in gravidanza: segue anche te e il bambino dopo il parto.",
-    "Preoccuparsi perché non arriva il risultato dello screening: se non ti richiamano, è negativo."
+    "Preoccuparsi perché non arriva il risultato dello screening, senza aver chiesto in ospedale come viene comunicato: in Toscana, per esempio, se non ti richiamano è negativo."
    ],
    "checklist": [
     "Lettere di dimissione e libretto pediatrico in un posto sicuro",
@@ -1136,7 +1170,7 @@
      ],
      [
       "Assegno di maternità dei Comuni",
-      "Madri senza tutela per la maternità, o con una tutela bassa, entro limiti di reddito",
+      "Madri senza tutela per la maternità, o con una tutela bassa; nel 2026 con ISEE fino a 20.668,26 euro",
       "6 mesi dalla nascita, al Comune"
      ],
      [
@@ -1166,7 +1200,7 @@
     ],
     [
      "Assegno di maternità dei Comuni",
-     "È per le madri che non hanno una tutela previdenziale per la maternità, o ne hanno una bassa, entro limiti di reddito fissati ogni anno. Serve la residenza nel Comune e, per chi è straniera, un titolo di soggiorno. Si chiede al Comune di residenza entro sei mesi dalla nascita, e lo paga l'INPS. Importo e limiti cambiano ogni anno: chiedili al Comune."
+     "È per le madri che non hanno una tutela previdenziale per la maternità, o ne hanno una bassa, entro limiti di reddito fissati ogni anno. Serve la residenza nel Comune e, per chi è straniera, un titolo di soggiorno. Si chiede al Comune di residenza entro sei mesi dalla nascita, e lo paga l'INPS. Per i figli nati nel 2026, se spetta per intero, vale 413,10 euro al mese per cinque mesi, cioè 2.065,50 euro, con un ISEE fino a 20.668,26 euro. Importo e soglia cambiano ogni anno: per il tuo caso chiedi al Comune."
     ],
     [
      "Assegno di maternità dello Stato",
@@ -1174,7 +1208,7 @@
     ],
     [
      "Bonus mamme 2026",
-     "Se lavori, come dipendente o in proprio, e hai due o più figli, per il 2026 l'INPS paga 60 euro per ogni mese di lavoro, fino a 12 mesi, in una sola volta. Sono escluse le lavoratrici domestiche. La domanda va fatta entro il 31 dicembre 2026, oppure entro il 31 gennaio 2027 se il diritto nasce a dicembre. Le altre condizioni sono sulla pagina dell'INPS."
+     "Se lavori, come dipendente o in proprio, e hai due o più figli, per il 2026 l'INPS paga 60 euro per ogni mese di lavoro, fino a 12 mesi, in una sola volta. Sono escluse le lavoratrici domestiche e, se lavorano a tempo indeterminato, le madri di tre o più figli che hanno diritto all'esonero dai contributi. La domanda va fatta entro il 31 dicembre 2026, oppure entro il 31 gennaio 2027 se il diritto nasce a dicembre. Le altre condizioni sono sulla pagina dell'INPS."
     ],
     [
      "Più avanti, il bonus asilo nido",
@@ -1201,7 +1235,9 @@
     "AT-27",
     "AT-24",
     "AT-25",
-    "AT-23"
+    "AT-23",
+    "AT-37",
+    "AT-38"
    ],
    "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS, aggiornate a novembre 2026, con le regole del 2026. Importi, soglie e scadenze cambiano con la legge di bilancio: ricontrolleremo questa pagina a gennaio 2027. Per il tuo caso fa fede il sito dell'INPS o il tuo Comune; un patronato o un CAF possono aiutarti con le domande.",
    "domanda": "Quali bonus ci sono per la nascita di un figlio",
@@ -1506,7 +1542,7 @@
     ]
    },
    "perche": [
-    "Spetta ai padri lavoratori dipendenti, nel privato e nel pubblico, anche adottivi e affidatari. Spetta anche alla madre intenzionale, in una coppia di donne registrate come genitori nello stato civile. Non spetta ai lavoratori autonomi e agli iscritti alla Gestione separata.",
+    "Spetta ai padri lavoratori dipendenti, nel privato e nel pubblico, anche adottivi e affidatari. Spetta anche alla madre intenzionale, in una coppia di donne registrate come genitori nello stato civile. Non spetta ai lavoratori autonomi e agli iscritti alla Gestione separata. Il papà che prende il congedo di paternità non può essere licenziato per la durata del congedo e fino al primo compleanno del bambino, salvo gli stessi pochi casi previsti per le madri.",
     "È un'altra cosa rispetto al congedo parentale, che è facoltativo e ha regole diverse: lo trovi nella guida collegata."
    ],
    "passi": [
@@ -1552,7 +1588,8 @@
    ],
    "fonti": [
     "AT-33",
-    "AT-04"
+    "AT-04",
+    "AT-10"
    ],
    "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS, controllate a novembre 2026. La durata è fissata dalla legge e può cambiare: ricontrolleremo a gennaio 2027. Per il tuo caso chiedi all'ufficio del personale, a un patronato o all'INPS.",
    "domanda": "Quanti giorni di permesso ha il papà alla nascita",
@@ -1664,7 +1701,7 @@
      "p": "«Le linee guida nazionali e internazionali raccomandano 2 ecografie in gravidanza se non vi sono complicanze»; «L'ecografia del quinto mese va eseguita tra 19 e 21 settimane»."
     },
     {
-     "t": "L'ecografia del terzo trimestre è gratuita quando il medico trova un motivo, nella mamma o nel bambino, per farla.",
+     "t": "Secondo l'elenco nazionale del 2017, l'ecografia del terzo trimestre è gratuita quando il medico trova un motivo, nella mamma o nel bambino, per farla.",
      "f": [
       0
      ],
@@ -1676,6 +1713,13 @@
       1
      ],
      "p": "Lombardia (art. 59 DPCM 12.1.2017): gratuite anche se «fruite presso le strutture sanitarie pubbliche e private accreditate, compresi i consultori familiari»."
+    },
+    {
+     "t": "Dal 30 ottobre 2026 è in vigore un aggiornamento dell'elenco nazionale delle prestazioni del Servizio sanitario: per le novità sulla gravidanza chiedi al consultorio o a chi ti segue.",
+     "f": [
+      1
+     ],
+     "p": "Lombardia: DM 3 agosto 2026 e DPCM 7 agosto 2026, pubblicati in Gazzetta Ufficiale il 30 settembre 2026, che modificano il DPCM 12.1.2017 ed entrano in vigore il 30 ottobre 2026."
     },
     {
      "t": "Quali ecografie fare, e quando, lo decidi con chi ti segue in gravidanza.",
@@ -1793,11 +1837,11 @@
      "p": "«Entro tre giorni, presso la direzione sanitaria dell'ospedale o della casa di cura»; la dichiarazione può contenere il riconoscimento del figlio nato fuori dal matrimonio."
     },
     {
-     "t": "In Comune si fa entro dieci giorni dalla nascita, nel Comune dove è avvenuto il parto.",
+     "t": "In Comune si fa entro dieci giorni dalla nascita: nel Comune dove è avvenuto il parto oppure in quello di residenza dei genitori.",
      "f": [
       0
      ],
-     "p": "«Entro dieci giorni dalla nascita, presso il comune nel cui territorio è avvenuto il parto»."
+     "p": "«Entro dieci giorni dalla nascita, presso il comune nel cui territorio è avvenuto il parto»; in alternativa i genitori possono dichiararla nel proprio comune di residenza."
     },
     {
      "t": "La può fare uno dei genitori, un procuratore speciale, il medico o l'ostetrica che hanno assistito al parto.",
@@ -1814,7 +1858,7 @@
      "p": "Attestazione di avvenuta nascita con dati della puerpera, luogo, giorno, ora della nascita e sesso del bambino."
     },
     {
-     "t": "Dopo la dichiarazione arrivano codice fiscale, tessera sanitaria e pediatra: l'ordine, e le altre possibilità per il Comune, sono nella guida sui documenti del neonato.",
+     "t": "Dopo la dichiarazione arrivano codice fiscale, tessera sanitaria e pediatra: l'ordine, e cosa fare se i genitori abitano in Comuni diversi, sono nella guida sui documenti del neonato.",
      "f": [],
      "p": ""
     }
