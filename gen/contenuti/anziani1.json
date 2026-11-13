@@ -1,0 +1,2155 @@
+{
+ "fonti": [
+  {
+   "id": "AN-01",
+   "ente": "Istituto Superiore di Sanità – EpiCentro",
+   "anno": 2019,
+   "titolo": "Passi d'Argento: le cadute nelle persone anziane, impatto per la salute (pagina aggiornata l'11 aprile 2019)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.epicentro.iss.it/passi-argento/dati/cadute"
+  },
+  {
+   "id": "AN-02",
+   "ente": "Regione Emilia-Romagna",
+   "anno": 2024,
+   "titolo": "«Paracadute. Si può imparare a non farsi male»: l'opuscolo della campagna regionale per la prevenzione delle cadute",
+   "tipo": "Guida per i cittadini",
+   "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/strumenti-della-campagna/c008_paracadute_opuscolo_a5_web.pdf",
+   "nota": "Opuscolo senza data stampata; la campagna è partita nell'aprile 2024, nel Piano regionale della prevenzione 2021-2025."
+  },
+  {
+   "id": "AN-03",
+   "ente": "ASL 5 di Oristano",
+   "anno": 2022,
+   "titolo": "La prevenzione degli incidenti domestici negli anziani (opuscolo del Piano regionale della prevenzione 2020-2025)",
+   "tipo": "Documento di un'Azienda sanitaria",
+   "url": "https://www.asl5oristano.it/wp-content/uploads/2022/11/Opuscolo-prevenzione-degli-incidenti-domestici-negli-anziani-ASL-Oristano.pdf"
+  },
+  {
+   "id": "AN-04",
+   "ente": "ASL 3 di Nuoro",
+   "anno": 2025,
+   "titolo": "La prevenzione degli incidenti domestici negli anziani (opuscolo del Piano regionale della prevenzione 2020-2025)",
+   "tipo": "Documento di un'Azienda sanitaria",
+   "url": "https://www.asl3nuoro.it/wp-content/uploads/2025/11/La-prevenzione-degli-Incidenti-domestici-negli-Anziani-ASL-NUORO.pdf"
+  },
+  {
+   "id": "AN-05",
+   "ente": "ASL Roma 3",
+   "anno": 2026,
+   "titolo": "Calendario nazionale vaccinale del Piano nazionale di prevenzione vaccinale 2023-2025, con le note (allegato pubblicato a luglio 2026)",
+   "tipo": "Documento di un'Azienda sanitaria",
+   "url": "https://www.aslroma3.it/wp-content/uploads/2026/07/Allegato-n°-2-Calendario_vaccinale_PNPV-_2023-2025.pdf"
+  },
+  {
+   "id": "AN-06",
+   "ente": "Regione Lombardia",
+   "anno": 2026,
+   "titolo": "Vaccinazioni per la popolazione a partire dai 65 anni (pagina aggiornata il 9 settembre 2026)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.lombardia.it/sanita/wikivaccini/vaccinazioni-per-fascia-di-eta/vaccinazioni-per-popolazione-a-partire-dai-65-anni"
+  },
+  {
+   "id": "AN-07",
+   "ente": "Regione Toscana",
+   "anno": 2026,
+   "titolo": "Vaccinazione antinfluenzale 2026/2027 (pagina aggiornata il 14 ottobre 2026)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.toscana.it/-/vaccinazione-antinfluenzale-2026/2027"
+  },
+  {
+   "id": "AN-08",
+   "ente": "Regione Siciliana – Assessorato della Salute",
+   "anno": 2026,
+   "titolo": "Decreto del Dipartimento attività sanitarie (DASOE) sulla campagna di vaccinazione antinfluenzale 2026/2027",
+   "tipo": "Documento istituzionale",
+   "url": "https://regione.sicilia.it/index%2Ephp/system/files/2026-10/D.D.G.%20n.%201139.pdf"
+  },
+  {
+   "id": "AN-09",
+   "ente": "Regione Piemonte",
+   "anno": 2026,
+   "titolo": "Vaccinazione anti-Covid: in Piemonte la campagna 2026-2027 con il vaccino aggiornato (notizia del 9 ottobre 2026)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.piemonte.it/web/node/23094"
+  },
+  {
+   "id": "AN-10",
+   "ente": "Istituto Superiore di Sanità – EpiCentro",
+   "anno": 2026,
+   "titolo": "Le raccomandazioni del Ministero della Salute: «Prevenzione e controllo dell'influenza: raccomandazioni per la stagione 2026-2027» (circolare del 23 giugno 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.epicentro.iss.it/influenza/raccomandazioni-ministero"
+  },
+  {
+   "id": "AN-11",
+   "ente": "Regione Piemonte",
+   "anno": 2026,
+   "titolo": "Cure domiciliari (pagina aggiornata il 10 novembre 2026)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.piemonte.it/web/node/669"
+  },
+  {
+   "id": "AN-12",
+   "ente": "Gazzetta Ufficiale della Repubblica Italiana",
+   "anno": 2017,
+   "titolo": "DPCM 12 gennaio 2017, «Definizione e aggiornamento dei livelli essenziali di assistenza»: articoli 11 (presidi per l'incontinenza), 17 e 18 (assistenza protesica), 22 (cure domiciliari) e 30 (assistenza semiresidenziale)",
+   "tipo": "Norma",
+   "url": "https://www.gazzettaufficiale.it/eli/id/2017/03/18/17A02015/sg"
+  },
+  {
+   "id": "AN-13",
+   "ente": "ATS Brianza",
+   "anno": 2025,
+   "titolo": "Cure domiciliari e cure palliative (pagina aggiornata il 30 aprile 2025)",
+   "tipo": "Documento di un'Azienda sanitaria",
+   "url": "https://www.ats-brianza.it/en/cure-domiciliari-cure-palliative.html"
+  },
+  {
+   "id": "AN-14",
+   "ente": "ASST Ovest Milanese",
+   "anno": 2025,
+   "titolo": "Carta dei servizi dell'Assistenza domiciliare integrata e delle Cure domiciliari (24 marzo 2025)",
+   "tipo": "Documento di un'Azienda sanitaria",
+   "url": "https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/254/paragrafi/14619/CARTA%20SERVIZI%202025%20ADI%20ASST%20OMI%2026%20MAR%20.pdf"
+  },
+  {
+   "id": "AN-15",
+   "ente": "Regione Piemonte",
+   "anno": 2026,
+   "titolo": "Interventi socio-sanitari per anziani: valutazione dell'UVG, domiciliarità, centri diurni e RSA (pagina aggiornata il 12 novembre 2026)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.piemonte.it/web/temi/diritti-politiche-sociali/politiche-sociali/anziani/interventi-socio-sanitari-per-anziani"
+  },
+  {
+   "id": "AN-16",
+   "ente": "Regione Lombardia",
+   "anno": 2026,
+   "titolo": "Assistenza protesica (pagina aggiornata il 13 luglio 2026)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.lombardia.it/sanita/farmaci-protesi-e-assistenza-integrata/assistenza-protesica"
+  },
+  {
+   "id": "AN-17",
+   "ente": "Regione Piemonte",
+   "anno": 2026,
+   "titolo": "Fornitura di protesi, ortesi e ausili tecnici (pagina aggiornata il 6 novembre 2026)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/sostegno-alle-cure/fornitura-protesi-ortesi-ausili-tecnici"
+  },
+  {
+   "id": "AN-18",
+   "ente": "Regione Friuli Venezia Giulia",
+   "anno": 2026,
+   "titolo": "Assistenza protesica: protesi e ausili (pagina aggiornata il 25 agosto 2026)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/sistema-sociale-sanitario/FOGLIA31/"
+  },
+  {
+   "id": "AN-19",
+   "ente": "ASL Salerno",
+   "anno": 2020,
+   "titolo": "Presidi per incontinenza – pannoloni: come fare",
+   "tipo": "Documento di un'Azienda sanitaria",
+   "url": "https://aslsalerno.it/archivio2_come-fare-per_0_134.html",
+   "nota": "Pagina dell'ottobre 2020, ancora pubblicata sul sito dell'ASL."
+  },
+  {
+   "id": "AN-20",
+   "ente": "Regione del Veneto – Rete degli URP",
+   "anno": 2026,
+   "titolo": "Anziani: telesoccorso, assistenza domiciliare, centri diurni e altri servizi (pagina aggiornata il 1° luglio 2026)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.veneto.it/web/rete-degli-urp-del-veneto/anziani"
+  },
+  {
+   "id": "AN-21",
+   "ente": "Comune di Livorno",
+   "anno": 2024,
+   "titolo": "«Socialità senza età»: la guida alle attività e ai servizi per gli anziani a Livorno (maggio 2024)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://trasparenza.comune.livorno.it/sites/trasparenza/files/servizi-erogati/Guida-Servizi-Attivita-Anziani-2024-20240530.pdf"
+  },
+  {
+   "id": "AN-22",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Indennità per congedi straordinari per assistere familiari con disabilità (pagina aggiornata il 21 ottobre 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50097.indennit-per-congedi-straordinari-assistenza-familiari-disabili-.html",
+   "nota": "Gli importi massimi sono quelli del 2026: cambiano ogni anno."
+  },
+  {
+   "id": "AN-23",
+   "ente": "Camera dei deputati – Servizio Studi",
+   "anno": 2026,
+   "titolo": "Dossier sul disegno di legge «Riconoscimento e tutela delle persone che assistono e si prendono cura dei propri cari» (A.C. 2789-A), con il testo della definizione oggi in vigore (legge 205/2017, articolo 1, comma 255) (1° ottobre 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://documenti.camera.it/leg19/dossier/testi/AS0489a.htm"
+  },
+  {
+   "id": "AN-24",
+   "ente": "Camera dei deputati",
+   "anno": 2026,
+   "titolo": "Riconoscimento e tutela delle persone che assistono e si prendono cura dei propri cari: lo stato dell'esame (pagina aggiornata il 30 ottobre 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://temi.camera.it/leg19/temi/riconoscimento-e-tutela-delle-persone-che-assistono-e-si-prendono-cura-dei-prpri-cari.html"
+  },
+  {
+   "id": "AN-25",
+   "ente": "Camera dei deputati",
+   "anno": 2026,
+   "titolo": "A.C. 2789-A: testo del disegno di legge sui caregiver familiari proposto dalla Commissione Affari sociali",
+   "tipo": "Documento istituzionale",
+   "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2789_A.19PDL0203840.pdf",
+   "nota": "È il testo esaminato dall'Aula: la Camera lo ha approvato con modifiche il 14 ottobre 2026 e ora è all'esame del Senato."
+  },
+  {
+   "id": "AN-26",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Permessi legge 104/1992 per assistere familiari con disabilità grave (pagina aggiornata il 21 ottobre 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50098.indennit-per-permessi-fruiti-dai-lavoratori-per-assistere-familiari-disabili-in-situazione-di-gravit-o-fruiti-dai-lavoratori-disabili.html"
+  },
+  {
+   "id": "AN-27",
+   "ente": "AIFA – Agenzia Italiana del Farmaco",
+   "anno": 2016,
+   "titolo": "Pazienti anziani: dall'FDA 4 consigli utili per utilizzare i farmaci in sicurezza",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.aifa.gov.it/-/pazienti-anziani-dall-fda-4-consigli-utili-per-utilizzare-i-farmaci-in-sicurezza"
+  },
+  {
+   "id": "AN-28",
+   "ente": "Regione Lombardia",
+   "anno": 2026,
+   "titolo": "Riconciliazione della terapia farmacologica: cosa è importante sapere (pagina aggiornata il 10 agosto 2026)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.lombardia.it/sanita/farmaci-protesi-e-assistenza-integrata/riconciliazione-terapia-farmacologica"
+  },
+  {
+   "id": "AN-29",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Domanda di invalidità civile e accertamento sanitario (pagina aggiornata il 5 giugno 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.domanda-invalidita-civile-e-accertamento-sanitario-50004.accertamento-sanitario.html"
+  },
+  {
+   "id": "AN-30",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Delega dell'identità digitale per accedere ai servizi online (pagina aggiornata il 5 ottobre 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.delega-dell-identit-digitale-per-accedere-ai-servizi-online.html"
+  },
+  {
+   "id": "AN-31",
+   "ente": "Conferenza Stato-Regioni",
+   "anno": 2026,
+   "titolo": "Intesa del 18 marzo 2026 (Rep. atti n. 29/CSR), che richiama la proroga di un anno del Piano nazionale della prevenzione vaccinale 2023-2025 (intesa del 18 dicembre 2025)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.statoregioni.it/media/eqpdiws2/p-3-csr-atto-rep-n29-18marzo2026.pdf"
+  }
+ ],
+ "guide": [
+  {
+   "slug": "prevenire-cadute-in-casa",
+   "categoria": "Organizzarsi",
+   "argomento": "anziani",
+   "per": [
+    "anziano",
+    []
+   ],
+   "data": "2026-11-13",
+   "titolo": "Prevenire le cadute in casa di un genitore anziano: le indicazioni ufficiali, stanza per stanza",
+   "titolo_seo": "Prevenire le cadute degli anziani in casa: stanza per stanza",
+   "sommario": "Le cadute in casa si rendono meno probabili con piccoli cambiamenti: luce, tappeti, bagno, scarpe. Qui trovi le indicazioni dell'Istituto Superiore di Sanità, di una Regione e di due ASL, messe in ordine stanza per stanza, da guardare insieme a tuo padre o a tua madre.",
+   "tempo": "Mezz'ora per un giro della casa, insieme; poi qualche piccolo lavoro",
+   "serve": "Un foglio per segnare cosa cambiare, e il genitore accanto a te",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Secondo l'Organizzazione Mondiale della Sanità, citata dall'Istituto Superiore di Sanità, ogni anno cade tra il 28 e il 35% delle persone dai 65 anni in su. Tra gli incidenti in casa delle persone di questa età, le cadute sono la gran parte: il 76,9%, secondo i dati Istat del 2014.",
+    "Molte cause stanno nella casa: pavimenti bagnati, poca luce, tappeti non fissati, scale. Le Regioni e le ASL, nei loro opuscoli di prevenzione, dicono cosa cambiare. Qui le trovi in ordine, una stanza alla volta. È un lavoro da fare con il genitore, non al posto suo: la casa è sua, e le abitudini anche.",
+    "Questa guida parla della casa. Per tutto quello che riguarda la salute, come equilibrio, vista, medicine ed esercizi, il riferimento è il medico di famiglia."
+   ],
+   "passi": [
+    [
+     "Fate un giro della casa insieme",
+     "Con calma, di giorno e poi di sera, guardate i percorsi che tuo padre o tua madre fa ogni giorno: dal letto al bagno, dalla cucina al divano, dalla porta alle scale. Segnate su un foglio cosa ingombra, cosa scivola, dove manca la luce."
+    ],
+    [
+     "Passaggi e corridoi: niente ostacoli",
+     "Togliete dai passaggi gli oggetti e i mobili che si possono urtare, come lampade, vasi e sedie. Sistemate cavi e prolunghe in modo che non attraversino i passaggi: possono far inciampare."
+    ],
+    [
+     "Tappeti: via, oppure fissati",
+     "In camera da letto e in sala la Regione Emilia-Romagna consiglia di non usare tappeti e pedane; in bagno e in cucina solo tappeti sottili e antiscivolo. Le ASL di Oristano e di Nuoro dicono di fissarli al pavimento o di sceglierli antiscivolo. Tenete i pavimenti asciutti e non usate la cera."
+    ],
+    [
+     "Bagno: appoggi e antiscivolo",
+     "Nella doccia o nella vasca, una pedana o un tappetino antiscivolo. Accanto, maniglioni a cui appoggiarsi. Se serve, una sedia da doccia o da vasca. Alcuni ausili per il bagno, come la sedia per la doccia o il rialzo del water, li può fornire la ASL: chiedi al medico di famiglia."
+    ],
+    [
+     "Scale: corrimano e luce",
+     "Sulle scale servono corrimano e maniglie per un appoggio sicuro, e una luce che illumini bene tutti i gradini, di giorno e di sera."
+    ],
+    [
+     "Luce, anche di notte",
+     "Illuminate bene tutti gli ambienti, soprattutto le scale. Di notte servono luci notturne lungo il percorso dal letto al bagno, per vedere gli ostacoli quando ci si alza."
+    ],
+    [
+     "Niente sedie e sgabelli per arrivare in alto",
+     "Cambiare una lampadina, prendere qualcosa sull'ultimo ripiano, potare una siepe: le indicazioni regionali dicono di non salire su sedie, sgabelli o scale per questi lavori. Spostate in basso gli oggetti di tutti i giorni e mettetevi d'accordo su chi fa i lavori in alto."
+    ],
+    [
+     "Scarpe chiuse, anche in casa",
+     "Calzature chiuse e basse, con la suola larga e antiscivolo, ben ferme sul piede. Meglio evitare ciabatte, tacchi e suole strette o scivolose."
+    ],
+    [
+     "Alzarsi con calma, telefono vicino",
+     "Dopo essere stati seduti, alzarsi con calma e restare in piedi qualche istante prima di muoversi. Il cellulare o un campanello vanno tenuti sempre a portata di mano, anche vicino al letto."
+    ],
+    [
+     "Occhiali, apparecchi acustici e movimento",
+     "Le indicazioni regionali ricordano di portare sempre gli occhiali e gli apparecchi acustici prescritti, e che un'attività fisica regolare aiuta forza ed equilibrio. Quale attività fare, e se qualche medicina può dare capogiri, si chiede al medico di famiglia: nessuna terapia si cambia da soli."
+    ],
+    [
+     "Una caduta va sempre raccontata al medico",
+     "Secondo l'Istituto Superiore di Sanità, meno della metà delle persone anziane che cadono ne parla con il proprio medico. Anche una caduta senza conseguenze va detta alla visita successiva: il medico può valutare cosa fare."
+    ]
+   ],
+   "errori": [
+    "Cambiare la casa senza chiedere: le modifiche si decidono insieme.",
+    "Lasciare i tappeti «perché ci sono sempre stati»: in camera e in sala è meglio toglierli, altrove fissarli o sceglierli antiscivolo.",
+    "Pensare alla luce solo di giorno: il percorso notturno verso il bagno è quello da illuminare.",
+    "Tacere una caduta perché non si è fatto male: il medico deve saperlo."
+   ],
+   "checklist": [
+    "Giro della casa fatto insieme, di giorno e di sera",
+    "Passaggi liberi da oggetti, cavi e prolunghe",
+    "Tappeti tolti, fissati o antiscivolo",
+    "Antiscivolo nella doccia o nella vasca",
+    "Maniglioni in bagno",
+    "Corrimano sulle scale",
+    "Luci notturne dal letto al bagno",
+    "Scarpe chiuse e antiscivolo",
+    "Telefono a portata di mano, anche vicino al letto",
+    "Cadute recenti raccontate al medico"
+   ],
+   "fonti": [
+    "AN-01",
+    "AN-02",
+    "AN-03",
+    "AN-04"
+   ],
+   "avvertenza": "Informazioni generali tratte dalle pagine dell'Istituto Superiore di Sanità e dagli opuscoli di prevenzione della Regione Emilia-Romagna e delle ASL di Oristano e di Nuoro, letti a novembre 2026. Non sono consigli medici: equilibrio, vista, medicine ed esercizi si valutano con il medico di famiglia. Se una persona cade e sta male, chiama il 112.",
+   "domanda": "Come prevenire le cadute in casa di un anziano",
+   "strumento": "gestionale",
+   "chiavi_ricerca": "cadute cadere scivolare inciampare tappeti tappeto bagno doccia vasca maniglioni corrimano luce notturna scarpe ciabatte casa sicura sicurezza domestica prevenire prevenzione anziano anziana nonna nonno mamma papà",
+   "correlate": [
+    "ausili-dalla-asl",
+    "telesoccorso-e-servizi-del-comune",
+    "visita-dal-medico-di-famiglia-anziano"
+   ]
+  },
+  {
+   "slug": "vaccinazioni-dopo-65-anni",
+   "categoria": "Organizzarsi",
+   "argomento": "anziani",
+   "per": [
+    "anziano",
+    []
+   ],
+   "data": "2026-11-13",
+   "titolo": "Antinfluenzale, pneumococco, herpes zoster e tetano dai 65 anni: cosa è gratis e dove farli",
+   "titolo_seo": "Vaccini per gli over 65: quali sono gratis e dove farli",
+   "sommario": "Influenza, pneumococco, herpes zoster, il richiamo del tetano, il COVID-19: cosa prevede il calendario nazionale per chi ha compiuto 65 anni, cosa offrono gratis alcune Regioni e dove si fanno. Quali fare, e quando, lo decidete con il medico di famiglia.",
+   "tempo": "Una telefonata al medico, poi uno o più appuntamenti",
+   "serve": "La tessera sanitaria; le vaccinazioni già fatte, se le avete annotate",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Il calendario nazionale delle vaccinazioni è quello del 2023-2025, prorogato di un anno con un'intesa tra Stato e Regioni. Per le persone anziane prevede la vaccinazione contro lo pneumococco e quella contro l'herpes zoster (il «fuoco di Sant'Antonio») a partire dall'anno in cui si compiono 65 anni, e un richiamo contro difterite, tetano e pertosse ogni 10 anni. Per l'influenza vale la circolare che il Ministero della Salute pubblica ogni anno: quella per la stagione 2026-2027 è del 23 giugno 2026.",
+    "Le Regioni organizzano l'offerta e qualche dettaglio cambia da una all'altra. Qui trovi le regole comuni e, come esempi, quelle di Lombardia, Toscana, Sicilia e Piemonte. Quali vaccinazioni fare, in che ordine, e se c'è un motivo per rimandarne una, lo decide il medico di famiglia, che conosce la storia di tuo padre o di tua madre."
+   ],
+   "tabella": {
+    "titolo": "Le vaccinazioni offerte alle persone anziane",
+    "colonne": [
+     "Vaccinazione",
+     "Per chi",
+     "Un esempio regionale"
+    ],
+    "righe": [
+     [
+      "Influenza",
+      "Ogni anno, in autunno",
+      "In Toscana e in Sicilia è gratis dai 60 anni; in Lombardia per tutti"
+     ],
+     [
+      "Pneumococco",
+      "Dall'anno in cui si compiono 65 anni",
+      "In Lombardia è gratis per chi ha 65 anni o più"
+     ],
+     [
+      "Herpes zoster (fuoco di Sant'Antonio)",
+      "Dall'anno in cui si compiono 65 anni",
+      "In Lombardia è gratis per chi ha 65 anni o più"
+     ],
+     [
+      "Difterite, tetano e pertosse",
+      "Un richiamo ogni 10 anni, a ogni età",
+      "In Lombardia è gratis per tutti"
+     ],
+     [
+      "COVID-19",
+      "Raccomandata in particolare dai 60 anni",
+      "In Piemonte è gratis per tutti"
+     ]
+    ]
+   },
+   "passi": [
+    [
+     "Verificate le vaccinazioni già fatte",
+     "Chiedete al medico di famiglia o al centro vaccinale della ASL quali vaccinazioni risultano. Serve per sapere se ce n'è qualcuna da fare o da completare: in Lombardia, per esempio, chi in passato ha ricevuto un vaccino diverso contro lo pneumococco verifica con il medico o con il centro vaccinale."
+    ],
+    [
+     "Influenza: ogni autunno",
+     "Il vaccino viene aggiornato ogni anno, per questo si rifà a ogni stagione. In Toscana la campagna 2026-2027 è partita il 14 ottobre per chi ha 60 anni o più; in Sicilia va dal 12 ottobre 2026 al 28 febbraio 2027. In Toscana e in Sicilia è gratis dai 60 anni; in Lombardia la vaccinazione antinfluenzale è offerta gratis a tutti, dai 6 mesi di vita."
+    ],
+    [
+     "Pneumococco",
+     "Il calendario la offre a partire dall'anno in cui si compiono 65 anni. In Lombardia è gratuita per chi ha 65 anni o più: nel 2026, per chi è nato entro il 31 dicembre 1961. Il medico vi dice se è già stata fatta e se serve."
+    ],
+    [
+     "Herpes zoster",
+     "Il calendario la offre a partire dall'anno in cui si compiono 65 anni, e prima alle persone con alcune malattie. In Lombardia è gratuita dai 65 anni e si fa in due volte, a due mesi di distanza: i tempi precisi li indica il medico o il centro vaccinale."
+    ],
+    [
+     "Il richiamo del tetano",
+     "Contro difterite, tetano e pertosse il calendario prevede un richiamo ogni 10 anni, per tutta la vita. In Lombardia è offerto gratis a tutti. Se non ricordate quando è stato fatto l'ultimo, chiedete al medico."
+    ],
+    [
+     "COVID-19",
+     "In Piemonte la vaccinazione 2026-2027 è gratis per tutti e raccomandata in particolare dai 60 anni; nella prima fase la precedenza va a chi ha 80 anni o più e agli ospiti delle strutture di lungodegenza. Si può fare nella stessa occasione dell'antinfluenzale, salvo indicazioni diverse del medico."
+    ],
+    [
+     "Dove si fanno",
+     "Di solito dal medico di famiglia, nei centri vaccinali della ASL e, per alcune vaccinazioni, nelle farmacie che aderiscono. In Toscana chi ha 60 anni o più può prenotare l'antinfluenzale anche in farmacia; in Lombardia pneumococco e zoster si fanno dal medico, se aderisce alla campagna, oppure si prenotano online. Nelle RSA e nelle altre strutture le vaccinazioni si fanno nella struttura."
+    ],
+    [
+     "Se ci sono malattie croniche",
+     "Con alcune malattie o terapie possono essere raccomandate altre vaccinazioni, anche prima dei 65 anni. Ne parla il medico, che conosce la situazione."
+    ],
+    [
+     "Segnate cosa è stato fatto",
+     "Annotate data e tipo di vaccinazione nella cartellina di famiglia. L'anno dopo saprete subito cosa rifare e cosa no."
+    ]
+   ],
+   "errori": [
+    "Aspettare la fine dell'inverno per l'antinfluenzale: la campagna parte in ottobre.",
+    "Pensare che il richiamo del tetano serva solo da bambini: va fatto ogni 10 anni, per tutta la vita.",
+    "Decidere da soli quali vaccinazioni fare o saltare: si decide con il medico."
+   ],
+   "checklist": [
+    "Vaccinazioni già fatte verificate con il medico o con la ASL",
+    "Antinfluenzale di quest'anno prenotato",
+    "Pneumococco: fatto o in programma",
+    "Herpes zoster: fatto o in programma",
+    "Data dell'ultimo richiamo del tetano",
+    "COVID-19: chiesto al medico",
+    "Date e vaccinazioni annotate nella cartellina"
+   ],
+   "fonti": [
+    "AN-05",
+    "AN-31",
+    "AN-10",
+    "AN-06",
+    "AN-07",
+    "AN-08",
+    "AN-09"
+   ],
+   "avvertenza": "Informazioni generali tratte dal calendario nazionale delle vaccinazioni e dalle pagine delle Regioni Lombardia, Toscana, Sicilia e Piemonte, aggiornate a novembre 2026. Offerta, età e date cambiano da Regione a Regione e da una stagione all'altra: ricontrolleremo a gennaio 2027 e prima della prossima campagna antinfluenzale. Quali vaccinazioni fare, e quando, lo decide il medico di famiglia.",
+   "domanda": "Quali vaccini sono gratis per chi ha 65 anni",
+   "ricontrolla": "2027-01",
+   "strumento": "preparo",
+   "chiavi_ricerca": "vaccino vaccini vaccinazione vaccinazioni over 65 sessantacinque anni anziani influenza antinfluenzale antinfluenza pneumococco antipneumococco herpes zoster fuoco di sant'antonio tetano covid gratis gratuito gratuita nonno nonna mamma papà",
+   "correlate": [
+    "visita-dal-medico-di-famiglia-anziano",
+    "documenti-genitore-anziano",
+    "documenti-sanitari-dove-trovarli"
+   ]
+  },
+  {
+   "slug": "assistenza-domiciliare-integrata",
+   "categoria": "Organizzarsi",
+   "argomento": "anziani",
+   "per": [
+    "anziano",
+    []
+   ],
+   "data": "2026-11-13",
+   "titolo": "L'assistenza domiciliare integrata (ADI): cos'è, chi la chiede, come funziona",
+   "titolo_seo": "ADI, assistenza domiciliare integrata: come si attiva",
+   "sommario": "Infermiere, fisioterapista, operatori e medici che vengono a casa quando un genitore non può andare in ambulatorio. La chiede il medico di famiglia, oppure l'ospedale quando dimette; poi un'équipe valuta e scrive un piano di cura. Cosa aspettarsi e cosa preparare.",
+   "tempo": "In Lombardia, di norma, parte entro 72 ore dalla richiesta del medico",
+   "serve": "La richiesta del medico di famiglia; la tessera sanitaria; le ultime lettere di dimissione e la lista delle medicine",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Le cure domiciliari fanno parte dei livelli essenziali di assistenza (LEA): il Servizio sanitario le garantisce alle persone non autosufficienti o fragili che hanno bisogno di cure a casa. L'assistenza domiciliare integrata, l'ADI, mette insieme più professionisti, secondo un piano scritto per quella persona. La responsabilità clinica resta del medico di famiglia.",
+    "In Lombardia, secondo la carta dei servizi di un'azienda sanitaria, è rivolta, senza limiti di età o di reddito, a chi non riesce a spostarsi per andare in ambulatorio, ha una rete familiare che lo sostiene e una casa adatta all'assistenza. È gratuita, a carico del Servizio sanitario: si paga solo il ticket sui prelievi, per chi non è esente.",
+    "Ogni Regione organizza le cure domiciliari a modo suo. Qui trovi le regole comuni e, come esempi, quelle di Piemonte e Lombardia."
+   ],
+   "passi": [
+    [
+     "Parlane con il medico di famiglia",
+     "È lui, di solito, a chiedere l'attivazione: in Piemonte la presa in carico per i problemi sanitari passa dal medico di famiglia. Per una prestazione occasionale, come un prelievo di sangue o un elettrocardiogramma, in Piemonte la richiesta del medico la può portare anche un familiare al centro Cure domiciliari della ASL."
+    ],
+    [
+     "Se esce dall'ospedale, chiedilo prima della dimissione",
+     "Quando un genitore viene dimesso e avrà bisogno di cure a casa, chiedi al reparto se è prevista una dimissione protetta. In Lombardia il medico di reparto può prescrivere le cure domiciliari già alla dimissione, anche dal pronto soccorso."
+    ],
+    [
+     "Se non sai da dove cominciare",
+     "In Lombardia puoi rivolgerti anche al Punto unico di accesso (PUA) o alla segreteria ADI della tua ASST. Nelle altre Regioni chiedi al distretto della ASL."
+    ],
+    [
+     "La valutazione",
+     "Un'équipe della ASL valuta i bisogni sanitari, ma anche quelli funzionali e sociali: si chiama valutazione multidimensionale. A volte serve una visita a casa. Da qui nasce il Piano assistenziale individuale (PAI), che dice chi viene, per fare cosa e quanto spesso."
+    ],
+    [
+     "Il piano si concorda con voi",
+     "Il PAI si concorda con la persona assistita e con la famiglia, che dà il consenso. Chiedi chi è il riferimento da chiamare per le domande: in Lombardia c'è un case manager."
+    ],
+    [
+     "Chi viene a casa",
+     "Secondo il piano: l'infermiere (medicazioni, prelievi, terapie, controllo dei parametri; insegna anche ai familiari cosa fare), il fisioterapista (riabilitazione e uso degli ausili), l'operatore socio-sanitario (igiene e spostamenti della persona) e, quando serve, medici specialisti come il geriatra o il fisiatra."
+    ],
+    [
+     "Più o meno intensa, secondo il bisogno",
+     "Le cure domiciliari hanno livelli diversi: dalle prestazioni singole, come una medicazione o un prelievo, fino all'ADI di terzo livello per le situazioni più complesse, con un supporto anche alla famiglia. Il livello lo decide la valutazione."
+    ],
+    [
+     "Chi la fa",
+     "In Lombardia si sceglie liberamente tra gli enti accreditati, pubblici e privati, degli elenchi dell'ATS, e il servizio resta gratuito. Anche in Piemonte ci sono erogatori privati accreditati, elencati sul sito della Regione."
+    ],
+    [
+     "L'aiuto per l'igiene dopo l'ospedale",
+     "Secondo i LEA, l'aiuto infermieristico e l'assistenza tutelare, cioè l'operatore che aiuta nell'igiene e negli spostamenti, sono interamente a carico del Servizio sanitario per i primi 30 giorni dopo una dimissione protetta, poi per il 50%. Chiedi alla tua ASL come si applica da voi."
+    ],
+    [
+     "Cosa non è l'ADI",
+     "Le visite sono programmate e di giorno: in un'azienda lombarda, di norma, dalle 8 alle 16.15. L'ADI non sostituisce la guardia medica né il pronto soccorso, e affianca la famiglia senza sostituirla. Per l'aiuto nelle faccende di ogni giorno ci sono i servizi sociali del Comune."
+    ]
+   ],
+   "errori": [
+    "Aspettare il giorno della dimissione per chiedere: se ne parla prima, con il reparto o con il medico di famiglia.",
+    "Pensare che l'ADI sia un'assistenza per tutto il giorno: sono visite programmate, secondo il piano.",
+    "Non dire niente quando le cose cambiano: se la situazione peggiora o migliora, avvisa il medico di famiglia e il riferimento dell'équipe."
+   ],
+   "checklist": [
+    "Medico di famiglia informato",
+    "Richiesta di attivazione fatta",
+    "Lettere di dimissione e lista delle medicine pronte",
+    "Valutazione fatta",
+    "PAI letto e concordato",
+    "Nome e numero del riferimento dell'équipe",
+    "Giorni e orari delle visite in calendario"
+   ],
+   "fonti": [
+    "AN-12",
+    "AN-11",
+    "AN-13",
+    "AN-14"
+   ],
+   "avvertenza": "Informazioni generali tratte dal decreto sui livelli essenziali di assistenza (DPCM 12 gennaio 2017) e dalle pagine della Regione Piemonte, dell'ATS Brianza e dell'ASST Ovest Milanese, aggiornate a novembre 2026. Ogni Regione e ogni ASL organizza le cure domiciliari a modo suo: per il vostro caso il riferimento è il medico di famiglia o il distretto della ASL.",
+   "domanda": "Come si attiva l'assistenza domiciliare integrata",
+   "strumento": "gestionale",
+   "chiavi_ricerca": "adi assistenza domiciliare integrata cure domiciliari infermiere a casa a domicilio fisioterapista oss operatore dimissione protetta dimesso ospedale pai piano assistenziale valutazione distretto asl allettato non esce di casa",
+   "correlate": [
+    "ausili-dalla-asl",
+    "centro-diurno-anziani",
+    "lista-medicine-genitore-anziano"
+   ]
+  },
+  {
+   "slug": "ausili-dalla-asl",
+   "categoria": "Organizzarsi",
+   "argomento": "anziani",
+   "per": [
+    "anziano",
+    []
+   ],
+   "data": "2026-11-13",
+   "titolo": "Gli ausili dalla ASL: letto, carrozzina, deambulatore, materasso antidecubito, pannoloni",
+   "titolo_seo": "Ausili dalla ASL per anziani: chi li prescrive e come averli",
+   "sommario": "Il Servizio sanitario fornisce, a chi ne ha diritto, molti ausili per la casa e i presidi per l'incontinenza. Chi ne ha diritto, chi li prescrive, come arrivano a casa e quando vanno restituiti. Le regole pratiche cambiano da Regione a Regione: qui trovi quelle comuni e alcuni esempi.",
+   "tempo": "In Lombardia, di norma, 10 giorni per gli ausili per la casa",
+   "serve": "La prescrizione del medico; il verbale di invalidità, se c'è; la tessera sanitaria",
+   "perche_titolo": "Chi ne ha diritto",
+   "perche": [
+    "Il decreto sui livelli essenziali di assistenza (LEA) garantisce protesi, ortesi e ausili all'interno di un piano riabilitativo-assistenziale. Ne hanno diritto, tra gli altri, le persone con invalidità civile riconosciuta; chi è in attesa della visita di invalidità, se lo specialista che prescrive attesta che l'ausilio è necessario e urgente; chi è ricoverato, se il medico del reparto certifica una menomazione grave e permanente. In Lombardia anche chi ha una grave disabilità temporanea ed è assistito a casa.",
+    "I presidi per l'incontinenza, come i pannoloni, sono un capitolo a parte, l'assistenza integrativa: spettano a chi ha un'incontinenza grave e cronica, certificata da un medico specialista del Servizio sanitario.",
+    "Chi prescrive, a quale ufficio rivolgersi e i tempi cambiano da Regione a Regione. Qui trovi le regole comuni e, come esempi, quelle di Lombardia, Piemonte, Friuli Venezia Giulia e dell'ASL di Salerno."
+   ],
+   "passi": [
+    [
+     "Parti dal medico di famiglia",
+     "Spiegagli cosa serve e perché. In Lombardia gli ausili per la casa (letto, materasso antidecubito, sollevatore, carrozzina di serie, sedia per WC e doccia, rialzo del water) li può prescrivere il medico di famiglia o lo specialista. In Piemonte e in Friuli Venezia Giulia, di norma, la prescrizione la fa un medico specialista; in Piemonte, per chi è in cure domiciliari, alcuni presidi li prescrive il medico di famiglia."
+    ],
+    [
+     "Ausili su misura: serve lo specialista",
+     "Per un ausilio personalizzato, come una carrozzina su misura, in Lombardia il medico di famiglia fa un'impegnativa per la visita, e poi uno specialista del Servizio sanitario scrive la prescrizione. Si sceglie un fornitore autorizzato dagli elenchi dell'ATS."
+    ],
+    [
+     "La prescrizione va all'ufficio protesica",
+     "Ogni ASL ha un ufficio di assistenza protesica, che riceve la prescrizione, autorizza la fornitura e la organizza. In Piemonte, se il verbale di invalidità è stato fatto da un'altra ASL o da un'altra Regione, va portato insieme alla prescrizione."
+    ],
+    [
+     "Tempi e consegna",
+     "In Lombardia gli ausili per la casa arrivano, di norma, entro 10 giorni dalla richiesta. Quelli su misura arrivano entro i tempi previsti dalle norme, fino a 90 giorni per i più complessi; poi il medico che li ha prescritti fa il collaudo, su appuntamento."
+    ],
+    [
+     "Cosa è gratis, e cosa no",
+     "Per chi ne ha diritto la fornitura è a carico del Servizio sanitario. Se volete un modello diverso da quello previsto, per scelta o per comodità, il medico lo prescrive spiegando il motivo, la ASL lo autorizza e la differenza di prezzo resta a vostro carico."
+    ],
+    [
+     "In prestito, da restituire",
+     "In Lombardia gli ausili non personalizzati si danno in comodato d'uso gratuito: non si possono modificare e vanno restituiti quando non servono più, per esempio se la persona entra in una struttura residenziale o cambia residenza."
+    ],
+    [
+     "Pannoloni e altri presidi per l'incontinenza",
+     "Serve che un medico specialista del Servizio sanitario certifichi l'incontinenza. All'ASL di Salerno, per esempio, il medico di famiglia prescrive una visita specialistica in una struttura pubblica; lo specialista prescrive il tipo di presidio, per non più di un anno; con la prescrizione e la tessera sanitaria si va all'ufficio del distretto. La consegna è a casa, ogni tre mesi. Le prescrizioni di medici privati non sono accettate."
+    ],
+    [
+     "Conserva le carte",
+     "Nella cartellina: copia della prescrizione e dell'autorizzazione, data di consegna, scadenza, numero dell'ufficio protesica. Servono per i rinnovi e per la restituzione."
+    ]
+   ],
+   "errori": [
+    "Comprare subito un ausilio da soli: prima chiedi al medico se lo fornisce la ASL.",
+    "Farsi prescrivere i pannoloni da un medico privato: serve la certificazione di uno specialista del Servizio sanitario.",
+    "Modificare un ausilio avuto in prestito: non si può, e va restituito com'è.",
+    "Dimenticare la scadenza della prescrizione: segna la data in calendario, prima che finisca."
+   ],
+   "checklist": [
+    "Bisogno spiegato al medico di famiglia",
+    "Prescrizione fatta, dal medico o dallo specialista",
+    "Verbale di invalidità, o domanda in corso, a portata di mano",
+    "Prescrizione consegnata all'ufficio protesica della ASL",
+    "Data di consegna e numero dell'ufficio annotati",
+    "Per i pannoloni: visita e prescrizione dello specialista",
+    "Scadenza della prescrizione in calendario",
+    "Elenco degli ausili in prestito da restituire"
+   ],
+   "fonti": [
+    "AN-12",
+    "AN-16",
+    "AN-17",
+    "AN-18",
+    "AN-19"
+   ],
+   "avvertenza": "Informazioni generali tratte dal decreto sui livelli essenziali di assistenza (DPCM 12 gennaio 2017) e dalle pagine delle Regioni Lombardia, Piemonte e Friuli Venezia Giulia e dell'ASL di Salerno, aggiornate a novembre 2026. Chi prescrive, moduli e tempi cambiano da Regione a Regione e da ASL ad ASL: il riferimento è l'ufficio di assistenza protesica della vostra ASL. Quale ausilio serve lo decide il medico.",
+   "domanda": "Come avere gli ausili dalla ASL",
+   "strumento": "gestionale",
+   "chiavi_ricerca": "ausili ausilio protesica letto ortopedico articolato sponde carrozzina sedia a rotelle deambulatore girello materasso antidecubito piaghe sollevatore pannoloni pannolone traverse incontinenza presidi comodato prestito asl gratis prescrizione nomenclatore",
+   "correlate": [
+    "assistenza-domiciliare-integrata",
+    "invalidita-civile-anziani",
+    "prevenire-cadute-in-casa"
+   ]
+  },
+  {
+   "slug": "telesoccorso-e-servizi-del-comune",
+   "categoria": "Organizzarsi",
+   "argomento": "anziani",
+   "per": [
+    "anziano",
+    []
+   ],
+   "data": "2026-11-13",
+   "titolo": "Telesoccorso, pasti a domicilio, trasporto: i servizi del Comune per un genitore che vive solo",
+   "titolo_seo": "Telesoccorso e servizi del Comune per anziani soli",
+   "sommario": "Quando un genitore vive da solo, il Comune può dare una mano: il telesoccorso con un pulsante d'allarme, l'aiuto in casa, i pasti, il trasporto per le visite. Cosa si trova di solito, a chi chiedere e cosa domandare ai servizi sociali.",
+   "tempo": "Una telefonata ai servizi sociali; poi, per alcuni servizi, una valutazione",
+   "serve": "Documento e tessera sanitaria del genitore; l'ISEE, se il Comune lo chiede",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "I servizi per gli anziani che vivono a casa li organizzano i Comuni, spesso insieme alla ASL e alle associazioni del territorio. Per questo cambiano da città a città: nome, costo, tempi e requisiti. Di solito la porta d'ingresso è una sola: i servizi sociali del Comune di residenza, oppure lo sportello unico di accesso del distretto.",
+    "Qui trovi cosa si trova di solito, con due esempi dichiarati: la Regione Veneto e il Comune di Livorno, un capoluogo di provincia. Nel vostro Comune i servizi possono avere un altro nome, o non esserci tutti: chiedere non costa nulla."
+   ],
+   "passi": [
+    [
+     "Chiama i servizi sociali del Comune",
+     "Cerca sul sito del Comune la pagina dei servizi sociali o dello sportello sociale, oppure chiama il centralino. A Livorno, per esempio, la porta d'accesso ai servizi socio-sanitari si chiama Punto Insieme. Per essere seguiti dal servizio sociale serve, di norma, la residenza nel Comune."
+    ],
+    [
+     "Il telesoccorso",
+     "È un apparecchio con un pulsante d'allarme, collegato a una centrale attiva 24 ore su 24. In Veneto c'è anche il telecontrollo: due volte a settimana la centrale chiama la persona per sapere come sta e per provare l'apparecchio. In Veneto il servizio è gratuito e si chiede ai servizi sociali del Comune o al distretto socio-sanitario; a Livorno l'attivazione si chiede al Punto Insieme."
+    ],
+    [
+     "L'assistenza domiciliare del Comune",
+     "È diversa dall'assistenza domiciliare integrata della ASL: è un aiuto nelle attività di ogni giorno. In Veneto comprende, tra l'altro, lavanderia, preparazione dei pasti e trasporto. A Livorno comprende assistenza alla persona, pulizia della casa, accompagnamento e pratiche, con una quota a carico della famiglia calcolata sull'ISEE."
+    ],
+    [
+     "I pasti",
+     "Si chiedono ai servizi sociali. In Veneto la preparazione dei pasti è tra le attività dell'assistenza domiciliare; a Livorno i pasti caldi a casa fanno parte di un progetto per gli anziani fragili; in Piemonte i pasti a domicilio sono tra gli interventi per gli anziani non autosufficienti, dopo la valutazione della ASL."
+    ],
+    [
+     "Il trasporto per visite e commissioni",
+     "In Veneto c'è un trasporto gratuito per persone fragili, il progetto STACCO, gestito da enti del Terzo settore in diverse province: accompagna a cure, pratiche e attività. A Livorno trasporto e accompagnamento alle visite li offrono associazioni di volontariato e un progetto per gli anziani fragili. Chiedi ai servizi sociali chi lo fa nella vostra zona."
+    ],
+    [
+     "Valutazione e costi",
+     "Per alcuni servizi serve una valutazione dei bisogni, fatta dall'assistente sociale o da un'unità di valutazione insieme alla ASL. Alcuni servizi chiedono una quota calcolata sull'ISEE: tienilo aggiornato."
+    ],
+    [
+     "Cosa chiedere, in una telefonata",
+     "Quali servizi ci sono per un anziano che vive solo. Come si fa la domanda e quali documenti servono. Se serve una valutazione e quanto si aspetta. Quanto costa e se dipende dall'ISEE. Chi è l'assistente sociale di riferimento."
+    ],
+    [
+     "Scrivi tutto",
+     "Annota il nome di chi ti ha risposto, la data, cosa ti ha detto e i prossimi passi. Se siete più fratelli, tenete gli appunti in un posto che vedete tutti."
+    ]
+   ],
+   "errori": [
+    "Confondere i servizi del Comune con l'assistenza domiciliare della ASL: sono due cose diverse, con porte d'ingresso diverse.",
+    "Aspettare un'emergenza per chiedere: valutazioni e liste d'attesa richiedono tempo.",
+    "Non avere un ISEE aggiornato quando il servizio lo chiede."
+   ],
+   "checklist": [
+    "Servizi sociali del Comune contattati",
+    "Telesoccorso: chiesto se c'è e come si attiva",
+    "Aiuto in casa: chiesto",
+    "Pasti a domicilio: chiesti",
+    "Trasporto per le visite: chiesto",
+    "ISEE aggiornato, se serve",
+    "Nome dell'assistente sociale di riferimento"
+   ],
+   "fonti": [
+    "AN-20",
+    "AN-21",
+    "AN-15"
+   ],
+   "avvertenza": "Informazioni generali, aggiornate a novembre 2026. Gli esempi vengono dalle pagine della Regione Veneto e della Regione Piemonte e dalla guida ai servizi per gli anziani del Comune di Livorno (maggio 2024): ogni Comune decide quali servizi offrire, con quali requisiti e costi. Il riferimento sono i servizi sociali del vostro Comune.",
+   "domanda": "Quali servizi dà il Comune a un anziano solo",
+   "strumento": "gestionale",
+   "chiavi_ricerca": "telesoccorso teleassistenza telecontrollo pulsante allarme anziano solo sola vive da solo sola in casa servizi sociali comune assistente sociale pasti a domicilio trasporto sociale accompagnamento sad assistenza domiciliare comunale aiuto in casa isee",
+   "correlate": [
+    "centro-diurno-anziani",
+    "assistenza-domiciliare-integrata",
+    "badante-in-regola"
+   ]
+  },
+  {
+   "slug": "centro-diurno-anziani",
+   "categoria": "Organizzarsi",
+   "argomento": "anziani",
+   "per": [
+    "anziano",
+    []
+   ],
+   "data": "2026-11-13",
+   "titolo": "Il centro diurno per anziani: cos'è, chi ci va, come si chiede e quanto costa",
+   "titolo_seo": "Centro diurno per anziani: come si accede e quanto costa",
+   "sommario": "Di giorno al centro, la sera a casa. Il centro diurno accoglie anziani non autosufficienti, anche in parte, con cure, attività e compagnia, e alleggerisce la famiglia. Si chiede con una valutazione della ASL; il costo si divide tra Servizio sanitario e famiglia, e il Comune può aiutare in base all'ISEE.",
+   "tempo": "In Piemonte la valutazione arriva entro 90 giorni; poi può esserci una lista d'attesa",
+   "serve": "L'impegnativa del medico di famiglia; l'ISEE; documento e tessera sanitaria",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Il centro diurno è un servizio «semiresidenziale»: la persona ci passa la giornata e la sera torna a casa. Secondo il decreto sui livelli essenziali di assistenza, offre alle persone non autosufficienti con bisogni sanitari non elevati trattamenti di lungoassistenza, di recupero e di mantenimento delle capacità, compresi interventi di sollievo. La Regione Veneto lo descrive come un'accoglienza di giorno che permette di restare nel proprio ambiente familiare e riduce il carico di cura della famiglia.",
+    "Per questi servizi il Servizio sanitario paga il 50% della tariffa giornaliera; l'altra metà è a carico della persona, con un aiuto del Comune se il reddito non basta. Ci sono anche centri dedicati alle persone con Alzheimer o con altre demenze, che hanno valutazioni e regole proprie."
+   ],
+   "passi": [
+    [
+     "Chiedi la valutazione",
+     "Si parte da una valutazione dei bisogni sanitari e sociali. In Piemonte la chiede la persona, o chi la rappresenta, all'Unità di valutazione geriatrica (UVG) del distretto della ASL, attraverso lo sportello unico di accesso. Servono, tra l'altro, l'impegnativa del medico di famiglia e la ricevuta della richiesta di ISEE. In Veneto ci si rivolge al distretto socio-sanitario dell'Azienda ULSS, oppure al Comune."
+    ],
+    [
+     "Aspetta l'esito",
+     "In Piemonte l'UVG risponde entro 90 giorni e scrive un progetto individuale; il punteggio stabilisce anche la priorità. A Livorno, dopo la valutazione, si entra secondo una graduatoria."
+    ],
+    [
+     "Visitate il centro insieme",
+     "Chiedete di vederlo e di avere la carta dei servizi: orari, attività, pasti, trasporto, cosa portare. Andateci insieme: il centro è per lui o per lei."
+    ],
+    [
+     "Capire quanto si paga",
+     "In Piemonte la retta è uguale in tutta la Regione: il 50%, la quota sanitaria, lo paga la ASL; l'altro 50%, la quota sociale, la persona. Se la valutazione sull'ISEE dice che il reddito non basta, il Comune integra la quota o la paga tutta. A Livorno la retta mensile del centro diurno è calcolata sull'ISEE. Chiedi sempre l'importo per iscritto prima di cominciare."
+    ],
+    [
+     "Alzheimer e altre demenze",
+     "Ci sono centri diurni dedicati, per chi ha una diagnosi accertata. A Livorno l'accesso al centro diurno Alzheimer passa da un'unità di valutazione dedicata, che stila una graduatoria. Chiedi alla ASL come funziona da voi."
+    ],
+    [
+     "I primi giorni",
+     "Un posto nuovo e persone nuove: è normale che serva un po' di tempo. Parlatene con gli operatori del centro, che conoscono questo passaggio."
+    ],
+    [
+     "Se le cose cambiano",
+     "Se il centro non basta più, o non serve più, si torna dal medico e dall'unità di valutazione. In Piemonte, per esempio, ci sono anche aiuti a casa, ricoveri temporanei di sollievo fino a 30 giorni all'anno e posti in RSA."
+    ]
+   ],
+   "errori": [
+    "Cercare un posto senza la valutazione della ASL: senza, la quota sanitaria non è garantita.",
+    "Non fare l'ISEE: senza, il Comune non può valutare un aiuto sulla quota sociale.",
+    "Cominciare senza conoscere la retta: chiedila per iscritto."
+   ],
+   "checklist": [
+    "Medico di famiglia informato, impegnativa chiesta",
+    "Domanda di valutazione presentata",
+    "ISEE richiesto",
+    "Esito e progetto individuale ricevuti",
+    "Centro visitato insieme",
+    "Retta e quota a carico scritte",
+    "Orari e trasporto organizzati"
+   ],
+   "fonti": [
+    "AN-12",
+    "AN-15",
+    "AN-20",
+    "AN-21"
+   ],
+   "avvertenza": "Informazioni generali tratte dal decreto sui livelli essenziali di assistenza (DPCM 12 gennaio 2017), dalle pagine della Regione Piemonte e della Regione Veneto e dalla guida ai servizi per gli anziani del Comune di Livorno, aggiornate a novembre 2026. Nomi, percorsi e rette cambiano da Regione a Regione: il riferimento è il distretto della vostra ASL o i servizi sociali del Comune.",
+   "domanda": "Come funziona il centro diurno per anziani",
+   "strumento": "gestionale",
+   "chiavi_ricerca": "centro diurno centri diurni cdi integrato anziani giornata alzheimer demenza retta costo quanto costa quota sanitaria sociale uvg uvm valutazione geriatrica semiresidenziale sollievo",
+   "correlate": [
+    "telesoccorso-e-servizi-del-comune",
+    "assistenza-domiciliare-integrata",
+    "invalidita-civile-anziani"
+   ]
+  },
+  {
+   "slug": "visita-dal-medico-di-famiglia-anziano",
+   "categoria": "Organizzarsi",
+   "argomento": "anziani",
+   "per": [
+    "anziano",
+    []
+   ],
+   "data": "2026-11-13",
+   "titolo": "Dal medico di famiglia con un genitore anziano: cosa portare e cosa chiedere",
+   "titolo_seo": "Visita dal medico di famiglia per un anziano: cosa portare",
+   "sommario": "Una visita preparata a casa dura lo stesso, ma rende di più. La lista delle medicine aggiornata, poche domande in ordine, le novità da raccontare. E alla fine, una frase per essere sicuri di aver capito.",
+   "tempo": "15 minuti prima, 5 minuti dopo",
+   "serve": "La lista delle medicine, la tessera sanitaria, gli ultimi referti, un foglio o il telefono",
+   "perche": [
+    "Quando il medico deve decidere una cura nuova o un cambio di terapia, ha bisogno di sapere con precisione tutto quello che la persona prende già: medicine, integratori, prodotti erboristici. Le indicazioni regionali chiedono di avere sempre con sé una lista aggiornata e di saperla descrivere con precisione.",
+    "L'Agenzia italiana del farmaco riporta un consiglio semplice: a ogni visita, ripassare con il medico tutte le medicine, anche quelle senza ricetta e gli integratori, per capire se servono ancora; e almeno una volta all'anno fare una revisione completa.",
+    "La visita è di tuo padre o di tua madre. Tu puoi aiutare a preparare, a ricordare e a prendere appunti: domande e decisioni restano sue, insieme al medico."
+   ],
+   "passi": [
+    [
+     "Aggiornate la lista delle medicine",
+     "Con le confezioni davanti, controllate che la lista sia giusta: nome, quando si prende, chi l'ha prescritta e, a parte, integratori e prodotti erboristici. Come farla lo spiega la guida sulla lista delle medicine."
+    ],
+    [
+     "Scrivete le domande, la più importante per prima",
+     "Tre o quattro, non di più. Scrivetele insieme, con le parole di chi va dal medico. Le altre si tengono per la volta dopo."
+    ],
+    [
+     "Annotate cosa è cambiato",
+     "Da quando, quante volte, in quali momenti: sonno, appetito, umore, memoria, come si muove in casa. Poche righe, senza interpretare: le valutazioni le fa il medico."
+    ],
+    [
+     "Se c'è stata una caduta, va detto",
+     "Anche se non si è fatto male. Secondo l'Istituto Superiore di Sanità, meno della metà delle persone anziane che cadono ne parla con il proprio medico."
+    ],
+    [
+     "Portate le carte giuste",
+     "Tessera sanitaria, ultimi referti e lettere di dimissione, piani terapeutici, il verbale di invalidità se c'è. Se usate il Fascicolo sanitario elettronico, sapere dove si trovano i documenti aiuta."
+    ],
+    [
+     "Le domande che spesso si dimenticano",
+     "Le medicine vanno ancora tutte bene così? Ci sono vaccinazioni da fare quest'anno? Quando ci rivediamo, e per cosa? Chi chiamo se c'è un dubbio prima di allora?"
+    ],
+    [
+     "Durante la visita, prendi appunti",
+     "Scrivi le risposte. Se qualcosa non è chiaro, chiedete di ripeterlo con parole semplici: è normale."
+    ],
+    [
+     "Prima di uscire, riassumete",
+     "Una frase: «Quindi facciamo così, e ci risentiamo se…». Se cambia una medicina, correggete subito la lista e la data."
+    ]
+   ],
+   "errori": [
+    "Andare senza la lista delle medicine, o con una lista vecchia.",
+    "Parlare al posto del genitore: aiutalo a dire le cose, non dirle per lui.",
+    "Tacere integratori e prodotti erboristici: anche quelli vanno detti.",
+    "Uscire senza sapere quando ricontrollare."
+   ],
+   "checklist": [
+    "Lista delle medicine aggiornata, con gli integratori",
+    "Domande scritte, la più importante per prima",
+    "Poche righe su cosa è cambiato",
+    "Cadute recenti annotate",
+    "Tessera sanitaria, referti e lettere di dimissione",
+    "Risposte annotate",
+    "Lista corretta, con la data, se è cambiato qualcosa",
+    "Data del prossimo controllo"
+   ],
+   "fonti": [
+    "AN-28",
+    "AN-27",
+    "AN-01"
+   ],
+   "avvertenza": "Consigli organizzativi per prepararsi a una visita, con le indicazioni di Regione Lombardia, dell'Agenzia italiana del farmaco e dell'Istituto Superiore di Sanità lette a novembre 2026. Non sostituiscono il medico: dosi, cure e cambi di terapia si decidono solo con lui o con il farmacista.",
+   "domanda": "Cosa chiedere al medico di famiglia per un genitore anziano",
+   "strumento": "preparo",
+   "chiavi_ricerca": "visita medico di famiglia medico di base dottore curante anziano anziana domande cosa chiedere cosa portare appuntamento ambulatorio accompagnare mamma papà nonna nonno controllo revisione terapia",
+   "correlate": [
+    "lista-medicine-genitore-anziano",
+    "documenti-genitore-anziano",
+    "vaccinazioni-dopo-65-anni"
+   ]
+  },
+  {
+   "slug": "documenti-genitore-anziano",
+   "categoria": "Organizzarsi",
+   "argomento": "anziani",
+   "per": [
+    "anziano",
+    []
+   ],
+   "data": "2026-11-13",
+   "titolo": "I documenti di un genitore anziano da tenere in ordine: la lista",
+   "titolo_seo": "Documenti di un genitore anziano: la lista da tenere in ordine",
+   "sommario": "Tessera sanitaria, esenzioni, verbali, deleghe, contatti: le carte che servono di corsa, in un posto solo che conoscete almeno in due. Una lista da spuntare, una voce alla volta.",
+   "tempo": "Un'ora la prima volta, insieme; poi un controllo ogni sei mesi",
+   "serve": "Una cartellina con qualche busta, i documenti del genitore, il telefono per le foto",
+   "perche": [
+    "Quando serve un documento, di solito serve subito: dal medico, in ospedale, a uno sportello. Se le carte di un genitore stanno in più cassetti, o le conosce solo lui, ogni pratica diventa una ricerca.",
+    "Questa lista è la versione per un genitore anziano della cartellina di famiglia: stesse regole, un posto solo che conoscete almeno in due. Si fa insieme: i documenti sono suoi, e decide lui o lei chi può vederli."
+   ],
+   "passi": [
+    [
+     "Documento d'identità e tessera sanitaria",
+     "Una fotocopia di entrambi nella cartellina, con le date di scadenza scritte sulla prima pagina. La tessera sanitaria serve dal medico, per gli esami e in farmacia: se è scaduta o persa, c'è la scheda su come rifarla."
+    ],
+    [
+     "Esenzioni dal ticket",
+     "L'attestato o il codice di ogni esenzione, per reddito o per malattia, con la data di scadenza se c'è. Come funzionano lo spiega la guida sull'esenzione dal ticket."
+    ],
+    [
+     "Verbali di invalidità e di legge 104",
+     "Il verbale arriva in due copie: una con tutti i dati sanitari, l'altra con il solo giudizio finale. Conservatele entrambe e scrivete sulla busta la data di revisione, se c'è."
+    ],
+    [
+     "Deleghe attive",
+     "Quali deleghe ci sono, presso quale ente e fino a quando. La delega dell'INPS, per esempio, può avere una data di scadenza oppure valere finché il genitore non la revoca. Le deleghe sono spiegate nella guida sulle pratiche online."
+    ],
+    [
+     "Lista delle medicine e piani terapeutici",
+     "La lista aggiornata delle medicine, con la data, e una copia dei piani terapeutici in corso. Come scriverla lo spiega la guida dedicata."
+    ],
+    [
+     "Referti e lettere di dimissione",
+     "Gli ultimi, dal più recente al più vecchio. Non tutto: quelli che servono alle prossime visite. Il resto può stare nel Fascicolo sanitario elettronico o in un archivio a parte."
+    ],
+    [
+     "Ausili e servizi attivi",
+     "Gli ausili avuti dalla ASL, con la data di consegna e il numero dell'ufficio protesica; i servizi attivi, come assistenza domiciliare, telesoccorso o centro diurno, con il nome e il numero di chi li segue."
+    ],
+    [
+     "Un foglio di contatti",
+     "Medico di famiglia, farmacia abituale, guardia medica della zona, specialisti che lo seguono, assistente sociale, badante, figli e vicini di fiducia. Con i numeri, scritti grandi."
+    ],
+    [
+     "Dove sta, e chi lo sa",
+     "Un posto fisso, che il genitore e almeno un'altra persona conoscono. Se il genitore è d'accordo, una foto delle pagine principali sul telefono di chi lo accompagna più spesso."
+    ],
+    [
+     "Un controllo ogni sei mesi",
+     "Scadenze, esenzioni, deleghe e medicine si ripassano insieme due volte all'anno, e dopo ogni ricovero o visita importante."
+    ]
+   ],
+   "errori": [
+    "Fare la cartellina senza il genitore: i documenti sono suoi.",
+    "Dimenticare le scadenze: carta d'identità, esenzioni, deleghe e revisioni hanno date diverse.",
+    "Mandare foto di documenti sanitari nelle chat di gruppo: meglio darle solo a chi servono."
+   ],
+   "checklist": [
+    "Copia del documento d'identità, con la scadenza",
+    "Copia della tessera sanitaria, con la scadenza",
+    "Esenzioni dal ticket, con i codici",
+    "Verbali di invalidità o di legge 104, in tutte e due le copie",
+    "Deleghe attive, con l'ente e la scadenza",
+    "Lista delle medicine e piani terapeutici",
+    "Ultimi referti e lettere di dimissione",
+    "Ausili e servizi attivi, con i numeri",
+    "Foglio dei contatti",
+    "Posto fisso, conosciuto da almeno due persone"
+   ],
+   "fonti": [
+    "AN-29",
+    "AN-30"
+   ],
+   "avvertenza": "Consigli organizzativi, con le regole dell'INPS su verbali e deleghe lette a novembre 2026. Per esenzioni, verbali e deleghe valgono le guide dedicate e, per il vostro caso, la ASL, l'INPS o un patronato.",
+   "domanda": "Quali documenti tenere in ordine per un genitore anziano",
+   "strumento": "gestionale",
+   "chiavi_ricerca": "documenti carte cartellina ordine archivio raccogliere tessera sanitaria carta d'identità esenzioni verbale verbali deleghe contatti referti genitore anziano anziana mamma papà nonna nonno lista",
+   "correlate": [
+    "cartellina-di-famiglia",
+    "pratiche-online-per-un-genitore",
+    "esenzione-ticket"
+   ]
+  },
+  {
+   "slug": "caregiver-familiare-diritti",
+   "categoria": "Organizzarsi",
+   "argomento": "anziani",
+   "per": [
+    "anziano",
+    []
+   ],
+   "data": "2026-11-13",
+   "titolo": "Il caregiver familiare: chi è per la legge, i diritti di oggi e la legge in discussione",
+   "titolo_seo": "Caregiver familiare: diritti, congedo straordinario e nuova legge",
+   "sommario": "Chi si prende cura di un genitore con una disabilità grave ha già alcuni diritti sul lavoro: i permessi della legge 104 e il congedo straordinario pagato, fino a due anni. Una legge nuova sui caregiver è in Parlamento: cosa prevede e perché, oggi, non vale ancora.",
+   "tempo": "15 minuti per orientarsi; le domande si fanno all'INPS o con un patronato",
+   "serve": "Il verbale di disabilità grave del genitore; SPID, CIE o CNS, oppure un patronato",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Per la legge di oggi il caregiver familiare è chi assiste e si prende cura del coniuge, della persona unita civilmente o del convivente di fatto, di un familiare o di un affine entro il secondo grado, e in alcuni casi entro il terzo. La persona assistita, per malattia, infermità o disabilità, non è autosufficiente e ha una disabilità grave riconosciuta con la legge 104, oppure riceve l'indennità di accompagnamento. La definizione è nella legge 205 del 2017, articolo 1, comma 255.",
+    "I diritti concreti oggi in vigore, per chi lavora come dipendente, sono soprattutto i permessi della legge 104 e il congedo straordinario. Una legge che riconosce e tutela i caregiver è stata approvata dalla Camera il 14 ottobre 2026 ed è all'esame del Senato: finché non sarà approvata anche lì e pubblicata in Gazzetta Ufficiale, non è in vigore."
+   ],
+   "passi": [
+    [
+     "Prima serve il verbale di disabilità grave",
+     "Permessi e congedo straordinario si chiedono per assistere una persona con disabilità in situazione di gravità, riconosciuta dalla Commissione medica (legge 104, articolo 3, comma 3). Se il verbale non c'è ancora, la guida sull'invalidità civile spiega il percorso."
+    ],
+    [
+     "I permessi della legge 104",
+     "Tre giorni di permesso pagato al mese, anche a ore, per i lavoratori dipendenti che assistono un familiare con disabilità grave. Chi può chiederli e come si dividono tra fratelli lo spiega la guida sui permessi della legge 104."
+    ],
+    [
+     "Il congedo straordinario: fino a due anni, pagato",
+     "È un periodo di assenza dal lavoro retribuita, per i dipendenti che assistono un familiare con disabilità grave. Dura al massimo due anni in tutta la vita lavorativa, anche se si assistono più familiari. I dipendenti privati fanno la domanda all'INPS; i dipendenti pubblici al proprio datore di lavoro."
+    ],
+    [
+     "Chi può chiederlo, in quale ordine",
+     "Prima il coniuge convivente, la persona unita civilmente o il convivente di fatto; poi il padre o la madre della persona con disabilità; poi un figlio convivente; poi un fratello o una sorella conviventi; infine un parente o affine entro il terzo grado convivente. Si passa al familiare successivo solo se quelli prima mancano, sono morti o hanno malattie invalidanti."
+    ],
+    [
+     "Bisogna vivere insieme",
+     "Per i figli, i fratelli e gli altri parenti serve la convivenza con la persona assistita: deve cominciare entro l'inizio del congedo e durare per tutto il periodo."
+    ],
+    [
+     "Quanto si prende",
+     "L'indennità è pari all'ultima retribuzione, calcolata sulle voci fisse e continuative, entro un tetto che cambia ogni anno: per il 2026 l'indennità massima è di 43.486 euro all'anno, cioè 119,14 euro al giorno. Il periodo è coperto da contributi figurativi, validi per la pensione, ma non fa maturare ferie, tredicesima e TFR. Di norma la paga il datore di lavoro, che poi la recupera dall'INPS."
+    ],
+    [
+     "Chi non può averlo",
+     "Non spetta ai lavoratori domestici, ai lavoratori a domicilio, agli agricoli giornalieri, ai lavoratori autonomi e ai parasubordinati. Non spetta, di norma, nemmeno se la persona assistita è ricoverata a tempo pieno, 24 ore su 24, in una struttura che le dà assistenza continuativa: le eccezioni, come le visite e le terapie fuori dalla struttura, sono nella pagina dell'INPS."
+    ],
+    [
+     "Come si fa la domanda",
+     "Online sul sito dell'INPS, con un patronato, oppure chiamando il Contact Center: 803 164 da rete fissa, 06 164 164 da cellulare. Il congedo decorre dalla data della domanda. Ogni variazione va comunicata subito all'INPS e al datore di lavoro."
+    ],
+    [
+     "La legge in discussione: cosa prevede",
+     "Il testo approvato dalla Camera, con modifiche, il 14 ottobre 2026 (A.C. 2789, ora al Senato come A.S. 2163) prevede, tra l'altro: il riconoscimento del caregiver attraverso una piattaforma dell'INPS; fino a tre caregiver per ogni persona assistita; un contributo per il caregiver «prevalente», con un ISEE fino a 25.000 euro e un reddito da lavoro non oltre 3.000 euro lordi all'anno, fino a 1.200 euro a trimestre nei limiti delle risorse; più flessibilità di orario e di lavoro agile. Nel testo della Commissione, prima delle modifiche dell'Aula, il caregiver «prevalente» è chi convive con la persona e la assiste per almeno 91 ore a settimana, e il contributo parte dal 2027. Il Senato può ancora cambiare il testo: fino all'approvazione definitiva, niente di questo si può chiedere."
+    ],
+    [
+     "Dove farsi aiutare",
+     "Per capire cosa spetta nel vostro caso, e per fare le domande, possono aiutarti un patronato, l'ufficio del personale o l'INPS. Alcuni Comuni hanno aiuti propri per chi assiste un familiare a casa: a Livorno, per esempio, c'è un assegno di cura per le persone dai 65 anni non autosufficienti, con un ISEE fino a 15.000 euro. Chiedi ai servizi sociali del vostro Comune."
+    ]
+   ],
+   "errori": [
+    "Credere che il contributo per i caregiver si possa già chiedere: la legge è ancora in Parlamento.",
+    "Chiedere il congedo straordinario senza convivere: per figli e fratelli la convivenza è un requisito.",
+    "Pensare di avere due anni per ogni familiare: il limite vale per tutta la vita lavorativa.",
+    "Dimenticare di comunicare le variazioni all'INPS e al datore di lavoro."
+   ],
+   "checklist": [
+    "Verbale di disabilità grave del genitore",
+    "Permessi della legge 104 chiesti, se servono",
+    "Ordine di priorità per il congedo verificato",
+    "Convivenza in regola, se serve",
+    "Domanda di congedo presentata",
+    "Datore di lavoro avvisato",
+    "Aiuti del Comune chiesti ai servizi sociali",
+    "Esame della legge sui caregiver da seguire"
+   ],
+   "fonti": [
+    "AN-23",
+    "AN-26",
+    "AN-22",
+    "AN-24",
+    "AN-25",
+    "AN-21"
+   ],
+   "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS, dai documenti della Camera dei deputati e dalla guida ai servizi del Comune di Livorno, aggiornate al 13 novembre 2026. Gli importi del congedo cambiano ogni anno: ricontrolleremo a gennaio 2027, e prima se la legge sui caregiver verrà approvata. Non è una consulenza: per il vostro caso rivolgetevi a un patronato, all'ufficio del personale o all'INPS.",
+   "domanda": "Quali diritti ha chi assiste un genitore",
+   "ricontrolla": "2027-01",
+   "strumento": "gestionale",
+   "chiavi_ricerca": "caregiver familiare familiari assistere genitore che assiste congedo straordinario due anni 2 anni retribuito pagato aspettativa lavoro convivenza contributo bonus caregiver 400 euro legge ddl senato camera diritti figlio figlia",
+   "correlate": [
+    "permessi-legge-104",
+    "invalidita-civile-anziani",
+    "indennita-di-accompagnamento"
+   ]
+  }
+ ],
+ "domande": [
+  {
+   "slug": "deambulatore-dalla-asl",
+   "gruppo": "anziani",
+   "domanda": "Il deambulatore lo passa la ASL?",
+   "risposta": "Sì, a chi ne ha diritto: la ASL fornisce deambulatori, carrozzine e altri ausili alle persone con invalidità civile riconosciuta, e in alcuni altri casi, con la prescrizione di un medico.",
+   "righe": [
+    {
+     "t": "In Friuli Venezia Giulia, per esempio, le aziende sanitarie forniscono pannoloni, cateteri, deambulatori e carrozzine. La prescrizione, di norma, la fa un medico specialista, e la fornitura va autorizzata dall'azienda sanitaria.",
+     "f": [
+      0
+     ],
+     "p": "«assicurano l'erogazione di protesi e ausili (pannoloni, cateteri, deambulatori, carrozzine, ecc.)»; «La prescrizione di protesi ed ausili viene, di norma, effettuata da un medico specialista»; «la fornitura è soggetta ad autorizzazione da parte delle Aziende Sanitarie»"
+    },
+    {
+     "t": "Oltre agli invalidi civili, il decreto sui livelli essenziali di assistenza comprende anche chi è in attesa della visita di invalidità, se lo specialista che prescrive attesta che l'ausilio è necessario e urgente.",
+     "f": [
+      1
+     ],
+     "p": "Art. 18, comma 1, lett. a) ed e): persone con invalidità civile; persone in attesa di accertamento se il «medico specialista prescrittore attesti la necessità e urgenza»."
+    },
+    {
+     "t": "In Lombardia gli ausili non fatti su misura si danno in comodato d'uso gratuito: non si possono modificare e vanno restituiti quando non servono più.",
+     "f": [
+      2
+     ],
+     "p": "Presidi non personalizzati in comodato d'uso gratuito; non modificabili; restituiti a fine utilizzo."
+    },
+    {
+     "t": "Da dove partire, nella tua Regione, te lo dice il medico di famiglia o l'ufficio protesica della ASL.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "ausili-dalla-asl"
+   ],
+   "schede": [],
+   "chiavi": "deambulatore girello ausilio ausili asl prestito gratis",
+   "fonti": [
+    {
+     "ente": "Regione Friuli Venezia Giulia",
+     "pagina": "Assistenza protesica: protesi e ausili",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/sistema-sociale-sanitario/FOGLIA31/",
+     "data": "2026-08-25"
+    },
+    {
+     "ente": "Gazzetta Ufficiale",
+     "pagina": "DPCM 12 gennaio 2017 sui livelli essenziali di assistenza (articoli 11, 18, 22 e 30)",
+     "url": "https://www.gazzettaufficiale.it/eli/id/2017/03/18/17A02015/sg",
+     "data": "2017-03-18"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Assistenza protesica",
+     "url": "https://www.regione.lombardia.it/sanita/farmaci-protesi-e-assistenza-integrata/assistenza-protesica",
+     "data": "2026-07-13"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "chi-chiede-assistenza-domiciliare",
+   "gruppo": "anziani",
+   "domanda": "Chi chiede l'assistenza domiciliare?",
+   "risposta": "Di solito il medico di famiglia: è lui a chiedere alla ASL di attivare le cure domiciliari. Quando un genitore esce dall'ospedale, può chiederle anche il medico del reparto, con la dimissione protetta.",
+   "righe": [
+    {
+     "t": "In Piemonte, per i problemi sanitari, la presa in carico passa dal medico di famiglia; poi la ASL fa una valutazione multidimensionale e scrive un piano assistenziale individuale.",
+     "f": [
+      0
+     ],
+     "p": "La presa in carico del MMG è necessaria per le problematiche sanitarie; cure subordinate a valutazione multidimensionale; definizione del Piano Assistenziale Individuale (PAI)."
+    },
+    {
+     "t": "In Lombardia le cure domiciliari si attivano su prescrizione del medico di famiglia o del medico di reparto alla dimissione protetta, anche dal pronto soccorso; di norma entro 72 ore. Il servizio è gratuito.",
+     "f": [
+      1
+     ],
+     "p": "«Su prescrizione del medico di medicina generale, del pediatra di libera scelta o del medico di reparto in caso di dimissione protetta, anche dal Pronto Soccorso»; attivazione di norma entro 72 ore; «Il servizio è gratuito.»"
+    },
+    {
+     "t": "Se non sai da dove cominciare, in Lombardia puoi rivolgerti anche al Punto unico di accesso o alla segreteria ADI della tua ASST. Nelle altre Regioni, chiedi al distretto della ASL.",
+     "f": [
+      2
+     ],
+     "p": "In alternativa si può contattare un Punto Unico di Accesso (PUA) o la segreteria organizzativa ADI."
+    }
+   ],
+   "guide": [
+    "assistenza-domiciliare-integrata"
+   ],
+   "schede": [],
+   "chiavi": "assistenza domiciliare adi cure domiciliari infermiere a casa chi la chiede attivare richiesta",
+   "fonti": [
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Cure domiciliari",
+     "url": "https://www.regione.piemonte.it/web/node/669",
+     "data": "2026-11-10"
+    },
+    {
+     "ente": "ATS Brianza",
+     "pagina": "Cure domiciliari e cure palliative",
+     "url": "https://www.ats-brianza.it/en/cure-domiciliari-cure-palliative.html",
+     "data": "2025-04-30"
+    },
+    {
+     "ente": "ASST Ovest Milanese",
+     "pagina": "Carta dei servizi dell'Assistenza domiciliare integrata e delle Cure domiciliari",
+     "url": "https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/254/paragrafi/14619/CARTA%20SERVIZI%202025%20ADI%20ASST%20OMI%2026%20MAR%20.pdf",
+     "data": "2025-03-24"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "adi-si-paga",
+   "gruppo": "anziani",
+   "domanda": "L'assistenza domiciliare integrata si paga?",
+   "risposta": "Le cure sanitarie no: le visite di medici, infermieri e fisioterapisti dell'assistenza domiciliare della ASL sono a carico del Servizio sanitario. Per l'aiuto nell'igiene e negli spostamenti, dopo i primi 30 giorni da una dimissione protetta, il Servizio sanitario paga il 50%.",
+   "righe": [
+    {
+     "t": "In Lombardia, per esempio, l'assistenza domiciliare integrata è gratuita, senza limiti di età o di reddito: nella carta dei servizi di un'azienda sanitaria lombarda l'unica eccezione è il ticket sui prelievi, per chi non è esente.",
+     "f": [
+      0
+     ],
+     "p": "Il servizio è gratuito, a carico del SSN; eccezione: ticket sui prelievi per i non esenti. Nessun limite di età o di reddito."
+    },
+    {
+     "t": "Secondo il decreto sui livelli essenziali di assistenza, l'aiuto infermieristico e l'assistenza tutelare, cioè l'operatore che aiuta nell'igiene e negli spostamenti, sono a carico del Servizio sanitario al 100% nei primi 30 giorni dopo una dimissione protetta, poi al 50%. Chiedi alla tua ASL come si applica da voi.",
+     "f": [
+      1
+     ],
+     "p": "Art. 22, comma 4: aiuto infermieristico e assistenza tutelare professionale a carico del SSN al 100% per i primi trenta giorni dopo la dimissione ospedaliera protetta, al 50% nei giorni successivi."
+    },
+    {
+     "t": "Diversa è l'assistenza domiciliare del Comune, che aiuta nelle faccende di ogni giorno: lì può esserci una quota da pagare. A Livorno, per esempio, è calcolata sull'ISEE.",
+     "f": [
+      2
+     ],
+     "p": "SAD: «Il servizio prevede una compartecipazione alla spesa da parte dell'utente, il cui importo è determinato sulla base dell'ISEE.»"
+    }
+   ],
+   "guide": [
+    "assistenza-domiciliare-integrata"
+   ],
+   "schede": [],
+   "chiavi": "adi assistenza domiciliare costo quanto costa si paga gratis gratuita infermiere a casa",
+   "fonti": [
+    {
+     "ente": "ASST Ovest Milanese",
+     "pagina": "Carta dei servizi dell'Assistenza domiciliare integrata e delle Cure domiciliari",
+     "url": "https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/254/paragrafi/14619/CARTA%20SERVIZI%202025%20ADI%20ASST%20OMI%2026%20MAR%20.pdf",
+     "data": "2025-03-24"
+    },
+    {
+     "ente": "Gazzetta Ufficiale",
+     "pagina": "DPCM 12 gennaio 2017 sui livelli essenziali di assistenza (articoli 11, 18, 22 e 30)",
+     "url": "https://www.gazzettaufficiale.it/eli/id/2017/03/18/17A02015/sg",
+     "data": "2017-03-18"
+    },
+    {
+     "ente": "Comune di Livorno",
+     "pagina": "«Socialità senza età»: guida alle attività e ai servizi per gli anziani",
+     "url": "https://trasparenza.comune.livorno.it/sites/trasparenza/files/servizi-erogati/Guida-Servizi-Attivita-Anziani-2024-20240530.pdf",
+     "data": "2024-05-30"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "antinfluenzale-gratis-dopo-65-anni",
+   "gruppo": "anziani",
+   "domanda": "Il vaccino contro l'influenza è gratis dopo i 65 anni?",
+   "risposta": "Sì. La vaccinazione antinfluenzale è offerta gratis alle persone anziane, e in diverse Regioni già prima: in Toscana e in Sicilia, per esempio, dai 60 anni; in Lombardia a tutti, dai 6 mesi di vita.",
+   "righe": [
+    {
+     "t": "Le regole di ogni stagione sono nella circolare del Ministero della Salute: per il 2026-2027 è del 23 giugno 2026. Il vaccino viene aggiornato ogni anno, per questo si rifà a ogni autunno.",
+     "f": [
+      0,
+      2
+     ],
+     "p": "Circolare «Prevenzione e controllo dell'influenza: raccomandazioni per la stagione 2026-2027» del 23 giugno 2026. Lombardia: il vaccino antinfluenzale viene aggiornato ogni anno."
+    },
+    {
+     "t": "In Toscana la campagna per chi ha 60 anni o più è partita il 14 ottobre 2026: si fa dal medico di famiglia, e chi ha 60 anni o più può prenotare anche nelle farmacie che aderiscono.",
+     "f": [
+      1
+     ],
+     "p": "Gratuita «a partire dai sessanta anni di età»; 14 ottobre 2026: adulti di 60 anni o più; prenotazione anche nelle farmacie convenzionate per le persone di 60 anni o più."
+    },
+    {
+     "t": "In Sicilia la campagna è rivolta a chi ha 60 anni o più e va dal 12 ottobre 2026 al 28 febbraio 2027.",
+     "f": [
+      3
+     ],
+     "p": "Soggetti «con età superiore o pari a 60 anni»; campagna dal 12 ottobre 2026 al 28 febbraio 2027."
+    },
+    {
+     "t": "Per date e luoghi nella tua Regione, chiedi al medico di famiglia.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "vaccinazioni-dopo-65-anni"
+   ],
+   "schede": [],
+   "chiavi": "vaccino antinfluenzale influenza gratis gratuito anziani over 65 60 anni quando",
+   "fonti": [
+    {
+     "ente": "Istituto Superiore di Sanità · EpiCentro",
+     "pagina": "Raccomandazioni del Ministero della Salute per la stagione influenzale 2026-2027",
+     "url": "https://www.epicentro.iss.it/influenza/raccomandazioni-ministero",
+     "data": "2026-07-30"
+    },
+    {
+     "ente": "Regione Toscana",
+     "pagina": "Vaccinazione antinfluenzale 2026/2027",
+     "url": "https://www.regione.toscana.it/-/vaccinazione-antinfluenzale-2026/2027",
+     "data": "2026-10-14"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Vaccinazioni per la popolazione a partire dai 65 anni",
+     "url": "https://www.regione.lombardia.it/sanita/wikivaccini/vaccinazioni-per-fascia-di-eta/vaccinazioni-per-popolazione-a-partire-dai-65-anni",
+     "data": "2026-09-09"
+    },
+    {
+     "ente": "Regione Siciliana",
+     "pagina": "Decreto sulla campagna di vaccinazione antinfluenzale 2026/2027",
+     "url": "https://regione.sicilia.it/index%2Ephp/system/files/2026-10/D.D.G.%20n.%201139.pdf",
+     "data": "2026-10"
+    }
+   ],
+   "c": "anziano",
+   "fa": [],
+   "medico": true
+  },
+  {
+   "slug": "vaccino-herpes-zoster-gratis-anziani",
+   "gruppo": "anziani",
+   "domanda": "Il vaccino contro il fuoco di Sant'Antonio è gratis per gli anziani?",
+   "risposta": "Sì, dai 65 anni. Il calendario nazionale offre la vaccinazione contro l'herpes zoster, il «fuoco di Sant'Antonio», a partire dall'anno in cui si compiono 65 anni, e prima alle persone con alcune malattie.",
+   "righe": [
+    {
+     "t": "Il calendario la offre ogni anno a chi compie 65 anni, con priorità, già dai 18 anni, alle persone a rischio.",
+     "f": [
+      0
+     ],
+     "p": "Nota 12: offrire la vaccinazione con priorità ai soggetti a rischio dai 18 anni e ogni anno alla coorte dei 65enni."
+    },
+    {
+     "t": "In Lombardia, per esempio, nel 2026 è gratuita per chi è nato entro il 31 dicembre 1961, cioè per chi ha 65 anni o più. Si fa in due volte, a due mesi di distanza.",
+     "f": [
+      1
+     ],
+     "p": "Offerta gratuitamente a partire dai 65 anni (nel 2026 i nati fino al 31/12/1961); herpes zoster: due dosi a distanza di 2 mesi."
+    },
+    {
+     "t": "In Lombardia si fa dal medico di famiglia, se aderisce alla campagna, oppure si prenota online al centro vaccinale.",
+     "f": [
+      1
+     ],
+     "p": "Pneumococco e herpes zoster dal proprio medico, se aderisce, oppure prenotazione online tramite PrenotaSalute."
+    },
+    {
+     "t": "Se ci sono malattie o terapie particolari, quando farla lo dice il medico.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "vaccinazioni-dopo-65-anni"
+   ],
+   "schede": [],
+   "chiavi": "vaccino herpes zoster fuoco di sant'antonio gratis anziani 65 anni",
+   "fonti": [
+    {
+     "ente": "ASL Roma 3",
+     "pagina": "Calendario nazionale vaccinale del Piano nazionale di prevenzione vaccinale 2023-2025",
+     "url": "https://www.aslroma3.it/wp-content/uploads/2026/07/Allegato-n°-2-Calendario_vaccinale_PNPV-_2023-2025.pdf",
+     "data": "2026-07"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Vaccinazioni per la popolazione a partire dai 65 anni",
+     "url": "https://www.regione.lombardia.it/sanita/wikivaccini/vaccinazioni-per-fascia-di-eta/vaccinazioni-per-popolazione-a-partire-dai-65-anni",
+     "data": "2026-09-09"
+    }
+   ],
+   "c": "anziano",
+   "fa": [],
+   "medico": true
+  },
+  {
+   "slug": "vaccino-pneumococco-gratis-65-anni",
+   "gruppo": "anziani",
+   "domanda": "Il vaccino contro lo pneumococco è gratis a 65 anni?",
+   "risposta": "Sì. Il calendario nazionale offre la vaccinazione contro lo pneumococco a partire dall'anno in cui si compiono 65 anni; in Lombardia, per esempio, è gratuita per chi ha 65 anni o più.",
+   "righe": [
+    {
+     "t": "Il calendario usa un vaccino coniugato, a partire dalle persone che compiono 65 anni.",
+     "f": [
+      0
+     ],
+     "p": "Nota 2: vaccino coniugato (PCV) «a partire dalla coorte dei 65enni»."
+    },
+    {
+     "t": "In Lombardia nel 2026 è gratuito per chi è nato entro il 31 dicembre 1961. Chi in passato ha ricevuto un vaccino diverso contro lo pneumococco verifica con il medico di famiglia o con il centro vaccinale.",
+     "f": [
+      1
+     ],
+     "p": "Pneumococco: una dose del vaccino coniugato 20-valente; chi ha ricevuto un vaccino diverso può verificare lo stato vaccinale con il MMG o il centro vaccinale."
+    },
+    {
+     "t": "Si fa dal medico di famiglia, se aderisce alla campagna, oppure si prenota al centro vaccinale.",
+     "f": [
+      1
+     ],
+     "p": "Dal proprio medico, se aderisce, o prenotazione online tramite PrenotaSalute."
+    },
+    {
+     "t": "Dopo i 65 anni lo stesso calendario offre anche la vaccinazione contro l'herpes zoster e un richiamo contro difterite, tetano e pertosse ogni 10 anni.",
+     "f": [
+      0
+     ],
+     "p": "Nota 12: herpes zoster ogni anno alla coorte dei 65enni; nota 9: dTpa 1 dose ogni 10 anni."
+    },
+    {
+     "t": "Con alcune malattie croniche può essere raccomandata anche prima dei 65 anni: ne parla il medico.",
+     "f": [
+      1
+     ],
+     "p": "In presenza di patologie croniche o condizioni di rischio possono essere raccomandate altre vaccinazioni."
+    }
+   ],
+   "guide": [
+    "vaccinazioni-dopo-65-anni"
+   ],
+   "schede": [],
+   "chiavi": "vaccino pneumococco antipneumococco gratis 65 anni anziani",
+   "fonti": [
+    {
+     "ente": "ASL Roma 3",
+     "pagina": "Calendario nazionale vaccinale del Piano nazionale di prevenzione vaccinale 2023-2025",
+     "url": "https://www.aslroma3.it/wp-content/uploads/2026/07/Allegato-n°-2-Calendario_vaccinale_PNPV-_2023-2025.pdf",
+     "data": "2026-07"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Vaccinazioni per la popolazione a partire dai 65 anni",
+     "url": "https://www.regione.lombardia.it/sanita/wikivaccini/vaccinazioni-per-fascia-di-eta/vaccinazioni-per-popolazione-a-partire-dai-65-anni",
+     "data": "2026-09-09"
+    }
+   ],
+   "c": "anziano",
+   "fa": [],
+   "medico": true
+  },
+  {
+   "slug": "richiamo-tetano-anziani",
+   "gruppo": "anziani",
+   "domanda": "Il richiamo del tetano va fatto anche da anziani?",
+   "risposta": "Sì. Il calendario nazionale prevede un richiamo contro difterite, tetano e pertosse ogni 10 anni, per tutta la vita, anche dopo i 65 anni.",
+   "righe": [
+    {
+     "t": "Il calendario nazionale lo scrive così: una dose ogni 10 anni, con la formulazione per adulti.",
+     "f": [
+      0
+     ],
+     "p": "Nota 9: «dTpa: 1 dose ogni 10 anni.» Nota 7: per la dTpa va usata la formulazione per adulto."
+    },
+    {
+     "t": "In Lombardia il richiamo è offerto gratis a tutti, soprattutto per proteggere dal tetano.",
+     "f": [
+      1
+     ],
+     "p": "DTP: un richiamo ogni 10 anni, soprattutto per la protezione dal tetano; offerta gratuitamente a tutta la popolazione."
+    },
+    {
+     "t": "Il calendario è quello del Piano nazionale di prevenzione vaccinale 2023-2025, prorogato di un anno con un'intesa tra Stato e Regioni.",
+     "f": [
+      2
+     ],
+     "p": "Intesa del 18 marzo 2026 (Rep. atti n. 29/CSR) che richiama l'«intesa sulla proroga per un anno del Piano nazionale della prevenzione vaccinale (PNPV) 2023 – 2025»."
+    },
+    {
+     "t": "Se non ricordate quando è stato fatto l'ultimo, chiedete al medico di famiglia o al centro vaccinale della ASL: come procedere, se l'ultimo richiamo è lontano o non si trova, lo decide il medico.",
+     "f": [],
+     "p": ""
+    },
+    {
+     "t": "Può essere l'occasione per chiedere anche delle altre vaccinazioni offerte dopo i 65 anni: influenza, pneumococco e herpes zoster.",
+     "f": [
+      1
+     ],
+     "p": "Vaccini gratuiti e raccomandati dai 65 anni: pneumococco, herpes zoster, DTP, MPR, influenza, COVID-19."
+    }
+   ],
+   "guide": [
+    "vaccinazioni-dopo-65-anni"
+   ],
+   "schede": [],
+   "chiavi": "richiamo tetano antitetanica difterite pertosse anziani ogni quanto 10 anni",
+   "fonti": [
+    {
+     "ente": "ASL Roma 3",
+     "pagina": "Calendario nazionale vaccinale del Piano nazionale di prevenzione vaccinale 2023-2025",
+     "url": "https://www.aslroma3.it/wp-content/uploads/2026/07/Allegato-n°-2-Calendario_vaccinale_PNPV-_2023-2025.pdf",
+     "data": "2026-07"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Vaccinazioni per la popolazione a partire dai 65 anni",
+     "url": "https://www.regione.lombardia.it/sanita/wikivaccini/vaccinazioni-per-fascia-di-eta/vaccinazioni-per-popolazione-a-partire-dai-65-anni",
+     "data": "2026-09-09"
+    },
+    {
+     "ente": "Conferenza Stato-Regioni",
+     "pagina": "Intesa del 18 marzo 2026 (Rep. atti n. 29/CSR), che richiama la proroga di un anno del Piano nazionale della prevenzione vaccinale 2023-2025",
+     "url": "https://www.statoregioni.it/media/eqpdiws2/p-3-csr-atto-rep-n29-18marzo2026.pdf",
+     "data": "2026-03-18"
+    }
+   ],
+   "c": "anziano",
+   "fa": [],
+   "medico": true
+  },
+  {
+   "slug": "vaccino-covid-anziani-gratis",
+   "gruppo": "anziani",
+   "domanda": "Il vaccino anti-Covid è gratis per gli anziani?",
+   "risposta": "Sì. In Piemonte, per esempio, la vaccinazione anti-Covid 2026-2027 è gratuita per tutti, e raccomandata in particolare a chi ha 60 anni o più.",
+   "righe": [
+    {
+     "t": "Nella prima fase della campagna piemontese la precedenza va a chi ha 80 anni o più, agli ospiti delle strutture di lungodegenza e alle persone molto fragili.",
+     "f": [
+      0
+     ],
+     "p": "Priorità iniziale alle persone «di età pari o superiore a 80 anni», agli ospiti di lungodegenza, alle persone con elevata fragilità e agli operatori."
+    },
+    {
+     "t": "Si fa dal medico di famiglia, nelle farmacie che aderiscono e nei centri vaccinali della ASL; ci sono vaccinazioni anche nelle strutture residenziali.",
+     "f": [
+      0
+     ],
+     "p": "Medico di medicina generale, farmacie aderenti e centri vaccinali ASL; attività vaccinali anche nelle strutture residenziali."
+    },
+    {
+     "t": "Si può fare nella stessa occasione dell'antinfluenzale, salvo indicazioni diverse del medico.",
+     "f": [
+      0
+     ],
+     "p": "I due vaccini possono essere somministrati nella stessa occasione, salvo indicazioni d'uso o valutazioni cliniche specifiche."
+    },
+    {
+     "t": "Prima dei 60 anni, in Piemonte, è raccomandata solo con una fragilità valutata dal medico; tra le persone a cui è raccomandata ci sono anche i familiari, i conviventi e i caregiver di persone con gravi fragilità.",
+     "f": [
+      0
+     ],
+     "p": "Dai 6 mesi ai 59 anni raccomandata solo in presenza di elevata fragilità valutata clinicamente; inclusi familiari, conviventi e caregiver di persone con gravi fragilità."
+    },
+    {
+     "t": "In Lombardia il vaccino anti-Covid è offerto a tutti, tutto l'anno, dai 6 mesi di vita.",
+     "f": [
+      1
+     ],
+     "p": "COVID-19: offerta da 6 mesi di vita, tutto l'anno; offerta gratuitamente a tutta la popolazione."
+    }
+   ],
+   "guide": [
+    "vaccinazioni-dopo-65-anni"
+   ],
+   "schede": [],
+   "chiavi": "vaccino covid anticovid coronavirus gratis anziani richiamo 2026",
+   "fonti": [
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Vaccinazione anti-Covid: in Piemonte la campagna 2026-2027",
+     "url": "https://www.regione.piemonte.it/web/node/23094",
+     "data": "2026-10-09"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Vaccinazioni per la popolazione a partire dai 65 anni",
+     "url": "https://www.regione.lombardia.it/sanita/wikivaccini/vaccinazioni-per-fascia-di-eta/vaccinazioni-per-popolazione-a-partire-dai-65-anni",
+     "data": "2026-09-09"
+    }
+   ],
+   "c": "anziano",
+   "fa": [],
+   "medico": true
+  },
+  {
+   "slug": "materasso-antidecubito-asl",
+   "gruppo": "anziani",
+   "domanda": "Il materasso antidecubito lo dà la ASL?",
+   "risposta": "Sì, a chi ne ha diritto: è tra gli ausili per la casa che il Servizio sanitario fornisce con la prescrizione di un medico, di solito in prestito gratuito.",
+   "righe": [
+    {
+     "t": "In Lombardia letto, materasso antidecubito, sollevatore, carrozzina di serie, sedia per WC e doccia e rialzo del water li prescrive il medico di famiglia o lo specialista. La prescrizione va all'ufficio protesica dell'ASST, che organizza la consegna, di norma entro 10 giorni.",
+     "f": [
+      0
+     ],
+     "p": "Ausili per il domicilio (letto, materasso antidecubito, sollevatore, carrozzina di serie, sedia per WC e doccia, rialzo WC) prescritti da MMG, PLS o specialista; l'Ufficio Protesica dell'ASST organizza la fornitura, di norma entro 10 giorni."
+    },
+    {
+     "t": "Si danno in comodato d'uso gratuito: non si possono modificare e vanno restituiti quando non servono più, per esempio se la persona entra in una struttura o cambia residenza.",
+     "f": [
+      0
+     ],
+     "p": "Presidi non personalizzati in comodato d'uso gratuito; non modificabili; restituiti a fine utilizzo (ingresso in struttura residenziale, trasferimento di residenza…)."
+    },
+    {
+     "t": "In altre Regioni la prescrizione la fa di norma uno specialista: in Piemonte un medico specialista di una struttura pubblica, ma per chi è in cure domiciliari alcuni presidi li prescrive il medico di famiglia.",
+     "f": [
+      1
+     ],
+     "p": "Serve la prescrizione di un medico specialista di una struttura pubblica; per i pazienti in cure domiciliari alcuni presidi possono essere prescritti dal MMG o dal PLS."
+    }
+   ],
+   "guide": [
+    "ausili-dalla-asl"
+   ],
+   "schede": [],
+   "chiavi": "materasso antidecubito piaghe decubito letto asl ausili gratis prescrizione",
+   "fonti": [
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Assistenza protesica",
+     "url": "https://www.regione.lombardia.it/sanita/farmaci-protesi-e-assistenza-integrata/assistenza-protesica",
+     "data": "2026-07-13"
+    },
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Fornitura di protesi, ortesi e ausili tecnici",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/sostegno-alle-cure/fornitura-protesi-ortesi-ausili-tecnici",
+     "data": "2026-11-06"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "pannoloni-dalla-asl",
+   "gruppo": "anziani",
+   "domanda": "I pannoloni li passa la ASL?",
+   "risposta": "Sì, a chi ha un'incontinenza grave e cronica: il Servizio sanitario fornisce i presidi per l'incontinenza quando la condizione è certificata da un medico specialista del Servizio sanitario.",
+   "righe": [
+    {
+     "t": "Sono previsti dal decreto sui livelli essenziali di assistenza, nell'assistenza integrativa, e si prescrivono su un modulo apposito.",
+     "f": [
+      0
+     ],
+     "p": "Art. 11: assistiti con «grave incontinenza urinaria o fecale cronica», condizione «certificata dal medico specialista del Servizio sanitario nazionale»; prescrizione su ricettario standardizzato."
+    },
+    {
+     "t": "All'ASL di Salerno, per esempio, il medico di famiglia prescrive una visita specialistica in una struttura pubblica; lo specialista prescrive il tipo di presidio, per non più di un anno; con la prescrizione e la tessera sanitaria si va all'ufficio del distretto.",
+     "f": [
+      1
+     ],
+     "p": "MMG prescrive visita specialistica in struttura pubblica; lo specialista pubblico prescrive il tipo di ausilio per un periodo non superiore a un anno; U.O. Riabilitazione e Protesica del distretto con prescrizione, tessera sanitaria ed eventuale delega."
+    },
+    {
+     "t": "Se all'ufficio va un familiare, serve anche una delega. Sempre a Salerno la consegna è a casa, ogni tre mesi, e le prescrizioni di medici privati non sono accettate.",
+     "f": [
+      1
+     ],
+     "p": "Consegna a domicilio; consegne trimestrali; «Le prescrizioni di medici privati non sono accettate»."
+    },
+    {
+     "t": "Il percorso cambia da ASL ad ASL: chiedi all'ufficio protesica della tua.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "ausili-dalla-asl"
+   ],
+   "schede": [],
+   "chiavi": "pannoloni pannolone traverse incontinenza presidi asl gratis prescrizione",
+   "fonti": [
+    {
+     "ente": "Gazzetta Ufficiale",
+     "pagina": "DPCM 12 gennaio 2017 sui livelli essenziali di assistenza (articoli 11, 18, 22 e 30)",
+     "url": "https://www.gazzettaufficiale.it/eli/id/2017/03/18/17A02015/sg",
+     "data": "2017-03-18"
+    },
+    {
+     "ente": "ASL Salerno",
+     "pagina": "Presidi per incontinenza – pannoloni",
+     "url": "https://aslsalerno.it/archivio2_come-fare-per_0_134.html",
+     "data": "2020-10-23"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "telesoccorso-anziano-solo",
+   "gruppo": "anziani",
+   "domanda": "Come si chiede il telesoccorso per un anziano che vive solo?",
+   "risposta": "Ai servizi sociali del Comune di residenza, oppure al distretto socio-sanitario della ASL: lo indica, per esempio, la Regione Veneto, dove il servizio è gratuito.",
+   "righe": [
+    {
+     "t": "Il telesoccorso è un apparecchio con un pulsante d'allarme, collegato a una centrale attiva 24 ore su 24. In Veneto comprende anche il telecontrollo: due volte a settimana la centrale chiama la persona per sapere come sta e per provare l'apparecchio.",
+     "f": [
+      0
+     ],
+     "p": "Dispositivo con pulsante d'allarme collegato a una centrale operativa attiva 24 ore su 24; telecontrollo due volte a settimana."
+    },
+    {
+     "t": "In Veneto è pensato per le persone anziane o fragili che vivono a casa propria.",
+     "f": [
+      0
+     ],
+     "p": "«Il servizio è rivolto alle persone anziane o in condizioni di fragilità che vivono presso il proprio domicilio»; «il servizio è gratuito»."
+    },
+    {
+     "t": "A Livorno, un capoluogo di provincia, lo offrono associazioni di volontariato: l'apparecchio viene installato in casa e, quando scatta l'allarme, intervengono centralinisti, soccorritori e medici. L'attivazione si chiede al Punto Insieme del Comune.",
+     "f": [
+      1
+     ],
+     "p": "«L'attivazione deve essere richiesta tramite il Punto Insieme del Comune di Livorno.»"
+    },
+    {
+     "t": "Requisiti e costi cambiano da Comune a Comune: chiedi ai servizi sociali come funziona da voi.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "telesoccorso-e-servizi-del-comune"
+   ],
+   "schede": [],
+   "chiavi": "telesoccorso teleassistenza pulsante allarme anziano solo sola vive da solo comune",
+   "fonti": [
+    {
+     "ente": "Regione del Veneto · Rete degli URP",
+     "pagina": "Anziani",
+     "url": "https://www.regione.veneto.it/web/rete-degli-urp-del-veneto/anziani",
+     "data": "2026-07-01"
+    },
+    {
+     "ente": "Comune di Livorno",
+     "pagina": "«Socialità senza età»: guida alle attività e ai servizi per gli anziani",
+     "url": "https://trasparenza.comune.livorno.it/sites/trasparenza/files/servizi-erogati/Guida-Servizi-Attivita-Anziani-2024-20240530.pdf",
+     "data": "2024-05-30"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "centro-diurno-anziani-costo",
+   "gruppo": "anziani",
+   "domanda": "Il centro diurno per anziani si paga?",
+   "risposta": "In parte. Per gli anziani non autosufficienti il Servizio sanitario paga il 50% della tariffa giornaliera; l'altra metà è a carico della persona, e il Comune può aiutare se il reddito non basta.",
+   "righe": [
+    {
+     "t": "La regola del 50% è nel decreto sui livelli essenziali di assistenza, per i trattamenti semiresidenziali di lungoassistenza.",
+     "f": [
+      0
+     ],
+     "p": "Art. 30, comma 4: trattamenti semiresidenziali di lungoassistenza a carico del SSN per il 50% della tariffa giornaliera."
+    },
+    {
+     "t": "In Piemonte la retta è uguale in tutta la Regione: il 50%, la quota sanitaria, lo paga la ASL; l'altro 50%, la quota sociale, la persona. Se la valutazione sull'ISEE dice che il reddito non basta, il Comune integra la quota o la paga tutta.",
+     "f": [
+      1
+     ],
+     "p": "Retta da Piano tariffario regionale; 50% quota sanitaria a carico ASL; 50% quota sociale a carico dell'anziano; integrazione comunale sulla base dell'ISEE."
+    },
+    {
+     "t": "A Livorno la retta mensile del centro diurno è calcolata sull'ISEE.",
+     "f": [
+      2
+     ],
+     "p": "Centro Diurno Anziani Non Autosufficienti: retta mensile in base all'ISEE."
+    },
+    {
+     "t": "Per entrare serve una valutazione della ASL: in Piemonte la fa l'Unità di valutazione geriatrica.",
+     "f": [
+      1
+     ],
+     "p": "Domanda di valutazione multidimensionale all'UVG del Distretto sanitario."
+    }
+   ],
+   "guide": [
+    "centro-diurno-anziani"
+   ],
+   "schede": [],
+   "chiavi": "centro diurno anziani costo retta quanto costa si paga quota",
+   "fonti": [
+    {
+     "ente": "Gazzetta Ufficiale",
+     "pagina": "DPCM 12 gennaio 2017 sui livelli essenziali di assistenza (articoli 11, 18, 22 e 30)",
+     "url": "https://www.gazzettaufficiale.it/eli/id/2017/03/18/17A02015/sg",
+     "data": "2017-03-18"
+    },
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Interventi socio-sanitari per anziani",
+     "url": "https://www.regione.piemonte.it/web/temi/diritti-politiche-sociali/politiche-sociali/anziani/interventi-socio-sanitari-per-anziani",
+     "data": "2026-11-12"
+    },
+    {
+     "ente": "Comune di Livorno",
+     "pagina": "«Socialità senza età»: guida alle attività e ai servizi per gli anziani",
+     "url": "https://trasparenza.comune.livorno.it/sites/trasparenza/files/servizi-erogati/Guida-Servizi-Attivita-Anziani-2024-20240530.pdf",
+     "data": "2024-05-30"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "uvg-valutazione-geriatrica",
+   "gruppo": "anziani",
+   "domanda": "Cos'è la valutazione UVG per un anziano?",
+   "risposta": "È la valutazione dell'Unità di valutazione geriatrica della ASL: guarda i bisogni sanitari e sociali di una persona anziana non autosufficiente e decide quali aiuti può avere, a casa, di giorno o in struttura.",
+   "righe": [
+    {
+     "t": "In Piemonte la domanda la presenta la persona, o chi la rappresenta, al distretto della ASL di residenza, attraverso lo sportello unico di accesso.",
+     "f": [
+      0
+     ],
+     "p": "Domanda di valutazione multidimensionale all'UVG del Distretto sanitario dell'ASL di residenza, tramite lo Sportello/Punto Unico di Accesso."
+    },
+    {
+     "t": "Servono la richiesta firmata, l'impegnativa del medico di famiglia, una scheda sanitaria, la ricevuta della richiesta di ISEE e la copia della DSU.",
+     "f": [
+      0
+     ],
+     "p": "Richiesta firmata, impegnativa del MMG, scheda informativa sanitaria, attestazione di richiesta ISEE e copia della DSU."
+    },
+    {
+     "t": "L'UVG risponde entro 90 giorni e scrive un progetto individuale. Il punteggio stabilisce anche la priorità: urgente, non urgente o differibile. Per le situazioni urgenti la presa in carico è prevista entro 90 giorni.",
+     "f": [
+      0
+     ],
+     "p": "Entro 90 giorni dalla ricezione l'UVG valuta e definisce il Progetto Individuale; priorità urgente, non urgente o differibile."
+    },
+    {
+     "t": "In altre zone si chiama in modo diverso: a Livorno, per esempio, la valutazione la fa l'UVM, l'Unità di valutazione multidimensionale.",
+     "f": [
+      1
+     ],
+     "p": "Per i servizi socio-sanitari serve una valutazione multidimensionale da parte dell'UVM, che redige il Progetto Assistenziale Personalizzato."
+    }
+   ],
+   "guide": [
+    "centro-diurno-anziani",
+    "assistenza-domiciliare-integrata"
+   ],
+   "schede": [],
+   "chiavi": "uvg uvm valutazione geriatrica multidimensionale non autosufficiente anziano domanda",
+   "fonti": [
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Interventi socio-sanitari per anziani",
+     "url": "https://www.regione.piemonte.it/web/temi/diritti-politiche-sociali/politiche-sociali/anziani/interventi-socio-sanitari-per-anziani",
+     "data": "2026-11-12"
+    },
+    {
+     "ente": "Comune di Livorno",
+     "pagina": "«Socialità senza età»: guida alle attività e ai servizi per gli anziani",
+     "url": "https://trasparenza.comune.livorno.it/sites/trasparenza/files/servizi-erogati/Guida-Servizi-Attivita-Anziani-2024-20240530.pdf",
+     "data": "2024-05-30"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "congedo-straordinario-genitore-pagato",
+   "gruppo": "anziani",
+   "domanda": "Il congedo straordinario per assistere un genitore è pagato?",
+   "risposta": "Sì. Chi lavora come dipendente, ha diritto al congedo e assiste un familiare con disabilità grave riconosciuta riceve un'indennità pari all'ultima retribuzione, entro un tetto che cambia ogni anno.",
+   "righe": [
+    {
+     "t": "Per il 2026 l'indennità massima è di 43.486 euro all'anno, cioè 119,14 euro al giorno. Il periodo è coperto da contributi figurativi, validi per la pensione; non fa maturare ferie, tredicesima e TFR.",
+     "f": [
+      0
+     ],
+     "p": "Limiti 2026: indennità annua 43.486,00 euro (119,14 euro al giorno); contribuzione figurativa; non matura ferie, tredicesima e TFR."
+    },
+    {
+     "t": "Dura al massimo due anni in tutta la vita lavorativa. Un figlio può chiederlo per un genitore se vive con lui e se prima di lui non c'è chi ne ha diritto, come il coniuge convivente del genitore.",
+     "f": [
+      0
+     ],
+     "p": "Due anni nell'intera vita lavorativa; priorità: coniuge convivente, genitori, figlio convivente, fratelli conviventi, parenti o affini entro il terzo grado conviventi."
+    },
+    {
+     "t": "Di norma lo paga il datore di lavoro, che poi lo recupera dall'INPS. Non spetta, tra gli altri, ai lavoratori autonomi e domestici, e di norma non spetta se il genitore è ricoverato a tempo pieno in una struttura.",
+     "f": [
+      0
+     ],
+     "p": "Il datore di lavoro anticipa l'indennità e la recupera tramite conguaglio; esclusi addetti ai servizi domestici, lavoratori a domicilio, agricoli giornalieri, autonomi e parasubordinati.; la persona assistita non deve essere ricoverata a tempo pieno (24 ore) in strutture che assicurano assistenza continuativa, salvo eccezioni."
+    },
+    {
+     "t": "I dipendenti privati fanno la domanda all'INPS, online o con un patronato; i dipendenti pubblici alla propria amministrazione.",
+     "f": [
+      0
+     ],
+     "p": "Competenza INPS per il settore privato; i dipendenti pubblici fanno domanda al proprio datore di lavoro."
+    }
+   ],
+   "guide": [
+    "caregiver-familiare-diritti",
+    "permessi-legge-104"
+   ],
+   "schede": [],
+   "chiavi": "congedo straordinario retribuito pagato due anni assistere genitore 104 indennità",
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Indennità per congedi straordinari per assistere familiari con disabilità",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50097.indennit-per-congedi-straordinari-assistenza-familiari-disabili-.html",
+     "data": "2026-10-21"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "congedo-straordinario-convivenza",
+   "gruppo": "anziani",
+   "domanda": "Per il congedo straordinario devo vivere con il genitore?",
+   "risposta": "Sì. Un figlio può avere il congedo straordinario per un genitore con disabilità grave solo se vive con lui: la convivenza deve cominciare entro l'inizio del congedo e durare per tutto il periodo.",
+   "righe": [
+    {
+     "t": "Il congedo segue un ordine: prima il coniuge convivente, la persona unita civilmente o il convivente di fatto; poi il padre o la madre della persona con disabilità; poi un figlio convivente; poi un fratello o una sorella conviventi; infine un parente o affine entro il terzo grado convivente.",
+     "f": [
+      0
+     ],
+     "p": "Ordine di priorità: coniuge convivente / parte di unione civile convivente / convivente di fatto; padre o madre; figlio convivente; fratello o sorella convivente; parente o affine entro il terzo grado convivente."
+    },
+    {
+     "t": "Si passa al familiare successivo solo se quelli prima mancano, sono morti o hanno malattie invalidanti.",
+     "f": [
+      0
+     ],
+     "p": "Ogni familiare subentra solo se mancano quelli precedenti, sono deceduti o hanno patologie invalidanti."
+    },
+    {
+     "t": "Il congedo dura al massimo due anni in tutta la vita lavorativa ed è pagato, entro un tetto annuo.",
+     "f": [
+      0
+     ],
+     "p": "Due anni nell'intera vita lavorativa; indennità entro un tetto annuo rivalutato."
+    },
+    {
+     "t": "Per i tre giorni di permesso al mese della legge 104 le regole sono diverse: le spiega la guida dedicata.",
+     "f": [
+      1
+     ],
+     "p": "Tre giorni di permesso retribuito al mese, anche a ore, per coniuge, parti dell'unione civile, conviventi di fatto, parenti e affini."
+    }
+   ],
+   "guide": [
+    "caregiver-familiare-diritti",
+    "permessi-legge-104"
+   ],
+   "schede": [],
+   "chiavi": "congedo straordinario convivenza convivere vivere insieme residenza figlio genitore",
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Indennità per congedi straordinari per assistere familiari con disabilità",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50097.indennit-per-congedi-straordinari-assistenza-familiari-disabili-.html",
+     "data": "2026-10-21"
+    },
+    {
+     "ente": "INPS",
+     "pagina": "Permessi legge 104/1992 per assistere familiari con disabilità grave",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50098.indennit-per-permessi-fruiti-dai-lavoratori-per-assistere-familiari-disabili-in-situazione-di-gravit-o-fruiti-dai-lavoratori-disabili.html",
+     "data": "2026-10-21"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "caregiver-familiare-chi-e",
+   "gruppo": "anziani",
+   "domanda": "Chi è il caregiver familiare per la legge?",
+   "risposta": "È chi assiste e si prende cura di un familiare non autosufficiente: il coniuge, la persona unita civilmente o il convivente di fatto, un parente o un affine entro il secondo grado, e in alcuni casi entro il terzo.",
+   "righe": [
+    {
+     "t": "La definizione oggi in vigore è nella legge 205 del 2017, articolo 1, comma 255. La persona assistita, per malattia, infermità o disabilità, anche croniche o degenerative, non è autosufficiente e ha una disabilità grave riconosciuta con la legge 104, oppure riceve l'indennità di accompagnamento.",
+     "f": [
+      0
+     ],
+     "p": "«Si definisce caregiver familiare la persona che assiste e si prende cura del coniuge, dell'altra parte dell'unione civile… o del convivente di fatto… di un familiare o di un affine entro il secondo grado ovvero, nei soli casi indicati dall'articolo 33, comma 3, della legge 104… di un familiare entro il terzo grado che… non sia autosufficiente… sia riconosciuto invalido… ai sensi dell'articolo 3, comma 3, della legge 104 o sia titolare di indennità di accompagnamento»."
+    },
+    {
+     "t": "Per chi lavora come dipendente, i diritti di oggi sono soprattutto i tre giorni di permesso al mese della legge 104 e il congedo straordinario pagato, fino a due anni.",
+     "f": [
+      1,
+      2
+     ],
+     "p": "INPS: tre giorni di permesso retribuito al mese; congedo straordinario fino a due anni nella vita lavorativa."
+    },
+    {
+     "t": "Una nuova legge sui caregiver è stata approvata dalla Camera il 14 ottobre 2026 ed è all'esame del Senato: non è ancora in vigore.",
+     "f": [
+      3
+     ],
+     "p": "A.S. 2163 (A.C. 2789) approvato dalla Camera in prima lettura, con modifiche, il 14 ottobre 2026; all'esame del Senato."
+    }
+   ],
+   "guide": [
+    "caregiver-familiare-diritti"
+   ],
+   "schede": [],
+   "chiavi": "caregiver familiare chi è definizione legge 205 comma 255",
+   "fonti": [
+    {
+     "ente": "Camera dei deputati · Servizio Studi",
+     "pagina": "Dossier sull'A.C. 2789-A, con la definizione in vigore (legge 205/2017, art. 1, comma 255)",
+     "url": "https://documenti.camera.it/leg19/dossier/testi/AS0489a.htm",
+     "data": "2026-10-01"
+    },
+    {
+     "ente": "INPS",
+     "pagina": "Permessi legge 104/1992 per assistere familiari con disabilità grave",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50098.indennit-per-permessi-fruiti-dai-lavoratori-per-assistere-familiari-disabili-in-situazione-di-gravit-o-fruiti-dai-lavoratori-disabili.html",
+     "data": "2026-10-21"
+    },
+    {
+     "ente": "INPS",
+     "pagina": "Indennità per congedi straordinari per assistere familiari con disabilità",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50097.indennit-per-congedi-straordinari-assistenza-familiari-disabili-.html",
+     "data": "2026-10-21"
+    },
+    {
+     "ente": "Camera dei deputati",
+     "pagina": "Riconoscimento e tutela delle persone che assistono e si prendono cura dei propri cari",
+     "url": "https://temi.camera.it/leg19/temi/riconoscimento-e-tutela-delle-persone-che-assistono-e-si-prendono-cura-dei-prpri-cari.html",
+     "data": "2026-10-30"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "contributo-caregiver-si-puo-chiedere",
+   "gruppo": "anziani",
+   "domanda": "Il contributo per i caregiver si può già chiedere?",
+   "risposta": "No, non ancora. La legge che lo prevede è stata approvata dalla Camera il 14 ottobre 2026 ed è all'esame del Senato: entrerà in vigore solo dopo l'approvazione definitiva e la pubblicazione in Gazzetta Ufficiale.",
+   "righe": [
+    {
+     "t": "Nel testo esaminato dalla Camera il contributo è per il caregiver «prevalente», che convive con la persona e la assiste per almeno 91 ore a settimana, con un ISEE fino a 25.000 euro e un reddito da lavoro non oltre 3.000 euro lordi all'anno. L'importo arriva fino a 1.200 euro a trimestre, dal 2027, nei limiti delle risorse.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Caregiver prevalente: 91 ore o più, convivente. Contributo dal 2027 con ISEE non superiore a 25.000 euro e reddito da lavoro non oltre 3.000 euro lordi annui; limite di 1.200 euro trimestrali pro capite e tetto annuo di spesa."
+    },
+    {
+     "t": "Il riconoscimento passerebbe da una piattaforma dell'INPS che, secondo il testo, dovrebbe essere pronta entro il 2 gennaio 2027.",
+     "f": [
+      1
+     ],
+     "p": "L'INPS riconosce la qualifica tramite una piattaforma informatica da rendere disponibile entro il 2 gennaio 2027."
+    },
+    {
+     "t": "Il Senato può ancora cambiare il testo. Oggi, per chi lavora come dipendente, restano i permessi della legge 104 e il congedo straordinario.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "caregiver-familiare-diritti"
+   ],
+   "schede": [],
+   "chiavi": "contributo caregiver bonus caregiver 400 euro 1200 euro legge ddl senato quando domanda inps",
+   "fonti": [
+    {
+     "ente": "Camera dei deputati",
+     "pagina": "A.C. 2789-A: testo del disegno di legge sui caregiver familiari",
+     "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2789_A.19PDL0203840.pdf",
+     "data": "2026-10-01"
+    },
+    {
+     "ente": "Camera dei deputati",
+     "pagina": "Riconoscimento e tutela delle persone che assistono e si prendono cura dei propri cari",
+     "url": "https://temi.camera.it/leg19/temi/riconoscimento-e-tutela-delle-persone-che-assistono-e-si-prendono-cura-dei-prpri-cari.html",
+     "data": "2026-10-30"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "farmacia-ricetta-elettronica-genitore",
+   "gruppo": "anziani",
+   "domanda": "Cosa serve in farmacia per la ricetta elettronica di un genitore?",
+   "risposta": "Il codice della ricetta, l'NRE, e il codice fiscale del genitore: con questi due dati, scritti sul promemoria, il farmacista ritrova la ricetta nel sistema.",
+   "righe": [
+    {
+     "t": "Lo spiega la Regione Lombardia: il medico crea la ricetta nel sistema informatico e consegna al paziente un promemoria bianco, al posto della vecchia ricetta rossa.",
+     "f": [
+      0
+     ],
+     "p": "«Il medico consegna al paziente un promemoria cartaceo bianco (al posto della ricetta rossa)»."
+    },
+    {
+     "t": "Il promemoria serve a leggere i dati, ma non ha valore di ricetta: la ricetta vera è quella registrata nel sistema, che il farmacista ritrova con il codice fiscale e l'NRE.",
+     "f": [
+      0
+     ],
+     "p": "Il promemoria «non ha alcun valore di prescrizione»; il farmacista recupera la ricetta «attraverso il codice fiscale e il codice recetta (NRE) riportati sul promemoria»."
+    },
+    {
+     "t": "In Lombardia il promemoria si può anche vedere e stampare dal portale dei servizi sociosanitari, nella sezione delle ricette: utile se il foglio si perde.",
+     "f": [
+      0
+     ],
+     "p": "Il cittadino può visualizzare e stampare il promemoria dalla sezione Ricette del portale dei Servizi Sociosanitari."
+    },
+    {
+     "t": "Il codice fiscale è scritto sulla tessera sanitaria. Se le medicine sono tante, portare anche la lista aggiornata aiuta a non confondersi. Per qualsiasi dubbio sulle medicine, chiedi al medico o al farmacista.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "lista-medicine-genitore-anziano"
+   ],
+   "schede": [
+    "tessera-sanitaria"
+   ],
+   "chiavi": "farmacia ricetta elettronica nre codice fiscale medicine genitore ritirare promemoria",
+   "fonti": [
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Farmaci, visite ed esami: prescrizione e prenotazione",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/farmaci-visite-esami--prescrizione-prenotazione-ssr",
+     "data": "2026-08-27"
+    }
+   ],
+   "c": "anziano",
+   "fa": [],
+   "medico": true
+  }
+ ],
+ "gruppi": [
+  [
+   "anziani",
+   "Genitori anziani"
+  ]
+ ]
+}
