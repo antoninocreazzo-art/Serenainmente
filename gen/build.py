@@ -46,12 +46,19 @@ PER = {'routine-della-nanna': ('bambino', ['0-1', '1-3', '3-6']), 'risvegli-nott
        'iscrizioni-nido-e-scuola': ('bambino', ['0-1', '1-3', '3-6']), 'carta-identita-bambini': ('bambino', TUTTE_ETA),
        'certificato-vaccinale': ('bambino', ['0-1', '1-3', '3-6']), 'visita-specialistica-come-funziona': ('bambino', TUTTE_ETA),
        'certificato-sport-bambini': ('bambino', ['6-12', '13-18']), 'lista-medicine-genitore-anziano': ('anziano', []),
-       'indennita-di-accompagnamento': ('anziano', []), 'esenzione-ticket': ('bambino anziano', ['0-1', '1-3', '3-6'])}
+       'indennita-di-accompagnamento': ('anziano', []), 'esenzione-ticket': ('bambino anziano', ['0-1', '1-3', '3-6']),
+       'bonus-asilo-nido': ('bambino', ['0-1', '1-3']), 'congedo-parentale': ('bambino', TUTTE_ETA),
+       'permessi-legge-104': ('anziano', []), 'invalidita-civile-anziani': ('anziano', []), 'badante-in-regola': ('anziano', []),
+       'amministratore-di-sostegno': ('anziano', []), 'pratiche-online-per-un-genitore': ('anziano', []),
+       'svezzamento': ('bambino', ['0-1']), 'neonato-documenti-primi-giorni': ('bambino', ['0-1'])}
 def per(slug): return PER.get(slug, ('bambino anziano', TUTTE_ETA))
 # guide che danno numeri e regole (le altre dicono cosa fare): la ricerca mette prima il «cosa fare» quando chi scrive ha un problema
 DATI = {'quanto-dorme-un-bambino'}
 # modi di dire che portano dritti a una guida (espressioni regolari, sul testo senza accenti)
-FRASI_GUIDA = {'esenzione-ticket': ['non (si |devo |deve |voglio |vuole )?pag', 'chi non paga', 'senza pagare', 'gratis'], 'spostare-disdire-pagare-visita': ['(devo|dove|come) (si )?pag']}
+FRASI_GUIDA = {'esenzione-ticket': ['non (si |devo |deve |voglio |vuole )?pag', 'chi non paga', 'senza pagare', 'gratis'], 'spostare-disdire-pagare-visita': ['(devo|dove|come) (si )?pag'],
+               # «nido» da solo porta all'iscrizione; con bonus, contributo, rimborso, retta, ricevute o ISEE porta al bonus nido
+               'iscrizioni-nido-e-scuola': ['nido'], 'bonus-asilo-nido': ['bonus', 'contribut', 'rimbors', 'spett', 'rett[ae] ', 'ricevut'],
+               'pratiche-online-per-un-genitore': ['deleg', 'per conto', 'al posto d'], 'neonato-documenti-primi-giorni': ['nuovi nati', 'appena nat', 'atto di nascita', 'dichiar\\w* (la )?nascita']}
 # quando una guida ha la precedenza sulle altre dello stesso argomento per un'età (es. sonno a 1-3 anni)
 # parole in più per la ricerca (come le dice chi cerca), non compaiono nella pagina
 CHIAVI = {
@@ -71,6 +78,16 @@ CHIAVI = {
  'iscrizioni-nido-e-scuola': 'iscrivere iscrizione nido asilo materna scuola elementare primaria',
  'lista-medicine-genitore-anziano': 'medicine farmaci pastiglie pillole compresse terapia mamma papà nonna nonno anziano anziana badante',
  'carta-identita-bambini': 'carta d\'identità cie documento espatrio viaggio passaporto',
+ 'bonus-asilo-nido': 'bonus nido asilo contributo retta rette rimborso inps spetta importo ricevute micronido sezione primavera',
+ 'congedo-parentale': 'congedo parentale maternità facoltativa paternità obbligatorio mesi 80% 30% stipendio pagato pagano retribuzione lavoro astensione dipendente',
+ 'permessi-legge-104': 'legge 104 permessi permesso giorni assistere assistenza familiare disabile disabilità grave handicap lavoro retribuito referente fratelli caregiver',
+ 'invalidita-civile-anziani': 'invalidità civile invalido percentuale verbale commissione visita inps pensione inabilità ricorso aggravamento revisione',
+ 'badante-in-regola': 'badante colf assistente familiare assumere assunzione contratto ccnl lavoro domestico contributi livello stipendio regola regolare',
+ 'amministratore-di-sostegno': 'amministratore sostegno tutore giudice tutelare tribunale ricorso delega procura firmare banca gestire soldi',
+ 'pratiche-online-per-un-genitore': 'delega deleghe delegare delegato identità digitale inps myinps online conto genitore persona fiducia pratiche',
+ 'prenotare-con-il-cup': 'cup prenotare prenotazione ricetta elettronica impegnativa nre priorità codice tempi attesa lista d\'attesa percorso tutela',
+ 'svezzamento': 'svezzamento autosvezzamento pappa pappe alimentazione complementare cibi solidi primi cibi miele seggiolone',
+ 'neonato-documenti-primi-giorni': 'nascita dichiarazione anagrafe documenti primi giorni nuovi nati',
 }
 for g in D['guide']:
     g['arg'] = g.get('argomento') or GUIDA_ARG.get(g['slug'], 'organizzazione')
@@ -357,7 +374,7 @@ def tabella(t):
     if not t: return ''
     pe = per_eta(t)
     th = ''.join(f'<th scope="col">{e(c)}</th>' for c in t['colonne'])
-    pila = max(len(c) for r in t['righe'] for c in r) > 34
+    pila = t.get('pila') or max(len(c) for r in t['righe'] for c in r) > 34  # «pila»: true in dati.json impila le righe anche con celle brevi (tabelle a 3 colonne sul telefono)
     def tr(r):
         at = ' data-eta="%d-%d"' % eta_mesi(r[0]) if pe else ''
         return f'<tr{at}>' + ''.join((f'<th scope="row">{e(c)}</th>' if i == 0 else f'<td data-l="{e(t["colonne"][i])}">{e(c)}</td>') for i, c in enumerate(r)) + '</tr>'
@@ -449,7 +466,11 @@ def storia(g):
     return sorted([tuple(x) for x in g.get('storia', [])], reverse=True) + [(g['data'], 'prima versione.')]
 # nelle guide di pratiche e documenti la sezione «perché» dice chi ne ha diritto o cosa sapere prima: il titolo segue il contenuto
 PERCHE_T = {'indennita-di-accompagnamento': 'Chi ne ha diritto', 'esenzione-ticket': 'Chi ne ha diritto', 'carta-identita-bambini': 'Da sapere prima',
-            'iscrizioni-nido-e-scuola': 'Date e regole, in breve', 'certificato-vaccinale': 'Quando serve', 'certificato-sport-bambini': 'Le regole, in breve'}
+            'iscrizioni-nido-e-scuola': 'Date e regole, in breve', 'certificato-vaccinale': 'Quando serve', 'certificato-sport-bambini': 'Le regole, in breve',
+            'bonus-asilo-nido': 'Chi ne ha diritto', 'congedo-parentale': 'Le regole, in breve', 'permessi-legge-104': 'Chi ne ha diritto',
+            'invalidita-civile-anziani': 'Da sapere prima', 'badante-in-regola': 'Da sapere prima', 'amministratore-di-sostegno': 'Quando serve',
+            'pratiche-online-per-un-genitore': 'Da sapere prima', 'prenotare-con-il-cup': 'Da sapere prima', 'svezzamento': 'Le indicazioni, in breve',
+            'neonato-documenti-primi-giorni': 'Da sapere prima'}
 CALC = {'carta-identita-bambini': ('cie', 'Rinnovare la carta d\'identità'), 'certificato-sport-bambini': ('anno', 'Rinnovare il certificato per lo sport')}
 def calcolo(g):
     if g['slug'] not in CALC: return ''
@@ -479,7 +500,9 @@ for g in GUIDE:
     segnala = 'mailto:' + MAIL + '?subject=' + urllib.parse.quote('Segnalazione: ' + g['titolo'])
     fonti = ''.join(src_block(fid) for fid in g['fonti'])
     nf = len(g['fonti'])
-    corr = [x for x in GUIDE if x is not g and x['arg'] == g['arg']] + [x for x in GUIDE if x is not g and x['arg'] != g['arg']]
+    # «Continua a leggere»: prima le guide scelte a mano in dati.json («correlate»), poi quelle dello stesso argomento, poi le altre
+    rel = [GN[s] for s in g.get('correlate', []) if s in GN and GN[s] is not g]
+    corr = rel + [x for x in GUIDE if x is not g and x not in rel and x['arg'] == g['arg']] + [x for x in GUIDE if x is not g and x not in rel and x['arg'] != g['arg']]
     gp = f"/guide/{g['slug']}/"
     pt = PERCHE_T.get(g['slug'], 'Perché aiuta')
     indice = ''.join(f'<li><a href="#{h}">{t}</a></li>' for h, t, ok in [('passo-1', 'Come si fa', True), ('perche', pt, True), ('errori', 'Errori comuni', bool(g.get('errori'))), ('lista', 'La lista da spuntare', bool(g.get('checklist'))), ('fonti', 'Le fonti', bool(g['fonti']))] if ok)
