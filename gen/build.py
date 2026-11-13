@@ -114,6 +114,8 @@ P = {
  'menu': '<path d="M4 6.5h16M4 12h16M4 17.5h16"/>',
  'chev': '<path d="m9 6 6 6-6 6"/>',
  'esterno': '<path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v4.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10"/>',
+ 'info': '<circle cx="12" cy="12" r="9"/><path d="M12 11v5.5"/><path d="M12 7.6v.01" stroke-width="2.4"/>',
+ 'print': '<path d="M7 9V4h10v5"/><rect x="3.5" y="9" width="17" height="8" rx="2"/><path d="M7 14h10v6H7z"/>',
 }
 def ic(n, cls='ic'):
     return f'<svg class="{cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{P[n]}</svg>'
@@ -132,6 +134,26 @@ def riga(href, titolo, sotto, img=None, icona='arrow', attr='', li=''):
 def riga_guida(g, li=''):
     return riga(f"~/guide/{g['slug']}/", g['titolo'], f"Guida · {g['min']} min · {ARGN[g['arg']][1]}", mini(g['slug']), 'book', li=li)
 
+# ---------- «Da sapere»: schede brevi (testi approvati dal presidente il 12/11/2026, riportati parola per parola) ----------
+# In dati.json, «schede»: titolo, sotto (il sottotitolo in corsivo), righe [{t: frase, f: [indici delle fonti]}] (f vuoto = frase di Serena,
+# senza numero), elenco (facoltativo, numerato), limiti (facoltativo), fonti [{ente, pagina, url, data}], aggiornata, revisione,
+# medico (true = la frase fissa in fondo), guide (le guide correlate, che rimandano alla scheda e viceversa).
+# I testi non si toccano qui: si mostrano come sono. L'unico adattamento: i rimandi diventano piccoli numeri che portano alla fonte.
+DS = D.get('schede', [])
+DSN = {s['slug']: s for s in DS}
+DS_MEDICO = D.get('frase_medico_schede', '')
+def data_ds(s):
+    """«2026-05-20» → «20 maggio 2026»; «2022-06» → «giugno 2022»; il resto («pagina senza data») resta com'è"""
+    m = re.match(r'^(\d{4})-(\d{2})(?:-(\d{2}))?$', s or '')
+    if not m: return s
+    return data_it(s) if m.group(3) else f"{MESI[int(m.group(2)) - 1]} {m.group(1)}"
+for s in DS:
+    s['min'] = max(1, round(len(' '.join([r['t'] for r in s['righe']] + s.get('elenco', [])).split()) / 200))
+def riga_scheda(s, li=''):
+    return riga(f"~/da-sapere/{s['slug']}/", s['titolo'], f"Scheda · {s['min']} min · {s['sotto']}", icona='info', li=li)
+def schede_di_guida(slug):
+    return [s for s in DS if slug in s.get('guide', [])]
+
 # ---------- pagina ----------
 UMAMI = '<script defer src="https://cloud.umami.is/script.js" data-website-id="301edcb4-f5b2-444e-a1e5-8b8614d0100a" data-domains="serenainmente.it" data-do-not-track="true" data-exclude-search="true" data-exclude-hash="true"></script>'
 # il logo vero (assets/brand/profilo-serena.svg, con la s), copiato dentro la pagina: niente richiesta in più
@@ -141,7 +163,7 @@ def logo_svg(uid, cls='logo-mark', lato=44):
     return t.replace('width="1080" height="1080"', f'width="{lato}" height="{lato}" class="{cls}" aria-hidden="true" focusable="false"', 1)
 LOGO = logo_svg('h') + '<span>serenainmente</span>'
 LOGO_PIEDE = logo_svg('f') + '<span>serenainmente</span>'
-NAV = [('/guide/', 'Guide'), ('/risorse/', 'Strumenti'), ('/chi-e-serena/', 'Chi è Serena'), ('/metodo/', 'Il metodo'), ('/fonti/', 'Le fonti')]
+NAV = [('/guide/', 'Guide'), ('/da-sapere/', 'Da sapere'), ('/risorse/', 'Strumenti'), ('/chi-e-serena/', 'Chi è Serena'), ('/metodo/', 'Il metodo'), ('/fonti/', 'Le fonti')]
 ZONE = {'/risorse/': ('/risorse/', '/gestionale/', '/stampabili/', '/strumenti/'), '/chi-e-serena/': ('/chi-e-serena/', '/metodo/', '/fonti/', '/privacy/', '/note-legali/', '/frasi/')}
 def qui(path, h):
     return path == h if h == '/' else any(path.startswith(z) for z in ZONE.get(h, (h,)))
@@ -187,7 +209,7 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None, pre=''):
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{canon}">
-<meta property="og:type" content="{'article' if path.startswith('/guide/') and path != '/guide/' else 'website'}">
+<meta property="og:type" content="{'article' if (path.startswith('/guide/') and path != '/guide/') or (path.startswith('/da-sapere/') and path != '/da-sapere/') else 'website'}">
 <meta property="og:image" content="{SITE}/{og or "assets/og.png"}">
 <meta name="p:domain_verify" content="82dca4ec0359bf826162f0392b29bb0c"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -227,7 +249,7 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None, pre=''):
 <div class="ft-in">
 <div class="ft-brand"><a class="brand" href="~/">{LOGO_PIEDE}</a><p>Guide brevi con le loro fonti, strumenti gratuiti e parole in cui ritrovarsi, per chi si prende cura della famiglia.</p>
 <a class="ft-ig" href="{IG}" rel="noopener" data-umami-event="instagram">{ic('insta')} Segui @serenainmente</a></div>
-<nav aria-label="Esplora"><h2>Esplora</h2><ul><li><a href="~/guide/">Guide</a></li><li><a href="~/risorse/">Strumenti gratuiti</a></li><li><a href="~/gestionale/">Il gestionale di famiglia</a></li>{FRASI_LI}</ul></nav>
+<nav aria-label="Esplora"><h2>Esplora</h2><ul><li><a href="~/guide/">Guide</a></li><li><a href="~/da-sapere/">Da sapere</a></li><li><a href="~/risorse/">Strumenti gratuiti</a></li><li><a href="~/gestionale/">Il gestionale di famiglia</a></li>{FRASI_LI}</ul></nav>
 <nav aria-label="Serena"><h2>Serena</h2><ul><li><a href="~/chi-e-serena/">Chi è Serena</a></li><li><a href="~/metodo/">Il metodo</a></li><li><a href="~/fonti/">Le fonti</a></li><li><a href="~/correzioni/">Correzioni</a></li><li><a href="~/salvati/">I tuoi salvati</a></li><li><a href="~/privacy/">Privacy</a></li><li><a href="~/note-legali/">Note legali</a></li><li><a href="mailto:{MAIL}?subject=Segnalazione">Scrivi o segnala un errore</a></li></ul></nav>
 </div>
 <div class="ft-low"><p>Serena è ideata e curata da una persona, con il supporto dell'intelligenza artificiale per testi, immagini e verifica delle fonti. Informazioni generali: non sostituiscono il parere del pediatra o del medico.</p>
@@ -235,7 +257,7 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None, pre=''):
 </footer>
 <dialog class="foglio" id="cerca" data-src="~/assets/cerca-dati.js?v={INDICE_V}" aria-label="Cerca nel sito">
 <div class="fg-in"><form class="fg-top" role="search">{ic('search')}<label class="sr" for="q">Cerca nelle guide di Serena</label><input id="q" type="search" placeholder="Che cosa cerchi?" autocomplete="off" enterkeyhint="search"><button type="button" class="icbtn" data-chiudi aria-label="Chiudi la ricerca">{ic('close')}</button></form>
-<div class="fg-body"><div data-prima><h2>Per esempio</h2><ul class="esempi">{''.join(f'<li><button type="button" data-q="{e(x)}">{e(x)}</button></li>' for x in ESEMPI)}</ul><p class="small" style="margin-top:14px">La ricerca guarda nelle guide e negli strumenti di Serena. Quello che scrivi resta su questo telefono o computer.</p></div>
+<div class="fg-body"><div data-prima><h2>Per esempio</h2><ul class="esempi">{''.join(f'<li><button type="button" data-q="{e(x)}">{e(x)}</button></li>' for x in ESEMPI)}</ul><p class="small" style="margin-top:14px">La ricerca guarda nelle guide, nelle schede e negli strumenti di Serena. Quello che scrivi resta su questo telefono o computer.</p></div>
 <div class="fg-esiti" data-esiti aria-live="polite"></div></div></div>
 </dialog>
 <script defer src="~/assets/sito.js?v={ver('assets', 'sito.js')}"></script>
@@ -484,6 +506,7 @@ for g in GUIDE:
 {'' if per_eta(g.get('tabella')) else tabella(g.get('tabella'))}
 {calcolo(g)}
 <section id="perche"><h2 data-leggi>{pt}</h2>{''.join(f'<p data-leggi>{e(p)}</p>' for p in g['perche'])}</section>
+{f'<section class="ds-rim noprint" aria-labelledby="ds-rim-t"><h2 id="ds-rim-t">Da sapere, in un minuto</h2><ul class="rows">' + ''.join(riga_scheda(s) for s in schede_di_guida(g['slug'])) + '</ul></section>' if schede_di_guida(g['slug']) else ''}
 {f'<section class="box box-rosa" id="errori"><h2 data-leggi>Errori comuni</h2><ul class="plain">{errori}</ul></section>' if errori else ''}
 {lista}
 {strumento_box(g.get('strumento')) if g.get('strumento') == 'gestionale' else ''}
@@ -531,6 +554,66 @@ pages.append(page('/guide/', 'Guide', 'Guide pratiche e brevi per la vita di fam
 <h2 class="sr">Elenco delle guide</h2>
 <ul class="rows" data-grid>{''.join(riga_elenco(g) for g in GUIDE)}</ul>
 </section>''', cls='p-list'))
+
+# ---------- da sapere: le schede brevi ----------
+def rif(s, f):
+    """i rimandi [1, 2] diventano piccoli numeri che portano alla fonte; una frase di Serena (f vuoto) resta senza numero"""
+    if not f: return ''
+    return ' <span class="rif">' + ''.join(f'<a class="rif-n" href="#fonte-{i + 1}" aria-label="Fonte {i + 1}: {e(s["fonti"][i]["ente"])}">{i + 1}</a>' for i in f) + '</span>'
+def limiti_html(t):
+    a = 'I limiti di questa scheda:'
+    return f'<b>{e(a)}</b>{e(t[len(a):])}' if t.startswith(a) else e(t)
+def fonte_ds(i, f):
+    dom = f['url'].split('/')[2].replace('www.', '').replace('www1.', '')
+    return (f'<li class="src" id="fonte-{i + 1}"><span class="org"><span class="ds-n" aria-hidden="true">{i + 1}</span>{e(f["ente"])}</span><span class="ttl">{e(f["pagina"])}</span>'
+            f'<span class="type">{e(data_ds(f["data"]))}</span><a href="{e(f["url"])}" target="_blank" rel="noopener" data-umami-event="scheda-fonte">Apri la fonte su {e(dom)}<span class="sr"> (si apre in una nuova scheda)</span> {ic("esterno","ic-s")}</a></li>')
+for s in DS:
+    a = ARGN[s['argomento']]
+    sp = f"/da-sapere/{s['slug']}/"
+    righe = ''.join(f'<p>{e(r["t"])}{rif(s, r["f"])}</p>' for r in s['righe'])
+    elenco = ('<ol class="ds-elenco">' + ''.join(f'<li>{e(v)}</li>' for v in s['elenco']) + '</ol>') if s.get('elenco') else ''
+    lim = f'<aside class="box box-rosa ds-limiti"><p>{limiti_html(s["limiti"])}</p></aside>' if s.get('limiti') else ''
+    nf = len(s['fonti'])
+    fonti = ''.join(fonte_ds(i, f) for i, f in enumerate(s['fonti']))
+    medico = f'<p class="ds-medico">{e(DS_MEDICO)}</p>' if s.get('medico') and DS_MEDICO else ''
+    gc = [GN[x] for x in s.get('guide', []) if x in GN]
+    altre = [x for x in DS if x is not s and x['argomento'] == s['argomento']][:3]
+    segnala = 'mailto:' + MAIL + '?subject=' + urllib.parse.quote('Segnalazione: ' + s['titolo'])
+    body = f'''<article class="art ds">
+<header class="art-hd wrap-t">
+<nav class="crumbs" aria-label="Percorso"><span class="corta"><a href="~/da-sapere/">{ic('chev','ic-s ind')}Da sapere</a></span><span class="lunga"><a href="~/">Inizio</a>{ic('chev','ic-s')}<a href="~/da-sapere/">Da sapere</a>{ic('chev','ic-s')}<a href="~/da-sapere/#{a[0]}">{e(a[1])}</a></span></nav>
+<p class="ds-occh">Scheda · si legge in {s['min']} {'minuto' if s['min'] == 1 else 'minuti'}</p>
+<h1>{e(s['titolo'])}</h1>
+<p class="ds-sotto"><em>{e(s['sotto'])}</em></p>
+<div class="azioni noprint">{salva(sp, s['titolo'])}<button class="btn btn-line btn-sm" type="button" data-stampa data-umami-event="scheda-stampa">{ic('print','ic-s')}<span>Stampa</span></button></div>
+</header>
+<div class="wrap-t ds-corpo">
+<section class="ds-testo vetro" aria-label="La scheda">{righe}{elenco}</section>
+{lim}
+<section class="ds-fonti" id="fonti" aria-labelledby="fonti-t"><h2 id="fonti-t">{'La fonte' if nf == 1 else 'Le fonti'}</h2><ol class="sources">{fonti}</ol></section>
+<p class="small ds-date">Aggiornata il {data_ds(s['aggiornata'])} · prossima revisione {data_ds(s['revisione'])}</p>
+{medico}
+<p class="small fatta-r noprint"><a href="{segnala}" data-umami-event="segnala-errore">Segnala un errore</a></p>
+{share(sp, s['titolo'], 'Ti è utile? Mandala a chi ne ha bisogno.')}
+</div>
+<section class="related wrap-t noprint"><div class="sec-hd"><h2>Continua a leggere</h2><a class="more" href="~/da-sapere/">Tutte le schede {ic('arrow','ic-s')}</a></div>
+<ul class="rows">{''.join(riga_guida(x) for x in gc)}{''.join(riga_scheda(x) for x in altre)}</ul></section>
+</article>'''
+    url = SITE + sp
+    art = {"@type": "Article", "headline": s['titolo'], "description": s['sotto'], "mainEntityOfPage": url, "datePublished": s['aggiornata'], "dateModified": s['aggiornata'],
+           "inLanguage": "it", "isAccessibleForFree": True, "author": {"@type": "Organization", "name": "Serena", "url": SITE + "/chi-e-serena/"},
+           "publisher": {"@type": "Organization", "name": "Serena", "logo": {"@type": "ImageObject", "url": SITE + "/assets/brand/avatar-320.png"}},
+           "citation": [{"@type": "CreativeWork", "name": f['pagina'], "url": f['url'], "publisher": f['ente']} for f in s['fonti']]}
+    crumbs = {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Da sapere", "item": SITE + "/da-sapere/"},
+              {"@type": "ListItem", "position": 2, "name": s['titolo'], "item": url}]}
+    pages.append(page(sp, s['titolo'], s['sotto'], body, {"@context": "https://schema.org", "@graph": [art, crumbs]}, cls='p-ds'))
+if DS:
+    gruppi_ds = ''.join(f'<section class="wrap-t ds-gruppo" id="{a[0]}" aria-labelledby="ds-{a[0]}"><h2 class="sec-t" id="ds-{a[0]}">{e(a[1])}</h2><ul class="rows">'
+                        + ''.join(riga(f"~/da-sapere/{s['slug']}/", s['titolo'], s['sotto'], icona='info') for s in DS if s['argomento'] == a[0]) + '</ul></section>'
+                        for a in ARG if any(s['argomento'] == a[0] for s in DS))
+    pages.append(page('/da-sapere/', 'Da sapere', 'Schede brevi per la famiglia: si leggono in un minuto, ognuna con le sue fonti e la data dell\'ultimo controllo.', f'''
+<section class="ph-hd wrap-t"><h1>Da <em>sapere</em></h1><p class="lead">Schede brevi, da leggere in un minuto. Ognuna ha le sue fonti e la data dell'ultimo controllo.</p></section>
+{gruppi_ds}''', cls='p-list p-ds-i'))
 
 # ---------- gestionale ----------
 SCHEDE = [('Inizia da qui', 'Appena lo apri: le scadenze dei prossimi 30 giorni, le visite delle prossime due settimane, i documenti da rinnovare e la lista dei prossimi impegni, dal più vicino. Più sotto, quello che è rimasto indietro.'),
@@ -785,10 +868,11 @@ for p in sorted(D['post'], key=lambda x: x['data'], reverse=True):
 <div class="row">{gl}<a class="btn btn-line" href="{IG}" rel="noopener" data-umami-event="instagram">Vai al profilo Instagram</a></div></section>'''))
     post_cards.append(f'<li><a href="~/fonti/{p["slug"]}/"><span class="date">{data_it(p["data"])} · {len(p["fonti"])} {"fonte" if len(p["fonti"]) == 1 else "fonti"}</span><b>{e(p["titolo"])}</b></a></li>')
 guide_fonti = ''.join(f'<li><a href="~/guide/{g["slug"]}/#fonti"><span class="date">Controllate il {data_it(g["agg"])} · {len(g["fonti"])} {"fonte" if len(g["fonti"]) == 1 else "fonti"}</span><b>{e(g["titolo"])}</b></a></li>' for g in GUIDE if g['fonti'])
-enti = sorted({FONTI[f]['ente'] for g in GUIDE for f in g['fonti']} | {FONTI[f]['ente'] for p in D['post'] for f in p['fonti']})
+enti = sorted({FONTI[f]['ente'] for g in GUIDE for f in g['fonti']} | {FONTI[f]['ente'] for p in D['post'] for f in p['fonti']} | {f['ente'] for s in DS for f in s['fonti']})
 pages.append(page('/fonti/', 'Le fonti di Serena', 'Le fonti dei dati citati nelle guide e nei post di @serenainmente, con i link alle pagine originali.', f'''
 <section class="ph-hd wrap-t"><h1>Le <em>fonti</em></h1><p class="lead">Ogni dato di Serena viene da un ente o da un'istituzione che puoi aprire e leggere. Qui le trovi tutte, guida per guida e post per post.</p></section>
 <section class="wrap-t"><h2 class="sec-t">Le fonti delle guide</h2><ul class="postl">{guide_fonti}</ul></section>
+{'<section class="wrap-t"><h2 class="sec-t">Le fonti delle schede «Da sapere»</h2><ul class="postl">' + ''.join(f'<li><a href="~/da-sapere/{s["slug"]}/#fonti"><span class="date">Aggiornata il {data_ds(s["aggiornata"])} · {len(s["fonti"])} {"fonte" if len(s["fonti"]) == 1 else "fonti"}</span><b>{e(s["titolo"])}</b></a></li>' for s in DS) + '</ul></section>' if DS else ''}
 <section class="wrap-t"><h2 class="sec-t">Le fonti dei post di Instagram</h2><ul class="postl">{''.join(post_cards)}</ul></section>
 <section class="wrap-t"><details class="piega"><summary>Gli enti citati ({len(enti)})</summary><p>{e(' · '.join(enti))}</p></details></section>'''))
 
@@ -891,6 +975,10 @@ def viaggio():
 <nav class="vg-indice" aria-label="Le tappe del viaggio"><ol>{indice}</ol></nav></div>
 </section>'''
 argf += f'<li class="tutte"><a class="argf" href="~/guide/"><span class="t"><b>Tutte le guide {ic("arrow","ic-s")}</b><small>{len(GUIDE)} guide brevi, ognuna con le sue fonti.</small></span></a></li>'
+# «Da sapere» in pagina iniziale: tre schede e il link a tutte, sotto gli argomenti (il primo schermo resta alla ricerca)
+DS_HOME_SLUG = ['carta-identita-figli', 'tessera-sanitaria', 'calendario-vaccinale']
+DS_HOME = (f'<section class="wrap ds-home" aria-labelledby="ds-home-t"><div class="sec-hd"><h2 id="ds-home-t">Da <em>sapere</em></h2><a class="more" href="~/da-sapere/">Tutte le {len(DS)} schede {ic("arrow","ic-s")}</a></div>'
+           f'<p class="lead-s">Schede brevi, da leggere in un minuto, con le loro fonti.</p><ul class="rows">' + ''.join(riga_scheda(DSN[x]) for x in DS_HOME_SLUG if x in DSN) + '</ul></section>') if DS else ''
 # il titolo aspetta il suo carattere (al massimo 1,2 s): così le righe non saltano quando Fraunces arriva (CLS). Senza script si vede subito.
 ATTESA = ("<script>(function(){var d=document.documentElement,f=document.fonts;if(!f||!f.load)return;d.classList.add('attesa');"
           "function ok(){d.classList.remove('attesa')}setTimeout(ok,1200);Promise.all([f.load('400 1em Fraunces'),f.load('italic 400 1em Fraunces')]).then(ok,ok)})()</script>")
@@ -910,6 +998,7 @@ pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della fam
 <ul class="schede due" aria-label="Esempi" data-esempi>{''.join(scheda(f"~/guide/?q={urllib.parse.quote(x)}", x[0].upper() + x[1:], ESEMPI_D[x], f' data-cerca="{e(x)}" role="button"') for x in ESEMPI[:4])}</ul>
 </section>
 <section class="wrap"><h2 class="sec-t">Per <em>argomento</em></h2><ul class="argomenti">{argf}</ul></section>
+{DS_HOME}
 {viaggio()}
 <section class="wrap blocco-s">
 <div class="per-te" hidden><h2>Di chi ti prendi cura?</h2><p class="lead-s">Scegli anche più di una persona: Serena mette in cima quello che vi serve, qui e nella ricerca.</p>
@@ -959,6 +1048,26 @@ IDX.append(voce('/gestionale/', 'Il gestionale di famiglia', 'Visite, scadenze e
 for f, t, d in STAMPABILI:
     IDX.append(voce(f'/stampabili/{f}/', t, d + '.', 'Foglio da stampare', t + ' stampare foglio pdf planner ' + {'settimana-sul-frigo': 'settimana organizzare frigo', 'domande-per-il-pediatra': 'pediatra visita domande', 'lista-delle-medicine': 'medicine farmaci pastiglie anziano nonna nonno mamma papà terapia'}[f],
                     d + ' ' + ' '.join(SP_INFO[f]['contiene']), az='Guarda il foglio', i=mini('foglio-' + f), c=ST_PER[f], fa=[] if ST_PER[f] == 'anziano' else TUTTE_ETA, ar=GN[SP_INFO[f]['guida']]['arg']))
+# le schede «Da sapere»: risultati normali, tipo «Scheda». Le urgenze e il 112 non dipendono da qui (assets/sito.js decide prima di guardare l'indice)
+CHIAVI_DS = {
+ 'genitoripiu': 'genitoripiù genitori più campagna ministero sette azioni salute bambini',
+ 'piano-vaccinale': 'vaccini vaccinazioni piano vaccinale calendario asl servizio vaccinale',
+ 'nanna-a-pancia-in-su': 'nanna pancia in su dormire neonato culla sonno sicuro posizione',
+ 'seggiolino-e-antiabbandono': 'seggiolino auto macchina antiabbandono dispositivo allarme',
+ 'leggere-ad-alta-voce': 'leggere libri libro lettura alta voce nati per leggere storie',
+ 'carta-identita-figli': "carta d'identità cie figli minorenni espatrio impronte",
+ 'tessera-sanitaria': 'tessera sanitaria scaduta persa smarrita rubata duplicato team estero',
+ 'isee': 'isee dsu caf dichiarazione sostitutiva unica',
+ 'foglietto-illustrativo': 'foglietto illustrativo foglio illustrativo bugiardino triangolo nero',
+ 'assegno-unico': 'assegno unico universale inps figli domanda rinnovo',
+ 'spese-sanitarie-da-detrarre': 'spese sanitarie detrazione detrarre scontrino scontrini fatture ricevute dichiarazione redditi 730',
+ 'calendario-vaccinale': 'calendario vaccinale vaccinazioni vaccini età esavalente richiami',
+}
+for s in DS:
+    IDX.append(voce(f"/da-sapere/{s['slug']}/", s['titolo'], s['sotto'], 'Scheda', ' '.join([s['titolo'], CHIAVI_DS.get(s['slug'], '')]), s['sotto'],
+                    c2=' '.join([r['t'] for r in s['righe']] + s.get('elenco', [])), m=s['min'], az='Leggi la scheda', ar=s['argomento'],
+                    c='bambino anziano' if s['argomento'] == 'documenti' or s['slug'] == 'foglietto-illustrativo' else 'bambino', fa=TUTTE_ETA,
+                    gd=[f'/guide/{x}/' for x in s.get('guide', [])]))
 IDX.append(voce('/chi-e-serena/', 'Chi è Serena', D['chi']['sommario'], 'Pagina', 'chi è serena siamo siete dietro autore progetto persona', 'trasparenza indipendenza valori'))
 IDX.append(voce('/metodo/', 'Il metodo', 'Come nasce un contenuto di Serena, da dove vengono i dati e chi decide cosa pubblicare.', 'Pagina', 'metodo come lavoriamo intelligenza artificiale ai affidabile fidarsi', 'fonti controllo revisione'))
 IDX.append(voce('/fonti/', 'Le fonti', 'Le fonti dei dati citati nelle guide e nei post, con i link alle pagine originali.', 'Pagina', 'fonti fonte studi dati oms istituto superiore di sanità', ''))
