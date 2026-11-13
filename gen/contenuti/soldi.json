@@ -11,8 +11,8 @@
   {
    "id": "SO-02",
    "ente": "Camera dei deputati – Documentazione parlamentare",
-   "anno": 2025,
-   "titolo": "Tassazione delle persone fisiche: detrazioni per carichi di famiglia dopo la legge di bilancio 2025 e tetto alle detrazioni oltre 75.000 euro (tema del 29 maggio 2025)",
+   "anno": 2026,
+   "titolo": "Tassazione delle persone fisiche: detrazioni per carichi di famiglia dopo la legge di bilancio 2025 e tetto alle detrazioni oltre 75.000 euro (sezione aggiornata al 15 giugno 2026)",
    "tipo": "Documento istituzionale",
    "url": "https://temi.camera.it/leg19/temi/19_tl18_irpef.html"
   },
@@ -69,7 +69,7 @@
    "id": "SO-09",
    "ente": "Camera dei deputati – Servizio Bilancio dello Stato",
    "anno": 2023,
-   "titolo": "Dossier sullo schema di decreto legislativo sugli adempimenti tributari (Atto del Governo n. 93, 6 dicembre 2023): dichiarazione dei redditi tra il 1° aprile e il 30 settembre, dal 2025",
+   "titolo": "Dossier sullo schema di decreto legislativo sugli adempimenti tributari (Atto del Governo n. 93, 6 dicembre 2023): termine della dichiarazione dei redditi al 30 settembre, dal 2025",
    "tipo": "Documento istituzionale",
    "url": "https://documenti.camera.it/leg19/dossier/testi/VQAG093.htm"
   },
@@ -409,7 +409,7 @@
     ],
     [
      "Controlla la precompilata prima di inviarla",
-     "Nella dichiarazione precompilata guarda la parte dei familiari: codice fiscale, mesi a carico, percentuale. Se qualcosa è cambiato, correggi prima di inviare, oppure fatti aiutare da un CAF. Il 730 si presenta fra il 1° aprile e il 30 settembre."
+     "Nella dichiarazione precompilata guarda la parte dei familiari: codice fiscale, mesi a carico, percentuale. Se qualcosa è cambiato, correggi prima di inviare, oppure fatti aiutare da un CAF. Il 730 si invia entro il 30 settembre."
     ]
    ],
    "errori": [
@@ -452,7 +452,7 @@
      "13-18"
     ]
    ],
-   "chiavi_ricerca": "familiari a carico familiare figlio a carico figli a carico genitore a carico mamma papà coniuge moglie marito 730 dichiarazione dei redditi limite reddito 2840 4000 detrazione figli 950 750 21 anni 24 anni 30 anni precompilata fiscalmente",
+   "chiavi_ricerca": "familiari a carico familiare figlio a carico figli a carico genitore a carico mamma papà coniuge moglie marito 730 dichiarazione dei redditi limite reddito 2840 4000 detrarre figli 950 750 21 anni 24 anni 30 anni precompilata fiscalmente",
    "frasi": [
     "(familiar\\w*|fiscalmente) a carico",
     "(e|sono|risulta|resta|essere|metter\\w*|metto) a carico",
@@ -464,8 +464,8 @@
    "categoria": "Organizzarsi",
    "argomento": "soldi",
    "data": "2026-11-13",
-   "titolo": "Le spese per i figli che si detraggono: sport, scuola, nido, abbonamenti",
-   "titolo_seo": "Spese dei figli nel 730: sport, scuola, nido, abbonamento",
+   "titolo": "Sport, scuola, nido e abbonamenti dei figli: cosa puoi detrarre nel 730",
+   "titolo_seo": "Detrarre sport, scuola, nido e abbonamento dei figli nel 730",
    "sommario": "Nel 730 una parte delle spese per i figli torna indietro: il 19% della spesa, fino a un tetto diverso per ogni voce. Sport dai 5 ai 18 anni, scuola, nido, abbonamento a bus e treni, strumenti per i DSA, scuola di musica. Cosa conservare e come pagare.",
    "tempo": "Mezz'ora l'anno per mettere in ordine ricevute e pagamenti",
    "serve": "Ricevute e fatture intestate, con il nome del figlio; la prova dei pagamenti fatti con carta, bancomat o bonifico",
@@ -569,7 +569,7 @@
     "SO-05"
    ],
    "avvertenza": "Informazioni generali tratte dalla documentazione della Camera dei deputati (marzo 2026), dalle pagine dell'INPS e dalle guide dell'Agenzia delle Entrate, controllate a novembre 2026. Il sito principale dell'Agenzia delle Entrate non era raggiungibile dai nostri controlli: per il tuo caso fanno fede le istruzioni del modello 730 dell'anno. Tetti e regole possono cambiare con la legge di bilancio: ricontrolleremo a gennaio. Non è una consulenza fiscale: per il tuo caso chiedi a un CAF.",
-   "domanda": "Quali spese dei figli si detraggono nel 730",
+   "domanda": "Cosa si può detrarre nel 730 per i figli",
    "ricontrolla": "2027-01",
    "correlate": [
     "familiari-a-carico-730",
@@ -586,7 +586,7 @@
      "13-18"
     ]
    ],
-   "chiavi_ricerca": "detrazione detrazioni detrarre detrae scaricare scarica 730 spese figli sport palestra piscina scuola retta mensa abbonamento autobus bus treno tram trasporto dsa musica conservatorio 19% ricevute dichiarazione dei redditi",
+   "chiavi_ricerca": "detrarre scaricare scarica 730 figli sport palestra piscina scuola retta mensa abbonamento autobus bus treno tram trasporto dsa musica conservatorio 19% ricevute dichiarazione dei redditi",
    "frasi": [
     "(detra|detrar|scaric)\\w* .*(sport|palestr|piscin|scuol|mensa|abbonam|autobus| bus|conservator)",
     "(sport|palestr|piscin|scuol|abbonam|autobus|conservator)\\w* .*(detra|scaric|730)"
@@ -631,7 +631,7 @@
     ],
     [
      "ISEE per una RSA: contano anche i figli",
-     "Per le prestazioni socio-sanitarie residenziali, come una RSA, si usa l'ISEE della persona ricoverata, anche con un nucleo ristretto: la persona, il coniuge e i figli, a certe condizioni. Ma si tiene conto anche dei figli che non vivono con lei, con una «componente aggiuntiva» per ognuno: serve la DSU di ogni figlio, o il suo foglio componente. Un figlio si esclude solo se lui, o qualcuno della sua famiglia, ha una disabilità media o grave o non è autosufficiente, oppure se è stata accertata la sua estraneità di rapporti affettivi ed economici. Contano anche le case donate a coniuge e figli nei tre anni prima della prima richiesta."
+     "Per le prestazioni socio-sanitarie residenziali, come una RSA, si usa l'ISEE della persona ricoverata, anche con un nucleo ristretto: la persona, il coniuge e i figli, a certe condizioni. Ma si tiene conto anche dei figli che non vivono con lei, con una «componente aggiuntiva» per ognuno: serve la DSU di ogni figlio, o il suo foglio componente. Un figlio si esclude solo se lui, o qualcuno della sua famiglia, ha una disabilità media o grave o non è autosufficiente, oppure se è stata accertata la sua estraneità di rapporti affettivi ed economici. Contano anche le case donate a coniuge e figli nei tre anni prima della prima richiesta, e quelle donate da quel momento in poi."
     ],
     [
      "Scarica l'attestazione e controllala",
@@ -678,7 +678,7 @@
      "13-18"
     ]
    ],
-   "chiavi_ricerca": "isee precompilato precompilata dsu dichiarazione sostitutiva unica portale unico inps documenti come si fa fare isee minorenni genitori separati non conviventi non sposati padre madre rsa casa di riposo socio sanitario residenziale figli componente aggiuntiva attestazione",
+   "chiavi_ricerca": "isee precompilato precompilata dsu dichiarazione sostitutiva unica portale unico inps documenti come si fa fare isee minorenni genitori separati non conviventi non sposati padre madre rsa casa di riposo sociosanitario socio residenziale figli componente aggiuntiva attestazione",
    "frasi": [
     "isee (per |dei |del |di |della )?(minor|rsa|casa di riposo|socio)",
     "precompilat\\w* (isee|dsu)",
@@ -842,8 +842,8 @@
    "categoria": "Organizzarsi",
    "argomento": "soldi",
    "data": "2026-11-13",
-   "titolo": "Le spese per un genitore anziano che si detraggono: badante, RSA, ausili e cure",
-   "titolo_seo": "Spese per un genitore anziano nel 730: badante, RSA, ausili",
+   "titolo": "Badante, RSA, ausili e cure di un genitore anziano: cosa puoi detrarre",
+   "titolo_seo": "Detrarre badante, RSA, ausili e cure di un genitore anziano nel 730",
    "sommario": "Quando paghi tu per un genitore anziano, una parte può tornare nel 730, a volte anche se non è a carico: la badante, la parte sanitaria della retta della RSA, gli ausili per muoversi, le cure. Cosa si detrae, a quali condizioni e quali carte tenere.",
    "tempo": "20 minuti per mettere in ordine le carte dell'anno",
    "serve": "Ricevute firmate della badante, la certificazione della RSA con la parte sanitaria indicata a parte, prescrizioni e certificati del medico, la prova dei pagamenti",
@@ -907,7 +907,7 @@
     "SO-31"
    ],
    "avvertenza": "Informazioni generali tratte dalle guide dell'Agenzia delle Entrate sulle agevolazioni per le persone con disabilità (gennaio 2022) e sulle spese sanitarie (maggio 2021), dalla documentazione della Camera dei deputati e dalla Gazzetta Ufficiale, controllate a novembre 2026. Le guide dell'Agenzia sono le ultime pubblicate, ma alcuni importi possono essere cambiati: ricontrolleremo a gennaio. Non è una consulenza fiscale: per il tuo caso rivolgiti a un CAF.",
-   "domanda": "Quali spese per un genitore anziano si detraggono",
+   "domanda": "Cosa si può detrarre per un genitore anziano",
    "ricontrolla": "2027-01",
    "correlate": [
     "badante-in-regola",
@@ -918,7 +918,7 @@
     "anziano",
     []
    ],
-   "chiavi_ricerca": "detrazione detrazioni detrarre scaricare 730 spese genitore anziano mamma papà madre padre nonna nonno badante contributi rsa casa di riposo retta ricovero ausili carrozzina stampelle non autosufficiente 104 disabilità patologia esente",
+   "chiavi_ricerca": "detrarre scaricare 730 genitore anziano mamma papà madre padre nonna nonno badante contributi rsa casa di riposo retta ricovero ausili carrozzina stampelle non autosufficiente 104 disabilità patologia esente",
    "frasi": [
     "(detra|detrar|scaric)\\w* .*(badant|rsa|casa di riposo|ausil|carrozzin)",
     "(badant|rsa|casa di riposo)\\w* .*(detra|scaric|730)"
@@ -1253,11 +1253,11 @@
     ],
     [
      "Entro il 30 giugno: ISEE per gli arretrati dell'assegno unico",
-     "Senza ISEE l'assegno unico arriva con gli importi minimi. Se presenti la DSU entro il 30 giugno, l'INPS riconosce gli arretrati dell'anno in corso. Fonte: INPS, Assegno unico e universale."
+     "Senza ISEE l'assegno unico arriva con gli importi minimi. Se presenti la DSU entro il 30 giugno, l'INPS riconosce gli arretrati a partire da marzo. Fonte: INPS, Assegno unico e universale."
     ],
     [
-     "Dal 1° aprile al 30 settembre: il 730",
-     "La dichiarazione dei redditi delle persone fisiche si presenta tra il 1° aprile e il 30 settembre. Prima di inviarla controlla familiari a carico e spese dei figli. Fonte: Camera dei deputati, dossier sul decreto per gli adempimenti tributari."
+     "Entro il 30 settembre: il 730",
+     "Il 730 va inviato entro il 30 settembre: la precompilata si può modificare e inviare da quando l'Agenzia delle Entrate la apre, in primavera. Prima di inviarla controlla familiari a carico e spese dei figli. Fonte: Camera dei deputati, dossier sul decreto per gli adempimenti tributari."
     ],
     [
      "Entro 120 giorni da una nascita: bonus nuovi nati",
@@ -1373,7 +1373,7 @@
     ],
     [
      "Allergie e malattie passate, su un foglio",
-     "Allergie, interventi, malattie importanti, anche dei familiari stretti: il medico lo chiede spesso, e sul momento non è facile ricordare tutto."
+     "Allergie, interventi, malattie importanti, anche dei familiari stretti: il medico te lo può chiedere, e sul momento non è facile ricordare tutto."
     ],
     [
      "Le domande scritte",
@@ -1792,7 +1792,7 @@
      "13-18"
     ]
    ],
-   "chiavi_ricerca": "organizzare settimana famiglia chi fa cosa dividere compiti carico mentale turni impegni planner frigo spesa marito compagno nonni aiuto",
+   "chiavi_ricerca": "organizzare settimana famiglia chi fa cosa dividere compiti carico mentale turni impegni planner frigo marito compagno nonni aiuto",
    "frasi": [
     "chi fa cosa",
     "carico mentale",
@@ -1894,17 +1894,16 @@
     {
      "t": "Il bonus asilo nido dell'INPS non è cumulabile con la detrazione per la frequenza del nido. E il bonus, anche con l'ISEE più alto, vale 1.500 euro l'anno: di solito conviene chiedere quello.",
      "f": [
-      1,
-      2
+      1
      ],
-     "p": "INPS: «Il contributo non è cumulabile con le detrazioni fiscali per la frequenza asili nido.» Camera: 1.500 euro per ISEE oltre 40.000 euro."
+     "p": "INPS: «Il contributo non è cumulabile con le detrazioni fiscali per la frequenza asili nido.» Importo minimo: 1.500 euro con ISEE oltre 40.000 euro o senza ISEE."
     },
     {
      "t": "Il bonus nido è per i bambini sotto i 3 anni e si chiede all'INPS: l'importo è più alto quando l'ISEE è più basso.",
      "f": [
-      2
+      1
      ],
-     "p": "Camera: rimborso delle rette per bambini sotto i tre anni; 3.000 euro con ISEE fino a 25.000 euro, 2.500 euro fino a 40.000, 1.500 euro oltre."
+     "p": "INPS: contributo per i figli di età inferiore a tre anni; per i nati dal 1° gennaio 2024, 3.600 euro con ISEE minorenni fino a 40.000 euro e 1.500 euro oltre o senza ISEE."
     },
     {
      "t": "Come si chiede il bonus, con le ricevute da caricare mese per mese, è spiegato nella guida sul bonus asilo nido.",
@@ -1935,12 +1934,6 @@
      "pagina": "Bonus asilo nido e forme di supporto presso la propria abitazione",
      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.bonus-asilo-nido-e-forme-di-supporto-presso-la-propria-abitazione-51105.bonus-asilo-nido-e-forme-di-supporto-presso-la-propria-abitazione.html",
      "data": "2026-05-28"
-    },
-    {
-     "ente": "Camera dei deputati · Documentazione parlamentare",
-     "pagina": "Politiche sociali e per la famiglia",
-     "url": "https://temi.camera.it/leg19/temi/19_tl18_misure_sostegno_famiglia.html",
-     "data": "2026-09-11"
     }
    ]
   },
@@ -2070,7 +2063,7 @@
      "ente": "Camera dei deputati · Documentazione parlamentare",
      "pagina": "Tassazione delle persone fisiche: detrazioni per carichi di famiglia",
      "url": "https://temi.camera.it/leg19/temi/19_tl18_irpef.html",
-     "data": "2025-05-29"
+     "data": "2026-06-15"
     }
    ]
   },
@@ -2123,7 +2116,7 @@
      "ente": "Camera dei deputati · Documentazione parlamentare",
      "pagina": "Tassazione delle persone fisiche: detrazioni per carichi di famiglia",
      "url": "https://temi.camera.it/leg19/temi/19_tl18_irpef.html",
-     "data": "2025-05-29"
+     "data": "2026-06-15"
     },
     {
      "ente": "Gazzetta Ufficiale",
@@ -2544,11 +2537,11 @@
      "p": "Nucleo ristretto (MB.1rid): beneficiario, coniuge, figli minorenni e maggiorenni a determinate condizioni."
     },
     {
-     "t": "Contano anche le case donate a coniuge e figli nei tre anni prima della prima richiesta.",
+     "t": "Contano anche le case donate a coniuge e figli nei tre anni prima della prima richiesta, e quelle donate da quel momento in poi.",
      "f": [
       0
      ],
-     "p": "Rilevano le donazioni di immobili a coniuge e figli nei 3 anni precedenti la prima richiesta."
+     "p": "Nel quadro MB.3 rilevano le donazioni di immobili fatte dopo la prima richiesta della prestazione e quelle a coniuge, figli o altri familiari tenuti agli alimenti nei 3 anni precedenti la prima richiesta."
     },
     {
      "t": "Come si fa la DSU, con la parte precompilata e quella da scrivere a mano, è spiegato passo per passo nella guida sull'ISEE.",
@@ -2653,11 +2646,11 @@
      "p": "Figlio a carico: reddito complessivo non superiore a 2.840,51 euro; 4.000 euro fino a 24 anni."
     },
     {
-     "t": "Al massimo si recuperano 47,50 euro l'anno, cioè il 19% di 250 euro.",
+     "t": "Su 250 euro di abbonamento si recuperano 47,50 euro, il 19%. Con più abbonamenti in famiglia, chiedi al CAF come si conta il tetto.",
      "f": [
       0
      ],
-     "p": "Calcolo: 250 × 19% = 47,50 euro."
+     "p": "Calcolo: 250 × 19% = 47,50 euro. La fonte non dice se il tetto di 250 euro vale per ogni abbonamento o per tutte le spese di chi detrae."
     },
     {
      "t": "Vale anche per gli altri familiari fiscalmente a carico: in generale, una spesa detraibile lo è anche quando la paghi per un familiare a carico.",
@@ -2990,11 +2983,11 @@
      "p": "Validità: sotto i 3 anni 3 anni; tra 3 e 18 anni 5 anni; maggiorenni fino a 10 anni. Per i minori la CIE scade «al primo compleanno dopo» il periodo di validità. Rinnovo «a partire da centottanta giorni prima della scadenza»."
     },
     {
-     "t": "Le vecchie carte di carta, e le prime CIE, si possono rinnovare anche prima.",
+     "t": "Prima dei 180 giorni si può chiedere una carta nuova se la tua è stata persa, rubata o rovinata.",
      "f": [
       0
      ],
-     "p": "Le carte cartacee e le CIE emesse secondo il DM 8 novembre 2007 possono essere rinnovate anche prima."
+     "p": "La CIE si richiede «a partire da centottanta giorni prima della scadenza», oppure dopo smarrimento, furto o deterioramento."
     },
     {
      "t": "Il costo è di 16,79 euro, più i diritti fissi e di segreteria del Comune, se previsti.",
