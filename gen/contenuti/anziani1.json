@@ -363,7 +363,7 @@
     []
    ],
    "data": "2026-11-13",
-   "titolo": "Le vaccinazioni dai 65 anni in su: quali sono offerte gratis e dove si fanno",
+   "titolo": "Antinfluenzale, pneumococco, herpes zoster e tetano dai 65 anni: cosa è gratis e dove farli",
    "titolo_seo": "Vaccini per gli over 65: quali sono gratis e dove farli",
    "sommario": "Influenza, pneumococco, herpes zoster, il richiamo del tetano, il COVID-19: cosa prevede il calendario nazionale per chi ha compiuto 65 anni, cosa offrono gratis alcune Regioni e dove si fanno. Quali fare, e quando, lo decidete con il medico di famiglia.",
    "tempo": "Una telefonata al medico, poi uno o più appuntamenti",
@@ -497,13 +497,13 @@
    "perche_titolo": "Da sapere prima",
    "perche": [
     "Le cure domiciliari fanno parte dei livelli essenziali di assistenza (LEA): il Servizio sanitario le garantisce alle persone non autosufficienti o fragili che hanno bisogno di cure a casa. L'assistenza domiciliare integrata, l'ADI, mette insieme più professionisti, secondo un piano scritto per quella persona. La responsabilità clinica resta del medico di famiglia.",
-    "In Lombardia è rivolta, senza limiti di età o di reddito, a chi non riesce a spostarsi per andare in ambulatorio, ha una rete familiare che lo sostiene e una casa adatta all'assistenza. È gratuita, a carico del Servizio sanitario: si paga solo il ticket sui prelievi, per chi non è esente.",
+    "In Lombardia, secondo la carta dei servizi di un'azienda sanitaria, è rivolta, senza limiti di età o di reddito, a chi non riesce a spostarsi per andare in ambulatorio, ha una rete familiare che lo sostiene e una casa adatta all'assistenza. È gratuita, a carico del Servizio sanitario: si paga solo il ticket sui prelievi, per chi non è esente.",
     "Ogni Regione organizza le cure domiciliari a modo suo. Qui trovi le regole comuni e, come esempi, quelle di Piemonte e Lombardia."
    ],
    "passi": [
     [
      "Parlane con il medico di famiglia",
-     "È lui, di solito, a chiedere l'attivazione: in Piemonte la presa in carico per i problemi sanitari passa dal medico di famiglia. Per una prestazione occasionale, come una medicazione, in Piemonte la richiesta del medico la può portare anche un familiare al centro Cure domiciliari della ASL."
+     "È lui, di solito, a chiedere l'attivazione: in Piemonte la presa in carico per i problemi sanitari passa dal medico di famiglia. Per una prestazione occasionale, come un prelievo di sangue o un elettrocardiogramma, in Piemonte la richiesta del medico la può portare anche un familiare al centro Cure domiciliari della ASL."
     ],
     [
      "Se esce dall'ospedale, chiedilo prima della dimissione",
@@ -757,7 +757,7 @@
    "serve": "L'impegnativa del medico di famiglia; l'ISEE; documento e tessera sanitaria",
    "perche_titolo": "Da sapere prima",
    "perche": [
-    "Il centro diurno è un servizio «semiresidenziale»: la persona ci passa la giornata e la sera torna a casa. Secondo il decreto sui livelli essenziali di assistenza, offre alle persone non autosufficienti con bisogni sanitari non elevati cure per mantenere le capacità, attività e momenti di sollievo per chi assiste. La Regione Veneto lo descrive come un'accoglienza di giorno che permette di restare nel proprio ambiente familiare e riduce il carico di cura della famiglia.",
+    "Il centro diurno è un servizio «semiresidenziale»: la persona ci passa la giornata e la sera torna a casa. Secondo il decreto sui livelli essenziali di assistenza, offre alle persone non autosufficienti con bisogni sanitari non elevati trattamenti di lungoassistenza, di recupero e di mantenimento delle capacità, compresi interventi di sollievo. La Regione Veneto lo descrive come un'accoglienza di giorno che permette di restare nel proprio ambiente familiare e riduce il carico di cura della famiglia.",
     "Per questi servizi il Servizio sanitario paga il 50% della tariffa giornaliera; l'altra metà è a carico della persona, con un aiuto del Comune se il reddito non basta. Ci sono anche centri dedicati alle persone con Alzheimer o con altre demenze, che hanno valutazioni e regole proprie."
    ],
    "passi": [
@@ -1029,7 +1029,7 @@
     ],
     [
      "Chi può chiederlo, in quale ordine",
-     "Prima il coniuge convivente, la persona unita civilmente o il convivente di fatto; poi il padre o la madre; poi un figlio convivente; poi un fratello o una sorella conviventi; infine un parente o affine entro il terzo grado convivente. Si passa al familiare successivo solo se quelli prima mancano, sono morti o hanno malattie invalidanti."
+     "Prima il coniuge convivente, la persona unita civilmente o il convivente di fatto; poi il padre o la madre della persona con disabilità; poi un figlio convivente; poi un fratello o una sorella conviventi; infine un parente o affine entro il terzo grado convivente. Si passa al familiare successivo solo se quelli prima mancano, sono morti o hanno malattie invalidanti."
     ],
     [
      "Bisogna vivere insieme",
@@ -1041,7 +1041,7 @@
     ],
     [
      "Chi non può averlo",
-     "Non spetta ai lavoratori domestici, ai lavoratori a domicilio, agli agricoli giornalieri, ai lavoratori autonomi e ai parasubordinati."
+     "Non spetta ai lavoratori domestici, ai lavoratori a domicilio, agli agricoli giornalieri, ai lavoratori autonomi e ai parasubordinati. Non spetta, di norma, nemmeno se la persona assistita è ricoverata a tempo pieno, 24 ore su 24, in una struttura che le dà assistenza continuativa: le eccezioni, come le visite e le terapie fuori dalla struttura, sono nella pagina dell'INPS."
     ],
     [
      "Come si fa la domanda",
@@ -1049,7 +1049,7 @@
     ],
     [
      "La legge in discussione: cosa prevede",
-     "Il testo approvato dalla Camera il 14 ottobre 2026 (A.C. 2789, ora al Senato come A.S. 2163) prevede, tra l'altro: il riconoscimento del caregiver attraverso una piattaforma dell'INPS; fino a tre caregiver per ogni persona assistita; un contributo dal 2027 per il caregiver «prevalente», che convive con la persona e la assiste per almeno 91 ore a settimana, con un ISEE fino a 25.000 euro e un reddito da lavoro non oltre 3.000 euro lordi all'anno, fino a 1.200 euro a trimestre nei limiti delle risorse; più flessibilità di orario e di lavoro agile. Il Senato può ancora cambiare il testo: fino all'approvazione definitiva, niente di questo si può chiedere."
+     "Il testo approvato dalla Camera, con modifiche, il 14 ottobre 2026 (A.C. 2789, ora al Senato come A.S. 2163) prevede, tra l'altro: il riconoscimento del caregiver attraverso una piattaforma dell'INPS; fino a tre caregiver per ogni persona assistita; un contributo per il caregiver «prevalente», con un ISEE fino a 25.000 euro e un reddito da lavoro non oltre 3.000 euro lordi all'anno, fino a 1.200 euro a trimestre nei limiti delle risorse; più flessibilità di orario e di lavoro agile. Nel testo della Commissione, prima delle modifiche dell'Aula, il caregiver «prevalente» è chi convive con la persona e la assiste per almeno 91 ore a settimana, e il contributo parte dal 2027. Il Senato può ancora cambiare il testo: fino all'approvazione definitiva, niente di questo si può chiedere."
     ],
     [
      "Dove farsi aiutare",
@@ -1214,10 +1214,10 @@
    "slug": "adi-si-paga",
    "gruppo": "anziani",
    "domanda": "L'assistenza domiciliare integrata si paga?",
-   "risposta": "No: le cure domiciliari della ASL sono a carico del Servizio sanitario. In Lombardia, per esempio, l'assistenza domiciliare integrata è gratuita, senza limiti di età o di reddito.",
+   "risposta": "Le cure sanitarie no: le visite di medici, infermieri e fisioterapisti dell'assistenza domiciliare della ASL sono a carico del Servizio sanitario. Per l'aiuto nell'igiene e negli spostamenti, dopo i primi 30 giorni da una dimissione protetta, il Servizio sanitario paga il 50%.",
    "righe": [
     {
-     "t": "Nella carta dei servizi di un'azienda sanitaria lombarda c'è una sola eccezione: il ticket sui prelievi, per chi non è esente.",
+     "t": "In Lombardia, per esempio, l'assistenza domiciliare integrata è gratuita, senza limiti di età o di reddito: nella carta dei servizi di un'azienda sanitaria lombarda l'unica eccezione è il ticket sui prelievi, per chi non è esente.",
      "f": [
       0
      ],
@@ -1875,7 +1875,7 @@
    "slug": "congedo-straordinario-genitore-pagato",
    "gruppo": "anziani",
    "domanda": "Il congedo straordinario per assistere un genitore è pagato?",
-   "risposta": "Sì. Chi lavora come dipendente e assiste un familiare con disabilità grave riconosciuta riceve un'indennità pari all'ultima retribuzione, entro un tetto che cambia ogni anno.",
+   "risposta": "Sì. Chi lavora come dipendente, ha diritto al congedo e assiste un familiare con disabilità grave riconosciuta riceve un'indennità pari all'ultima retribuzione, entro un tetto che cambia ogni anno.",
    "righe": [
     {
      "t": "Per il 2026 l'indennità massima è di 43.486 euro all'anno, cioè 119,14 euro al giorno. Il periodo è coperto da contributi figurativi, validi per la pensione; non fa maturare ferie, tredicesima e TFR.",
@@ -1892,11 +1892,11 @@
      "p": "Due anni nell'intera vita lavorativa; priorità: coniuge convivente, genitori, figlio convivente, fratelli conviventi, parenti o affini entro il terzo grado conviventi."
     },
     {
-     "t": "Di norma lo paga il datore di lavoro, che poi lo recupera dall'INPS. Non spetta, tra gli altri, ai lavoratori autonomi e domestici.",
+     "t": "Di norma lo paga il datore di lavoro, che poi lo recupera dall'INPS. Non spetta, tra gli altri, ai lavoratori autonomi e domestici, e di norma non spetta se il genitore è ricoverato a tempo pieno in una struttura.",
      "f": [
       0
      ],
-     "p": "Il datore di lavoro anticipa l'indennità e la recupera tramite conguaglio; esclusi addetti ai servizi domestici, lavoratori a domicilio, agricoli giornalieri, autonomi e parasubordinati."
+     "p": "Il datore di lavoro anticipa l'indennità e la recupera tramite conguaglio; esclusi addetti ai servizi domestici, lavoratori a domicilio, agricoli giornalieri, autonomi e parasubordinati.; la persona assistita non deve essere ricoverata a tempo pieno (24 ore) in strutture che assicurano assistenza continuativa, salvo eccezioni."
     },
     {
      "t": "I dipendenti privati fanno la domanda all'INPS, online o con un patronato; i dipendenti pubblici alla propria amministrazione.",
@@ -1930,7 +1930,7 @@
    "risposta": "Sì. Un figlio può avere il congedo straordinario per un genitore con disabilità grave solo se vive con lui: la convivenza deve cominciare entro l'inizio del congedo e durare per tutto il periodo.",
    "righe": [
     {
-     "t": "Il congedo segue un ordine: prima il coniuge convivente, la persona unita civilmente o il convivente di fatto; poi il padre o la madre; poi un figlio convivente; poi un fratello o una sorella conviventi; infine un parente o affine entro il terzo grado convivente.",
+     "t": "Il congedo segue un ordine: prima il coniuge convivente, la persona unita civilmente o il convivente di fatto; poi il padre o la madre della persona con disabilità; poi un figlio convivente; poi un fratello o una sorella conviventi; infine un parente o affine entro il terzo grado convivente.",
      "f": [
       0
      ],
