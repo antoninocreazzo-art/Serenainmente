@@ -1,0 +1,2890 @@
+{
+ "fonti": [
+  {
+   "id": "AT-01",
+   "ente": "Istituto Superiore di Sanità – EpiCentro",
+   "anno": 2017,
+   "titolo": "Novità per gli esami in gravidanza: opuscolo per i cittadini sui Livelli essenziali di assistenza del 2017 (senza data)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.epicentro.iss.it/itoss/pdf/Novit%C3%A0%20per%20gli%20esami%20in%20gravidanza_cittadini-SENZA%20LOGO.pdf"
+  },
+  {
+   "id": "AT-02",
+   "ente": "Regione Lombardia",
+   "anno": 2026,
+   "titolo": "Ticket, esenzioni ed erogabilità delle prestazioni a carico del SSR: esenzioni per le donne in gravidanza (pagina aggiornata il 3 novembre 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.regione.lombardia.it/sanita/ticket-ed-esenzioni/ticket-esenzioni-prestazioni-ssr"
+  },
+  {
+   "id": "AT-03",
+   "ente": "Regione Toscana",
+   "anno": 2026,
+   "titolo": "Nascere in Toscana (pagina aggiornata il 16 giugno 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.regione.toscana.it/it/nascere-in-toscana"
+  },
+  {
+   "id": "AT-04",
+   "ente": "INPS",
+   "anno": 2025,
+   "titolo": "Indennità per congedo di maternità e di paternità alternativo per lavoratrici e lavoratori dipendenti (pagina aggiornata il 30 maggio 2025)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50586.indennit-per-congedo-di-maternit-e-di-paternit-alternativo-per-lavoratrici-e-lavoratori-dipendenti.html"
+  },
+  {
+   "id": "AT-05",
+   "ente": "INPS",
+   "anno": 2025,
+   "titolo": "Trasmissione online dei certificati di gravidanza e interruzione (pagina aggiornata il 28 ottobre 2025)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50909.trasmissione-online-dei-certificati-di-gravidanza-e-interruzione.html"
+  },
+  {
+   "id": "AT-06",
+   "ente": "INPS",
+   "anno": 2025,
+   "titolo": "Attestati di maternità – Consultazione (pagina aggiornata il 28 ottobre 2025)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.attestati-di-maternit-consultazione.html"
+  },
+  {
+   "id": "AT-07",
+   "ente": "INPS",
+   "anno": 2025,
+   "titolo": "Indennità di maternità/paternità per lavoratrici e lavoratori autonomi (pagina aggiornata il 27 giugno 2025)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.indennit-di-maternit-paternit-per-lavoratrici-e-lavoratori-autonomi-50585.indennit-di-maternit-paternit-per-lavoratrici-e-lavoratori-autonomi.html"
+  },
+  {
+   "id": "AT-08",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 2001,
+   "titolo": "Decreto legislativo 26 marzo 2001, n. 151 (Testo unico sulla maternità), art. 16: divieto di adibire al lavoro le donne, testo vigente",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2001-04-26&atto.codiceRedazionale=001G0200&atto.articolo.numero=16&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0"
+  },
+  {
+   "id": "AT-09",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 2001,
+   "titolo": "Decreto legislativo 26 marzo 2001, n. 151, art. 14: controlli prenatali, testo vigente",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2001-04-26&atto.codiceRedazionale=001G0200&atto.articolo.numero=14&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0"
+  },
+  {
+   "id": "AT-10",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 2001,
+   "titolo": "Decreto legislativo 26 marzo 2001, n. 151, art. 54: divieto di licenziamento, testo vigente",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2001-04-26&atto.codiceRedazionale=001G0200&atto.articolo.numero=54&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0"
+  },
+  {
+   "id": "AT-11",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 2001,
+   "titolo": "Decreto legislativo 26 marzo 2001, n. 151, art. 7: lavori vietati, testo vigente",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2001-04-26&atto.codiceRedazionale=001G0200&atto.articolo.numero=7&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0"
+  },
+  {
+   "id": "AT-12",
+   "ente": "IRCCS materno-infantile Burlo Garofolo di Trieste",
+   "anno": 2024,
+   "titolo": "Carta dei servizi del percorso nascita (aggiornata a maggio 2024)",
+   "tipo": "Documento di un ospedale",
+   "url": "https://www.burlo.trieste.it/sites/default/files/carta_dei_servizi_PERCORSO_NASCITA_-_Aggiornata_2024.pdf"
+  },
+  {
+   "id": "AT-13",
+   "ente": "Regione Lombardia",
+   "anno": 2026,
+   "titolo": "Rete del percorso di nascita fisiologico (pagina aggiornata il 12 agosto 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.regione.lombardia.it/sanita/cure-specialistiche/rete-del-percorso-di-nascita-fisiologico"
+  },
+  {
+   "id": "AT-14",
+   "ente": "Azienda USL della Romagna – Ospedale di Forlì",
+   "anno": 2020,
+   "titolo": "Nascere a Forlì: cosa mettere in valigia (revisione del 12 ottobre 2020)",
+   "tipo": "Documento di un ospedale",
+   "url": "https://auslromagna.it/argomenti/millegiorni/gravidanza/cosa_mettere_in_valigia_forli.pdf/@@download/file"
+  },
+  {
+   "id": "AT-15",
+   "ente": "ASL 2 Lanciano-Vasto-Chieti – Ospedale di Vasto",
+   "anno": 2025,
+   "titolo": "Corredino del neonato e della mamma (documento pubblicato a settembre 2025)",
+   "tipo": "Documento di un ospedale",
+   "url": "https://www.asl2abruzzo.it/wp-content/uploads/2025/09/corredino-neonato-e-mamma.pdf"
+  },
+  {
+   "id": "AT-16",
+   "ente": "Regione Toscana",
+   "anno": 2025,
+   "titolo": "Screening neonatale (pagina aggiornata il 14 ottobre 2025)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.regione.toscana.it/it/-/screening-neonatale"
+  },
+  {
+   "id": "AT-17",
+   "ente": "Regione Toscana",
+   "anno": 2026,
+   "titolo": "Scegliere il pediatra e contattarlo (pagina aggiornata il 9 giugno 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.regione.toscana.it/it/scegliere-il-pediatra-e-contattarlo"
+  },
+  {
+   "id": "AT-18",
+   "ente": "Regione Toscana",
+   "anno": 2025,
+   "titolo": "I consultori (pagina aggiornata il 13 agosto 2025)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.regione.toscana.it/-/i-consultori"
+  },
+  {
+   "id": "AT-19",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Indennità per riposi giornalieri per padri e madri dipendenti (pagina aggiornata il 1° aprile 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.50581.indennit-per-riposi-giornalieri-per-padri-e-madri-dipendenti.html"
+  },
+  {
+   "id": "AT-20",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 2001,
+   "titolo": "Decreto legislativo 26 marzo 2001, n. 151, art. 40: riposi giornalieri del padre, testo vigente",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2001-04-26&atto.codiceRedazionale=001G0200&atto.articolo.numero=40&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0"
+  },
+  {
+   "id": "AT-21",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 2001,
+   "titolo": "Decreto legislativo 26 marzo 2001, n. 151, art. 39: riposi giornalieri della madre, testo vigente",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2001-04-26&atto.codiceRedazionale=001G0200&atto.articolo.numero=39&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0"
+  },
+  {
+   "id": "AT-22",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Bonus nuovi nati (pagina aggiornata il 27 aprile 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.bonus-nuovi-nati.html"
+  },
+  {
+   "id": "AT-23",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Nuovo Bonus mamme 2026 (pagina pubblicata il 20 ottobre 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.nuovo-bonus-mamme-2026.html"
+  },
+  {
+   "id": "AT-24",
+   "ente": "INPS",
+   "anno": 2025,
+   "titolo": "Assegno di maternità dei Comuni (pagina aggiornata il 16 luglio 2025)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.assegno-di-maternit--dei-comuni.html"
+  },
+  {
+   "id": "AT-25",
+   "ente": "INPS",
+   "anno": 2025,
+   "titolo": "Assegno di maternità dello Stato (pagina aggiornata il 1° aprile 2025)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-di-maternit-dello-stato-50580.assegno-di-maternit-dello-stato.html"
+  },
+  {
+   "id": "AT-26",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Assegno unico e universale per i figli a carico (pagina aggiornata il 10 settembre 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-55984.assegno-unico-e-universale-per-i-figli-a-carico.html"
+  },
+  {
+   "id": "AT-27",
+   "ente": "INPS – Direzione regionale Puglia",
+   "anno": 2025,
+   "titolo": "Guida per la genitorialità «Con mamma e papà» (edizione 2025)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/Guida_genitorialita.pdf"
+  },
+  {
+   "id": "AT-28",
+   "ente": "Ministero dell'Interno – Carta d'identità elettronica",
+   "anno": 2024,
+   "titolo": "Rilascio e rinnovo minorenni (pagina modificata il 18 giugno 2024)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.cartaidentita.interno.gov.it/richiedi/rilascio-e-rinnovo-minorenni/"
+  },
+  {
+   "id": "AT-29",
+   "ente": "Ministero degli Affari Esteri e della Cooperazione Internazionale",
+   "anno": 2026,
+   "titolo": "Passport: il passaporto, anche per i minori (pagina in inglese, senza data)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.esteri.it/en/servizi-opportunita/italiani-all-estero/documenti_di_viaggio/passaporto/"
+  },
+  {
+   "id": "AT-30",
+   "ente": "Istituto Superiore di Sanità – EpiCentro",
+   "anno": 2025,
+   "titolo": "Depressione post partum: il progetto Music and Motherhood (pagina aggiornata il 6 febbraio 2025)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.epicentro.iss.it/materno/depressione-post-partum-progetto-music-and-motherhood"
+  },
+  {
+   "id": "AT-31",
+   "ente": "Regione Toscana",
+   "anno": 2025,
+   "titolo": "Centro di ascolto gravidanza e post partum (pagina aggiornata il 30 settembre 2025)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.regione.toscana.it/it/-/centro-di-ascolto-gravidanza-e-post-partum"
+  },
+  {
+   "id": "AT-32",
+   "ente": "Commissione europea – Your Europe",
+   "anno": 2026,
+   "titolo": "Il numero di emergenza 112, gratuito in tutta l'Unione europea (ultima verifica 22 giugno 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://europa.eu/youreurope/citizens/travel/safety/emergency/index_it.htm"
+  },
+  {
+   "id": "AT-33",
+   "ente": "INPS",
+   "anno": 2025,
+   "titolo": "Congedo di paternità obbligatorio (pagina aggiornata il 13 novembre 2025)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.congedo-di-paternit-obbligatorio-58988.congedo-di-paternit-obbligatorio.html"
+  },
+  {
+   "id": "AT-34",
+   "ente": "Ministero della Giustizia",
+   "anno": 2020,
+   "titolo": "Nascita: dichiarazione e riconoscimento (scheda aggiornata il 27 marzo 2020)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.giustizia.it/giustizia/page/it/nascita"
+  },
+  {
+   "id": "AT-35",
+   "ente": "Regione Emilia-Romagna – Centro regionale screening neonatale",
+   "anno": 2025,
+   "titolo": "Screening neonatale: opuscolo per i genitori (2025)",
+   "tipo": "Documento istituzionale",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/screening-neonatale/brochure_screening_neonatale2025_web.pdf/@@download/file/brochure_screening_neonatale2025_web.pdf"
+  },
+  {
+   "id": "AT-36",
+   "ente": "Neos – carta dei servizi pubblicata sul sito dell'ENAC",
+   "anno": 2026,
+   "titolo": "Carta dei servizi 2026 di una compagnia aerea italiana: le regole per i bambini sotto i due anni",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.enac.gov.it/app/uploads/2026/08/Carta-dei-servizi-2026-NEOS.pdf"
+  }
+ ],
+ "guide": [
+  {
+   "slug": "esami-gratuiti-in-gravidanza",
+   "categoria": "Organizzarsi",
+   "argomento": "attesa",
+   "data": "2026-11-13",
+   "titolo": "Esami e visite in gravidanza: cosa è gratis e chi scrive l'impegnativa",
+   "titolo_seo": "Esami gratuiti in gravidanza: esenzione e impegnativa",
+   "sommario": "In gravidanza le visite e gli esami previsti per seguire te e il bambino non si pagano. Serve un'impegnativa con il codice di esenzione per gravidanza. Chi la scrive, dove si prenota e cosa sapere sulle ecografie.",
+   "tempo": "Pochi minuti per ogni prenotazione",
+   "serve": "Tessera sanitaria; l'impegnativa del medico o del ginecologo con il codice di esenzione per gravidanza",
+   "strumento": "gestionale",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Il Servizio sanitario nazionale offre gratis le visite e gli esami che servono a seguire la gravidanza. Sono gratuiti negli ospedali e negli ambulatori pubblici, nelle strutture private accreditate e nei consultori familiari. L'elenco è nazionale, ma ogni Regione lo organizza a modo suo.",
+    "Alcuni esami in più servono solo in certe situazioni. Sono gratuiti quando c'è il motivo per farli: per esempio gli esami di diagnosi prenatale, come l'amniocentesi, quando c'è un rischio aumentato e li prescrive lo specialista."
+   ],
+   "passi": [
+    [
+     "Fatti scrivere l'impegnativa con l'esenzione",
+     "La scrive il medico di famiglia, oppure il ginecologo del consultorio familiare o dell'ospedale. Sull'impegnativa c'è il codice di esenzione per gravidanza: con quella vai nei servizi pubblici o convenzionati senza pagare il ticket."
+    ],
+    [
+     "Chiedi se la tua Regione ha un libretto",
+     "In Toscana, per esempio, c'è un libretto con le richieste degli esami periodici della gravidanza: si ritira al consultorio o al distretto, e le prestazioni sono gratuite. Chiedi al consultorio come funziona dove abiti."
+    ],
+    [
+     "Le ecografie",
+     "Le linee guida nazionali e internazionali raccomandano due ecografie se la gravidanza non ha complicanze. Quella del quinto mese si fa tra la 19ª e la 21ª settimana. L'ecografia del terzo trimestre è gratuita quando il medico trova un motivo, nella mamma o nel bambino, per farla."
+    ],
+    [
+     "Gli esami per tutte e quelli solo se servono",
+     "A tutte le donne viene offerto il test combinato, cioè un prelievo di sangue e un'ecografia. Altri esami si fanno solo se c'è un rischio: per esempio la curva da carico di glucosio, per chi rischia il diabete in gravidanza. Amniocentesi e villocentesi sono gratuite quando c'è un rischio aumentato, a qualunque età. Quali fare, e quando, lo decidi con chi ti segue."
+    ],
+    [
+     "Prenota appena hai l'impegnativa",
+     "Si prenota come le altre visite: con il CUP, al telefono, in farmacia dove il servizio c'è, online, oppure al consultorio. Alcuni esami si fanno in settimane precise: non aspettare l'ultimo momento. Al Burlo Garofolo di Trieste, per esempio, la prima visita ostetrica è consigliata entro le 10 settimane."
+    ],
+    [
+     "Gratis anche il corso e il dopo parto",
+     "Sono gratuiti anche i corsi di accompagnamento alla nascita, l'assistenza nelle settimane dopo il parto e la visita dallo psicologo, se in gravidanza o dopo ti senti in difficoltà. Si chiedono al consultorio."
+    ],
+    [
+     "Tieni tutto insieme",
+     "Referti, ecografie e impegnative servono a ogni visita, e anche il giorno del parto. Tienili in una cartellina e portali sempre con te."
+    ]
+   ],
+   "errori": [
+    "Pagare un esame della gravidanza senza aver chiesto prima l'impegnativa con l'esenzione.",
+    "Aspettare a prenotare gli esami che vanno fatti in settimane precise.",
+    "Pensare che il consultorio serva solo a chi non ha un ginecologo: è aperto a tutte, e i servizi di base sono gratuiti."
+   ],
+   "checklist": [
+    "Prima visita fissata",
+    "Impegnativa con il codice di esenzione per gravidanza",
+    "Chiesto se la Regione ha un libretto della gravidanza",
+    "Ecografia del quinto mese prenotata (19ª-21ª settimana)",
+    "Corso di accompagnamento alla nascita scelto",
+    "Referti ed ecografie nella cartellina"
+   ],
+   "fonti": [
+    "AT-01",
+    "AT-02",
+    "AT-03",
+    "AT-12"
+   ],
+   "avvertenza": "Informazioni generali aggiornate a novembre 2026, tratte da un opuscolo dell'Istituto Superiore di Sanità sui Livelli essenziali di assistenza, dalle pagine delle Regioni Lombardia e Toscana e dalla carta dei servizi di un ospedale pubblico. L'elenco nazionale degli esami gratuiti può essere aggiornato e ogni Regione lo organizza a modo suo: ricontrolleremo a gennaio. Per il tuo caso chiedi al consultorio o a chi ti segue. Quali esami fare, e quando, lo decide con te il medico o l'ostetrica.",
+   "domanda": "Quali esami in gravidanza sono gratis",
+   "ricontrolla": "2027-01",
+   "per": [
+    "bambino",
+    [
+     "0-1"
+    ]
+   ],
+   "chiavi_ricerca": "esami gravidanza gratis gratuiti esenzione ticket ecografia ecografie morfologica translucenza test combinato amniocentesi villocentesi visite incinta impegnativa codice lea pagare",
+   "frasi": [
+    "ecografi",
+    "esam\\w* (in |della |di )?gravidanza",
+    "(gravidanza|incinta) .*(gratis|gratuit|ticket|pag)",
+    "test combinato",
+    "morfologica"
+   ],
+   "correlate": [
+    "prenotare-con-il-cup",
+    "consultorio-familiare",
+    "esenzione-ticket"
+   ]
+  },
+  {
+   "slug": "certificato-di-gravidanza",
+   "categoria": "Organizzarsi",
+   "argomento": "attesa",
+   "data": "2026-11-13",
+   "titolo": "Il certificato di gravidanza: chi lo manda all'INPS e cosa dire al lavoro",
+   "titolo_seo": "Certificato di gravidanza: INPS e datore di lavoro",
+   "sommario": "Se lavori, il certificato di gravidanza serve per il congedo di maternità e per le tutele sul lavoro. Lo manda online all'INPS un medico del Servizio sanitario. Cosa ricevi, cosa fai sapere al datore di lavoro, ed entro quando.",
+   "tempo": "Una visita, poi pochi minuti per avvisare il lavoro",
+   "serve": "Una visita da un medico del Servizio sanitario o convenzionato; il numero del certificato che ti dà il medico",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Il certificato di gravidanza contiene i tuoi dati, la settimana di gravidanza alla data della visita e la data presunta del parto. Da quella data si contano i mesi del congedo di maternità.",
+    "Il medico lo manda online all'INPS: non devi più portare un certificato di carta all'Istituto. Al lavoro serve per il congedo di maternità e per il divieto di licenziamento, che vale dall'inizio della gravidanza."
+   ],
+   "passi": [
+    [
+     "Chiedi il certificato a un medico del Servizio sanitario",
+     "Lo invia online all'INPS un medico del Servizio sanitario nazionale o convenzionato. Chiedilo durante una visita: deve arrivare all'INPS prima che cominci il congedo di maternità."
+    ],
+    [
+     "Conserva il numero del certificato",
+     "Dopo l'invio il medico ti dà il numero unico del certificato, assegnato dal sistema. Può darti anche una copia su carta, senza la settimana di gravidanza."
+    ],
+    [
+     "Controlla il certificato online",
+     "Con il servizio dell'INPS «Attestati di maternità – Consultazione» puoi vedere e stampare i tuoi certificati e le ricevute di invio. Il datore di lavoro può vedere solo gli attestati."
+    ],
+    [
+     "Fai sapere al lavoro",
+     "Il divieto di licenziamento vale dall'inizio della gravidanza, ma per farlo valere devi presentare al datore di lavoro un certificato adatto. Chiedi all'ufficio del personale come preferisce riceverlo e conserva una prova della consegna."
+    ],
+    [
+     "Poi la domanda di maternità",
+     "Il certificato non basta. Per essere pagata durante il congedo di maternità serve la domanda all'INPS, da fare prima dei due mesi che precedono la data presunta del parto. Trovi come nella guida sul congedo di maternità."
+    ],
+    [
+     "Se c'è un errore",
+     "Il medico può annullare il certificato entro la mezzanotte del giorno dopo l'invio. Se ti accorgi di un errore, diglielo subito."
+    ]
+   ],
+   "errori": [
+    "Portare il certificato di carta all'INPS: lo manda il medico, online.",
+    "Perdere il numero del certificato.",
+    "Pensare che il certificato valga come domanda di maternità: la domanda va fatta a parte."
+   ],
+   "checklist": [
+    "Certificato inviato dal medico all'INPS",
+    "Numero del certificato salvato",
+    "Certificato controllato online",
+    "Ufficio del personale avvisato, con una prova",
+    "Domanda di maternità in calendario"
+   ],
+   "fonti": [
+    "AT-05",
+    "AT-06",
+    "AT-04",
+    "AT-10"
+   ],
+   "avvertenza": "Informazioni generali per chi lavora come dipendente, tratte dalle pagine dell'INPS e dal Testo unico sulla maternità, aggiornate a novembre 2026. Per il tuo caso chiedi all'ufficio del personale, a un patronato o all'INPS.",
+   "domanda": "A cosa serve il certificato di gravidanza",
+   "per": [
+    "bambino",
+    [
+     "0-1"
+    ]
+   ],
+   "chiavi_ricerca": "certificato gravidanza medico inps datore lavoro incinta comunicare dire capo ufficio personale protocollo numero attestato maternità",
+   "frasi": [
+    "certificat\\w* (medico )?di gravidanza",
+    "certificato (di |della )?maternita",
+    "(dire|comunicare|dirlo|avvisare) .*(lavoro|datore|capo).*(incinta|gravidanza)",
+    "(incinta|gravidanza) .*(dire|comunicare|avvisare) .*(lavoro|datore|capo)"
+   ],
+   "correlate": [
+    "congedo-di-maternita",
+    "lavoro-in-gravidanza-tutele",
+    "congedo-parentale"
+   ]
+  },
+  {
+   "slug": "congedo-di-maternita",
+   "categoria": "Organizzarsi",
+   "argomento": "attesa",
+   "data": "2026-11-13",
+   "titolo": "Congedo di maternità: quando comincia, quanto dura e come si chiede",
+   "titolo_seo": "Congedo di maternità: 5 mesi, flessibilità, domanda",
+   "sommario": "Per le lavoratrici dipendenti: cinque mesi a casa, di solito due prima del parto e tre dopo, pagati all'80% della retribuzione. Con il via libera dei medici si può lavorare più a lungo, anche fino al parto. Come si chiede e cosa cambia per chi lavora in proprio.",
+   "tempo": "15 minuti per la domanda online",
+   "serve": "SPID, CIE o CNS; il certificato di gravidanza già inviato dal medico; le date concordate con il lavoro",
+   "perche_titolo": "Le regole, in breve",
+   "tabella": {
+    "pila": true,
+    "titolo": "Come si possono dividere i cinque mesi (dipendenti)",
+    "colonne": [
+     "Scelta",
+     "Prima del parto",
+     "Dopo il parto"
+    ],
+    "righe": [
+     [
+      "Regola di base",
+      "2 mesi",
+      "3 mesi"
+     ],
+     [
+      "Flessibilità, con il via libera dei medici",
+      "1 mese",
+      "4 mesi"
+     ],
+     [
+      "Tutto dopo il parto, con il via libera dei medici",
+      "Si lavora fino al parto",
+      "5 mesi"
+     ]
+    ]
+   },
+   "perche": [
+    "Il congedo di maternità è il periodo in cui la lavoratrice dipendente non può lavorare, prima e dopo il parto: la legge vieta al datore di lavoro di farla lavorare. In quei mesi ricevi un'indennità pari all'80% della retribuzione media giornaliera.",
+    "Di solito l'indennità la anticipa il datore di lavoro in busta paga; quando non lo fa, la paga direttamente l'INPS. Il congedo parentale e le ore di riposo per l'allattamento sono altre cose, che vengono dopo."
+   ],
+   "passi": [
+    [
+     "Fai inviare il certificato di gravidanza",
+     "Prima di tutto un medico del Servizio sanitario manda online all'INPS il certificato con la data presunta del parto. Da quella data si contano i mesi."
+    ],
+    [
+     "Decidi come dividere i mesi",
+     "La regola è due mesi prima della data presunta del parto e tre dopo. Con la flessibilità resti al lavoro fino al mese prima e stai a casa quattro mesi dopo. Puoi anche lavorare fino al parto e prendere tutti e cinque i mesi dopo. Per queste due scelte serve l'attestato del medico specialista del Servizio sanitario (o convenzionato) e del medico competente del lavoro: dicono che non ci sono rischi per te e per il bambino. Gli attestati si danno al datore di lavoro, non all'INPS."
+    ],
+    [
+     "Fai la domanda all'INPS in tempo",
+     "La domanda va presentata prima dei due mesi che precedono la data presunta del parto. Si fa online sul sito dell'INPS, con il Contact Center (803 164 da rete fissa, 06 164 164 da cellulare) o con un patronato. Il diritto si perde se la domanda non arriva entro un anno dalla fine del periodo pagato."
+    ],
+    [
+     "Dopo il parto, comunica la data di nascita",
+     "Entro 30 giorni dal parto comunica la data di nascita del bambino. Se nasce prima della data presunta, i giorni che non hai usato prima del parto si aggiungono a quelli dopo."
+    ],
+    [
+     "Se la gravidanza è a rischio o il lavoro non è adatto",
+     "Si può smettere di lavorare prima: è l'interdizione anticipata. Se la gravidanza è a rischio la dispone l'ASL; se le tue mansioni non sono compatibili con la gravidanza, la dispone l'Ispettorato territoriale del lavoro."
+    ],
+    [
+     "Se lavori in proprio",
+     "Per artigiane, commercianti e coltivatrici dirette l'INPS paga un'indennità per i due mesi prima del parto e i tre dopo: l'80% della retribuzione giornaliera fissata ogni anno dalla legge per la loro attività. Non c'è l'obbligo di smettere di lavorare, e la domanda si fa dopo il parto. Per chi è iscritta alla Gestione separata le regole sono diverse: l'INPS ha una pagina dedicata."
+    ]
+   ],
+   "errori": [
+    "Fare la domanda a ridosso del parto: va presentata prima dei due mesi che lo precedono.",
+    "Mandare all'INPS gli attestati dei medici per la flessibilità: vanno al datore di lavoro.",
+    "Dimenticare di comunicare la data di nascita entro 30 giorni.",
+    "Confondere il congedo di maternità con il congedo parentale, che è facoltativo e viene dopo."
+   ],
+   "checklist": [
+    "Certificato di gravidanza inviato all'INPS",
+    "Deciso come dividere i cinque mesi",
+    "Attestati dei medici consegnati al lavoro, se lavoro più a lungo",
+    "Domanda all'INPS presentata in tempo",
+    "Ricevuta della domanda salvata",
+    "Data di nascita comunicata entro 30 giorni"
+   ],
+   "fonti": [
+    "AT-04",
+    "AT-08",
+    "AT-05",
+    "AT-07"
+   ],
+   "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS e dal Testo unico sulla maternità, aggiornate a novembre 2026. Per le lavoratrici disoccupate o sospese, per le lavoratrici domestiche e per chi è iscritta alla Gestione separata valgono regole in più. Per il tuo caso chiedi all'ufficio del personale, a un patronato o all'INPS.",
+   "domanda": "Quanto dura il congedo di maternità",
+   "per": [
+    "bambino",
+    [
+     "0-1"
+    ]
+   ],
+   "chiavi_ricerca": "congedo maternità maternita obbligatoria astensione mesi prima dopo parto flessibilità 80% stipendio pagata indennità domanda inps interdizione anticipata gravidanza a rischio lavorare fino al parto nono mese",
+   "frasi": [
+    "congedo di maternita",
+    "maternita obbligatori",
+    "astensione obbligatori",
+    "maternita anticipat",
+    "interdizion",
+    "(lavorare|lavoro) fino al (parto|nono|9)",
+    "flessibilita"
+   ],
+   "correlate": [
+    "congedo-parentale",
+    "certificato-di-gravidanza",
+    "allattamento-e-lavoro"
+   ]
+  },
+  {
+   "slug": "lavoro-in-gravidanza-tutele",
+   "categoria": "Organizzarsi",
+   "argomento": "attesa",
+   "data": "2026-11-13",
+   "titolo": "Lavorare in gravidanza: licenziamento, lavori vietati e permessi per le visite",
+   "titolo_seo": "Lavoro in gravidanza: le tutele della legge",
+   "sommario": "Dall'inizio della gravidanza fino al primo compleanno del bambino non puoi essere licenziata, salvo pochi casi. Non puoi fare lavori pesanti o pericolosi, e hai permessi pagati per gli esami. Cosa dice la legge e a chi rivolgerti.",
+   "tempo": "10 minuti per leggere; il resto lo fai con l'ufficio del personale",
+   "serve": "Il certificato di gravidanza; i documenti che attestano data e ora delle visite",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Il Testo unico sulla maternità, cioè il decreto legislativo 151 del 2001, protegge le lavoratrici in gravidanza e dopo il parto. Le regole di questa guida valgono per chi lavora come dipendente.",
+    "Il divieto di licenziamento dipende dallo stato di gravidanza in sé, anche se al lavoro non l'hai ancora detto. Per farlo valere, però, devi presentare al datore di lavoro un certificato adatto."
+   ],
+   "passi": [
+    [
+     "Non puoi essere licenziata",
+     "La legge vieta di licenziare la lavoratrice dall'inizio della gravidanza fino alla fine del congedo di maternità e, comunque, fino a quando il bambino compie un anno. Un licenziamento dato in questo periodo è nullo."
+    ],
+    [
+     "Le eccezioni",
+     "Il divieto non vale in pochi casi: colpa grave della lavoratrice, che giustifica il licenziamento; chiusura dell'attività dell'azienda; fine del lavoro per cui eri stata assunta o scadenza del contratto a termine; esito negativo del periodo di prova."
+    ],
+    [
+     "Niente pesi e lavori pericolosi",
+     "In gravidanza non puoi trasportare o sollevare pesi, né fare lavori pericolosi, faticosi o insalubri: la legge li elenca. Il datore di lavoro deve spostarti ad altre mansioni. Se le nuove mansioni sono inferiori, conservi stipendio e qualifica."
+    ],
+    [
+     "Se non possono spostarti",
+     "Se non è possibile darti altre mansioni, l'Ispettorato territoriale del lavoro può disporre che tu smetta di lavorare prima del congedo di maternità. Se invece la gravidanza è a rischio per la tua salute, lo dispone l'ASL."
+    ],
+    [
+     "Permessi pagati per esami e visite",
+     "Hai diritto a permessi retribuiti per esami prenatali, accertamenti e visite specialistiche, quando si devono fare durante l'orario di lavoro. Chiedi il permesso al datore di lavoro e poi consegna il documento che attesta il giorno e l'ora dell'esame."
+    ],
+    [
+     "A chi rivolgerti",
+     "Per un dubbio parla prima con l'ufficio del personale. Se qualcosa non va, puoi chiedere a un patronato, a un sindacato o all'Ispettorato territoriale del lavoro. Per un licenziamento rivolgiti subito a un sindacato, a un patronato o a un avvocato."
+    ]
+   ],
+   "errori": [
+    "Continuare a sollevare pesi per non creare problemi: è vietato, e il datore di lavoro deve spostarti.",
+    "Fare un esame in orario di lavoro senza aver chiesto il permesso e senza conservare il giustificativo.",
+    "Firmare documenti sul rapporto di lavoro senza averli fatti leggere a un sindacato o a un patronato."
+   ],
+   "checklist": [
+    "Certificato di gravidanza presentato al lavoro",
+    "Mansioni controllate: niente pesi o lavori pericolosi",
+    "Permessi per le visite chiesti per tempo",
+    "Giustificativi delle visite consegnati",
+    "Numeri di un patronato e di un sindacato salvati"
+   ],
+   "fonti": [
+    "AT-10",
+    "AT-11",
+    "AT-09",
+    "AT-04"
+   ],
+   "avvertenza": "Informazioni generali sulle regole per le lavoratrici dipendenti, tratte dal Testo unico sulla maternità (Normattiva) e dalle pagine dell'INPS, aggiornate a novembre 2026. Non sono una consulenza legale: per il tuo caso rivolgiti a un patronato, a un sindacato, all'Ispettorato del lavoro o a un avvocato.",
+   "domanda": "Si può essere licenziate in gravidanza",
+   "per": [
+    "bambino",
+    [
+     "0-1"
+    ]
+   ],
+   "chiavi_ricerca": "licenziamento licenziata licenziare incinta gravidanza lavoro tutele diritti lavori vietati pesi mansioni permessi visite esami prenatali ore pagati datore",
+   "frasi": [
+    "(incinta|gravidanza) .*licenzi",
+    "licenzi\\w* .*(incinta|gravidanza)",
+    "lavori vietati",
+    "permess\\w* .*(visit|esam|ecografi|prenatal)",
+    "esami prenatali",
+    "(incinta|gravidanza) .*(pesi|mansion)"
+   ],
+   "correlate": [
+    "certificato-di-gravidanza",
+    "congedo-di-maternita",
+    "allattamento-e-lavoro"
+   ]
+  },
+  {
+   "slug": "scegliere-dove-partorire",
+   "categoria": "Stare bene",
+   "argomento": "attesa",
+   "data": "2026-11-13",
+   "titolo": "Scegliere dove partorire: cosa chiedere al punto nascita",
+   "titolo_seo": "Dove partorire: cosa chiedere all'ospedale",
+   "sommario": "Ogni punto nascita ha i suoi incontri, le sue visite e le sue abitudini. Come informarti prima, cosa chiedere su travaglio, analgesia e primi giorni, e dove trovare le risposte. Senza classifiche: conta quello che serve a te.",
+   "tempo": "Qualche settimana per informarti, dal sesto all'ottavo mese",
+   "serve": "I referti della gravidanza; le tue domande scritte",
+   "strumento": "preparo",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "I punti nascita sono gli ospedali e le case di cura dove si partorisce. Molti organizzano incontri di presentazione, visite alla sala parto e incontri sull'analgesia: sono il modo più semplice per conoscerli prima.",
+    "Non esiste un ospedale giusto per tutte. Conta quello che è importante per te: la distanza da casa, come si svolgono travaglio e parto, i primi giorni con il bambino. Se la gravidanza ha bisogno di cure particolari, la scelta va fatta con chi ti segue."
+   ],
+   "passi": [
+    [
+     "Leggi la carta dei servizi",
+     "Cerca sul sito del punto nascita la carta dei servizi del percorso nascita: dice come si prenotano i controlli e gli incontri, e cosa succede dopo il parto. Al Burlo Garofolo di Trieste, per esempio, ci sono visite alla sala parto in piccoli gruppi, preferibilmente dopo la 36ª settimana, e incontri online consigliati dopo la 35ª."
+    ],
+    [
+     "Vai agli incontri di presentazione",
+     "Sono l'occasione per vedere i luoghi e fare domande alle ostetriche. In alcuni ospedali i posti sono pochi: prenota per tempo."
+    ],
+    [
+     "Chiedi per tempo dell'analgesia",
+     "Se pensi di volere l'analgesia epidurale per il travaglio, chiedi come si accede. In Toscana serve un colloquio con il personale medico del punto nascita. Al Burlo gli incontri con l'anestesista sono consigliati dalla 32ª settimana e servono alcuni esami del sangue."
+    ],
+    [
+     "Chiedi come sono i primi giorni",
+     "Il bambino resta con te in camera? In Toscana tutti i punti nascita fanno il rooming-in, 24 ore su 24 o di giorno. Quanto si resta in ospedale? Al Burlo circa 2-3 giorni dopo un parto spontaneo e 4-6 dopo un cesareo. Chi può stare con te, e in quali orari?"
+    ],
+    [
+     "Chiedi cosa succede dopo la dimissione",
+     "Alla dimissione di solito ricevi le lettere per te e per il neonato e il libretto pediatrico. Chiedi a chi rivolgerti nei giorni dopo: al Burlo, per esempio, si chiede di contattare il consultorio entro dieci giorni dalla dimissione."
+    ],
+    [
+     "Scrivi le domande e decidi con chi ti segue",
+     "Porta le domande scritte agli incontri. Se la gravidanza procede senza problemi, alcune Regioni hanno percorsi seguiti da un'ostetrica: in Lombardia, per esempio, le gravidanze a basso rischio possono essere seguite da un'ostetrica di riferimento. Se invece servono cure particolari, chiedi al ginecologo quale punto nascita è adatto."
+    ]
+   ],
+   "errori": [
+    "Scegliere solo con il passaparola, senza chiedere al punto nascita come funziona oggi.",
+    "Pensare all'analgesia solo durante il travaglio: spesso servono prima un colloquio e degli esami.",
+    "Lasciare gli incontri all'ultimo mese, quando i posti possono essere finiti."
+   ],
+   "checklist": [
+    "Carta dei servizi del punto nascita letta",
+    "Incontro di presentazione prenotato",
+    "Chiesto come funziona l'analgesia",
+    "Chiesto del rooming-in e degli orari per chi mi accompagna",
+    "Saputo a chi rivolgermi dopo la dimissione",
+    "Domande scritte pronte"
+   ],
+   "fonti": [
+    "AT-12",
+    "AT-03",
+    "AT-13"
+   ],
+   "avvertenza": "Informazioni generali aggiornate a novembre 2026, con esempi tratti dalla carta dei servizi di un ospedale pubblico e dalle pagine delle Regioni Toscana e Lombardia. Ogni punto nascita ha regole sue: fa fede quello che ti dicono lì. Questa guida non giudica gli ospedali. Per la salute il riferimento è chi ti segue; in urgenza chiama il 112.",
+   "domanda": "Come scegliere l'ospedale dove partorire",
+   "per": [
+    "bambino",
+    [
+     "0-1"
+    ]
+   ],
+   "chiavi_ricerca": "dove partorire punto nascita ospedale scegliere sala parto incontri presentazione visita epidurale analgesia partoanalgesia rooming in clinica parto",
+   "frasi": [
+    "dove partorire",
+    "punto nascita",
+    "punti nascita",
+    "sala parto",
+    "(scegliere|quale) .*ospedale .*(parto|partorire)",
+    "epidural",
+    "partoanalgesia",
+    "analgesia"
+   ],
+   "correlate": [
+    "valigia-per-il-parto",
+    "consultorio-familiare",
+    "esami-gratuiti-in-gravidanza"
+   ]
+  },
+  {
+   "slug": "valigia-per-il-parto",
+   "categoria": "Organizzarsi",
+   "argomento": "attesa",
+   "data": "2026-11-13",
+   "titolo": "La valigia per il parto: la lista per te e per il neonato",
+   "titolo_seo": "Valigia per il parto: la lista da spuntare",
+   "sommario": "Cosa mettere nella borsa per l'ospedale, dalle liste di due ospedali pubblici: i documenti, le cose per te, quelle per il bambino. Da preparare verso la 34ª-36ª settimana e da controllare con la lista del tuo punto nascita.",
+   "tempo": "Un'ora, verso la 34ª-36ª settimana",
+   "serve": "La lista del tuo punto nascita, se ne ha una",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Ogni punto nascita ha la sua lista, e alcune cose le dà l'ospedale. Chiedila agli incontri di presentazione o cercala sul suo sito. Questa guida mette insieme le voci che si ritrovano nelle liste di due ospedali pubblici: quello di Forlì (AUSL della Romagna) e quello di Vasto (ASL 2 Abruzzo).",
+    "In ospedale si resta pochi giorni, ma non si sa mai quanti: per questo le liste chiedono più cambi per il bambino. Prepara la valigia per tempo: l'ospedale di Forlì consiglia entro la 34ª-36ª settimana."
+   ],
+   "passi": [
+    [
+     "I documenti",
+     "Documento d'identità valido e tessera sanitaria. Tutta la documentazione della gravidanza: ecografie, esami, referti. L'ospedale di Vasto chiede anche il documento d'identità del papà."
+    ],
+    [
+     "Le medicine che prendi",
+     "Se prendi farmaci, portali con te nella loro confezione e dillo in reparto."
+    ],
+    [
+     "Per te, in sala parto",
+     "Una maglietta di cotone comoda, calzini di cotone, ciabatte da doccia. Acqua e qualcosa di energetico. L'ospedale di Forlì suggerisce anche la musica che ti piace."
+    ],
+    [
+     "Per te, nei giorni in ospedale",
+     "Due o tre camicie da notte o pigiami aperti davanti, comodi per allattare; una vestaglia; asciugamani; assorbenti per flusso abbondante e mutandine, anche usa e getta; un reggiseno morbido o per l'allattamento; quello che ti serve per lavarti; i vestiti per uscire."
+    ],
+    [
+     "Per il bambino",
+     "Da tre a quattro cambi completi: body, tutina, calzini o scarpine, una cuffietta. Leggeri d'estate, più caldi d'inverno. Una copertina di cotone o di lana, secondo la stagione. A Vasto ogni cambio va in un sacchetto con nome e cognome del bambino."
+    ],
+    [
+     "Per il ritorno a casa",
+     "Il seggiolino per l'auto: il bambino ci viaggia fin dal primo viaggio. Le regole sono nella scheda «Da sapere» sul seggiolino e sul dispositivo antiabbandono."
+    ],
+    [
+     "Per chi ti accompagna",
+     "Vestiti comodi e leggeri, e qualche moneta per i distributori automatici."
+    ],
+    [
+     "Cosa lasciare a casa",
+     "Gioielli e oggetti di valore. L'ospedale di Forlì chiede anche di non portare il ciuccio, per aiutare l'allattamento al seno."
+    ]
+   ],
+   "errori": [
+    "Preparare la valigia all'ultimo momento.",
+    "Dimenticare la documentazione della gravidanza: in ospedale serve.",
+    "Portare un solo cambio per il bambino: la degenza può essere più lunga del previsto."
+   ],
+   "checklist": [
+    "Documento d'identità e tessera sanitaria",
+    "Ecografie, esami e referti della gravidanza",
+    "Farmaci che prendo, nella confezione",
+    "Maglietta e calzini di cotone per la sala parto",
+    "Camicie da notte aperte davanti e vestaglia",
+    "Ciabatte, asciugamani, assorbenti e mutandine",
+    "Prodotti per lavarmi",
+    "Tre o quattro cambi completi per il bambino, con cuffietta",
+    "Copertina adatta alla stagione",
+    "Vestiti per uscire, per me e per il bambino",
+    "Seggiolino in auto"
+   ],
+   "fonti": [
+    "AT-14",
+    "AT-15"
+   ],
+   "avvertenza": "Lista indicativa, costruita sulle indicazioni di due ospedali pubblici (AUSL della Romagna, revisione del 2020, e ASL 2 Abruzzo), controllate a novembre 2026. Ogni punto nascita ha le sue regole e dà cose diverse: fa fede la lista del tuo.",
+   "domanda": "Cosa portare in ospedale per il parto",
+   "per": [
+    "bambino",
+    [
+     "0-1"
+    ]
+   ],
+   "chiavi_ricerca": "valigia borsa parto ospedale cosa portare preparare lista corredino neonato mamma documenti camicia notte body tutine",
+   "frasi": [
+    "valigi",
+    "borsa (per il |del |per )?(parto|ospedale)",
+    "cosa (portare|mettere|serve) .*(ospedale|parto|partorire)",
+    "corredino"
+   ],
+   "correlate": [
+    "scegliere-dove-partorire",
+    "neonato-documenti-primi-giorni",
+    "viaggiare-con-un-neonato"
+   ]
+  },
+  {
+   "slug": "primi-giorni-a-casa-con-il-neonato",
+   "categoria": "Stare bene",
+   "argomento": "attesa",
+   "data": "2026-11-13",
+   "titolo": "I primi giorni a casa con il neonato: chi chiamare e quali controlli",
+   "titolo_seo": "Neonato a casa: chi chiamare e quali controlli",
+   "sommario": "Appena tornati a casa le domande sono tante. Chi vi segue: il pediatra, che fa la prima visita entro il primo mese, il consultorio e l'ostetrica. Cosa sono lo screening fatto in ospedale e i bilanci di salute.",
+   "tempo": "Le prime quattro settimane",
+   "serve": "Le lettere di dimissione e il libretto pediatrico; il codice fiscale del bambino per scegliere il pediatra",
+   "strumento": "preparo",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Nelle prime settimane non sei sola. Il pediatra di famiglia segue il bambino; il consultorio segue te e il bambino insieme, anche per l'allattamento. Sono servizi del Servizio sanitario, e quelli di base sono gratuiti.",
+    "Alcuni controlli il bambino li fa già in ospedale. Altri arrivano dopo, a scadenze fisse, con il pediatra: si chiamano bilanci di salute."
+   ],
+   "passi": [
+    [
+     "Tieni a portata di mano le carte della dimissione",
+     "Alla dimissione di solito ricevi le lettere per te e per il neonato e il libretto pediatrico, con i dati utili al pediatra. Portali alla prima visita."
+    ],
+    [
+     "Scegli il pediatra, anche prima di uscire",
+     "In Toscana il pediatra si può scegliere già prima della dimissione. Per sceglierlo basta che un genitore vada all'Azienda sanitaria con un documento e il codice fiscale del bambino, oppure lo faccia online. Come si fa nella tua Regione è spiegato nelle guide collegate."
+    ],
+    [
+     "Chiedi la prima visita a casa",
+     "In Toscana si chiede al pediatra la prima visita a domicilio, che deve fare entro il primo mese di vita: è anche il primo bilancio di salute. Per i primogeniti la visita a casa si fa entro 25 giorni dall'iscrizione, anche se il bambino sta bene. Chiedi come funziona nella tua Regione."
+    ],
+    [
+     "Il consultorio e l'ostetrica",
+     "Il consultorio offre assistenza dopo il parto e sostegno all'allattamento, con accesso diretto e gratuito. In molti consultori toscani si può chiedere la visita dell'ostetrica a casa. Al Burlo di Trieste, per esempio, si chiede di contattare il consultorio entro dieci giorni dalla dimissione."
+    ],
+    [
+     "Lo screening neonatale, già fatto in ospedale",
+     "Tra le 48 e le 72 ore di vita a tutti i neonati si fa una piccola puntura sul tallone: qualche goccia di sangue serve a cercare alcune malattie rare. È gratuito e la legge lo rende obbligatorio in tutta Italia. Se non ti richiamano, il risultato è negativo. Se ti richiamano, non vuol dire che il bambino sia malato: servono altri controlli."
+    ],
+    [
+     "I bilanci di salute",
+     "Sono visite programmate dal pediatra, a scadenze fisse, fino ai 14 anni, per seguire come cresce il bambino. Scrivi prima le domande, così non ne dimentichi nessuna."
+    ],
+    [
+     "Se qualcosa ti preoccupa",
+     "Per i dubbi sulla salute del bambino chiama il pediatra. Se il bambino sta male, respira male o non risponde, chiama subito il 112."
+    ]
+   ],
+   "errori": [
+    "Perdere le lettere di dimissione: servono al pediatra.",
+    "Pensare che il consultorio serva solo in gravidanza: segue anche te e il bambino dopo il parto.",
+    "Preoccuparsi perché non arriva il risultato dello screening: se non ti richiamano, è negativo."
+   ],
+   "checklist": [
+    "Lettere di dimissione e libretto pediatrico in un posto sicuro",
+    "Pediatra scelto",
+    "Prima visita del pediatra fissata",
+    "Numero del consultorio salvato",
+    "Chiesto se l'ostetrica può venire a casa",
+    "Domande per il primo bilancio di salute scritte"
+   ],
+   "fonti": [
+    "AT-03",
+    "AT-17",
+    "AT-18",
+    "AT-16",
+    "AT-12",
+    "AT-32"
+   ],
+   "avvertenza": "Informazioni generali aggiornate a novembre 2026, tratte dalle pagine della Regione Toscana e dalla carta dei servizi di un ospedale pubblico. Tempi e servizi cambiano da Regione a Regione: chiedi in ospedale prima di tornare a casa, o al consultorio. Questa guida non dà indicazioni sulla salute: per il tuo bambino il riferimento è il pediatra.",
+   "domanda": "Chi chiamare nei primi giorni con il neonato",
+   "per": [
+    "bambino",
+    [
+     "0-1"
+    ]
+   ],
+   "chiavi_ricerca": "neonato casa primi giorni dimissione dimessi tornati ospedale domicilio ostetrica screening neonatale tallone puntura",
+   "frasi": [
+    "primi giorni (a casa|con il neonato|col neonato)",
+    "(neonato|bimbo|bambino) .*(a casa|tornati|dimess)",
+    "screening neonatal",
+    "tallone",
+    "prima visita (del |dal )?pediatra",
+    "ostetrica a (casa|domicilio)"
+   ],
+   "correlate": [
+    "neonato-documenti-primi-giorni",
+    "pediatra-e-medico-di-base",
+    "consultorio-familiare"
+   ]
+  },
+  {
+   "slug": "consultorio-familiare",
+   "categoria": "Stare bene",
+   "argomento": "attesa",
+   "data": "2026-11-13",
+   "titolo": "Il consultorio familiare: cosa offre gratis prima e dopo il parto",
+   "titolo_seo": "Consultorio familiare: servizi gratuiti per la nascita",
+   "sommario": "Il consultorio è il servizio pubblico vicino a casa che segue la gravidanza, il parto e i primi mesi. Ci si va senza impegnativa e i servizi di base sono gratuiti: visite, corsi di accompagnamento alla nascita, allattamento, sostegno dopo il parto.",
+   "tempo": "Una telefonata per il primo appuntamento",
+   "serve": "Tessera sanitaria; per alcune visite ambulatoriali, la ricetta del medico",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "I consultori familiari sono servizi delle Aziende sanitarie. Si occupano della salute delle donne, dei bambini, degli adolescenti, delle coppie e delle famiglie. Per tutto il percorso nascita offrono assistenza gratuita.",
+    "In Toscana l'accesso è diretto, gratuito e senza prescrizione medica: le prestazioni si prenotano al consultorio. Solo alcune prestazioni ambulatoriali chiedono la ricetta, la prenotazione al CUP e il ticket. Come funziona dove abiti lo sai con una telefonata."
+   ],
+   "passi": [
+    [
+     "Trova il consultorio più vicino",
+     "Cerca «consultorio» sul sito della tua Azienda sanitaria, o chiedi al medico di famiglia. Salva indirizzo, orari e telefono."
+    ],
+    [
+     "In gravidanza",
+     "Consulenza prima del concepimento, assistenza in gravidanza, visite ostetriche e ginecologiche. Il ginecologo del consultorio può scrivere l'impegnativa con il codice di esenzione per gravidanza, per avere gli esami gratis."
+    ],
+    [
+     "Il corso di accompagnamento alla nascita",
+     "È gratuito. In Toscana si segue intorno al settimo mese; a Trieste i consultori consigliano di chiamare dopo le 22-24 settimane di gravidanza. Chiedi per tempo come iscriverti."
+    ],
+    [
+     "Dopo il parto",
+     "Assistenza nelle settimane dopo il parto e sostegno all'allattamento. In Toscana ci sono anche incontri di gruppo dopo il parto e, in molti consultori, la visita dell'ostetrica a casa."
+    ],
+    [
+     "Se ti senti in difficoltà",
+     "Il consultorio offre consulenza psicologica e sociale e sostegno ai genitori. In gravidanza e dopo il parto, se ti senti in difficoltà, la visita dallo psicologo è gratuita."
+    ],
+    [
+     "Anche dopo",
+     "Il consultorio resta un riferimento anche per la contraccezione dopo il parto e per la salute di tutta la famiglia."
+    ]
+   ],
+   "errori": [
+    "Pensare di dover pagare: i servizi di base del consultorio sono gratuiti.",
+    "Aspettare un'impegnativa del medico: al consultorio si va direttamente.",
+    "Iscriversi al corso di accompagnamento alla nascita all'ultimo mese."
+   ],
+   "checklist": [
+    "Indirizzo, orari e telefono del consultorio salvati",
+    "Primo appuntamento fissato",
+    "Corso di accompagnamento alla nascita prenotato",
+    "Chiesto come funziona il sostegno all'allattamento",
+    "Chiesto se c'è la visita dell'ostetrica a casa"
+   ],
+   "fonti": [
+    "AT-18",
+    "AT-01",
+    "AT-03",
+    "AT-12"
+   ],
+   "avvertenza": "Informazioni generali aggiornate a novembre 2026, tratte dalle pagine della Regione Toscana, da un opuscolo dell'Istituto Superiore di Sanità e dalla carta dei servizi di un ospedale pubblico. Servizi, orari e modi di prenotare cambiano da Regione a Regione: chiedi al tuo consultorio.",
+   "domanda": "Cosa offre il consultorio familiare",
+   "per": [
+    "bambino",
+    [
+     "0-1"
+    ]
+   ],
+   "chiavi_ricerca": "consultorio consultori familiare gratis gratuito corso preparto corso preparazione parto accompagnamento nascita allattamento ostetrica psicologo dopo parto puerperio",
+   "frasi": [
+    "consultori",
+    "corso (pre ?parto|preparto|di preparazione|di accompagnamento)",
+    "preparto"
+   ],
+   "correlate": [
+    "esami-gratuiti-in-gravidanza",
+    "primi-giorni-a-casa-con-il-neonato",
+    "stanchezza-e-tristezza-dopo-il-parto"
+   ]
+  },
+  {
+   "slug": "allattamento-e-lavoro",
+   "categoria": "Organizzarsi",
+   "argomento": "attesa",
+   "data": "2026-11-13",
+   "titolo": "Allattamento e lavoro: le ore di riposo al giorno nel primo anno",
+   "titolo_seo": "Riposi per allattamento: ore, papà, domanda",
+   "sommario": "Nel primo anno del bambino la lavoratrice dipendente ha diritto a due ore di riposo pagate al giorno, una se lavora meno di sei ore. Quando possono prenderle il papà, cosa cambia con i gemelli e a chi si fa la domanda.",
+   "tempo": "15 minuti per la domanda, prima di cominciare",
+   "serve": "L'orario di lavoro; SPID, CIE o CNS se la domanda la fa il papà",
+   "perche_titolo": "Le regole, in breve",
+   "tabella": {
+    "titolo": "Le ore di riposo al giorno, nel primo anno",
+    "colonne": [
+     "Situazione",
+     "Ore di riposo"
+    ],
+    "righe": [
+     [
+      "Orario di almeno 6 ore al giorno",
+      "2 ore"
+     ],
+     [
+      "Orario di meno di 6 ore al giorno",
+      "1 ora"
+     ],
+     [
+      "Il bambino va al nido messo a disposizione dal datore di lavoro, vicino al lavoro",
+      "La metà"
+     ],
+     [
+      "Gemelli o più figli nati insieme",
+      "Il doppio"
+     ]
+    ]
+   },
+   "perche": [
+    "Si chiamano riposi giornalieri, ma tutti li conoscono come «ore di allattamento». Spettano per tutto il primo anno di vita del bambino e sono pagati come la retribuzione. Contano come ore di lavoro e danno il diritto di uscire dall'azienda.",
+    "Spettano alle lavoratrici e ai lavoratori dipendenti. Non spettano alle lavoratrici domestiche e a domicilio."
+   ],
+   "passi": [
+    [
+     "Quando si usano",
+     "Si usano quando torni al lavoro dopo il congedo di maternità, fino al primo compleanno del bambino. Concorda gli orari con l'ufficio del personale."
+    ],
+    [
+     "Mamma dipendente: la domanda al datore di lavoro",
+     "La lavoratrice fa la domanda solo al datore di lavoro, prima di cominciare. Se l'indennità la paga direttamente l'INPS, la domanda va presentata anche alla sede INPS."
+    ],
+    [
+     "Quando le ore spettano al papà",
+     "La legge le riconosce al padre lavoratore dipendente: se il bambino è affidato solo a lui; al posto della madre lavoratrice dipendente che non le usa; se la madre lavora ma non come dipendente, per esempio in proprio; se la madre è morta o gravemente malata."
+    ],
+    [
+     "Quando al papà non spettano",
+     "Secondo l'INPS non spettano al padre se la madre non lavora. E non spettano mentre la madre dipendente è in congedo di maternità o parentale, in aspettativa o in permesso non retribuito."
+    ],
+    [
+     "Papà: domanda online, al lavoro e all'INPS",
+     "Il padre presenta la domanda online sia al datore di lavoro sia all'INPS: sul sito dell'INPS, con il Contact Center (803 164 da rete fissa, 06 164 164 da cellulare) o con un patronato. Va fatta prima di cominciare, e comunque entro un anno."
+    ],
+    [
+     "Con i gemelli",
+     "Con un parto gemellare o di più figli le ore raddoppiano. Le ore in più il papà le può usare anche mentre la mamma è in congedo di maternità o parentale."
+    ]
+   ],
+   "errori": [
+    "Cominciare a usare le ore senza aver fatto prima la domanda.",
+    "Pensare che il papà possa sempre prenderle: se la mamma non lavora, secondo l'INPS non spettano.",
+    "Dimenticare che le ore finiscono al primo compleanno del bambino."
+   ],
+   "checklist": [
+    "Orario di lavoro controllato: 2 ore o 1 ora",
+    "Deciso chi usa le ore, mamma o papà",
+    "Domanda presentata prima di cominciare",
+    "Orari dei riposi concordati con il lavoro",
+    "Primo compleanno segnato: lì finiscono i riposi"
+   ],
+   "fonti": [
+    "AT-19",
+    "AT-21",
+    "AT-20"
+   ],
+   "avvertenza": "Informazioni generali per chi lavora come dipendente, tratte dalla pagina dell'INPS aggiornata il 1° aprile 2026 e dal Testo unico sulla maternità, controllate a novembre 2026. Per i casi particolari, come l'affidamento al solo padre o l'adozione, chiedi all'ufficio del personale, a un patronato o all'INPS.",
+   "domanda": "Quante ore di allattamento spettano al lavoro",
+   "per": [
+    "bambino",
+    [
+     "0-1"
+    ]
+   ],
+   "chiavi_ricerca": "allattamento lavoro ore riposi giornalieri permessi allattamento rientro al lavoro papà padre due ore un ora gemelli primo anno",
+   "frasi": [
+    "allatt\\w* .*lavor",
+    "lavor\\w* .*allatt",
+    "ore di allattamento",
+    "permess\\w* (per l.|di |d.)?allatt",
+    "riposi giornalieri",
+    "rientro al lavoro"
+   ],
+   "correlate": [
+    "congedo-di-maternita",
+    "congedo-parentale",
+    "bonus-asilo-nido"
+   ]
+  },
+  {
+   "slug": "aiuti-per-la-nascita-2026",
+   "categoria": "Organizzarsi",
+   "argomento": "attesa",
+   "data": "2026-11-13",
+   "titolo": "Bonus e aiuti per la nascita nel 2026: quali sono e a chi si chiedono",
+   "titolo_seo": "Bonus nascita 2026: nuovi nati, assegni, aiuti",
+   "sommario": "Gli aiuti per chi ha un figlio nel 2026, solo quelli confermati dall'INPS: il bonus nuovi nati da 1.000 euro, l'Assegno unico, l'assegno di maternità dei Comuni e quello dello Stato, il bonus mamme. Per ognuno, chi lo chiede ed entro quando.",
+   "tempo": "Mezz'ora per capire quali ti spettano, poi una domanda per ciascuno",
+   "serve": "ISEE per i minorenni; SPID, CIE o CNS; il codice fiscale del bambino",
+   "strumento": "gestionale",
+   "perche_titolo": "Chi ne ha diritto",
+   "tabella": {
+    "pila": true,
+    "titolo": "Gli aiuti per la nascita nel 2026",
+    "colonne": [
+     "Aiuto",
+     "Per chi",
+     "Entro quando"
+    ],
+    "righe": [
+     [
+      "Bonus nuovi nati: 1.000 euro una volta",
+      "ISEE fino a 40.000 euro, senza contare l'Assegno unico",
+      "120 giorni dalla nascita"
+     ],
+     [
+      "Assegno unico",
+      "Ogni figlio a carico; l'importo dipende dall'ISEE",
+      "Dal 7° mese di gravidanza, se la domanda arriva entro 120 giorni dalla nascita"
+     ],
+     [
+      "Assegno di maternità dei Comuni",
+      "Madri senza tutela per la maternità, o con una tutela bassa, entro limiti di reddito",
+      "6 mesi dalla nascita, al Comune"
+     ],
+     [
+      "Assegno di maternità dello Stato",
+      "Madri con almeno 3 mesi di contributi per la maternità tra i 18 e i 9 mesi prima del parto, e altri casi",
+      "6 mesi dalla nascita, all'INPS"
+     ],
+     [
+      "Bonus mamme 2026",
+      "Madri che lavorano, con due o più figli",
+      "31 dicembre 2026"
+     ]
+    ]
+   },
+   "perche": [
+    "Gli aiuti per la nascita sono diversi e si chiedono a enti diversi: quasi tutti all'INPS, l'assegno di maternità dei Comuni al Comune. Molti dipendono dall'ISEE, quindi conviene avere un ISEE per i minorenni valido, che comprenda il nuovo nato.",
+    "Alcuni hanno scadenze strette che partono dal giorno della nascita: 120 giorni per il bonus nuovi nati, sei mesi per gli assegni di maternità. Segnale in calendario subito."
+   ],
+   "passi": [
+    [
+     "Bonus nuovi nati: 1.000 euro",
+     "Per i bambini nati, adottati o in affido preadottivo dal 1° gennaio 2025 l'INPS paga 1.000 euro una volta sola, se l'ISEE riferito al bambino non supera 40.000 euro; nel calcolo non si conta l'Assegno unico. La domanda la fa un genitore, una per ogni figlio, entro 120 giorni dalla nascita: online, con il Contact Center o con un patronato. Dopo i 120 giorni non si può più chiedere."
+    ],
+    [
+     "Assegno unico",
+     "Spetta per ogni figlio a carico, dal settimo mese di gravidanza. Se lo ricevi già per un altro figlio, devi comunicare la nascita. Come si fa è spiegato nella guida collegata."
+    ],
+    [
+     "Assegno di maternità dei Comuni",
+     "È per le madri che non hanno una tutela previdenziale per la maternità, o ne hanno una bassa, entro limiti di reddito fissati ogni anno. Serve la residenza nel Comune e, per chi è straniera, un titolo di soggiorno. Si chiede al Comune di residenza entro sei mesi dalla nascita, e lo paga l'INPS. Importo e limiti cambiano ogni anno: chiedili al Comune."
+    ],
+    [
+     "Assegno di maternità dello Stato",
+     "Lo può chiedere la madre che ha almeno tre mesi di contributi per la maternità tra i 18 e i 9 mesi prima del parto; ci sono regole anche per la madre che ha perso il lavoro, per il padre e per altri casi. Si chiede all'INPS entro sei mesi dalla nascita: online, con il Contact Center o con un patronato. Se hai già l'assegno del Comune, spetta solo la differenza."
+    ],
+    [
+     "Bonus mamme 2026",
+     "Se lavori, come dipendente o in proprio, e hai due o più figli, per il 2026 l'INPS paga 60 euro per ogni mese di lavoro, fino a 12 mesi, in una sola volta. Sono escluse le lavoratrici domestiche. La domanda va fatta entro il 31 dicembre 2026, oppure entro il 31 gennaio 2027 se il diritto nasce a dicembre. Le altre condizioni sono sulla pagina dell'INPS."
+    ],
+    [
+     "Più avanti, il bonus asilo nido",
+     "Quando il bambino andrà al nido, l'INPS rimborsa in parte la retta. Importi e ricevute sono nella guida collegata."
+    ]
+   ],
+   "errori": [
+    "Lasciar passare i 120 giorni del bonus nuovi nati.",
+    "Non comunicare la nascita all'INPS se ricevi già l'Assegno unico.",
+    "Pensare che gli assegni di maternità arrivino da soli: vanno chiesti entro sei mesi.",
+    "Fidarsi di bonus letti sui social: se non sono sul sito dell'INPS o del Comune, chiedi prima a un patronato."
+   ],
+   "checklist": [
+    "ISEE per i minorenni con il nuovo nato",
+    "Bonus nuovi nati chiesto entro 120 giorni",
+    "Assegno unico chiesto, o nascita comunicata",
+    "Chiesto al Comune dell'assegno di maternità",
+    "Controllato se mi spetta l'assegno di maternità dello Stato",
+    "Scadenze in calendario"
+   ],
+   "fonti": [
+    "AT-22",
+    "AT-26",
+    "AT-27",
+    "AT-24",
+    "AT-25",
+    "AT-23"
+   ],
+   "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS, aggiornate a novembre 2026, con le regole del 2026. Importi, soglie e scadenze cambiano con la legge di bilancio: ricontrolleremo questa pagina a gennaio 2027. Per il tuo caso fa fede il sito dell'INPS o il tuo Comune; un patronato o un CAF possono aiutarti con le domande.",
+   "domanda": "Quali bonus ci sono per la nascita di un figlio",
+   "ricontrolla": "2027-01",
+   "per": [
+    "bambino",
+    [
+     "0-1"
+    ]
+   ],
+   "chiavi_ricerca": "bonus nascita nuovi nati bebe bebè 1000 euro mille aiuti contributi soldi figlio nato neonato assegno maternità comune stato bonus mamme inps 2026",
+   "frasi": [
+    "bonus (bebe|nascit|mamm|nuovi nati|neonat)",
+    "aiuti .*(nascit|neonat|nuovo nato|figlio)",
+    "assegno di maternita",
+    "(soldi|contribut\\w*) .*(nascit|neonat)",
+    "mille euro",
+    "1000 euro"
+   ],
+   "correlate": [
+    "assegno-unico-nuovo-nato",
+    "neonato-documenti-primi-giorni",
+    "bonus-asilo-nido"
+   ]
+  },
+  {
+   "slug": "assegno-unico-nuovo-nato",
+   "categoria": "Organizzarsi",
+   "argomento": "attesa",
+   "data": "2026-11-13",
+   "titolo": "Assegno unico per un figlio appena nato: da quando spetta e come si chiede",
+   "titolo_seo": "Assegno unico per il neonato: domanda e decorrenza",
+   "sommario": "L'Assegno unico per un nuovo figlio spetta dal settimo mese di gravidanza, se la domanda arriva entro 120 giorni dalla nascita. Se lo ricevi già per un altro figlio, basta comunicare la nascita. I passi, in ordine.",
+   "tempo": "15 minuti online",
+   "serve": "SPID, CIE o CNS; il codice fiscale del bambino; l'ISEE per i minorenni, se lo hai",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "L'Assegno unico è l'aiuto mensile dell'INPS per i figli a carico. Per un nuovo nato spetta dal settimo mese di gravidanza: per questo conviene muoversi subito dopo la nascita.",
+    "Le regole generali, come il rinnovo e gli importi senza ISEE, sono nella scheda «L'assegno unico» del sito. Qui trovi solo cosa fare quando nasce un figlio."
+   ],
+   "passi": [
+    [
+     "Prima, il codice fiscale del bambino",
+     "Per la domanda serve il codice fiscale del bambino. Come si ottiene, subito dopo la dichiarazione di nascita, è spiegato nella guida sui documenti del neonato."
+    ],
+    [
+     "Primo figlio: la domanda entro 120 giorni",
+     "La presenta uno dei due genitori che esercitano la responsabilità genitoriale: online sul sito dell'INPS, con l'app INPS Mobile, chiamando il Contact Center (803 164 da rete fissa, 06 164 164 da cellulare) o tramite un patronato. Se arriva entro 120 giorni dalla nascita, l'assegno parte dal settimo mese di gravidanza."
+    ],
+    [
+     "Hai già l'assegno per un altro figlio? Comunica la nascita",
+     "Non serve una domanda nuova: comunichi all'INPS la nascita come variazione della domanda che hai già. Fallo subito, senza aspettare i 120 giorni."
+    ],
+    [
+     "Aggiorna l'ISEE",
+     "Senza ISEE, o con un ISEE oltre la soglia, l'INPS paga gli importi minimi. Rinnova l'ISEE con il nuovo figlio, così ricevi l'importo corretto."
+    ],
+    [
+     "Il primo anno vale di più",
+     "Per i figli con meno di un anno l'importo ha una maggiorazione, alle condizioni indicate dall'INPS."
+    ],
+    [
+     "Controlla i pagamenti",
+     "Nella tua area personale sul sito dell'INPS controlla che il bambino risulti nella domanda e che arrivi il pagamento. Se qualcosa non torna, chiedi al Contact Center o a un patronato."
+    ]
+   ],
+   "errori": [
+    "Aspettare oltre i 120 giorni: l'assegno non parte più dal settimo mese di gravidanza.",
+    "Fare una domanda nuova quando basta comunicare la nascita in quella che hai.",
+    "Lasciare l'ISEE senza il nuovo nato: si riceve meno."
+   ],
+   "checklist": [
+    "Codice fiscale del bambino",
+    "Domanda presentata o nascita comunicata, entro 120 giorni",
+    "ISEE rinnovato con il nuovo figlio",
+    "Bambino presente nella domanda",
+    "Primo pagamento controllato"
+   ],
+   "fonti": [
+    "AT-26",
+    "AT-27"
+   ],
+   "avvertenza": "Informazioni generali tratte dalla pagina dell'INPS sull'Assegno unico (aggiornata il 10 settembre 2026) e da una guida dell'INPS per i genitori, controllate a novembre 2026. Importi e regole possono cambiare ogni anno: ricontrolleremo a gennaio 2027. Per il tuo caso fa fede l'INPS; un patronato o un CAF possono aiutarti.",
+   "domanda": "Da quando spetta l'assegno unico per un neonato",
+   "ricontrolla": "2027-01",
+   "per": [
+    "bambino",
+    [
+     "0-1"
+    ]
+   ],
+   "chiavi_ricerca": "assegno unico neonato nuovo nato nascita figlio aggiungere variazione 120 giorni settimo mese gravidanza arretrati domanda inps",
+   "frasi": [
+    "assegno unico .*(nat|neonat|nascit|gravidanza|aggiung|nuovo figlio|secondo figlio)",
+    "(neonat|nato|nascit|nuovo figlio|secondo figlio) .*assegno unico"
+   ],
+   "correlate": [
+    "aiuti-per-la-nascita-2026",
+    "neonato-documenti-primi-giorni",
+    "bonus-asilo-nido"
+   ]
+  },
+  {
+   "slug": "viaggiare-con-un-neonato",
+   "categoria": "Organizzarsi",
+   "argomento": "attesa",
+   "data": "2026-11-13",
+   "titolo": "Viaggiare con un neonato: documenti, auto, aereo e treno",
+   "titolo_seo": "Viaggiare con un neonato: i documenti che servono",
+   "sommario": "Anche un neonato ha bisogno di un documento suo per andare all'estero, e in auto viaggia sempre nel seggiolino. Cosa preparare prima di partire, dove trovare le regole di aerei e treni, e chi sentire per la salute.",
+   "tempo": "Qualche settimana prima di partire, per i documenti",
+   "serve": "Documento d'identità dei genitori; codice fiscale del bambino; una fototessera del bambino",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Per andare all'estero ogni bambino deve avere un documento suo: la carta d'identità valida per l'espatrio, che si può fare fin dalla nascita, oppure il passaporto. Preparalo prima di prenotare.",
+    "Prima di un viaggio, soprattutto nei primi mesi, senti il pediatra: questa guida parla solo di documenti e di regole, non di salute."
+   ],
+   "passi": [
+    [
+     "Il documento per l'estero, fin dalla nascita",
+     "Si chiede in Comune. Per un bambino sotto i 3 anni vale 3 anni. Per usarla all'estero devono essere presenti entrambi i genitori quando viene emessa. Come si prenota e cosa portare è nella guida sulla carta d'identità dei bambini."
+    ],
+    [
+     "Oppure il passaporto",
+     "Per i Paesi che lo chiedono serve il passaporto individuale del bambino. In Italia si chiede in Questura, con l'assenso di entrambi i genitori. Da 0 a 3 anni vale 3 anni."
+    ],
+    [
+     "Sotto i 14 anni, con un genitore",
+     "Un bambino sotto i 14 anni può andare all'estero se viaggia con almeno uno dei genitori. Se viaggia con altri adulti servono altri passaggi: li trovi nella guida sulla carta d'identità dei bambini."
+    ],
+    [
+     "Controlla le regole del Paese",
+     "Ogni Paese decide quali documenti accetta. Controlla prima di prenotare, sul sito del Ministero degli Esteri o dell'ambasciata del Paese."
+    ],
+    [
+     "In auto, sempre nel seggiolino",
+     "Il bambino viaggia nel seggiolino fin dal primo viaggio, quello dall'ospedale a casa. Le regole sono nella scheda «Da sapere» sul seggiolino e sul dispositivo antiabbandono."
+    ],
+    [
+     "Aereo e treno: leggi le regole della compagnia",
+     "Ogni compagnia aerea scrive le sue regole nella carta dei servizi, pubblicata anche sul sito dell'ENAC. Per esempio, nella carta dei servizi 2026 di una compagnia italiana i bambini sotto i due anni non hanno diritto a un posto a sedere, c'è una culla da chiedere quando prenoti e il passeggino si consegna sotto l'aereo. Per il treno, leggi le condizioni di viaggio della compagnia prima di comprare il biglietto."
+    ]
+   ],
+   "errori": [
+    "Prenotare il volo prima di avere il documento del bambino.",
+    "Pensare che il neonato possa andare all'estero con il documento dei genitori: serve un documento suo.",
+    "Fare la carta d'identità con un solo genitore presente e scoprire che non vale per l'espatrio."
+   ],
+   "checklist": [
+    "Documento del bambino per l'estero",
+    "Controllato che il documento valga per l'espatrio",
+    "Regole del Paese controllate",
+    "Regole della compagnia lette",
+    "Seggiolino adatto per l'auto",
+    "Sentito il pediatra prima di partire"
+   ],
+   "fonti": [
+    "AT-28",
+    "AT-29",
+    "AT-14",
+    "AT-36"
+   ],
+   "avvertenza": "Informazioni generali aggiornate a novembre 2026, dal Ministero dell'Interno, dal Ministero degli Affari Esteri e dalla carta dei servizi di una compagnia aerea pubblicata dall'ENAC. Le regole dei Paesi e delle compagnie cambiano: controlla prima di ogni viaggio. Per la salute del bambino in viaggio chiedi al pediatra.",
+   "domanda": "Che documento serve a un neonato per viaggiare",
+   "per": [
+    "bambino",
+    [
+     "0-1"
+    ]
+   ],
+   "chiavi_ricerca": "viaggiare neonato viaggio aereo volo treno estero espatrio passaporto bebe passeggino culla vacanza",
+   "frasi": [
+    "viagg\\w* (con|col) (un |il |la |mio |mia )?(neonat|bebe|bimb|bambin|piccol)",
+    "(neonat|bebe) .*(aereo|volo|treno|viagg|estero|passaporto)",
+    "passaporto (per il |del |per un )?(neonat|bebe)"
+   ],
+   "correlate": [
+    "carta-identita-bambini",
+    "neonato-documenti-primi-giorni",
+    "valigia-per-il-parto"
+   ]
+  },
+  {
+   "slug": "stanchezza-e-tristezza-dopo-il-parto",
+   "categoria": "Stare bene",
+   "argomento": "salute",
+   "data": "2026-11-13",
+   "titolo": "Dopo il parto, stanca o triste: dove trovare aiuto",
+   "titolo_seo": "Tristezza e depressione dopo il parto: a chi chiedere aiuto",
+   "sommario": "Dopo un parto le giornate sono piene e le notti corte. Se la tristezza non passa, non devi tenerla per te: capita a molte donne e si può chiedere aiuto, anche gratis. A chi rivolgersi, con semplicità.",
+   "tempo": "Una telefonata",
+   "serve": "Niente: basta chiamare",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Secondo l'Istituto Superiore di Sanità la depressione dopo il parto riguarda il 13-15% delle donne che partoriscono, e nella metà dei casi non viene riconosciuta. Chiedere aiuto è un modo di prendersi cura di sé e del bambino.",
+    "Questa pagina non serve a capire se è depressione: lo capisci con un professionista. Serve a sapere a chi chiedere, in modo semplice, nel Servizio sanitario."
+   ],
+   "passi": [
+    [
+     "Dillo a qualcuno di cui ti fidi",
+     "Al partner, a un'amica, a chi vive con te. Parlarne aiuta anche a farsi dare una mano con le cose di ogni giorno."
+    ],
+    [
+     "Chiama il consultorio",
+     "In molte Regioni il consultorio familiare offre un colloquio per riconoscere presto la depressione dopo il parto e un colloquio con lo psicologo. In gravidanza e dopo il parto, se ti senti in difficoltà, la visita dallo psicologo è gratuita. In Toscana, per esempio, al consultorio si va senza impegnativa."
+    ],
+    [
+     "Parlane con il medico o l'ostetrica",
+     "Il tuo medico di famiglia, l'ostetrica o il ginecologo che ti hanno seguita possono ascoltarti e dirti a chi rivolgerti. Puoi parlarne anche al pediatra, durante una visita del bambino."
+    ],
+    [
+     "Se abiti in Toscana",
+     "La Regione ha un servizio di ascolto telefonico per la gravidanza e il dopo parto, con psicologi psicoterapeuti: 055 4383001, dal lunedì al venerdì, dalle 9 alle 18. È aperto anche ai partner e ai familiari. Chiedi al consultorio se nella tua Regione c'è un servizio simile."
+    ],
+    [
+     "Puoi chiedere anche per lei",
+     "Se sei il partner, un familiare o un'amica e vedi una neomamma in difficoltà, puoi chiamare tu il consultorio per sapere come starle vicino."
+    ],
+    [
+     "Se hai paura per te o per il bambino",
+     "Se pensi di farti del male, o temi di fare del male al bambino, chiama subito il 112: è gratuito, da qualsiasi telefono."
+    ]
+   ],
+   "errori": [
+    "Pensare di dover farcela da sola.",
+    "Aspettare che passi da sé, quando la tristezza dura e pesa sulle giornate.",
+    "Credere che chiedere aiuto voglia dire essere una cattiva madre."
+   ],
+   "checklist": [
+    "Numero del consultorio salvato",
+    "Ne ho parlato con una persona di cui mi fido",
+    "Ho chiesto un colloquio",
+    "So che in urgenza si chiama il 112"
+   ],
+   "fonti": [
+    "AT-30",
+    "AT-01",
+    "AT-18",
+    "AT-31",
+    "AT-32"
+   ],
+   "avvertenza": "Informazioni su dove chiedere aiuto, tratte dall'Istituto Superiore di Sanità e dalle pagine della Regione Toscana, aggiornate a novembre 2026. Non sono una diagnosi e non sostituiscono un professionista: per capire cosa sta succedendo parla con il consultorio o con il medico. In urgenza chiama il 112.",
+   "domanda": "A chi chiedere aiuto se dopo il parto mi sento triste",
+   "per": [
+    "bambino",
+    [
+     "0-1"
+    ]
+   ],
+   "chiavi_ricerca": "depressione post parto postpartum post partum baby blues tristezza triste piango stanca esausta neomamma mamma aiuto psicologo consultorio sostegno",
+   "frasi": [
+    "depression\\w* (post|dopo)",
+    "post ?part",
+    "baby blues",
+    "(triste|tristezza|piango|giu di morale) .*(parto|nascita|neonat|mamma)",
+    "(dopo il parto|neomamma) .*(triste|stanca|piango|giu)"
+   ],
+   "correlate": [
+    "consultorio-familiare",
+    "primi-giorni-a-casa-con-il-neonato",
+    "esami-gratuiti-in-gravidanza"
+   ]
+  },
+  {
+   "slug": "congedo-di-paternita",
+   "categoria": "Organizzarsi",
+   "argomento": "attesa",
+   "data": "2026-11-13",
+   "titolo": "Congedo di paternità obbligatorio: dieci giorni, quando e come",
+   "titolo_seo": "Congedo di paternità: 10 giorni pagati al 100%",
+   "sommario": "I papà che lavorano come dipendenti hanno 10 giorni lavorativi di congedo pagati al 100%, 20 se nascono gemelli. Si prendono tra due mesi prima del parto e cinque mesi dopo, e di solito basta avvisare il datore di lavoro.",
+   "tempo": "5 minuti per la comunicazione scritta",
+   "serve": "La data presunta del parto; i giorni che hai scelto",
+   "perche_titolo": "Le regole, in breve",
+   "tabella": {
+    "titolo": "Il congedo di paternità obbligatorio, in breve",
+    "colonne": [
+     "Che cosa",
+     "Regola"
+    ],
+    "righe": [
+     [
+      "Giorni",
+      "10 lavorativi; 20 se nascono gemelli o più figli"
+     ],
+     [
+      "Quando",
+      "Da 2 mesi prima della data presunta del parto a 5 mesi dopo la nascita"
+     ],
+     [
+      "Come",
+      "Anche a giorni separati, non a ore"
+     ],
+     [
+      "Quanto è pagato",
+      "100% della retribuzione"
+     ],
+     [
+      "Preavviso",
+      "Per iscritto al datore di lavoro, almeno 5 giorni prima"
+     ]
+    ]
+   },
+   "perche": [
+    "Spetta ai padri lavoratori dipendenti, nel privato e nel pubblico, anche adottivi e affidatari. Spetta anche alla madre intenzionale, in una coppia di donne registrate come genitori nello stato civile. Non spetta ai lavoratori autonomi e agli iscritti alla Gestione separata.",
+    "È un'altra cosa rispetto al congedo parentale, che è facoltativo e ha regole diverse: lo trovi nella guida collegata."
+   ],
+   "passi": [
+    [
+     "Scegli i giorni",
+     "Puoi prenderli da due mesi prima della data presunta del parto fino a cinque mesi dopo la nascita, anche a giorni separati, ma non a ore. Puoi prenderli anche mentre la mamma è in congedo di maternità."
+    ],
+    [
+     "Avvisa per iscritto il datore di lavoro",
+     "Comunica per iscritto i giorni che vuoi prendere, almeno cinque giorni prima. Se puoi, fallo già prima della nascita, partendo dalla data presunta del parto."
+    ],
+    [
+     "Di solito non serve la domanda all'INPS",
+     "Se il congedo lo paga il datore di lavoro in busta paga, non fai domanda all'INPS. La domanda online all'INPS serve solo quando paga direttamente l'Istituto: per esempio per lavoratori agricoli, stagionali, addetti ai servizi domestici e alcuni disoccupati."
+    ],
+    [
+     "Se lavori nel pubblico",
+     "I dipendenti pubblici presentano sempre la domanda alla propria amministrazione."
+    ],
+    [
+     "Con i gemelli",
+     "Se nascono due o più figli insieme, i giorni diventano 20."
+    ],
+    [
+     "Anche nel lutto",
+     "Il congedo spetta anche in caso di morte perinatale del figlio."
+    ],
+    [
+     "Non confonderlo con il congedo alternativo",
+     "Esiste anche un congedo di paternità alternativo, che spetta al padre solo in casi particolari: per esempio morte o grave malattia della madre, o affidamento del figlio al solo padre. Non si può usare negli stessi giorni del congedo obbligatorio."
+    ]
+   ],
+   "errori": [
+    "Avvisare il datore di lavoro all'ultimo: servono almeno cinque giorni.",
+    "Aspettare oltre i cinque mesi dalla nascita: dopo, il congedo non si può più prendere.",
+    "Chiederlo a ore: si prende solo a giorni interi."
+   ],
+   "checklist": [
+    "Giorni scelti, entro 5 mesi dalla nascita",
+    "Comunicazione scritta al datore di lavoro, 5 giorni prima",
+    "Controllato se serve la domanda all'INPS",
+    "Copia della comunicazione salvata"
+   ],
+   "fonti": [
+    "AT-33",
+    "AT-04"
+   ],
+   "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS, controllate a novembre 2026. La durata è fissata dalla legge e può cambiare: ricontrolleremo a gennaio 2027. Per il tuo caso chiedi all'ufficio del personale, a un patronato o all'INPS.",
+   "domanda": "Quanti giorni di permesso ha il papà alla nascita",
+   "ricontrolla": "2027-01",
+   "per": [
+    "bambino",
+    [
+     "0-1"
+    ]
+   ],
+   "chiavi_ricerca": "congedo paternità papà padre giorni permesso nascita figlio dieci 10 giorni obbligatorio lavoro marito compagno",
+   "frasi": [
+    "paternita",
+    "(papa|padre|marito|compagno) .*(giorni|permess|congedo)",
+    "(giorni|permess|congedo) .*(papa|padre|marito|compagno)"
+   ],
+   "correlate": [
+    "congedo-parentale",
+    "congedo-di-maternita",
+    "allattamento-e-lavoro"
+   ]
+  }
+ ],
+ "domande": [
+  {
+   "slug": "quanto-dura-il-congedo-di-maternita",
+   "gruppo": "attesa",
+   "domanda": "Quanto dura il congedo di maternità?",
+   "risposta": "Cinque mesi: di solito due prima della data presunta del parto e tre dopo.",
+   "righe": [
+    {
+     "t": "Vale per le lavoratrici dipendenti. In quei mesi ricevono un'indennità pari all'80% della retribuzione media giornaliera, di solito anticipata in busta paga dal datore di lavoro.",
+     "f": [
+      0
+     ],
+     "p": "INPS: indennità pari all'«80% della retribuzione media globale giornaliera», anticipata dal datore «in busta paga»."
+    },
+    {
+     "t": "I mesi si possono spostare. Con la flessibilità si lavora fino al mese prima del parto e si sta a casa quattro mesi dopo. Si può anche lavorare fino al parto e prendere tutti e cinque i mesi dopo.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "INPS: astensione «a partire dal mese precedente la data presunta del parto» e «nei quattro mesi successivi»; oppure «esclusivamente dopo l'evento del parto» entro «i cinque mesi successivi». D.Lgs. 151/2001, art. 16, comma 1.1."
+    },
+    {
+     "t": "Per queste due scelte servono gli attestati del medico specialista del Servizio sanitario (o convenzionato) e del medico competente del lavoro, da consegnare al datore di lavoro e non all'INPS.",
+     "f": [
+      0
+     ],
+     "p": "INPS: attestazione del medico specialista del SSN o convenzionato e del medico competente; documentazione «prodotta ai soli datori di lavoro e non all'Istituto»."
+    },
+    {
+     "t": "Se il bambino nasce prima della data presunta, i giorni non goduti prima del parto si aggiungono a quelli dopo.",
+     "f": [
+      1
+     ],
+     "p": "D.Lgs. 151/2001, art. 16, comma 1, lettera d."
+    },
+    {
+     "t": "La domanda all'INPS va presentata prima dei due mesi che precedono la data presunta del parto.",
+     "f": [
+      0
+     ],
+     "p": "INPS: domanda «prima dei due mesi che precedono la data prevista del parto»."
+    }
+   ],
+   "guide": [
+    "congedo-di-maternita"
+   ],
+   "schede": [],
+   "chiavi": "congedo maternità quanto dura mesi obbligatoria astensione flessibilità parto",
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Indennità per congedo di maternità e di paternità alternativo per lavoratrici e lavoratori dipendenti (pagina aggiornata il 30 maggio 2025)",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50586.indennit-per-congedo-di-maternit-e-di-paternit-alternativo-per-lavoratrici-e-lavoratori-dipendenti.html",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Parlamento italiano – Normattiva",
+     "pagina": "Decreto legislativo 26 marzo 2001, n. 151 (Testo unico sulla maternità), art. 16: divieto di adibire al lavoro le donne, testo vigente",
+     "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2001-04-26&atto.codiceRedazionale=001G0200&atto.articolo.numero=16&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "ecografie-in-gravidanza-si-pagano",
+   "gruppo": "attesa",
+   "domanda": "Le ecografie in gravidanza si pagano?",
+   "risposta": "No: quelle previste per seguire la gravidanza sono gratuite, con l'impegnativa che riporta il codice di esenzione per gravidanza.",
+   "righe": [
+    {
+     "t": "L'impegnativa la scrive il medico di famiglia, oppure il ginecologo del consultorio familiare o dell'ospedale. Con quella si va nei servizi pubblici o convenzionati.",
+     "f": [
+      0
+     ],
+     "p": "«È necessaria una impegnativa che riporta il codice esenzione per gravidanza», «rilasciata dal medico di medicina generale o dal ginecologo del consultorio familiare o dell'ospedale»."
+    },
+    {
+     "t": "Se la gravidanza non ha complicanze, le linee guida raccomandano due ecografie. Quella del quinto mese si fa tra la 19ª e la 21ª settimana.",
+     "f": [
+      0
+     ],
+     "p": "«Le linee guida nazionali e internazionali raccomandano 2 ecografie in gravidanza se non vi sono complicanze»; «L'ecografia del quinto mese va eseguita tra 19 e 21 settimane»."
+    },
+    {
+     "t": "L'ecografia del terzo trimestre è gratuita quando il medico trova un motivo, nella mamma o nel bambino, per farla.",
+     "f": [
+      0
+     ],
+     "p": "«L'ecografia del terzo trimestre non viene più offerta gratuitamente a tutte le donne», «ma solo a quelle per le quali il medico identifica una patologia materna o fetale»."
+    },
+    {
+     "t": "La Regione Lombardia ricorda che le prestazioni per la tutela della maternità sono gratuite anche nelle strutture private accreditate e nei consultori familiari.",
+     "f": [
+      1
+     ],
+     "p": "Lombardia (art. 59 DPCM 12.1.2017): gratuite anche se «fruite presso le strutture sanitarie pubbliche e private accreditate, compresi i consultori familiari»."
+    },
+    {
+     "t": "Quali ecografie fare, e quando, lo decidi con chi ti segue in gravidanza.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "esami-gratuiti-in-gravidanza"
+   ],
+   "schede": [],
+   "chiavi": "ecografia ecografie gravidanza gratis pagare ticket esenzione morfologica incinta",
+   "fonti": [
+    {
+     "ente": "Istituto Superiore di Sanità – EpiCentro",
+     "pagina": "Novità per gli esami in gravidanza: opuscolo per i cittadini sui Livelli essenziali di assistenza del 2017 (senza data)",
+     "url": "https://www.epicentro.iss.it/itoss/pdf/Novit%C3%A0%20per%20gli%20esami%20in%20gravidanza_cittadini-SENZA%20LOGO.pdf",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Ticket, esenzioni ed erogabilità delle prestazioni a carico del SSR: esenzioni per le donne in gravidanza (pagina aggiornata il 3 novembre 2026)",
+     "url": "https://www.regione.lombardia.it/sanita/ticket-ed-esenzioni/ticket-esenzioni-prestazioni-ssr",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "si-puo-lavorare-fino-al-nono-mese",
+   "gruppo": "attesa",
+   "domanda": "Si può lavorare fino al nono mese?",
+   "risposta": "Sì, se sei dipendente e i medici dicono che non ci sono rischi: puoi lavorare fino al parto e prendere i cinque mesi di congedo tutti dopo.",
+   "righe": [
+    {
+     "t": "Lo prevede il Testo unico sulla maternità: la lavoratrice può astenersi dal lavoro solo dopo il parto, entro i cinque mesi successivi.",
+     "f": [
+      0
+     ],
+     "p": "D.Lgs. 151/2001, art. 16, comma 1.1: astensione esclusivamente dopo il parto, entro i cinque mesi successivi."
+    },
+    {
+     "t": "Servono gli attestati del medico specialista del Servizio sanitario (o convenzionato) e del medico competente per la sicurezza sul lavoro: dicono che la scelta non fa male a te e al bambino.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Art. 16, comma 1.1; INPS: «con la stessa attestazione medica»."
+    },
+    {
+     "t": "L'INPS precisa che questi attestati si consegnano al datore di lavoro, non all'Istituto.",
+     "f": [
+      1
+     ],
+     "p": "INPS: documentazione «prodotta ai soli datori di lavoro e non all'Istituto»."
+    },
+    {
+     "t": "C'è anche una via di mezzo, la flessibilità: lavori fino al mese prima della data presunta del parto e stai a casa quattro mesi dopo.",
+     "f": [
+      1
+     ],
+     "p": "INPS: «a partire dal mese precedente la data presunta del parto» e «nei quattro mesi successivi al parto»."
+    },
+    {
+     "t": "I lavori pesanti o pericolosi, invece, in gravidanza sono vietati: il datore di lavoro deve spostarti ad altre mansioni.",
+     "f": [
+      2
+     ],
+     "p": "D.Lgs. 151/2001, art. 7: divieto di trasporto e sollevamento di pesi e di lavori pericolosi, faticosi e insalubri; spostamento ad altre mansioni."
+    }
+   ],
+   "guide": [
+    "congedo-di-maternita",
+    "lavoro-in-gravidanza-tutele"
+   ],
+   "schede": [],
+   "chiavi": "lavorare fino al parto nono mese 9 mese incinta maternità dopo il parto flessibilità",
+   "fonti": [
+    {
+     "ente": "Parlamento italiano – Normattiva",
+     "pagina": "Decreto legislativo 26 marzo 2001, n. 151 (Testo unico sulla maternità), art. 16: divieto di adibire al lavoro le donne, testo vigente",
+     "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2001-04-26&atto.codiceRedazionale=001G0200&atto.articolo.numero=16&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "INPS",
+     "pagina": "Indennità per congedo di maternità e di paternità alternativo per lavoratrici e lavoratori dipendenti (pagina aggiornata il 30 maggio 2025)",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50586.indennit-per-congedo-di-maternit-e-di-paternit-alternativo-per-lavoratrici-e-lavoratori-dipendenti.html",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Parlamento italiano – Normattiva",
+     "pagina": "Decreto legislativo 26 marzo 2001, n. 151, art. 7: lavori vietati, testo vigente",
+     "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2001-04-26&atto.codiceRedazionale=001G0200&atto.articolo.numero=7&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "entro-quando-si-dichiara-la-nascita",
+   "gruppo": "attesa",
+   "domanda": "Entro quando si dichiara la nascita?",
+   "risposta": "Entro 3 giorni se la dichiari in ospedale, entro 10 giorni se la dichiari in Comune.",
+   "righe": [
+    {
+     "t": "In ospedale o nella casa di cura la dichiarazione si fa alla direzione sanitaria. Lì si può anche riconoscere il figlio nato fuori dal matrimonio.",
+     "f": [
+      0
+     ],
+     "p": "«Entro tre giorni, presso la direzione sanitaria dell'ospedale o della casa di cura»; la dichiarazione può contenere il riconoscimento del figlio nato fuori dal matrimonio."
+    },
+    {
+     "t": "In Comune si fa entro dieci giorni dalla nascita, nel Comune dove è avvenuto il parto.",
+     "f": [
+      0
+     ],
+     "p": "«Entro dieci giorni dalla nascita, presso il comune nel cui territorio è avvenuto il parto»."
+    },
+    {
+     "t": "La può fare uno dei genitori, un procuratore speciale, il medico o l'ostetrica che hanno assistito al parto.",
+     "f": [
+      0
+     ],
+     "p": "La dichiarazione è resa da «uno dei genitori, un procuratore speciale, il medico o l'ostetrica» o altra persona che ha assistito al parto."
+    },
+    {
+     "t": "Serve l'attestazione di avvenuta nascita, con i dati della mamma, il luogo, il giorno, l'ora della nascita e il sesso del bambino.",
+     "f": [
+      0
+     ],
+     "p": "Attestazione di avvenuta nascita con dati della puerpera, luogo, giorno, ora della nascita e sesso del bambino."
+    },
+    {
+     "t": "Dopo la dichiarazione arrivano codice fiscale, tessera sanitaria e pediatra: l'ordine, e le altre possibilità per il Comune, sono nella guida sui documenti del neonato.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "neonato-documenti-primi-giorni"
+   ],
+   "schede": [],
+   "chiavi": "dichiarazione nascita dichiarare entro quando giorni ospedale comune anagrafe neonato riconoscimento",
+   "fonti": [
+    {
+     "ente": "Ministero della Giustizia",
+     "pagina": "Nascita: dichiarazione e riconoscimento (scheda aggiornata il 27 marzo 2020)",
+     "url": "https://www.giustizia.it/giustizia/page/it/nascita",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "il-papa-ha-giorni-di-permesso-alla-nascita",
+   "gruppo": "attesa",
+   "domanda": "Il papà ha giorni di permesso alla nascita?",
+   "risposta": "Sì, se lavora come dipendente: 10 giorni lavorativi di congedo di paternità, pagati al 100% della retribuzione.",
+   "righe": [
+    {
+     "t": "I giorni diventano 20 se nascono gemelli o più figli insieme.",
+     "f": [
+      0
+     ],
+     "p": "10 giorni lavorativi, 20 in caso di parto plurimo."
+    },
+    {
+     "t": "Si prendono tra due mesi prima della data presunta del parto e cinque mesi dopo la nascita, anche a giorni separati ma non a ore. Il papà può prenderli anche mentre la mamma è in congedo di maternità.",
+     "f": [
+      0
+     ],
+     "p": "Periodo da due mesi prima della data presunta a cinque mesi dopo la nascita; fruibile a giorni, non frazionabile a ore; fruibile anche durante il congedo di maternità della madre."
+    },
+    {
+     "t": "Il papà comunica i giorni per iscritto al datore di lavoro, almeno cinque giorni prima. La domanda all'INPS serve solo quando paga direttamente l'Istituto; i dipendenti pubblici la presentano sempre alla propria amministrazione.",
+     "f": [
+      0
+     ],
+     "p": "Comunicazione scritta al datore con almeno cinque giorni di anticipo; domanda all'INPS solo nei casi di pagamento diretto; i dipendenti pubblici presentano la domanda all'amministrazione."
+    },
+    {
+     "t": "Spetta anche alla madre intenzionale in una coppia di donne registrate come genitori. Non spetta ai lavoratori autonomi e agli iscritti alla Gestione separata.",
+     "f": [
+      0
+     ],
+     "p": "Destinatari: padri dipendenti privati e pubblici, anche adottivi e affidatari, e madri intenzionali; esclusi autonomi e iscritti alla Gestione Separata."
+    }
+   ],
+   "guide": [
+    "congedo-di-paternita",
+    "congedo-parentale"
+   ],
+   "schede": [],
+   "chiavi": "papà padre giorni permesso nascita congedo paternità obbligatorio dieci 10 marito",
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Congedo di paternità obbligatorio (pagina aggiornata il 13 novembre 2025)",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.congedo-di-paternit-obbligatorio-58988.congedo-di-paternit-obbligatorio.html",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "cosa-portare-in-ospedale-per-il-parto",
+   "gruppo": "attesa",
+   "domanda": "Cosa portare in ospedale per il parto?",
+   "risposta": "I documenti, la documentazione della gravidanza, le cose per te e tre o quattro cambi completi per il bambino. Poi controlla la lista del tuo punto nascita.",
+   "righe": [
+    {
+     "t": "Documenti: documento d'identità valido e tessera sanitaria. Documentazione della gravidanza: ecografie, esami, referti. E gli eventuali farmaci che prendi.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Forlì: documento d'identità, tessera sanitaria, eventuali farmaci personali, documentazione della gravidanza. Vasto: carta d'identità di mamma e papà, documentazione clinica, tessera sanitaria."
+    },
+    {
+     "t": "Per te: camicie da notte o pigiami aperti davanti per allattare, vestaglia, ciabatte da doccia, asciugamani, assorbenti per flusso abbondante, mutandine, prodotti per lavarti e i vestiti per uscire.",
+     "f": [
+      0
+     ],
+     "p": "Elenco «Per la mamma» dell'opuscolo di Forlì."
+    },
+    {
+     "t": "Per il bambino: body, tutine, calzini e una cuffietta, più una copertina adatta alla stagione. L'ospedale di Vasto chiede almeno quattro cambi, ognuno in un sacchetto con il nome del bambino.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Forlì: 3 cambi, 3 body, 3 paia di calzini, 1 cuffietta, copertina. Vasto: almeno 4 cambi completi, ciascuno in un sacchetto con nome e cognome."
+    },
+    {
+     "t": "Per il ritorno a casa serve il seggiolino per l'auto.",
+     "f": [
+      0
+     ],
+     "p": "Forlì: «Seggiolino per il trasporto al rientro a casa»."
+    },
+    {
+     "t": "L'ospedale di Forlì consiglia di preparare la valigia entro la 34ª-36ª settimana e di lasciare a casa gioielli e oggetti di valore.",
+     "f": [
+      0
+     ],
+     "p": "Forlì: preparare la valigia entro la 34ª-36ª settimana; evitare gioielli e oggetti di valore."
+    }
+   ],
+   "guide": [
+    "valigia-per-il-parto"
+   ],
+   "schede": [],
+   "chiavi": "cosa portare ospedale parto valigia borsa lista neonato mamma documenti",
+   "fonti": [
+    {
+     "ente": "Azienda USL della Romagna – Ospedale di Forlì",
+     "pagina": "Nascere a Forlì: cosa mettere in valigia (revisione del 12 ottobre 2020)",
+     "url": "https://auslromagna.it/argomenti/millegiorni/gravidanza/cosa_mettere_in_valigia_forli.pdf/@@download/file",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "ASL 2 Lanciano-Vasto-Chieti – Ospedale di Vasto",
+     "pagina": "Corredino del neonato e della mamma (documento pubblicato a settembre 2025)",
+     "url": "https://www.asl2abruzzo.it/wp-content/uploads/2025/09/corredino-neonato-e-mamma.pdf",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "si-puo-essere-licenziate-in-gravidanza",
+   "gruppo": "attesa",
+   "domanda": "Si può essere licenziate in gravidanza?",
+   "risposta": "No, salvo pochi casi: la legge vieta di licenziare la lavoratrice dall'inizio della gravidanza fino al primo compleanno del bambino.",
+   "righe": [
+    {
+     "t": "Il divieto vale dall'inizio della gravidanza fino alla fine del congedo di maternità e, comunque, fino a quando il bambino compie un anno. Un licenziamento dato in questo periodo è nullo.",
+     "f": [
+      0
+     ],
+     "p": "Art. 54, commi 1 e 5: «non possono essere licenziate dall'inizio del periodo di gravidanza» fino al termine dell'interdizione «nonché fino al compimento di un anno di età del bambino»; il licenziamento «è nullo»."
+    },
+    {
+     "t": "Il divieto dipende dallo stato di gravidanza in sé, ma la lavoratrice deve presentare al datore di lavoro un certificato adatto.",
+     "f": [
+      0
+     ],
+     "p": "Art. 54, comma 2: il divieto «opera in connessione con lo stato oggettivo di gravidanza»; la lavoratrice «è tenuta a presentare al datore di lavoro idonea certificazione»."
+    },
+    {
+     "t": "Le eccezioni sono poche: colpa grave della lavoratrice; chiusura dell'attività dell'azienda; fine del lavoro per cui era stata assunta o scadenza del contratto a termine; esito negativo della prova.",
+     "f": [
+      0
+     ],
+     "p": "Art. 54, comma 3, lettere a-d."
+    },
+    {
+     "t": "Le regole valgono per le lavoratrici dipendenti. Per un caso concreto rivolgiti a un sindacato, a un patronato o a un avvocato.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "lavoro-in-gravidanza-tutele"
+   ],
+   "schede": [],
+   "chiavi": "licenziamento licenziata licenziare incinta gravidanza lavoro divieto nullo",
+   "fonti": [
+    {
+     "ente": "Parlamento italiano – Normattiva",
+     "pagina": "Decreto legislativo 26 marzo 2001, n. 151, art. 54: divieto di licenziamento, testo vigente",
+     "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2001-04-26&atto.codiceRedazionale=001G0200&atto.articolo.numero=54&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "quanto-si-prende-in-maternita",
+   "gruppo": "attesa",
+   "domanda": "Quanto si prende durante il congedo di maternità?",
+   "risposta": "L'80% della retribuzione media giornaliera, se lavori come dipendente.",
+   "righe": [
+    {
+     "t": "Di solito l'indennità la anticipa il datore di lavoro in busta paga. Quando non lo fa, la paga direttamente l'INPS.",
+     "f": [
+      0
+     ],
+     "p": "INPS: anticipata dal datore «in busta paga»; altrimenti «pagata direttamente dall'INPS»."
+    },
+    {
+     "t": "Copre i cinque mesi di congedo: di solito due prima della data presunta del parto e tre dopo.",
+     "f": [
+      0
+     ],
+     "p": "INPS: due mesi prima della data presunta del parto e tre mesi dopo, salvo flessibilità."
+    },
+    {
+     "t": "Per averla serve la domanda all'INPS, da presentare prima dei due mesi che precedono la data presunta del parto.",
+     "f": [
+      0
+     ],
+     "p": "INPS: domanda «prima dei due mesi che precedono la data prevista del parto»."
+    },
+    {
+     "t": "Se scegli la flessibilità, con gli attestati dei medici, i mesi pagati restano cinque: uno prima del parto e quattro dopo.",
+     "f": [
+      0
+     ],
+     "p": "INPS: astensione dal mese precedente la data presunta del parto e nei quattro mesi successivi, con attestazione medica."
+    },
+    {
+     "t": "Per artigiane, commercianti e coltivatrici dirette l'indennità è l'80% della retribuzione giornaliera che la legge fissa ogni anno per la loro attività, per due mesi prima del parto e tre dopo. Non c'è l'obbligo di smettere di lavorare.",
+     "f": [
+      1
+     ],
+     "p": "INPS autonomi: 80% della retribuzione giornaliera stabilita annualmente dalla legge; due mesi prima e tre mesi dopo; «Non comporta l'obbligo di astensione dall'attività lavorativa»."
+    },
+    {
+     "t": "Per il tuo caso chiedi all'ufficio del personale o a un patronato.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "congedo-di-maternita"
+   ],
+   "schede": [],
+   "chiavi": "maternità quanto si prende pagata stipendio 80% indennità soldi congedo busta paga",
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Indennità per congedo di maternità e di paternità alternativo per lavoratrici e lavoratori dipendenti (pagina aggiornata il 30 maggio 2025)",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50586.indennit-per-congedo-di-maternit-e-di-paternit-alternativo-per-lavoratrici-e-lavoratori-dipendenti.html",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "INPS",
+     "pagina": "Indennità di maternità/paternità per lavoratrici e lavoratori autonomi (pagina aggiornata il 27 giugno 2025)",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.indennit-di-maternit-paternit-per-lavoratrici-e-lavoratori-autonomi-50585.indennit-di-maternit-paternit-per-lavoratrici-e-lavoratori-autonomi.html",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "chi-manda-il-certificato-di-gravidanza",
+   "gruppo": "attesa",
+   "domanda": "Chi manda il certificato di gravidanza all'INPS?",
+   "risposta": "Il medico: un medico del Servizio sanitario nazionale o convenzionato lo invia online all'INPS.",
+   "righe": [
+    {
+     "t": "Così non devi più portare all'Istituto un certificato di carta. Il medico ti dà il numero unico del certificato e può darti una copia su carta, senza la settimana di gravidanza.",
+     "f": [
+      0
+     ],
+     "p": "Con la trasmissione online la lavoratrice non presenta più il certificato cartaceo all'Istituto; il medico rilascia il «numero univoco di certificato» e una copia priva della settimana di gestazione."
+    },
+    {
+     "t": "Nel certificato ci sono i tuoi dati, la settimana di gravidanza alla data della visita e la data presunta del parto.",
+     "f": [
+      0
+     ],
+     "p": "Dati: generalità della lavoratrice, settimana di gestazione alla data della visita, data presunta del parto."
+    },
+    {
+     "t": "Deve arrivare all'INPS prima che cominci il congedo di maternità.",
+     "f": [
+      2
+     ],
+     "p": "INPS: certificato «Prima dell'inizio del periodo di congedo di maternità»."
+    },
+    {
+     "t": "Il certificato non vale come domanda: per l'indennità di maternità serve anche la domanda all'INPS, prima dei due mesi che precedono la data presunta del parto.",
+     "f": [
+      2
+     ],
+     "p": "INPS: domanda «prima dei due mesi che precedono la data prevista del parto»."
+    },
+    {
+     "t": "Con il servizio «Attestati di maternità – Consultazione» puoi vedere e stampare i tuoi certificati; il datore di lavoro vede solo gli attestati.",
+     "f": [
+      1
+     ],
+     "p": "La lavoratrice consulta e stampa certificati e ricevute; il datore di lavoro può consultare solo gli attestati."
+    },
+    {
+     "t": "Se c'è un errore, il medico può annullare il certificato entro la mezzanotte del giorno dopo l'invio.",
+     "f": [
+      0
+     ],
+     "p": "Annullamento possibile entro la mezzanotte del giorno seguente alla trasmissione."
+    }
+   ],
+   "guide": [
+    "certificato-di-gravidanza"
+   ],
+   "schede": [],
+   "chiavi": "certificato gravidanza inps chi lo manda medico invio telematico datore lavoro numero",
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Trasmissione online dei certificati di gravidanza e interruzione (pagina aggiornata il 28 ottobre 2025)",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50909.trasmissione-online-dei-certificati-di-gravidanza-e-interruzione.html",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "INPS",
+     "pagina": "Attestati di maternità – Consultazione (pagina aggiornata il 28 ottobre 2025)",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.attestati-di-maternit-consultazione.html",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "INPS",
+     "pagina": "Indennità per congedo di maternità e di paternità alternativo per lavoratrici e lavoratori dipendenti (pagina aggiornata il 30 maggio 2025)",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50586.indennit-per-congedo-di-maternit-e-di-paternit-alternativo-per-lavoratrici-e-lavoratori-dipendenti.html",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "permessi-per-le-visite-in-gravidanza",
+   "gruppo": "attesa",
+   "domanda": "I permessi per le visite in gravidanza sono pagati?",
+   "risposta": "Sì: se lavori come dipendente hai permessi retribuiti per esami prenatali, accertamenti e visite specialistiche da fare in orario di lavoro.",
+   "righe": [
+    {
+     "t": "Lo prevede l'articolo 14 del Testo unico sulla maternità, il decreto legislativo 151 del 2001.",
+     "f": [
+      0
+     ],
+     "p": "Art. 14, comma 1: «permessi retribuiti per l'effettuazione di esami prenatali, accertamenti clinici ovvero visite mediche specialistiche»."
+    },
+    {
+     "t": "La legge parla degli esami e delle visite che devono essere fatti durante l'orario di lavoro.",
+     "f": [
+      0
+     ],
+     "p": "Art. 14, comma 1: «nel caso in cui questi debbono essere eseguiti durante l'orario di lavoro»."
+    },
+    {
+     "t": "Il permesso si chiede prima al datore di lavoro. Dopo, si consegna il documento che attesta la data e l'orario dell'esame.",
+     "f": [
+      0
+     ],
+     "p": "Art. 14, comma 2: istanza al datore di lavoro e poi «documentazione giustificativa attestante la data e l'orario»."
+    },
+    {
+     "t": "Gli esami e le visite previsti per seguire la gravidanza sono anche gratuiti, con l'impegnativa con il codice di esenzione per gravidanza. Come averla e come prenotare è spiegato nella guida sugli esami in gravidanza.",
+     "f": [
+      1
+     ],
+     "p": "ISS: «È necessaria una impegnativa che riporta il codice esenzione per gravidanza»."
+    },
+    {
+     "t": "Per il tuo caso chiedi all'ufficio del personale o a un patronato.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "lavoro-in-gravidanza-tutele",
+    "esami-gratuiti-in-gravidanza"
+   ],
+   "schede": [],
+   "chiavi": "permessi visite esami gravidanza pagati retribuiti lavoro ecografia orario datore",
+   "fonti": [
+    {
+     "ente": "Parlamento italiano – Normattiva",
+     "pagina": "Decreto legislativo 26 marzo 2001, n. 151, art. 14: controlli prenatali, testo vigente",
+     "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2001-04-26&atto.codiceRedazionale=001G0200&atto.articolo.numero=14&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Istituto Superiore di Sanità – EpiCentro",
+     "pagina": "Novità per gli esami in gravidanza: opuscolo per i cittadini sui Livelli essenziali di assistenza del 2017 (senza data)",
+     "url": "https://www.epicentro.iss.it/itoss/pdf/Novit%C3%A0%20per%20gli%20esami%20in%20gravidanza_cittadini-SENZA%20LOGO.pdf",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "quante-ore-di-allattamento-al-lavoro",
+   "gruppo": "attesa",
+   "domanda": "Quante ore di allattamento spettano al lavoro?",
+   "risposta": "Due ore al giorno se lavori almeno sei ore, un'ora se lavori meno: per tutto il primo anno di vita del bambino.",
+   "righe": [
+    {
+     "t": "Si chiamano riposi giornalieri e spettano alle lavoratrici e ai lavoratori dipendenti, non alle lavoratrici domestiche e a domicilio.",
+     "f": [
+      0
+     ],
+     "p": "INPS: servizio per lavoratrici e lavoratori dipendenti; le lavoratrici domestiche e a domicilio non hanno diritto ai riposi."
+    },
+    {
+     "t": "Sono pagati come la retribuzione. Contano come ore di lavoro e danno il diritto di uscire dall'azienda.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "INPS: «L'indennità è pari alla retribuzione». Art. 39, comma 2: i riposi sono considerati ore lavorative e comportano il diritto di uscire dall'azienda."
+    },
+    {
+     "t": "Con un parto gemellare o di più figli le ore raddoppiano. Si dimezzano se il bambino va al nido messo a disposizione dal datore di lavoro, nell'azienda o vicino.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "INPS: riposi raddoppiati per parto plurimo; ridotti della metà con asilo nido o struttura messa a disposizione dal datore. Art. 39, comma 3."
+    },
+    {
+     "t": "Le ore finiscono quando il bambino compie un anno. La mamma fa la domanda al datore di lavoro, prima di cominciare. In alcuni casi le ore spettano al papà: le regole sono nella guida.",
+     "f": [
+      0
+     ],
+     "p": "INPS: le lavoratrici presentano la domanda «esclusivamente al datore di lavoro», prima dell'inizio del riposo."
+    }
+   ],
+   "guide": [
+    "allattamento-e-lavoro"
+   ],
+   "schede": [],
+   "chiavi": "ore allattamento lavoro riposi giornalieri quante due ore rientro primo anno",
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Indennità per riposi giornalieri per padri e madri dipendenti (pagina aggiornata il 1° aprile 2026)",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.50581.indennit-per-riposi-giornalieri-per-padri-e-madri-dipendenti.html",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Parlamento italiano – Normattiva",
+     "pagina": "Decreto legislativo 26 marzo 2001, n. 151, art. 39: riposi giornalieri della madre, testo vigente",
+     "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2001-04-26&atto.codiceRedazionale=001G0200&atto.articolo.numero=39&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "il-papa-puo-prendere-le-ore-di-allattamento",
+   "gruppo": "attesa",
+   "domanda": "Il papà può prendere le ore di allattamento?",
+   "risposta": "Sì, ma solo in alcuni casi: per esempio quando la mamma lavora come dipendente e non le usa, o quando lavora ma non come dipendente.",
+   "righe": [
+    {
+     "t": "La legge riconosce i riposi al padre lavoratore: se il figlio è affidato solo a lui; al posto della madre lavoratrice dipendente che non li usa; se la madre non è lavoratrice dipendente; in caso di morte o grave infermità della madre.",
+     "f": [
+      1
+     ],
+     "p": "D.Lgs. 151/2001, art. 40, lettere a-d."
+    },
+    {
+     "t": "Secondo la pagina dell'INPS aggiornata il 1° aprile 2026, però, il padre non può chiederli se la madre non è lavoratrice.",
+     "f": [
+      0
+     ],
+     "p": "INPS: il padre «non può richiedere il riposo se la madre non è lavoratrice»."
+    },
+    {
+     "t": "Non può chiederli neanche mentre la madre dipendente è in congedo di maternità o parentale. Con un parto gemellare, le ore in più le può usare anche in quei periodi.",
+     "f": [
+      0
+     ],
+     "p": "INPS: non può se la madre dipendente è «in astensione obbligatoria o facoltativa»; in caso di parto plurimo può usare le ore aggiuntive anche durante il congedo di maternità."
+    },
+    {
+     "t": "Il papà presenta la domanda online, sia al datore di lavoro sia all'INPS, anche con il Contact Center o con un patronato, prima di cominciare.",
+     "f": [
+      0
+     ],
+     "p": "INPS: i lavoratori presentano «esclusivamente domanda online» al datore e all'Istituto, anche tramite Contact Center o patronati."
+    }
+   ],
+   "guide": [
+    "allattamento-e-lavoro"
+   ],
+   "schede": [],
+   "chiavi": "papà padre ore allattamento riposi giornalieri madre casalinga non lavora autonoma",
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Indennità per riposi giornalieri per padri e madri dipendenti (pagina aggiornata il 1° aprile 2026)",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.50581.indennit-per-riposi-giornalieri-per-padri-e-madri-dipendenti.html",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Parlamento italiano – Normattiva",
+     "pagina": "Decreto legislativo 26 marzo 2001, n. 151, art. 40: riposi giornalieri del padre, testo vigente",
+     "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2001-04-26&atto.codiceRedazionale=001G0200&atto.articolo.numero=40&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "il-consultorio-e-gratis",
+   "gruppo": "attesa",
+   "domanda": "Il consultorio è gratis?",
+   "risposta": "Sì: i servizi di base del consultorio familiare sono gratuiti e ci si va senza impegnativa.",
+   "righe": [
+    {
+     "t": "In Toscana, per esempio, l'accesso è diretto, gratuito e senza prescrizione medica, e le prestazioni si prenotano al consultorio.",
+     "f": [
+      0
+     ],
+     "p": "Accesso «gratuito e senza prescrizione medica»; prenotazione direttamente presso il consultorio."
+    },
+    {
+     "t": "Solo alcune prestazioni ambulatoriali chiedono la ricetta del medico, la prenotazione al CUP e il ticket.",
+     "f": [
+      0
+     ],
+     "p": "Le prestazioni ambulatoriali richiedono ricetta medica, prenotazione CUP e pagamento del ticket."
+    },
+    {
+     "t": "Per la nascita il consultorio offre assistenza in gravidanza, corsi di accompagnamento alla nascita, assistenza dopo il parto e sostegno all'allattamento.",
+     "f": [
+      0
+     ],
+     "p": "Assistenza in gravidanza, «Corsi e incontri di accompagnamento alla nascita», assistenza in puerperio, sostegno all'allattamento."
+    },
+    {
+     "t": "Al consultorio trovi anche consulenza psicologica e sociale e sostegno ai genitori.",
+     "f": [
+      0
+     ],
+     "p": "Sostegno alla genitorialità e consulenza psicologica e sociale."
+    },
+    {
+     "t": "Anche l'Istituto Superiore di Sanità ricorda che i consultori offrono gratuitamente assistenza per tutto il percorso nascita.",
+     "f": [
+      1
+     ],
+     "p": "«I consultori familiari offrono gratuitamente assistenza all'intero percorso nascita»."
+    },
+    {
+     "t": "Orari e modi di prenotare cambiano da Regione a Regione: cerca «consultorio» sul sito della tua Azienda sanitaria, oppure chiedi al tuo medico.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "consultorio-familiare"
+   ],
+   "schede": [],
+   "chiavi": "consultorio gratis gratuito pagare impegnativa ricetta serve consultori familiari",
+   "fonti": [
+    {
+     "ente": "Regione Toscana",
+     "pagina": "I consultori (pagina aggiornata il 13 agosto 2025)",
+     "url": "https://www.regione.toscana.it/-/i-consultori",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Istituto Superiore di Sanità – EpiCentro",
+     "pagina": "Novità per gli esami in gravidanza: opuscolo per i cittadini sui Livelli essenziali di assistenza del 2017 (senza data)",
+     "url": "https://www.epicentro.iss.it/itoss/pdf/Novit%C3%A0%20per%20gli%20esami%20in%20gravidanza_cittadini-SENZA%20LOGO.pdf",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "il-corso-preparto-si-paga",
+   "gruppo": "attesa",
+   "domanda": "Il corso preparto si paga?",
+   "risposta": "No: nel Servizio sanitario il corso di accompagnamento alla nascita è gratuito. Si chiede al consultorio o al punto nascita.",
+   "righe": [
+    {
+     "t": "Con i Livelli essenziali di assistenza del 2017 i corsi di accompagnamento alla nascita e l'assistenza dopo il parto sono offerti gratuitamente a tutte le donne.",
+     "f": [
+      0
+     ],
+     "p": "ISS: prestazioni «offerte per la prima volta, gratuitamente, a tutte le donne»: «corsi di accompagnamento alla nascita», «assistenza in puerperio»."
+    },
+    {
+     "t": "In Toscana il corso si può seguire gratuitamente intorno al settimo mese di gravidanza: lo organizzano i consultori e i punti nascita.",
+     "f": [
+      1
+     ],
+     "p": "«Intorno al settimo mese di gestazione è possibile seguire gratuitamente un corso», organizzato da consultori o punti nascita."
+    },
+    {
+     "t": "A Trieste si consiglia di contattare il consultorio dopo le 22-24 settimane di gravidanza, senza bisogno di prescrizione.",
+     "f": [
+      2
+     ],
+     "p": "Burlo: «È consigliato contattare il consultorio dopo le 22-24 settimane di gravidanza»; non serve prescrizione."
+    },
+    {
+     "t": "Molti punti nascita organizzano anche incontri di presentazione e visite alla sala parto: al Burlo, per esempio, preferibilmente dopo la 36ª settimana.",
+     "f": [
+      2
+     ],
+     "p": "Visite in sala parto il sabato, «preferibilmente dopo le 36 settimane gestazionali»."
+    },
+    {
+     "t": "I posti e le date cambiano da consultorio a consultorio: chiedi per tempo come iscriverti, vicino a casa.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "consultorio-familiare",
+    "esami-gratuiti-in-gravidanza"
+   ],
+   "schede": [],
+   "chiavi": "corso preparto pre parto preparazione nascita accompagnamento gratis pagare costa consultorio",
+   "fonti": [
+    {
+     "ente": "Istituto Superiore di Sanità – EpiCentro",
+     "pagina": "Novità per gli esami in gravidanza: opuscolo per i cittadini sui Livelli essenziali di assistenza del 2017 (senza data)",
+     "url": "https://www.epicentro.iss.it/itoss/pdf/Novit%C3%A0%20per%20gli%20esami%20in%20gravidanza_cittadini-SENZA%20LOGO.pdf",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Regione Toscana",
+     "pagina": "Nascere in Toscana (pagina aggiornata il 16 giugno 2026)",
+     "url": "https://www.regione.toscana.it/it/nascere-in-toscana",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "IRCCS materno-infantile Burlo Garofolo di Trieste",
+     "pagina": "Carta dei servizi del percorso nascita (aggiornata a maggio 2024)",
+     "url": "https://www.burlo.trieste.it/sites/default/files/carta_dei_servizi_PERCORSO_NASCITA_-_Aggiornata_2024.pdf",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "cos-e-lo-screening-neonatale",
+   "gruppo": "attesa",
+   "domanda": "Cos'è lo screening neonatale?",
+   "risposta": "È un esame fatto in ospedale a tutti i neonati: una piccola puntura sul tallone, tra le 48 e le 72 ore di vita, per cercare alcune malattie rare.",
+   "righe": [
+    {
+     "t": "È gratuito, e la legge 167 del 2016 lo ha reso obbligatorio per tutti i neonati in Italia.",
+     "f": [
+      0
+     ],
+     "p": "Toscana: «tutti i neonati vengono sottoposti gratuitamente a semplici esami»; la legge nazionale 167/2016 lo ha reso obbligatorio."
+    },
+    {
+     "t": "Qualche goccia di sangue si raccoglie su un cartoncino, che viene analizzato da un centro della Regione: in Toscana, l'Azienda ospedaliero-universitaria Meyer di Firenze.",
+     "f": [
+      0
+     ],
+     "p": "Prelievo con piccola puntura al tallone tra 48 e 72 ore, gocce di sangue su un cartoncino analizzato dall'AOU Meyer."
+    },
+    {
+     "t": "In Toscana i risultati normali non vengono comunicati: se non ti richiamano, il test è negativo.",
+     "f": [
+      0
+     ],
+     "p": "I risultati normali non vengono comunicati: se non si viene richiamati, i test risultano negativi."
+    },
+    {
+     "t": "Un richiamo non significa che il bambino sia malato: servono altri controlli. Anche l'Emilia-Romagna ricorda che alcune alterazioni iniziali sono passeggere.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Toscana: «richiamo non significa che il bambino è malato». Emilia-Romagna: «il richiamo per un nuovo prelievo non significa che sia stata identificata una malattia»; alcune alterazioni iniziali sono transitorie."
+    },
+    {
+     "t": "Per i bambini nati sotto i 2.000 grammi, in Toscana i prelievi sono tre.",
+     "f": [
+      0
+     ],
+     "p": "Neonati sotto i 2000 grammi: tre prelievi, a 48 ore, a 14 e a 30 giorni."
+    }
+   ],
+   "guide": [
+    "primi-giorni-a-casa-con-il-neonato"
+   ],
+   "schede": [],
+   "chiavi": "screening neonatale tallone puntura esame neonato malattie rare richiamo ospedale",
+   "fonti": [
+    {
+     "ente": "Regione Toscana",
+     "pagina": "Screening neonatale (pagina aggiornata il 14 ottobre 2025)",
+     "url": "https://www.regione.toscana.it/it/-/screening-neonatale",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Regione Emilia-Romagna – Centro regionale screening neonatale",
+     "pagina": "Screening neonatale: opuscolo per i genitori (2025)",
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/screening-neonatale/brochure_screening_neonatale2025_web.pdf/@@download/file/brochure_screening_neonatale2025_web.pdf",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "da-quando-spetta-l-assegno-unico-per-un-neonato",
+   "gruppo": "attesa",
+   "domanda": "Da quando spetta l'assegno unico per un neonato?",
+   "risposta": "Dal settimo mese di gravidanza, se la domanda arriva all'INPS entro 120 giorni dalla nascita.",
+   "righe": [
+    {
+     "t": "Lo scrive l'INPS: per i nuovi nati l'assegno spetta dal settimo mese di gravidanza.",
+     "f": [
+      0
+     ],
+     "p": "«Per i nuovi nati il beneficio spetta dal settimo mese di gravidanza»."
+    },
+    {
+     "t": "Una guida dell'INPS per i genitori precisa la condizione: la domanda va inviata entro 120 giorni dalla data di nascita.",
+     "f": [
+      1
+     ],
+     "p": "«Per i nuovi nati decorre dal settimo mese di gravidanza se la domanda è inviata entro 120 giorni dalla data di nascita»."
+    },
+    {
+     "t": "Se ricevi già l'assegno per un altro figlio, non serve una domanda nuova: comunica la nascita come variazione della domanda che hai.",
+     "f": [
+      0
+     ],
+     "p": "Comunicare le variazioni da inserire nella domanda, «come ad esempio la nascita di un altro figlio»."
+    },
+    {
+     "t": "La domanda la fa uno dei genitori: online, con l'app INPS Mobile, con il Contact Center o tramite un patronato.",
+     "f": [
+      0
+     ],
+     "p": "Domanda di uno dei genitori; online, app INPS Mobile, numero verde 803.164 o 06 164.164, patronati."
+    },
+    {
+     "t": "Per i figli con meno di un anno l'importo ha una maggiorazione, alle condizioni indicate dall'INPS.",
+     "f": [
+      0
+     ],
+     "p": "Tra le maggiorazioni: «figli di età inferiore a un anno»."
+    },
+    {
+     "t": "Senza ISEE, o con un ISEE oltre la soglia, l'INPS paga gli importi minimi: conviene rinnovarlo con il nuovo figlio.",
+     "f": [
+      0
+     ],
+     "p": "Senza ISEE «saranno corrisposti gli importi minimi previsti dalla normativa»."
+    }
+   ],
+   "guide": [
+    "assegno-unico-nuovo-nato"
+   ],
+   "schede": [
+    "assegno-unico"
+   ],
+   "chiavi": "assegno unico neonato nuovo nato da quando spetta settimo mese 120 giorni arretrati domanda",
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Assegno unico e universale per i figli a carico (pagina aggiornata il 10 settembre 2026)",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-55984.assegno-unico-e-universale-per-i-figli-a-carico.html",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "INPS – Direzione regionale Puglia",
+     "pagina": "Guida per la genitorialità «Con mamma e papà» (edizione 2025)",
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/Guida_genitorialita.pdf",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "entro-quando-si-chiede-il-bonus-nuovi-nati",
+   "gruppo": "attesa",
+   "domanda": "Entro quando si chiede il bonus nuovi nati?",
+   "risposta": "Entro 120 giorni dalla nascita: dopo non si può più chiedere.",
+   "righe": [
+    {
+     "t": "È un contributo di 1.000 euro, pagato una volta, per i bambini nati, adottati o in affido preadottivo dal 1° gennaio 2025.",
+     "f": [
+      0
+     ],
+     "p": "«1.000 euro una tantum» per minori nati, adottati o in affido preadottivo «dal 1° gennaio 2025»."
+    },
+    {
+     "t": "Serve un ISEE riferito al bambino non superiore a 40.000 euro. Nel calcolo non si conta l'Assegno unico.",
+     "f": [
+      0
+     ],
+     "p": "ISEE «non superiore ai 40mila euro»; «Nel calcolo del valore ISEE non si tiene conto degli importi erogati per l'Assegno unico»."
+    },
+    {
+     "t": "I 120 giorni partono dalla nascita, o dall'ingresso in famiglia per i bambini adottati o in affido.",
+     "f": [
+      0
+     ],
+     "p": "Domanda entro 120 giorni, «a pena di decadenza», dalla nascita o dall'ingresso in famiglia."
+    },
+    {
+     "t": "La domanda la fa un genitore, una per ogni figlio: online sul sito dell'INPS, con il Contact Center o con un patronato.",
+     "f": [
+      0
+     ],
+     "p": "Online con «Utilizza il servizio», Contact Center Multicanale o patronati; una domanda per ciascun figlio."
+    },
+    {
+     "t": "Gli altri aiuti per la nascita, come gli assegni di maternità, sono nella guida sui bonus del 2026.",
+     "f": [],
+     "p": ""
+    },
+    {
+     "t": "Sono le regole del 2026: con la legge di bilancio possono cambiare, e le ricontrolleremo a gennaio.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "aiuti-per-la-nascita-2026",
+    "neonato-documenti-primi-giorni"
+   ],
+   "schede": [],
+   "chiavi": "bonus nuovi nati entro quando scadenza 120 giorni 1000 euro mille bebe domanda inps",
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Bonus nuovi nati (pagina aggiornata il 27 aprile 2026)",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.bonus-nuovi-nati.html",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "il-congedo-di-paternita-si-puo-prendere-prima-del-parto",
+   "gruppo": "attesa",
+   "domanda": "Il congedo di paternità si può prendere prima del parto?",
+   "risposta": "Sì, a partire da due mesi prima della data presunta del parto.",
+   "righe": [
+    {
+     "t": "Il papà dipendente ha 10 giorni lavorativi, 20 se nascono gemelli, da usare tra due mesi prima della data presunta del parto e cinque mesi dopo la nascita.",
+     "f": [
+      0
+     ],
+     "p": "10 giorni lavorativi, 20 in caso di parto plurimo; dai due mesi precedenti la data presunta ai cinque mesi successivi alla nascita."
+    },
+    {
+     "t": "I giorni si possono prendere anche separati, ma non a ore.",
+     "f": [
+      0
+     ],
+     "p": "Fruibile in giorni separati, non frazionabile a ore."
+    },
+    {
+     "t": "Il papà li comunica per iscritto al datore di lavoro, almeno cinque giorni prima.",
+     "f": [
+      0
+     ],
+     "p": "Comunicazione scritta con almeno cinque giorni di anticipo."
+    },
+    {
+     "t": "Sono pagati al 100% della retribuzione e spettano anche in caso di morte perinatale del figlio.",
+     "f": [
+      0
+     ],
+     "p": "Indennità giornaliera pari al 100% della retribuzione; riconosciuto anche in caso di morte perinatale."
+    },
+    {
+     "t": "La domanda all'INPS serve solo quando paga direttamente l'Istituto; i dipendenti pubblici la presentano sempre alla propria amministrazione.",
+     "f": [
+      0
+     ],
+     "p": "Domanda all'INPS solo nei casi di pagamento diretto; i dipendenti pubblici presentano la domanda all'amministrazione."
+    },
+    {
+     "t": "Il congedo spetta anche alla madre intenzionale in una coppia di donne registrate come genitori. Non spetta ai lavoratori autonomi e agli iscritti alla Gestione separata.",
+     "f": [
+      0
+     ],
+     "p": "Destinatari anche le madri intenzionali; esclusi i lavoratori autonomi e gli iscritti alla Gestione Separata."
+    }
+   ],
+   "guide": [
+    "congedo-di-paternita"
+   ],
+   "schede": [],
+   "chiavi": "congedo paternità prima del parto papà giorni quando prendere data presunta",
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Congedo di paternità obbligatorio (pagina aggiornata il 13 novembre 2025)",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.congedo-di-paternit-obbligatorio-58988.congedo-di-paternit-obbligatorio.html",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "le-lavoratrici-autonome-hanno-la-maternita",
+   "gruppo": "attesa",
+   "domanda": "Le lavoratrici autonome hanno la maternità?",
+   "risposta": "Sì: artigiane, commercianti e coltivatrici dirette hanno un'indennità dell'INPS per i due mesi prima del parto e i tre dopo.",
+   "righe": [
+    {
+     "t": "L'indennità è l'80% della retribuzione giornaliera che la legge fissa ogni anno per la loro attività.",
+     "f": [
+      0
+     ],
+     "p": "Pari all'80% della retribuzione giornaliera stabilita annualmente dalla legge per il tipo di attività."
+    },
+    {
+     "t": "Bisogna essere iscritte alla gestione INPS della propria attività e in regola con i contributi.",
+     "f": [
+      0
+     ],
+     "p": "Iscrizione alla gestione INPS di riferimento e regolarità contributiva."
+    },
+    {
+     "t": "A differenza delle dipendenti, non c'è l'obbligo di smettere di lavorare: l'indennità copre i due mesi prima del parto e i tre dopo anche se continui la tua attività.",
+     "f": [
+      0
+     ],
+     "p": "«Non comporta l'obbligo di astensione dall'attività lavorativa»."
+    },
+    {
+     "t": "La domanda si fa dopo il parto; prima, solo in caso di gravi complicanze della gravidanza. Si presenta online, con il Contact Center o con un patronato.",
+     "f": [
+      0
+     ],
+     "p": "Domanda dopo il parto; prima solo per gravi complicanze o patologie aggravabili dalla gravidanza; online, Contact center 803 164 / 06 164 164, patronati."
+    },
+    {
+     "t": "Per chi è iscritta alla Gestione separata le regole sono diverse, su un'altra pagina dell'INPS.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "congedo-di-maternita"
+   ],
+   "schede": [],
+   "chiavi": "maternità autonome partita iva artigiane commercianti lavoratrice autonoma indennità inps",
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Indennità di maternità/paternità per lavoratrici e lavoratori autonomi (pagina aggiornata il 27 giugno 2025)",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.indennit-di-maternit-paternit-per-lavoratrici-e-lavoratori-autonomi-50585.indennit-di-maternit-paternit-per-lavoratrici-e-lavoratori-autonomi.html",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  },
+  {
+   "slug": "a-chi-chiedere-aiuto-se-dopo-il-parto-sono-triste",
+   "gruppo": "attesa",
+   "domanda": "A chi chiedere aiuto se dopo il parto mi sento sempre triste?",
+   "risposta": "Al consultorio familiare, al tuo medico di famiglia o all'ostetrica. In gravidanza e dopo il parto, se ti senti in difficoltà, la visita dallo psicologo è gratuita.",
+   "righe": [
+    {
+     "t": "Non sei la sola: secondo l'Istituto Superiore di Sanità la depressione dopo il parto riguarda il 13-15% delle donne che partoriscono.",
+     "f": [
+      0
+     ],
+     "p": "DPP «interessando il 13-15% delle donne che partoriscono»."
+    },
+    {
+     "t": "In molte Regioni i consultori offrono un colloquio per riconoscerla presto e un colloquio con lo psicologo.",
+     "f": [
+      0
+     ],
+     "p": "I consultori, in molte regioni, offrono lo screening per il riconoscimento precoce della DPP e il colloquio psicologico clinico."
+    },
+    {
+     "t": "Con i Livelli essenziali di assistenza la visita psicologica è gratuita in caso di disagio emotivo in gravidanza o dopo il parto.",
+     "f": [
+      1
+     ],
+     "p": "ISS: visita psicologica gratuita in caso di disagio emotivo in gravidanza e/o puerperio."
+    },
+    {
+     "t": "In Toscana c'è anche un servizio di ascolto telefonico con psicologi psicoterapeuti, aperto anche ai partner e ai familiari: 055 4383001, dal lunedì al venerdì dalle 9 alle 18.",
+     "f": [
+      2
+     ],
+     "p": "Regione Toscana: servizio di ascolto telefonico, 055.4383001, «dalle 9.00 alle 18.00, dal lunedì al venerdì», «con operatori psicologi psicoterapeuti»; aperto anche a partner e familiari."
+    },
+    {
+     "t": "Se temi per te o per il bambino, chiama subito il 112.",
+     "f": [
+      3
+     ],
+     "p": "Il 112 è il numero di emergenza europeo, gratuito da fisso e cellulare."
+    }
+   ],
+   "guide": [
+    "stanchezza-e-tristezza-dopo-il-parto",
+    "consultorio-familiare"
+   ],
+   "schede": [],
+   "chiavi": "triste tristezza depressione post parto postpartum aiuto psicologo consultorio neomamma piango stanca",
+   "fonti": [
+    {
+     "ente": "Istituto Superiore di Sanità – EpiCentro",
+     "pagina": "Depressione post partum: il progetto Music and Motherhood (pagina aggiornata il 6 febbraio 2025)",
+     "url": "https://www.epicentro.iss.it/materno/depressione-post-partum-progetto-music-and-motherhood",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Istituto Superiore di Sanità – EpiCentro",
+     "pagina": "Novità per gli esami in gravidanza: opuscolo per i cittadini sui Livelli essenziali di assistenza del 2017 (senza data)",
+     "url": "https://www.epicentro.iss.it/itoss/pdf/Novit%C3%A0%20per%20gli%20esami%20in%20gravidanza_cittadini-SENZA%20LOGO.pdf",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Regione Toscana",
+     "pagina": "Centro di ascolto gravidanza e post partum (pagina aggiornata il 30 settembre 2025)",
+     "url": "https://www.regione.toscana.it/it/-/centro-di-ascolto-gravidanza-e-post-partum",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Commissione europea – Your Europe",
+     "pagina": "Il numero di emergenza 112, gratuito in tutta l'Unione europea (ultima verifica 22 giugno 2026)",
+     "url": "https://europa.eu/youreurope/citizens/travel/safety/emergency/index_it.htm",
+     "data": "2026-11-13"
+    }
+   ],
+   "fa": [
+    "0-1"
+   ]
+  }
+ ],
+ "gruppi": [
+  [
+   "attesa",
+   "Attesa e primi mesi"
+  ]
+ ]
+}
