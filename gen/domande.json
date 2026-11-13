@@ -390,11 +390,11 @@
      "p": "Art. 1, comma 1: «obbligatorie e gratuite» in base alle specifiche indicazioni del Calendario vaccinale nazionale relativo a ciascuna coorte di nascita."
     },
     {
-     "t": "Si possono omettere o rimandare solo se c'è un pericolo accertato per la salute, documentato dal medico di famiglia o dal pediatra.",
+     "t": "Chi ha già avuto una di queste malattie, documentata dal medico curante o da un'analisi del sangue, è esonerato da quella vaccinazione. Per il resto si possono omettere o rimandare solo se c'è un pericolo accertato per la salute, documentato dal medico di famiglia o dal pediatra.",
      "f": [
       0
      ],
-     "p": "Art. 1, comma 3: le vaccinazioni «possono essere omesse o differite solo in caso di accertato pericolo per la salute», documentato dal medico di medicina generale o dal pediatra di libera scelta."
+     "p": "Art. 1, comma 2: «L'avvenuta immunizzazione a seguito di malattia naturale, comprovata dalla notifica effettuata dal medico curante, ovvero dagli esiti dell'analisi sierologica, esonera dall'obbligo della relativa vaccinazione». Art. 1, comma 3: «Salvo quanto disposto dal comma 2», le vaccinazioni «possono essere omesse o differite solo in caso di accertato pericolo per la salute», documentato dal medico di medicina generale o dal pediatra di libera scelta."
     },
     {
      "t": "Per il nido e la scuola dell'infanzia essere in regola con queste vaccinazioni è un requisito per entrare.",
@@ -704,11 +704,11 @@
      "p": "Duplicato: online (servizio a libero accesso o area riservata), via e-mail o PEC con il modello AA4/8, presso un ufficio dell'Agenzia previo appuntamento, presso la propria ASL."
     },
     {
-     "t": "Per le tessere scadute dal 2020 in poi, la tessera si può anche scaricare e stampare dal servizio Sistema tessera sanitaria.",
+     "t": "Per le tessere con scadenza dal 2020 in poi se ne può anche scaricare e stampare una copia dal servizio Sistema tessera sanitaria, entrando con SPID o con la tessera sanitaria attivata.",
      "f": [
       0
      ],
-     "p": "Il servizio web «Sistema tessera sanitaria» permette di scaricare e stampare la tessera (per scadenze dal 2020 in poi)."
+     "p": "«Sistema tessera sanitaria consente di scaricare in formato PDF e stampare una copia cartacea» della tessera; «Il servizio è disponibile per le tessere con scadenza 2020 o anni successivi», con accesso all'area riservata tramite SPID o TS-CNS attivata."
     },
     {
      "t": "Per un viaggio all'estero prima che arrivi la nuova, la ASL rilascia un certificato che sostituisce la tessera europea.",
