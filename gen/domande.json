@@ -79,7 +79,7 @@
    "slug": "dove-trovo-i-referti-online",
    "gruppo": "salute",
    "domanda": "Dove trovo i referti online?",
-   "risposta": "Nel Fascicolo sanitario elettronico della tua Regione: ci entri con SPID, con la carta d'identità elettronica o con la tessera sanitaria abilitata.",
+   "risposta": "Nel Fascicolo sanitario elettronico della tua Regione, entrando con le credenziali che la Regione accetta, come SPID, carta d'identità elettronica o tessera sanitaria abilitata.",
    "righe": [
     {
      "t": "In Toscana, per esempio, nel fascicolo ci sono i referti degli esami del sangue e di radiologia, le lettere di dimissione, gli accessi al pronto soccorso, le vaccinazioni e le prescrizioni.",
@@ -159,7 +159,7 @@
      "p": "Per un figlio minorenne accede un genitore o un legale rappresentante, che autocertifica online la propria qualità."
     },
     {
-     "t": "Dentro trovi anche le vaccinazioni: è il posto più veloce per il certificato vaccinale.",
+     "t": "In Toscana nel fascicolo ci sono anche le vaccinazioni.",
      "f": [
       0
      ],
@@ -327,6 +327,13 @@
       0
      ],
      "p": "Art. 1, comma 1: obbligatorie e gratuite «per i minori di età compresa tra zero e sedici anni»."
+    },
+    {
+     "t": "Se un bambino non è in regola, l'ASL convoca i genitori; se le vaccinazioni non vengono fatte entro il termine indicato, scatta una sanzione da 100 a 500 euro.",
+     "f": [
+      0
+     ],
+     "p": "Art. 1, comma 4: in caso di mancata osservanza dell'obbligo i genitori sono convocati dall'ASL per un colloquio; poi «è comminata la sanzione amministrativa pecuniaria da euro cento a euro cinquecento». Non incorrono nella sanzione se, dopo la contestazione dell'ASL, fanno somministrare il vaccino o la prima dose nel termine indicato e completano il ciclo."
     },
     {
      "t": "Quando serve, il certificato vaccinale si scarica dal Fascicolo sanitario elettronico, dove ci sono le vaccinazioni.",
@@ -634,14 +641,16 @@
     {
      "t": "Dai 6 anni, per lo sport non agonistico con società affiliate alle federazioni o agli enti riconosciuti dal CONI, il certificato serve e vale un anno.",
      "f": [
-      1
+      1,
+      2
      ],
      "p": "DM 24 aprile 2013, art. 3, commi 1 e 2 (controllo medico annuale); allegato C: «validità annuale dalla data del rilascio»."
     },
     {
      "t": "Da quell'età lo rilasciano il pediatra o il medico di famiglia ai propri assistiti, oppure un medico specialista in medicina dello sport.",
      "f": [
-      1
+      1,
+      2
      ],
      "p": "DM 24 aprile 2013, art. 3, comma 2."
     },
@@ -672,6 +681,12 @@
      "ente": "Ministero della Salute (testo pubblicato dalla Regione Valle d'Aosta)",
      "pagina": "Decreto 24 aprile 2013: certificazione dell'attività sportiva non agonistica e amatoriale (Gazzetta Ufficiale n. 169 del 20 luglio 2013)",
      "url": "https://regione.vda.it/allegato.aspx?pk=36551",
+     "data": "2013-07-20"
+    },
+    {
+     "ente": "Gazzetta Ufficiale",
+     "pagina": "Decreto del Ministero della Salute 24 aprile 2013, Disciplina della certificazione dell'attività sportiva non agonistica e amatoriale (Serie generale n. 169 del 20 luglio 2013)",
+     "url": "https://www.gazzettaufficiale.it/eli/id/2013/07/20/13A06313/sg",
      "data": "2013-07-20"
     }
    ]
@@ -1073,11 +1088,11 @@
      "p": "La misura può essere richiesta anche senza ISEE: in tal caso si ricevono gli importi minimi."
     },
     {
-     "t": "Se presenti l'ISEE entro il 30 giugno, l'INPS riconosce anche gli arretrati dell'anno in corso.",
+     "t": "Se presenti l'ISEE entro il 30 giugno, l'INPS riconosce anche gli arretrati da marzo.",
      "f": [
       0
      ],
-     "p": "Arretrati dell'anno in corso se risulta un ISEE relativo a una DSU «presentata entro il 30 giugno»."
+     "p": "Se l'ISEE deriva da una DSU «presentata entro il 30 giugno» spettano «tutti gli arretrati dell'annualità in corso»; per le domande presentate dal 1° marzo al 30 giugno l'Assegno spetta «con tutti gli arretrati a partire dal mese di marzo»."
     },
     {
      "t": "È diverso per chi lavora in Italia ma non vi risiede: lì la domanda va ripresentata ogni anno, dal 1° marzo.",
@@ -1111,7 +1126,7 @@
    "slug": "il-ticket-si-paga-per-i-bambini",
    "gruppo": "soldi",
    "domanda": "Il ticket si paga anche per i bambini?",
-   "risposta": "Dipende dal reddito: sotto i 6 anni non si paga se il reddito complessivo della famiglia, nell'anno prima, non supera 36.151,98 euro.",
+   "risposta": "Dipende dal reddito: sotto i 6 anni visite ed esami specialistici non si pagano se il reddito complessivo della famiglia, nell'anno prima, non supera 36.151,98 euro.",
    "righe": [
     {
      "t": "È l'esenzione per età e reddito che sulla ricetta compare con il codice E01; la stessa regola vale per chi ha più di 65 anni.",
@@ -1129,7 +1144,7 @@
      "p": "Comma 16 dell'art. 8 della legge 537/1993, sostituito dall'art. 1, comma 3, della legge 724/1994, «A decorrere dal 1 gennaio 1995»."
     },
     {
-     "t": "Sopra la soglia, o dai 6 anni in su, il ticket si paga come per gli adulti, salvo altre esenzioni. Quanto si paga, e se ci sono esenzioni in più, dipende dalla tua Regione: chiedi al pediatra o all'ASL.",
+     "t": "Sopra la soglia, o dai 6 anni in su, il ticket si paga come per gli adulti, salvo altre esenzioni. Per i farmaci le regole cambiano da Regione a Regione: quanto si paga, e se ci sono esenzioni in più, chiedilo al pediatra o all'ASL.",
      "f": [],
      "p": ""
     }
@@ -1180,11 +1195,16 @@
      "p": "Deduzione: le eccezioni riguardano solo strutture pubbliche o private accreditate; il resto richiede pagamento tracciabile."
     },
     {
-     "t": "Per i farmaci serve lo scontrino «parlante», con il codice fiscale di chi li compra.",
+     "t": "Per i farmaci serve lo scontrino «parlante», con natura, qualità e quantità del prodotto e il codice fiscale: la guida dell'Agenzia delle Entrate indica quello di chi li compra.",
      "f": [
       0
      ],
-     "p": "Lo scontrino deve riportare natura, qualità e quantità del prodotto, oltre al codice fiscale dell'acquirente."
+     "p": "Guida AdE: lo scontrino deve riportare «natura, qualità e quantità del prodotto e codice fiscale dell'acquirente». (La norma, art. 15 TUIR come riportato dalla risoluzione AdE 10/E del 2010, parla di «codice fiscale del destinatario»; nessuna fonte ufficiale aperta dice in modo esplicito quale codice usare per un figlio a carico.)"
+    },
+    {
+     "t": "Se compri un farmaco per un figlio e non sai quale codice fiscale far mettere, chiedi a chi ti prepara la dichiarazione.",
+     "f": [],
+     "p": ""
     },
     {
      "t": "Si detraggono anche le spese per i familiari fiscalmente a carico, come i figli.",

@@ -113,14 +113,19 @@ def _slug(t):
     return re.sub(r'[^a-z0-9]+', '-', t).strip('-')
 def _riga_una(f): return ' '.join(x.strip() for x in f.split('\n') if x.strip())
 def vocabolario():
-    """Le parole già uscite su Instagram (data <= oggi, al momento della build), dalla più recente.
+    """Le parole già uscite su Instagram (data passata, o di oggi se la build gira dalle 18 ora di Roma), dalla più recente.
     1) gen/grafiche/post/vocabolario-*.json: le voci con la loro data (fanno fede);
     2) gen/grafiche/post/*vocabolario*.json (i caroselli): la data è quella del nome del file;
     3) gli altri post del giorno (AAAA-MM-GG*.json) con «parola» e «numero»: solo per numeri e parole che mancano (es. la n. 1)."""
     cart = os.path.join(ROOT, 'gen', 'grafiche', 'post')
     V, parole = {}, set()
+    # La parola esce su Instagram alle 18 (ora di Roma): compare solo se la data è passata,
+    # oppure se è oggi e la build gira dalle 18:00 in poi.
+    from zoneinfo import ZoneInfo
+    ora = datetime.datetime.now(ZoneInfo('Europe/Rome')); oggi_roma = ora.date().isoformat()
+    def uscita(data): return data < oggi_roma or (data == oggi_roma and ora.hour >= 18)
     def metti(n, parola, frase, data, fonte):
-        if not (parola and frase and n) or data > OGGI: return
+        if not (parola and frase and n) or not uscita(data): return
         n = int(n)
         if n in V or parola.lower() in parole: return
         V[n] = dict(numero=n, parola=parola.strip(), frase=_riga_una(frase), data=data, fonte=fonte); parole.add(parola.lower())
