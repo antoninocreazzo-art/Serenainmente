@@ -29,3 +29,7 @@ for n in sys.argv[1:]:
   im=Image.open(f'assets/foto/{n}.webp').convert('RGB')
   for suf,w,q in (('-sm',768,72),('-xs',480,62)): im.resize((w,round(im.height*w/im.width)),Image.LANCZOS).save(f'assets/foto/{n}{suf}.webp','WEBP',quality=q,method=6)" hero routine-della-nanna
 Poi: python3 gen/build.py
+
+Dal 13/11/2026 hanno la foto definitiva anche le 14 guide di «Attesa e primi mesi», inserimento-al-nido e
+primo-giorno-nido-materna-cosa-serve (1536 × 1024 più -sm e -xs, miniature con python3 gen/miniature.py).
+Le altre 41 guide nuove aspettano la foto: i prompt sono nel documento di progetto delle foto delle 57 guide.
