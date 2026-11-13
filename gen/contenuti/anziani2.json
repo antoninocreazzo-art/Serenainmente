@@ -1,0 +1,2189 @@
+{
+ "fonti": [
+  {
+   "id": "NA-01",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Prestazione universale per persone anziane non autosufficienti (scheda del servizio, aggiornata l'8 giugno 2026)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.decreto-anziani-prestazione-universale.html"
+  },
+  {
+   "id": "NA-02",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 2017,
+   "titolo": "DPCM 12 gennaio 2017 (livelli essenziali di assistenza), articolo 30: assistenza sociosanitaria residenziale e semiresidenziale alle persone non autosufficienti",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2017-03-18&atto.codiceRedazionale=17A02015&atto.articolo.numero=30&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0"
+  },
+  {
+   "id": "NA-03",
+   "ente": "Regione Piemonte",
+   "anno": 2026,
+   "titolo": "Residenze sanitarie assistenziali per anziani non autosufficienti (RSA)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/sostegno-alle-cure/residenze-sanitarie-assistenziali-per-anziani-non-autosufficienti-rsa"
+  },
+  {
+   "id": "NA-04",
+   "ente": "Regione Toscana",
+   "anno": 2026,
+   "titolo": "RSA della Toscana: guida al servizio (accesso ai posti con contributo pubblico)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://rsa.regione.toscana.it/guida"
+  },
+  {
+   "id": "NA-05",
+   "ente": "Regione Lombardia",
+   "anno": 2026,
+   "titolo": "Residenze Sanitarie Assistenziali (RSA)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.regione.lombardia.it/sanita/strutture-sanitarie-e-sociosanitarie/residenze-sanitarie-assistenziali-rsa"
+  },
+  {
+   "id": "NA-06",
+   "ente": "ASP Istituzioni Assistenziali Riunite di Pavia (azienda pubblica di servizi alla persona)",
+   "anno": 2026,
+   "titolo": "Domanda di ricovero nelle RSA Pertusati e Santa Croce: documenti, corredo e retta 2026",
+   "tipo": "Documento di un'azienda pubblica di servizi alla persona",
+   "url": "https://www.asppavia.it/wp-content/uploads/2026/07/DOMANDA-DI-RICOVERO-Pertusati-e-S.Croce-2026.pdf"
+  },
+  {
+   "id": "NA-07",
+   "ente": "ASP Firenze Montedomini (azienda pubblica di servizi alla persona)",
+   "anno": 2024,
+   "titolo": "Carta dei servizi 2024: ingresso nelle residenze per anziani",
+   "tipo": "Documento di un'azienda pubblica di servizi alla persona",
+   "url": "https://montedomini.portaletrasparenza.net/download/attachment/2713/o_1hkt9g53i1ekg1580j9uhm8lm2g.pdf"
+  },
+  {
+   "id": "NA-08",
+   "ente": "ATS della Brianza",
+   "anno": 2026,
+   "titolo": "Dimissioni protette",
+   "tipo": "Documento di un'Azienda sanitaria",
+   "url": "https://www.ats-brianza.it/dimissioni-protette"
+  },
+  {
+   "id": "NA-09",
+   "ente": "Azienda ospedaliera di rilievo nazionale Sant'Anna e San Sebastiano di Caserta",
+   "anno": 2024,
+   "titolo": "Protocollo per la dimissione assistita (con la definizione di dimissione protetta)",
+   "tipo": "Documento di un ospedale",
+   "url": "https://ospedale.caserta.it/delibere/2025/PROTOCOLLO_DIMISSIONE_ASSISTITA.pdf"
+  },
+  {
+   "id": "NA-10",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 2017,
+   "titolo": "Legge 22 dicembre 2017, n. 219, articolo 4: disposizioni anticipate di trattamento",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2018-01-16&atto.codiceRedazionale=18G00006&atto.articolo.numero=4&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0"
+  },
+  {
+   "id": "NA-11",
+   "ente": "Ministero della Salute – Normattiva",
+   "anno": 2019,
+   "titolo": "Decreto 10 dicembre 2019, n. 168, articolo 3: chi trasmette le DAT alla banca dati nazionale",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2020-01-17&atto.codiceRedazionale=20G00005&atto.articolo.numero=3&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0"
+  },
+  {
+   "id": "NA-12",
+   "ente": "Ministero della Salute – Normattiva",
+   "anno": 2019,
+   "titolo": "Decreto 10 dicembre 2019, n. 168, articolo 4: chi può consultare la banca dati nazionale delle DAT",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2020-01-17&atto.codiceRedazionale=20G00005&atto.articolo.numero=4&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0"
+  },
+  {
+   "id": "NA-13",
+   "ente": "Comune di Verona",
+   "anno": 2026,
+   "titolo": "Disposizioni anticipate di trattamento (DAT)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.comune.verona.it/Servizi/Disposizioni-Anticipate-di-Trattamento-DAT"
+  },
+  {
+   "id": "NA-14",
+   "ente": "Ministero della Salute",
+   "anno": 2026,
+   "titolo": "Disposizioni anticipate di trattamento: accesso alla banca dati nazionale",
+   "tipo": "Documento istituzionale",
+   "url": "https://dat.salute.gov.it/portale-dat/"
+  },
+  {
+   "id": "NA-15",
+   "ente": "Regione Lombardia",
+   "anno": 2026,
+   "titolo": "Pronto soccorso",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.lombardia.it/sanita/emergenze-e-urgenze/pronto-soccorso"
+  },
+  {
+   "id": "NA-16",
+   "ente": "Regione Piemonte",
+   "anno": 2021,
+   "titolo": "Delibera della Giunta regionale 16 aprile 2021, n. 7-3088: percorsi in pronto soccorso, che recepisce le linee di indirizzo nazionali sul triage intraospedaliero (Accordo Stato-Regioni del 1° agosto 2019)",
+   "tipo": "Norma",
+   "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2021/17/attach/dgr_03088_1050_16042021.pdf"
+  },
+  {
+   "id": "NA-17",
+   "ente": "Regione Toscana",
+   "anno": 2026,
+   "titolo": "Accedere al pronto soccorso",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.toscana.it/accedere-al-pronto-soccorso"
+  },
+  {
+   "id": "NA-18",
+   "ente": "Regione Piemonte",
+   "anno": 2026,
+   "titolo": "Servizi di emergenza-urgenza: guardia medica e pronto soccorso",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/accesso-ai-servizi-sanitari/servizi-emergenza-urgenza"
+  },
+  {
+   "id": "NA-19",
+   "ente": "Regione Toscana",
+   "anno": 2026,
+   "titolo": "Nuovo numero del servizio di continuità assistenziale (guardia medica): il 116117",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+  },
+  {
+   "id": "NA-20",
+   "ente": "Provincia autonoma di Trento – Ufficio stampa",
+   "anno": 2026,
+   "titolo": "Numero unico europeo 116117: oltre 240 mila chiamate nel 2025 (comunicato del 29 giugno 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.ufficiostampa.provincia.tn.it/Comunicati/Numero-unico-europeo-116117-oltre-240-mila-chiamate-nel-2025"
+  },
+  {
+   "id": "NA-21",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 2009,
+   "titolo": "Decreto legislativo 3 ottobre 2009, n. 153, articolo 1: i nuovi servizi delle farmacie nel Servizio sanitario nazionale",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2009-11-04&atto.codiceRedazionale=009G0162&atto.articolo.numero=1&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0"
+  },
+  {
+   "id": "NA-22",
+   "ente": "Regione del Veneto",
+   "anno": 2026,
+   "titolo": "Farmacia dei servizi",
+   "tipo": "Documento istituzionale",
+   "url": "https://salute.regione.veneto.it/organizzazione-sssr/il-servizio-socio-sanitario-regionale/assistenza-ospedaliera/assistenza-farmaceutica/farmacia-dei-servizi"
+  },
+  {
+   "id": "NA-23",
+   "ente": "Regione Lombardia",
+   "anno": 2026,
+   "titolo": "La Farmacia dei Servizi",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.regione.lombardia.it/sanita/farmaci-protesi-e-assistenza-integrata/farmacia-dei-servizi"
+  },
+  {
+   "id": "NA-24",
+   "ente": "Regione Toscana",
+   "anno": 2025,
+   "titolo": "CUP in farmacia",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.toscana.it/-/cup-in-farmacia"
+  },
+  {
+   "id": "NA-25",
+   "ente": "Azienda USL di Bologna",
+   "anno": 2026,
+   "titolo": "Farmacie: orari di apertura e turni diurni, notturni e festivi",
+   "tipo": "Documento di un'Azienda sanitaria",
+   "url": "https://www.ausl.bologna.it/per-i-cittadini/farm"
+  },
+  {
+   "id": "NA-26",
+   "ente": "Regione Friuli Venezia Giulia",
+   "anno": 2026,
+   "titolo": "Legge regionale 2 settembre 1981, n. 59 (testo vigente dal 1° gennaio 2026): orari e turni delle farmacie",
+   "tipo": "Norma",
+   "url": "https://lexview-int.regione.fvg.it/fontinormative/xml/scarico.aspx?ANN=1981&LEX=0059&tip=0&lang=ita"
+  },
+  {
+   "id": "NA-27",
+   "ente": "Garante per la protezione dei dati personali",
+   "anno": 2026,
+   "titolo": "FAQ – Fascicolo sanitario elettronico (FSE)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.garanteprivacy.it/faq/fascicolo-sanitario"
+  },
+  {
+   "id": "NA-28",
+   "ente": "Regione Toscana",
+   "anno": 2026,
+   "titolo": "Fascicolo sanitario elettronico",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.toscana.it/-/fascicolo-sanitario-elettronico"
+  },
+  {
+   "id": "NA-29",
+   "ente": "Regione Lombardia",
+   "anno": 2026,
+   "titolo": "Numero europeo armonizzato 116117: continuità assistenziale (ex guardia medica) in tutta la Lombardia",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117"
+  }
+ ],
+ "guide": [
+  {
+   "slug": "rsa-come-si-entra",
+   "categoria": "Organizzarsi",
+   "argomento": "anziani",
+   "per": [
+    "anziano",
+    []
+   ],
+   "data": "2026-11-13",
+   "titolo": "RSA: come si entra, chi paga la retta e cosa chiedere quando visiti una struttura",
+   "titolo_seo": "Entrare in RSA: valutazione dell'ASL, quota sanitaria e sociale",
+   "sommario": "Quando un genitore non può più essere assistito a casa: come si chiede un posto in RSA con il contributo pubblico, come si divide la retta tra Servizio sanitario e famiglia, perché si aspetta e cosa chiedere quando visiti una struttura. Le regole cambiano da Regione a Regione.",
+   "tempo": "La valutazione e l'attesa del posto dipendono dalla Regione e dai posti liberi",
+   "serve": "Documento d'identità e tessera sanitaria del genitore; l'ISEE, se chiedete un aiuto del Comune per la retta",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "La RSA, residenza sanitaria assistenziale, accoglie persone anziane non autosufficienti che non possono essere assistite a casa. La legge nazionale sui livelli essenziali di assistenza dice che il Servizio sanitario garantisce l'assistenza in residenza dopo una valutazione multidimensionale, cioè sanitaria e sociale insieme.",
+    "La retta ha due parti. La quota sanitaria la paga il Servizio sanitario: per l'assistenza di lungo periodo la legge nazionale fissa il 50% della tariffa giornaliera. L'altra parte, la quota sociale, la paga la persona o la famiglia; se il reddito non basta, può intervenire il Comune.",
+    "Ogni Regione organizza l'accesso a modo suo. Qui trovi, come esempi, come funziona in Piemonte, in Toscana e in Lombardia. Per la tua zona chiedi al medico di famiglia, ai servizi sociali del Comune o allo sportello dell'ASL."
+   ],
+   "passi": [
+    [
+     "Chiedi la valutazione",
+     "In Toscana si segnala il bisogno al Punto unico di accesso (PUA) della zona; poi l'Unità di valutazione multidimensionale (UVM) fa la valutazione sociale e sanitaria. In Piemonte la valutazione la fa l'Unità di valutazione geriatrica (UVG). In Lombardia, invece, la domanda si presenta direttamente alla RSA scelta, di persona o tramite un familiare; dopo l'ingresso i medici della struttura fanno una valutazione e un piano di assistenza."
+    ],
+    [
+     "Leggi l'esito",
+     "In Toscana l'UVM consegna il progetto di assistenza individualizzato: dice quali bisogni ha la persona e se l'assistenza sarà a casa o in residenza. In Piemonte l'esito arriva a casa con due punteggi, sanitario e sociale: da 24 in su il caso è urgente, da 19 a 23 non urgente o differibile. L'esito indica anche il tipo di progetto e l'intensità dell'assistenza."
+    ],
+    [
+     "Capisci chi paga cosa",
+     "In Piemonte la quota sanitaria, il 50%, la paga l'ASL di residenza, anche se la RSA è in un'altra ASL; l'altro 50% è a carico dell'anziano, e se il reddito non basta il Comune integra o copre tutto. In Toscana il titolo d'acquisto, una specie di buono, indica la quota sanitaria e la quota sociale; con l'ISEE si può chiedere un contributo del Comune, entro un massimo fissato dalla Regione. In Lombardia, se la persona non riesce a pagare, ci si rivolge all'assistente sociale del Comune di residenza."
+    ],
+    [
+     "Scegli la struttura",
+     "In Piemonte la persona e la famiglia scelgono tra le RSA autorizzate e accreditate dal Servizio sanitario. In Toscana, quando arriva il titolo d'acquisto, ci sono 10 giorni per scegliere: si contatta la RSA per verificare che ci sia un posto e si avvisa la zona socio-sanitaria. Il portale regionale delle RSA toscane mostra posti liberi, costi e servizi."
+    ],
+    [
+     "Se non c'è posto, si aspetta",
+     "Non c'è un tempo uguale per tutti. In Toscana, se mancano posti o risorse, la persona entra in una lista di priorità. In Piemonte le liste seguono punteggio e priorità, e la Regione pubblica ogni mese i posti letto. In Lombardia posti disponibili, liste d'attesa e rette si trovano sui siti delle ATS e delle singole RSA. Chiedi a chi ha fatto la valutazione a che punto siete."
+    ],
+    [
+     "Visita la struttura e fai le tue domande",
+     "Chiedi la Carta dei servizi: in Lombardia ogni RSA ne ha una e la deve dare a tutti gli ospiti. Poi chiedi cosa comprende la retta e cosa no (a Pavia, per esempio, il trasporto in ambulanza è escluso), quanto preavviso serve per lasciare il posto (a Pavia 30 giorni), gli orari delle visite, chi è il medico e come vi tiene informati, dove si custodiscono gli oggetti di valore."
+    ],
+    [
+     "Senza contributo pubblico",
+     "Si può entrare anche privatamente, pagando tutta la retta. In Toscana la tariffa privata la fissa la struttura. In Lombardia, nelle RSA senza contratto con l'ATS, i costi sono tutti a carico della persona o del Comune di residenza."
+    ]
+   ],
+   "errori": [
+    "Firmare con una struttura prima di sapere se avete diritto al contributo pubblico: chiedi prima all'ASL o ai servizi sociali.",
+    "Pensare che il Servizio sanitario paghi tutta la retta: per l'assistenza di lungo periodo ne paga una parte.",
+    "Non chiedere cosa è escluso dalla retta.",
+    "Non chiedere al Comune un aiuto quando il reddito non basta."
+   ],
+   "checklist": [
+    "Valutazione chiesta all'ASL o ai servizi sociali (in Lombardia, domanda alla RSA)",
+    "Esito della valutazione e progetto di assistenza nella cartellina",
+    "Quota sanitaria e quota sociale: chi paga cosa, per iscritto",
+    "ISEE fatto, se serve l'aiuto del Comune",
+    "Carta dei servizi letta",
+    "Cosa comprende la retta e cosa no",
+    "Preavviso per lasciare il posto",
+    "Nome e telefono di chi segue la lista d'attesa"
+   ],
+   "fonti": [
+    "NA-02",
+    "NA-03",
+    "NA-04",
+    "NA-05",
+    "NA-06"
+   ],
+   "avvertenza": "Informazioni generali tratte dalla legge nazionale sui livelli essenziali di assistenza e dalle pagine di Regione Piemonte, Regione Toscana e Regione Lombardia, aggiornate a novembre 2026. Accesso, tariffe e liste d'attesa cambiano da Regione a Regione: il riferimento è la tua ASL, insieme ai servizi sociali del Comune. Per il contratto e le questioni economiche può aiutarti un patronato, un CAF o un avvocato.",
+   "domanda": "Come si entra in RSA e chi paga la retta",
+   "chiavi_ricerca": "rsa residenza sanitaria assistenziale casa di riposo ricovero struttura anziani non autosufficiente entrare ingresso posto lista d'attesa retta quota sanitaria sociale alberghiera uvm uvg valutazione pua comune paga costo",
+   "frasi": [
+    "rsa",
+    "casa di riposo",
+    "case di riposo",
+    "residenza sanitaria"
+   ],
+   "correlate": [
+    "ingresso-in-rsa-cosa-preparare",
+    "invalidita-civile-anziani",
+    "amministratore-di-sostegno"
+   ]
+  },
+  {
+   "slug": "ingresso-in-rsa-cosa-preparare",
+   "categoria": "Organizzarsi",
+   "argomento": "anziani",
+   "per": [
+    "anziano",
+    []
+   ],
+   "data": "2026-11-13",
+   "titolo": "Ingresso in RSA: la lista di cosa preparare",
+   "titolo_seo": "Ingresso in RSA: documenti, vestiti e domande da fare",
+   "sommario": "Documenti, carte del medico, vestiti, oggetti di ogni giorno e le domande da fare prima del primo giorno. Ogni struttura ha il suo elenco: questa lista ti aiuta a non dimenticare niente e a chiedere quello che manca.",
+   "tempo": "Un paio di sere per preparare tutto",
+   "serve": "L'elenco che vi dà la struttura, una cartellina per i documenti",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Ogni RSA chiede documenti e corredo a modo suo: in Lombardia, per esempio, è il personale della struttura a dire quali documenti amministrativi e sanitari servono. Le voci di questa lista vengono dagli elenchi di due aziende pubbliche, l'ASP di Pavia e l'ASP Montedomini di Firenze: sono esempi, da confrontare con quello che chiede la vostra struttura.",
+    "Conviene cominciare qualche giorno prima: così c'è il tempo di chiedere al medico di famiglia le carte che mancano."
+   ],
+   "passi": [
+    [
+     "Documenti d'identità",
+     "Carta d'identità, tessera sanitaria, attestato di esenzione dal ticket se c'è. A Pavia chiedono le fotocopie con la domanda e gli originali il giorno dell'ingresso, più una fototessera. Chi firma il contratto porta anche la copia della sua carta d'identità e del suo codice fiscale."
+    ],
+    [
+     "Invalidità e amministratore di sostegno",
+     "Se ci sono: la copia del verbale di invalidità civile e la copia del decreto di nomina dell'amministratore di sostegno o del tutore."
+    ],
+    [
+     "Le carte del medico",
+     "Una sintesi delle malattie scritta dal medico di famiglia e la terapia aggiornata al giorno dell'ingresso. Se il genitore arriva dall'ospedale, la lettera di dimissione. A Firenze chiedono anche le autorizzazioni per gli ausili, come carrozzina o deambulatore, e il piano terapeutico, se c'è, per avere le medicine dei primi giorni."
+    ],
+    [
+     "Il progetto di assistenza",
+     "Per i posti con il contributo pubblico, il progetto di assistenza scritto dopo la valutazione dell'ASL: a Firenze, per esempio, è richiesto per i posti in convenzione."
+    ],
+    [
+     "Le carte della retta",
+     "Di solito un familiare firma un impegno a pagare la retta; se contribuisce il Comune, si consegna quello rilasciato dal Comune. A Pavia il primo mese si paga in anticipo e serve una marca da bollo da 16 euro."
+    ],
+    [
+     "Vestiti comodi, da far segnare",
+     "Vestiti comodi per il giorno e per la notte, da cambiare con le stagioni, e due paia di calzature, pantofole o scarpe. A Pavia consigliano almeno 4 cambi per il giorno; il guardaroba della struttura segna ogni capo, e anche i capi nuovi vanno sempre portati lì."
+    ],
+    [
+     "Le cose di ogni giorno",
+     "Il necessario per l'igiene personale, e gli oggetti che usa ogni giorno, come occhiali o apparecchio acustico, con i loro astucci. Chiedi alla struttura come li custodisce."
+    ],
+    [
+     "Niente oggetti di valore",
+     "A Firenze la struttura non accetta beni di valore particolare: i preziosi si dichiarano all'ingresso e si consegnano al coordinatore, che rilascia una ricevuta e li tiene in cassaforte. Il consiglio è di non tenere con sé oggetti preziosi né più soldi del necessario."
+    ],
+    [
+     "Le domande da fare prima del primo giorno",
+     "Gli orari delle visite. Chi è il medico e come vi tiene informati. Cosa comprende la retta e cosa no. Quanto preavviso serve per lasciare il posto. Come si portano i vestiti nuovi. Scrivi le risposte e mettile nella cartellina."
+    ]
+   ],
+   "errori": [
+    "Consegnare un originale senza tenerne una copia a casa.",
+    "Portare vestiti nuovi senza farli segnare: a Pavia la struttura non risponde dei capi non segnati.",
+    "Lasciare gioielli o contanti in camera."
+   ],
+   "checklist": [
+    "Carta d'identità e tessera sanitaria (originali e fotocopie)",
+    "Attestato di esenzione dal ticket",
+    "Fototessera",
+    "Copia del verbale di invalidità civile, se c'è",
+    "Copia della nomina dell'amministratore di sostegno o del tutore, se c'è",
+    "Sintesi del medico di famiglia e terapia aggiornata",
+    "Lettera di dimissione, se arriva dall'ospedale",
+    "Autorizzazioni per gli ausili e piano terapeutico, se ci sono",
+    "Progetto di assistenza dell'ASL, per i posti in convenzione",
+    "Impegno a pagare la retta, firmato",
+    "Documento e codice fiscale di chi firma il contratto",
+    "Vestiti per il giorno e per la notte, consegnati al guardaroba",
+    "Pantofole e scarpe",
+    "Necessario per l'igiene personale",
+    "Occhiali, apparecchio acustico e astucci",
+    "Domande fatte: visite, medico, retta, preavviso"
+   ],
+   "fonti": [
+    "NA-05",
+    "NA-06",
+    "NA-07"
+   ],
+   "avvertenza": "Informazioni generali, aggiornate a novembre 2026. Gli esempi vengono dai documenti di due aziende pubbliche di servizi alla persona, a Pavia e a Firenze, e dalla pagina di Regione Lombardia sulle RSA: ogni struttura ha il suo elenco, e vale quello. Per la terapia e le carte sanitarie il riferimento è il medico di famiglia.",
+   "domanda": "Cosa portare per l'ingresso in RSA",
+   "chiavi_ricerca": "rsa casa di riposo ingresso entrare primo giorno cosa portare preparare documenti vestiti corredo valigia indumenti lista elenco",
+   "frasi": [
+    "(portare|preparare|prepara|porto|corredo|vestiti|valigia|documenti) .{0,25}(rsa|casa di riposo)",
+    "(rsa|casa di riposo) .{0,25}(portare|preparare|corredo|vestiti|valigia)",
+    "ingresso in (rsa|casa di riposo)"
+   ],
+   "correlate": [
+    "rsa-come-si-entra",
+    "lista-medicine-genitore-anziano",
+    "amministratore-di-sostegno"
+   ]
+  },
+  {
+   "slug": "dimissioni-protette",
+   "categoria": "Organizzarsi",
+   "argomento": "anziani",
+   "per": [
+    "anziano",
+    []
+   ],
+   "data": "2026-11-13",
+   "titolo": "Dimissioni protette: cosa chiedere prima che un genitore torni a casa dall'ospedale",
+   "titolo_seo": "Dimissione protetta: cos'è, chi la attiva, cosa chiedere",
+   "sommario": "Quando un genitore anziano esce dall'ospedale ma non ce la fa da solo, l'ospedale può organizzare con l'ASL e il Comune cure a casa o in una struttura. Cos'è la dimissione protetta, chi la attiva e cosa chiedere in reparto prima del giorno dell'uscita.",
+   "tempo": "Da chiedere qualche giorno prima della dimissione: meglio presto",
+   "serve": "La tessera sanitaria del genitore, la lista delle sue medicine, il nome e il telefono del medico di famiglia",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "La dimissione protetta è l'uscita dall'ospedale di una persona non autosufficiente, di solito anziana o con disabilità, che ha bisogno di cure e assistenza anche dopo: a casa o in un'altra struttura. È un percorso concordato tra l'ospedale, i servizi dell'ASL e il Comune.",
+    "Non c'è un modulo uguale in tutta Italia: ogni ospedale e ogni ASL hanno le loro procedure. Qui trovi, come esempi, come funziona in Brianza e in un ospedale di Caserta. Chiedi in reparto come funziona da voi."
+   ],
+   "passi": [
+    [
+     "Parlane in reparto, presto",
+     "La valuta il personale di reparto, in particolare il medico che segue il ricovero. Nell'ATS della Brianza ogni ospedale ha dei referenti per questo: medici, infermieri, assistenti sociali. A Caserta il protocollo raccomanda di programmare l'uscita almeno tre giorni prima e di dirlo al paziente e ai familiari. Se pensi che il tuo genitore ne abbia bisogno, chiedilo tu, nei primi giorni."
+    ],
+    [
+     "Chiedi cosa verrà attivato",
+     "Dipende dai bisogni. In Brianza, per esempio, si possono attivare: cure a domicilio di infermieri o fisioterapisti (ADI, assistenza domiciliare integrata), cure palliative a casa o in hospice, cure riabilitative o cure intermedie in strutture specializzate, il ricovero in RSA, oppure i servizi sociali del Comune, come l'assistenza domiciliare (SAD). Chiedi quale servizio, chi lo organizza e da quale giorno."
+    ],
+    [
+     "Chiedi cosa si paga",
+     "In Brianza questi servizi sono gratuiti, tranne la parte alberghiera della retta in RSA e l'eventuale contributo in base all'ISEE per l'assistenza domiciliare del Comune. Altrove chiedi all'assistente sociale dell'ospedale o del Comune."
+    ],
+    [
+     "Prima di uscire: le carte",
+     "A Caserta chi esce riceve la lettera di dimissione, con la diagnosi, gli interventi fatti e la terapia da fare a casa, e un foglio con gli appuntamenti e gli esami già prenotati. Controlla di averli prima di uscire, e chiedi che ti spieghino quello che non è chiaro."
+    ],
+    [
+     "Le medicine dei primi giorni",
+     "A Caserta l'ospedale consegna le medicine per il primo ciclo di terapia, o per il primo mese nelle terapie lunghe. Non succede uguale dappertutto: chiedi se l'ospedale le consegna, quali e per quanti giorni."
+    ],
+    [
+     "Ausili e casa",
+     "Se a casa servono ausili, come un letto o una carrozzina, chiedi chi li prescrive e quando arrivano. Pensa a come sarà la prima notte: chi c'è, chi si chiama se qualcosa non va."
+    ],
+    [
+     "Avvisa il medico di famiglia",
+     "A Caserta l'ospedale manda una relazione al medico di famiglia. Avvisalo comunque del rientro a casa: è lui che segue la terapia da lì in poi."
+    ]
+   ],
+   "errori": [
+    "Aspettare il giorno della dimissione per chiedere aiuto.",
+    "Uscire senza lettera di dimissione e senza la terapia scritta.",
+    "Dare per scontato che le cure a casa si paghino: in Brianza le cure domiciliari sono gratuite; si pagano la parte alberghiera della RSA e, in base all'ISEE, l'assistenza domiciliare del Comune."
+   ],
+   "checklist": [
+    "Nome e telefono del referente della dimissione",
+    "Servizi che verranno attivati, e da quando",
+    "Cosa si paga e cosa no",
+    "Lettera di dimissione con la terapia",
+    "Appuntamenti ed esami già prenotati",
+    "Medicine dei primi giorni: quali e per quanto",
+    "Ausili necessari: chi li prescrive",
+    "Medico di famiglia avvisato"
+   ],
+   "fonti": [
+    "NA-08",
+    "NA-09"
+   ],
+   "avvertenza": "Informazioni generali tratte dalla pagina dell'ATS della Brianza e dal protocollo dell'Azienda ospedaliera di Caserta, aggiornate a novembre 2026. Ogni ospedale e ogni ASL organizzano le dimissioni protette a modo loro: chiedi in reparto e al medico di famiglia. Sulle cure e sulle medicine il riferimento sono i medici.",
+   "domanda": "Cosa sono le dimissioni protette",
+   "chiavi_ricerca": "dimissioni dimissione protetta protette dimesso dimessa dimettono esce uscita ospedale ricovero tornare a casa adi assistenza domiciliare cure a casa non autosufficiente reparto",
+   "frasi": [
+    "dimission",
+    "dimess[oa]",
+    "dimettono",
+    "esce dall ospedale",
+    "uscire dall ospedale",
+    "torna a casa dall ospedale"
+   ],
+   "correlate": [
+    "rsa-come-si-entra",
+    "lista-medicine-genitore-anziano",
+    "invalidita-civile-anziani"
+   ]
+  },
+  {
+   "slug": "prestazione-universale-over-80",
+   "categoria": "Organizzarsi",
+   "argomento": "anziani",
+   "per": [
+    "anziano",
+    []
+   ],
+   "data": "2026-11-13",
+   "titolo": "La prestazione universale INPS per gli over 80 non autosufficienti: cos'è e chi può chiederla nel 2026",
+   "titolo_seo": "Prestazione universale INPS: requisiti, 850 euro, domanda",
+   "sommario": "Una misura sperimentale dell'INPS per chi ha almeno 80 anni, riceve l'indennità di accompagnamento, ha un bisogno di assistenza gravissimo e un ISEE sociosanitario fino a 6.000 euro. Cosa dà, come si usa l'assegno di circa 850 euro al mese e fino a quando dura.",
+   "tempo": "Mezz'ora per la domanda online, oppure un appuntamento al patronato",
+   "serve": "SPID, CIE o CNS di chi fa la domanda, oppure un patronato; un ISEE sociosanitario valido",
+   "perche_titolo": "Chi ne ha diritto",
+   "perche": [
+    "La prestazione universale è una misura economica sperimentale dell'INPS per le persone anziane non autosufficienti con un bisogno di assistenza gravissimo. Serve a sostenere chi resta a casa. La sperimentazione va dal 1° gennaio 2025 al 31 dicembre 2026.",
+    "Servono tutti questi requisiti insieme: almeno 80 anni; un bisogno di assistenza gravissimo, valutato dall'INPS; un ISEE sociosanitario non superiore a 6.000 euro; ricevere l'indennità di accompagnamento; non essere ricoverati in RSA o in strutture simili.",
+    "Al 13 novembre 2026 l'INPS indica come fine della sperimentazione il 31 dicembre 2026. Se continuerà nel 2027, e con quali regole, lo deciderà la legge: ricontrolleremo a gennaio 2027."
+   ],
+   "passi": [
+    [
+     "Controlla l'indennità di accompagnamento",
+     "È un requisito: la prestazione universale si chiede solo se il genitore riceve già l'indennità di accompagnamento. Se non ce l'ha, il primo passo è chiederla: c'è una guida apposta."
+    ],
+    [
+     "Fai l'ISEE sociosanitario",
+     "Serve un ISEE sociosanitario non superiore a 6.000 euro. Se supera questa soglia, la prestazione non spetta, e se la supera dopo, decade."
+    ],
+    [
+     "Presenta la domanda",
+     "Si fa online, con il servizio dell'INPS dedicato alla prestazione universale, oppure tramite un patronato. Se i requisiti ci sono, la prestazione decorre dal mese in cui presenti la domanda."
+    ],
+    [
+     "La valutazione del bisogno",
+     "Il bisogno di assistenza gravissimo lo valuta l'INPS, con un questionario e con i criteri fissati da un decreto del 2024: servono sia il requisito sanitario sia quello sociale."
+    ],
+    [
+     "Cosa si riceve",
+     "Due parti. Una quota fissa, pari all'indennità di accompagnamento, pagata come l'indennità. E una quota integrativa, l'assegno di assistenza, di circa 850 euro al mese, nei limiti delle risorse disponibili, pagata tramite il servizio «Prestazione Universale». Una volta riconosciuta, la prestazione assorbe alcuni contributi per l'assistenza a casa che l'ambito territoriale sociale, cioè i servizi sociali dei Comuni, può già versare: se ne ricevete uno, chiedi ai servizi sociali cosa cambia."
+    ],
+    [
+     "Come si usa l'assegno di assistenza",
+     "Solo per due cose, in alternativa: pagare un lavoratore domestico qualificato, con un contratto regolare; oppure comprare servizi di cura e assistenza non residenziali da imprese o professionisti qualificati, come previsto dalla Regione e dal territorio. Conserva contratti, ricevute e fatture."
+    ],
+    [
+     "Quando si perde",
+     "La prestazione decade se finisce l'indennità di accompagnamento, se l'ISEE supera i 6.000 euro, se l'assegno non viene usato come previsto o se il genitore viene ricoverato in RSA. Dopo l'accoglimento si può anche rinunciare."
+    ]
+   ],
+   "errori": [
+    "Pensare che basti avere 80 anni: servono tutti i requisiti insieme.",
+    "Usare l'assegno per spese diverse da quelle previste: la prestazione decade.",
+    "Dimenticare che con il ricovero in RSA la prestazione decade."
+   ],
+   "checklist": [
+    "Indennità di accompagnamento già riconosciuta",
+    "ISEE sociosanitario fino a 6.000 euro",
+    "Domanda presentata online o con il patronato",
+    "Ricevuta della domanda nella cartellina",
+    "Contratto regolare del lavoratore domestico, o fatture dei servizi di cura",
+    "A gennaio 2027: controllare se la misura continua"
+   ],
+   "fonti": [
+    "NA-01"
+   ],
+   "avvertenza": "Informazioni generali tratte dalla scheda dell'INPS sulla prestazione universale, aggiornata l'8 giugno 2026. È una misura sperimentale fino al 31 dicembre 2026: ricontrolleremo a gennaio 2027. Non è una consulenza: per la domanda e per l'ISEE rivolgiti a un patronato o a un CAF.",
+   "domanda": "Prestazione universale INPS per gli over 80: chi può chiederla",
+   "ricontrolla": "2027-01",
+   "chiavi_ricerca": "prestazione universale inps 850 euro over 80 ottantenni anziani non autosufficienti bonus anziani assegno di assistenza quota integrativa decreto anziani isee sociosanitario 6000 accompagnamento",
+   "frasi": [
+    "prestazione universale",
+    "850",
+    "bonus anzian",
+    "over 80",
+    "ultraottant",
+    "ottantenn"
+   ],
+   "correlate": [
+    "indennita-di-accompagnamento",
+    "badante-in-regola",
+    "invalidita-civile-anziani"
+   ]
+  },
+  {
+   "slug": "disposizioni-anticipate-di-trattamento",
+   "categoria": "Organizzarsi",
+   "argomento": "anziani",
+   "per": [
+    "anziano",
+    []
+   ],
+   "data": "2026-11-13",
+   "titolo": "Le disposizioni anticipate di trattamento (DAT): cosa sono e dove si depositano",
+   "titolo_seo": "DAT, il testamento biologico: come si fanno e dove si depositano",
+   "sommario": "Con le DAT una persona maggiorenne scrive, quando sta bene, quali cure accetta o rifiuta per il giorno in cui non potesse più dirlo, e può indicare una persona di fiducia. Qui trovi solo la procedura: le forme ammesse, il Comune, il notaio e la banca dati nazionale.",
+   "tempo": "Il tempo di pensarci con calma; poi un appuntamento in Comune o dal notaio",
+   "serve": "Le DAT scritte e firmate, un documento d'identità; se c'è un fiduciario, i suoi dati e la sua accettazione",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Le disposizioni anticipate di trattamento, dette anche testamento biologico, sono previste dalla legge 219 del 2017. Le può fare ogni persona maggiorenne e capace di intendere e di volere, dopo aver ricevuto informazioni mediche adeguate sulle conseguenze delle sue scelte. Dicono quali accertamenti, terapie e trattamenti accetta o rifiuta, per il caso in cui un giorno non potesse più decidere.",
+    "Il medico è tenuto a rispettarle. Può non seguirle, in tutto o in parte, d'accordo con il fiduciario, solo se appaiono chiaramente non adatte alla situazione clinica di quel momento, oppure se ci sono terapie nuove, non prevedibili quando sono state scritte, che offrono concrete possibilità di miglioramento.",
+    "È una scelta personale, e non ci sono tempi da rispettare. Questa guida spiega solo come si fa. Per parlare del contenuto, il riferimento è il medico."
+   ],
+   "passi": [
+    [
+     "Parlane con il medico",
+     "La legge chiede di scrivere le DAT dopo aver avuto informazioni mediche adeguate. Puoi chiederle al medico di famiglia o allo specialista che ti segue."
+    ],
+    [
+     "Se vuoi, indica un fiduciario",
+     "È una persona maggiorenne e capace di intendere e di volere che ti rappresenta con i medici. Accetta firmando le DAT o un atto allegato, ne riceve una copia e può rinunciare per iscritto. Puoi revocarlo in ogni momento, nelle stesse forme della nomina, senza spiegare perché. Se non c'è un fiduciario, le DAT valgono lo stesso; se serve, il giudice tutelare può nominare un amministratore di sostegno."
+    ],
+    [
+     "Scegli la forma",
+     "La legge ne ammette tre: un atto pubblico o una scrittura privata autenticata, cioè dal notaio; oppure una scrittura privata che consegni di persona all'ufficio di stato civile del Comune di residenza. Nelle Regioni che lo hanno regolato si possono consegnare anche alle strutture sanitarie: chiedi all'ASL. Se le condizioni fisiche non permettono di scrivere, si possono registrare con un video o con dispositivi che aiutano a comunicare. Le DAT sono esenti dall'obbligo di registrazione, dal bollo e da ogni altro tributo."
+    ],
+    [
+     "In Comune, su appuntamento",
+     "A Verona, per esempio, le DAT si consegnano di persona all'ufficio apposito, solo su appuntamento, e solo se si è residenti. Si portano le DAT, un documento d'identità, il modulo di richiesta e, se c'è, il modulo di nomina del fiduciario con la copia del suo documento. Il Comune non aiuta a scriverle e non dà informazioni sul contenuto: le registra, le conserva e rilascia una ricevuta. L'attesa per l'appuntamento può arrivare a 90 giorni."
+    ],
+    [
+     "La banca dati nazionale",
+     "Dal 2020 c'è una banca dati nazionale delle DAT, presso il Ministero della Salute. Le trasmettono il Comune, il notaio, i consolati e le Regioni che le raccolgono. Ci va una copia delle DAT se tu sei d'accordo; altrimenti solo l'indicazione di dove sono conservate. Possono consultarla tre persone: tu, il fiduciario finché ha l'incarico, e il medico che ti cura quando non sei in grado di decidere. Si entra con SPID, CIE o CNS."
+    ],
+    [
+     "Si possono cambiare in ogni momento",
+     "Le DAT si rinnovano, si modificano o si revocano nelle stesse forme in cui sono state fatte. In caso di urgenza la revoca si può fare anche a voce, raccolta o videoregistrata da un medico, con due testimoni."
+    ],
+    [
+     "Fai sapere dove sono",
+     "Di' al fiduciario e alle persone vicine che le DAT esistono e dove si trovano. Metti la ricevuta e una copia nella cartellina di famiglia."
+    ]
+   ],
+   "errori": [
+    "Pensare che servano per forza un notaio o una spesa: si possono consegnare in Comune, e sono esenti da bollo e tributi.",
+    "Portarle in un Comune diverso da quello di residenza.",
+    "Non dire a nessuno che esistono e dove sono."
+   ],
+   "checklist": [
+    "Informazioni chieste al medico",
+    "Fiduciario scelto e d'accordo, se lo vuoi",
+    "DAT scritte e firmate",
+    "Appuntamento in Comune o dal notaio",
+    "Ricevuta di consegna nella cartellina",
+    "Fiduciario e famiglia sanno dove sono"
+   ],
+   "fonti": [
+    "NA-10",
+    "NA-11",
+    "NA-12",
+    "NA-13",
+    "NA-14"
+   ],
+   "avvertenza": "Informazioni generali sulla procedura, tratte dalla legge 219 del 2017, dal regolamento della banca dati nazionale (decreto 168 del 2019) e dalla pagina del Comune di Verona, aggiornate a novembre 2026. Ogni Comune ha i suoi orari e i suoi moduli: chiedi all'ufficio di stato civile. Per il contenuto delle DAT il riferimento è il medico; per dubbi legali, un notaio o un avvocato.",
+   "domanda": "Come si fanno le DAT e dove si depositano",
+   "chiavi_ricerca": "dat disposizioni anticipate di trattamento testamento biologico biotestamento fine vita fiduciario comune stato civile notaio banca dati nazionale depositare consegnare volontà cure accanimento",
+   "frasi": [
+    "dat ",
+    "testamento biologico",
+    "biotestamento",
+    "disposizioni anticipate",
+    "fine vita"
+   ],
+   "correlate": [
+    "amministratore-di-sostegno",
+    "pratiche-online-per-un-genitore",
+    "cartellina-di-famiglia"
+   ]
+  },
+  {
+   "slug": "pronto-soccorso-triage-codici",
+   "categoria": "Organizzarsi",
+   "argomento": "salute",
+   "per": [
+    "bambino anziano",
+    [
+     "0-1",
+     "1-3",
+     "3-6",
+     "6-12",
+     "13-18"
+    ]
+   ],
+   "data": "2026-11-13",
+   "titolo": "Il pronto soccorso: come funziona il triage, cosa vogliono dire i codici e cosa portare",
+   "titolo_seo": "Pronto soccorso: i codici del triage da 1 a 5, tempi e ticket",
+   "sommario": "Al pronto soccorso non si entra in ordine di arrivo: un infermiere valuta ognuno e assegna un codice da 1 a 5, con un colore. Cosa vuol dire ogni codice, entro quanto si dovrebbe entrare, cosa portare e quando si paga il ticket. Nelle emergenze si chiama il 112.",
+   "tempo": "Due minuti per preparare la borsa; l'attesa dipende dal codice",
+   "serve": "Tessera sanitaria, lettere di ricoveri ed esami recenti, l'elenco delle medicine che la persona prende",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Se pensi che sia un'emergenza, chiama subito il 112. Questa guida serve a capire come funziona il pronto soccorso, non a decidere se andarci.",
+    "Il pronto soccorso è per i problemi acuti, che hanno bisogno di una diagnosi e di cure rapide. Per i problemi non urgenti ci sono il medico di famiglia e il pediatra; di notte e nei festivi la guardia medica.",
+    "Dal 2019 le linee nazionali sul triage usano cinque codici numerici, ognuno con il suo colore. Le Regioni le hanno fatte proprie con loro delibere: i tempi della tabella sono quelli delle linee nazionali, come li riporta la delibera della Regione Piemonte che le recepisce."
+   ],
+   "tabella": {
+    "titolo": "I codici del triage e il tempo massimo per entrare",
+    "colonne": [
+     "Codice",
+     "Che cosa vuol dire",
+     "Tempo massimo per entrare"
+    ],
+    "righe": [
+     [
+      "1 · rosso",
+      "Emergenza: una o più funzioni vitali sono interrotte o gravemente compromesse",
+      "Subito"
+     ],
+     [
+      "2 · arancione",
+      "Urgenza: le funzioni vitali sono a rischio, oppure c'è un dolore severo",
+      "Entro 15 minuti"
+     ],
+     [
+      "3 · azzurro",
+      "Urgenza differibile: condizione stabile, con una sofferenza che pesa sullo stato generale",
+      "Entro 60 minuti"
+     ],
+     [
+      "4 · verde",
+      "Urgenza minore: condizione stabile, senza rischio di peggiorare",
+      "Entro 120 minuti"
+     ],
+     [
+      "5 · bianco",
+      "Non urgenza: problema non urgente o di minima rilevanza clinica",
+      "Entro 240 minuti"
+     ]
+    ]
+   },
+   "passi": [
+    [
+     "Prepara cosa portare",
+     "Regione Lombardia indica: la tessera sanitaria, o almeno il codice fiscale, e le eventuali esenzioni; i documenti di ricoveri, analisi o radiografie fatti prima; il nome delle medicine che la persona prende e come le prende."
+    ],
+    [
+     "All'arrivo c'è il triage",
+     "Un infermiere formato valuta la persona e le assegna un codice di priorità: si entra in ordine di gravità, non di arrivo. In Lombardia i bambini li valuta un infermiere di triage pediatrico, le donne in gravidanza o dopo il parto un'ostetrica. Arrivare in ambulanza non fa entrare prima: conta il codice."
+    ],
+    [
+     "Leggi il codice",
+     "I codici vanno da 1, il più grave, a 5. Il tempo della tabella è quello massimo per entrare nell'area delle cure, non per uscire dal pronto soccorso: dopo possono servire esami e osservazione."
+    ],
+    [
+     "Mentre aspetti",
+     "L'infermiere di triage rivaluta chi aspetta: quando scade il tempo del suo codice, quando lo ritiene utile, oppure quando lo chiede il paziente o un familiare. Il codice può cambiare. Se la persona sta peggio, dillo subito all'infermiere."
+    ],
+    [
+     "Il ticket",
+     "Si paga solo in alcuni casi, e le regole sono regionali. In Lombardia e in Piemonte, se l'accesso si chiude con un codice bianco, il ticket è di 25 euro, salvo esenzioni; in Piemonte sono esenti i minori di 14 anni. In Toscana il ticket si paga per gli accessi non urgenti di bassa complessità; sono esenti i minori di 14 anni e chi ha già un'esenzione dal ticket. In Lombardia chi se ne va prima della fine paga il ticket, qualunque sia il codice."
+    ],
+    [
+     "Quando non serve",
+     "Per i problemi non urgenti e per le malattie croniche già note, senza un cambiamento improvviso, il riferimento è il medico di famiglia o il pediatra. Di notte, nel fine settimana e nei festivi c'è la guardia medica: dove è attivo, risponde al 116117."
+    ],
+    [
+     "Dopo, le carte",
+     "Conserva il verbale del pronto soccorso e portalo al medico di famiglia o al pediatra. Gli accessi al pronto soccorso si ritrovano anche nel Fascicolo sanitario elettronico: in Toscana, per esempio, ci sono."
+    ]
+   ],
+   "errori": [
+    "Pensare che l'ambulanza faccia entrare prima: conta il codice.",
+    "Non dire all'infermiere che la persona sta peggio mentre aspetta: si può chiedere una nuova valutazione.",
+    "Andare via senza avvisare: in Lombardia il ticket si paga comunque.",
+    "Dimenticare l'elenco delle medicine."
+   ],
+   "checklist": [
+    "Tessera sanitaria (o codice fiscale) ed eventuali esenzioni",
+    "Lettere di ricoveri ed esami recenti",
+    "Elenco delle medicine e di come si prendono",
+    "Nome e telefono del medico di famiglia o del pediatra",
+    "Telefono carico"
+   ],
+   "fonti": [
+    "NA-15",
+    "NA-16",
+    "NA-17",
+    "NA-18",
+    "NA-28"
+   ],
+   "avvertenza": "Informazioni generali, aggiornate a novembre 2026, tratte dalle pagine di Regione Lombardia, Regione Toscana e Regione Piemonte e dalla delibera piemontese che riprende le linee nazionali sul triage. Ticket e organizzazione cambiano da Regione a Regione. Questa guida non serve a decidere se andare al pronto soccorso: se è un'emergenza chiama il 112; negli altri casi chiedi al medico di famiglia, al pediatra o alla guardia medica.",
+   "domanda": "Come funziona il triage e cosa vogliono dire i codici",
+   "chiavi_ricerca": "triage codici codice numerico colore rosso arancione azzurro verde bianco priorità attesa aspettare ticket portare tessera sanitaria verbale",
+   "frasi": [
+    "triage",
+    "codic\\w* (rosso|arancione|azzurro|verde|bianco|1|2|3|4|5) ",
+    "(rosso|arancione|azzurro|verde|bianco) .{0,15}codic"
+   ],
+   "correlate": [
+    "guardia-medica-116117",
+    "lista-medicine-genitore-anziano",
+    "fascicolo-sanitario-consenso-oscuramento"
+   ]
+  },
+  {
+   "slug": "guardia-medica-116117",
+   "categoria": "Organizzarsi",
+   "argomento": "salute",
+   "per": [
+    "bambino anziano",
+    [
+     "0-1",
+     "1-3",
+     "3-6",
+     "6-12",
+     "13-18"
+    ]
+   ],
+   "data": "2026-11-13",
+   "titolo": "La guardia medica e il 116117: quando chiamarla, gli orari e dove funziona il numero",
+   "titolo_seo": "Guardia medica e 116117: orari, cosa fa, dove è attivo",
+   "sommario": "Di notte, nel fine settimana e nei festivi, quando il medico di famiglia e il pediatra non ci sono, c'è la guardia medica, che oggi si chiama continuità assistenziale. Cosa fa, gli orari tipici e il numero 116117, che non è ancora attivo in tutte le Regioni.",
+   "tempo": "Il tempo di una telefonata",
+   "serve": "La tessera sanitaria della persona, l'elenco delle medicine che prende, carta e penna",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "La guardia medica, oggi servizio di continuità assistenziale, garantisce gratis l'assistenza medica di base per i problemi urgenti di notte e nei giorni festivi e prefestivi: copre le ore in cui il medico di famiglia non c'è. Così la descrive la Regione Piemonte.",
+    "Non è il servizio per le emergenze: se è un'emergenza, chiama il 112.",
+    "Il 116117 è il numero europeo per le cure mediche non urgenti. Alcune Regioni lo hanno già attivato, altre non ancora: dove non c'è, il numero della guardia medica è sul sito della tua ASL."
+   ],
+   "passi": [
+    [
+     "Quando chiamarla",
+     "Per un problema di salute che non può aspettare il medico di famiglia o il pediatra, ma che non è un'emergenza, nelle ore in cui loro non ci sono. Per le cose che possono aspettare, il riferimento resta il tuo medico."
+    ],
+    [
+     "Gli orari",
+     "Nei giorni feriali va dalle 20 alle 8 del mattino dopo, sia in Piemonte sia in Toscana. Il fine settimana cambia: in Piemonte comincia alle 10 del sabato o del giorno prefestivo, in Toscana alle 8 del sabato; in entrambe finisce alle 8 del lunedì o del giorno dopo la festa. Controlla gli orari della tua Regione."
+    ],
+    [
+     "Il numero: 116117 o quello dell'ASL",
+     "In Toscana il 116117 ha sostituito i vecchi numeri della guardia medica dal 16 settembre 2024 ed è attivo in tutta la regione dal 18 novembre 2024; è gratuito e risponde in più lingue. In Lombardia la continuità assistenziale risponde al 116117. In Trentino il 116117 è attivo 24 ore su 24 e serve anche per i trasporti sanitari programmati. Cerca oggi il numero giusto per la tua zona e salvalo in rubrica."
+    ],
+    [
+     "Cosa può fare",
+     "Il medico di guardia fa visite in ambulatorio o a domicilio. In Piemonte può prescrivere le medicine per le terapie urgenti, per un massimo di 3 giorni. Il giorno dopo, avvisa il medico di famiglia o il pediatra."
+    ],
+    [
+     "Prepara la telefonata",
+     "Tieni vicino la tessera sanitaria e l'elenco delle medicine. Di' l'età della persona, cosa è successo e da quando, le malattie che ha e le allergie. Scrivi quello che ti dicono."
+    ]
+   ],
+   "errori": [
+    "Chiamare la guardia medica per un'emergenza: in quel caso si chiama il 112.",
+    "Cercare il numero nel momento del bisogno: salvalo prima.",
+    "Dare per scontati gli orari del sabato: cambiano da Regione a Regione."
+   ],
+   "checklist": [
+    "Numero della guardia medica (o 116117) salvato in rubrica",
+    "Orari della tua Regione segnati",
+    "Elenco delle medicine a portata di mano",
+    "Tessera sanitaria vicino al telefono"
+   ],
+   "fonti": [
+    "NA-18",
+    "NA-19",
+    "NA-20",
+    "NA-15",
+    "NA-29"
+   ],
+   "avvertenza": "Informazioni generali tratte dalle pagine di Regione Piemonte, Regione Toscana, Regione Lombardia e della Provincia autonoma di Trento, aggiornate a novembre 2026. Orari e numeri cambiano da Regione a Regione: controlla sul sito della tua ASL. Nelle emergenze chiama il 112.",
+   "domanda": "Quando chiamare la guardia medica e che numero fare",
+   "chiavi_ricerca": "guardia medica continuità assistenziale 116117 116 117 numero weekend sabato domenica festivi orari chiamare telefono",
+   "frasi": [
+    "guardia medica",
+    "116117",
+    "116 117",
+    "continuita assistenziale",
+    "medico di notte"
+   ],
+   "correlate": [
+    "pronto-soccorso-triage-codici",
+    "farmacie-di-turno-e-servizi",
+    "pediatra-e-medico-di-base"
+   ]
+  },
+  {
+   "slug": "farmacie-di-turno-e-servizi",
+   "categoria": "Organizzarsi",
+   "argomento": "salute",
+   "per": [
+    "bambino anziano",
+    [
+     "0-1",
+     "1-3",
+     "3-6",
+     "6-12",
+     "13-18"
+    ]
+   ],
+   "data": "2026-11-13",
+   "titolo": "Farmacie di turno e farmacia dei servizi: come trovare quella aperta e cosa si può fare in farmacia",
+   "titolo_seo": "Farmacia di turno: come trovarla. E i servizi in farmacia",
+   "sommario": "Di notte e nei festivi ci sono le farmacie di turno: come trovarle e come funziona il servizio notturno. E cosa offrono oggi alcune farmacie oltre alle medicine: prenotazioni, ticket, vaccinazioni, screening, elettrocardiogramma. Cambia da Regione a Regione e da farmacia a farmacia.",
+   "tempo": "Cinque minuti per trovare la farmacia di turno",
+   "serve": "La ricetta, se serve una medicina; la tessera sanitaria",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Fuori dagli orari di apertura il servizio è garantito dalle farmacie di turno, di giorno, di notte e nei festivi. I turni li organizzano le Regioni e le aziende sanitarie, con regole proprie.",
+    "Una legge nazionale del 2009 permette alle farmacie di offrire anche altri servizi, come la prenotazione di visite ed esami, il pagamento del ticket e il ritiro dei referti. Non tutte le farmacie li offrono: aderiscono su base volontaria, e ogni Regione decide cosa attivare. Prima di andare, chiedi alla tua farmacia."
+   ],
+   "passi": [
+    [
+     "Trova la farmacia di turno",
+     "Di solito c'è un cartello con le farmacie di turno fuori da ogni farmacia: nella zona di Bologna è così, e i turni sono anche nella banca dati sul sito dell'AUSL; in Friuli Venezia Giulia il cartello è un obbligo di legge e deve essere leggibile anche di notte. Cerca «farmacie di turno» sul sito della tua ASL o della tua Regione e salva la pagina."
+    ],
+    [
+     "Di notte, come funziona",
+     "Nella zona di Bologna, per esempio, la farmacia di turno può essere «a battenti chiusi», con il farmacista all'interno, oppure «per chiamata», con il farmacista reperibile al telefono, soprattutto nelle zone rurali. In Friuli Venezia Giulia la farmacia di turno tiene accesa di sera e di notte un'insegna luminosa, preferibilmente una croce verde."
+    ],
+    [
+     "Il supplemento di notte",
+     "Di notte il farmacista può chiedere un supplemento, il diritto addizionale previsto dalla tariffa nazionale: a Bologna dopo le 21.30 o per chiamata. Sempre a Bologna, se la ricetta è della guardia medica o il medico ha scritto che è urgente, il supplemento lo paga l'AUSL. Chiedi come funziona nella tua zona."
+    ],
+    [
+     "Prenotare e pagare in farmacia",
+     "In alcune farmacie si prenotano visite ed esami del Servizio sanitario, si paga il ticket e si ritirano i referti. In Toscana si prenota, si disdice e si modifica una prenotazione nelle farmacie con il logo PuntoSI: prenotare e disdire è gratis, modificare costa 1,5 euro; il ticket si paga, sempre con 1,5 euro in più, solo nelle farmacie che lo indicano con una locandina. Serve la ricetta, anche il promemoria di quella elettronica."
+    ],
+    [
+     "Vaccinazioni e screening",
+     "Alcune farmacie vaccinano. In Veneto, per esempio, quelle che aderiscono fanno le vaccinazioni antinfluenzale, anti-Covid, contro difterite, tetano e pertosse e contro lo pneumococco; e per lo screening gratuito del tumore del colon-retto, tra i 50 e i 74 anni, si ritira e si riconsegna il kit in farmacia. L'elenco delle farmacie che vaccinano lo pubblica l'azienda sanitaria."
+    ],
+    [
+     "Elettrocardiogramma e holter",
+     "In alcune Regioni le farmacie fanno esami di telemedicina. In Lombardia, nelle farmacie che aderiscono, l'elettrocardiogramma e l'holter della pressione o del cuore sono a carico del Servizio sanitario per chi ha una malattia cardiovascolare e la ricetta bianca del medico di famiglia o del pediatra, entro un numero massimo di prestazioni fissato dalla Regione; nelle farmacie che non aderiscono si possono fare a pagamento."
+    ],
+    [
+     "Chiedi prima di andare",
+     "Quali servizi offre, quanto costano, se serve un appuntamento: chiedilo alla tua farmacia. Servizi e prezzi cambiano da farmacia a farmacia."
+    ]
+   ],
+   "errori": [
+    "Andare di notte alla farmacia più vicina senza controllare il turno.",
+    "Dare per scontato che un servizio sia gratis: chiedi prima.",
+    "Pensare che ogni farmacia offra gli stessi servizi."
+   ],
+   "checklist": [
+    "Pagina delle farmacie di turno della tua ASL salvata",
+    "Servizi della tua farmacia di fiducia chiesti",
+    "Ricetta e tessera sanitaria a portata di mano",
+    "Costi chiesti prima"
+   ],
+   "fonti": [
+    "NA-21",
+    "NA-25",
+    "NA-26",
+    "NA-24",
+    "NA-22",
+    "NA-23"
+   ],
+   "avvertenza": "Informazioni generali tratte dalla legge nazionale sulla farmacia dei servizi, dalla pagina dell'AUSL di Bologna, dalle pagine di Regione Toscana, Regione del Veneto e Regione Lombardia e dalla legge del Friuli Venezia Giulia sui turni, aggiornate a novembre 2026. Turni, servizi e costi cambiano da Regione a Regione e da farmacia a farmacia. Sulle medicine il riferimento sono il medico e il farmacista.",
+   "domanda": "Come trovare la farmacia di turno e cosa si può fare in farmacia",
+   "chiavi_ricerca": "farmacia farmacie di turno aperta festivo domenica turni farmacista servizi prenotare cup ticket referti vaccino vaccinazione antinfluenzale screening colon elettrocardiogramma ecg holter telemedicina",
+   "frasi": [
+    "farmaci[ae] (di turno|aperta|aperte|notturn)",
+    "farmacia dei servizi",
+    "in farmacia",
+    "turno .{0,10}farmaci"
+   ],
+   "correlate": [
+    "prenotare-con-il-cup",
+    "guardia-medica-116117",
+    "spostare-disdire-pagare-visita"
+   ]
+  },
+  {
+   "slug": "fascicolo-sanitario-consenso-oscuramento",
+   "categoria": "Organizzarsi",
+   "argomento": "salute",
+   "per": [
+    "bambino anziano",
+    [
+     "0-1",
+     "1-3",
+     "3-6",
+     "6-12",
+     "13-18"
+    ]
+   ],
+   "data": "2026-11-13",
+   "titolo": "Consenso e oscuramento: chi può vedere il tuo fascicolo e come nascondere un documento",
+   "titolo_seo": "FSE: consenso alla consultazione e oscuramento dei documenti",
+   "sommario": "Il Fascicolo sanitario elettronico si riempie da solo, ma i medici che ti curano lo possono consultare solo se dai il consenso. E ogni documento si può oscurare. Cosa vuol dire, chi vede cosa, come si controllano gli accessi e come si cambia idea.",
+   "tempo": "Dieci minuti, la prima volta",
+   "serve": "Le credenziali che la tua Regione accetta: SPID, CIE o tessera sanitaria attivata",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Dal 2020 il Fascicolo sanitario elettronico si crea e si aggiorna da solo, senza bisogno del tuo consenso: ci finiscono i documenti delle cure. Il consenso serve ancora per un'altra cosa: permettere ai medici e agli altri professionisti che ti curano di consultarlo. Le cure sono garantite comunque, anche se il consenso non c'è o lo revochi.",
+    "Dove trovare referti, vaccinazioni e documenti lo spiega la guida sui documenti sanitari. Qui ci concentriamo sulle scelte che puoi fare tu."
+   ],
+   "passi": [
+    [
+     "Il consenso alla consultazione",
+     "Si dà una volta sola. In Toscana, per esempio, si dà online nel fascicolo, con l'app Toscana Salute oppure agli sportelli delle aziende sanitarie. Si può revocare in ogni momento: con la revoca i professionisti non possono più consultare il fascicolo."
+    ],
+    [
+     "Chi può vedere il fascicolo",
+     "Tu, sempre, anche i documenti fatti in altre Regioni. Con il tuo consenso, i professionisti sanitari, pubblici e privati, che ti hanno in cura, secondo livelli di accesso fissati da un decreto del 7 settembre 2023: il medico di famiglia o il pediatra per tutto il tempo in cui ti segue, il sostituto per il tempo della sostituzione. Non possono accedere periti, assicurazioni, datori di lavoro."
+    ],
+    [
+     "Oscurare un documento",
+     "Puoi chiedere di oscurare dati e documenti, prima o dopo che entrino nel fascicolo. I documenti oscurati li vedete solo tu e chi li ha prodotti. In Toscana l'oscuramento si fa online nel fascicolo, con l'app Toscana Salute o agli sportelli delle aziende sanitarie."
+    ],
+    [
+     "Chi lo consulta non lo sa",
+     "Il fascicolo è costruito in modo che chi lo consulta non sappia che hai oscurato qualcosa, e nemmeno che esistono dati oscurati."
+    ],
+    [
+     "I dati che nascono già oscurati",
+     "Alcuni dati sono protetti di più: quelli sull'HIV, sull'interruzione volontaria di gravidanza, sulla violenza sessuale, sull'uso di droghe o alcol, sul parto in anonimato e sui servizi dei consultori. Entrano nel fascicolo già oscurati e li vedi solo tu, finché non decidi di renderli visibili."
+    ],
+    [
+     "Controlla chi l'ha aperto",
+     "Ogni operazione sul fascicolo resta registrata, e tu puoi vedere l'elenco degli accessi. In Toscana chi entra deve anche indicare il motivo della consultazione."
+    ],
+    [
+     "Per un genitore anziano: la delega",
+     "In Toscana una persona può delegare fino a 5 persone di fiducia, per il tempo che decide lei: i delegati vedono solo i dati non oscurati. Ogni Regione ha le sue regole: c'è anche la guida sulle deleghe per le pratiche online."
+    ],
+    [
+     "Puoi cambiare idea",
+     "L'oscuramento si toglie quando vuoi, e il consenso si dà o si revoca quando vuoi. Se un giorno vuoi che il medico veda un documento oscurato, togli l'oscuramento oppure portaglielo tu."
+    ]
+   ],
+   "errori": [
+    "Pensare che senza consenso il fascicolo sia vuoto: i documenti ci sono, ma i medici non li possono consultare.",
+    "Oscurare un documento e poi dimenticarsene, quando servirebbe a chi ti cura.",
+    "Non guardare mai l'elenco degli accessi."
+   ],
+   "checklist": [
+    "Consenso alla consultazione: dato o revocato, come preferisci",
+    "Documenti da oscurare controllati",
+    "Elenco degli accessi guardato",
+    "Deleghe controllate, anche quelle date ai familiari"
+   ],
+   "fonti": [
+    "NA-27",
+    "NA-28"
+   ],
+   "avvertenza": "Informazioni generali tratte dalle domande frequenti del Garante per la protezione dei dati personali e dalla pagina di Regione Toscana, aggiornate a novembre 2026. Ogni Regione ha il suo fascicolo, con menu e nomi diversi: per i passaggi pratici guarda il portale della tua Regione o chiedi allo sportello dell'ASL.",
+   "domanda": "Chi può vedere il mio fascicolo e come si oscura un documento",
+   "chiavi_ricerca": "fascicolo fse consenso consultazione oscurare oscuramento nascondere privacy chi vede accessi revoca revocare documento delega",
+   "frasi": [
+    "oscur",
+    "nascond\\w* .{0,30}(fascicol|refert|fse)",
+    "consenso .{0,30}(fascicol|fse)",
+    "(fascicol|fse) .{0,30}consenso",
+    "chi (puo )?(vede|vedere|legge|leggere) .{0,20}(fascicol|fse)"
+   ],
+   "correlate": [
+    "documenti-sanitari-dove-trovarli",
+    "pratiche-online-per-un-genitore",
+    "pediatra-e-medico-di-base"
+   ]
+  }
+ ],
+ "gruppi": [
+  [
+   "anziani",
+   "Genitori anziani"
+  ]
+ ],
+ "domande": [
+  {
+   "slug": "chi-paga-la-retta-della-rsa",
+   "gruppo": "anziani",
+   "domanda": "Chi paga la retta della RSA?",
+   "risposta": "Nei posti con il contributo pubblico la retta si divide in due: il Servizio sanitario paga la quota sanitaria, la persona o la famiglia la quota sociale; se il reddito non basta, può aiutare il Comune.",
+   "righe": [
+    {
+     "t": "Per la legge nazionale sui livelli essenziali di assistenza, l'assistenza in residenza di lungo periodo è a carico del Servizio sanitario per il 50% della tariffa giornaliera. I trattamenti di cura e recupero più intensivi, che di norma durano non più di 60 giorni, sono invece tutti a carico del Servizio sanitario.",
+     "f": [
+      0
+     ],
+     "p": "Art. 30, c. 2: trattamenti estensivi (c. 1 lett. a, di norma non oltre 60 giorni) interamente a carico del SSN; lungoassistenza (lett. b) a carico del SSN per il 50% della tariffa giornaliera."
+    },
+    {
+     "t": "In Piemonte la quota sanitaria, il 50%, la paga l'ASL di residenza, anche se la RSA è in un'altra ASL. L'altro 50% lo paga l'anziano; se il reddito non basta, il Comune integra o copre tutto.",
+     "f": [
+      1
+     ],
+     "p": "«50% (quota sanitaria) a carico dell'ASL di residenza» anche se la RSA è in altra ASL; «50% (quota sociale) a carico dell'anziano»; se il reddito è insufficiente interviene il Comune integrando o coprendo interamente."
+    },
+    {
+     "t": "In Toscana la quota sociale la paga la persona o la famiglia; in base all'ISEE si può avere un contributo del Comune, entro un massimo fissato dalla Regione.",
+     "f": [
+      2
+     ],
+     "p": "Quota sociale pagata dall'assistito o dalla famiglia; sulla base dell'ISEE partecipazione economica del Comune di residenza «entro un massimale stabilito dalla normativa regionale»."
+    },
+    {
+     "t": "In Lombardia, nelle RSA senza contratto con l'ATS, la retta è tutta a carico della persona o del Comune di residenza.",
+     "f": [
+      3
+     ],
+     "p": "RSA senza contratto ATS: «i costi sono totalmente a carico delle persone ospiti o dei Comuni di residenza»."
+    }
+   ],
+   "guide": [
+    "rsa-come-si-entra"
+   ],
+   "schede": [
+    "isee"
+   ],
+   "chiavi": "retta rsa chi paga quota sanitaria sociale alberghiera comune costo casa di riposo integrazione",
+   "fonti": [
+    {
+     "ente": "Normattiva",
+     "pagina": "DPCM 12 gennaio 2017 (livelli essenziali di assistenza), articolo 30",
+     "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2017-03-18&atto.codiceRedazionale=17A02015&atto.articolo.numero=30&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0",
+     "data": "2017-01-12"
+    },
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Residenze sanitarie assistenziali per anziani non autosufficienti (RSA)",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/sostegno-alle-cure/residenze-sanitarie-assistenziali-per-anziani-non-autosufficienti-rsa",
+     "data": "2026-11-12"
+    },
+    {
+     "ente": "Regione Toscana",
+     "pagina": "RSA della Toscana: guida al servizio",
+     "url": "https://rsa.regione.toscana.it/guida",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Residenze Sanitarie Assistenziali (RSA)",
+     "url": "https://www.regione.lombardia.it/sanita/strutture-sanitarie-e-sociosanitarie/residenze-sanitarie-assistenziali-rsa",
+     "data": "2026-07-22"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "quanto-si-aspetta-per-entrare-in-rsa",
+   "gruppo": "anziani",
+   "domanda": "Quanto si aspetta per entrare in RSA?",
+   "risposta": "Non c'è un tempo uguale per tutti: dipende dalla Regione, dalla priorità data dalla valutazione e dai posti liberi nella zona.",
+   "righe": [
+    {
+     "t": "In Piemonte l'esito della valutazione arriva a casa con un punteggio: da 24 in su il caso è urgente, da 19 a 23 non urgente o differibile. Le liste d'attesa seguono punteggio e priorità, e la Regione pubblica ogni mese i posti letto.",
+     "f": [
+      0
+     ],
+     "p": "Esito con punteggio sanitario e sociale: «urgente, con punteggio pari o superiore a 24»; «non urgente o differibile con punteggio da 19 a 23». Aggiornamento mensile dei posti letto (allegato PDF)."
+    },
+    {
+     "t": "In Toscana, se mancano posti o risorse, la persona entra in una lista di priorità. Quando arriva il titolo d'acquisto ci sono 10 giorni per scegliere la struttura.",
+     "f": [
+      1
+     ],
+     "p": "«In caso di carenza di posti letto e/o risorse economiche, l'assistito viene inserito in una lista di priorità»; alla ricezione del voucher 10 giorni per scegliere la struttura."
+    },
+    {
+     "t": "In Lombardia posti disponibili, liste d'attesa e rette si trovano sui siti delle ATS e delle singole RSA.",
+     "f": [
+      2
+     ],
+     "p": "Informazioni su posti disponibili, liste d'attesa e rette aggiornate da ATS e residenze."
+    },
+    {
+     "t": "Per sapere a che punto è la domanda, chiedi all'ASL o ai servizi sociali che hanno fatto la valutazione.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "rsa-come-si-entra"
+   ],
+   "schede": [],
+   "chiavi": "quanto si aspetta attesa lista d attesa tempi rsa casa di riposo posto letto graduatoria",
+   "fonti": [
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Residenze sanitarie assistenziali per anziani non autosufficienti (RSA)",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/sostegno-alle-cure/residenze-sanitarie-assistenziali-per-anziani-non-autosufficienti-rsa",
+     "data": "2026-11-12"
+    },
+    {
+     "ente": "Regione Toscana",
+     "pagina": "RSA della Toscana: guida al servizio",
+     "url": "https://rsa.regione.toscana.it/guida",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Residenze Sanitarie Assistenziali (RSA)",
+     "url": "https://www.regione.lombardia.it/sanita/strutture-sanitarie-e-sociosanitarie/residenze-sanitarie-assistenziali-rsa",
+     "data": "2026-07-22"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "per-entrare-in-rsa-serve-la-valutazione",
+   "gruppo": "anziani",
+   "domanda": "Per entrare in RSA serve la valutazione dell'ASL?",
+   "risposta": "Per un posto pagato in parte dal Servizio sanitario la legge nazionale prevede una valutazione sanitaria e sociale insieme; chi la fa e come si chiede lo decide la Regione.",
+   "righe": [
+    {
+     "t": "La legge sui livelli essenziali di assistenza dice che il Servizio sanitario garantisce l'assistenza in residenza alle persone non autosufficienti dopo una valutazione multidimensionale.",
+     "f": [
+      0
+     ],
+     "p": "Art. 30, c. 1: «previa valutazione multidimensionale e presa in carico»."
+    },
+    {
+     "t": "In Toscana si segnala il bisogno al Punto unico di accesso della zona; la valutazione la fa l'Unità di valutazione multidimensionale (UVM), che scrive il progetto di assistenza. In Piemonte la fa l'Unità di valutazione geriatrica (UVG).",
+     "f": [
+      1,
+      2
+     ],
+     "p": "Toscana: segnalazione al PUA, valutazione UVM, progetto di assistenza individualizzato. Piemonte: valutazione multidimensionale dell'Unità di Valutazione Geriatrica (UVG)."
+    },
+    {
+     "t": "In Lombardia la domanda si presenta direttamente alla RSA scelta, di persona o tramite un familiare; dopo l'ingresso i medici della struttura fanno una valutazione e un piano di assistenza.",
+     "f": [
+      3
+     ],
+     "p": "«può rivolgersi in prima persona o tramite un familiare direttamente alla RSA»; dopo l'ingresso valutazione e Piano di Assistenza Individuale."
+    },
+    {
+     "t": "Si può anche entrare privatamente, pagando tutta la retta: in Toscana la tariffa privata la fissa la struttura.",
+     "f": [
+      1
+     ],
+     "p": "Accesso privato a completo carico della persona o della famiglia; tariffa fissata dalla struttura."
+    }
+   ],
+   "guide": [
+    "rsa-come-si-entra"
+   ],
+   "schede": [],
+   "chiavi": "valutazione asl uvm uvg pua rsa casa di riposo entrare domanda serve",
+   "fonti": [
+    {
+     "ente": "Normattiva",
+     "pagina": "DPCM 12 gennaio 2017 (livelli essenziali di assistenza), articolo 30",
+     "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2017-03-18&atto.codiceRedazionale=17A02015&atto.articolo.numero=30&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0",
+     "data": "2017-01-12"
+    },
+    {
+     "ente": "Regione Toscana",
+     "pagina": "RSA della Toscana: guida al servizio",
+     "url": "https://rsa.regione.toscana.it/guida",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Residenze sanitarie assistenziali per anziani non autosufficienti (RSA)",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/sostegno-alle-cure/residenze-sanitarie-assistenziali-per-anziani-non-autosufficienti-rsa",
+     "data": "2026-11-12"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Residenze Sanitarie Assistenziali (RSA)",
+     "url": "https://www.regione.lombardia.it/sanita/strutture-sanitarie-e-sociosanitarie/residenze-sanitarie-assistenziali-rsa",
+     "data": "2026-07-22"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "si-puo-scegliere-la-rsa",
+   "gruppo": "anziani",
+   "domanda": "Si può scegliere in quale RSA andare?",
+   "risposta": "Sì: in Piemonte e in Toscana, per esempio, la persona e la famiglia scelgono tra le RSA autorizzate e accreditate, purché ci sia un posto libero.",
+   "righe": [
+    {
+     "t": "In Piemonte la scelta è tra le RSA autorizzate e accreditate dal Servizio sanitario. La quota sanitaria la paga l'ASL di residenza anche se la RSA è in un'altra ASL.",
+     "f": [
+      0
+     ],
+     "p": "«L'anziano non autosufficiente e la sua famiglia possono scegliere tra le RSA autorizzate e accreditate presso il Sistema Sanitario»; quota sanitaria a carico dell'ASL di residenza anche se la RSA è in altra ASL."
+    },
+    {
+     "t": "In Toscana, quando arriva il titolo d'acquisto, ci sono 10 giorni per scegliere: si contatta la RSA per verificare che ci sia un posto e si avvisa la zona socio-sanitaria di residenza.",
+     "f": [
+      1
+     ],
+     "p": "Dopo il voucher l'assistito e la famiglia scelgono la struttura, verificano la disponibilità contattandola e informano la zona socio-sanitaria; 10 giorni per scegliere."
+    },
+    {
+     "t": "Il portale regionale delle RSA toscane mostra posti liberi, costi e servizi di ogni struttura.",
+     "f": [
+      1
+     ],
+     "p": "Il portale permette di cercare le strutture, vedere i posti liberi, consultare costi e servizi."
+    },
+    {
+     "t": "In Lombardia la domanda si presenta direttamente alla RSA scelta, di persona o tramite un familiare; posti disponibili e liste d'attesa sono sui siti delle ATS e delle RSA.",
+     "f": [
+      2
+     ],
+     "p": "Domanda direttamente alla RSA scelta, in prima persona o tramite un familiare; informazioni su posti, liste d'attesa e rette aggiornate da ATS e residenze."
+    },
+    {
+     "t": "Nelle altre Regioni chiedi all'ASL come funziona la scelta.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "rsa-come-si-entra"
+   ],
+   "schede": [],
+   "chiavi": "scegliere scelta quale rsa struttura casa di riposo libera scelta vicino",
+   "fonti": [
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Residenze sanitarie assistenziali per anziani non autosufficienti (RSA)",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/sostegno-alle-cure/residenze-sanitarie-assistenziali-per-anziani-non-autosufficienti-rsa",
+     "data": "2026-11-12"
+    },
+    {
+     "ente": "Regione Toscana",
+     "pagina": "RSA della Toscana: guida al servizio",
+     "url": "https://rsa.regione.toscana.it/guida",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Residenze Sanitarie Assistenziali (RSA)",
+     "url": "https://www.regione.lombardia.it/sanita/strutture-sanitarie-e-sociosanitarie/residenze-sanitarie-assistenziali-rsa",
+     "data": "2026-07-22"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "prestazione-universale-spetta-a-tutti-gli-over-80",
+   "gruppo": "anziani",
+   "domanda": "La prestazione universale da 850 euro spetta a tutti gli over 80?",
+   "risposta": "No. Oltre agli 80 anni servono l'indennità di accompagnamento, un bisogno di assistenza gravissimo valutato dall'INPS e un ISEE sociosanitario non superiore a 6.000 euro.",
+   "righe": [
+    {
+     "t": "È una misura sperimentale dell'INPS, dal 1° gennaio 2025 al 31 dicembre 2026, per chi resta a casa: non spetta a chi è ricoverato in RSA o in strutture simili.",
+     "f": [
+      0
+     ],
+     "p": "Misura sperimentale dal 1° gennaio 2025 al 31 dicembre 2026; requisito: non essere ricoverati in RSA o strutture simili."
+    },
+    {
+     "t": "Ha una quota fissa, pari all'indennità di accompagnamento, e un assegno di assistenza di circa 850 euro al mese, nei limiti delle risorse disponibili.",
+     "f": [
+      0
+     ],
+     "p": "Quota fissa corrispondente all'indennità di accompagnamento; quota integrativa (assegno di assistenza) di circa 850 euro mensili nei limiti delle risorse disponibili."
+    },
+    {
+     "t": "L'assegno serve a pagare un lavoratore domestico qualificato con un contratto regolare, oppure servizi di cura e assistenza non residenziali di imprese o professionisti qualificati.",
+     "f": [
+      0
+     ],
+     "p": "Uso alternativo: retribuire un lavoratore domestico qualificato con regolare contratto, o acquistare servizi di cura e assistenza non residenziale."
+    },
+    {
+     "t": "La domanda si fa online o tramite un patronato. Se la misura continuerà nel 2027 lo deciderà la legge: ricontrolleremo a gennaio 2027.",
+     "f": [
+      0
+     ],
+     "p": "Domanda online tramite il servizio dedicato o tramite patronato. La pagina indica il 31 dicembre 2026 come termine e non parla di proroghe (controllato il 13/11/2026)."
+    }
+   ],
+   "guide": [
+    "prestazione-universale-over-80",
+    "indennita-di-accompagnamento"
+   ],
+   "schede": [
+    "isee"
+   ],
+   "chiavi": "prestazione universale 850 euro over 80 ottantenni bonus anziani spetta tutti requisiti inps assegno di assistenza",
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Prestazione universale per persone anziane non autosufficienti (scheda del servizio)",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.decreto-anziani-prestazione-universale.html",
+     "data": "2026-06-08"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "prestazione-universale-e-rsa",
+   "gruppo": "anziani",
+   "domanda": "Se un genitore entra in RSA, la prestazione universale continua?",
+   "risposta": "No. Con il ricovero in RSA la prestazione universale decade: è pensata per chi resta a casa.",
+   "righe": [
+    {
+     "t": "Tra i requisiti per chiederla c'è proprio il non essere ricoverati in RSA o in strutture simili.",
+     "f": [
+      0
+     ],
+     "p": "Requisito: non essere ricoverati in RSA o strutture simili."
+    },
+    {
+     "t": "Decade anche se finisce l'indennità di accompagnamento, se l'ISEE sociosanitario supera i 6.000 euro o se l'assegno di assistenza non viene usato come previsto, cioè per un lavoratore domestico regolare o per servizi di cura non residenziali.",
+     "f": [
+      0
+     ],
+     "p": "Decadenza: cessazione dell'indennità di accompagnamento, ISEE oltre 6.000 euro, quota integrativa non usata come previsto, ricovero in RSA."
+    },
+    {
+     "t": "La prestazione ha una quota fissa, pari all'indennità di accompagnamento, e un assegno di assistenza di circa 850 euro al mese, nei limiti delle risorse disponibili.",
+     "f": [
+      0
+     ],
+     "p": "Quota fissa corrispondente all'indennità di accompagnamento; quota integrativa di circa 850 euro mensili."
+    },
+    {
+     "t": "È una misura sperimentale fino al 31 dicembre 2026. Per la retta della RSA valgono altre regole, con una quota sanitaria e una quota sociale: le trovi nella guida sulla RSA.",
+     "f": [
+      0
+     ],
+     "p": "Sperimentazione dal 1° gennaio 2025 al 31 dicembre 2026."
+    }
+   ],
+   "guide": [
+    "prestazione-universale-over-80",
+    "rsa-come-si-entra"
+   ],
+   "schede": [],
+   "chiavi": "prestazione universale rsa ricovero casa di riposo decade perde continua 850 euro",
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Prestazione universale per persone anziane non autosufficienti (scheda del servizio)",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.decreto-anziani-prestazione-universale.html",
+     "data": "2026-06-08"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "fare-le-dat-costa",
+   "gruppo": "anziani",
+   "domanda": "Fare le DAT costa qualcosa?",
+   "risposta": "Le disposizioni anticipate di trattamento sono esenti dall'obbligo di registrazione, dal bollo e da ogni altro tributo: consegnarle in Comune non costa niente.",
+   "righe": [
+    {
+     "t": "Lo dice la legge 219 del 2017, che vale per tutte le forme ammesse: l'atto dal notaio e la scrittura privata consegnata di persona all'ufficio di stato civile del Comune di residenza.",
+     "f": [
+      0
+     ],
+     "p": "Art. 4, c. 6: atto pubblico, scrittura privata autenticata o scrittura privata consegnata personalmente all'ufficio dello stato civile del comune di residenza; esenti dall'obbligo di registrazione, dall'imposta di bollo e da qualsiasi altro tributo, imposta, diritto e tassa."
+    },
+    {
+     "t": "Il Comune di Verona, per esempio, le riceve solo su appuntamento e solo dai residenti, e scrive che sono esenti dal bollo e da qualsiasi altro tributo o diritto. Il Comune non aiuta a scriverle: le registra, le conserva e rilascia una ricevuta.",
+     "f": [
+      1
+     ],
+     "p": "Solo su appuntamento, residenti; DAT «esenti dall'imposta di bollo e da qualsiasi altro tributo o diritto»; il Comune non partecipa alla redazione, registra, conserva e rilascia ricevuta."
+    },
+    {
+     "t": "Le DAT si possono rinnovare, modificare o revocare in ogni momento, nelle stesse forme in cui sono state fatte.",
+     "f": [
+      0
+     ],
+     "p": "Art. 4, c. 6: rinnovabili, modificabili e revocabili in ogni momento, con le stesse forme."
+    },
+    {
+     "t": "Se scegli il notaio, chiedi prima quanto costa la sua prestazione.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "disposizioni-anticipate-di-trattamento"
+   ],
+   "schede": [],
+   "chiavi": "dat testamento biologico costo costa gratis bollo notaio comune disposizioni anticipate",
+   "fonti": [
+    {
+     "ente": "Normattiva",
+     "pagina": "Legge 22 dicembre 2017, n. 219, articolo 4 (disposizioni anticipate di trattamento)",
+     "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2018-01-16&atto.codiceRedazionale=18G00006&atto.articolo.numero=4&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0",
+     "data": "2017-12-22"
+    },
+    {
+     "ente": "Comune di Verona",
+     "pagina": "Disposizioni anticipate di trattamento (DAT)",
+     "url": "https://www.comune.verona.it/Servizi/Disposizioni-Anticipate-di-Trattamento-DAT",
+     "data": "2026-07-30"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "chi-puo-leggere-le-dat",
+   "gruppo": "anziani",
+   "domanda": "Chi può leggere le DAT nella banca dati nazionale?",
+   "risposta": "Tre persone: chi le ha scritte, il fiduciario finché ha l'incarico, e il medico che ha in cura la persona quando lei non è più in grado di decidere.",
+   "righe": [
+    {
+     "t": "Il medico, quando accede, deve dichiarare chi è, la sua iscrizione all'albo, che la persona non è in grado di decidere e che la sta curando.",
+     "f": [
+      0
+     ],
+     "p": "Art. 4: il medico dichiara identità, iscrizione all'albo, identità del disponente attestandone l'incapacità, e che lo ha in cura."
+    },
+    {
+     "t": "Se il fiduciario è stato revocato, vede solo l'atto di revoca.",
+     "f": [
+      0
+     ],
+     "p": "Se l'incarico è stato revocato, al fiduciario sono mostrati solo gli estremi dell'atto di revoca."
+    },
+    {
+     "t": "Nella banca dati va una copia delle DAT solo se chi le ha scritte è d'accordo; altrimenti solo l'indicazione di dove sono conservate.",
+     "f": [
+      1
+     ],
+     "p": "Art. 3, c. 2: attestazione del consenso del disponente alla raccolta di copia della DAT, oppure indicazione del luogo in cui è conservata."
+    },
+    {
+     "t": "Le trasmettono alla banca dati il Comune di residenza, il notaio, i consolati e le Regioni che le raccolgono.",
+     "f": [
+      1
+     ],
+     "p": "Art. 3, c. 1: ufficiali di stato civile dei comuni di residenza, notai, uffici consolari, responsabili regionali che hanno regolamentato la raccolta."
+    },
+    {
+     "t": "La banca dati è del Ministero della Salute e si consulta online con SPID, CIE o CNS.",
+     "f": [
+      2
+     ],
+     "p": "Consultazione con autenticazione digitale: SPID, CNS, CIE."
+    }
+   ],
+   "guide": [
+    "disposizioni-anticipate-di-trattamento"
+   ],
+   "schede": [],
+   "chiavi": "dat banca dati nazionale chi legge vede consultare medico fiduciario testamento biologico",
+   "fonti": [
+    {
+     "ente": "Normattiva",
+     "pagina": "Decreto del Ministero della Salute 10 dicembre 2019, n. 168, articolo 4 (accesso ai dati)",
+     "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2020-01-17&atto.codiceRedazionale=20G00005&atto.articolo.numero=4&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0",
+     "data": "2019-12-10"
+    },
+    {
+     "ente": "Normattiva",
+     "pagina": "Decreto del Ministero della Salute 10 dicembre 2019, n. 168, articolo 3",
+     "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2020-01-17&atto.codiceRedazionale=20G00005&atto.articolo.numero=3&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0",
+     "data": "2019-12-10"
+    },
+    {
+     "ente": "Ministero della Salute",
+     "pagina": "Disposizioni anticipate di trattamento: accesso alla banca dati",
+     "url": "https://dat.salute.gov.it/portale-dat/",
+     "data": "2026-11-13"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "chi-attiva-le-dimissioni-protette",
+   "gruppo": "anziani",
+   "domanda": "Chi attiva le dimissioni protette dall'ospedale?",
+   "risposta": "Il reparto: è il personale che segue il ricovero, in particolare il medico, a valutare se la persona ha bisogno di essere accompagnata nel ritorno a casa o in una struttura.",
+   "righe": [
+    {
+     "t": "Nell'ATS della Brianza ogni ospedale ha dei referenti per questo: medici, infermieri, assistenti sociali. La stessa valutazione la fanno anche i servizi del territorio.",
+     "f": [
+      0
+     ],
+     "p": "Il personale di reparto, in particolare il medico referente, valuta; in ogni ospedale referenti (medici, infermieri, assistenti sociali); anche i servizi territoriali effettuano la valutazione."
+    },
+    {
+     "t": "Nell'ospedale di Caserta il protocollo raccomanda di programmare l'uscita almeno tre giorni prima e di dirlo al paziente e ai familiari.",
+     "f": [
+      1
+     ],
+     "p": "Di norma predisposta il giorno prima; si auspica una programmazione almeno nei tre giorni precedenti, comunicata a paziente e familiari."
+    },
+    {
+     "t": "In Brianza si possono attivare, per esempio, cure a domicilio di infermieri o fisioterapisti, cure palliative, cure intermedie, il ricovero in RSA o l'assistenza domiciliare del Comune. Sono gratuite, tranne la parte alberghiera della RSA e l'eventuale contributo in base all'ISEE per l'assistenza del Comune.",
+     "f": [
+      0
+     ],
+     "p": "ADI, cure palliative, cure riabilitative o intermedie, RSA/RSD, SAD; servizi gratuiti tranne la retta alberghiera RSA/RSD e l'eventuale compartecipazione ISEE per il SAD."
+    },
+    {
+     "t": "Se pensi che il tuo genitore ne abbia bisogno, chiedilo tu al medico di reparto, nei primi giorni del ricovero.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "dimissioni-protette"
+   ],
+   "schede": [],
+   "chiavi": "dimissioni protette dimissione chi attiva ospedale reparto dimesso tornare a casa",
+   "fonti": [
+    {
+     "ente": "ATS della Brianza",
+     "pagina": "Dimissioni protette",
+     "url": "https://www.ats-brianza.it/dimissioni-protette",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Azienda ospedaliera Sant'Anna e San Sebastiano di Caserta",
+     "pagina": "Protocollo per la dimissione assistita",
+     "url": "https://ospedale.caserta.it/delibere/2025/PROTOCOLLO_DIMISSIONE_ASSISTITA.pdf",
+     "data": "2024"
+    }
+   ],
+   "c": "anziano",
+   "fa": []
+  },
+  {
+   "slug": "cosa-vuol-dire-codice-bianco",
+   "gruppo": "salute",
+   "domanda": "Cosa vuol dire codice bianco al pronto soccorso?",
+   "risposta": "È il codice 5, «non urgenza»: un problema non urgente o di minima rilevanza clinica. Secondo le linee nazionali sul triage il tempo massimo per entrare nell'area delle cure è di 240 minuti.",
+   "righe": [
+    {
+     "t": "I codici vanno da 1, rosso, a 5, bianco. Il tempo è quello massimo per entrare nell'area delle cure, non per uscire.",
+     "f": [
+      0
+     ],
+     "p": "Codice 5 bianco «Non urgenza», «Accesso entro 240 minuti» (tempo massimo per l'accesso al trattamento)."
+    },
+    {
+     "t": "Regione Lombardia scrive che un codice bianco potrebbe essere seguito dal medico di famiglia o da uno specialista ambulatoriale.",
+     "f": [
+      1
+     ],
+     "p": "Codice 5 bianco: paziente stabile, minima rilevanza clinica; potrebbe essere gestito dal medico di base o dallo specialista ambulatoriale."
+    },
+    {
+     "t": "Se l'accesso si chiude con un codice bianco, in Lombardia e in Piemonte si paga un ticket di 25 euro, salvo esenzioni; in Piemonte sono esenti i minori di 14 anni.",
+     "f": [
+      1,
+      2
+     ],
+     "p": "Lombardia: codice bianco alla dimissione, quota fissa di 25,00 euro (DGR 3379/2012), con le esenzioni previste. Piemonte: per i codici bianchi alle dimissioni ticket di 25 euro, esenti i minori di 14 anni."
+    },
+    {
+     "t": "In Toscana il ticket si paga per gli accessi non urgenti di bassa complessità; sono esenti i minori di 14 anni e chi ha già un'esenzione dal ticket.",
+     "f": [
+      3
+     ],
+     "p": "Ticket dovuto per accessi non urgenti di bassa complessità; esenti i minori di 14 anni e chi ha già l'esenzione dal ticket sanitario."
+    },
+    {
+     "t": "Mentre aspetti, se la persona sta peggio, puoi chiedere all'infermiere una nuova valutazione.",
+     "f": [
+      0
+     ],
+     "p": "La rivalutazione avviene anche su richiesta del paziente o dei familiari; può modificare il codice."
+    }
+   ],
+   "guide": [
+    "pronto-soccorso-triage-codici"
+   ],
+   "schede": [],
+   "chiavi": "codice bianco pronto soccorso triage colore cosa significa ticket 25 euro",
+   "fonti": [
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Delibera della Giunta regionale 16 aprile 2021, n. 7-3088 (recepisce le linee nazionali sul triage del 1° agosto 2019), allegato A",
+     "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2021/17/attach/dgr_03088_1050_16042021.pdf",
+     "data": "2021-04-16"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Pronto soccorso",
+     "url": "https://www.regione.lombardia.it/sanita/emergenze-e-urgenze/pronto-soccorso",
+     "data": "2026-08-31"
+    },
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Servizi di emergenza-urgenza (guardia medica e pronto soccorso)",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/accesso-ai-servizi-sanitari/servizi-emergenza-urgenza",
+     "data": "2026-11-09"
+    },
+    {
+     "ente": "Regione Toscana",
+     "pagina": "Accedere al pronto soccorso",
+     "url": "https://www.regione.toscana.it/accedere-al-pronto-soccorso",
+     "data": "2026-03-10"
+    }
+   ],
+   "medico": true
+  },
+  {
+   "slug": "quanto-si-aspetta-con-il-codice-verde",
+   "gruppo": "salute",
+   "domanda": "Quanto si aspetta al pronto soccorso con il codice verde?",
+   "risposta": "Il codice verde è il 4, «urgenza minore»: secondo le linee nazionali sul triage si dovrebbe entrare nell'area delle cure entro 120 minuti.",
+   "righe": [
+    {
+     "t": "È per chi ha una condizione stabile, senza rischio di peggiorare. Gli altri tempi: codice 1, rosso, subito; 2, arancione, entro 15 minuti; 3, azzurro, entro 60; 5, bianco, entro 240.",
+     "f": [
+      0
+     ],
+     "p": "1 rosso accesso immediato; 2 arancione entro 15 minuti; 3 azzurro entro 60; 4 verde entro 120; 5 bianco entro 240."
+    },
+    {
+     "t": "Il tempo è quello massimo per entrare nell'area delle cure, non per uscire dal pronto soccorso: dopo possono servire esami e un periodo di osservazione. Se mentre aspetti la persona sta peggio, dillo subito all'infermiere.",
+     "f": [
+      0
+     ],
+     "p": "Tempo massimo per l'accesso al trattamento; rivalutazione anche su richiesta del paziente o dei familiari."
+    },
+    {
+     "t": "Quando scade il tempo del codice, l'infermiere di triage rivaluta chi aspetta; lo fa anche quando lo chiede il paziente o un familiare. Il codice può cambiare.",
+     "f": [
+      0
+     ],
+     "p": "Rivalutazione allo scadere del tempo previsto per ogni codice, a giudizio dell'infermiere o su richiesta del paziente o dei familiari; può modificare il codice."
+    },
+    {
+     "t": "Arrivare in ambulanza non fa entrare prima: l'ordine lo decide il triage.",
+     "f": [
+      1
+     ],
+     "p": "L'arrivo in ambulanza non significa essere visitati prima: la priorità dipende dal triage."
+    }
+   ],
+   "guide": [
+    "pronto-soccorso-triage-codici"
+   ],
+   "schede": [],
+   "chiavi": "codice verde attesa quanto si aspetta tempi pronto soccorso triage ore minuti",
+   "fonti": [
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Delibera della Giunta regionale 16 aprile 2021, n. 7-3088 (recepisce le linee nazionali sul triage del 1° agosto 2019), allegato A",
+     "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2021/17/attach/dgr_03088_1050_16042021.pdf",
+     "data": "2021-04-16"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Pronto soccorso",
+     "url": "https://www.regione.lombardia.it/sanita/emergenze-e-urgenze/pronto-soccorso",
+     "data": "2026-08-31"
+    }
+   ],
+   "medico": true
+  },
+  {
+   "slug": "in-ambulanza-si-passa-prima",
+   "gruppo": "salute",
+   "domanda": "Arrivare in ambulanza fa passare prima al pronto soccorso?",
+   "risposta": "No: l'ordine lo decide il triage, cioè la valutazione che un infermiere fa all'arrivo, non il mezzo con cui si arriva.",
+   "righe": [
+    {
+     "t": "Regione Lombardia lo scrive chiaramente: arrivare in ambulanza non vuol dire essere visitati prima.",
+     "f": [
+      0
+     ],
+     "p": "L'arrivo in ambulanza non comporta di essere visitati prima, perché la priorità dipende dal triage."
+    },
+    {
+     "t": "All'arrivo un infermiere formato assegna un codice di priorità. In Lombardia i bambini li valuta un infermiere di triage pediatrico, le donne in gravidanza o dopo il parto un'ostetrica.",
+     "f": [
+      0
+     ],
+     "p": "Triage svolto da infermiere formato; per i bambini infermiere di triage pediatrico; per gravidanza e puerperio ostetrica di triage."
+    },
+    {
+     "t": "I codici vanno da 1 a 5: con il codice 1, rosso, si entra subito; con il 5, bianco, entro 240 minuti.",
+     "f": [
+      1
+     ],
+     "p": "1 rosso accesso immediato; 5 bianco entro 240 minuti."
+    },
+    {
+     "t": "Il triage serve a curare subito i casi gravi, non ad accorciare l'attesa di tutti. Se mentre aspetti la persona sta peggio, puoi chiedere una nuova valutazione.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Lombardia: il triage mira a garantire assistenza immediata ai casi gravi, non a ridurre l'attesa in generale. Piemonte DGR: rivalutazione anche su richiesta del paziente o dei familiari."
+    },
+    {
+     "t": "Nelle emergenze l'ambulanza si chiama al 112.",
+     "f": [
+      0
+     ],
+     "p": "Le ambulanze si chiamano con il numero unico di emergenza 112."
+    }
+   ],
+   "guide": [
+    "pronto-soccorso-triage-codici"
+   ],
+   "schede": [],
+   "chiavi": "ambulanza passa prima priorità pronto soccorso triage arrivare",
+   "fonti": [
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Pronto soccorso",
+     "url": "https://www.regione.lombardia.it/sanita/emergenze-e-urgenze/pronto-soccorso",
+     "data": "2026-08-31"
+    },
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Delibera della Giunta regionale 16 aprile 2021, n. 7-3088 (recepisce le linee nazionali sul triage del 1° agosto 2019), allegato A",
+     "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2021/17/attach/dgr_03088_1050_16042021.pdf",
+     "data": "2021-04-16"
+    }
+   ],
+   "medico": true
+  },
+  {
+   "slug": "il-116117-funziona-in-tutta-italia",
+   "gruppo": "salute",
+   "domanda": "Il 116117 funziona in tutta Italia?",
+   "risposta": "Non ancora: alcune Regioni non hanno ancora attivato il 116117. Dove non c'è, cerca il numero della guardia medica sul sito della tua ASL.",
+   "righe": [
+    {
+     "t": "Lo scrive la Provincia autonoma di Trento, dove il 116117 è attivo 24 ore su 24, è gratuito e serve anche per i trasporti sanitari programmati e per informazioni sanitarie.",
+     "f": [
+      0
+     ],
+     "p": "«alcune Regioni non hanno ancora attivato questo servizio»; Trentino: attivo 24 ore su 24, sette giorni su sette, gratuito; continuità assistenziale, trasporti sanitari programmati, informazioni."
+    },
+    {
+     "t": "In Toscana il 116117 ha sostituito i vecchi numeri della guardia medica dal 16 settembre 2024 ed è attivo in tutta la regione dal 18 novembre 2024; è gratuito e multilingue.",
+     "f": [
+      1
+     ],
+     "p": "Dal 16 settembre 2024 sostituisce il vecchio numero; ultime province attivate il 18 novembre 2024; ora attivo in tutta la Toscana; «gratuito, accessibile e multilingue»."
+    },
+    {
+     "t": "In Lombardia la guardia medica risponde al 116117.",
+     "f": [
+      2
+     ],
+     "p": "Continuità assistenziale (guardia medica) tramite il numero NEA 116117."
+    },
+    {
+     "t": "Dove il numero non c'è, la guardia medica funziona lo stesso, di notte e nei festivi: in Piemonte, per esempio, nei giorni feriali dalle 20 alle 8.",
+     "f": [
+      3
+     ],
+     "p": "Continuità assistenziale: feriali dalle 20:00 alle 8:00."
+    },
+    {
+     "t": "Il 116117 è per le cure non urgenti: nelle emergenze si chiama il 112.",
+     "f": [
+      2
+     ],
+     "p": "Ambulanze tramite il numero unico di emergenza 112."
+    }
+   ],
+   "guide": [
+    "guardia-medica-116117"
+   ],
+   "schede": [],
+   "chiavi": "116117 116 117 numero guardia medica tutta italia regioni attivo funziona",
+   "fonti": [
+    {
+     "ente": "Provincia autonoma di Trento – Ufficio stampa",
+     "pagina": "Numero unico europeo 116117: oltre 240 mila chiamate nel 2025",
+     "url": "https://www.ufficiostampa.provincia.tn.it/Comunicati/Numero-unico-europeo-116117-oltre-240-mila-chiamate-nel-2025",
+     "data": "2026-06-29"
+    },
+    {
+     "ente": "Regione Toscana",
+     "pagina": "Nuovo numero del servizio di continuità assistenziale (guardia medica)",
+     "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale",
+     "data": "2026-02-05"
+    },
+    {
+     "ente": "Regione Lombardia",
+     "pagina": "Pronto soccorso",
+     "url": "https://www.regione.lombardia.it/sanita/emergenze-e-urgenze/pronto-soccorso",
+     "data": "2026-08-31"
+    },
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Servizi di emergenza-urgenza (guardia medica e pronto soccorso)",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/accesso-ai-servizi-sanitari/servizi-emergenza-urgenza",
+     "data": "2026-11-09"
+    }
+   ],
+   "medico": true
+  },
+  {
+   "slug": "a-che-ora-comincia-la-guardia-medica",
+   "gruppo": "salute",
+   "domanda": "A che ora comincia la guardia medica?",
+   "risposta": "Nei giorni feriali alle 20, fino alle 8 del mattino dopo. Nel fine settimana e nei festivi l'orario cambia da Regione a Regione.",
+   "righe": [
+    {
+     "t": "In Piemonte il sabato e i giorni prefestivi comincia alle 10 e va avanti fino alle 8 del lunedì o del giorno dopo la festa.",
+     "f": [
+      0
+     ],
+     "p": "Feriali dalle 20:00 alle 8:00; sabato e prefestivi dalle 10:00 alle 8:00 del lunedì o del giorno successivo al festivo."
+    },
+    {
+     "t": "In Toscana nel fine settimana va dalle 8 del sabato alle 8 del lunedì; nelle feste infrasettimanali dalle 8 del giorno prima alle 8 del primo giorno feriale.",
+     "f": [
+      1
+     ],
+     "p": "Feriali 20.00-8.00; dalle 8.00 del sabato alle 8.00 del lunedì; festività infrasettimanali dalle 8.00 del prefestivo alle 8.00 del primo feriale."
+    },
+    {
+     "t": "Il servizio è gratuito. Controlla gli orari sul sito della tua ASL e salva il numero in rubrica.",
+     "f": [
+      0
+     ],
+     "p": "«garantisce gratuitamente l'assistenza medica di base per le urgenze in orario notturno e nei giorni festivi e prefestivi»."
+    },
+    {
+     "t": "La guardia medica è per i problemi urgenti, quando il medico di famiglia non c'è; nelle emergenze si chiama il 112. In Toscana risponde al 116117, in tutta la regione.",
+     "f": [
+      1
+     ],
+     "p": "116117 per le cure non urgenti, attivo in tutta la Toscana."
+    }
+   ],
+   "guide": [
+    "guardia-medica-116117"
+   ],
+   "schede": [],
+   "chiavi": "orari orario guardia medica apre comincia sabato domenica festivi weekend",
+   "fonti": [
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Servizi di emergenza-urgenza (guardia medica e pronto soccorso)",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/accesso-ai-servizi-sanitari/servizi-emergenza-urgenza",
+     "data": "2026-11-09"
+    },
+    {
+     "ente": "Regione Toscana",
+     "pagina": "Nuovo numero del servizio di continuità assistenziale (guardia medica)",
+     "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale",
+     "data": "2026-02-05"
+    }
+   ],
+   "medico": true
+  },
+  {
+   "slug": "la-guardia-medica-puo-prescrivere-medicine",
+   "gruppo": "salute",
+   "domanda": "La guardia medica può prescrivere medicine?",
+   "risposta": "Sì, per le terapie urgenti: in Piemonte, per esempio, per un ciclo di massimo 3 giorni.",
+   "righe": [
+    {
+     "t": "Il medico di guardia fa visite in ambulatorio o a domicilio, di notte e nei giorni festivi e prefestivi, quando il medico di famiglia non c'è.",
+     "f": [
+      0
+     ],
+     "p": "Il medico del servizio «effettua visite mediche, in ambulatorio o a domicilio»; può prescrivere farmaci per le terapie urgenti per un ciclo massimo di 3 giorni."
+    },
+    {
+     "t": "Il servizio è gratuito e copre le ore in cui il medico di famiglia non c'è. Prima di chiamare, tieni vicino l'elenco delle medicine che la persona prende già. Nelle emergenze, invece, si chiama il 112.",
+     "f": [
+      0
+     ],
+     "p": "«garantisce gratuitamente l'assistenza medica di base per le urgenze in orario notturno e nei giorni festivi e prefestivi»."
+    },
+    {
+     "t": "Per le terapie che continuano, il riferimento resta il medico di famiglia o il pediatra: avvisalo il giorno dopo.",
+     "f": [],
+     "p": ""
+    },
+    {
+     "t": "Se in farmacia porti una ricetta della guardia medica di notte, nella zona di Bologna il supplemento notturno lo paga l'azienda sanitaria e non tu.",
+     "f": [
+      1
+     ],
+     "p": "Se la prescrizione è della Guardia Medica o riporta l'indicazione di urgenza del medico, il diritto addizionale è a carico dell'AUSL."
+    }
+   ],
+   "guide": [
+    "guardia-medica-116117",
+    "farmacie-di-turno-e-servizi"
+   ],
+   "schede": [],
+   "chiavi": "guardia medica prescrivere ricetta medicine farmaci prescrive",
+   "fonti": [
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Servizi di emergenza-urgenza (guardia medica e pronto soccorso)",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/accesso-ai-servizi-sanitari/servizi-emergenza-urgenza",
+     "data": "2026-11-09"
+    },
+    {
+     "ente": "Azienda USL di Bologna",
+     "pagina": "Farmacie: orari di apertura e turni diurni, notturni e festivi",
+     "url": "https://www.ausl.bologna.it/per-i-cittadini/farm",
+     "data": "2026-11-11"
+    }
+   ],
+   "medico": true
+  },
+  {
+   "slug": "si-puo-oscurare-un-referto-nel-fascicolo",
+   "gruppo": "salute",
+   "domanda": "Si può oscurare un referto nel fascicolo sanitario?",
+   "risposta": "Sì. Puoi chiedere di oscurare dati e documenti, prima o dopo che entrino nel fascicolo: poi li vedete solo tu e chi li ha prodotti.",
+   "righe": [
+    {
+     "t": "L'oscuramento si può togliere in ogni momento.",
+     "f": [
+      0
+     ],
+     "p": "L'oscuramento è revocabile in qualsiasi momento."
+    },
+    {
+     "t": "Chi consulta il fascicolo non sa che hai oscurato qualcosa. E puoi vedere l'elenco di chi lo ha consultato: ogni accesso resta registrato.",
+     "f": [
+      0
+     ],
+     "p": "Gli altri soggetti abilitati non sanno che esistono dati oscurati; tutte le operazioni sono registrate e l'interessato consulta l'elenco degli accessi."
+    },
+    {
+     "t": "Alcuni dati nascono già oscurati: quelli sull'HIV, sull'interruzione volontaria di gravidanza, sulla violenza sessuale, sull'uso di droghe o alcol, sul parto in anonimato e sui servizi dei consultori. Li vedi solo tu, finché non decidi di renderli visibili.",
+     "f": [
+      0
+     ],
+     "p": "Dati a maggior tutela: nascono oscurati e sono visibili solo all'assistito, che può renderli visibili in qualsiasi momento."
+    },
+    {
+     "t": "In Toscana l'oscuramento si fa online nel fascicolo, con l'app Toscana Salute o agli sportelli delle aziende sanitarie. Nelle altre Regioni guarda il portale del fascicolo o chiedi all'ASL.",
+     "f": [
+      1
+     ],
+     "p": "Oscuramento online nel fascicolo, nell'app Toscana Salute o presso gli sportelli delle Aziende sanitarie."
+    }
+   ],
+   "guide": [
+    "fascicolo-sanitario-consenso-oscuramento",
+    "documenti-sanitari-dove-trovarli"
+   ],
+   "schede": [],
+   "chiavi": "oscurare oscuramento nascondere referto fascicolo sanitario fse documento privacy",
+   "fonti": [
+    {
+     "ente": "Garante per la protezione dei dati personali",
+     "pagina": "FAQ – Fascicolo sanitario elettronico (FSE)",
+     "url": "https://www.garanteprivacy.it/faq/fascicolo-sanitario",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Regione Toscana",
+     "pagina": "Fascicolo sanitario elettronico",
+     "url": "https://www.regione.toscana.it/-/fascicolo-sanitario-elettronico",
+     "data": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "slug": "il-medico-vede-che-ho-oscurato",
+   "gruppo": "salute",
+   "domanda": "Il medico vede che ho oscurato qualcosa nel fascicolo?",
+   "risposta": "No. Il fascicolo è costruito in modo che chi lo consulta non sappia che hai oscurato qualcosa, e nemmeno che esistono dati oscurati.",
+   "righe": [
+    {
+     "t": "I documenti oscurati li vedete solo tu e chi li ha prodotti.",
+     "f": [
+      0
+     ],
+     "p": "Possono consultare i dati oscurati solo l'interessato e i titolari che li hanno generati."
+    },
+    {
+     "t": "Il medico, del resto, può consultare il fascicolo solo se hai dato il consenso alla consultazione, che puoi revocare quando vuoi. Le cure sono garantite anche senza consenso.",
+     "f": [
+      0
+     ],
+     "p": "Consenso necessario per la consultazione; sempre revocabile; prestazione sanitaria garantita anche in assenza o revoca del consenso."
+    },
+    {
+     "t": "Con il tuo consenso possono consultarlo solo i professionisti sanitari che ti hanno in cura; non periti, assicurazioni o datori di lavoro.",
+     "f": [
+      0
+     ],
+     "p": "Accesso dei professionisti che hanno in cura l'interessato, con consenso; non possono accedere periti, assicurazioni, datori di lavoro."
+    },
+    {
+     "t": "Ogni accesso al fascicolo resta registrato e puoi vedere l'elenco. In Toscana chi entra deve anche indicare il motivo.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Tutte le operazioni sul FSE sono registrate e l'interessato può consultare l'elenco degli accessi. Toscana: «Ogni accesso è tracciato e reso visibile sul tuo fascicolo»; chi accede indica il motivo."
+    },
+    {
+     "t": "Se un giorno vuoi che il medico veda un documento oscurato, togli l'oscuramento oppure portaglielo tu.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "fascicolo-sanitario-consenso-oscuramento"
+   ],
+   "schede": [],
+   "chiavi": "medico vede oscurato oscurare fascicolo sanitario fse sa nascosto consenso",
+   "fonti": [
+    {
+     "ente": "Garante per la protezione dei dati personali",
+     "pagina": "FAQ – Fascicolo sanitario elettronico (FSE)",
+     "url": "https://www.garanteprivacy.it/faq/fascicolo-sanitario",
+     "data": "2026-11-13"
+    },
+    {
+     "ente": "Regione Toscana",
+     "pagina": "Fascicolo sanitario elettronico",
+     "url": "https://www.regione.toscana.it/-/fascicolo-sanitario-elettronico",
+     "data": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "slug": "si-puo-prenotare-una-visita-in-farmacia",
+   "gruppo": "salute",
+   "domanda": "Si può prenotare una visita in farmacia?",
+   "risposta": "In alcune farmacie sì: la legge permette alle farmacie di prenotare visite ed esami del Servizio sanitario, far pagare il ticket e consegnare i referti. Quali lo fanno dipende dalla Regione.",
+   "righe": [
+    {
+     "t": "È una delle funzioni della «farmacia dei servizi», prevista da una legge nazionale del 2009.",
+     "f": [
+      0
+     ],
+     "p": "D.Lgs. 153/2009, art. 1, c. 2, lett. f: prenotazione di prestazioni di assistenza specialistica ambulatoriale, pagamento delle relative quote di partecipazione e ritiro dei referti."
+    },
+    {
+     "t": "In Toscana si prenota, si disdice e si cambia la prenotazione nelle farmacie con il logo PuntoSI, con la ricetta o con il promemoria della ricetta elettronica. Prenotare e disdire è gratis; cambiare una prenotazione o pagare il ticket costa 1,5 euro, e il ticket si paga solo nelle farmacie che espongono la locandina.",
+     "f": [
+      1
+     ],
+     "p": "Farmacie con logo PUNTOSI: prenotazione, disdetta o modifica con ricetta rossa o dematerializzata (promemoria); prenotazione e disdetta gratuite; modifica 1,5 euro; pagamento ticket 1,5 euro, solo nelle farmacie con la locandina."
+    },
+    {
+     "t": "Non tutte le farmacie aderiscono: in Veneto, per esempio, i servizi della farmacia dei servizi sono offerti su base volontaria.",
+     "f": [
+      2
+     ],
+     "p": "Servizi erogati «su base volontaria»."
+    },
+    {
+     "t": "Prima di andare, chiedi alla tua farmacia se offre il servizio e quanto costa.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "farmacie-di-turno-e-servizi",
+    "prenotare-con-il-cup"
+   ],
+   "schede": [],
+   "chiavi": "prenotare visita esame farmacia cup ticket pagare referti ritirare",
+   "fonti": [
+    {
+     "ente": "Normattiva",
+     "pagina": "Decreto legislativo 3 ottobre 2009, n. 153, articolo 1, comma 2, lettera f",
+     "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2009-11-04&atto.codiceRedazionale=009G0162&atto.articolo.numero=1&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0",
+     "data": "2009-10-03"
+    },
+    {
+     "ente": "Regione Toscana",
+     "pagina": "CUP in farmacia",
+     "url": "https://www.regione.toscana.it/-/cup-in-farmacia",
+     "data": "2025-12-23"
+    },
+    {
+     "ente": "Regione del Veneto",
+     "pagina": "Farmacia dei servizi",
+     "url": "https://salute.regione.veneto.it/organizzazione-sssr/il-servizio-socio-sanitario-regionale/assistenza-ospedaliera/assistenza-farmaceutica/farmacia-dei-servizi",
+     "data": "2026-10-13"
+    }
+   ]
+  }
+ ]
+}
