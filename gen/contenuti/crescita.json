@@ -1,0 +1,2557 @@
+{
+ "fonti": [
+  {
+   "id": "CR-01",
+   "ente": "Organizzazione Mondiale della Sanità (OMS)",
+   "anno": 2019,
+   "titolo": "To grow up healthy, children need to sit less and play more (linee guida su attività fisica, sedentarietà e sonno sotto i 5 anni)",
+   "tipo": "Linea guida",
+   "url": "https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more"
+  },
+  {
+   "id": "CR-02",
+   "ente": "Istituto Superiore di Sanità – EpiCentro",
+   "anno": 2019,
+   "titolo": "Bambini sotto i 5 anni: cosa è meglio fare o evitare (le linee guida OMS in italiano)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.epicentro.iss.it/materno/attivita-bambini"
+  },
+  {
+   "id": "CR-03",
+   "ente": "Istituto Superiore di Sanità – EpiCentro",
+   "anno": 2026,
+   "titolo": "Sorveglianza bambini 0-2 anni, indagine 2025: esposizione a schermi (pagina del 20 maggio 2026)",
+   "tipo": "Dato statistico",
+   "url": "https://www.epicentro.iss.it/sorveglianza02anni/indagine-2025-esposizione-schermi"
+  },
+  {
+   "id": "CR-04",
+   "ente": "Società Italiana di Pediatria (SIP)",
+   "anno": 2026,
+   "titolo": "Digitale e bambini: le nuove raccomandazioni SIP (27 gennaio 2026)",
+   "tipo": "Raccomandazione",
+   "url": "https://sip.it/2026/01/27/digitale-e-bambini-le-nuove-raccomandazioni-sip/"
+  },
+  {
+   "id": "CR-05",
+   "ente": "Società Italiana di Pediatria (SIP)",
+   "anno": 2026,
+   "titolo": "Il bambino digitale (pagina aggiornata il 16 ottobre 2026)",
+   "tipo": "Raccomandazione",
+   "url": "https://sip.it/il-bambino-digitale/"
+  },
+  {
+   "id": "CR-06",
+   "ente": "Società Italiana di Pediatria (SIP)",
+   "anno": 2021,
+   "titolo": "Estate, tempo di «spannolinamento»? Non sempre e non per forza",
+   "tipo": "Articolo divulgativo di una società scientifica",
+   "url": "https://sip.it/2021/08/06/estate-tempo-di-spannolinamento-non-sempre-e-non-per-forza/"
+  },
+  {
+   "id": "CR-07",
+   "ente": "Società Italiana di Pediatria (SIP)",
+   "anno": 2024,
+   "titolo": "Togliere il pannolino d'estate non sempre è la scelta giusta",
+   "tipo": "Articolo divulgativo di una società scientifica",
+   "url": "https://sip.it/2024/07/18/togliere-il-pannolino-destate-non-sempre-e-la-scelta-giusta/"
+  },
+  {
+   "id": "CR-08",
+   "ente": "Azienda USL di Bologna – Pediatria territoriale",
+   "anno": 2023,
+   "titolo": "La salute al nido: igiene, malattie, alimentazione (agosto 2023)",
+   "tipo": "Documento di un'Azienda sanitaria",
+   "url": "https://www.ausl.bologna.it/seztemi/mf/scuola-e-apprendimento/salute-al-nido-agosto-2023.pdf/@@download/file/Salute%20al%20Nido%20agosto%202023.pdf"
+  },
+  {
+   "id": "CR-09",
+   "ente": "Azienda USL di Bologna – Pediatria territoriale",
+   "anno": 2023,
+   "titolo": "La salute alla scuola primaria: igiene, malattie, alimentazione (agosto 2023)",
+   "tipo": "Documento di un'Azienda sanitaria",
+   "url": "https://www.ausl.bologna.it/seztemi/mf/scuola-e-apprendimento/salute-alla-scuola-primaria-agosto-2023-1.pdf/@@download/file/Salute%20alla%20scuola%20primaria%20agosto%202023%20(1).pdf"
+  },
+  {
+   "id": "CR-10",
+   "ente": "Azienda USL della Romagna – Pediatrie di comunità (pubblicato dal Comune di Ravenna)",
+   "anno": 2025,
+   "titolo": "Promuovere il benessere in sicurezza dei bambini nelle collettività scolastiche (aggiornamento settembre 2025)",
+   "tipo": "Documento di un'Azienda sanitaria",
+   "url": "https://comune.ravenna.it/wp-content/uploads/2025/09/A-scuola-in-salute-aggiornamento-settembre-2025.pdf"
+  },
+  {
+   "id": "CR-11",
+   "ente": "ATS Insubria – Dipartimento di igiene e prevenzione sanitaria",
+   "anno": "pagina senza data",
+   "titolo": "Pidocchi!?! Niente paura: prevenzione della pediculosi nelle comunità",
+   "tipo": "Documento di un'Azienda sanitaria",
+   "url": "https://www.ats-insubria.it/attachments/article/2846/Prevenzione_pediculosi_comunita.pdf"
+  },
+  {
+   "id": "CR-12",
+   "ente": "Comune di Genova – Ristorazione scolastica",
+   "anno": 2025,
+   "titolo": "Linee guida: erogazione delle diete a rischio anafilassi, sanitarie e menù per motivi etico-religiosi (revisione settembre 2025)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.comune.genova.it/sites/default/files/2025-09/linee%20guida%20erog.diete_.rev_.09-25.pdf"
+  },
+  {
+   "id": "CR-13",
+   "ente": "Comune di Firenze – Servizi educativi e scolastici",
+   "anno": 2026,
+   "titolo": "Servizi e tariffe, anno scolastico 2026/2027 (mensa e trasporto)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.comune.firenze.it/system/files/2026-08/nota_tariffe_2026_2027.pdf"
+  },
+  {
+   "id": "CR-14",
+   "ente": "Comune di Prato – Scuola dell'infanzia comunale",
+   "anno": 2025,
+   "titolo": "InformaGenitori: scuole dell'infanzia comunali, anno scolastico 2025/2026",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.comune.prato.it/sito-comunale/per-i-cittadini/figli/nidi-e-scuole-infanzia/informagenitori-scuole-infanzia/media26293.php"
+  },
+  {
+   "id": "CR-15",
+   "ente": "Comune di Teramo",
+   "anno": 2026,
+   "titolo": "Bando per il trasporto scolastico, anno scolastico 2026/2027 (determinazione n. 681 del 30 marzo 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://teramo-api.municipiumapp.it/s3/7195/allegati/bando_trasporto_2026-2027.pdf"
+  },
+  {
+   "id": "CR-16",
+   "ente": "Comune di Matera – Ufficio scuole",
+   "anno": 2026,
+   "titolo": "Avviso servizio scuolabus, anno scolastico 2026/2027 (3 settembre 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://comune.matera.it/wp-content/uploads/2026/09/7001-28173524-AVVISO_SERVIZIO_SCUOLABUS_2026-2027_signed.pdf"
+  },
+  {
+   "id": "CR-17",
+   "ente": "Ministero dell'Istruzione – Ufficio scolastico regionale per l'Emilia-Romagna",
+   "anno": 2018,
+   "titolo": "Nota prot. 2499 del 13 febbraio 2018: uscita autonoma dei minori di 14 anni e trasporto scolastico (art. 19-bis del decreto-legge 148/2017)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.istruzioneer.gov.it/wp-content/uploads/2018/02/nota-USR-ER-prot-n-2499-del-13-02-2018.pdf"
+  },
+  {
+   "id": "CR-18",
+   "ente": "Comune di Genova – Servizi integrati 0-6",
+   "anno": 2024,
+   "titolo": "Nuove linee guida per l'ambientamento, anno scolastico 2024/2025",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.comune.genova.it/sites/default/files/2024-09/Nuove%20linee%20guida%20ambientamento%20a.s.%2024-25.pdf"
+  },
+  {
+   "id": "CR-19",
+   "ente": "Comune di Genova – Servizi per l'infanzia",
+   "anno": 2025,
+   "titolo": "Linee guida: la relazione con le famiglie nei nidi e nelle scuole dell'infanzia",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.comune.genova.it/sites/default/files/2025-06/Linee%20guida_relazione%20con%20le%20famiglie.pdf"
+  },
+  {
+   "id": "CR-20",
+   "ente": "Comune di Firenze – Servizi alla prima infanzia",
+   "anno": 2008,
+   "titolo": "Linee guida per i servizi educativi alla prima infanzia: l'ambientamento",
+   "tipo": "Documento istituzionale",
+   "url": "https://educazione.comune.fi.it/system/files/2019-04/ambientamento%281%29.pdf"
+  },
+  {
+   "id": "CR-21",
+   "ente": "Comune di Venezia – Nido d'infanzia comunale San Provolo",
+   "anno": 2024,
+   "titolo": "Informazioni per le famiglie, anno educativo 2024/2025 (cosa portare, ambientamento)",
+   "tipo": "Documento istituzionale",
+   "url": "https://comune.venezia.it/sites/comune.venezia.it/files/scuole/files/Fascicolo%20Nido%20San%20Provolo%202024-25.pdf"
+  },
+  {
+   "id": "CR-22",
+   "ente": "Comune di Venezia – Scuola dell'infanzia comunale Duca d'Aosta",
+   "anno": 2024,
+   "titolo": "Fascicolo per i genitori, anno scolastico 2024/2025 (cosa portare, ambientamento)",
+   "tipo": "Documento istituzionale",
+   "url": "https://comune.venezia.it/sites/comune.venezia.it/files/scuole/files/Fascicolo%20per%20genitori-infanzia%20Duca%20D%27Aosta%20%281%29.pdf"
+  },
+  {
+   "id": "CR-23",
+   "ente": "Ministero dell'Istruzione e del Merito (copia pubblicata dall'Istituto comprensivo Lucca Centro storico)",
+   "anno": 2025,
+   "titolo": "Nota prot. 100847 del 17 dicembre 2025: iscrizioni alle scuole dell'infanzia e alle scuole di ogni ordine e grado per l'a.s. 2026/2027",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.icluccacentrostorico.edu.it/wp-content/uploads/2026/01/m_pi.AOODGOSV.REGISTRO-UFFICIALEU.0100847.17-12-2025.pdf"
+  },
+  {
+   "id": "CR-24",
+   "ente": "Corte costituzionale",
+   "anno": 2018,
+   "titolo": "Sentenza n. 5 del 2018 sulla legge 119/2017 (obbligo vaccinale)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.cortecostituzionale.it/stampa-pdf-pronuncia/2018/5"
+  },
+  {
+   "id": "CR-25",
+   "ente": "Ministero dell'Istruzione – Direzione generale per lo studente e l'inclusione",
+   "anno": 2021,
+   "titolo": "I nuovi modelli di PEI: presentazione per la scuola primaria (7 maggio 2021, decreto interministeriale 182/2020)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.istruzione.it/inclusione-e-nuovo-pei/allegati/Slide%20di%20presentazione%20Scuola%20PRIMARIA_7%20maggio%202021.pdf"
+  },
+  {
+   "id": "CR-26",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "La riforma della disabilità (brochure, quarta edizione, maggio 2026)",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.inps.it/content/dam/inps-site/pdf/schede-servizio/documents/Brochure_Riforma_Disabilit%C3%A0.pdf"
+  },
+  {
+   "id": "CR-27",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Riforma della disabilità: al via la terza fase sperimentale (notizia del 24 febbraio 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html"
+  },
+  {
+   "id": "CR-28",
+   "ente": "Ministero dell'Istruzione e del Merito – Ufficio scolastico regionale per il Veneto, ambito di Venezia",
+   "anno": 2024,
+   "titolo": "Vademecum provinciale per l'inclusione scolastica degli alunni con disabilità e BES (aggiornato il 25 novembre 2024)",
+   "tipo": "Documento istituzionale",
+   "url": "https://venezia.istruzioneveneto.gov.it/wp-content/uploads/2024/12/20241125-Vademecum-Ufficiale.pdf"
+  },
+  {
+   "id": "CR-29",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 2017,
+   "titolo": "Decreto legislativo 13 aprile 2017, n. 66: norme per la promozione dell'inclusione scolastica degli studenti con disabilità (testo vigente)",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/eli/id/2017/05/16/17G00074/CONSOLIDATED"
+  },
+  {
+   "id": "CR-30",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 1992,
+   "titolo": "Legge 5 febbraio 1992, n. 104: legge-quadro per l'assistenza, l'integrazione sociale e i diritti delle persone handicappate (testo vigente)",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/eli/id/1992/02/17/092G0108/CONSOLIDATED"
+  },
+  {
+   "id": "CR-31",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 2010,
+   "titolo": "Legge 8 ottobre 2010, n. 170: nuove norme in materia di disturbi specifici di apprendimento in ambito scolastico (testo vigente)",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/eli/id/2010/10/18/010G0192/CONSOLIDATED"
+  },
+  {
+   "id": "CR-32",
+   "ente": "Regione Piemonte",
+   "anno": 2026,
+   "titolo": "Disturbi specifici dell'apprendimento (DSA) (pagina aggiornata il 4 novembre 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.regione.piemonte.it/web/node/19002"
+  },
+  {
+   "id": "CR-33",
+   "ente": "Ministero dell'Istruzione – Ufficio scolastico regionale per il Friuli Venezia Giulia",
+   "anno": 2018,
+   "titolo": "Nota prot. 13551 del 2018: alunni con disturbi specifici di apprendimento, diagnosi e Piano didattico personalizzato",
+   "tipo": "Documento istituzionale",
+   "url": "https://usrfvg.regione.fvg.it/export/sites/default/USRFVG/allegati/archivio_file/Disabilita/2018_19/2018_Nota_USR_AOODRFVG_13551_del_05.11.2018.pdf"
+  },
+  {
+   "id": "CR-34",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Centri estivi: contributi per minori fino a 14 anni (scheda aggiornata il 28 settembre 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.centri-estivi-contributi-per-minori-fino-a-14-anni-52818.centri-estivi-contributi-per-minori-fino-a-14-anni.html"
+  },
+  {
+   "id": "CR-35",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Centri estivi diurni 2026: online il bando (notizia del 29 maggio 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.05.centri-estivi-diurni-2026-online-il-bando.html"
+  },
+  {
+   "id": "CR-36",
+   "ente": "Comune di Taranto – Servizi sociali",
+   "anno": 2026,
+   "titolo": "Avviso centri estivi 2026: contributi alle famiglie (delibera di Giunta n. 170 del 14 maggio 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://taranto-api.municipiumapp.it/s3/7152/allegati/avviso-centri-estivi-2026.pdf"
+  },
+  {
+   "id": "CR-37",
+   "ente": "Comune di Bologna",
+   "anno": 2026,
+   "titolo": "Contributi per i centri estivi 2026: domande frequenti",
+   "tipo": "Documento istituzionale",
+   "url": "https://assets.culturabologna.it/272dd102-19ed-40f1-9525-5431a868514c-faq-contributi-centri-estivi-2026.pdf"
+  },
+  {
+   "id": "CR-38",
+   "ente": "Istituto Superiore di Sanità – EpiCentro",
+   "anno": "pagina senza data",
+   "titolo": "Pediculosi: il pidocchio del capo",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.epicentro.iss.it/pediculosi/"
+  }
+ ],
+ "guide": [
+  {
+   "slug": "inserimento-al-nido",
+   "categoria": "Organizzarsi",
+   "argomento": "crescita",
+   "data": "2026-11-13",
+   "titolo": "L'inserimento al nido: come funziona, cosa preparare, cosa chiedere",
+   "titolo_seo": "Inserimento al nido: come funziona e cosa chiedere",
+   "sommario": "Le prime settimane al nido si fanno a piccoli passi: poche ore insieme a te, poi il pranzo, poi il sonno. Come funziona di solito, cosa preparare a casa e le domande da fare alle educatrici.",
+   "tempo": "Di solito due o tre settimane; mezz'ora per il colloquio",
+   "serve": "Il calendario dell'inserimento dato dal nido, qualche giorno libero dal lavoro, un oggetto di casa",
+   "strumento": "gestionale",
+   "perche_titolo": "Come funziona, di solito",
+   "perche": [
+    "Nei nidi si parla di inserimento o di ambientamento: è il periodo in cui il bambino, e anche il genitore, si abituano al posto nuovo e alle persone nuove. Ogni Comune e ogni nido ha il suo calendario, ma lo schema si somiglia: si comincia con poche ore e con il genitore presente, poi arrivano il pranzo, il primo distacco e il sonno.",
+    "Due esempi da Comuni capoluogo. Nei nidi comunali di Genova il genitore è presente per tutta la prima settimana, il primo pranzo è il terzo giorno, il primo sonno il quinto, e l'orario completo arriva entro due settimane. Al nido comunale San Provolo di Venezia la prima settimana è solo al mattino con un genitore, nella seconda l'uscita si allunga fino alle 15, dalla terza si segue l'orario scelto dalla famiglia."
+   ],
+   "passi": [
+    [
+     "Chiedi il calendario prima dell'estate",
+     "Date e orari dell'inserimento li decide il nido, spesso a piccoli gruppi: a Genova, nel 2024/2025, i primi gruppi del nido sono entrati dal 18 settembre e l'ultimo entro il 15 novembre. Chiedi in segreteria quando tocca a voi, così organizzi per tempo permessi e ferie."
+    ],
+    [
+     "Tieniti libero almeno la prima settimana",
+     "Nei primi giorni al nido ci sei tu, o un'altra persona di riferimento per il bambino. Le educatrici ti chiedono di esserci con discrezione: il bambino esplora, e torna da te quando ha bisogno."
+    ],
+    [
+     "Al colloquio, racconta tuo figlio",
+     "Prima dell'inserimento c'è un colloquio con le educatrici. Racconta le sue abitudini: come si addormenta, come mangia, come si consola, le parole che usa. Puoi dire anche le tue preoccupazioni: il colloquio serve proprio a conoscervi e a creare fiducia."
+    ],
+    [
+     "Le domande da fare alle educatrici",
+     "Quanto dura l'inserimento e quando arrivano pranzo e sonno? Cosa devo portare e cosa resta al nido? Come vi avviso di un'assenza e chi può venire a prenderlo? Come saprò com'è andata la giornata? Quando ci sono riunioni e colloqui durante l'anno? A Genova, per esempio, i colloqui con le famiglie sono tre: prima dell'inserimento, a febbraio e a maggio."
+    ],
+    [
+     "Porta un oggetto di casa",
+     "Soprattutto nei primi giorni, un oggetto di casa aiuta il bambino a legare il posto nuovo a quello che conosce: un pupazzo, il ciuccio per la nanna se lo usa."
+    ],
+    [
+     "Saluta, ogni giorno allo stesso modo",
+     "Il momento del distacco può essere difficile per lui e anche per te. I nidi usano piccoli rituali di saluto, che rassicurano il bambino e il genitore: chiedi alle educatrici quali sono e ripetili ogni mattina."
+    ],
+    [
+     "Se allatti, puoi continuare",
+     "L'inserimento al nido non dovrebbe interrompere l'allattamento: lo scrive l'Azienda USL di Bologna nelle sue indicazioni per i nidi. Parlane con le educatrici, per organizzarvi sugli orari."
+    ]
+   ],
+   "errori": [
+    "Fissare il rientro al lavoro il giorno dopo l'inizio: l'inserimento dura di solito più settimane.",
+    "Accorciare i tempi quando il bambino è ancora in difficoltà: i tempi si concordano con il nido.",
+    "Arrivare al colloquio senza aver pensato a cosa raccontare.",
+    "Saltare il saluto: un rituale breve e sempre uguale rassicura di più."
+   ],
+   "checklist": [
+    "Date dell'inserimento chieste al nido",
+    "Permessi o ferie per la prima settimana",
+    "Colloquio con le educatrici fissato",
+    "Abitudini di sonno e pasti scritte per il colloquio",
+    "Domande per le educatrici pronte",
+    "Oggetto di casa nella sacca",
+    "Persone che possono venire a prenderlo comunicate al nido"
+   ],
+   "fonti": [
+    "CR-18",
+    "CR-19",
+    "CR-20",
+    "CR-21",
+    "CR-08"
+   ],
+   "avvertenza": "Informazioni generali tratte dalle indicazioni pubblicate dai Comuni di Genova, Firenze e Venezia e dall'Azienda USL di Bologna, aggiornate a novembre 2026. Tempi e modi dell'inserimento cambiano da nido a nido: fa fede quello che ti dice il tuo.",
+   "domanda": "Come funziona l'inserimento al nido",
+   "correlate": [
+    "primo-giorno-nido-materna-cosa-serve",
+    "iscrizioni-nido-e-scuola",
+    "bonus-asilo-nido"
+   ],
+   "per": [
+    "bambino",
+    [
+     "0-1",
+     "1-3"
+    ]
+   ],
+   "chiavi_ricerca": "inserimento ambientamento nido asilo nido primo giorno primi giorni distacco piange quando lo lascio educatrici educatrice maestre colloquio settembre",
+   "frasi": [
+    "inseriment",
+    "ambientament"
+   ]
+  },
+  {
+   "slug": "primo-giorno-nido-materna-cosa-serve",
+   "categoria": "Organizzarsi",
+   "argomento": "organizzazione",
+   "data": "2026-11-13",
+   "titolo": "Primo giorno di nido o di scuola dell'infanzia: la lista di cosa serve",
+   "titolo_seo": "Primo giorno di nido o materna: cosa serve, la lista",
+   "sommario": "La lista di cosa preparare per il nido e per la scuola dell'infanzia: i cambi, le scarpe per la sezione, il nome su tutto, le carte per la segreteria. E cosa lasciare a casa. L'elenco preciso te lo darà il tuo nido o la tua scuola.",
+   "tempo": "Una sera per preparare tutto",
+   "serve": "L'elenco del tuo nido o della tua scuola, etichette o un pennarello per tessuti",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Ogni nido e ogni scuola dà il suo elenco, di solito alla riunione prima dell'inizio o al colloquio. Qui trovi le voci che tornano più spesso, prese dagli elenchi dei servizi comunali di Venezia e dalle indicazioni dell'Azienda USL di Bologna: ti servono per cominciare a preparare, non per sostituire l'elenco del tuo nido.",
+    "Una differenza da sapere: alcune scuole dell'infanzia chiedono che il bambino arrivi senza pannolino. Alla scuola dell'infanzia comunale Duca d'Aosta di Venezia, per esempio, è richiesto. Chiedi in tempo come fa la tua scuola, senza forzare i tempi del bambino: per il pannolino c'è una guida a parte."
+   ],
+   "passi": [
+    [
+     "Una sacca di tela con il nome",
+     "Nella sacca, un cambio completo adatto alla stagione: body o mutandine, calzini, maglietta intima, tuta. Al nido San Provolo di Venezia i cambi chiesti sono due. Aggiungi un sacchetto pulito per i vestiti sporchi."
+    ],
+    [
+     "Pannolini, se li usa ancora",
+     "Al nido si portano finché il bambino non controlla pipì e cacca. Chiedi quanti portarne e ogni quanto rifornirli."
+    ],
+    [
+     "Scarpe comode per la sezione",
+     "Calzini antiscivolo, pantofole o scarpe di tela con la chiusura a strappo, facili da mettere e togliere. Per il giardino, scarpe o stivaletti a parte."
+    ],
+    [
+     "Il ciuccio e il pupazzo della nanna",
+     "Se li usa per dormire, portali. Un oggetto di casa aiuta anche nei primi giorni, a sentire vicina la casa."
+    ],
+    [
+     "Vestiti comodi",
+     "Tute e vestiti che si possono sporcare, che lasciano muovere. Meglio evitare cinture, bretelle, bottoni difficili, camicie e abiti delicati."
+    ],
+    [
+     "Il nome su tutto",
+     "Sacca, vestiti, scarpe, ciuccio: tutto deve essere riconoscibile, perché in sezione le cose si somigliano."
+    ],
+    [
+     "Per il pranzo, quello che chiede la scuola",
+     "Alcune scuole dell'infanzia chiedono uno zainetto con le stoviglie: alla Duca d'Aosta di Venezia, per esempio, bicchiere, piatti e posate di plastica, tovagliolo di carta e un sacchetto, in uno zainetto facile da aprire e senza rotelle. Altre le forniscono: chiedi."
+    ],
+    [
+     "Per la segreteria: deleghe e diete",
+     "Se a prenderlo verranno altre persone, prepara le deleghe: alla scuola dell'infanzia comunale di Prato, per esempio, i delegati devono essere maggiorenni, la delega si firma davanti al personale e serve la copia del documento di chi è delegato. Se serve una dieta speciale, chiedi il modulo: per motivi di salute ci vuole il certificato del pediatra."
+    ],
+    [
+     "Medicine: solo con il modulo del pediatra",
+     "Al nido e a scuola le medicine non si danno, salvo i casi autorizzati dal pediatra su un modulo apposito. Se tuo figlio ne ha bisogno, parlane prima con il pediatra e con la scuola."
+    ],
+    [
+     "Cosa lasciare a casa",
+     "Collane, braccialetti e orecchini: si possono rompere o perdere, e non sono sicuri. Lascia a casa anche i vestiti a cui tieni."
+    ]
+   ],
+   "errori": [
+    "Comprare tutto prima di avere l'elenco del proprio nido o della propria scuola.",
+    "Dimenticare il nome su vestiti e scarpe.",
+    "Mettere collanine o braccialetti per il primo giorno.",
+    "Aspettare il primo giorno per le deleghe di chi lo andrà a prendere."
+   ],
+   "checklist": [
+    "Elenco del nido o della scuola ricevuto",
+    "Sacca di tela con il nome",
+    "Cambio completo adatto alla stagione",
+    "Sacchetti per i vestiti sporchi",
+    "Pannolini, se servono",
+    "Calzini antiscivolo o scarpe per la sezione",
+    "Ciuccio o pupazzo della nanna, se li usa",
+    "Nome su vestiti, scarpe e oggetti",
+    "Deleghe consegnate in segreteria",
+    "Modulo per la dieta, se serve",
+    "Niente collane, braccialetti, orecchini"
+   ],
+   "fonti": [
+    "CR-21",
+    "CR-22",
+    "CR-08",
+    "CR-09",
+    "CR-14",
+    "CR-20"
+   ],
+   "avvertenza": "Informazioni generali tratte dagli elenchi dei servizi comunali di Venezia, Prato e Firenze e dalle indicazioni dell'Azienda USL di Bologna, aggiornate a novembre 2026. Ogni nido e ogni scuola ha il suo elenco: fa fede quello che ti danno loro.",
+   "domanda": "Cosa serve per il primo giorno di nido o di scuola dell'infanzia",
+   "correlate": [
+    "inserimento-al-nido",
+    "togliere-il-pannolino",
+    "mensa-scolastica-diete-e-costi"
+   ],
+   "per": [
+    "bambino",
+    [
+     "0-1",
+     "1-3",
+     "3-6"
+    ]
+   ],
+   "chiavi_ricerca": "cosa portare corredo corredino lista nido asilo materna scuola dell'infanzia primo giorno sacca cambio cambi vestiti scarpe pantofole calzini antiscivolo zainetto",
+   "frasi": [
+    "corredo",
+    "corredin",
+    "cosa (devo |si deve |bisogna |serve )?portare (al nido|all asilo|alla materna|a scuola|alla scuola|all infanzia)",
+    "primo giorno (di |al |alla |all )?(nido|asilo|materna|scuola dell infanzia)"
+   ]
+  },
+  {
+   "slug": "schermi-e-bambini",
+   "categoria": "Stare bene",
+   "argomento": "crescita",
+   "data": "2026-11-13",
+   "titolo": "Schermi e bambini: le indicazioni ufficiali, età per età",
+   "titolo_seo": "Bambini e schermi: quanto tempo, età per età",
+   "sommario": "Tv, tablet e telefono: cosa dicono l'Organizzazione Mondiale della Sanità, l'Istituto Superiore di Sanità e i pediatri italiani, dalla nascita ai 13 anni. E qualche regola semplice per organizzarsi in casa.",
+   "tempo": "Qualche minuto per decidere le regole di casa",
+   "serve": "Un posto fisso per tablet e telefoni, libri e giochi a portata di mano",
+   "strumento": "preparo",
+   "perche_titolo": "Le indicazioni, in breve",
+   "tabella": {
+    "titolo": "Il tempo davanti agli schermi, età per età",
+    "colonne": [
+     "Età",
+     "Cosa dicono le indicazioni"
+    ],
+    "righe": [
+     [
+      "Meno di 2 anni",
+      "Niente schermi: per l'OMS non sono raccomandati sotto i 2 anni; la SIP dice nessun dispositivo"
+     ],
+     [
+      "Da 2 a 5 anni",
+      "Meno di un'ora al giorno, e meno è meglio, sempre con un adulto"
+     ],
+     [
+      "Da 5 a 13 anni",
+      "Meno di due ore al giorno, con il controllo di un adulto; niente smartphone personale prima dei 13 anni"
+     ]
+    ]
+   },
+   "perche": [
+    "L'Organizzazione Mondiale della Sanità, nelle linee guida del 2019 per i bambini sotto i 5 anni, dice: sotto l'anno niente schermi; a 1 anno il tempo passato fermo davanti a uno schermo non è raccomandato; a 2 anni, e poi tra i 3 e i 4, non più di un'ora al giorno, e meno è meglio. Quando il bambino sta fermo, l'OMS incoraggia a leggere e a raccontare storie insieme a un adulto.",
+    "La Società Italiana di Pediatria ha confermato e rafforzato le sue raccomandazioni nel 2026: nessun dispositivo sotto i 2 anni, meno di un'ora al giorno tra i 2 e i 5 anni, meno di due ore dopo i 5 anni, sempre con la supervisione di un adulto. E consiglia di rinviare lo smartphone personale almeno fino ai 13 anni.",
+    "Le cose stanno migliorando: secondo l'indagine 2025 dell'Istituto Superiore di Sanità, i bambini di 11-15 mesi che passano del tempo davanti a uno schermo sono scesi dal 58,1% del 2022 al 46,3%."
+   ],
+   "passi": [
+    [
+     "Sotto i 2 anni, niente schermi",
+     "Né video sul telefono né cartoni in tv per lui. Le indicazioni italiane chiedono di evitare l'esposizione prima dei 2 anni e di informare tutti gli adulti che si occupano del bambino: nonni, babysitter, chi lo tiene quando non ci sei."
+    ],
+    [
+     "Dai 2 ai 5 anni, meno di un'ora al giorno",
+     "Meglio se guardate insieme e se sono contenuti adatti alla sua età. L'OMS lo dice in tre parole: meno è meglio."
+    ],
+    [
+     "Niente schermi a tavola e prima di dormire",
+     "La SIP consiglia di non usare dispositivi durante i pasti e nel tempo prima di addormentarsi."
+    ],
+    [
+     "Scegli un posto fisso per i dispositivi",
+     "Un cassetto, una mensola fuori dalla vista, dove tablet e telefoni «dormono» la sera. Così la regola si vede, e non devi ripeterla ogni volta."
+    ],
+    [
+     "Al posto dello schermo: movimento, gioco, libri",
+     "Per l'OMS, tra 1 e 4 anni i bambini dovrebbero muoversi almeno 180 minuti al giorno, anche non di fila. La SIP consiglia gioco all'aperto, sport, lettura e gioco creativo. Tieni a portata di mano qualche libro e qualche gioco: sono l'alternativa più facile."
+    ],
+    [
+     "Dopo i 5 anni, regole chiare",
+     "Meno di due ore al giorno, con un adulto che controlla. La SIP consiglia di non dare uno smartphone personale prima dei 13 anni, di non lasciare usare internet senza supervisione prima di quell'età e di ritardare il più possibile i social, anche quando la legge li consente."
+    ],
+    [
+     "Parlane con il pediatra",
+     "La SIP chiede ai pediatri di parlare regolarmente con le famiglie delle abitudini digitali. Al prossimo bilancio di salute puoi chiedere come organizzarvi in casa: scrivi prima le domande."
+    ]
+   ],
+   "errori": [
+    "Usare il telefono per farlo mangiare o addormentare.",
+    "Lasciarlo solo davanti allo schermo: a ogni età serve un adulto vicino.",
+    "Dargli uno smartphone tutto suo da piccolo: la SIP consiglia di aspettare almeno i 13 anni.",
+    "Cambiare le regole ogni giorno: poche regole chiare si ricordano meglio."
+   ],
+   "checklist": [
+    "Niente schermi sotto i 2 anni",
+    "Dai 2 ai 5 anni, meno di un'ora al giorno",
+    "Niente schermi a tavola",
+    "Niente schermi prima di dormire",
+    "Un posto fisso per i dispositivi",
+    "Libri e giochi a portata di mano",
+    "Regole spiegate a nonni e babysitter",
+    "Domande per il pediatra scritte"
+   ],
+   "fonti": [
+    "CR-01",
+    "CR-02",
+    "CR-03",
+    "CR-04",
+    "CR-05"
+   ],
+   "avvertenza": "Informazioni generali tratte dalle indicazioni dell'Organizzazione Mondiale della Sanità, dell'Istituto Superiore di Sanità e della Società Italiana di Pediatria, aggiornate a novembre 2026. Sono indicazioni per tutti i bambini: per il tuo, e per qualunque dubbio sulla sua crescita, il riferimento è il pediatra.",
+   "domanda": "Quanto tempo davanti agli schermi, età per età",
+   "correlate": [
+    "quanto-dorme-un-bambino",
+    "routine-della-nanna",
+    "domande-per-il-pediatra"
+   ],
+   "per": [
+    "bambino",
+    [
+     "0-1",
+     "1-3",
+     "3-6",
+     "6-12"
+    ]
+   ],
+   "chiavi_ricerca": "schermi schermo tv televisione televisore cartoni cartone animato tablet ipad telefonino cellulare smartphone video youtube quante ore tempo digitale dispositivi social videogiochi",
+   "frasi": [
+    "scherm",
+    "tablet",
+    "smartphone",
+    "cellular",
+    "telefonin",
+    "cartoni",
+    "cartone animat",
+    "televis",
+    "videogioc"
+   ]
+  },
+  {
+   "slug": "togliere-il-pannolino",
+   "categoria": "Stare bene",
+   "argomento": "crescita",
+   "data": "2026-11-13",
+   "titolo": "Togliere il pannolino: le indicazioni dei pediatri, senza fretta",
+   "titolo_seo": "Togliere il pannolino: quando e come, secondo i pediatri",
+   "sommario": "Di solito succede tra i 2 e i 3 anni, ma ogni bambino ha i suoi tempi. I segnali da guardare, come accompagnarlo un passo alla volta, cosa evitare e quando parlarne con il pediatra.",
+   "tempo": "Settimane o mesi: dipende dal bambino",
+   "serve": "Un vasino, vestiti facili da togliere, pazienza",
+   "strumento": "preparo",
+   "perche_titolo": "Le indicazioni, in breve",
+   "perche": [
+    "Per la Società Italiana di Pediatria il periodo più adatto è di solito tra i 2 e i 3 anni, ma ogni bambino ha i suoi tempi. La stagione conta poco: l'estate non è per forza il momento giusto.",
+    "I pediatri sconsigliano di forzare o anticipare i tempi per esigenze della scuola o della famiglia, per esempio in vista della scuola materna, e di affidarsi ai metodi che promettono di togliere il pannolino in tempi record: spesso sono fonte di stress per tutta la famiglia."
+   ],
+   "passi": [
+    [
+     "Guarda i segnali",
+     "Comincia ad avvertire lo stimolo, ti dice che vuole fare la pipì, oppure, dopo averla fatta, cerca di togliersi il pannolino. Sono i segnali che i pediatri indicano come vicini a un buon controllo."
+    ],
+    [
+     "Fai conoscere il vasino",
+     "Mettilo ogni tanto in bagno e spiega a cosa serve. Si può anche giocare: i pediatri suggeriscono, per esempio, di far fare il bagno a una paperella nel vasino."
+    ],
+    [
+     "Festeggia ogni passo avanti",
+     "Abbi fiducia nelle sue capacità e applaudi ogni piccolo progresso nella giusta direzione."
+    ],
+    [
+     "Niente rimproveri, niente pressioni",
+     "Gli incidenti fanno parte del percorso. I pediatri chiedono di non rimproverare, di non fare pressioni e di non dubitare delle capacità del bambino."
+    ],
+    [
+     "Vestiti facili da togliere",
+     "Pantaloni con l'elastico, niente bretelle né cinture: così riesce a spogliarsi da solo, più in fretta."
+    ],
+    [
+     "Parlane con nido e scuola",
+     "Al nido i pannolini si portano finché servono. Alcune scuole dell'infanzia, invece, chiedono che il bambino arrivi senza pannolino. Parlane con le educatrici e con il pediatra: i pediatri raccomandano di non forzare i tempi per esigenze di scuola."
+    ],
+    [
+     "Quando ha imparato: carta igienica e mani",
+     "Quando il bambino controlla pipì e cacca, è il momento di insegnargli a usare la carta igienica e a lavarsi le mani, a casa come al nido."
+    ],
+    [
+     "Se hai dubbi, chiedi al pediatra",
+     "Per qualunque dubbio o difficoltà, il riferimento è il pediatra. Scrivi prima cosa hai notato, così alla visita non dimentichi niente."
+    ]
+   ],
+   "errori": [
+    "Forzare i tempi perché sta per cominciare la scuola materna.",
+    "Rimproverarlo dopo un incidente.",
+    "Seguire i metodi che promettono risultati in pochi giorni.",
+    "Scegliere l'estate solo perché è estate: la stagione conta poco."
+   ],
+   "checklist": [
+    "Ho notato i segnali",
+    "Vasino in bagno, a portata",
+    "Vestiti facili da togliere",
+    "Niente rimproveri",
+    "Ogni progresso festeggiato",
+    "Ne ho parlato con le educatrici",
+    "Domande per il pediatra scritte"
+   ],
+   "fonti": [
+    "CR-06",
+    "CR-07",
+    "CR-08",
+    "CR-21",
+    "CR-22"
+   ],
+   "avvertenza": "Informazioni generali tratte dalle indicazioni della Società Italiana di Pediatria, dell'Azienda USL di Bologna e dei servizi comunali di Venezia, aggiornate a novembre 2026. Non ci sono tempi uguali per tutti: per il tuo bambino, e per qualunque dubbio, il riferimento è il pediatra.",
+   "domanda": "Quando e come togliere il pannolino",
+   "correlate": [
+    "primo-giorno-nido-materna-cosa-serve",
+    "domande-per-il-pediatra",
+    "inserimento-al-nido"
+   ],
+   "per": [
+    "bambino",
+    [
+     "1-3",
+     "3-6"
+    ]
+   ],
+   "chiavi_ricerca": "pannolino pannolini togliere spannolinamento vasino water riduttore mutandine controllo sfinteri senza pannolino",
+   "frasi": [
+    "pannolin",
+    "spannolin",
+    "vasino"
+   ]
+  },
+  {
+   "slug": "mensa-scolastica-diete-e-costi",
+   "categoria": "Organizzarsi",
+   "argomento": "organizzazione",
+   "data": "2026-11-13",
+   "titolo": "La mensa scolastica: diete speciali, menù religiosi, costi e agevolazioni",
+   "titolo_seo": "Mensa scolastica: dieta speciale, menù religioso e costi",
+   "sommario": "La mensa di nidi e scuole la organizza il Comune. Come si chiede una dieta per motivi di salute o un menù per motivi religiosi o etici, quanto si paga e come si ottiene la tariffa ridotta con l'ISEE.",
+   "tempo": "Mezz'ora per i moduli, prima dell'inizio della scuola",
+   "serve": "SPID o CIE, ISEE per i minorenni, il certificato del pediatra per le diete di salute",
+   "strumento": "gestionale",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "La mensa di nidi e scuole è un servizio del Comune, o di un gestore scelto dal Comune: regole, moduli e tariffe cambiano da città a città. Le trovi sul sito del Comune, tra i servizi scolastici o alla voce ristorazione scolastica.",
+    "Le diete sono di due tipi. Quelle per motivi di salute, per esempio per un'allergia, un'intolleranza o la celiachia, si chiedono con un certificato medico. Quelle per motivi religiosi o etici, come il menù senza maiale, senza carne o vegetariano, si chiedono con un'autocertificazione, senza certificato."
+   ],
+   "tabella": {
+    "titolo": "Un esempio di tariffe: Comune di Firenze, anno scolastico 2026/2027",
+    "colonne": [
+     "ISEE",
+     "Costo di un pasto"
+    ],
+    "righe": [
+     [
+      "Da 0 a 5.500 euro",
+      "1,00 euro"
+     ],
+     [
+      "Oltre 32.500 euro",
+      "4,90 euro"
+     ],
+     [
+      "Senza domanda di agevolazione",
+      "4,90 euro, la tariffa massima"
+     ]
+    ]
+   },
+   "passi": [
+    [
+     "Iscrivilo alla mensa",
+     "Si fa con il Comune, spesso online con SPID o CIE: a Genova, per esempio, anche le diete si chiedono online, dal Fascicolo del cittadino. In alcuni Comuni c'è una quota d'iscrizione: a Firenze, nel 2026/2027, 18,08 euro l'anno."
+    ],
+    [
+     "Chiedi la tariffa ridotta con l'ISEE",
+     "Il costo di un pasto dipende dall'ISEE. A Firenze, nel 2026/2027, va da 1 euro a 4,90 euro; chi non presenta la domanda di agevolazione paga la tariffa massima. Lì la domanda si rifà ogni anno, entro l'inizio della scuola: se arriva dopo, lo sconto vale dal mese in cui la presenti."
+    ],
+    [
+     "Guarda gli sconti per i fratelli",
+     "A Firenze, per esempio, c'è il 20% in meno dal secondo figlio, e per le famiglie numerose con ISEE fino a 32.500 euro lo sconto sale al 30% con tre figli, 40% con quattro, 50% con cinque o più. Ogni Comune ha i suoi."
+    ],
+    [
+     "Dieta per motivi di salute: serve il certificato",
+     "Lo scrive il pediatra, il medico di famiglia o lo specialista, e si consegna con il modulo del Comune. Deve elencare tutti gli alimenti da escludere e per quanto tempo: a Genova i certificati senza queste indicazioni vengono respinti."
+    ],
+    [
+     "Menù religioso o etico: basta un'autocertificazione",
+     "Si compila il modulo del Comune o della scuola. A Genova, per esempio, si può chiedere un menù senza maiale, senza carne, senza carne e pesce, o senza alimenti di origine animale; al nido, per quest'ultimo, serve anche un certificato del medico."
+    ],
+    [
+     "Consegna tutto prima del primo giorno",
+     "Le diete hanno bisogno di qualche giorno per partire: a Prato vengono attivate entro 7 giorni dalla consegna dei documenti, in Romagna il servizio risponde in 5-7 giorni lavorativi."
+    ],
+    [
+     "Per un malessere passeggero, chiedi alla scuola",
+     "Una dieta leggera per pochi giorni, dove è prevista, si chiede direttamente alla scuola, senza certificato: a Genova per non più di 48 ore, a Prato fino a tre giorni."
+    ],
+    [
+     "Paga in tempo, e se sei in difficoltà dillo",
+     "Il Comune manda gli avvisi di pagamento. Se non si paga, parte la riscossione coattiva. Se sei in difficoltà, parlane subito con l'ufficio scuola o con i servizi sociali del Comune: a Firenze, per esempio, chi è seguito dai servizi sociali nella fascia più bassa non paga."
+    ]
+   ],
+   "errori": [
+    "Dimenticare la domanda di agevolazione: senza, si paga la tariffa massima.",
+    "Portare un certificato generico, senza l'elenco degli alimenti da escludere.",
+    "Chiedere la dieta il primo giorno di scuola: servono alcuni giorni per attivarla.",
+    "Pensare che il menù religioso o etico richieda il certificato del medico."
+   ],
+   "checklist": [
+    "Iscrizione alla mensa fatta",
+    "ISEE per i minorenni valido",
+    "Domanda di tariffa ridotta presentata",
+    "Certificato con gli alimenti da escludere, se serve",
+    "Modulo per la dieta consegnato",
+    "Autocertificazione per il menù religioso o etico, se serve",
+    "Scadenze dei pagamenti in calendario"
+   ],
+   "fonti": [
+    "CR-12",
+    "CR-13",
+    "CR-08",
+    "CR-09",
+    "CR-10",
+    "CR-14"
+   ],
+   "avvertenza": "Informazioni generali tratte dalle regole dei Comuni di Genova, Firenze e Prato e dalle indicazioni delle Aziende USL di Bologna e della Romagna, aggiornate a novembre 2026, con le tariffe dell'anno scolastico 2026/2027. Tariffe e moduli cambiano ogni anno e da Comune a Comune: ricontrolleremo questa pagina a gennaio. Per il tuo caso valgono le regole del tuo Comune.",
+   "domanda": "Come si chiede una dieta speciale a mensa e quanto costa",
+   "ricontrolla": "2027-01",
+   "correlate": [
+    "primo-giorno-nido-materna-cosa-serve",
+    "iscrizione-scuola-primaria",
+    "trasporto-scolastico-scuolabus"
+   ],
+   "per": [
+    "bambino",
+    [
+     "1-3",
+     "3-6",
+     "6-12"
+    ]
+   ],
+   "chiavi_ricerca": "mensa refezione pasto pasti scolastici scuola dieta speciale intolleranza celiachia celiaco menu religioso maiale halal vegetariano vegano tariffa costo quanto costa isee agevolazione esenzione",
+   "frasi": [
+    "mensa",
+    "refezion",
+    "diet[ae] special",
+    "menu (religios|etic|senza maiale|senza carne|vegetarian)"
+   ]
+  },
+  {
+   "slug": "disabilita-a-scuola-sostegno-e-pei",
+   "categoria": "Organizzarsi",
+   "argomento": "documenti",
+   "data": "2026-11-13",
+   "titolo": "Bambini con disabilità a scuola: certificazione, sostegno e PEI",
+   "titolo_seo": "Disabilità a scuola: certificazione, sostegno e PEI",
+   "sommario": "Dalla scuola dell'infanzia in su, la scuola costruisce con la famiglia un piano per ogni alunno con disabilità. I passi: la certificazione, i documenti da consegnare, il GLO e il PEI, il piano scritto ogni anno insieme agli insegnanti. E a chi rivolgersi.",
+   "tempo": "Alcuni mesi per la certificazione; poi gli incontri a scuola durante l'anno",
+   "serve": "Il pediatra, il verbale di accertamento, il Profilo di funzionamento, SPID o CIE",
+   "strumento": "gestionale",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Le regole per l'inclusione scolastica degli alunni con disabilità stanno nella legge 104 del 1992 e nel decreto legislativo 66 del 2017. Al centro c'è il PEI, il Piano educativo individualizzato: lo scrive ogni anno il GLO, il gruppo di lavoro che riunisce gli insegnanti della classe e i genitori.",
+    "Per cominciare servono due documenti: il verbale che accerta la disabilità e il Profilo di funzionamento, scritto dagli specialisti. In questi anni la procedura per la certificazione sta cambiando: dal 1° marzo 2026 in 60 province vale già la riforma della disabilità, che secondo l'INPS dal 1° gennaio 2027 varrà in tutta Italia."
+   ],
+   "passi": [
+    [
+     "Parti dal pediatra",
+     "Il primo passo è il certificato medico introduttivo, che avvia l'accertamento della disabilità all'INPS. Lo può compilare anche il pediatra di libera scelta. Chiedigli quale procedura vale nella tua provincia."
+    ],
+    [
+     "Controlla quale procedura vale da voi",
+     "Nelle 60 province dove è attiva la riforma basta il certificato del medico, senza una domanda separata, e la valutazione la fa l'INPS. Nelle altre resta la procedura di prima: il certificato del medico e poi la domanda all'INPS. Un patronato può aiutarti."
+    ],
+    [
+     "Il Profilo di funzionamento",
+     "Lo scrivono gli specialisti, partendo dal verbale, ed è la base su cui la scuola costruisce il PEI. Dove non è ancora pronto si usa la Diagnosi funzionale. Tempi e uffici cambiano da Regione a Regione: in Veneto, per esempio, la richiesta si fa al Distretto sociosanitario entro il 31 gennaio, per l'anno scolastico dopo."
+    ],
+    [
+     "Consegna i documenti alla scuola",
+     "All'iscrizione, la domanda si completa consegnando alla scuola la certificazione e la Diagnosi funzionale; il Profilo di funzionamento si porta appena è pronto. In alcune zone, con il tuo consenso scritto, li manda direttamente l'Azienda sanitaria."
+    ],
+    [
+     "Partecipa al GLO",
+     "Il GLO è il gruppo che si occupa di tuo figlio a scuola: gli insegnanti della classe, presieduti dal dirigente scolastico, e i genitori. Di solito partecipa anche uno specialista sanitario. Porta le tue osservazioni: i genitori sono interlocutori essenziali."
+    ],
+    [
+     "Il PEI, ogni anno",
+     "Il GLO scrive e approva il PEI, di norma entro ottobre. Alla prima certificazione se ne scrive uno provvisorio entro giugno, per preparare l'anno dopo. Durante l'anno si verifica e si può modificare in qualsiasi momento; a fine anno c'è la verifica finale."
+    ],
+    [
+     "Sostegno a scuola, assistenza dal Comune",
+     "L'insegnante di sostegno lo assegna la scuola: il dirigente rileva il bisogno e chiede le risorse agli uffici competenti. L'assistenza per l'autonomia e la comunicazione la dà invece il Comune, in base alle ore proposte dal GLO e chieste dal dirigente. Alcuni Comuni hanno anche un trasporto dedicato agli alunni con disabilità certificata: a Teramo, per esempio, dalla scuola dell'infanzia alle superiori."
+    ],
+    [
+     "A chi rivolgerti",
+     "Per la certificazione: il pediatra e un patronato. Per il Profilo di funzionamento: l'Azienda sanitaria. A scuola: il dirigente scolastico e gli insegnanti della classe. Per assistenza e trasporto: l'ufficio scuola del Comune."
+    ]
+   ],
+   "errori": [
+    "Consegnare i documenti a ridosso di settembre: la scuola li usa già in primavera per preparare l'anno dopo.",
+    "Non andare agli incontri del GLO: il punto di vista dei genitori fa parte del PEI.",
+    "Lasciar passare la data di revisione scritta nel verbale.",
+    "Confondere il sostegno della scuola con l'assistenza del Comune: si chiedono in modo diverso."
+   ],
+   "checklist": [
+    "Certificato introduttivo chiesto al pediatra",
+    "Procedura della mia provincia verificata",
+    "Verbale di accertamento ricevuto",
+    "Profilo di funzionamento o Diagnosi funzionale",
+    "Documenti consegnati alla scuola",
+    "Date degli incontri del GLO in calendario",
+    "PEI letto, con le mie osservazioni",
+    "Data di revisione del verbale segnata"
+   ],
+   "fonti": [
+    "CR-30",
+    "CR-29",
+    "CR-25",
+    "CR-23",
+    "CR-26",
+    "CR-27",
+    "CR-28",
+    "CR-15"
+   ],
+   "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS, del Ministero dell'Istruzione e del Merito e di un suo ufficio territoriale, aggiornate a novembre 2026. La procedura di certificazione sta cambiando e tempi e uffici variano da Regione a Regione: ricontrolleremo questa pagina a gennaio, quando la riforma della disabilità dovrebbe valere in tutta Italia. Per il tuo caso chiedi al pediatra, all'Azienda sanitaria, alla scuola o a un patronato.",
+   "domanda": "Come funzionano certificazione, sostegno e PEI a scuola",
+   "ricontrolla": "2027-01",
+   "correlate": [
+    "dsa-certificazione-e-pdp",
+    "permessi-legge-104",
+    "iscrizione-scuola-primaria"
+   ],
+   "per": [
+    "bambino",
+    [
+     "3-6",
+     "6-12",
+     "13-18"
+    ]
+   ],
+   "chiavi_ricerca": "disabilità disabile handicap sostegno insegnante di sostegno maestra di sostegno pei glo piano educativo individualizzato certificazione inclusione scolastica profilo di funzionamento diagnosi funzionale assistente educatore autismo",
+   "frasi": [
+    "insegnante di sostegno",
+    "maestr[ae] di sostegno",
+    "sostegno (a |scolastic)",
+    "pei",
+    "glo",
+    "inclusione scolastic",
+    "disabil\\w* (a|alla|e la|e) scuola",
+    "alunn\\w* (con )?disabil"
+   ]
+  },
+  {
+   "slug": "dsa-certificazione-e-pdp",
+   "categoria": "Organizzarsi",
+   "argomento": "documenti",
+   "data": "2026-11-13",
+   "titolo": "DSA a scuola: la certificazione e il PDP, cosa fa la famiglia",
+   "titolo_seo": "DSA a scuola: certificazione e PDP, i passi per la famiglia",
+   "sommario": "Dislessia, disortografia, disgrafia, discalculia: chi fa la diagnosi, cosa si consegna alla scuola e come funziona il PDP, il piano scritto dagli insegnanti con la famiglia. Solo la procedura: la valutazione spetta agli specialisti.",
+   "tempo": "Alcuni mesi per la valutazione; poi un incontro a scuola",
+   "serve": "Le osservazioni degli insegnanti, la diagnosi, un appuntamento in segreteria",
+   "strumento": "gestionale",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "La legge 170 del 2010 riconosce come disturbi specifici di apprendimento, i DSA, la dislessia, la disgrafia, la disortografia e la discalculia. Riguardano la lettura, la scrittura e il calcolo, in bambini con capacità cognitive adeguate, e si manifestano con l'inizio della scuola.",
+    "Con la diagnosi, la scuola scrive un Piano didattico personalizzato, il PDP, con gli strumenti compensativi e le misure dispensative che servono. L'obiettivo è che tuo figlio raggiunga gli stessi traguardi dei compagni."
+   ],
+   "passi": [
+    [
+     "Prima, la scuola osserva e aiuta",
+     "Se un bambino fa fatica, la scuola mette in atto prima attività mirate. Se le difficoltà restano, gli insegnanti ne parlano con la famiglia. In Piemonte, per esempio, compilano insieme ai genitori una scheda di collaborazione, a partire dal secondo quadrimestre della seconda primaria."
+    ],
+    [
+     "Non prima della fine della seconda",
+     "Le indicazioni dicono di non anticipare la diagnosi prima della fine della classe seconda della primaria. Se hai dubbi prima, parlane con gli insegnanti e con il pediatra."
+    ],
+    [
+     "La diagnosi: servizio pubblico o centro accreditato",
+     "La diagnosi deve venire dal servizio sanitario pubblico o da strutture private accreditate dalla Regione. Quelle di studi privati non accreditati possono essere accolte con riserva: in Friuli Venezia Giulia, per esempio, si chiede di farle convalidare dal servizio pubblico. Chiedi all'Azienda sanitaria come si accede da voi: in Piemonte il percorso deve concludersi entro 6 mesi da quando la famiglia consegna la scheda."
+    ],
+    [
+     "Consegna la diagnosi alla scuola",
+     "Portala in segreteria. Se ce l'hai già quando iscrivi tuo figlio, l'iscrizione si completa consegnandola."
+    ],
+    [
+     "Il PDP: lo scrivono gli insegnanti, con te",
+     "Lo scrive il team degli insegnanti o il consiglio di classe, e va concordato e condiviso con la famiglia. In Friuli Venezia Giulia, per esempio, va scritto entro tre mesi da quando la scuola riceve i documenti; se li ha già all'iscrizione, entro il 30 novembre."
+    ],
+    [
+     "Leggi bene il PDP",
+     "Il PDP elenca gli strumenti compensativi e le misure dispensative decisi per tuo figlio. Leggilo con calma prima dell'incontro e chiedi cosa vuol dire ogni voce e come verrà applicata in classe."
+    ],
+    [
+     "Al cambio di scuola, l'aggiornamento",
+     "La diagnosi non va rifatta, ma il profilo va aggiornato, di norma al passaggio da un ciclo scolastico all'altro e non prima di tre anni dal precedente."
+    ],
+    [
+     "Se la difficoltà è un'altra",
+     "Per le difficoltà che non rientrano nella legge 104 né nella legge 170, il consiglio di classe può decidere comunque di scrivere un PDP. Chiedi un colloquio agli insegnanti."
+    ]
+   ],
+   "errori": [
+    "Rivolgersi a uno studio privato senza chiedere prima se è accreditato.",
+    "Tenere la diagnosi nel cassetto: senza consegnarla, la scuola non può scrivere il PDP.",
+    "Firmare il PDP senza averlo letto e capito.",
+    "Aspettarsi una diagnosi già in prima elementare."
+   ],
+   "checklist": [
+    "Ho parlato con gli insegnanti",
+    "Scheda o relazione della scuola ricevuta",
+    "Valutazione chiesta all'Azienda sanitaria o a un centro accreditato",
+    "Diagnosi consegnata in segreteria",
+    "Incontro per il PDP fissato",
+    "PDP letto e condiviso",
+    "Aggiornamento al cambio di ciclo in calendario"
+   ],
+   "fonti": [
+    "CR-31",
+    "CR-32",
+    "CR-33",
+    "CR-23"
+   ],
+   "avvertenza": "Informazioni generali sulla procedura, tratte dalla legge 170 del 2010 e dalle indicazioni del Ministero dell'Istruzione e del Merito, della Regione Piemonte e dell'Ufficio scolastico regionale del Friuli Venezia Giulia, aggiornate a novembre 2026. Non è una guida alla diagnosi: se hai dubbi sulle difficoltà di tuo figlio, parlane con gli insegnanti e con il pediatra. Tempi e modi di accesso ai servizi cambiano da Regione a Regione.",
+   "domanda": "Come funzionano diagnosi di DSA e PDP a scuola",
+   "correlate": [
+    "disabilita-a-scuola-sostegno-e-pei",
+    "iscrizione-scuola-primaria",
+    "domande-per-il-pediatra"
+   ],
+   "per": [
+    "bambino",
+    [
+     "6-12",
+     "13-18"
+    ]
+   ],
+   "chiavi_ricerca": "dsa dislessia dislessico dislessica disgrafia disortografia discalculia disturbi specifici apprendimento pdp piano didattico personalizzato certificazione diagnosi legge 170 strumenti compensativi misure dispensative bes",
+   "frasi": [
+    "dsa",
+    "dislessi",
+    "discalculi",
+    "disgrafi",
+    "disortografi",
+    "pdp",
+    "piano didattico"
+   ]
+  },
+  {
+   "slug": "centri-estivi-aiuti",
+   "categoria": "Organizzarsi",
+   "argomento": "organizzazione",
+   "data": "2026-11-13",
+   "titolo": "Centri estivi: quali aiuti esistono nel 2026 e come informarsi",
+   "titolo_seo": "Bonus centri estivi 2026: cosa esiste davvero",
+   "sommario": "Un bonus nazionale uguale per tutti non c'è. Nel 2026 ci sono stati il bando INPS per i figli dei dipendenti pubblici e i contributi dei Comuni, con fondi dello Stato e delle Regioni. Chi poteva chiederli, quando escono, come non perderli l'anno prossimo.",
+   "tempo": "Mezz'ora per la domanda, in primavera",
+   "serve": "SPID o CIE, ISEE per i minorenni, IBAN, le ricevute del centro estivo",
+   "strumento": "gestionale",
+   "perche_titolo": "Cosa esiste, in breve",
+   "perche": [
+    "Nel 2026 non esiste un «bonus centri estivi» nazionale che spetti a tutte le famiglie. Esistono aiuti diversi, che si chiedono a enti diversi: l'INPS, per i figli dei dipendenti e dei pensionati pubblici, e i Comuni, che usano fondi dello Stato o della Regione e decidono requisiti, importi e date.",
+    "Per il 2026 il Dipartimento per le politiche della famiglia ha assegnato ai Comuni 60 milioni di euro, divisi in base al numero di minori residenti. Ogni Comune decide come usarli: a Taranto, per esempio, sono diventati un rimborso alle famiglie per il centro estivo scelto."
+   ],
+   "tabella": {
+    "pila": true,
+    "titolo": "Due esempi di contributi dei Comuni, estate 2026",
+    "colonne": [
+     "Comune",
+     "Per chi",
+     "Quanto"
+    ],
+    "righe": [
+     [
+      "Taranto",
+      "Bambini e ragazzi residenti da 3 a 14 anni, ISEE fino a 25.000 euro",
+      "Rimborso fino a 400 euro, 800 con disabilità certificata"
+     ],
+     [
+      "Bologna",
+      "Da 3 a 13 anni, fino a 17 con disabilità certificata; ISEE fino a 26.000 euro (contributo regionale) o 35.000 euro (comunale)",
+      "100 euro a settimana, fino a 300 euro"
+     ]
+    ]
+   },
+   "passi": [
+    [
+     "Se lavorate nel pubblico, guarda il bando INPS",
+     "L'INPS dà un contributo per i centri estivi diurni ai figli, da 3 a 14 anni, di dipendenti e pensionati della pubblica amministrazione iscritti alla Gestione unitaria delle prestazioni creditizie e sociali. Copre da una a quattro settimane tra giugno e settembre, e l'importo dipende dall'ISEE. Nel 2026 le domande si sono fatte dal 4 al 25 giugno, online sul Portale prestazioni welfare."
+    ],
+    [
+     "Controlla il sito del Comune in primavera",
+     "Molti Comuni pubblicano un avviso per le famiglie: nel 2026, a Bologna, le domande si facevano dal 26 marzo al 20 aprile; a Taranto entro il 7 giugno. Cerca «centri estivi» sul sito del tuo Comune, o chiedi all'ufficio scuola."
+    ],
+    [
+     "Prepara l'ISEE per i minorenni",
+     "Gli aiuti del 2026 che abbiamo controllato dipendono dall'ISEE: a Taranto la soglia era 25.000 euro, a Bologna 26.000 o 35.000 (lì senza ISEE per i bambini con disabilità certificata). Con un ISEE già pronto, la domanda si fa in pochi minuti."
+    ],
+    [
+     "Scegli un centro in regola",
+     "Per avere il rimborso, il centro estivo deve avere le autorizzazioni previste: a Taranto, per esempio, non erano ammessi i centri con pernottamento. Per l'INPS il centro deve essere di un unico fornitore, scelto da te."
+    ],
+    [
+     "Tieni pronte ricevute e IBAN",
+     "Il rimborso arriva dopo, sul conto di chi ha fatto domanda: a Taranto i documenti andavano caricati entro il 15 settembre 2026; a Bologna serviva un IBAN intestato o cointestato a chi chiedeva il contributo."
+    ],
+    [
+     "Controlla se gli aiuti si sommano",
+     "Non sempre: a Bologna il contributo si poteva sommare ad altri, ma andava dichiarato; a Taranto non si poteva sommare al bando INPS 2026. Leggi l'avviso prima di fare domanda."
+    ],
+    [
+     "Segna le date per il 2027",
+     "Gli avvisi cambiano ogni anno. Metti in calendario un promemoria a marzo, per il sito del Comune, e uno a fine maggio, per il bando INPS: nel 2026 è uscito il 29 maggio."
+    ]
+   ],
+   "errori": [
+    "Cercare un «bonus centri estivi» nazionale: nel 2026 gli aiuti erano dell'INPS o dei Comuni.",
+    "Aspettare l'estate per informarsi: alcuni Comuni aprono le domande già a marzo.",
+    "Fare domanda senza un ISEE valido.",
+    "Chiedere due contributi senza leggere se si possono sommare."
+   ],
+   "checklist": [
+    "ISEE per i minorenni valido",
+    "Sito del Comune controllato a marzo",
+    "Bando INPS controllato, se lavorate nel pubblico",
+    "Centro estivo autorizzato scelto",
+    "IBAN di chi fa domanda",
+    "Ricevute conservate",
+    "Documenti caricati entro la scadenza"
+   ],
+   "fonti": [
+    "CR-34",
+    "CR-35",
+    "CR-36",
+    "CR-37"
+   ],
+   "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS e dagli avvisi 2026 dei Comuni di Bologna e di Taranto, aggiornate a novembre 2026. Per l'estate 2027 bandi e avvisi non sono ancora usciti: ricontrolleremo questa pagina a gennaio e in primavera. Requisiti e importi li decide ogni ente, ogni anno.",
+   "domanda": "Quali aiuti ci sono per i centri estivi",
+   "ricontrolla": "2027-01",
+   "correlate": [
+    "bonus-asilo-nido",
+    "mensa-scolastica-diete-e-costi",
+    "trasporto-scolastico-scuolabus"
+   ],
+   "per": [
+    "bambino",
+    [
+     "3-6",
+     "6-12"
+    ]
+   ],
+   "chiavi_ricerca": "centri estivi centro estivo campo estivo grest estate vacanze bonus contributo rimborso inps comune voucher",
+   "frasi": [
+    "centr[oi] estiv",
+    "campo estivo",
+    "campi estivi",
+    "grest"
+   ]
+  },
+  {
+   "slug": "iscrizione-scuola-primaria",
+   "categoria": "Organizzarsi",
+   "argomento": "documenti",
+   "data": "2026-11-13",
+   "titolo": "Primaria: scegliere l'orario e la religione, i documenti da preparare",
+   "titolo_seo": "Primaria: tempo pieno o 27 ore, religione e documenti",
+   "sommario": "Date ed età sono nella guida sulle iscrizioni. Qui il resto: come scegliere fra 24, 27, 30 o 40 ore, la scelta sulla religione cattolica, i documenti da consegnare e cosa c'entrano i vaccini con la primaria.",
+   "tempo": "Un'ora per la domanda, più gli open day",
+   "serve": "SPID, CIE, CNS o eIDAS del genitore, codice fiscale del bambino, eventuali certificazioni",
+   "strumento": "gestionale",
+   "perche_titolo": "Le regole, in breve",
+   "perche": [
+    "La domanda per la primaria statale si fa online sulla Piattaforma Unica del Ministero. Per l'anno 2026/2027 la finestra è stata dal 13 gennaio al 14 febbraio 2026; le date per il 2027/2028 arrivano con la nota del Ministero, di solito a dicembre. Età, anticipo e date sono spiegati nella guida sulle iscrizioni a nido e scuola.",
+    "Nella domanda si scelgono la scuola, fino a due scuole di riserva, l'orario settimanale e se avvalersi dell'insegnamento della religione cattolica. Sono scelte da fare con calma, prima che le iscrizioni si aprano."
+   ],
+   "passi": [
+    [
+     "Scegli l'orario",
+     "Si può chiedere 24 ore, 27 ore, fino a 30 ore, oppure 40 ore, il tempo pieno. Le 30 e le 40 ore dipendono dagli insegnanti e dai servizi disponibili in quella scuola; le 24 ore si attivano solo con almeno 15 alunni per classe. Agli open day chiedi quali orari la scuola riesce davvero a offrire."
+    ],
+    [
+     "Pensa a mensa e pomeriggi",
+     "Con il tempo pieno tuo figlio resta a scuola anche il pomeriggio. La mensa è un servizio del Comune, con la sua iscrizione e le sue tariffe: c'è una guida apposta. Con orari brevi, organizza per tempo chi va a prenderlo."
+    ],
+    [
+     "Religione cattolica: vale per tutto il ciclo",
+     "Si sceglie online nella domanda di iscrizione alla prima classe, e la scelta vale per tutti gli anni della primaria. Si può cambiare per l'anno dopo, ma solo entro il termine delle iscrizioni."
+    ],
+    [
+     "Se non vi avvalete della religione, l'alternativa",
+     "L'alternativa si sceglie online più avanti: nel 2026 dal 25 maggio al 30 giugno. Si può scegliere fra attività didattiche e formative, studio o ricerca individuale con un insegnante, oppure non frequentare la scuola in quelle ore."
+    ],
+    [
+     "Indica tre scuole",
+     "Una di prima scelta e fino a due di riserva. Se la prima accoglie la domanda, le altre decadono."
+    ],
+    [
+     "Disabilità: consegna la certificazione",
+     "Per un bambino con disabilità, l'iscrizione si completa consegnando alla scuola la certificazione dell'Azienda sanitaria con la Diagnosi funzionale; il Profilo di funzionamento si porta appena è pronto."
+    ],
+    [
+     "I vaccini e la primaria",
+     "Per la primaria il certificato vaccinale non è un requisito per iscriversi, come invece per nido e scuola dell'infanzia. Le vaccinazioni obbligatorie però restano tali: entro il 10 marzo le scuole mandano all'Azienda sanitaria l'elenco degli iscritti fino a 16 anni."
+    ],
+    [
+     "Senza SPID o senza computer, chiedi alla scuola",
+     "Le scuole aiutano le famiglie che non hanno gli strumenti informatici: chiedi alla scuola che hai scelto, o a quella dell'infanzia che tuo figlio frequenta."
+    ]
+   ],
+   "errori": [
+    "Scegliere il tempo pieno senza chiedere se la scuola lo può attivare.",
+    "Dimenticare, a fine maggio, la scelta dell'alternativa alla religione.",
+    "Indicare una sola scuola: se ne possono aggiungere due di riserva.",
+    "Pensare di cambiare la scelta sulla religione a metà anno."
+   ],
+   "checklist": [
+    "SPID, CIE o CNS funzionanti",
+    "Codice fiscale del bambino",
+    "Open day visitati",
+    "Orario scelto e verificato con la scuola",
+    "Scelta sulla religione cattolica",
+    "Due scuole di riserva indicate",
+    "Certificazioni consegnate, se servono",
+    "Promemoria a maggio per l'alternativa, se serve",
+    "Ricevuta della domanda salvata"
+   ],
+   "fonti": [
+    "CR-23",
+    "CR-24",
+    "CR-13"
+   ],
+   "avvertenza": "Informazioni generali tratte dalla nota del Ministero dell'Istruzione e del Merito per le iscrizioni all'anno scolastico 2026/2027, aggiornate a novembre 2026. Le regole del 2027/2028 non sono ancora uscite: la nota arriva di solito a dicembre e aggiorneremo questa pagina a gennaio. Per le scuole paritarie e per l'istruzione parentale valgono modalità diverse: chiedi alla scuola.",
+   "domanda": "Come scegliere orario e religione alla primaria",
+   "ricontrolla": "2027-01",
+   "correlate": [
+    "iscrizioni-nido-e-scuola",
+    "certificato-vaccinale",
+    "mensa-scolastica-diete-e-costi"
+   ],
+   "per": [
+    "bambino",
+    [
+     "3-6"
+    ]
+   ],
+   "chiavi_ricerca": "prima elementare primaria scuola elementare tempo pieno 40 ore 27 ore 24 ore 30 ore orario settimanale religione cattolica irc ora alternativa piattaforma unica open day scegliere scuola",
+   "frasi": [
+    "tempo pieno",
+    "ora di religione",
+    "religione cattolica",
+    "alternativ\\w* (alla |all )?religion",
+    "(24|27|30|40) ore"
+   ]
+  },
+  {
+   "slug": "trasporto-scolastico-scuolabus",
+   "categoria": "Organizzarsi",
+   "argomento": "organizzazione",
+   "data": "2026-11-13",
+   "titolo": "Lo scuolabus: come si chiede al Comune e quanto costa",
+   "titolo_seo": "Scuolabus: domanda al Comune, costi e fermata",
+   "sommario": "Il trasporto scolastico è un servizio del Comune: si chiede con una domanda, spesso in primavera, e si paga una tariffa che in molti Comuni dipende dall'ISEE. Chi può chiederlo, quanto costa, chi aspetta il bambino alla fermata.",
+   "tempo": "Mezz'ora per la domanda",
+   "serve": "SPID o CIE, ISEE per i minorenni, i nomi delle persone delegate alla fermata",
+   "strumento": "gestionale",
+   "perche_titolo": "Da sapere prima",
+   "perche": [
+    "Lo scuolabus non c'è dappertutto: ogni Comune decide se attivarlo, per quali scuole e con quali regole. Spesso è riservato ai residenti che abitano lontano dalla scuola: a Teramo e a Firenze, per esempio, bisogna abitare a più di un chilometro.",
+    "Si paga una tariffa, che in molti Comuni dipende dall'ISEE. Due esempi per il 2026/2027: a Firenze da 20 a 30 euro al mese, andata e ritorno; a Teramo da 0 a 360 euro l'anno, gratis per i residenti con ISEE sotto gli 8.000 euro."
+   ],
+   "passi": [
+    [
+     "Cerca il servizio sul sito del Comune",
+     "Di solito sta tra i servizi scolastici, insieme a mensa e pre-scuola. Guarda per quali scuole passa lo scuolabus e dove sono le fermate."
+    ],
+    [
+     "Fai la domanda nei tempi",
+     "Si fa prima dell'inizio della scuola, spesso online: a Teramo, per il 2026/2027, entro il 31 maggio 2026, anche con SPID o CIE; le domande in ritardo si accettano solo se restano posti. In altri Comuni si manda il modulo per PEC, come a Matera."
+    ],
+    [
+     "Chiedi la tariffa ridotta con l'ISEE",
+     "Senza ISEE si paga di solito la tariffa massima. Ci sono sconti per i fratelli: a Firenze il 20% dal secondo figlio, a Teramo il 50% per il secondo. A Teramo non pagano i residenti con ISEE sotto gli 8.000 euro e gli alunni con disabilità."
+    ],
+    [
+     "Paga entro le scadenze",
+     "A Teramo, per esempio, il posto si conferma pagando la prima rata entro il 1° settembre; chi ha debiti con il Comune per mensa, nido o trasporto, anche per altri figli, non può attivare il servizio."
+    ],
+    [
+     "Decidi chi lo aspetta alla fermata",
+     "Se alla fermata non ci sei tu, serve una delega scritta. A Matera, per esempio, gli assistenti dello scuolabus non affidano i bambini a persone che non siano state delegate formalmente: serve il modulo di delega con i documenti di identità di chi delega e di chi è delegato, e c'è un modulo apposta per le deleghe di un giorno solo."
+    ],
+    [
+     "Sotto i 14 anni, da solo solo con l'autorizzazione",
+     "I genitori di un ragazzo con meno di 14 anni possono autorizzarlo a usare lo scuolabus in autonomia. L'autorizzazione si dà al Comune e solleva gli addetti dall'obbligo di sorveglianza alla salita, alla discesa e durante la sosta alla fermata, anche al ritorno."
+    ],
+    [
+     "Se rinunci, avvisa in tempo",
+     "A Teramo, per esempio, la rinuncia va comunicata entro il 1° settembre: dopo, la quota pagata non si rimborsa."
+    ],
+    [
+     "Con una disabilità, chiedi il trasporto dedicato",
+     "Alcuni Comuni hanno un trasporto apposito per gli alunni con disabilità certificata: a Teramo, per esempio, dalla scuola dell'infanzia alle superiori. Chiedi all'ufficio scuola del tuo Comune."
+    ]
+   ],
+   "errori": [
+    "Aspettare settembre: in alcuni Comuni le domande si chiudono a maggio.",
+    "Non consegnare le deleghe: senza, il bambino può non essere affidato ad altri.",
+    "Dimenticare l'ISEE e pagare la tariffa massima.",
+    "Rinunciare dopo la scadenza: la quota già pagata può non essere rimborsata."
+   ],
+   "checklist": [
+    "Servizio e fermate verificati sul sito del Comune",
+    "Domanda presentata entro la scadenza",
+    "ISEE per i minorenni valido",
+    "Prima rata pagata",
+    "Deleghe per la fermata consegnate",
+    "Autorizzazione all'uso autonomo, se ha l'età e lo decidete",
+    "Scadenze dei pagamenti in calendario"
+   ],
+   "fonti": [
+    "CR-15",
+    "CR-13",
+    "CR-16",
+    "CR-17"
+   ],
+   "avvertenza": "Informazioni generali tratte dagli avvisi 2026/2027 dei Comuni di Teramo, Firenze e Matera e da una nota dell'Ufficio scolastico regionale per l'Emilia-Romagna, aggiornate a novembre 2026. Ogni Comune ha regole, date e tariffe sue, che cambiano ogni anno: ricontrolleremo questa pagina a gennaio. Per il tuo caso vale l'avviso del tuo Comune.",
+   "domanda": "Come si chiede lo scuolabus e quanto costa",
+   "ricontrolla": "2027-01",
+   "correlate": [
+    "mensa-scolastica-diete-e-costi",
+    "iscrizione-scuola-primaria",
+    "centri-estivi-aiuti"
+   ],
+   "per": [
+    "bambino",
+    [
+     "3-6",
+     "6-12",
+     "13-18"
+    ]
+   ],
+   "chiavi_ricerca": "scuolabus scuola bus pulmino pullman trasporto scolastico fermata autobus della scuola tornare da solo uscita autonoma delega fermata",
+   "frasi": [
+    "scuolabus",
+    "scuola bus",
+    "pulmin",
+    "trasporto scolastic",
+    "trasporto (a|alla|per la) scuola"
+   ]
+  },
+  {
+   "slug": "pidocchi-a-scuola",
+   "categoria": "Organizzarsi",
+   "argomento": "organizzazione",
+   "data": "2026-11-13",
+   "titolo": "Pidocchi a scuola: rientro, avvisi e cosa dicono le Aziende sanitarie",
+   "titolo_seo": "Pidocchi a scuola: quando si rientra e chi avvisare",
+   "sommario": "Succede in tante classi. Cosa dicono le Aziende sanitarie sul controllo dei capelli, sul rientro a scuola e sull'avviso agli insegnanti. Il trattamento lo consigliano il pediatra o il farmacista.",
+   "tempo": "Pochi minuti a settimana per il controllo",
+   "serve": "Buona luce, un pettine a denti fitti, il numero del pediatra",
+   "strumento": "preparo",
+   "perche_titolo": "Le indicazioni, in breve",
+   "perche": [
+    "I pidocchi passano da una testa all'altra soprattutto tra i bambini, nelle comunità come nidi e scuole. Le Aziende sanitarie insistono su un punto: la prevenzione che funziona è il controllo dei capelli fatto in famiglia, ogni settimana. I controlli a scuola non possono sostituirlo.",
+    "Le regole per tornare a scuola le decidono Regioni e Aziende sanitarie, e non sono uguali dappertutto. In Emilia-Romagna, per esempio, si torna a scuola dopo aver fatto il trattamento, senza certificato medico."
+   ],
+   "passi": [
+    [
+     "Controlla i capelli ogni settimana",
+     "Fallo durante la cura di tutti i giorni, con una buona luce. Il controllo settimanale in famiglia è la misura di prevenzione che le Aziende sanitarie indicano come efficace."
+    ],
+    [
+     "Se li trovi, chiedi al pediatra o al farmacista",
+     "Il trattamento va scelto con loro: qui non diamo nomi di prodotti né dosi. Se dopo il trattamento il prurito o le lendini restano, serve una visita del medico."
+    ],
+    [
+     "Controlla tutta la famiglia",
+     "Quando un bambino ha i pidocchi, conviene controllare tutti i componenti della famiglia, a cominciare dagli altri bambini."
+    ],
+    [
+     "Avvisa gli insegnanti",
+     "Così la scuola può avvisare le altre famiglie e far controllare anche i compagni. In Romagna, per esempio, quando c'è un caso sono gli insegnanti ad avvisare gli altri genitori."
+    ],
+    [
+     "Il rientro a scuola",
+     "In Emilia-Romagna il bambino può rientrare il giorno dopo il trattamento, senza certificato: lo scrivono l'Azienda USL della Romagna e quella di Bologna. In altre Regioni le regole possono essere diverse: chiedi alla scuola se serve un modulo."
+    ],
+    [
+     "Pettini, cappelli e sciarpe: ognuno i suoi",
+     "Evitate di scambiarvi pettini, spazzole, cappelli, sciarpe e vestiti. A scuola aiuta avere un armadietto per ogni bambino."
+    ],
+    [
+     "Lenzuola e vestiti",
+     "Lava lenzuola e vestiti in acqua calda. Quello che non si può lavare si può lavare a secco, oppure tenere chiuso in un sacchetto di plastica per 10 giorni."
+    ]
+   ],
+   "errori": [
+    "Affidarsi solo ai controlli fatti a scuola: quello settimanale in famiglia è il più efficace.",
+    "Scegliere da soli un prodotto, o ripetere il trattamento, senza chiedere al pediatra o al farmacista.",
+    "Non avvisare la scuola per imbarazzo.",
+    "Scambiarsi pettini, cappelli e sciarpe."
+   ],
+   "checklist": [
+    "Controllo dei capelli una volta a settimana",
+    "Trattamento chiesto al pediatra o al farmacista",
+    "Insegnanti avvisati",
+    "Tutta la famiglia controllata",
+    "Lenzuola e vestiti lavati",
+    "Chiesto alla scuola se serve un modulo per il rientro"
+   ],
+   "fonti": [
+    "CR-10",
+    "CR-09",
+    "CR-08",
+    "CR-11",
+    "CR-38"
+   ],
+   "avvertenza": "Informazioni generali tratte dalle indicazioni delle Aziende sanitarie di Bologna, della Romagna e dell'Insubria e dell'Istituto Superiore di Sanità, aggiornate a novembre 2026. Non contengono trattamenti, prodotti o dosi: quelli li consigliano il pediatra o il farmacista. Le regole per il rientro a scuola cambiano da Regione a Regione: vale quello che dice la tua scuola.",
+   "domanda": "Cosa fare con i pidocchi a scuola",
+   "correlate": [
+    "domande-per-il-pediatra",
+    "primo-giorno-nido-materna-cosa-serve",
+    "pediatra-e-medico-di-base"
+   ],
+   "per": [
+    "bambino",
+    [
+     "3-6",
+     "6-12"
+    ]
+   ],
+   "chiavi_ricerca": "pidocchi pidocchio lendini pediculosi testa capelli scuola asilo classe rientro avviso compagno",
+   "frasi": [
+    "pidocch",
+    "lendin",
+    "pediculos"
+   ]
+  }
+ ],
+ "domande": [
+  {
+   "slug": "quante-ore-di-schermo-a-3-anni",
+   "gruppo": "crescita",
+   "domanda": "Quante ore di schermo può guardare un bambino di 3 anni?",
+   "risposta": "Meno di un'ora al giorno, e meno è meglio: lo dicono l'Organizzazione Mondiale della Sanità e la Società Italiana di Pediatria.",
+   "righe": [
+    {
+     "t": "Per l'OMS, tra i 3 e i 4 anni il tempo passato fermo davanti a uno schermo non dovrebbe superare un'ora al giorno. Quando il bambino sta fermo, meglio leggere e raccontare storie insieme a un adulto.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "OMS 2019, 3-4 anni: «Sedentary screen time should be no more than 1 hour; less is better»; «engaging in reading and storytelling with a caregiver is encouraged». ISS: «Sarebbe meglio non superare un'ora al giorno davanti allo schermo»."
+    },
+    {
+     "t": "La SIP, nel 2026, ha confermato: meno di un'ora al giorno tra i 2 e i 5 anni, sempre con la supervisione di un adulto, e niente dispositivi sotto i 2 anni.",
+     "f": [
+      2
+     ],
+     "p": "«Meno di 1 ora al giorno tra i 2 e i 5 anni»; «Nessun dispositivo sotto i 2 anni»; uso sempre sotto la supervisione di un adulto."
+    },
+    {
+     "t": "I pediatri consigliano anche niente schermi a tavola e prima di addormentarsi, e più tempo per il gioco all'aperto, la lettura e il gioco creativo.",
+     "f": [
+      2
+     ],
+     "p": "Niente dispositivi a tavola né nel periodo precedente l'addormentamento; favorire gioco all'aperto, sport, lettura e gioco creativo."
+    },
+    {
+     "t": "Per i dubbi sul tuo bambino, il riferimento è il pediatra.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "schermi-e-bambini"
+   ],
+   "schede": [],
+   "chiavi": "schermo schermi tv televisione cartoni tablet telefono quante ore 3 anni tre anni",
+   "fa": [
+    "1-3",
+    "3-6"
+   ],
+   "medico": true,
+   "fonti": [
+    {
+     "ente": "Organizzazione Mondiale della Sanità (OMS)",
+     "pagina": "To grow up healthy, children need to sit less and play more",
+     "url": "https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more",
+     "data": "2019-04-24"
+    },
+    {
+     "ente": "Istituto Superiore di Sanità – EpiCentro",
+     "pagina": "Bambini sotto i 5 anni: cosa è meglio fare o evitare",
+     "url": "https://www.epicentro.iss.it/materno/attivita-bambini",
+     "data": "2019-05-02"
+    },
+    {
+     "ente": "Società Italiana di Pediatria (SIP)",
+     "pagina": "Digitale e bambini: le nuove raccomandazioni SIP",
+     "url": "https://sip.it/2026/01/27/digitale-e-bambini-le-nuove-raccomandazioni-sip/",
+     "data": "2026-01-27"
+    }
+   ]
+  },
+  {
+   "slug": "a-che-eta-lo-smartphone",
+   "gruppo": "crescita",
+   "domanda": "A che età si può dare lo smartphone a un figlio?",
+   "risposta": "Per la Società Italiana di Pediatria, non prima dei 13 anni: è l'età minima che i pediatri consigliano per uno smartphone personale.",
+   "righe": [
+    {
+     "t": "La SIP lo ha ribadito nelle raccomandazioni del 2026: rinviare lo smartphone personale almeno fino ai 13 anni, per proteggere lo sviluppo cognitivo, emotivo e relazionale.",
+     "f": [
+      0
+     ],
+     "p": "Rinviare l'introduzione dello smartphone personale almeno fino ai 13 anni, per prevenire effetti sullo sviluppo cognitivo, emotivo e relazionale."
+    },
+    {
+     "t": "Prima dei 13 anni, niente internet senza un adulto che controlla. Per i social, la SIP consiglia di aspettare il più possibile, anche quando la legge li consentirebbe.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Evitare l'accesso non supervisionato a internet prima dei 13 anni; ritardare il più possibile l'uso dei social media, anche quando la legge li consente."
+    },
+    {
+     "t": "Per il tempo davanti agli schermi: meno di due ore al giorno dopo i 5 anni, con il controllo di un adulto.",
+     "f": [
+      1
+     ],
+     "p": "«a meno di due ore dopo i 5 anni, sotto il controllo dell'adulto»."
+    },
+    {
+     "t": "Aiutano poche regole chiare, decise in famiglia, e il dialogo con i figli sulla loro vita digitale.",
+     "f": [
+      1
+     ],
+     "p": "Porre regole chiare sull'uso dei dispositivi e partecipare alla vita digitale dei figli; supervisione, dialogo e strumenti di controllo a ogni età."
+    },
+    {
+     "t": "La SIP chiede anche alla scuola di promuovere un'educazione digitale consapevole, e ai pediatri di parlare regolarmente con le famiglie delle abitudini digitali.",
+     "f": [
+      0
+     ],
+     "p": "La scuola dovrebbe promuovere un'educazione digitale consapevole; i pediatri dovrebbero valutare regolarmente le abitudini digitali e offrire consulenza preventiva."
+    }
+   ],
+   "guide": [
+    "schermi-e-bambini"
+   ],
+   "schede": [],
+   "chiavi": "smartphone cellulare telefonino telefono primo telefono età quanti anni social figlio",
+   "fa": [
+    "6-12",
+    "13-18"
+   ],
+   "fonti": [
+    {
+     "ente": "Società Italiana di Pediatria (SIP)",
+     "pagina": "Digitale e bambini: le nuove raccomandazioni SIP",
+     "url": "https://sip.it/2026/01/27/digitale-e-bambini-le-nuove-raccomandazioni-sip/",
+     "data": "2026-01-27"
+    },
+    {
+     "ente": "Società Italiana di Pediatria (SIP)",
+     "pagina": "Il bambino digitale",
+     "url": "https://sip.it/il-bambino-digitale/",
+     "data": "2026-10-16"
+    }
+   ]
+  },
+  {
+   "slug": "a-che-eta-si-toglie-il-pannolino",
+   "gruppo": "crescita",
+   "domanda": "A che età si toglie il pannolino?",
+   "risposta": "Di solito tra i 2 e i 3 anni, ma ogni bambino ha i suoi tempi: i pediatri consigliano di non forzarli.",
+   "righe": [
+    {
+     "t": "La Società Italiana di Pediatria indica come periodo più adatto, in genere, quello tra i 2 e i 3 anni. La stagione conta poco: l'estate non è per forza il momento giusto.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Il periodo giusto è «tra i due e i tre anni d'età», ma ogni bambino ha i suoi tempi (2021); «tra i 2 e i 3 anni», la stagione conta poco (2024)."
+    },
+    {
+     "t": "I segnali da guardare: il bambino avverte lo stimolo, dice che vuole andare in bagno, oppure cerca di togliersi il pannolino dopo aver fatto la pipì.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Avverte lo stimolo, annuncia l'intenzione di andare in bagno o di usare il vasino, cerca di togliersi il pannolino dopo la pipì."
+    },
+    {
+     "t": "Da evitare: anticipare i tempi per esigenze della scuola o della famiglia, rimproverare, fare pressioni, o seguire i metodi che promettono risultati in tempi record.",
+     "f": [
+      0
+     ],
+     "p": "Errori: forzare o anticipare i tempi per esigenze di scuola o famiglia (es. in vista della scuola materna); pressioni, rimproveri; programmi «sprint» in «tempi record»."
+    },
+    {
+     "t": "Alcune scuole dell'infanzia chiedono che il bambino arrivi senza pannolino: alla scuola comunale Duca d'Aosta di Venezia, per esempio. Parlane per tempo con la scuola, senza forzare i tempi del bambino.",
+     "f": [
+      2
+     ],
+     "p": "«il bambino deve essere senza pannolino e con un adeguato controllo sfinterico al momento dell'ingresso»."
+    },
+    {
+     "t": "Per dubbi o difficoltà, il riferimento è il pediatra.",
+     "f": [
+      1
+     ],
+     "p": "«Consultiamoci con il pediatra nel caso di dubbi o difficoltà»."
+    }
+   ],
+   "guide": [
+    "togliere-il-pannolino"
+   ],
+   "schede": [],
+   "chiavi": "pannolino togliere spannolinamento vasino età quando quanti anni",
+   "fa": [
+    "1-3",
+    "3-6"
+   ],
+   "medico": true,
+   "fonti": [
+    {
+     "ente": "Società Italiana di Pediatria (SIP)",
+     "pagina": "Estate, tempo di «spannolinamento»? Non sempre e non per forza",
+     "url": "https://sip.it/2021/08/06/estate-tempo-di-spannolinamento-non-sempre-e-non-per-forza/",
+     "data": "2021-08-06"
+    },
+    {
+     "ente": "Società Italiana di Pediatria (SIP)",
+     "pagina": "Togliere il pannolino d'estate non sempre è la scelta giusta",
+     "url": "https://sip.it/2024/07/18/togliere-il-pannolino-destate-non-sempre-e-la-scelta-giusta/",
+     "data": "2024-07-18"
+    },
+    {
+     "ente": "Comune di Venezia",
+     "pagina": "Scuola dell'infanzia comunale Duca d'Aosta: fascicolo per i genitori 2024/2025",
+     "url": "https://comune.venezia.it/sites/comune.venezia.it/files/scuole/files/Fascicolo%20per%20genitori-infanzia%20Duca%20D%27Aosta%20%281%29.pdf",
+     "data": "2024-09"
+    }
+   ]
+  },
+  {
+   "slug": "quanto-dura-l-inserimento-al-nido",
+   "gruppo": "crescita",
+   "domanda": "Quanto dura l'inserimento al nido?",
+   "risposta": "Di solito due o tre settimane, con il genitore presente nei primi giorni. Tempi e modi li decide ogni nido.",
+   "righe": [
+    {
+     "t": "Nei nidi comunali di Genova il genitore è presente per tutta la prima settimana: il primo pranzo è il terzo giorno, il primo sonno il quinto, e l'orario completo arriva entro le prime due settimane, con il termine concordato con la famiglia.",
+     "f": [
+      0
+     ],
+     "p": "Nido: presenza costante del genitore nella prima settimana; giorno 3 primo pasto in sua presenza; giorno 5 primo sonno; completamento dell'orario entro le prime due settimane, termine concordato con la famiglia."
+    },
+    {
+     "t": "Al nido comunale San Provolo di Venezia la prima settimana è solo al mattino, con un genitore; nella seconda l'uscita si allunga fino alle 15; dalla terza si segue l'orario scelto dalla famiglia.",
+     "f": [
+      1
+     ],
+     "p": "Prima settimana: orario antimeridiano con un genitore; seconda: ingresso 9:30, uscita progressivamente fino alle 15:00; dalla terza: ingresso 7:30-9:00, permanenza secondo l'orario scelto."
+    },
+    {
+     "t": "Spesso i nidi fanno entrare i bambini a piccoli gruppi, in date diverse: chiedi in segreteria quando tocca a voi, per organizzare permessi e ferie.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Genova: ambientamento a piccoli gruppi, primi gruppi dal 18 settembre, ultimo entro il 15 novembre. Venezia: a gruppi, dal 16 settembre ed entro fine novembre."
+    }
+   ],
+   "guide": [
+    "inserimento-al-nido"
+   ],
+   "schede": [],
+   "chiavi": "inserimento ambientamento nido quanto dura quanti giorni settimane primi giorni",
+   "fa": [
+    "0-1",
+    "1-3"
+   ],
+   "fonti": [
+    {
+     "ente": "Comune di Genova",
+     "pagina": "Nuove linee guida per l'ambientamento, a.s. 2024/2025",
+     "url": "https://www.comune.genova.it/sites/default/files/2024-09/Nuove%20linee%20guida%20ambientamento%20a.s.%2024-25.pdf",
+     "data": "2024-09"
+    },
+    {
+     "ente": "Comune di Venezia",
+     "pagina": "Nido comunale San Provolo: informazioni per le famiglie 2024/2025",
+     "url": "https://comune.venezia.it/sites/comune.venezia.it/files/scuole/files/Fascicolo%20Nido%20San%20Provolo%202024-25.pdf",
+     "data": "2024-09"
+    }
+   ]
+  },
+  {
+   "slug": "chi-puo-ritirare-il-bambino-da-scuola",
+   "gruppo": "crescita",
+   "domanda": "Chi può andare a prendere il bambino al nido o a scuola?",
+   "risposta": "I genitori, oppure le persone che i genitori delegano per iscritto. Di solito i delegati devono essere maggiorenni.",
+   "righe": [
+    {
+     "t": "Alla scuola dell'infanzia comunale di Prato, per esempio, i genitori possono delegare persone con più di 18 anni: la delega si firma davanti al personale, con la fotocopia della carta d'identità di chi è delegato.",
+     "f": [
+      0
+     ],
+     "p": "I bambini sono riconsegnati ai genitori, che possono delegare altre persone «di età superiore ai 18 anni»; delega firmata alla presenza del personale educativo, con fotocopia della carta d'identità del delegato."
+    },
+    {
+     "t": "Vale anche alla fermata dello scuolabus. A Matera gli assistenti non affidano i bambini a persone non delegate formalmente: serve un modulo con i documenti di chi delega e di chi è delegato, e c'è un modulo apposta per le deleghe di un giorno solo.",
+     "f": [
+      1
+     ],
+     "p": "Gli alunni «non potranno essere affidati dagli assistenti scuolabus a persone non formalmente delegate»; modulo delega con documenti di deleganti e delegati; modulo delega giornaliera per casi urgenti."
+    },
+    {
+     "t": "Per i ragazzi più grandi: sotto i 14 anni possono usare lo scuolabus da soli solo se i genitori li autorizzano per iscritto, con un'autorizzazione data al Comune.",
+     "f": [
+      2
+     ],
+     "p": "Art. 19-bis, c. 2, DL 148/2017: l'autorizzazione ad usufruire in modo autonomo del servizio di trasporto scolastico, rilasciata dai genitori dei minori di 14 anni agli enti locali, esonera dalla responsabilità di vigilanza nella salita, discesa e sosta alla fermata."
+    },
+    {
+     "t": "Ogni nido e ogni scuola ha il suo modulo: chiedilo in segreteria all'inizio dell'anno, e aggiornalo quando cambia qualcosa.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "primo-giorno-nido-materna-cosa-serve",
+    "trasporto-scolastico-scuolabus"
+   ],
+   "schede": [],
+   "chiavi": "delega deleghe ritiro ritirare prendere andare a prendere nonni nonna babysitter uscita nido scuola materna",
+   "fa": [
+    "1-3",
+    "3-6",
+    "6-12"
+   ],
+   "fonti": [
+    {
+     "ente": "Comune di Prato",
+     "pagina": "InformaGenitori: scuole dell'infanzia comunali 2025/2026",
+     "url": "https://www.comune.prato.it/sito-comunale/per-i-cittadini/figli/nidi-e-scuole-infanzia/informagenitori-scuole-infanzia/media26293.php",
+     "data": "pagina senza data"
+    },
+    {
+     "ente": "Comune di Matera",
+     "pagina": "Avviso servizio scuolabus 2026/2027",
+     "url": "https://comune.matera.it/wp-content/uploads/2026/09/7001-28173524-AVVISO_SERVIZIO_SCUOLABUS_2026-2027_signed.pdf",
+     "data": "2026-09-03"
+    },
+    {
+     "ente": "Ufficio scolastico regionale per l'Emilia-Romagna",
+     "pagina": "Nota prot. 2499 del 13 febbraio 2018 sull'uscita autonoma dei minori di 14 anni (art. 19-bis del decreto-legge 148/2017)",
+     "url": "https://www.istruzioneer.gov.it/wp-content/uploads/2018/02/nota-USR-ER-prot-n-2499-del-13-02-2018.pdf",
+     "data": "2018-02-13"
+    }
+   ]
+  },
+  {
+   "slug": "a-che-eta-si-inizia-la-primaria",
+   "gruppo": "scuola",
+   "domanda": "A che età si può iniziare la scuola primaria?",
+   "risposta": "A 6 anni: l'iscrizione è obbligatoria per chi li compie entro il 31 dicembre. Si può anticipare se li compie entro il 30 aprile dell'anno dopo.",
+   "righe": [
+    {
+     "t": "Sono le regole della nota del Ministero per l'anno scolastico 2026/2027: obbligo per i bambini che compiono 6 anni entro il 31 dicembre 2026, anticipo possibile per chi li compie tra il 1° gennaio e il 30 aprile 2027.",
+     "f": [
+      0
+     ],
+     "p": "Iscrizione obbligatoria per i bambini che compiono sei anni entro il 31 dicembre 2026; anticipo per chi li compie tra il 1° gennaio e il 30 aprile 2027."
+    },
+    {
+     "t": "Dopo il 30 aprile l'iscrizione non è consentita, nemmeno se ci sono posti liberi.",
+     "f": [
+      0
+     ],
+     "p": "Oltre quella data l'iscrizione non è consentita, nemmeno con posti disponibili."
+    },
+    {
+     "t": "Per decidere sull'anticipo, il Ministero invita a tenere conto delle indicazioni delle insegnanti della scuola dell'infanzia.",
+     "f": [
+      0
+     ],
+     "p": "Per gli anticipatari la Nota invita a considerare le indicazioni dei docenti della scuola dell'infanzia."
+    },
+    {
+     "t": "La domanda si fa online sulla Piattaforma Unica, di solito tra gennaio e febbraio. Le date per il 2027/2028 arrivano con la nuova nota del Ministero.",
+     "f": [
+      0
+     ],
+     "p": "Domanda online sulla Piattaforma Unica; per il 2026/2027 dal 13 gennaio al 14 febbraio 2026."
+    }
+   ],
+   "guide": [
+    "iscrizione-scuola-primaria",
+    "iscrizioni-nido-e-scuola"
+   ],
+   "schede": [],
+   "chiavi": "età primaria prima elementare quanti anni anticipo anticipatario obbligo 6 anni sei anni iscrizione",
+   "fa": [
+    "3-6"
+   ],
+   "fonti": [
+    {
+     "ente": "Ministero dell'Istruzione e del Merito (copia pubblicata dall'IC Lucca Centro storico)",
+     "pagina": "Nota prot. 100847 del 17 dicembre 2025: iscrizioni per l'a.s. 2026/2027",
+     "url": "https://www.icluccacentrostorico.edu.it/wp-content/uploads/2026/01/m_pi.AOODGOSV.REGISTRO-UFFICIALEU.0100847.17-12-2025.pdf",
+     "data": "2025-12-17"
+    }
+   ]
+  },
+  {
+   "slug": "quante-ore-e-il-tempo-pieno",
+   "gruppo": "scuola",
+   "domanda": "Quante ore è il tempo pieno alla primaria?",
+   "risposta": "40 ore a settimana. Nella domanda di iscrizione si può scegliere fra 24, 27, fino a 30 o 40 ore.",
+   "righe": [
+    {
+     "t": "Le opzioni di orario sono nella nota del Ministero sulle iscrizioni: 24 ore, 27 ore, fino a 30 ore, oppure 40 ore, il tempo pieno.",
+     "f": [
+      0
+     ],
+     "p": "Opzioni: 24 ore, 27 ore, fino a 30 ore oppure 40 ore (tempo pieno)."
+    },
+    {
+     "t": "Le 30 e le 40 ore dipendono dagli insegnanti e dai servizi disponibili nella scuola. Le 24 ore si attivano solo se ci sono almeno 15 alunni per classe.",
+     "f": [
+      0
+     ],
+     "p": "Le opzioni fino a 30 ore o il tempo pieno dipendono dalla disponibilità di organico e servizi; il modello da 24 ore è attivabile solo con almeno 15 alunni per classe."
+    },
+    {
+     "t": "Dalla quarta, l'educazione motoria con un insegnante specialista aggiunge fino a due ore a settimana; nel tempo pieno rientra nelle 40 ore.",
+     "f": [
+      0
+     ],
+     "p": "Dalla classe quarta, l'educazione motoria con docenti specialisti aggiunge fino a due ore settimanali; non incide sul tempo pieno, perché rientra nelle 40 ore."
+    },
+    {
+     "t": "L'orario si sceglie nella domanda online sulla Piattaforma Unica: per il 2026/2027 dal 13 gennaio al 14 febbraio 2026.",
+     "f": [
+      0
+     ],
+     "p": "Domanda online sulla Piattaforma Unica, dalle 8:00 del 13 gennaio 2026 alle 20:00 del 14 febbraio 2026."
+    },
+    {
+     "t": "Agli open day chiedi quali orari la scuola riesce davvero ad attivare.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "iscrizione-scuola-primaria"
+   ],
+   "schede": [],
+   "chiavi": "tempo pieno ore orario settimanale 40 ore 27 ore 24 ore 30 ore primaria elementare",
+   "fa": [
+    "3-6",
+    "6-12"
+   ],
+   "fonti": [
+    {
+     "ente": "Ministero dell'Istruzione e del Merito (copia pubblicata dall'IC Lucca Centro storico)",
+     "pagina": "Nota prot. 100847 del 17 dicembre 2025: iscrizioni per l'a.s. 2026/2027",
+     "url": "https://www.icluccacentrostorico.edu.it/wp-content/uploads/2026/01/m_pi.AOODGOSV.REGISTRO-UFFICIALEU.0100847.17-12-2025.pdf",
+     "data": "2025-12-17"
+    }
+   ]
+  },
+  {
+   "slug": "religione-a-scuola-si-puo-cambiare",
+   "gruppo": "scuola",
+   "domanda": "La scelta sull'ora di religione si può cambiare ogni anno?",
+   "risposta": "Sì, ma solo per l'anno dopo e solo entro il termine delle iscrizioni. Se non la cambi, vale per tutto il ciclo di studi.",
+   "righe": [
+    {
+     "t": "La scelta di avvalersi o no dell'insegnamento della religione cattolica si fa online, nella domanda di iscrizione alla prima classe, e vale per l'intero ciclo.",
+     "f": [
+      0
+     ],
+     "p": "La scelta si esprime online al momento dell'iscrizione alla prima classe; vale per l'intero ciclo di studi."
+    },
+    {
+     "t": "Si può modificare per l'anno successivo entro il termine delle iscrizioni, su iniziativa della famiglia. Non si cambia a metà anno.",
+     "f": [
+      0
+     ],
+     "p": "Può essere modificata per l'anno successivo entro il termine delle iscrizioni, ma solo su iniziativa dell'interessato."
+    },
+    {
+     "t": "Chi non se ne avvale sceglie l'alternativa più avanti, online: nel 2026 dal 25 maggio al 30 giugno. Alla primaria si può scegliere fra attività didattiche e formative, studio o ricerca individuale con un insegnante, oppure non frequentare la scuola in quelle ore.",
+     "f": [
+      0
+     ],
+     "p": "Attività alternative: si scelgono online dal 25 maggio al 30 giugno 2026; opzioni: attività didattiche e formative; studio o ricerca individuale con assistenza docente; non frequenza nelle ore di IRC."
+    },
+    {
+     "t": "Le attività alternative proposte possono cambiare con gli aggiornamenti del piano dell'offerta formativa della scuola: chiedi quali sono.",
+     "f": [
+      0
+     ],
+     "p": "Le attività didattiche proposte possono cambiare in base agli aggiornamenti del PTOF."
+    }
+   ],
+   "guide": [
+    "iscrizione-scuola-primaria"
+   ],
+   "schede": [],
+   "chiavi": "religione ora di religione irc cattolica cambiare scelta alternativa ogni anno",
+   "fa": [
+    "3-6",
+    "6-12",
+    "13-18"
+   ],
+   "fonti": [
+    {
+     "ente": "Ministero dell'Istruzione e del Merito (copia pubblicata dall'IC Lucca Centro storico)",
+     "pagina": "Nota prot. 100847 del 17 dicembre 2025: iscrizioni per l'a.s. 2026/2027",
+     "url": "https://www.icluccacentrostorico.edu.it/wp-content/uploads/2026/01/m_pi.AOODGOSV.REGISTRO-UFFICIALEU.0100847.17-12-2025.pdf",
+     "data": "2025-12-17"
+    }
+   ]
+  },
+  {
+   "slug": "certificato-medico-dopo-assenza-scuola",
+   "gruppo": "scuola",
+   "domanda": "Serve il certificato medico per tornare a scuola dopo un'assenza?",
+   "risposta": "Dipende dalla Regione: in molte non serve più. In Emilia-Romagna e in Toscana, per esempio, non è obbligatorio.",
+   "righe": [
+    {
+     "t": "In Emilia-Romagna la legge regionale 9 del 2015 ha tolto l'obbligo del certificato medico per le assenze scolastiche. Resta solo nei casi in cui lo chieda l'Azienda sanitaria, per situazioni particolari.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Bologna: secondo la L.R. 9/2015 «non sussiste più l'obbligo di certificazione medica per assenza scolastica»; certificato solo qualora lo richiedano le Aziende sanitarie. Romagna: la L.R. 9/2015 «ha di fatto abolito i certificati di riammissione scolastica»."
+    },
+    {
+     "t": "Anche senza certificato, prima di rientrare il bambino deve essere guarito: le Aziende sanitarie chiedono di seguire le indicazioni del pediatra.",
+     "f": [
+      1
+     ],
+     "p": "I genitori devono seguire le indicazioni del medico curante e assicurare la piena guarigione prima del rientro."
+    },
+    {
+     "t": "Per le malattie infettive restano le regole dell'Azienda sanitaria sui tempi di rientro: il pediatra sa dirti quali valgono.",
+     "f": [
+      0
+     ],
+     "p": "Per le malattie infettive, rispettare le indicazioni di profilassi e di contumacia prima del rientro."
+    },
+    {
+     "t": "Alla scuola dell'infanzia comunale di Prato il certificato per il rientro non è obbligatorio, ma le assenze vanno sempre giustificate, a voce o per iscritto.",
+     "f": [
+      2
+     ],
+     "p": "Il certificato medico per il rientro non è obbligatorio; le assenze vanno giustificate oralmente o per iscritto."
+    },
+    {
+     "t": "Nella tua Regione chiedi alla scuola o al pediatra quale regola vale.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "pidocchi-a-scuola",
+    "pediatra-e-medico-di-base"
+   ],
+   "schede": [],
+   "chiavi": "certificato medico assenza assenze rientro riammissione scuola asilo nido giorni malattia giustificazione",
+   "fa": [
+    "1-3",
+    "3-6",
+    "6-12",
+    "13-18"
+   ],
+   "fonti": [
+    {
+     "ente": "Azienda USL di Bologna",
+     "pagina": "La salute alla scuola primaria (agosto 2023)",
+     "url": "https://www.ausl.bologna.it/seztemi/mf/scuola-e-apprendimento/salute-alla-scuola-primaria-agosto-2023-1.pdf/@@download/file/Salute%20alla%20scuola%20primaria%20agosto%202023%20(1).pdf",
+     "data": "2023-08"
+    },
+    {
+     "ente": "Azienda USL della Romagna (pubblicato dal Comune di Ravenna)",
+     "pagina": "Promuovere il benessere in sicurezza dei bambini nelle collettività scolastiche",
+     "url": "https://comune.ravenna.it/wp-content/uploads/2025/09/A-scuola-in-salute-aggiornamento-settembre-2025.pdf",
+     "data": "2025-09"
+    },
+    {
+     "ente": "Comune di Prato",
+     "pagina": "InformaGenitori: scuole dell'infanzia comunali 2025/2026",
+     "url": "https://www.comune.prato.it/sito-comunale/per-i-cittadini/figli/nidi-e-scuole-infanzia/informagenitori-scuole-infanzia/media26293.php",
+     "data": "pagina senza data"
+    }
+   ]
+  },
+  {
+   "slug": "chi-paga-la-mensa-scolastica",
+   "gruppo": "scuola",
+   "domanda": "Chi paga la mensa scolastica?",
+   "risposta": "La famiglia paga una quota per ogni pasto, decisa dal Comune. Con l'ISEE si può chiedere una tariffa più bassa.",
+   "righe": [
+    {
+     "t": "A Firenze, nel 2026/2027, un pasto costa da 1 euro, con ISEE fino a 5.500 euro, a 4,90 euro, con ISEE oltre 32.500 euro. Chi non presenta la domanda di agevolazione paga la tariffa massima. C'è anche una quota d'iscrizione di 18,08 euro l'anno.",
+     "f": [
+      0
+     ],
+     "p": "Tariffa minima € 1,00 a pasto (ISEE 0-5.500); massima € 4,90 (ISEE oltre 32.500); senza domanda «verrà applicata d'ufficio la tariffa massima»; quota di iscrizione annuale € 18,08."
+    },
+    {
+     "t": "Sono previsti sconti per i fratelli, e chi è seguito dai servizi sociali nella fascia più bassa non paga.",
+     "f": [
+      0
+     ],
+     "p": "Sconto 20% dal secondo figlio; famiglie numerose con ISEE sotto 32.500: 30%, 40%, 50%; 1° fascia con Centro Sociale esonerata."
+    },
+    {
+     "t": "Si paga in base ai pasti consumati. Se non si paga, il Comune avvia la riscossione coattiva: se sei in difficoltà, parlane subito con l'ufficio scuola.",
+     "f": [
+      0
+     ],
+     "p": "L'importo mensile dipende dai pasti effettivamente consumati; il mancato pagamento comporta la riscossione coattiva."
+    },
+    {
+     "t": "Ogni Comune ha tariffe e regole sue: le trovi sul sito, tra i servizi scolastici.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "mensa-scolastica-diete-e-costi"
+   ],
+   "schede": [
+    "isee"
+   ],
+   "chiavi": "mensa pagare paga costo quanto costa pasto refezione isee tariffa comune",
+   "fa": [
+    "1-3",
+    "3-6",
+    "6-12"
+   ],
+   "fonti": [
+    {
+     "ente": "Comune di Firenze",
+     "pagina": "Servizi e tariffe, anno scolastico 2026/2027",
+     "url": "https://www.comune.firenze.it/system/files/2026-08/nota_tariffe_2026_2027.pdf",
+     "data": "2026-08"
+    }
+   ]
+  },
+  {
+   "slug": "menu-religioso-mensa-certificato",
+   "gruppo": "scuola",
+   "domanda": "Per il menù senza maiale o senza carne a mensa serve il certificato del medico?",
+   "risposta": "No: per i menù chiesti per motivi religiosi o etici basta un'autocertificazione dei genitori. Il certificato serve per le diete di salute.",
+   "righe": [
+    {
+     "t": "Lo prevedono, per esempio, il Comune di Genova e le Aziende USL di Bologna e della Romagna: i menù per motivi etici o religiosi si chiedono con un'autocertificazione firmata, sul modulo del Comune o della scuola.",
+     "f": [
+      0,
+      1,
+      2
+     ],
+     "p": "Genova: per i menù etico-religiosi i genitori presentano un'autocertificazione. Bologna: «autocertificazione firmata». Romagna: le diete etico-religiose non richiedono certificato medico."
+    },
+    {
+     "t": "A Genova si può chiedere un menù senza maiale, senza carne, senza carne e pesce, o senza alimenti di origine animale. Per quest'ultimo, al nido, serve un certificato del medico.",
+     "f": [
+      0
+     ],
+     "p": "Esclusione di maiale; di carne rossa e bianca; di carne e pesce; di tutti gli alimenti di origine animale. Per quest'ultimo, al nido, serve un certificato medico che attesti il buono stato di salute."
+    },
+    {
+     "t": "Per allergie, intolleranze o celiachia, invece, serve il certificato del pediatra o dello specialista, con l'elenco degli alimenti da escludere.",
+     "f": [
+      0,
+      2
+     ],
+     "p": "Diete per patologia: certificato medico con diagnosi e alimenti da escludere."
+    },
+    {
+     "t": "A Genova la scelta del menù religioso o etico vale per tutto il percorso, dal nido alla scuola media, finché non la cambi. Chiedi il modulo prima dell'inizio della scuola.",
+     "f": [
+      0
+     ],
+     "p": "Validità dei menù etico-religiosi: intero percorso educativo (0-14 anni)."
+    }
+   ],
+   "guide": [
+    "mensa-scolastica-diete-e-costi"
+   ],
+   "schede": [],
+   "chiavi": "menu religioso etico senza maiale senza carne vegetariano vegano halal mensa certificato autocertificazione dieta",
+   "fa": [
+    "1-3",
+    "3-6",
+    "6-12"
+   ],
+   "fonti": [
+    {
+     "ente": "Comune di Genova",
+     "pagina": "Linee guida: erogazione delle diete e menù per motivi etico-religiosi (rev. settembre 2025)",
+     "url": "https://www.comune.genova.it/sites/default/files/2025-09/linee%20guida%20erog.diete_.rev_.09-25.pdf",
+     "data": "2025-09"
+    },
+    {
+     "ente": "Azienda USL di Bologna",
+     "pagina": "La salute alla scuola primaria (agosto 2023)",
+     "url": "https://www.ausl.bologna.it/seztemi/mf/scuola-e-apprendimento/salute-alla-scuola-primaria-agosto-2023-1.pdf/@@download/file/Salute%20alla%20scuola%20primaria%20agosto%202023%20(1).pdf",
+     "data": "2023-08"
+    },
+    {
+     "ente": "Azienda USL della Romagna (pubblicato dal Comune di Ravenna)",
+     "pagina": "Promuovere il benessere in sicurezza dei bambini nelle collettività scolastiche",
+     "url": "https://comune.ravenna.it/wp-content/uploads/2025/09/A-scuola-in-salute-aggiornamento-settembre-2025.pdf",
+     "data": "2025-09"
+    }
+   ]
+  },
+  {
+   "slug": "la-scuola-puo-dare-medicine",
+   "gruppo": "scuola",
+   "domanda": "La scuola può dare una medicina a mio figlio?",
+   "risposta": "Solo nei casi autorizzati dal pediatra, con un modulo apposito. Di regola a scuola le medicine non si danno.",
+   "righe": [
+    {
+     "t": "L'Azienda USL di Bologna lo scrive così: a scuola non sono somministrati farmaci, salvo i casi autorizzati dal pediatra di libera scelta su apposita modulistica, con il modulo compilato dai genitori.",
+     "f": [
+      0
+     ],
+     "p": "«a scuola non sono somministrati farmaci, salvo i casi autorizzati dal Pediatra di Libera Scelta su apposita modulistica»; serve anche il modulo compilato dai genitori."
+    },
+    {
+     "t": "In Romagna si possono dare solo le medicine indispensabili per malattie croniche e quelle salvavita. Il medico scrive la prescrizione, la Pediatria di comunità rilascia la certificazione, e la famiglia la consegna al dirigente scolastico con il modulo di richiesta e la confezione integra.",
+     "f": [
+      1
+     ],
+     "p": "Solo farmaci indispensabili per malattie croniche e farmaci salvavita; prescrizione del medico curante; certificazione della Pediatria di comunità; la famiglia consegna certificazione, modulo e farmaco in confezione integra al dirigente."
+    },
+    {
+     "t": "In Romagna la prescrizione vale per tutto il ciclo scolastico, salvo modifiche o sospensioni documentate.",
+     "f": [
+      1
+     ],
+     "p": "La prescrizione vale per l'intero ciclo scolastico, salvo modifiche o sospensioni documentate."
+    },
+    {
+     "t": "Se tuo figlio ne ha bisogno, parlane prima con il pediatra e con la scuola, e chiedi quale modulo vale da voi.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "primo-giorno-nido-materna-cosa-serve"
+   ],
+   "schede": [],
+   "chiavi": "medicina medicine farmaco farmaci scuola asilo nido dare somministrare insegnante salvavita modulo",
+   "fa": [
+    "1-3",
+    "3-6",
+    "6-12",
+    "13-18"
+   ],
+   "medico": true,
+   "fonti": [
+    {
+     "ente": "Azienda USL di Bologna",
+     "pagina": "La salute alla scuola primaria (agosto 2023)",
+     "url": "https://www.ausl.bologna.it/seztemi/mf/scuola-e-apprendimento/salute-alla-scuola-primaria-agosto-2023-1.pdf/@@download/file/Salute%20alla%20scuola%20primaria%20agosto%202023%20(1).pdf",
+     "data": "2023-08"
+    },
+    {
+     "ente": "Azienda USL della Romagna (pubblicato dal Comune di Ravenna)",
+     "pagina": "Promuovere il benessere in sicurezza dei bambini nelle collettività scolastiche",
+     "url": "https://comune.ravenna.it/wp-content/uploads/2025/09/A-scuola-in-salute-aggiornamento-settembre-2025.pdf",
+     "data": "2025-09"
+    }
+   ]
+  },
+  {
+   "slug": "il-sostegno-si-chiede-ogni-anno",
+   "gruppo": "scuola",
+   "domanda": "Il sostegno scolastico si chiede ogni anno?",
+   "risposta": "Il PEI sì: si scrive ogni anno, e lì si decidono gli aiuti. La certificazione invece si rinnova solo alla scadenza scritta nel verbale.",
+   "righe": [
+    {
+     "t": "Il PEI, il Piano educativo individualizzato, lo elabora e lo approva ogni anno il GLO, il gruppo di lavoro con gli insegnanti e i genitori, di norma entro ottobre. A fine anno c'è la verifica finale.",
+     "f": [
+      0
+     ],
+     "p": "Il PEI è elaborato e approvato dal GLO; definitivo di norma entro il mese di ottobre; verifica conclusiva a fine anno; modificabile in qualsiasi momento."
+    },
+    {
+     "t": "Alla prima certificazione si scrive un PEI provvisorio entro giugno, per preparare l'anno dopo.",
+     "f": [
+      0
+     ],
+     "p": "PEI provvisorio redatto entro giugno, solo per la prima certificazione."
+    },
+    {
+     "t": "Le risorse le chiede il dirigente scolastico, in base ai bisogni rilevati; l'assistenza per l'autonomia la dà il Comune, sulle ore proposte dal GLO.",
+     "f": [
+      1
+     ],
+     "p": "Il Dirigente rileva la necessità di risorse e ne formula la richiesta; l'assistenza è assegnata dal Comune in base al monte ore proposto dal GLO e richiesto dal Dirigente."
+    },
+    {
+     "t": "Se nel verbale c'è una data di revisione, la richiesta di rinnovo va fatta per tempo: in Veneto, per esempio, entro il 31 gennaio.",
+     "f": [
+      1
+     ],
+     "p": "La famiglia presenta la richiesta di valutazione (certificazione o rinnovo) al Distretto entro il 31 gennaio."
+    }
+   ],
+   "guide": [
+    "disabilita-a-scuola-sostegno-e-pei"
+   ],
+   "schede": [],
+   "chiavi": "sostegno insegnante di sostegno ogni anno rinnovare pei glo certificazione verbale disabilità scuola",
+   "fa": [
+    "3-6",
+    "6-12",
+    "13-18"
+   ],
+   "fonti": [
+    {
+     "ente": "Ministero dell'Istruzione",
+     "pagina": "I nuovi modelli di PEI: presentazione per la scuola primaria",
+     "url": "https://www.istruzione.it/inclusione-e-nuovo-pei/allegati/Slide%20di%20presentazione%20Scuola%20PRIMARIA_7%20maggio%202021.pdf",
+     "data": "2021-05-07"
+    },
+    {
+     "ente": "Ufficio scolastico regionale per il Veneto, ambito di Venezia",
+     "pagina": "Vademecum provinciale per l'inclusione scolastica",
+     "url": "https://venezia.istruzioneveneto.gov.it/wp-content/uploads/2024/12/20241125-Vademecum-Ufficiale.pdf",
+     "data": "2024-11-25"
+    }
+   ]
+  },
+  {
+   "slug": "chi-scrive-il-pei",
+   "gruppo": "scuola",
+   "domanda": "Chi scrive il PEI di un alunno con disabilità?",
+   "risposta": "Il GLO, il gruppo di lavoro che riunisce gli insegnanti della classe e i genitori, presieduto dal dirigente scolastico.",
+   "righe": [
+    {
+     "t": "Il PEI, il Piano educativo individualizzato, è elaborato e approvato dal GLO, il Gruppo di lavoro operativo per l'inclusione. Ne fanno parte gli insegnanti della classe e i genitori, o chi esercita la responsabilità genitoriale.",
+     "f": [
+      0
+     ],
+     "p": "«Il PEI è elaborato e approvato dal Gruppo di lavoro operativo per l'inclusione»; «Partecipano al GLO i genitori dell'alunno con disabilità o chi ne esercita la responsabilità genitoriale»; GLO presieduto dal dirigente scolastico o da un suo delegato."
+    },
+    {
+     "t": "Di solito partecipa anche uno specialista sanitario, che spiega cosa significano per la scuola i documenti clinici.",
+     "f": [
+      1
+     ],
+     "p": "Partecipano lo specialista sanitario designato, i docenti e gli operatori; lo specialista illustra le ricadute del Profilo di funzionamento nel GLO."
+    },
+    {
+     "t": "I genitori sono interlocutori essenziali: il GLO ascolta le loro esigenze e il loro contributo viene messo a verbale.",
+     "f": [
+      1
+     ],
+     "p": "I genitori sono interlocutori essenziali: il GLO ascolta le loro esigenze, ne valorizza il contributo e viene verbalizzato."
+    },
+    {
+     "t": "La base del PEI sono il verbale di accertamento e il Profilo di funzionamento. Il PEI definitivo si scrive di norma entro ottobre, e si può modificare in qualsiasi momento; alla prima certificazione se ne scrive uno provvisorio entro giugno.",
+     "f": [
+      0
+     ],
+     "p": "PEI provvisorio entro giugno per la prima certificazione. Documenti di partenza: verbale di accertamento, profilo di funzionamento; definitivo di norma entro ottobre; modificabile in qualsiasi momento."
+    }
+   ],
+   "guide": [
+    "disabilita-a-scuola-sostegno-e-pei"
+   ],
+   "schede": [],
+   "chiavi": "pei chi scrive chi fa glo piano educativo individualizzato genitori insegnanti disabilità",
+   "fa": [
+    "3-6",
+    "6-12",
+    "13-18"
+   ],
+   "fonti": [
+    {
+     "ente": "Ministero dell'Istruzione",
+     "pagina": "I nuovi modelli di PEI: presentazione per la scuola primaria",
+     "url": "https://www.istruzione.it/inclusione-e-nuovo-pei/allegati/Slide%20di%20presentazione%20Scuola%20PRIMARIA_7%20maggio%202021.pdf",
+     "data": "2021-05-07"
+    },
+    {
+     "ente": "Ufficio scolastico regionale per il Veneto, ambito di Venezia",
+     "pagina": "Vademecum provinciale per l'inclusione scolastica",
+     "url": "https://venezia.istruzioneveneto.gov.it/wp-content/uploads/2024/12/20241125-Vademecum-Ufficiale.pdf",
+     "data": "2024-11-25"
+    }
+   ]
+  },
+  {
+   "slug": "chi-fa-la-diagnosi-di-dsa",
+   "gruppo": "scuola",
+   "domanda": "Chi fa la diagnosi di DSA, come la dislessia?",
+   "risposta": "Il servizio sanitario pubblico o una struttura privata accreditata dalla Regione. Le diagnosi di studi non accreditati possono non bastare.",
+   "righe": [
+    {
+     "t": "Lo ricorda, per esempio, l'Ufficio scolastico regionale del Friuli Venezia Giulia: la diagnosi deve essere fatta da strutture pubbliche o private accreditate. Le diagnosi di studi privati non accreditati sono accolte con riserva, e si chiede di farle convalidare dal servizio pubblico.",
+     "f": [
+      0
+     ],
+     "p": "«la diagnosi deve essere redatta da strutture pubbliche o private accreditate in ambito regionale»; diagnosi di studi privati non accreditati accolte con riserva, invito a rivolgersi al servizio sanitario pubblico."
+    },
+    {
+     "t": "Non si anticipa prima della fine della seconda primaria. In Piemonte, se le difficoltà restano, gli insegnanti compilano con la famiglia una scheda da portare all'Azienda sanitaria, e il percorso deve chiudersi entro 6 mesi.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "FVG: «non appare opportuno anticipare la diagnosi a prima della fine della classe seconda». Piemonte: parte B della scheda di collaborazione dal secondo quadrimestre della seconda primaria; percorso concluso entro 6 mesi."
+    },
+    {
+     "t": "La diagnosi si consegna alla scuola: se c'è già quando iscrivi tuo figlio, l'iscrizione si completa consegnandola.",
+     "f": [
+      2
+     ],
+     "p": "DSA: l'iscrizione si perfeziona consegnando alla scuola la diagnosi rilasciata ai sensi della legge 170/2010."
+    },
+    {
+     "t": "Con la diagnosi, la scuola scrive il PDP, il Piano didattico personalizzato, insieme alla famiglia.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Il PDP è redatto dal team/consiglio di classe, concordato e condiviso con la famiglia."
+    }
+   ],
+   "guide": [
+    "dsa-certificazione-e-pdp"
+   ],
+   "schede": [],
+   "chiavi": "dsa dislessia diagnosi chi fa certificazione asl neuropsichiatria centro accreditato privato disgrafia discalculia",
+   "fa": [
+    "6-12",
+    "13-18"
+   ],
+   "fonti": [
+    {
+     "ente": "Ufficio scolastico regionale per il Friuli Venezia Giulia",
+     "pagina": "Nota prot. 13551 del 2018 sugli alunni con DSA",
+     "url": "https://usrfvg.regione.fvg.it/export/sites/default/USRFVG/allegati/archivio_file/Disabilita/2018_19/2018_Nota_USR_AOODRFVG_13551_del_05.11.2018.pdf",
+     "data": "2018"
+    },
+    {
+     "ente": "Regione Piemonte",
+     "pagina": "Disturbi specifici dell'apprendimento (DSA)",
+     "url": "https://www.regione.piemonte.it/web/node/19002",
+     "data": "2026-11-04"
+    },
+    {
+     "ente": "Ministero dell'Istruzione e del Merito (copia pubblicata dall'IC Lucca Centro storico)",
+     "pagina": "Nota prot. 100847 del 17 dicembre 2025: iscrizioni per l'a.s. 2026/2027",
+     "url": "https://www.icluccacentrostorico.edu.it/wp-content/uploads/2026/01/m_pi.AOODGOSV.REGISTRO-UFFICIALEU.0100847.17-12-2025.pdf",
+     "data": "2025-12-17"
+    }
+   ]
+  },
+  {
+   "slug": "lo-scuolabus-si-paga",
+   "gruppo": "scuola",
+   "domanda": "Lo scuolabus si paga?",
+   "risposta": "Di solito sì: il Comune chiede una tariffa, spesso in base all'ISEE. Per le famiglie con ISEE basso a volte è gratis.",
+   "righe": [
+    {
+     "t": "A Firenze, nel 2026/2027, lo scuolabus costa da 20 a 30 euro al mese, andata e ritorno, secondo l'ISEE; solo andata o solo ritorno, la metà. Dal secondo figlio c'è il 20% di sconto.",
+     "f": [
+      0
+     ],
+     "p": "Tariffa minima € 20,00 al mese (ISEE 0-22.500), € 25,00 (22.500,01-32.500), massima € 30,00 (oltre 32.500); solo andata o solo ritorno: metà; sconto 20% dal secondo figlio."
+    },
+    {
+     "t": "A Teramo va da 0 a 360 euro l'anno: non pagano i residenti con ISEE sotto gli 8.000 euro e gli alunni con disabilità. Senza ISEE si paga la tariffa massima.",
+     "f": [
+      1
+     ],
+     "p": "Da € 0,00 (ISEE sotto € 8.000) a € 360,00 (ISEE oltre € 35.000); esenzioni: ISEE sotto € 8.000 per residenti, alunni con disabilità; senza ISEE tariffa massima."
+    },
+    {
+     "t": "A Teramo il posto si conferma pagando la prima rata entro il 1° settembre. In entrambi i Comuni il servizio è per i residenti che abitano ad almeno un chilometro dalla scuola. Regole e tariffe del tuo Comune sono sul suo sito, tra i servizi scolastici.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Firenze: residenti che abitano a oltre 1 km dalla scuola. Teramo: la scuola più vicina deve trovarsi ad almeno 1 km."
+    }
+   ],
+   "guide": [
+    "trasporto-scolastico-scuolabus"
+   ],
+   "schede": [
+    "isee"
+   ],
+   "chiavi": "scuolabus pulmino trasporto scolastico costo quanto costa si paga gratis isee tariffa",
+   "fa": [
+    "3-6",
+    "6-12",
+    "13-18"
+   ],
+   "fonti": [
+    {
+     "ente": "Comune di Firenze",
+     "pagina": "Servizi e tariffe, anno scolastico 2026/2027",
+     "url": "https://www.comune.firenze.it/system/files/2026-08/nota_tariffe_2026_2027.pdf",
+     "data": "2026-08"
+    },
+    {
+     "ente": "Comune di Teramo",
+     "pagina": "Bando trasporto scolastico 2026/2027",
+     "url": "https://teramo-api.municipiumapp.it/s3/7195/allegati/bando_trasporto_2026-2027.pdf",
+     "data": "2026-03-30"
+    }
+   ]
+  },
+  {
+   "slug": "pidocchi-si-puo-andare-a-scuola",
+   "gruppo": "scuola",
+   "domanda": "Con i pidocchi si può andare a scuola?",
+   "risposta": "Dopo il trattamento sì. In Emilia-Romagna si rientra il giorno dopo il trattamento, senza certificato medico.",
+   "righe": [
+    {
+     "t": "Lo scrive l'Azienda USL della Romagna: il bambino può rientrare a scuola il giorno successivo al trattamento. L'Azienda USL di Bologna chiede di aver fatto il trattamento prima di tornare.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Romagna: «Il bambino può rientrare a scuola il giorno successivo al trattamento». Bologna: «Per la frequenza della scuola: è necessario avere effettuato il trattamento antiparassitario»."
+    },
+    {
+     "t": "Il trattamento lo consigliano il pediatra o il farmacista. Se dopo il prurito o le lendini restano, serve una visita del medico.",
+     "f": [
+      0
+     ],
+     "p": "Se il prurito o le lendini persistono dopo la fine del trattamento, serve una valutazione del medico curante."
+    },
+    {
+     "t": "Avvisa gli insegnanti: così possono avvisare le altre famiglie, che controlleranno i figli. La prevenzione che funziona è il controllo dei capelli in famiglia, ogni settimana.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Romagna: gli insegnanti avvisano le altre famiglie; il controllo settimanale dei capelli in famiglia è la misura preventiva efficace. Bologna: lo screening scolastico non può sostituire il controllo regolare dei genitori."
+    },
+    {
+     "t": "A casa, evitate di scambiarvi pettini, cappelli e sciarpe, e controllate tutta la famiglia.",
+     "f": [
+      2
+     ],
+     "p": "Evitare lo scambio di oggetti personali quali pettini, cappelli, sciarpe; controllo sistematico a tutti i componenti della famiglia."
+    },
+    {
+     "t": "Nelle altre Regioni le regole possono essere diverse: chiedi alla scuola se serve un modulo per il rientro.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "pidocchi-a-scuola"
+   ],
+   "schede": [],
+   "chiavi": "pidocchi lendini pediculosi scuola rientro asilo certificato andare a scuola",
+   "fa": [
+    "3-6",
+    "6-12"
+   ],
+   "medico": true,
+   "fonti": [
+    {
+     "ente": "Azienda USL della Romagna (pubblicato dal Comune di Ravenna)",
+     "pagina": "Promuovere il benessere in sicurezza dei bambini nelle collettività scolastiche",
+     "url": "https://comune.ravenna.it/wp-content/uploads/2025/09/A-scuola-in-salute-aggiornamento-settembre-2025.pdf",
+     "data": "2025-09"
+    },
+    {
+     "ente": "Azienda USL di Bologna",
+     "pagina": "La salute alla scuola primaria (agosto 2023)",
+     "url": "https://www.ausl.bologna.it/seztemi/mf/scuola-e-apprendimento/salute-alla-scuola-primaria-agosto-2023-1.pdf/@@download/file/Salute%20alla%20scuola%20primaria%20agosto%202023%20(1).pdf",
+     "data": "2023-08"
+    },
+    {
+     "ente": "ATS Insubria",
+     "pagina": "Pidocchi!?! Niente paura: prevenzione della pediculosi nelle comunità",
+     "url": "https://www.ats-insubria.it/attachments/article/2846/Prevenzione_pediculosi_comunita.pdf",
+     "data": "pagina senza data"
+    }
+   ]
+  },
+  {
+   "slug": "bonus-centri-estivi-2026",
+   "gruppo": "soldi",
+   "domanda": "Esiste il bonus centri estivi nel 2026?",
+   "risposta": "Non un bonus nazionale uguale per tutti. Nel 2026 c'erano il bando INPS per i figli dei dipendenti pubblici e i contributi dei Comuni.",
+   "righe": [
+    {
+     "t": "Il bando INPS è per i figli da 3 a 14 anni di dipendenti e pensionati della pubblica amministrazione iscritti alla Gestione unitaria delle prestazioni creditizie e sociali. Rimborsa da una a quattro settimane di centro estivo diurno, con un importo che dipende dall'ISEE. Nel 2026 le domande si sono fatte dal 4 al 25 giugno.",
+     "f": [
+      0,
+      1
+     ],
+     "p": "Scheda: minori 3-14 anni, figli o orfani di dipendenti o pensionati PA iscritti alla Gestione Unitaria; durata da una a quattro settimane; contributo in base all'ISEE. Notizia: domande dalle 12 del 4 giugno alle 12 del 25 giugno 2026."
+    },
+    {
+     "t": "Per il 2026 lo Stato ha dato ai Comuni 60 milioni di euro per le attività estive dei minori. A Taranto, per esempio, sono diventati un rimborso fino a 400 euro, per i residenti da 3 a 14 anni con ISEE fino a 25.000 euro.",
+     "f": [
+      2
+     ],
+     "p": "Il Dipartimento per le Politiche della famiglia assegna ai comuni 60 milioni di euro per il 2026, in base alla popolazione minorile residente; rimborso fino a 400 € (800 € con disabilità); ISEE 25.000 €; 3-14 anni."
+    },
+    {
+     "t": "Per il 2027 controlla il sito del tuo Comune da marzo e il sito dell'INPS a fine maggio.",
+     "f": [],
+     "p": ""
+    }
+   ],
+   "guide": [
+    "centri-estivi-aiuti"
+   ],
+   "schede": [
+    "isee"
+   ],
+   "chiavi": "bonus centri estivi centro estivo campo estivo grest contributo rimborso inps comune 2026",
+   "fa": [
+    "3-6",
+    "6-12",
+    "13-18"
+   ],
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Centri estivi: contributi per minori fino a 14 anni",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.centri-estivi-contributi-per-minori-fino-a-14-anni-52818.centri-estivi-contributi-per-minori-fino-a-14-anni.html",
+     "data": "2026-09-28"
+    },
+    {
+     "ente": "INPS",
+     "pagina": "Centri estivi diurni 2026: online il bando",
+     "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.05.centri-estivi-diurni-2026-online-il-bando.html",
+     "data": "2026-05-29"
+    },
+    {
+     "ente": "Comune di Taranto",
+     "pagina": "Avviso centri estivi 2026",
+     "url": "https://taranto-api.municipiumapp.it/s3/7152/allegati/avviso-centri-estivi-2026.pdf",
+     "data": "2026-05-14"
+    }
+   ]
+  }
+ ],
+ "gruppi": [
+  [
+   "crescita",
+   "Bambini e crescita"
+  ]
+ ]
+}
