@@ -290,6 +290,8 @@ tr.tua>*{background:var(--tinta2)}
 .src .ttl{font-weight:700}
 .src .type{font-size:1rem;color:var(--muted)}
 .src a{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-weight:700}
+/* indirizzi lunghi (es. fascicolosanitario.regione.toscana.it): vanno a capo invece di far scorrere la pagina a 320 px */
+.src a{max-width:100%;overflow-wrap:anywhere}
 .share{display:flex;flex-direction:column;gap:12px;padding-top:8px}
 .share p{font:700 1.0625rem var(--titoli)}
 .related{display:flex;flex-direction:column}
