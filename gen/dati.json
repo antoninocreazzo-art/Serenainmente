@@ -608,6 +608,46 @@
    "titolo": "L'invalidità civile (scheda informativa aggiornata il 28 aprile 2025)",
    "tipo": "Documento istituzionale",
    "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49810.l-invalidit-civile.html"
+  },
+  {
+   "id": "OR-71",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 1988,
+   "titolo": "Decreto legislativo 23 novembre 1988, n. 509, art. 6: modifica l'art. 2 della legge 30 marzo 1971, n. 118 (gli ultrasessantacinquenni con difficoltà persistenti a svolgere i compiti e le funzioni proprie dell'età)",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/eli/id/1988/11/26/088G0584/CONSOLIDATED/20110811"
+  },
+  {
+   "id": "OR-72",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Avviata la terza fase sperimentale della riforma della disabilità (notizia del 12 marzo 2026, con l'elenco delle province)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.03.avviata-la-terza-fase-sperimentale-della-riforma-della-disabilit.html"
+  },
+  {
+   "id": "OR-73",
+   "ente": "Azienda USL di Bologna",
+   "anno": 2023,
+   "titolo": "La salute al nido (agosto 2023): prevenzione del soffocamento da cibo, secondo le Linee di indirizzo del Ministero della Salute (giugno 2017)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.ausl.bologna.it/seztemi/prp/pp01/scuole-che-promuovono-salute/opuscoli-salute-a-scuola/salute-a-scuola-nido.pdf"
+  },
+  {
+   "id": "OR-74",
+   "ente": "Gazzetta Ufficiale della Repubblica Italiana",
+   "anno": 2024,
+   "titolo": "Legge 29 luglio 2024, n. 107, e testo coordinato del decreto-legge 7 giugno 2024, n. 73, art. 3, commi 5 e 7: disdetta almeno due giorni lavorativi prima; chi non si presenta paga la quota anche se esente (GU n. 178 del 31 luglio 2024)",
+   "tipo": "Norma",
+   "url": "https://www.gazzettaufficiale.it/eli/gu/2024/07/31/178/sg/pdf"
+  },
+  {
+   "id": "OR-75",
+   "ente": "Parlamento italiano – Normattiva",
+   "anno": 2004,
+   "titolo": "Legge 9 gennaio 2004, n. 6, art. 3: articolo 408 del codice civile (scelta dell'amministratore di sostegno e designazione da parte dello stesso interessato)",
+   "tipo": "Norma",
+   "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2004-01-19&atto.codiceRedazionale=004G0017&atto.articolo.numero=3&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0"
   }
  ],
  "post": [
@@ -1022,7 +1062,7 @@
     ],
     [
      "Disdire: almeno due giorni lavorativi prima",
-     "È la regola nazionale (in alcune Regioni 48 ore). Si disdice dagli stessi canali della prenotazione; molti CUP ti mandano un promemoria e ti chiedono conferma qualche giorno prima. Segna il numero di prenotazione: serve per cancellare in un minuto."
+     "È il termine fissato dalla legge nazionale (decreto-legge 73/2024). Alcune Regioni ne indicano uno diverso: in Toscana 48 ore, in Lombardia 3 giorni lavorativi. Fa fede quello che ti indica il CUP. Si disdice dagli stessi canali della prenotazione; molti CUP ti mandano un promemoria e ti chiedono conferma qualche giorno prima. Segna il numero di prenotazione: serve per cancellare in un minuto."
     ],
     [
      "Se non vai senza disdire, paghi",
@@ -1034,7 +1074,7 @@
     ],
     [
      "La ricetta ha una scadenza",
-     "Per le visite specialistiche la ricetta elettronica vale di norma un anno dalla data, ma alcune Regioni ed esami hanno tempi più brevi, e con le priorità B e D la prenotazione va fatta entro pochi giorni, altrimenti la classe scende. In caso di dubbio: prenota subito, anche se la data è lontana, poi semmai disdici."
+     "Per prenotare, la ricetta ha una scadenza che cambia da Regione a Regione e con la lettera di priorità. In Lombardia, per esempio, dal 15 settembre 2026 le ricette U vanno prenotate entro 10 giorni, le B entro 30, le altre entro 180. Nella tua Regione chiedilo al CUP o al medico. In caso di dubbio: prenota subito, anche se la data è lontana, poi semmai disdici."
     ],
     [
      "Se scegli il privato: dove e quanto",
@@ -1058,9 +1098,11 @@
    "fonti": [
     "OR-08",
     "OR-09",
-    "OR-07"
+    "OR-07",
+    "OR-74",
+    "OR-59"
    ],
-   "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Importi, canali di pagamento e termini di disdetta cambiano da Regione a Regione: fa fede quanto indicato dalla tua ASL al momento della prenotazione. I prezzi privati sono indicativi.",
+   "avvertenza": "Informazioni organizzative generali, aggiornate a novembre 2026. Importi, canali di pagamento e termini di disdetta cambiano da Regione a Regione: fa fede quanto indicato dalla tua ASL al momento della prenotazione. I prezzi privati sono indicativi.",
    "domanda": "Come disdire senza pagare",
    "titolo_seo": "Disdire una visita e pagare il ticket",
    "strumento": "gestionale",
@@ -2072,7 +2114,7 @@
    "strumento": "gestionale",
    "perche": [
     "I permessi della legge 104 sono 3 giorni al mese di assenza dal lavoro, pagati, per assistere un familiare con una disabilità in situazione di gravità, riconosciuta dalla Commissione medica dell'ASL e dell'INPS.",
-    "Li possono chiedere i dipendenti del settore privato, anche part-time, che sono coniuge, unito civilmente o convivente di fatto della persona, oppure suoi parenti o affini fino al secondo grado: per esempio figli, generi e nuore, fratelli e sorelle. Parenti e affini di terzo grado possono chiederli solo se i genitori o il coniuge della persona hanno almeno 65 anni, hanno una malattia invalidante, sono morti o mancano. I dipendenti pubblici fanno la domanda alla propria amministrazione. Non spettano, tra gli altri, ai lavoratori autonomi e ai lavoratori domestici."
+    "Li possono chiedere i dipendenti del settore privato, anche part-time (con un part-time fino alla metà dell'orario, i giorni si riducono in proporzione), che sono coniuge, unito civilmente o convivente di fatto della persona, oppure suoi parenti o affini fino al secondo grado: per esempio figli, generi e nuore, fratelli e sorelle. Parenti e affini di terzo grado possono chiederli solo se i genitori o il coniuge della persona hanno almeno 65 anni, hanno una malattia invalidante, sono morti o mancano. I dipendenti pubblici fanno la domanda alla propria amministrazione. Non spettano, tra gli altri, ai lavoratori autonomi e ai lavoratori domestici."
    ],
    "passi": [
     [
@@ -2142,7 +2184,7 @@
    "serve": "Il verbale della commissione; la documentazione sanitaria; SPID o CIE della persona, oppure un patronato",
    "strumento": "preparo",
    "perche": [
-    "L'invalidità civile riconosce una riduzione permanente della capacità di lavoro di almeno un terzo. Con una percentuale dal 74% in su possono spettare aiuti economici, se ci sono anche i requisiti di reddito. Ma l'età conta: assegno mensile e pensione di inabilità sono per chi ha tra 18 e 67 anni. Per un genitore che ha già superato i 67 anni, l'aiuto economico possibile è l'indennità di accompagnamento, che non ha limiti di età né di reddito.",
+    "L'invalidità civile riconosce una riduzione permanente della capacità di lavoro di almeno un terzo. Per chi ha più di 65 anni non si guarda la capacità di lavoro: si valutano le difficoltà persistenti a svolgere i compiti e le funzioni proprie dell'età, e il riconoscimento vale per l'assistenza socio-sanitaria e per l'indennità di accompagnamento. Con una percentuale dal 74% in su possono spettare aiuti economici, se ci sono anche i requisiti di reddito. Ma l'età conta: assegno mensile e pensione di inabilità sono per chi ha tra 18 e 67 anni. Per un genitore che ha già superato i 67 anni, l'aiuto economico possibile è l'indennità di accompagnamento, che non ha limiti di età né di reddito.",
     "Il percorso è sempre lo stesso: certificato del medico, domanda all'INPS, visita, verbale. I primi passi sono spiegati anche nella guida sull'indennità di accompagnamento; qui trovi soprattutto cosa succede dopo."
    ],
    "tabella": {
@@ -2174,6 +2216,10 @@
     [
      "Ripassa i primi passi",
      "Il medico compila online il certificato introduttivo e ti dà la ricevuta con il numero. Entro 90 giorni si presenta la domanda all'INPS, con SPID, CIE o CNS della persona, oppure tramite un patronato o un'associazione di categoria. Poi arriva la convocazione alla visita."
+    ],
+    [
+     "Controlla quale procedura vale nella tua provincia",
+     "Dal 1° marzo 2026, in 60 province (tra cui Roma, Milano, Torino e Bologna), vale una procedura nuova: basta il certificato del medico, senza una domanda separata. L'INPS prevede che dal 1° gennaio 2027 valga in tutta Italia. Chiedi al medico o al patronato quale procedura vale da voi, oppure cerca «riforma della disabilità» sul sito dell'INPS."
     ],
     [
      "Alla visita, porta tutto",
@@ -2223,7 +2269,9 @@
     "OR-42",
     "OR-43",
     "OR-29",
-    "OR-44"
+    "OR-44",
+    "OR-71",
+    "OR-72"
    ],
    "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS, aggiornate a novembre 2026, con gli importi e i limiti di reddito del 2026, che cambiano ogni anno: ricontrolleremo a gennaio. Nelle province dove si sperimenta la riforma della disabilità la procedura parte dal medico, senza una domanda separata. Non è una valutazione del singolo caso: per quella ci sono il patronato, le associazioni di categoria e il medico legale.",
    "domanda": "Cosa dà l'invalidità civile a un anziano",
@@ -2268,7 +2316,7 @@
     ],
     [
      "Paga i contributi ogni tre mesi",
-     "Si pagano dal 1° al 10 del mese che segue ogni trimestre: aprile, luglio, ottobre e gennaio. L'importo dipende dalle ore lavorate e dalla paga oraria: nel 2026, per esempio, 1,70 euro per ogni ora con una paga fino a 9,61 euro l'ora, e 2,34 euro con una paga oltre 11,70 euro l'ora. Si paga con pagoPA: online, con l'app IO o INPS Mobile, in banca o alla posta. Chi paga in ritardo ha delle sanzioni."
+     "Si pagano dal 1° al 10 del mese che segue ogni trimestre: aprile, luglio, ottobre e gennaio. L'importo dipende dalle ore lavorate e dalla paga oraria: nel 2026, per esempio, 1,70 euro per ogni ora con una paga fino a 9,61 euro l'ora, e 2,34 euro con una paga oltre 11,70 euro l'ora. Se la persona lavora almeno 25 ore a settimana, come di solito una badante che vive in casa, il contributo orario è fisso per tutte le ore pagate, qualunque sia la paga: l'importo dell'anno è nella tabella dell'INPS. Si paga con pagoPA: online, con l'app IO o INPS Mobile, in banca o alla posta. Chi paga in ritardo ha delle sanzioni."
     ],
     [
      "Tieni in ordine le carte",
@@ -2322,7 +2370,7 @@
    "tempo": "Un'ora per preparare il ricorso, poi i tempi del tribunale",
    "serve": "Documentazione medica recente, stato di famiglia, nomi e indirizzi dei parenti stretti",
    "perche": [
-    "L'amministratore di sostegno è una persona nominata dal giudice tutelare per aiutare chi, per una malattia o una menomazione fisica o psichica, non riesce a occuparsi da solo dei propri interessi. Il decreto di nomina dice per quanto tempo, per quali atti e con quali poteri. Lo può chiedere anche chi prevede di averne bisogno in futuro.",
+    "L'amministratore di sostegno è una persona nominata dal giudice tutelare per aiutare chi, per una malattia o una menomazione fisica o psichica, non riesce a occuparsi da solo dei propri interessi. Il decreto di nomina dice per quanto tempo, per quali atti e con quali poteri. Lo può chiedere anche chi prevede di averne bisogno in futuro. Chi vuole può anche indicare già oggi la persona che vorrebbe come amministratore, con un atto pubblico o una scrittura privata autenticata, per esempio da un notaio: il giudice può scegliere qualcun altro solo per gravi motivi. L'indicazione si può revocare nello stesso modo.",
     "È diverso da una delega. Una delega, o una procura, la firma la persona stessa, quando è in grado di farlo, e vale per le cose che indica: per esempio ritirare un documento o parlare con un ufficio. Quando la persona non è più in grado di decidere o di firmare, serve la decisione del giudice. Per capire quale strada vale nel vostro caso, chiedi a un avvocato, a un notaio o ai servizi sociali del Comune."
    ],
    "passi": [
@@ -2373,7 +2421,8 @@
    "fonti": [
     "OR-51",
     "OR-52",
-    "OR-53"
+    "OR-53",
+    "OR-75"
    ],
    "avvertenza": "Informazioni generali tratte dalla scheda del Ministero della Giustizia e dalle istruzioni dei tribunali di Napoli e di Sondrio, aggiornate a novembre 2026. Moduli, pagamenti e tempi cambiano da tribunale a tribunale: fa fede la cancelleria del giudice tutelare. Non è una consulenza legale: per scegliere tra delega, procura e amministrazione di sostegno chiedi a un avvocato, a un notaio o ai servizi sociali del Comune.",
    "domanda": "Come si chiede l'amministratore di sostegno",
@@ -2584,7 +2633,7 @@
     ],
     [
      "A tavola, seduto e con te",
-     "Il cibo è una delle cause principali di soffocamento nei bambini piccoli: le vie respiratorie sono strette e la masticazione è ancora incerta. Fallo mangiare seduto e resta con lui durante il pasto. Consistenza e grandezza dei pezzi, cibo per cibo, concordale con il pediatra; se vuoi, chiedigli anche dove fare un corso sulle manovre di disostruzione."
+     "Il cibo è una delle cause principali di soffocamento nei bambini piccoli: le vie respiratorie sono strette e la masticazione è ancora incerta. Fallo mangiare seduto, con la schiena dritta, e non lasciarlo solo mentre mangia. Consistenza e grandezza dei pezzi, cibo per cibo, concordale con il pediatra; e conviene imparare le manovre di disostruzione: chiedi al pediatra dove fare un corso."
     ],
     [
      "Scrivi le domande per il pediatra",
@@ -2610,9 +2659,10 @@
     "OR-61",
     "OR-62",
     "OR-63",
-    "OR-64"
+    "OR-64",
+    "OR-73"
    ],
-   "avvertenza": "Informazioni generali tratte dalle indicazioni dell'Organizzazione Mondiale della Sanità, dell'Istituto Superiore di Sanità e di un'Azienda sanitaria italiana, aggiornate a novembre 2026. Non contengono dosi, quantità o schemi di pappe: quelli si decidono con il pediatra, che conosce il tuo bambino. In caso di allergie, nascita prematura o malattie le indicazioni possono essere diverse.",
+   "avvertenza": "Informazioni generali tratte dalle indicazioni dell'Organizzazione Mondiale della Sanità, dell'Istituto Superiore di Sanità e di due Aziende sanitarie italiane, aggiornate a novembre 2026. Non contengono dosi, quantità o schemi di pappe: quelli si decidono con il pediatra, che conosce il tuo bambino. In caso di allergie, nascita prematura o malattie le indicazioni possono essere diverse.",
    "domanda": "Quando si comincia lo svezzamento",
    "correlate": [
     "domande-per-il-pediatra",
@@ -2668,7 +2718,7 @@
    "passi": [
     [
      "Dichiara la nascita",
-     "Si fa in ospedale entro 3 giorni, alla direzione sanitaria, oppure in Comune entro 10 giorni: in quello dove è nato il bambino o in quello di residenza dei genitori. Servono i documenti d'identità dei genitori e l'attestazione di nascita data in sala parto. Se i genitori sono sposati basta uno dei due; se non lo sono, la dichiarazione va fatta da entrambi. Se i genitori vivono in Comuni diversi, in Comune la nascita si dichiara in quello di residenza della madre, salvo diverso accordo tra i genitori."
+     "Si fa in ospedale entro 3 giorni, alla direzione sanitaria, oppure in Comune entro 10 giorni: in quello dove è nato il bambino o in quello di residenza dei genitori. Servono i documenti d'identità dei genitori e l'attestazione di nascita data in sala parto. Se i genitori sono sposati basta uno dei due. Se non lo sono, ognuno riconosce il figlio per sé: se il padre non c'è alla dichiarazione, può riconoscerlo anche dopo, in Comune, con il consenso del genitore che lo ha già riconosciuto. Se i genitori vivono in Comuni diversi, in Comune la nascita si dichiara in quello di residenza della madre, salvo diverso accordo tra i genitori."
     ],
     [
      "Il codice fiscale arriva dal Comune",
@@ -2684,7 +2734,7 @@
     ],
     [
      "Poi l'Assegno unico",
-     "L'Assegno unico per i figli si chiede all'INPS e spetta già dal settimo mese di gravidanza; se lo ricevi già per altri figli, va comunicata la nascita. Le regole sono nella scheda «Da sapere» più sotto."
+     "L'Assegno unico per i figli si chiede all'INPS e spetta già dal settimo mese di gravidanza; se lo ricevi già per altri figli, va comunicata la nascita. Chiedilo, o comunica la nascita, subito dopo il parto. Le regole sono nella scheda «Da sapere» più sotto."
     ],
     [
      "Metti tutto nella cartellina",
