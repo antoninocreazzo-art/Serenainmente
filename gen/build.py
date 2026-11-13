@@ -6,13 +6,25 @@ Uso:
   ANTEPRIMA:  OUT=/percorso/anteprima LINKS=rel python3 gen/build.py
   SITO:       python3 gen/build.py            (scrive nella cartella del sito)
 Stile: assets/stile3.css · Script: assets/sito.js · Indice della ricerca: assets/cerca-dati.js (generato qui)."""
-import json, os, re, html, datetime, shutil, urllib.parse, hashlib
+import glob, json, os, re, html, datetime, shutil, urllib.parse, hashlib
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.environ.get('OUT', ROOT)
 REL = os.environ.get('LINKS') == 'rel'
 PREVIEW = OUT != ROOT
 D = json.load(open(os.path.join(ROOT, 'gen', 'dati.json'), encoding='utf-8'))
+# Contenuti in più, un file per area in gen/contenuti/*.json: {"fonti": [...], "guide": [...], "domande": [...], "gruppi": [...]}.
+# Così più redattori lavorano insieme senza toccare dati.json. Le fonti hanno id unici con il prefisso dell'area (es. "AT-01").
+# Campi in più nelle guide (al posto dei dizionari qui sotto): "per": ["bambino"|"anziano"|"bambino anziano", [età]],
+# "frasi": [espressioni regolari della ricerca], "chiavi_ricerca": "parole in più", "perche_titolo": "titolo della sezione perché".
+EXTRA = []
+for _f in sorted(glob.glob(os.path.join(ROOT, 'gen', 'contenuti', '*.json'))):
+    _x = json.load(open(_f, encoding='utf-8')); EXTRA.append(_x)
+    D['fonti'] += _x.get('fonti', []); D['guide'] += _x.get('guide', [])
+_ids = [f['id'] for f in D['fonti']]
+assert len(_ids) == len(set(_ids)), 'id di fonte ripetuto: ' + str([i for i in _ids if _ids.count(i) > 1][:5])
+_sl = [g['slug'] for g in D['guide']]
+assert len(_sl) == len(set(_sl)), 'slug di guida ripetuto: ' + str([i for i in _sl if _sl.count(i) > 1][:5])
 SITE = 'https://serenainmente.it'
 IG = 'https://www.instagram.com/serenainmente/'
 MAIL = 'privacy@serenainmente.it'   # unico indirizzo di contatto (deciso dal presidente il 12/11/2026)
@@ -33,6 +45,9 @@ ARG = [
     ('documenti', 'Documenti', 'Fascicolo sanitario, scelte, cambi e moduli', 'folder'),
     ('organizzazione', 'Organizzarsi', 'Cartellina, scadenze e settimana di famiglia', 'calendar'),
     ('crescita', 'Bambini e crescita', 'Sonno, routine e piccoli passi', 'sprout'),
+    ('attesa', 'Attesa e primi mesi', 'Gravidanza, parto e il primo anno', 'leaf'),
+    ('anziani', 'Genitori anziani', 'Assistenza, aiuti e pratiche', 'home'),
+    ('soldi', 'Soldi e agevolazioni', 'Bonus, assegni, ISEE e detrazioni', 'list'),
 ]
 ARGN = {a[0]: a for a in ARG}
 GUIDA_ARG = {'indennita-di-accompagnamento': 'documenti', 'esenzione-ticket': 'documenti', 'risvegli-notturni': 'crescita', 'certificato-sport-bambini': 'salute', 'domande-per-il-pediatra': 'salute', 'visita-specialistica-come-funziona': 'salute',
@@ -89,6 +104,10 @@ CHIAVI = {
  'svezzamento': 'svezzamento autosvezzamento pappa pappe alimentazione complementare cibi solidi primi cibi miele seggiolone',
  'neonato-documenti-primi-giorni': 'nascita dichiarazione anagrafe documenti primi giorni nuovi nati',
 }
+for g in D['guide']:
+    if g.get('per'): PER[g['slug']] = (g['per'][0], g['per'][1])
+    if g.get('frasi'): FRASI_GUIDA[g['slug']] = g['frasi']
+    if g.get('chiavi_ricerca'): CHIAVI[g['slug']] = g['chiavi_ricerca']
 for g in D['guide']:
     g['arg'] = g.get('argomento') or GUIDA_ARG.get(g['slug'], 'organizzazione')
     testo = ' '.join([g['titolo'], g['sommario']] + g['perche'] + [a + ' ' + b for a, b in g['passi']] + g.get('errori', []) + g.get('checklist', []))
@@ -472,6 +491,8 @@ PERCHE_T = {'indennita-di-accompagnamento': 'Chi ne ha diritto', 'esenzione-tick
             'invalidita-civile-anziani': 'Da sapere prima', 'badante-in-regola': 'Da sapere prima', 'amministratore-di-sostegno': 'Quando serve',
             'pratiche-online-per-un-genitore': 'Da sapere prima', 'prenotare-con-il-cup': 'Da sapere prima', 'svezzamento': 'Le indicazioni, in breve',
             'neonato-documenti-primi-giorni': 'Da sapere prima'}
+for _g in D['guide']:
+    if _g.get('perche_titolo'): PERCHE_T[_g['slug']] = _g['perche_titolo']
 CALC = {'carta-identita-bambini': ('cie', 'Rinnovare la carta d\'identità'), 'certificato-sport-bambini': ('anno', 'Rinnovare il certificato per lo sport')}
 def calcolo(g):
     if g['slug'] not in CALC: return ''

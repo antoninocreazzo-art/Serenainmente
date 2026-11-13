@@ -9,6 +9,10 @@ P['domanda'] = '<circle cx="12" cy="12" r="9"/><path d="M9.6 9.2a2.5 2.5 0 1 1 3
 
 _DQJ = json.load(open(os.path.join(ROOT, 'gen', 'domande.json'), encoding='utf-8'))
 DQ = _DQJ['domande']
+import glob as _glob
+for _f in sorted(_glob.glob(os.path.join(ROOT, 'gen', 'contenuti', '*.json'))):  # domande in più, una per area (vedi build.py)
+    _x = json.load(open(_f, encoding='utf-8')); DQ += _x.get('domande', [])
+    _DQJ['gruppi'] += [gr for gr in _x.get('gruppi', []) if gr[0] not in dict(_DQJ['gruppi'])]
 DQ_GRUPPI = _DQJ['gruppi']
 DQ_CONTROLLO, DQ_REVISIONE = _DQJ['controllo'], _DQJ['revisione']
 DQN = {q['slug']: q for q in DQ}
