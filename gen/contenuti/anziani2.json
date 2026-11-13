@@ -318,6 +318,7 @@
    ],
    "correlate": [
     "ingresso-in-rsa-cosa-preparare",
+    "isee-passo-passo",
     "invalidita-civile-anziani",
     "amministratore-di-sostegno"
    ]
@@ -501,6 +502,8 @@
     "torna a casa dall ospedale"
    ],
    "correlate": [
+    "assistenza-domiciliare-integrata",
+    "ricovero-programmato",
     "rsa-come-si-entra",
     "lista-medicine-genitore-anziano",
     "invalidita-civile-anziani"
@@ -879,6 +882,7 @@
    ],
    "correlate": [
     "pronto-soccorso-triage-codici",
+    "numeri-utili-di-famiglia",
     "farmacie-di-turno-e-servizi",
     "pediatra-e-medico-di-base"
    ]

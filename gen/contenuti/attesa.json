@@ -1180,7 +1180,7 @@
      ],
      [
       "Bonus mamme 2026",
-      "Madri che lavorano, con due o più figli",
+      "Madri che lavorano con due figli (il più piccolo sotto i 10 anni) o con tre o più (il più piccolo sotto i 18), con un reddito da lavoro fino a 40.000 euro",
       "31 dicembre 2026"
      ]
     ]
@@ -1208,7 +1208,7 @@
     ],
     [
      "Bonus mamme 2026",
-     "Se lavori, come dipendente o in proprio, e hai due o più figli, per il 2026 l'INPS paga 60 euro per ogni mese di lavoro, fino a 12 mesi, in una sola volta. Sono escluse le lavoratrici domestiche e, se lavorano a tempo indeterminato, le madri di tre o più figli che hanno diritto all'esonero dai contributi. La domanda va fatta entro il 31 dicembre 2026, oppure entro il 31 gennaio 2027 se il diritto nasce a dicembre. Le altre condizioni sono sulla pagina dell'INPS."
+     "Se lavori, come dipendente o in proprio, e hai due figli con il più piccolo sotto i 10 anni, oppure tre o più figli con il più piccolo sotto i 18, e il tuo reddito da lavoro non supera 40.000 euro l'anno, per il 2026 l'INPS paga 60 euro per ogni mese di lavoro, fino a 12 mesi, in una sola volta. Sono escluse le lavoratrici domestiche. Le madri di tre o più figli non lo ricevono nei mesi in cui hanno un contratto a tempo indeterminato: conta il contratto, non l'aver chiesto l'esonero dai contributi. La domanda va fatta entro il 31 dicembre 2026, oppure entro il 31 gennaio 2027 se il diritto nasce a dicembre. Le altre condizioni sono sulla pagina dell'INPS."
     ],
     [
      "Più avanti, il bonus asilo nido",
@@ -1236,6 +1236,7 @@
     "AT-24",
     "AT-25",
     "AT-23",
+    "SO-15",
     "AT-37",
     "AT-38"
    ],
@@ -1258,6 +1259,7 @@
     "1000 euro"
    ],
    "correlate": [
+    "bonus-famiglie-2026",
     "assegno-unico-nuovo-nato",
     "neonato-documenti-primi-giorni",
     "bonus-asilo-nido"
@@ -1415,6 +1417,7 @@
     "passaporto (per il |del |per un )?(neonat|bebe)"
    ],
    "correlate": [
+    "passaporto-bambini",
     "carta-identita-bambini",
     "neonato-documenti-primi-giorni",
     "valigia-per-il-parto"

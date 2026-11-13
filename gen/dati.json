@@ -6,7 +6,8 @@
    "anno": 2019,
    "titolo": "To grow up healthy, children need to sit less and play more",
    "tipo": "Linea guida",
-   "url": "https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more"
+   "url": "https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more",
+   "lingua": "en"
   },
   {
    "id": "OR-04",
@@ -14,7 +15,8 @@
    "anno": 2026,
    "titolo": "Healthy Sleep Habits: How Many Hours Does Your Child Need?",
    "tipo": "Raccomandazione",
-   "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/Healthy-Sleep-Habits-How-Many-Hours-Does-Your-Child-Need.aspx"
+   "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/Healthy-Sleep-Habits-How-Many-Hours-Does-Your-Child-Need.aspx",
+   "lingua": "en"
   },
   {
    "id": "OR-02",
@@ -31,7 +33,8 @@
    "anno": 2023,
    "titolo": "Family Mealtimes: A Systematic Umbrella Review of Characteristics, Correlates, Outcomes and Interventions",
    "tipo": "Revisione sistematica",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10346164/"
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10346164/",
+   "lingua": "en"
   },
   {
    "id": "OR-05",
@@ -95,7 +98,8 @@
    "anno": 2016,
    "titolo": "Recommended Amount of Sleep for Pediatric Populations: A Consensus Statement",
    "tipo": "Raccomandazione (consensus statement)",
-   "url": "https://jcsm.aasm.org/doi/10.5664/jcsm.5866"
+   "url": "https://jcsm.aasm.org/doi/10.5664/jcsm.5866",
+   "lingua": "en"
   },
   {
    "id": "SB-07",
@@ -103,7 +107,8 @@
    "anno": 2019,
    "titolo": "To grow up healthy, children need to sit less and play more",
    "tipo": "Linea guida",
-   "url": "https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more"
+   "url": "https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more",
+   "lingua": "en"
   },
   {
    "id": "OR-13",
@@ -215,7 +220,8 @@
    "anno": 2026,
    "titolo": "Toddler Won't Go to Sleep? 7 Tips to Help End Bedtime Battles",
    "tipo": "Raccomandazione",
-   "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/bedtime-trouble.aspx"
+   "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/bedtime-trouble.aspx",
+   "lingua": "en"
   },
   {
    "id": "SB-09",
@@ -223,7 +229,8 @@
    "anno": 2023,
    "titolo": "Sleeping Like a Baby: Stories & Tips From the Front Lines",
    "tipo": "Articolo divulgativo di una società scientifica",
-   "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/sleeping-like-a-baby-restless-nights-and-tips-from-the-front-lines.aspx"
+   "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/sleeping-like-a-baby-restless-nights-and-tips-from-the-front-lines.aspx",
+   "lingua": "en"
   },
   {
    "id": "SB-10",
@@ -239,7 +246,8 @@
    "anno": 2021,
    "titolo": "Physical activity (scheda informativa)",
    "tipo": "Linea guida",
-   "url": "https://www.who.int/europe/news-room/fact-sheets/item/physical-activity"
+   "url": "https://www.who.int/europe/news-room/fact-sheets/item/physical-activity",
+   "lingua": "en"
   },
   {
    "id": "OR-25",
@@ -535,7 +543,8 @@
    "anno": 2026,
    "titolo": "Infant and young child feeding (scheda informativa del 4 agosto 2026)",
    "tipo": "Raccomandazione",
-   "url": "https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding"
+   "url": "https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding",
+   "lingua": "en"
   },
   {
    "id": "OR-62",
@@ -543,7 +552,8 @@
    "anno": 2023,
    "titolo": "WHO Guideline for complementary feeding of infants and young children 6-23 months of age (16 ottobre 2023)",
    "tipo": "Linea guida",
-   "url": "https://www.who.int/publications/i/item/9789240081864"
+   "url": "https://www.who.int/publications/i/item/9789240081864",
+   "lingua": "en"
   },
   {
    "id": "OR-63",
@@ -804,6 +814,11 @@
      "2026-11-12",
      "aggiunta la fonte sulla proroga di un anno del Piano nazionale di prevenzione vaccinale 2023-2025."
     ]
+   ],
+   "correlate": [
+    "documenti-genitore-anziano",
+    "scadenze-di-famiglia",
+    "settimana-di-famiglia"
    ]
   },
   {
@@ -852,7 +867,11 @@
    ],
    "avvertenza": "Informazioni generali, non sostituiscono il parere del pediatra o del medico.",
    "domanda": "Come calmare la sera",
-   "titolo_seo": "Routine della nanna in quattro mosse"
+   "titolo_seo": "Routine della nanna in quattro mosse",
+   "correlate": [
+    "risvegli-notturni",
+    "quanto-dorme-un-bambino"
+   ]
   },
   {
    "slug": "domande-per-il-pediatra",
@@ -975,6 +994,7 @@
     ]
    ],
    "correlate": [
+    "fascicolo-sanitario-consenso-oscuramento",
     "pratiche-online-per-un-genitore"
    ]
   },
@@ -1170,7 +1190,10 @@
    "avvertenza": "Informazioni organizzative generali, aggiornate a ottobre 2026. Orari minimi, massimali e procedure derivano dagli accordi nazionali e possono variare per Regione e ASL: fa fede la tua ASL. Per la salute il riferimento resta il medico.",
    "domanda": "Come cambiare pediatra",
    "titolo_seo": "Pediatra e medico di base: scelta e cambio",
-   "strumento": "preparo"
+   "strumento": "preparo",
+   "correlate": [
+    "cambiare-medico-o-pediatra"
+   ]
   },
   {
    "slug": "quanto-dorme-un-bambino",
@@ -1267,7 +1290,11 @@
     "OR-04"
    ],
    "avvertenza": "Indicazioni di popolazione, non valutazioni sul singolo bambino. Sotto i 4 mesi la variabilità è molto ampia. Informazioni generali, non sostituiscono il parere del pediatra o del medico.",
-   "domanda": "Quanto deve dormire"
+   "domanda": "Quanto deve dormire",
+   "correlate": [
+    "risvegli-notturni",
+    "routine-della-nanna"
+   ]
   },
   {
    "slug": "certificato-vaccinale",
@@ -1337,7 +1364,7 @@
    "serve": "SPID o CIE, codice fiscale del bambino, certificato vaccinale per nido e infanzia",
    "strumento": "gestionale",
    "perche": [
-    "Le iscrizioni arrivano tutte insieme e durano poco: per la scuola, nel 2026, la finestra è stata di un mese, dal 13 gennaio al 14 febbraio. Chi prepara i documenti prima non deve inseguirli l'ultimo giorno.",
+    "Le iscrizioni arrivano tutte insieme e durano poco: per la scuola, nel 2026, la finestra è stata di poco più di un mese, dal 13 gennaio al 21 febbraio: la chiusura era prevista per il 14 febbraio, poi il Ministero l'ha prorogata di una settimana. Chi prepara i documenti prima non deve inseguirli l'ultimo giorno.",
     "Nido e scuola funzionano in modo diverso. Il nido (0-3 anni) è un servizio del Comune: ogni Comune pubblica il suo bando, con date e regole proprie, spesso in primavera. Dalla scuola dell'infanzia in su vale una nota del Ministero dell'Istruzione, che esce ogni anno, di solito a dicembre."
    ],
    "tabella": {
@@ -1417,12 +1444,21 @@
     "OR-15",
     "OR-13",
     "OR-05",
-    "OR-16"
+    "OR-16",
+    "CR-40"
    ],
    "avvertenza": "Informazioni generali aggiornate a ottobre 2026, con le regole dell'anno scolastico 2026/2027. Le date del 2027/2028 non sono ancora uscite: la nota del Ministero arriva di solito a dicembre e aggiorneremo questa pagina. Per il nido valgono il bando e le regole del tuo Comune. Esiste anche un contributo INPS per le rette del nido (bonus nido), che si chiede online sul sito INPS o tramite patronato: l'importo dipende dall'ISEE.",
    "domanda": "Quando e come si fa l'iscrizione a nido e scuola",
    "correlate": [
+    "iscrizione-scuola-primaria",
+    "inserimento-al-nido",
     "bonus-asilo-nido"
+   ],
+   "storia": [
+    [
+     "2026-11-13",
+     "corretta la chiusura delle iscrizioni scolastiche 2026: il 21 febbraio, non il 14, dopo la proroga del Ministero (avviso n. 33781 del 12 febbraio 2026), con la fonte del Comune di Firenze."
+    ]
    ]
   },
   {
@@ -2096,6 +2132,7 @@
    "domanda": "Come funziona il congedo parentale",
    "ricontrolla": "2027-01",
    "correlate": [
+    "congedo-di-paternita",
     "bonus-asilo-nido",
     "neonato-documenti-primi-giorni",
     "iscrizioni-nido-e-scuola"
@@ -2167,6 +2204,7 @@
    "avvertenza": "Informazioni generali per i dipendenti del settore privato, tratte dalle pagine dell'INPS aggiornate a ottobre 2026. Per i dipendenti pubblici, per i genitori di figli con disabilità e per i casi particolari valgono regole in più. Per il tuo caso chiedi all'ufficio del personale, a un patronato o all'INPS: questa guida non sostituisce la loro valutazione.",
    "domanda": "Come si chiedono i permessi della legge 104",
    "correlate": [
+    "caregiver-familiare-diritti",
     "invalidita-civile-anziani",
     "indennita-di-accompagnamento",
     "badante-in-regola"
@@ -2766,6 +2804,8 @@
    "domanda": "Cosa fare per i documenti di un neonato",
    "ricontrolla": "2027-01",
    "correlate": [
+    "primi-giorni-a-casa-con-il-neonato",
+    "aiuti-per-la-nascita-2026",
     "carta-identita-bambini",
     "pediatra-e-medico-di-base",
     "bonus-asilo-nido"
@@ -3293,6 +3333,8 @@
    "medico": false,
    "guide": [
     "carta-identita-bambini",
+    "passaporto-bambini",
+    "spid-e-cie-in-famiglia",
     "neonato-documenti-primi-giorni"
    ]
   },
@@ -3440,6 +3482,7 @@
    "revisione": "2027-05-12",
    "medico": false,
    "guide": [
+    "isee-passo-passo",
     "iscrizioni-nido-e-scuola",
     "bonus-asilo-nido",
     "neonato-documenti-primi-giorni"
@@ -3571,6 +3614,8 @@
    "revisione": "2027-05-12",
    "medico": false,
    "guide": [
+    "assegno-unico-nuovo-nato",
+    "aiuti-per-la-nascita-2026",
     "neonato-documenti-primi-giorni",
     "bonus-asilo-nido"
    ]
@@ -3631,6 +3676,8 @@
    "revisione": "2027-05-12",
    "medico": false,
    "guide": [
+    "spese-figli-da-detrarre",
+    "spese-genitore-anziano-detrazioni",
     "spostare-disdire-pagare-visita"
    ]
   },

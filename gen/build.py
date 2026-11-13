@@ -20,6 +20,9 @@ D = json.load(open(os.path.join(ROOT, 'gen', 'dati.json'), encoding='utf-8'))
 EXTRA = []
 for _f in sorted(glob.glob(os.path.join(ROOT, 'gen', 'contenuti', '*.json'))):
     _x = json.load(open(_f, encoding='utf-8')); EXTRA.append(_x)
+    # le guide delle aree non le ha lette il presidente: le ha controllate un revisore indipendente (IA), fonte per fonte.
+    # «area» lo ricorda, e la pagina lo dice («Come è stata fatta questa guida»).
+    for _g in _x.get('guide', []): _g['area'] = os.path.basename(_f)[:-5]
     D['fonti'] += _x.get('fonti', []); D['guide'] += _x.get('guide', [])
 _ids = [f['id'] for f in D['fonti']]
 assert len(_ids) == len(set(_ids)), 'id di fonte ripetuto: ' + str([i for i in _ids if _ids.count(i) > 1][:5])
@@ -322,7 +325,9 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None, pre=''):
 FONTI = {f['id']: f for f in D['fonti']}
 def src_block(fid):
     f = FONTI[fid]; dom = f['url'].split('/')[2].replace('www.', '')
-    it = dom.endswith('.it') or dom.endswith('.gov.it')
+    # «pagina in inglese» solo se la pagina è davvero in inglese: campo «lingua»: "en" nella fonte, oppure /en/ o /English/ nell'indirizzo
+    # (non basta il dominio: europa.eu, AT-32, è una pagina in italiano)
+    it = f.get('lingua', 'en' if re.search(r'/(en|english)/', f['url'], re.I) else 'it') != 'en'
     nota = f'<span class="type">{e(f["nota"])}</span>' if f.get('nota') else ''
     return f'''<li class="src"><span class="org">{e(f['ente'])}, {e(str(f['anno']))}</span><span class="ttl">{e(f['titolo'])}</span><span class="type">{e(f['tipo'])}{'' if it else ' · pagina in inglese'}</span>{nota}<a href="{e(f['url'])}" target="_blank" rel="noopener">Apri la fonte su {e(dom)}<span class="sr"> (si apre in una nuova scheda)</span> {ic('esterno','ic-s')}</a></li>'''
 
@@ -509,6 +514,11 @@ def azioni_lista(g, cktext):
             f'<button class="btn btn-line" type="button" data-stampa-lista data-umami-event="checklist-stampa">Stampa solo la lista</button>'
             f'<button class="btn btn-line" type="button" data-copialista data-umami-event="checklist-copia">Copia la lista</button>'
             f'<button class="btn btn-line" type="button" data-ckreset hidden>Azzera le spunte</button></div>')
+# «Come è stata fatta questa guida»: dice il vero su chi l'ha controllata. Le guide di dati.json le ha lette e approvate una persona;
+# quelle delle aree (gen/contenuti/*.json, campo «area») le ha controllate un revisore indipendente che usa anch'esso l'IA.
+FATTA_LETTA = "Scritta con il supporto dell'intelligenza artificiale; letta e approvata da una persona prima di uscire."
+FATTA_AREA = "Scritta con il supporto dell'intelligenza artificiale a partire dalle fonti ufficiali indicate; controllata fonte per fonte, prima di uscire, da un revisore indipendente che usa anch'esso l'intelligenza artificiale."
+FATTA_AREA_SENZA = "Scritta con il supporto dell'intelligenza artificiale; controllata prima di uscire da un revisore indipendente che usa anch'esso l'intelligenza artificiale."
 for g in GUIDE:
     a = ARGN[g['arg']]
     if g.get('checklist'): checklist_xlsx(g)
@@ -558,10 +568,10 @@ for g in GUIDE:
 {strumento_box(g.get('strumento')) if g.get('strumento') == 'gestionale' else ''}
 {f'<section id="fonti"><h2>Le fonti</h2><p class="small">Ogni dato di questa pagina viene da qui.</p><ul class="sources">{fonti}</ul></section>' if fonti else ''}
 <details class="piega fatta" id="come-e-fatta"><summary>Come è stata fatta questa guida</summary>
-<ul class="plain"><li>{f'{nf} {"fonte" if nf == 1 else "fonti"}, aperte e lette prima di scrivere' if nf else 'Consigli organizzativi: non cita dati sanitari'}.</li><li>Fonti controllate il {data_it(g['agg'])}. Prossimo controllo entro {prossimo}.</li><li>Scritta con il supporto dell'intelligenza artificiale; letta e approvata da una persona prima di uscire.</li></ul>
+<ul class="plain"><li>{f'{nf} {"fonte" if nf == 1 else "fonti"}, aperte e lette prima di scrivere' if nf else 'Consigli organizzativi: non cita dati sanitari'}.</li>{f'<li>Fonti controllate il {data_it(g["agg"])}. Prossimo controllo entro {prossimo}.</li>' if nf else ''}<li>{(FATTA_AREA if nf else FATTA_AREA_SENZA) if g.get('area') else FATTA_LETTA}</li></ul>
 <p class="small"><b>Cosa è cambiato.</b> {' '.join(f"{data_it(d)}: {e(t)}" for d, t in storia(g))}</p>
 <div class="row noprint"><a class="btn btn-line btn-sm" href="~/metodo/">Il metodo</a><a class="btn btn-line btn-sm" href="~/correzioni/">Tutte le correzioni</a></div></details>
-<p class="small fatta-r">Fonti controllate il {data_it(g['agg'])}; prossimo controllo entro {prossimo}. <a href="{segnala}" data-umami-event="segnala-errore">Segnala un errore</a></p>
+<p class="small fatta-r">{f'Fonti controllate il {data_it(g["agg"])}; prossimo controllo entro {prossimo}. ' if nf else ''}<a href="{segnala}" data-umami-event="segnala-errore">Segnala un errore</a></p>
 <aside class="box box-line"><b>Da sapere</b><p data-leggi>{e(g['avvertenza'])}</p></aside>
 {share(gp, g['titolo'])}
 </div>
@@ -762,14 +772,14 @@ NON_FA = ['Non dà diagnosi e non dice cosa ha un bambino o un adulto.', 'Non su
 PROCESSO = [('Una domanda vera', 'Si parte da quello che le famiglie chiedono davvero: dove trovo un referto, cosa succede se salto una visita, quante ore deve dormire un bambino.'),
             ('Le fonti, prima del testo', 'Si cercano enti e istituzioni: Organizzazione Mondiale della Sanità, Istituto Superiore di Sanità, Ministeri, Regioni, società scientifiche. Una fonte entra solo dopo essere stata aperta e letta, e se ne riportano i limiti: età, anno del dato.'),
             ('La scrittura', 'Il testo si scrive con il supporto dell\'intelligenza artificiale, in parole semplici. Niente dosaggi, niente diagnosi.'),
-            ('Il controllo di una persona', 'Una persona legge ogni pagina, la confronta con le fonti e decide se pubblicarla. Niente esce da solo.'),
+            ('Il controllo', 'Ogni pagina, prima di uscire, viene confrontata con le fonti. Le prime guide le ha lette e approvate una persona, che ha deciso se pubblicarle; le guide e le domande uscite dal 13 novembre 2026 le ha controllate fonte per fonte un revisore indipendente, che usa anch\'esso l\'intelligenza artificiale. Ogni guida lo dice in «Come è stata fatta questa guida». Niente esce senza controllo.'),
             ('La data, in vista', 'Ogni guida dice quando è stata aggiornata, quando sono state controllate le fonti e entro quando verranno ricontrollate: almeno ogni sei mesi, e subito se cambia una regola.'),
             ('La correzione', 'Se trovi un errore o un collegamento che non funziona, scrivi a ' + MAIL + ': correggiamo e indichiamo la data dell\'aggiornamento.')]
 pages.append(page('/chi-e-serena/', 'Chi è Serena', D['chi']['sommario'], f'''
 <section class="chi-hero wrap"><div class="ph-hd" style="padding:0"><h1>Chi è <em>Serena</em></h1><p class="lead">{e(D['chi']['sommario'])}</p></div>{foto('chi', '', 'chi-img', eager=True)}</section>
 <section class="wrap-t prose">
 <h2 style="margin-top:0">Chi c'è dietro</h2>
-<p>Serena è il nome del progetto. Lo cura una persona: sceglie gli argomenti, controlla le fonti e approva ogni pagina prima che esca. L'intelligenza artificiale aiuta a scrivere i testi, a comporre le immagini e a cercare le fonti.</p>
+<p>Serena è il nome del progetto. Lo cura una persona, che sceglie gli argomenti. Ogni pagina viene controllata sulle fonti prima di uscire: le prime guide le ha lette e approvate questa persona, le più recenti le ha controllate fonte per fonte un revisore indipendente, che usa anch'esso l'intelligenza artificiale. Ogni guida dice quale controllo ha avuto. L'intelligenza artificiale aiuta a scrivere i testi, a comporre le immagini e a cercare le fonti.</p>
 <p>I dati non vengono da noi: vengono da enti e istituzioni che puoi aprire da ogni pagina.</p>
 <div class="row"><a class="btn btn-line" href="~/metodo/">Come nasce una guida</a><a class="btn btn-line" href="~/fonti/">Tutte le fonti</a></div>
 <h2>Cosa Serena non fa</h2><ul class="ticks no">{''.join(f'<li>{ic("close","ic-s")}<span>{x}</span></li>' for x in NON_FA)}</ul>
@@ -787,7 +797,7 @@ pages.append(page('/chi-e-serena/', 'Chi è Serena', D['chi']['sommario'], f'''
 # ---------- il metodo ----------
 latest = sorted(D['post'], key=lambda x: x['data'], reverse=True)[:3]
 ultima = max(g['agg'] for g in GUIDE)
-pages.append(page('/metodo/', 'Il metodo', 'Come nascono e si controllano le guide di Serena: fonti, intelligenza artificiale, controllo di una persona, date.', f'''
+pages.append(page('/metodo/', 'Il metodo', 'Come nascono e si controllano le guide di Serena: fonti, intelligenza artificiale, controlli, date.', f'''
 <section class="ph-hd wrap-t"><h1>Il <em>metodo</em></h1><p class="lead">Come nasce una guida di Serena, chi controlla le fonti e ogni quanto.</p></section>
 <section class="wrap-t prose">
 <ol class="steps">{''.join(f'<li><b>{e(a)}</b><span>{e(b)}</span></li>' for a, b in PROCESSO)}</ol>
@@ -1060,7 +1070,7 @@ pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della fam
 </section>
 <section class="wrap"><div class="sec-hd"><h2>Strumenti <em>gratuiti</em></h2><a class="more" href="~/risorse/">Tutti {ic('arrow','ic-s')}</a></div>{tools_fila()}</section>
 {frase_home}
-<section class="wrap"><div class="chi-band"><div style="display:flex;flex-direction:column;gap:14px;align-items:flex-start"><h2>Chi è <em>Serena</em></h2><p>Serena è il nome di un progetto per chi si prende cura della famiglia. Lo cura una persona, con il supporto dell'intelligenza artificiale: ogni dato ha la sua fonte, ogni pagina è letta prima di uscire.</p><a class="btn btn-line" href="~/chi-e-serena/">Chi c'è dietro e come lavora {ic('arrow','ic-s')}</a></div>
+<section class="wrap"><div class="chi-band"><div style="display:flex;flex-direction:column;gap:14px;align-items:flex-start"><h2>Chi è <em>Serena</em></h2><p>Serena è il nome di un progetto per chi si prende cura della famiglia. Lo cura una persona, con il supporto dell'intelligenza artificiale: ogni dato ha la sua fonte, ogni pagina è controllata prima di uscire.</p><a class="btn btn-line" href="~/chi-e-serena/">Chi c'è dietro e come lavora {ic('arrow','ic-s')}</a></div>
 <div style="display:flex;flex-direction:column;gap:20px">{valori()}{IGCARD}</div></div></section>
 ''', cls='p-home', pre=hero_pre()))
 

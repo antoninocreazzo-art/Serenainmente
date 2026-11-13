@@ -97,11 +97,12 @@
      "p": "Toscana: accesso con Carta sanitaria elettronica (TS/CNS) oppure SPID di livello 2. Lombardia: accesso al Fascicolo con SPID, CIE oppure CNS con PIN e lettore."
     },
     {
-     "t": "C'è anche il consenso alla consultazione: se lo dai, i medici del Servizio sanitario possono vedere il fascicolo mentre ti curano, e ogni accesso resta registrato.",
+     "t": "C'è anche il consenso alla consultazione: se lo dai, possono vedere il fascicolo i professionisti sanitari, pubblici e privati, che ti hanno in cura, e ogni accesso resta registrato.",
      "f": [
-      0
+      0,
+      2
      ],
-     "p": "Con il consenso alla consultazione i professionisti del SSN possono consultare il fascicolo durante la cura; «Ogni accesso è tracciato e reso visibile sul tuo fascicolo»."
+     "p": "Garante: con il consenso consultano il FSE «tutti gli esercenti le professioni sanitarie (pubblici e privati) che intervengono nel processo di cura dell'assistito»; «tutte le operazioni effettuate sul FSE sono oggetto di registrazione». Toscana: «Ogni accesso è tracciato e reso visibile sul tuo fascicolo»."
     }
    ],
    "guide": [
@@ -121,6 +122,12 @@
      "pagina": "Cambio medico (accesso al Fascicolo sanitario elettronico)",
      "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
      "data": "2026-10-21"
+    },
+    {
+     "ente": "Garante per la protezione dei dati personali",
+     "pagina": "FAQ – Fascicolo sanitario elettronico (FSE)",
+     "url": "https://www.garanteprivacy.it/faq/fascicolo-sanitario",
+     "data": "2026-11-13"
     }
    ]
   },

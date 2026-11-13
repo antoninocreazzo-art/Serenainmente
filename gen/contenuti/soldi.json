@@ -666,6 +666,7 @@
    "correlate": [
     "bonus-asilo-nido",
     "bonus-famiglie-2026",
+    "rsa-come-si-entra",
     "spese-genitore-anziano-detrazioni"
    ],
    "per": [
@@ -813,9 +814,9 @@
    "domanda": "Quali bonus esistono per le famiglie nel 2026",
    "ricontrolla": "2027-01",
    "correlate": [
+    "aiuti-per-la-nascita-2026",
     "bonus-asilo-nido",
     "isee-passo-passo",
-    "aiuti-per-la-nascita-2026",
     "esenzione-ticket"
    ],
    "per": [
@@ -1414,6 +1415,7 @@
    "domanda": "Cosa portare a una visita medica",
    "correlate": [
     "domande-per-il-pediatra",
+    "ricovero-programmato",
     "cartellina-di-famiglia",
     "lista-medicine-genitore-anziano"
    ],

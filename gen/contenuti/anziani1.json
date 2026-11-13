@@ -567,6 +567,7 @@
    "strumento": "gestionale",
    "chiavi_ricerca": "adi assistenza domiciliare integrata cure domiciliari infermiere a casa a domicilio fisioterapista oss operatore dimissione protetta dimesso ospedale pai piano assistenziale valutazione distretto asl allettato non esce di casa",
    "correlate": [
+    "dimissioni-protette",
     "ausili-dalla-asl",
     "centro-diurno-anziani",
     "lista-medicine-genitore-anziano"
@@ -737,6 +738,7 @@
    "chiavi_ricerca": "telesoccorso teleassistenza telecontrollo pulsante allarme anziano solo sola vive da solo sola in casa servizi sociali comune assistente sociale pasti a domicilio trasporto sociale accompagnamento sad assistenza domiciliare comunale aiuto in casa isee",
    "correlate": [
     "centro-diurno-anziani",
+    "numeri-utili-di-famiglia",
     "assistenza-domiciliare-integrata",
     "badante-in-regola"
    ]
@@ -1529,7 +1531,7 @@
    "slug": "vaccino-covid-anziani-gratis",
    "gruppo": "anziani",
    "domanda": "Il vaccino anti-Covid è gratis per gli anziani?",
-   "risposta": "Sì. In Piemonte, per esempio, la vaccinazione anti-Covid 2026-2027 è gratuita per tutti, e raccomandata in particolare a chi ha 60 anni o più.",
+   "risposta": "Nelle Regioni che abbiamo controllato sì: in Piemonte e in Lombardia il vaccino anti-Covid è gratuito, e in Piemonte è raccomandato soprattutto dai 60 anni. Per la tua Regione chiedi al medico di famiglia o alla ASL.",
    "righe": [
     {
      "t": "Nella prima fase della campagna piemontese la precedenza va a chi ha 80 anni o più, agli ospiti delle strutture di lungodegenza e alle persone molto fragili.",
