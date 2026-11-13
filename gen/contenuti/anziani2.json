@@ -223,6 +223,14 @@
    "titolo": "Fascicolo sanitario elettronico",
    "tipo": "Guida per i cittadini",
    "url": "https://www.regione.toscana.it/-/fascicolo-sanitario-elettronico"
+  },
+  {
+   "id": "NA-29",
+   "ente": "Regione Lombardia",
+   "anno": 2026,
+   "titolo": "Numero europeo armonizzato 116117: continuità assistenziale (ex guardia medica) in tutta la Lombardia",
+   "tipo": "Guida per i cittadini",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117"
   }
  ],
  "guide": [
@@ -435,7 +443,7 @@
    "passi": [
     [
      "Parlane in reparto, presto",
-     "La valuta il personale di reparto, in particolare il medico che segue il ricovero. Nell'ATS della Brianza ogni ospedale ha dei referenti per questo: medici, infermieri, assistenti sociali. A Caserta il protocollo chiede di cominciare a organizzarla almeno tre giorni prima dell'uscita e di dirlo al paziente e ai familiari. Se pensi che il tuo genitore ne abbia bisogno, chiedilo tu, nei primi giorni."
+     "La valuta il personale di reparto, in particolare il medico che segue il ricovero. Nell'ATS della Brianza ogni ospedale ha dei referenti per questo: medici, infermieri, assistenti sociali. A Caserta il protocollo raccomanda di programmare l'uscita almeno tre giorni prima e di dirlo al paziente e ai familiari. Se pensi che il tuo genitore ne abbia bisogno, chiedilo tu, nei primi giorni."
     ],
     [
      "Chiedi cosa verrà attivato",
@@ -465,7 +473,7 @@
    "errori": [
     "Aspettare il giorno della dimissione per chiedere aiuto.",
     "Uscire senza lettera di dimissione e senza la terapia scritta.",
-    "Dare per scontato che le cure a casa si paghino: in Brianza sono gratuite, si paga la parte alberghiera della RSA."
+    "Dare per scontato che le cure a casa si paghino: in Brianza le cure domiciliari sono gratuite; si pagano la parte alberghiera della RSA e, in base all'ISEE, l'assistenza domiciliare del Comune."
    ],
    "checklist": [
     "Nome e telefono del referente della dimissione",
@@ -537,7 +545,7 @@
     ],
     [
      "Cosa si riceve",
-     "Due parti. Una quota fissa, pari all'indennità di accompagnamento, pagata come l'indennità. E una quota integrativa, l'assegno di assistenza, di circa 850 euro al mese, nei limiti delle risorse disponibili, pagata tramite il servizio «Prestazione Universale»."
+     "Due parti. Una quota fissa, pari all'indennità di accompagnamento, pagata come l'indennità. E una quota integrativa, l'assegno di assistenza, di circa 850 euro al mese, nei limiti delle risorse disponibili, pagata tramite il servizio «Prestazione Universale». Una volta riconosciuta, la prestazione assorbe alcuni contributi per l'assistenza a casa che l'ambito territoriale sociale, cioè i servizi sociali dei Comuni, può già versare: se ne ricevete uno, chiedi ai servizi sociali cosa cambia."
     ],
     [
      "Come si usa l'assegno di assistenza",
@@ -609,11 +617,11 @@
     ],
     [
      "Se vuoi, indica un fiduciario",
-     "È una persona maggiorenne e capace di intendere e di volere che ti rappresenta con i medici. Accetta firmando le DAT o un atto allegato, ne riceve una copia e può rinunciare per iscritto. Puoi revocarlo in ogni momento, senza spiegare perché. Se non c'è un fiduciario, le DAT valgono lo stesso; se serve, il giudice tutelare può nominare un amministratore di sostegno."
+     "È una persona maggiorenne e capace di intendere e di volere che ti rappresenta con i medici. Accetta firmando le DAT o un atto allegato, ne riceve una copia e può rinunciare per iscritto. Puoi revocarlo in ogni momento, nelle stesse forme della nomina, senza spiegare perché. Se non c'è un fiduciario, le DAT valgono lo stesso; se serve, il giudice tutelare può nominare un amministratore di sostegno."
     ],
     [
      "Scegli la forma",
-     "La legge ne ammette tre: un atto pubblico o una scrittura privata autenticata, cioè dal notaio; oppure una scrittura privata che consegni di persona all'ufficio di stato civile del Comune di residenza. Nelle Regioni che lo hanno regolato si possono consegnare anche alle strutture sanitarie: chiedi all'ASL. Se le condizioni fisiche non permettono di scrivere, si possono registrare con un video o con dispositivi che aiutano a comunicare. Le DAT sono esenti dall'imposta di registro, dal bollo e da ogni altro tributo."
+     "La legge ne ammette tre: un atto pubblico o una scrittura privata autenticata, cioè dal notaio; oppure una scrittura privata che consegni di persona all'ufficio di stato civile del Comune di residenza. Nelle Regioni che lo hanno regolato si possono consegnare anche alle strutture sanitarie: chiedi all'ASL. Se le condizioni fisiche non permettono di scrivere, si possono registrare con un video o con dispositivi che aiutano a comunicare. Le DAT sono esenti dall'obbligo di registrazione, dal bollo e da ogni altro tributo."
     ],
     [
      "In Comune, su appuntamento",
@@ -692,14 +700,14 @@
    "perche": [
     "Se pensi che sia un'emergenza, chiama subito il 112. Questa guida serve a capire come funziona il pronto soccorso, non a decidere se andarci.",
     "Il pronto soccorso è per i problemi acuti, che hanno bisogno di una diagnosi e di cure rapide. Per i problemi non urgenti ci sono il medico di famiglia e il pediatra; di notte e nei festivi la guardia medica.",
-    "Dal 2019 le linee nazionali sul triage usano cinque codici numerici, ognuno con il suo colore. Le Regioni le hanno fatte proprie con loro delibere: i tempi della tabella sono quelli scritti nella delibera della Regione Piemonte, che le riprende."
+    "Dal 2019 le linee nazionali sul triage usano cinque codici numerici, ognuno con il suo colore. Le Regioni le hanno fatte proprie con loro delibere: i tempi della tabella sono quelli delle linee nazionali, come li riporta la delibera della Regione Piemonte che le recepisce."
    ],
    "tabella": {
     "titolo": "I codici del triage e il tempo massimo per entrare",
     "colonne": [
      "Codice",
      "Che cosa vuol dire",
-     "Entro quando si entra"
+     "Tempo massimo per entrare"
     ],
     "righe": [
      [
@@ -709,12 +717,12 @@
      ],
      [
       "2 · arancione",
-      "Urgenza: le funzioni vitali sono a rischio",
+      "Urgenza: le funzioni vitali sono a rischio, oppure c'è un dolore severo",
       "Entro 15 minuti"
      ],
      [
       "3 · azzurro",
-      "Urgenza differibile: condizione stabile, con sofferenza",
+      "Urgenza differibile: condizione stabile, con una sofferenza che pesa sullo stato generale",
       "Entro 60 minuti"
      ],
      [
@@ -856,7 +864,8 @@
     "NA-18",
     "NA-19",
     "NA-20",
-    "NA-15"
+    "NA-15",
+    "NA-29"
    ],
    "avvertenza": "Informazioni generali tratte dalle pagine di Regione Piemonte, Regione Toscana, Regione Lombardia e della Provincia autonoma di Trento, aggiornate a novembre 2026. Orari e numeri cambiano da Regione a Regione: controlla sul sito della tua ASL. Nelle emergenze chiama il 112.",
    "domanda": "Quando chiamare la guardia medica e che numero fare",
@@ -914,7 +923,7 @@
     ],
     [
      "Prenotare e pagare in farmacia",
-     "In alcune farmacie si prenotano visite ed esami del Servizio sanitario, si paga il ticket e si ritirano i referti. In Toscana lo fanno le farmacie con il logo PuntoSI: prenotare e disdire è gratis, modificare una prenotazione o pagare il ticket costa 1,5 euro. Serve la ricetta, anche il promemoria di quella elettronica."
+     "In alcune farmacie si prenotano visite ed esami del Servizio sanitario, si paga il ticket e si ritirano i referti. In Toscana si prenota, si disdice e si modifica una prenotazione nelle farmacie con il logo PuntoSI: prenotare e disdire è gratis, modificare costa 1,5 euro; il ticket si paga, sempre con 1,5 euro in più, solo nelle farmacie che lo indicano con una locandina. Serve la ricetta, anche il promemoria di quella elettronica."
     ],
     [
      "Vaccinazioni e screening",
@@ -922,7 +931,7 @@
     ],
     [
      "Elettrocardiogramma e holter",
-     "In alcune Regioni le farmacie fanno esami di telemedicina. In Lombardia, nelle farmacie che aderiscono, l'elettrocardiogramma e l'holter della pressione o del cuore sono a carico del Servizio sanitario per chi rientra nelle condizioni fissate dalla Regione, per esempio una malattia cardiovascolare, e ha la ricetta bianca del medico di famiglia o del pediatra; nelle altre farmacie si pagano."
+     "In alcune Regioni le farmacie fanno esami di telemedicina. In Lombardia, nelle farmacie che aderiscono, l'elettrocardiogramma e l'holter della pressione o del cuore sono a carico del Servizio sanitario per chi ha una malattia cardiovascolare e la ricetta bianca del medico di famiglia o del pediatra, entro un numero massimo di prestazioni fissato dalla Regione; nelle farmacie che non aderiscono si possono fare a pagamento."
     ],
     [
      "Chiedi prima di andare",
@@ -1065,7 +1074,7 @@
    "slug": "chi-paga-la-retta-della-rsa",
    "gruppo": "anziani",
    "domanda": "Chi paga la retta della RSA?",
-   "risposta": "Di solito si divide in due: il Servizio sanitario paga la quota sanitaria, la persona o la famiglia la quota sociale; se il reddito non basta, può aiutare il Comune.",
+   "risposta": "Nei posti con il contributo pubblico la retta si divide in due: il Servizio sanitario paga la quota sanitaria, la persona o la famiglia la quota sociale; se il reddito non basta, può aiutare il Comune.",
    "righe": [
     {
      "t": "Per la legge nazionale sui livelli essenziali di assistenza, l'assistenza in residenza di lungo periodo è a carico del Servizio sanitario per il 50% della tariffa giornaliera. I trattamenti di cura e recupero più intensivi, che di norma durano non più di 60 giorni, sono invece tutti a carico del Servizio sanitario.",
@@ -1441,7 +1450,7 @@
    "slug": "fare-le-dat-costa",
    "gruppo": "anziani",
    "domanda": "Fare le DAT costa qualcosa?",
-   "risposta": "Le disposizioni anticipate di trattamento sono esenti dall'imposta di registro, dal bollo e da ogni altro tributo: consegnarle in Comune non costa niente.",
+   "risposta": "Le disposizioni anticipate di trattamento sono esenti dall'obbligo di registrazione, dal bollo e da ogni altro tributo: consegnarle in Comune non costa niente.",
    "righe": [
     {
      "t": "Lo dice la legge 219 del 2017, che vale per tutte le forme ammesse: l'atto dal notaio e la scrittura privata consegnata di persona all'ufficio di stato civile del Comune di residenza.",
@@ -1576,7 +1585,7 @@
      "p": "Il personale di reparto, in particolare il medico referente, valuta; in ogni ospedale referenti (medici, infermieri, assistenti sociali); anche i servizi territoriali effettuano la valutazione."
     },
     {
-     "t": "Nell'ospedale di Caserta il protocollo chiede di cominciare a organizzarla almeno tre giorni prima dell'uscita e di dirlo al paziente e ai familiari.",
+     "t": "Nell'ospedale di Caserta il protocollo raccomanda di programmare l'uscita almeno tre giorni prima e di dirlo al paziente e ai familiari.",
      "f": [
       1
      ],
@@ -1621,7 +1630,7 @@
    "slug": "cosa-vuol-dire-codice-bianco",
    "gruppo": "salute",
    "domanda": "Cosa vuol dire codice bianco al pronto soccorso?",
-   "risposta": "È il codice 5, «non urgenza»: un problema non urgente o di minima rilevanza clinica. Secondo le linee nazionali sul triage si entra entro 240 minuti.",
+   "risposta": "È il codice 5, «non urgenza»: un problema non urgente o di minima rilevanza clinica. Secondo le linee nazionali sul triage il tempo massimo per entrare nell'area delle cure è di 240 minuti.",
    "righe": [
     {
      "t": "I codici vanno da 1, rosso, a 5, bianco. Il tempo è quello massimo per entrare nell'area delle cure, non per uscire.",
@@ -2130,7 +2139,7 @@
      "p": "D.Lgs. 153/2009, art. 1, c. 2, lett. f: prenotazione di prestazioni di assistenza specialistica ambulatoriale, pagamento delle relative quote di partecipazione e ritiro dei referti."
     },
     {
-     "t": "In Toscana si prenota, si disdice e si cambia la prenotazione nelle farmacie con il logo PuntoSI, con la ricetta o con il promemoria della ricetta elettronica. Prenotare e disdire è gratis; cambiare una prenotazione o pagare il ticket costa 1,5 euro.",
+     "t": "In Toscana si prenota, si disdice e si cambia la prenotazione nelle farmacie con il logo PuntoSI, con la ricetta o con il promemoria della ricetta elettronica. Prenotare e disdire è gratis; cambiare una prenotazione o pagare il ticket costa 1,5 euro, e il ticket si paga solo nelle farmacie che espongono la locandina.",
      "f": [
       1
      ],
