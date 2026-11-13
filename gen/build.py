@@ -76,7 +76,9 @@ DATI = {'quanto-dorme-un-bambino'}
 FRASI_GUIDA = {'esenzione-ticket': ['non (si |devo |deve |voglio |vuole )?pag', 'chi non paga', 'senza pagare', 'gratis'], 'spostare-disdire-pagare-visita': ['(devo|dove|come) (si )?pag'],
                # «nido» da solo porta all'iscrizione; con bonus, contributo, rimborso, retta, ricevute o ISEE porta al bonus nido
                'iscrizioni-nido-e-scuola': ['nido'], 'bonus-asilo-nido': ['bonus', 'contribut', 'rimbors', 'spett', 'rett[ae] ', 'ricevut'],
-               'pratiche-online-per-un-genitore': ['deleg', 'per conto', 'al posto d'], 'neonato-documenti-primi-giorni': ['nuovi nati', 'appena nat', 'atto di nascita', 'dichiar\\w* (la )?nascita']}
+               'pratiche-online-per-un-genitore': ['deleg', 'per conto', 'al posto d'], 'neonato-documenti-primi-giorni': ['nuovi nati', 'appena nat', 'atto di nascita', 'dichiar\\w* (la )?nascita'],
+               # «quanto sport deve fare» chiede del movimento, non delle detrazioni (unione del 13/11/2026)
+               'certificato-sport-bambini': ['quant\\w* (sport|moviment|attivita fisica)']}
 # quando una guida ha la precedenza sulle altre dello stesso argomento per un'età (es. sonno a 1-3 anni)
 # parole in più per la ricerca (come le dice chi cerca), non compaiono nella pagina
 CHIAVI = {
@@ -600,15 +602,19 @@ argc = {a[0]: sum(1 for g in GUIDE if g['arg'] == a[0]) for a in ARG}
 chips = '<button type="button" class="fchip" data-arg="tutti" aria-pressed="true">Tutte</button>' + ''.join(
     f'<button type="button" class="fchip" data-arg="{a[0]}" aria-pressed="false">{e(a[1])}</button>' for a in ARG if argc[a[0]])
 def riga_elenco(g):
-    return riga(f"~/guide/{g['slug']}/", g['titolo'], f"{g['min']} min · {ARGN[g['arg']][1]} · {data_it(g['agg'])}", mini(g['slug']), 'book', li=f' data-a="{g["arg"]}"')
+    return riga(f"~/guide/{g['slug']}/", g['titolo'], f"{g['min']} min · {data_it(g['agg'])}", mini(g['slug']), 'book')
+# con più di ottanta guide l'elenco si divide per argomento: un titolo e il numero per ogni gruppo. I filtri (assets/sito.js)
+# nascondono i gruppi con data-a; l'id fa arrivare /guide/#argomento al gruppo giusto anche senza script.
+sezioni_guide = ''.join(f'<section class="g-sez" id="{a[0]}" data-a="{a[0]}" aria-labelledby="gs-{a[0]}"><h2 class="g-sez-t" id="gs-{a[0]}">{e(a[1])} <small>{argc[a[0]]} {"guida" if argc[a[0]] == 1 else "guide"}</small></h2>'
+                        f'<ul class="rows">{"".join(riga_elenco(g) for g in GUIDE if g["arg"] == a[0])}</ul></section>' for a in ARG if argc[a[0]])
 pages.append(page('/guide/', 'Guide', 'Guide pratiche e brevi per la vita di famiglia, con le fonti quando servono.', f'''
 <section class="ph-hd wrap-t">
 <h1>Guide</h1><p class="lead">Piccoli metodi per giornate più leggere e le regole che nessuno ti spiega. Si leggono in due minuti, con le fonti.</p>
+<p class="small g-conta">{len(GUIDE)} guide in {sum(1 for a in ARG if argc[a[0]])} argomenti. Scegline uno per vedere solo quelle.</p>
 </section>
 <section class="wrap-t list">
-<div class="fchips" role="group" aria-label="Scegli un argomento">{chips}</div>
-<h2 class="sr">Elenco delle guide</h2>
-<ul class="rows" data-grid>{''.join(riga_elenco(g) for g in GUIDE)}</ul>
+<div class="fchips g-chips" role="group" aria-label="Scegli un argomento">{chips}</div>
+<div class="g-sezioni" data-grid>{sezioni_guide}</div>
 </section>''', cls='p-list'))
 
 # ---------- da sapere: le schede brevi ----------
@@ -992,12 +998,15 @@ ESEMPI_D = {'non vuole dormire': 'Cosa provare da stasera, e quando parlarne con
             'spostare una visita': 'Come si fa, ed entro quando disdire.', 'le medicine di mamma': 'La lista da scrivere e tenere a portata di mano.'}
 def scheda(href, titolo, sotto, attr=''):
     return f'<li><a class="scheda" href="{href}"{attr}><span><b>{e(titolo)}</b><small>{e(sotto)}</small></span><i>{ic("arrow")}</i></a></li>'
-# le cinque foto degli argomenti (si sostituiscono in assets/foto/, stesso nome): titolo, sotto, foto, ricerca
+# le sette foto degli argomenti (si sostituiscono in assets/foto/, stesso nome): titolo, sotto, foto, ricerca
 ARG_FOTO = [('Sonno e nanna', 'Risvegli, routine della sera, quante ore', 'routine-della-nanna', 'sonno'),
             ('Visite e pediatra', 'Pediatra, specialisti, certificati', 'domande-per-il-pediatra', 'visita dal pediatra'),
             ('Documenti', 'Dove trovarli, come chiederli, esenzioni', 'documenti-sanitari-dove-trovarli', 'documenti sanitari'),
             ('Genitori anziani', 'Medicine, indennità, cosa preparare', 'lista-medicine-genitore-anziano', 'genitore anziano'),
-            ('Nido e scuola', 'Iscrizioni: età, date e documenti', 'iscrizioni-nido-e-scuola', 'iscrizione al nido')]
+            ('Nido e scuola', 'Iscrizioni: età, date e documenti', 'iscrizioni-nido-e-scuola', 'iscrizione al nido'),
+            # argomenti nuovi del 13/11/2026: foto già presenti nel sito (le guide nuove non hanno ancora foto)
+            ('Attesa e primi mesi', 'Gravidanza, congedi e il primo anno', 'neonato-documenti-primi-giorni', 'gravidanza'),
+            ('Soldi e agevolazioni', 'Bonus, ISEE e detrazioni nel 730', 'esenzione-ticket', 'bonus e agevolazioni')]
 argf = ''.join(f'<li><a class="argf" href="~/guide/?q={urllib.parse.quote(q)}" data-cerca="{e(q)}" role="button" data-umami-event="home-argomento">{foto(f, "", "argf-img", sizes="(min-width:960px) 360px, 50vw")}<span class="t"><b>{e(t)}</b><small>{e(d)}</small></span></a></li>' for t, d, f, q in ARG_FOTO)
 # il viaggio in quattro tappe, più in basso nella pagina iniziale. Ogni tappa porta a una pagina vera.
 # (numero, nome, tono di fondo, titolo, parte in corsivo, testo, bollino, foto, pulsante, altri due collegamenti)

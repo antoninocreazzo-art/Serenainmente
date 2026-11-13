@@ -397,13 +397,14 @@
      "0-1"
     ]
    ],
-   "chiavi_ricerca": "esami gravidanza gratis gratuiti esenzione ticket ecografia ecografie morfologica translucenza test combinato amniocentesi villocentesi visite incinta impegnativa codice lea pagare",
+   "chiavi_ricerca": "esami gravidanza gratis gratuiti esenzione ticket ecografia ecografie morfologica translucenza test combinato amniocentesi villocentesi visite incinta impegnativa codice lea pagare aspetto aspettiamo un bambino",
    "frasi": [
     "ecografi",
     "esam\\w* (in |della |di )?gravidanza",
     "(gravidanza|incinta) .*(gratis|gratuit|ticket|pag)",
     "test combinato",
-    "morfologica"
+    "morfologica",
+    "(aspetto|aspettiamo|aspettando) un (bambino|bimbo|figlio|figlia)"
    ],
    "correlate": [
     "prenotare-con-il-cup",
@@ -1490,7 +1491,7 @@
      "0-1"
     ]
    ],
-   "chiavi_ricerca": "depressione post parto postpartum post partum baby blues tristezza triste piango stanca esausta neomamma mamma aiuto psicologo consultorio sostegno",
+   "chiavi_ricerca": "depressione post parto postpartum post partum baby blues tristezza triste piango neomamma mamma aiuto psicologo consultorio sostegno",
    "frasi": [
     "depression\\w* (post|dopo)",
     "post ?part",

@@ -225,6 +225,12 @@ body{padding-bottom:calc(var(--barra) + env(safe-area-inset-bottom))}
 .fchip{flex:none;min-height:44px;font:700 1rem var(--titoli);padding:8px 16px;border-radius:999px;border:1.5px solid var(--tinta2);background:transparent;color:var(--marca-tt);cursor:pointer}
 .fchip[aria-pressed=true]{background:var(--marca-t);border-color:var(--marca-t);color:var(--su-marca)}
 .list{display:flex;flex-direction:column;gap:22px}
+/* elenco delle guide: i filtri vanno a capo (tutti visibili anche al telefono) e le guide sono divise per argomento */
+.g-chips{flex-wrap:wrap;overflow:visible;margin-inline:0;padding:2px 0}
+.g-sezioni{display:flex;flex-direction:column;gap:34px}
+.g-sez{scroll-margin-top:16px}
+.g-sez-t{margin:0 0 12px}
+.g-sez-t small{font:400 1rem/1.4 var(--titoli);color:var(--muted);letter-spacing:0;white-space:nowrap}
 .crumbs{font-size:1rem;color:var(--muted)}
 .crumbs a{display:inline-flex;align-items:center;min-height:44px;color:var(--muted);text-decoration:none;font-weight:700}
 .crumbs a:hover{color:var(--marca-tt)}
@@ -690,7 +696,7 @@ h1{line-height:1.06}
 .argf small{display:block;margin-top:4px;color:var(--muted);font-size:.9375rem;line-height:1.4}
 .argomenti .tutte .argf{justify-content:center;background:var(--marca-t);border-color:transparent}
 .argomenti .tutte b,.argomenti .tutte small{color:var(--su-marca)}
-@media(min-width:760px){.argomenti{grid-template-columns:repeat(3,1fr);gap:20px}.argf .t{padding:16px 18px 18px}.argf b{font-size:1.375rem}}
+@media(min-width:760px){.argomenti{grid-template-columns:repeat(4,1fr);gap:16px}.argf .t{padding:16px 18px 18px}.argf b{font-size:1.375rem}}
 /* strumenti */
 .tcard b{font:400 1.25rem/1.25 var(--parole);color:var(--marca-t)}
 .tcard img.thumb{border-radius:4px}
