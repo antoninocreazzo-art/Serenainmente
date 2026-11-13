@@ -24,13 +24,23 @@ function nota(t,u){var L=lsj('serena:promemoria',[]);L=L.filter(function(x){retu
 window.SerenaCal={e:icsE,file:icsFile,ora:icsOra,giorno:icsGiorno,nota:nota,data:dataIt};
 
 /* aspetto chiaro o scuro, e grandezza del testo */
-var TB=$('[data-tema-btn]');
-function temaLab(){if(TB)TB.setAttribute('aria-label',H.dataset.tema==='scuro'?'Passa all\'aspetto chiaro':'Passa all\'aspetto scuro');var m=$('meta[name=theme-color]');if(m)m.content=H.dataset.tema==='scuro'?'#3A2630':'#7F4E5C'}
-if(TB){TB.onclick=function(){var t=H.dataset.tema==='scuro'?'chiaro':'scuro';H.dataset.tema=t;ls('serena:aspetto',t);temaLab();toast(t==='scuro'?'Aspetto scuro':'Aspetto chiaro')}}
+/* il pulsante è nella testata; con la testata compatta (telefoni piccoli, testo grande) è nel menu */
+var TB=$$('[data-tema-btn]');
+function temaLab(){TB.forEach(function(b){b.setAttribute('aria-label',H.dataset.tema==='scuro'?'Passa all\'aspetto chiaro':'Passa all\'aspetto scuro')});var m=$('meta[name=theme-color]');if(m)m.content=H.dataset.tema==='scuro'?'#3A2630':'#7F4E5C'}
+TB.forEach(function(b){b.onclick=function(){var t=H.dataset.tema==='scuro'?'chiaro':'scuro';H.dataset.tema=t;ls('serena:aspetto',t);temaLab();toast(t==='scuro'?'Aspetto scuro':'Aspetto chiaro')}});
 temaLab();
 var AU=$('[data-tema-auto]');if(AU){AU.hidden=!ls('serena:aspetto');AU.onclick=function(){ls('serena:aspetto',null);location.reload()}}
-var AA=$('[data-aa]'),LIV=['','112.5%','128%'],NOMI=['Testo normale','Testo grande','Testo molto grande'];
-if(AA)AA.onclick=function(){var n=((+ls('serena:testo')||0)+1)%3;ls('serena:testo',n||null);H.style.fontSize=LIV[n];toast(NOMI[n])};
+/* grandezza del testo: il pulsante mostra quella di adesso (A, A+, A++) e apre le tre scelte, «Normale» compresa */
+var AA=$('[data-aa]'),AP=$('#aa-p'),LIV=['','112.5%','128%'],NOMI=['Testo normale','Testo grande','Testo molto grande'],ETI=['normale','grande','molto grande'];
+function aaLab(){var n=+ls('serena:testo')||0;if(n)H.dataset.testo=n;else delete H.dataset.testo;
+ if(AA)AA.setAttribute('aria-label','Grandezza del testo: '+ETI[n]+'. Tocca per cambiarla');
+ if(AP)$$('[data-aa-v]',AP).forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.aaV===n)})}
+function aaChiudi(fuoco){if(!AP||AP.hidden)return;AP.hidden=true;AA.setAttribute('aria-expanded','false');if(fuoco)AA.focus()}
+if(AA&&AP){AA.onclick=function(){if(!AP.hidden){aaChiudi();return}AP.hidden=false;AA.setAttribute('aria-expanded','true');var on=$('[aria-pressed=true]',AP);(on||$('button',AP)).focus()};
+ $$('[data-aa-v]',AP).forEach(function(b){b.onclick=function(){var n=+b.dataset.aaV;ls('serena:testo',n||null);H.style.fontSize=LIV[n];aaLab();aaChiudi(true);toast(NOMI[n])}});
+ d.addEventListener('click',function(e){if(!AP.hidden&&!AP.contains(e.target)&&!AA.contains(e.target))aaChiudi()});
+ d.addEventListener('keydown',function(e){if(e.key==='Escape')aaChiudi(true)})}
+aaLab();
 
 /* manda, copia */
 var mobile=matchMedia('(pointer:coarse)').matches||/Android|iPhone|iPad/i.test(navigator.userAgent);
@@ -48,7 +58,7 @@ $$('.ck').forEach(function(box){
  function upd(){var n=cs.filter(function(c){return c.checked}).length;
   if(N)N.textContent=n?(n===cs.length?'Tutto fatto: '+n+' su '+n:n+' su '+cs.length+' fatte'):cs.length+' cose, una alla volta';
   if(V)V.style.strokeDashoffset=125.7*(1-n/cs.length);if(Z)Z.hidden=!n}
- cs.forEach(function(c){var k='ck:'+c.dataset.ck;c.checked=ls(k)==='1';c.onchange=function(){ls(k,c.checked?'1':'0');upd()}});
+ cs.forEach(function(c){var k='ck:'+c.dataset.ck;c.checked=ls(k)==='1';c.onchange=function(){ls(k,c.checked?'1':'0');upd();conta()}});
  if(Z)Z.onclick=function(){if(!armed){armed=true;Z.textContent='Tocca di nuovo per azzerare';setTimeout(function(){armed=false;Z.textContent='Azzera le spunte'},4000);return}
   cs.forEach(function(c){c.checked=false;ls('ck:'+c.dataset.ck,'0')});armed=false;Z.textContent='Azzera le spunte';upd()};
  var C=$('[data-copialista]',box);if(C)C.onclick=function(){navigator.clipboard&&navigator.clipboard.writeText(testo()).then(function(){toast('Lista copiata, con le spunte')})};
@@ -70,8 +80,15 @@ function domattina(titolo,url){var t=new Date();t.setDate(t.getDate()+1);
  nota(titolo,url.replace(/^https?:\/\/[^/]+/,''));toast(FILE_CAL)}
 $$('[data-salva]').forEach(function(b){var u=b.dataset.salva,t=b.dataset.title,RB=$('[data-ricorda="'+u+'"]');
  function st(){var on=salvati().some(function(x){return x.u===u});b.setAttribute('aria-pressed',on);$('span',b).textContent=on?'Salvata per dopo':'Salva per dopo';if(RB)RB.hidden=!on}
- b.hidden=false;b.onclick=function(){var L=salvati(),i=-1;L.forEach(function(x,k){if(x.u===u)i=k});if(i>-1)L.splice(i,1);else{L.unshift({u:u,t:t});sw({salva:[u]})}ls('serena:salvati',JSON.stringify(L.slice(0,12)));st();toast(i>-1?'Tolta dalle cose salvate':'Serena la tiene da parte: la ritrovi in «I tuoi salvati», anche senza rete')};
+ b.hidden=false;b.onclick=function(){var L=salvati(),i=-1;L.forEach(function(x,k){if(x.u===u)i=k});if(i>-1)L.splice(i,1);else{L.unshift({u:u,t:t});sw({salva:[u]})}ls('serena:salvati',JSON.stringify(L.slice(0,12)));st();conta();toast(i>-1?'Tolta dalle cose salvate':'Serena la tiene da parte: la ritrovi in «I tuoi salvati», anche senza rete')};
  if(RB)RB.onclick=function(){domattina(t,'https://serenainmente.it'+u)};st()});
+/* «I tuoi salvati» nel menu e nella testata, con il numero: si conta qui, dalle stesse cose che mostra la pagina /salvati/ */
+function contaTuoi(){var n=salvati().length+lsj('serena:promemoria',[]).length,sl={};
+ try{for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i),m=/^ck:(.+)-(\d+)$/.exec(k||'');if(m&&+m[2]<12&&localStorage.getItem(k)==='1')sl[m[1]]=1}}catch(x){}
+ n+=Object.keys(sl).length;var pv=lsj('serena:preparo-visita',null),md=lsj('serena:medicine',null);
+ if(pv&&((pv.q&&pv.q.length)||pv.chi||pv.notato))n++;if(md&&md.m&&md.m.length)n++;return n}
+function conta(){var n=contaTuoi();$$('[data-conta]').forEach(function(c){c.hidden=!n;c.innerHTML=n?'<span class="sr">: </span>'+n+'<span class="sr"> '+(n===1?'cosa':'cose')+'</span>':''})}
+conta();addEventListener('storage',conta);addEventListener('pageshow',conta);
 function href(u){var B=d.body.dataset.base||'/';return d.body.dataset.rel?B+u.slice(1)+(u.slice(-1)==='/'?'index.html':''):u}
 var SV=$('[data-salvati]');
 if(SV){var L0=salvati();if(L0.length){SV.hidden=false;$('h2',SV).textContent=L0.length===1?'Serena ti ha tenuto da parte una cosa':'Serena ti ha tenuto da parte '+L0.length+' cose';
@@ -134,6 +151,8 @@ function apriPasso(){var x=location.hash&&d.getElementById(location.hash.slice(1
 addEventListener('hashchange',apriPasso);apriPasso();
 addEventListener('beforeprint',function(){$$('.passi details').forEach(function(x){x.dataset.era=x.open?'1':'';x.open=true})});
 addEventListener('afterprint',function(){$$('.passi details').forEach(function(x){if(x.dataset.era==='')x.open=false})});
+/* «Stampa» nelle schede brevi: la pagina intera, senza testata né pulsanti (stile3.css, @media print) */
+$$('[data-stampa]').forEach(function(b){b.onclick=function(){print()}});
 /* anteprima del foglio da vicino */
 $$('[data-zoom]').forEach(function(b){var D=$('dialog.zoom');if(!D||!D.showModal)return;b.onclick=function(){D.showModal()};$('.x',D).onclick=function(){D.close()}});
 
@@ -231,9 +250,9 @@ function cerca(t){var raw0=' '+norm(t)+' ',raw=pulisci(raw0),inn=innocua(raw0),p
  if(sint)return {sint:sint,sicura:false,esiti:[],R:R};
  if(!R.length)return {sint:0,sicura:false,esiti:[],R:R,persona:persona,fondo:segn};
  var problema=/ (non|mai|sveglia|svegli\w*|piange|rifiuta|capricci|fatica|aiuto|cosa fare|come fare|come faccio|come si fa) /.test(raw),dato=/ (quant[oaie]|ore|quando|entro|scade|scadenza|vale|validita|dura|eta) /.test(raw);
- var m=mesi(t),fq=m===null?null:fasciaDi(m),out=[],df=R.map(function(){return 0});
+ var m=mesi(t),fq=m===null?null:fasciaDi(m),out=[],SC=[],df=R.map(function(){return 0}),dfS=R.map(function(){return 0});
  var anz=/ (nonn[oaie]|anzian\w*|suocer[oa]|mia madre|mio padre|mamma anziana|papa anziano|badante) /.test(raw),bimbo=m!==null&&m<216||/ (figli[oae]?|bimb[oaie]|bambin[oaie]|neonat[oaie]|piccol[oa]) /.test(raw);
- IDX.forEach(function(x){var s=0,k=0,forti=0,dir=0;R.forEach(function(r,i){var p=punti(x,r);if(p){k++;s+=p;df[i]++;if(p>=4)forti++;if(p>=6)dir++}});
+ IDX.forEach(function(x){var s=0,k=0,forti=0,dir=0,sc=x.k==='Scheda';R.forEach(function(r,i){var p=punti(x,r);if(p){k++;s+=p;(sc?dfS:df)[i]++;if(p>=4)forti++;if(p>=6)dir++}});
   if(!k)return;s+=k*3;R.forEach(function(r){if(x.T.some(function(w){return simile(w,r)}))s+=2});
   if(problema&&!dato)s+=x.g==='dati'?-5:(x.k==='Guida'?2:0);if(dato&&x.g==='dati')s+=4;
   if(fq&&x.fa&&x.fa.indexOf(fq)>-1&&x.fa.length<5)s+=3;
@@ -241,12 +260,20 @@ function cerca(t){var raw0=' '+norm(t)+' ',raw=pulisci(raw0),inn=innocua(raw0),p
   if(!anz&&CU.chi.length===1&&CU.chi[0]==='bambino'&&x.c==='anziano')s-=8; /* scelti solo bambini: niente guide per anziani */
   if(x.fr&&x.fr.some(function(f){return new RegExp(' '+f).test(raw)}))s+=9; /* modi di dire che portano a una guida precisa */
   s+=adatto(x.c,x.fa)*3;if(!dato&&!problema&&x.g==='dati')s-=1;if(x.k.indexOf('fonti')>-1)s-=3;else if(x.k!=='Pagina')s+=2;
-  out.push({x:x,s:s,k:k,forti:forti,dir:dir})});
- out.sort(function(a,b){return b.s-a.s});
+  (sc?SC:out).push({x:x,s:s,k:k,forti:forti,dir:dir})});
+ out.sort(function(a,b){return b.s-a.s});SC.sort(function(a,b){return b.s-a.s});
  var n=R.length,vuote=df.filter(function(v){return !v}).length,top=out[0],sicura=!!top&&top.forti>=1&&(n<=3?(vuote===0||(n>=2&&vuote===1&&top.dir>=1)):vuote<=1&&vuote<n/2)&&top.k>=Math.ceil(n*.6-.01);
  var lim=top?top.s*.5:0;if(top&&top.s<=0)sicura=false;
  if(segn&&sicura&&vuote>0)sicura=false; /* con un segnale di salute nella frase, la guida deve corrispondere per intero */
- return {persona:persona,fondo:segn&&!sicura,salute:diSalute(R),fq:fq,anz:anz,sint:0,sicura:sicura,esiti:out.filter(function(o){return o.s>=lim}).slice(0,sicura?4:3),R:R,dato:dato,problema:problema}}
+ var esiti=out.filter(function(o){return o.s>=lim}).slice(0,sicura?4:3);
+ /* LE SCHEDE «DA SAPERE» si contano a parte: le guide trovano esattamente quello che trovavano prima (stessa risposta, stesso elenco).
+    Una scheda si aggiunge sotto la guida se è vicina; diventa la risposta solo se nessuna guida lo è e la scheda corrisponde per intero. */
+ if(SC.length){var E0={anz:anz,bimbo:bimbo};
+  var forte=function(o,x){return (o.dir>=1||(o.x.gd||[]).indexOf(x.u)>-1)&&o.k>=Math.ceil(n*.6-.01)&&!(anz&&!bimbo&&o.x.c==='bambino')}; /* titolo o parole chiave della scheda, o guida collegata */
+  if(sicura)esiti=esiti.concat(SC.filter(function(o){return o.s>=top.s*.7&&forte(o,top.x)}).slice(0,2));
+  else{var ts=SC[0],va=df.filter(function(v,i){return !v&&!dfS[i]}).length,ok=ts.s>0&&ts.forti>=1&&(n<=3?(va===0||(n>=2&&va===1&&ts.dir>=1)):va<=1&&va<n/2)&&ts.k>=Math.ceil(n*.6-.01)&&!(segn&&va>0);
+   if(ok&&ts.dir>=1){sicura=true;var lS=ts.s*.5;esiti=[ts].concat(SC.slice(1).filter(function(o){return o.s>=lS&&o.dir>=1&&o.k>=Math.ceil(n*.6-.01)}),out.filter(function(o){return o.s>=lS})).slice(0,4)}}}
+ return {persona:persona,fondo:segn&&!sicura,salute:diSalute(R),fq:fq,anz:anz,bimbo:bimbo,sint:0,sicura:sicura,esiti:esiti,R:R,dato:dato,problema:problema}}
 function etaRiga(x,t){if(!x.eta)return '';var m=mesi(t),rows;
  if(m!==null)rows=x.eta.r.filter(function(r){return r[0]<=m&&m<=r[1]});else if(CU.eta.length)rows=x.eta.r.filter(function(r){return CU.eta.some(function(k){var f=FASCE[k];return r[0]<=f[1]&&r[1]>=f[0]})});else return '';
  return rows.map(function(r){return '<p class="eta"><b>'+esc(r[2])+':</b> '+esc(r[3])+(r[4]?'. <span class="small">'+esc(x.eta.c[2])+': '+esc(r[4])+'</span>':'')+'</p>'}).join('')}
@@ -257,6 +284,13 @@ function domande(E){var Dm=window.SERENA_DOMANDE;if(!Dm)return '';var NOME={'0-1
   return (k?'<p class="dq-k">Per '+(k==='anziano'?'una ':'chi ha ')+NOME[k]+'</p>':'')+'<ol>'+qs.map(function(q){return '<li>'+esc(q)+'</li>'}).join('')+'</ol>'}).join('');
  return '<div class="gesto dq"><span class="eyebrow">Domande pronte</span>'+h+'<button class="btn" type="button" data-porta="'+esc(JSON.stringify(tutte))+'" data-umami-event="cerca-domande-pronte">Portale in «Preparo la visita»</button></div>'}
 function riga(x){return '<li><a class="rowl" href="'+esc(href(x.u))+'">'+(x.i?'<img src="'+esc(href(x.i))+'" alt="" width="64" height="64" loading="lazy">':'')+'<span class="t"><b>'+esc(x.t)+'</b><small>'+esc(x.k)+(x.m?' · '+x.m+' min':'')+'</small></span></a></li>'}
+/* «Può servirti anche»: solo per la stessa persona (niente anziani per domande sui bambini, e viceversa)
+   e sullo stesso argomento della risposta (Salute, Documenti, Organizzarsi, Crescita). La risposta principale non cambia. */
+function vicina(o,x,E){if((o.gd&&o.gd.indexOf(x.u)>-1)||(x.gd&&x.gd.indexOf(o.u)>-1))return true; /* scheda e guida che si citano a vicenda */
+ var chi=E.anz&&!E.bimbo?'anziano':E.bimbo&&!E.anz?'bambino':(x.c==='anziano'||x.c==='bambino'?x.c:''),c=o.c||'';
+ if(chi&&c&&c.indexOf(chi)<0)return false;
+ if(x.ar&&o.ar)return o.ar===x.ar;
+ return (o.GA||[]).some(function(g){return (x.GA||[]).indexOf(g)>-1})} /* le fonti dei post e le pagine non hanno un argomento: basta una parola chiave in comune */
 function mostra(){var t=Q.value.trim();if(!IDX){return}
  if(norm(t).length<2){OUT.innerHTML='';PRE.hidden=false;return}
  PRE.hidden=true;var E=cerca(t),h='';
@@ -269,7 +303,8 @@ function mostra(){var t=Q.value.trim();if(!IDX){return}
    (er?'<p>'+esc(x.d)+'</p>':'')+(ps?'<div class="gesto"><span class="eyebrow">'+(ps.i===0?'Per cominciare':'Il punto che cerchi')+'</span><p><b>'+esc(ps.s[0])+'.</b> '+esc(ps.s[1])+'</p></div>':(er?'':'<p>'+esc(x.d)+'</p>'))+
    (x.ag?'<p class="small">Dalla guida di Serena · fonti controllate il '+esc(x.ag)+'</p>':'')+
    (x.dq?domande(E):'')+'<a class="btn'+(x.dq?' btn-line':'')+'" href="'+esc(href(x.u)+(ps&&ps.i>0?'#passo-'+(ps.i+1):''))+'" data-umami-event="cerca-apri">'+esc(x.az||'Apri')+(x.m?' · '+x.m+' min':'')+'</a></article>';
-  if(E.esiti.length>1)h+='<h2>Può servirti anche</h2><ul class="rows">'+E.esiti.slice(1).map(function(o){return riga(o.x)}).join('')+'</ul>';
+  var altri=E.esiti.slice(1).filter(function(o){return (o.x.k==='Scheda'&&x.k!=='Scheda')||vicina(o.x,x,E)}); /* le schede sotto una guida sono già scelte in cerca() */
+  if(altri.length)h+='<h2>Può servirti anche</h2><ul class="rows">'+altri.map(function(o){return riga(o.x)}).join('')+'</ul>';
  }else{
   if(E.fondo){h='<div class="avviso sicuro fondo"><p><b>Serena non ha ancora una guida su questo.</b></p><p><b>Se è urgente, chiama il 112.</b></p><a class="btn" href="tel:112" data-umami-event="cerca-manca-112">Chiama il 112</a><ul><li>Se non è urgente, chiedi al pediatra o al medico di famiglia.</li><li>Di notte e nei giorni festivi c\'è la guardia medica.</li></ul><p class="small">Se vuoi, scrivi a privacy@serenainmente.it cosa cercavi: le prossime guide nascono così.</p></div>';OUT.innerHTML=h;return}
   h='<p class="avviso">Serena non ha ancora una guida su questo. Se vuoi, scrivilo a privacy@serenainmente.it: le prossime guide nascono così. <b>Se è urgente, chiama il 112.</b></p>';

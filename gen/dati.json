@@ -1442,7 +1442,7 @@
     "OR-29",
     "OR-30"
    ],
-   "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS, aggiornate a novembre 2026. Importi e procedure cambiano: prima di muoverti controlla il sito INPS o chiedi a un patronato. Non è una valutazione del singolo caso. Non sostituiscono il parere del pediatra o del medico.",
+   "avvertenza": "Informazioni generali tratte dalle pagine dell'INPS, aggiornate a novembre 2026. Importi e procedure cambiano: prima di muoverti controlla il sito INPS o chiedi a un patronato o a un CAF. Non è una valutazione del singolo caso.",
    "domanda": "Come si chiede l'accompagnamento",
    "ricontrolla": "2027-01"
   },
@@ -1531,7 +1531,7 @@
     "OR-32",
     "OR-05"
    ],
-   "avvertenza": "Informazioni generali sui codici nazionali, tratte dalla legge, dal decreto del 2009 e da documenti delle Regioni Emilia-Romagna e Lombardia, aggiornate a novembre 2026. Soglie e modalità possono cambiare, e ogni Regione ha regole proprie: prima di autocertificare chiedi all'ASL o al medico di famiglia. Non sostituiscono il parere del pediatra o del medico.",
+   "avvertenza": "Informazioni generali sui codici nazionali, tratte dalla legge, dal decreto del 2009 e da documenti delle Regioni Emilia-Romagna e Lombardia, aggiornate a novembre 2026. Soglie e modalità possono cambiare, e ogni Regione ha regole proprie: prima di autocertificare chiedi all'ASL, al medico di famiglia o a un CAF.",
    "domanda": "Chi non paga il ticket",
    "ricontrolla": "2027-01"
   }
@@ -1712,6 +1712,746 @@
    "titolo": "Quante ore deve dormire un bambino, età per età",
    "link": "/guide/quanto-dorme-un-bambino/",
    "tipo": "guida"
+  }
+ ],
+ "frase_medico_schede": "Serena riporta informazioni generali: non sostituiscono il medico o il pediatra.",
+ "schede": [
+  {
+   "slug": "genitoripiu",
+   "argomento": "salute",
+   "titolo": "GenitoriPiù: sette azioni per la salute dei bambini",
+   "sotto": "La campagna del Ministero della Salute, in breve.",
+   "righe": [
+    {
+     "t": "GenitoriPiù è una campagna nata nel 2006, in via sperimentale, in Veneto; il Ministero della Salute, con la Federazione italiana medici pediatri e l'Unicef, ha deciso di estenderla a tutta Italia.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "La campagna si rivolge ai genitori e propone sette semplici azioni per la salute dei piccoli, elencate qui sotto.",
+     "f": [
+      0
+     ]
+    }
+   ],
+   "elenco": [
+    "assumere acido folico;",
+    "non fumare;",
+    "allattarlo al seno;",
+    "metterlo a dormire a pancia in su;",
+    "proteggerlo con il seggiolino;",
+    "fare tutte le vaccinazioni;",
+    "leggergli un libro."
+   ],
+   "limiti": "I limiti di questa scheda: la pagina dell'Istituto Superiore di Sanità non ha una data e la campagna è nata nel 2006. Per il vostro caso vale quello che dice oggi il vostro pediatra.",
+   "fonti": [
+    {
+     "ente": "Istituto Superiore di Sanità · EpiCentro",
+     "pagina": "«Genitori più»: prendiamoci cura della loro vita",
+     "url": "https://www.epicentro.iss.it/materno/genitori-piu",
+     "data": "pagina senza data"
+    }
+   ],
+   "aggiornata": "2026-11-12",
+   "revisione": "2027-05-12",
+   "medico": true,
+   "guide": []
+  },
+  {
+   "slug": "piano-vaccinale",
+   "argomento": "salute",
+   "titolo": "Le vaccinazioni: dove trovare il calendario",
+   "sotto": "Il Piano nazionale e a chi chiedere.",
+   "righe": [
+    {
+     "t": "Il Piano nazionale di prevenzione vaccinale 2023-2025 è stato approvato in Conferenza Stato-Regioni il 2 agosto 2023 e pubblicato in Gazzetta Ufficiale il 21 agosto 2023.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Il Piano e il Calendario nazionale vaccinale servono ad armonizzare le strategie vaccinali nel Paese, perché tutti abbiano i pieni benefici della vaccinazione, indipendentemente da dove vivono, dal reddito, dal livello socioculturale e dallo status giuridico.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Il Calendario vaccinale è un documento distinto dal Piano, così si può aggiornare più facilmente, per esempio quando arrivano nuovi vaccini.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Il 18 dicembre 2025, in Conferenza Stato-Regioni, è stata raggiunta l'intesa sulla proposta del Ministro della salute di prorogare il Piano per un anno.",
+     "f": [
+      1
+     ]
+    },
+    {
+     "t": "Quali vaccinazioni toccano ai vostri figli, e quando, ve lo dicono il pediatra e il servizio vaccinale della vostra ASL.",
+     "f": []
+    }
+   ],
+   "limiti": "I limiti di questa scheda: la pagina dell'Istituto Superiore di Sanità sul Piano è del 7 settembre 2023; a dicembre 2025 Stato e Regioni hanno raggiunto l'intesa per prorogare il Piano di un anno. Per il vostro caso vale quello che dice oggi il servizio vaccinale della vostra ASL.",
+   "fonti": [
+    {
+     "ente": "Istituto Superiore di Sanità · EpiCentro",
+     "pagina": "Piano nazionale di prevenzione vaccinale (PNPV) 2023-2025",
+     "url": "https://www.epicentro.iss.it/vaccini/piano-nazionale-vaccini-2023-2025",
+     "data": "2023-09-07"
+    },
+    {
+     "ente": "Conferenza Stato-Regioni",
+     "pagina": "Intesa del 18 marzo 2026, rep. atti n. 29/CSR (richiama l'intesa n. 243/CSR del 18 dicembre 2025 sulla proroga di un anno del Piano)",
+     "url": "https://www.statoregioni.it/media/eqpdiws2/p-3-csr-atto-rep-n29-18marzo2026.pdf",
+     "data": "2026-03-18"
+    }
+   ],
+   "aggiornata": "2026-11-12",
+   "revisione": "2027-02-12",
+   "medico": true,
+   "guide": [
+    "certificato-vaccinale"
+   ]
+  },
+  {
+   "slug": "nanna-a-pancia-in-su",
+   "argomento": "crescita",
+   "titolo": "La nanna a pancia in su",
+   "sotto": "Il sonno del neonato nel primo anno.",
+   "righe": [
+    {
+     "t": "Secondo l'Istituto Superiore di Sanità, per un sonno sicuro la cosa più efficace è far iniziare la nanna al bambino a pancia in su.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "A pancia in su il rischio di soffocamento non aumenta, nemmeno in caso di rigurgito o di reflusso.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Quando il bambino ha imparato a girarsi da solo, dalla schiena alla pancia e viceversa, non serve rimetterlo a pancia in su se si gira nel sonno.",
+     "f": [
+      0
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "ente": "Istituto Superiore di Sanità · EpiCentro",
+     "pagina": "Sorveglianza 0-2 anni, indagine 2025: posizione in culla",
+     "url": "https://www.epicentro.iss.it/sorveglianza02anni/indagine-2025-posizione-culla",
+     "data": "2026-05-20"
+    }
+   ],
+   "aggiornata": "2026-11-12",
+   "revisione": "2027-05-12",
+   "medico": true,
+   "guide": [
+    "routine-della-nanna",
+    "quanto-dorme-un-bambino"
+   ]
+  },
+  {
+   "slug": "seggiolino-e-antiabbandono",
+   "argomento": "crescita",
+   "titolo": "In auto: seggiolino e dispositivo antiabbandono",
+   "sotto": "Cosa prevede la legge, dalla nascita ai quattro anni.",
+   "righe": [
+    {
+     "t": "Il Codice della strada prevede che i bambini viaggino in auto con dispositivi di protezione omologati, fin dalla nascita.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Per i bambini di età inferiore ai quattro anni è obbligatorio anche un dispositivo di allarme antiabbandono.",
+     "f": [
+      1,
+      2
+     ]
+    },
+    {
+     "t": "Il dispositivo si attiva se chi guida si allontana dall'auto.",
+     "f": [
+      1,
+      2
+     ]
+    },
+    {
+     "t": "L'obbligo è in vigore dal 7 novembre 2019.",
+     "f": [
+      1,
+      2
+     ]
+    },
+    {
+     "t": "Il dispositivo può essere integrato nel seggiolino oppure indipendente dal seggiolino.",
+     "f": [
+      1
+     ]
+    }
+   ],
+   "limiti": "I limiti di questa scheda: il decreto sul dispositivo antiabbandono è del 2019 e la pagina della campagna del Governo non ha una data. Per il vostro caso vale quello che dice oggi il Codice della strada.",
+   "fonti": [
+    {
+     "ente": "Istituto Superiore di Sanità · EpiCentro",
+     "pagina": "Sorveglianza 0-2 anni, indagine 2025: sicurezza in auto",
+     "url": "https://www.epicentro.iss.it/sorveglianza02anni/indagine-2025-sicurezza-auto",
+     "data": "2026-05-20"
+    },
+    {
+     "ente": "Presidenza del Consiglio · Dipartimento per l'informazione e l'editoria",
+     "pagina": "Campagna «Dispositivi antiabbandono in automobile»",
+     "url": "https://informazioneeditoria.gov.it/it/comunicazione-istituzionale/le-campagne-di-comunicazione-del-governo/campagne-xviii-legislatura/dispositivi-antiabbandono-in-automobile",
+     "data": "pagina senza data"
+    },
+    {
+     "ente": "Normattiva",
+     "pagina": "Decreto del Ministero delle infrastrutture e dei trasporti 2 ottobre 2019, n. 122",
+     "url": "https://www.normattiva.it/eli/id/2019/10/23//19G00130/CONSOLIDATED",
+     "data": "2019-10-23"
+    }
+   ],
+   "aggiornata": "2026-11-12",
+   "revisione": "2027-05-12",
+   "medico": false,
+   "guide": []
+  },
+  {
+   "slug": "leggere-ad-alta-voce",
+   "argomento": "crescita",
+   "titolo": "Leggere ad alta voce, fin dai primi mesi",
+   "sotto": "Perché fa bene, e come cominciare.",
+   "righe": [
+    {
+     "t": "Leggere un libro ai bambini è una delle sette azioni proposte dalla campagna GenitoriPiù.",
+     "f": [
+      2
+     ]
+    },
+    {
+     "t": "Secondo l'Istituto Superiore di Sanità, la lettura in famiglia dai primi mesi di vita fa bene allo sviluppo cognitivo, emotivo e relazionale del bambino, e alla relazione con chi se ne prende cura.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Nati per Leggere, il programma fondato dal 1999 sull'alleanza tra pediatri e bibliotecari, ricorda che i bambini ascoltano con grande piacere la voce umana fin da quando nascono.",
+     "f": [
+      1
+     ]
+    },
+    {
+     "t": "L'ascolto prolungato fa crescere i tempi di attenzione, e le storie invogliano i bambini a ripetere le parole che ancora non conoscono.",
+     "f": [
+      1
+     ]
+    },
+    {
+     "t": "Non è necessario essere attori per leggere con un bambino; verso i due-tre anni i bambini chiedono di rileggere i libri che preferiscono, ancora e ancora.",
+     "f": [
+      1
+     ]
+    },
+    {
+     "t": "Con il progetto Mamma Lingua, Nati per Leggere incoraggia i genitori a usare la propria lingua madre.",
+     "f": [
+      1
+     ]
+    }
+   ],
+   "limiti": "I limiti di questa scheda: il pieghevole di Nati per Leggere Piemonte, pubblicato sul sito della Regione Piemonte, non ha una data nel testo; dal file risulta del 2022. Per il vostro caso vale quello che dice oggi il vostro pediatra.",
+   "fonti": [
+    {
+     "ente": "Istituto Superiore di Sanità · EpiCentro",
+     "pagina": "Sorveglianza 0-2 anni, indagine 2025: lettura in famiglia",
+     "url": "https://www.epicentro.iss.it/sorveglianza02anni/indagine-2025-lettura",
+     "data": "2026-05-20"
+    },
+    {
+     "ente": "Regione Piemonte · Nati per Leggere Piemonte",
+     "pagina": "Pieghevole Nati per Leggere (PDF; data ricavata dall'indirizzo del file)",
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2022-06/depliant_a_5_ante_nati_per_leggere_2022.pdf",
+     "data": "2022-06"
+    },
+    {
+     "ente": "Istituto Superiore di Sanità · EpiCentro",
+     "pagina": "«Genitori più»: prendiamoci cura della loro vita",
+     "url": "https://www.epicentro.iss.it/materno/genitori-piu",
+     "data": "pagina senza data"
+    }
+   ],
+   "aggiornata": "2026-11-12",
+   "revisione": "2027-05-12",
+   "medico": false,
+   "guide": [
+    "routine-della-nanna"
+   ]
+  },
+  {
+   "slug": "carta-identita-figli",
+   "argomento": "documenti",
+   "titolo": "La carta d'identità dei figli",
+   "sotto": "Quanto vale e cosa serve per l'espatrio.",
+   "righe": [
+    {
+     "t": "La carta d'identità elettronica (CIE) si può rilasciare ai cittadini italiani minorenni fin dalla nascita.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Vale 3 anni per i bambini sotto i 3 anni, e 5 anni per i ragazzi dai 3 ai 18 anni.",
+     "f": [
+      0,
+      1
+     ]
+    },
+    {
+     "t": "Il minore può avere la carta valida per l'espatrio se entrambi i genitori sono presenti al momento in cui la carta viene emessa.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Se uno dei due genitori non può esserci, chiedete prima al vostro Comune come dare l'assenso.",
+     "f": []
+    },
+    {
+     "t": "Dai 12 anni compiuti, al ragazzo vengono rilevate due impronte digitali e firma il documento.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Sotto i 14 anni si può chiedere che sul retro della carta compaiano i nomi dei genitori, o di chi ne fa le veci.",
+     "f": [
+      0
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "ente": "Ministero dell'Interno · Carta d'identità elettronica",
+     "pagina": "Rilascio e rinnovo minorenni",
+     "url": "https://www.cartaidentita.interno.gov.it/richiedi/rilascio-e-rinnovo-minorenni/",
+     "data": "2024-06-18"
+    },
+    {
+     "ente": "Ministero dell'Interno · Carta d'identità elettronica",
+     "pagina": "Rilascio e rinnovo in Italia",
+     "url": "https://www.cartaidentita.interno.gov.it/richiedi/rilascio-e-rinnovo-in-italia/",
+     "data": "2024-10-16"
+    }
+   ],
+   "aggiornata": "2026-11-12",
+   "revisione": "2027-05-12",
+   "medico": false,
+   "guide": [
+    "carta-identita-bambini"
+   ]
+  },
+  {
+   "slug": "tessera-sanitaria",
+   "argomento": "documenti",
+   "titolo": "La tessera sanitaria: se è scaduta o persa",
+   "sotto": "Scadenza, duplicato e cosa fare nel frattempo",
+   "righe": [
+    {
+     "t": "La tessera sanitaria vale di norma sei anni; alla scadenza ne viene spedita una nuova in automatico all'indirizzo di residenza.",
+     "f": [
+      0,
+      1
+     ]
+    },
+    {
+     "t": "Anche con la tessera scaduta, le prestazioni sanitarie restano garantite presentando la ricetta rossa o quella elettronica nazionale.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Se la tessera si perde, viene rubata o si rovina, si può chiedere un duplicato.",
+     "f": [
+      0,
+      1
+     ]
+    },
+    {
+     "t": "In caso di furto o smarrimento, l'Agenzia delle Entrate indica come consigliabile la denuncia alle autorità.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Il duplicato si chiede online sul sito dell'Agenzia delle Entrate, via e-mail o PEC, in un suo ufficio oppure alla propria ASL.",
+     "f": [
+      0,
+      1
+     ]
+    },
+    {
+     "t": "Per un viaggio all'estero prima che arrivi la nuova tessera, si può chiedere alla propria ASL un certificato sostitutivo della Tessera Europea (TEAM).",
+     "f": [
+      0
+     ]
+    }
+   ],
+   "limiti": "I limiti di questa scheda: la durata di sei anni è indicata «di norma» e una delle due fonti è del 2021. Per il vostro caso vale quello che dice oggi l'Agenzia delle Entrate.",
+   "fonti": [
+    {
+     "ente": "Agenzia delle Entrate",
+     "pagina": "Tessera sanitaria – Vademecum (ottobre 2023)",
+     "url": "https://www1.agenziaentrate.gov.it/web_app_entrate/tessera_sanitaria.html",
+     "data": "pagina senza data"
+    },
+    {
+     "ente": "Agenzia delle Entrate",
+     "pagina": "Comunicato stampa sulla Guida alla Tessera sanitaria",
+     "url": "https://agenziaentrate.gov.it/portale/documents/20143/3158203/011_Com.+st.+Guida+Tessera+sanitaria+01.02.2021/0d079c70-aa05-4a2b-8afc-90416eada1b3",
+     "data": "2021-02-01"
+    }
+   ],
+   "aggiornata": "2026-11-12",
+   "revisione": "2027-05-12",
+   "medico": false,
+   "guide": [
+    "cartellina-di-famiglia",
+    "documenti-sanitari-dove-trovarli"
+   ]
+  },
+  {
+   "slug": "isee",
+   "argomento": "documenti",
+   "titolo": "L'ISEE: cosa serve e quando rifarlo",
+   "sotto": "A cosa serve, come si fa, fino a quando vale",
+   "righe": [
+    {
+     "t": "L'ISEE serve a valutare e confrontare la situazione economica delle famiglie che chiedono prestazioni sociali agevolate.",
+     "f": [
+      0,
+      1
+     ]
+    },
+    {
+     "t": "Per ottenerlo si presenta la Dichiarazione Sostitutiva Unica, detta DSU.",
+     "f": [
+      0,
+      1
+     ]
+    },
+    {
+     "t": "La DSU si può compilare online sul sito dell'INPS, anche in versione precompilata, oppure tramite un CAF.",
+     "f": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "t": "Nella versione precompilata, parte dei dati arriva già da Agenzia delle Entrate e INPS, e servono meno documenti da raccogliere.",
+     "f": [
+      0,
+      1
+     ]
+    },
+    {
+     "t": "L'ISEE vale fino al 31 dicembre dell'anno in cui è stata presentata la DSU.",
+     "f": [
+      0,
+      1
+     ]
+    },
+    {
+     "t": "Se il reddito della famiglia cambia in modo rilevante, esiste l'ISEE corrente, che aggiorna il valore dell'indicatore.",
+     "f": [
+      0,
+      1
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Portale unico ISEE",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.Portale-unico-ISEE.html",
+     "data": "2026-01-20"
+    },
+    {
+     "ente": "Ministero del Lavoro e delle Politiche Sociali",
+     "pagina": "ISEE",
+     "url": "https://www.lavoro.gov.it/strumenti-e-servizi/isee/pagine/default",
+     "data": "pagina senza data"
+    },
+    {
+     "ente": "INPS",
+     "pagina": "Mandato e delega al CAF per la DSU e il calcolo dell'ISEE",
+     "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.mandato-e-delega-al-caf-per-la-compilazione-della-dsu-e-il-calcolo-dell-isee.html",
+     "data": "2025-04-28"
+    }
+   ],
+   "aggiornata": "2026-11-12",
+   "revisione": "2027-05-12",
+   "medico": false,
+   "guide": [
+    "iscrizioni-nido-e-scuola"
+   ]
+  },
+  {
+   "slug": "foglietto-illustrativo",
+   "argomento": "salute",
+   "titolo": "Come si legge il foglietto illustrativo",
+   "sotto": "Le sei parti e il triangolo nero",
+   "righe": [
+    {
+     "t": "Il foglio illustrativo raccoglie le informazioni utili per usare il medicinale in sicurezza.",
+     "f": [
+      1
+     ]
+    },
+    {
+     "t": "È pensato per i pazienti, scritto in un linguaggio chiaro, e viene approvato dall'AIFA o dalla Commissione Europea.",
+     "f": [
+      0,
+      1
+     ]
+    },
+    {
+     "t": "È diviso in sei paragrafi: cos'è e a cosa serve, cosa sapere prima dell'uso, come si usa, possibili effetti indesiderati, come conservarlo, contenuto della confezione e altre informazioni.",
+     "f": [
+      1
+     ]
+    },
+    {
+     "t": "Oltre alla copia di carta nella confezione, i fogli illustrativi di tutti i medicinali autorizzati in Italia si consultano nella Banca Dati dei Farmaci.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Un triangolo nero capovolto indica un medicinale sottoposto a monitoraggio addizionale: non significa che non sia sicuro.",
+     "f": [
+      2
+     ]
+    },
+    {
+     "t": "Gli effetti indesiderati si possono comunicare al medico, al farmacista o a un infermiere, oppure segnalare direttamente all'autorità nazionale.",
+     "f": [
+      2
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "ente": "AIFA",
+     "pagina": "Riassunto delle Caratteristiche del Prodotto e Foglio Illustrativo",
+     "url": "https://www.aifa.gov.it/riassunto-caratteristiche-e-foglio-illustrativo",
+     "data": "pagina senza data"
+    },
+    {
+     "ente": "AIFA",
+     "pagina": "Il foglio illustrativo: il primo strumento in mano ai pazienti",
+     "url": "https://www.aifa.gov.it/documents/20142/516919/SCHEDA_SU_FOGLIO_ILLUSTRATIVO_03.11.2016.pdf",
+     "data": "pagina senza data"
+    },
+    {
+     "ente": "AIFA",
+     "pagina": "Medicinali sottoposti a monitoraggio addizionale",
+     "url": "https://www.aifa.gov.it/documents/20142/241044/WC500150608.pdf",
+     "data": "pagina senza data"
+    }
+   ],
+   "aggiornata": "2026-11-12",
+   "revisione": "2027-05-12",
+   "medico": true,
+   "guide": [
+    "lista-medicine-genitore-anziano"
+   ]
+  },
+  {
+   "slug": "assegno-unico",
+   "argomento": "documenti",
+   "titolo": "L'assegno unico: domanda e rinnovo",
+   "sotto": "Come si chiede e cosa tenere aggiornato",
+   "righe": [
+    {
+     "t": "L'Assegno unico e universale è un sostegno economico per le famiglie con figli a carico, riconosciuto per ogni figlio e pagato dall'INPS.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Spetta per ogni figlio minorenne a carico, già dal settimo mese di gravidanza; per i figli maggiorenni a carico, fino al compimento dei 21 anni e alle condizioni indicate dall'INPS; per i figli con disabilità a carico, senza limiti di età.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "La domanda si presenta online sul sito dell'INPS, con l'app INPS Mobile, chiamando il numero verde dell'INPS oppure tramite un patronato.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Per chi risiede in Italia, l'INPS continua a pagare l'assegno d'ufficio, senza bisogno di una nuova domanda.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "L'INPS chiede però di comunicare le variazioni, come la nascita di un altro figlio, e di rinnovare l'ISEE per ricevere l'importo corretto.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "L'assegno si può chiedere anche senza ISEE: in quel caso l'INPS paga gli importi minimi previsti dalla normativa.",
+     "f": [
+      0
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "ente": "INPS",
+     "pagina": "Assegno unico e universale per i figli a carico",
+     "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-55984.assegno-unico-e-universale-per-i-figli-a-carico.html",
+     "data": "2026-09-10"
+    }
+   ],
+   "aggiornata": "2026-11-12",
+   "revisione": "2027-05-12",
+   "medico": false,
+   "guide": []
+  },
+  {
+   "slug": "spese-sanitarie-da-detrarre",
+   "argomento": "documenti",
+   "titolo": "Le spese sanitarie da detrarre: cosa conservare",
+   "sotto": "Quali documenti tenere e come pagare",
+   "righe": [
+    {
+     "t": "Per l'Agenzia delle Entrate, a dimostrare una spesa sanitaria sono le fatture, le ricevute fiscali e gli scontrini «parlanti».",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Per i medicinali, lo scontrino parlante riporta natura, qualità e quantità del prodotto e il codice fiscale di chi lo acquista.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "In generale la detrazione spetta solo se si paga con versamento bancario o postale o con altri sistemi tracciabili.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Il contante resta ammesso per medicinali e dispositivi medici, e per le prestazioni di strutture pubbliche o private accreditate al Servizio sanitario nazionale.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "La detrazione vale anche per le spese sostenute per i familiari fiscalmente a carico, come i figli.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "L'Agenzia indica di conservare questi documenti per tutto il tempo in cui può fare un accertamento.",
+     "f": [
+      0
+     ]
+    }
+   ],
+   "limiti": "I limiti di questa scheda: la guida dell'Agenzia delle Entrate è del 2021. Per il vostro caso vale quello che dice oggi l'Agenzia delle Entrate.",
+   "fonti": [
+    {
+     "ente": "Agenzia delle Entrate",
+     "pagina": "Le agevolazioni fiscali sulle spese sanitarie (guida)",
+     "url": "https://www1.agenziaentrate.gov.it/web_app_entrate/spese_sanitarie.html",
+     "data": "2021-05"
+    }
+   ],
+   "aggiornata": "2026-11-12",
+   "revisione": "2027-05-12",
+   "medico": false,
+   "guide": [
+    "spostare-disdire-pagare-visita"
+   ]
+  },
+  {
+   "slug": "calendario-vaccinale",
+   "argomento": "salute",
+   "titolo": "Le vaccinazioni dei bambini: cosa prevede il calendario",
+   "sotto": "Quelle offerte gratis, età per età",
+   "righe": [
+    {
+     "t": "Il Calendario nazionale vaccinale è stato approvato insieme al Piano nazionale di prevenzione vaccinale 2023-2025, con l'Intesa Stato-Regioni del 2 agosto 2023.",
+     "f": [
+      1
+     ]
+    },
+    {
+     "t": "Nel primo e nel secondo anno di vita il Servizio sanitario nazionale offre gratis l'esavalente, l'anti-rotavirus, l'anti-pneumococcica, l'anti-meningococcica B e ACWY e il vaccino contro morbillo, rosolia, parotite e varicella.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Dai 6 mesi è offerta anche l'antinfluenzale: 2 dosi per i bambini non vaccinati in precedenza, una dose di richiamo ogni anno fino ai 6 anni compresi.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "A 5-6 anni sono previsti i richiami contro difterite, poliomielite, tetano e pertosse, e contro morbillo, rosolia, parotite e varicella.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Per gli adolescenti: l'anti-HPV dal compimento dell'11° anno di vita e, dal compimento del 12° anno di vita, i richiami contro difterite, poliomielite, tetano, pertosse e meningococco ACWY.",
+     "f": [
+      0
+     ]
+    },
+    {
+     "t": "Le vaccinazioni raccomandate non obbligatorie dell'infanzia e dell'adolescenza restano gratuite fino ai 18 anni compresi, anche se fatte in ritardo.",
+     "f": [
+      0
+     ]
+    }
+   ],
+   "limiti": "I limiti di questa scheda: la pagina del Ministero è aggiornata al 9 agosto 2023 e riguarda il Piano 2023-2025; il calendario della vostra Regione può essere diverso. Quali vaccinazioni toccano ai vostri figli, e quando, ve lo dicono il pediatra e il servizio vaccinale della ASL.",
+   "fonti": [
+    {
+     "ente": "Ministero della Salute",
+     "pagina": "Calendario vaccinale",
+     "url": "https://www.salute.gov.it/new/it/tema/vaccinazioni/calendario-vaccinale/",
+     "data": "2023-08-09"
+    },
+    {
+     "ente": "Ministero della Salute · Trova Norme",
+     "pagina": "Intesa 2 agosto 2023, n. 193 (G.U. n. 194 del 21 agosto 2023)",
+     "url": "https://www.trovanorme.salute.gov.it/norme/dettaglioAtto.spring?id=95963&page=newsett",
+     "data": "2023-08-21"
+    }
+   ],
+   "aggiornata": "2026-11-12",
+   "revisione": "2027-02-12",
+   "medico": true,
+   "guide": [
+    "certificato-vaccinale"
+   ]
   }
  ]
 }

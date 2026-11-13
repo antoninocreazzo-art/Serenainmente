@@ -906,7 +906,6 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--corsivo);letter-
 /* --- movimenti: solo se chi legge non ha chiesto di ridurli --- */
 @keyframes avvicina{from{transform:scale(1)}to{transform:scale(1.06)}}
 @keyframes parola{from{opacity:0;transform:translateY(.3em)}to{opacity:1;transform:none}}
-@keyframes an-scrive{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
 @keyframes an-spunta{0%{background:transparent;color:transparent;transform:scale(.85)}60%{transform:scale(1.15)}100%{background:var(--ok);color:var(--carta);transform:none}}
 @keyframes an-barra{from{text-decoration-color:transparent;color:var(--ink)}to{text-decoration-color:var(--muted);color:var(--muted)}}
 @keyframes an-entra{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
@@ -918,11 +917,9 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--corsivo);letter-
  .js .rivela.visto{opacity:1;transform:none;transition:opacity .6s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
  .js .vg-capo.rivela .vg-foto-m{transform:translateY(16px) scale(.97);transition:transform 1s cubic-bezier(.2,.7,.2,1)}
  .js .vg-capo.rivela.visto .vg-foto-m{transform:none}
- .js .ante:not(.gira) .an-scrive{clip-path:inset(0 100% 0 0)}
  .js .ante:not(.gira) .an-fatta .an-cb{background:transparent;color:transparent}
  .js .ante:not(.gira) .an-fatta>span{text-decoration-color:transparent;color:var(--ink)}
  .js .ante:not(.gira) .an-entra{opacity:0}
- .gira .an-scrive{animation:an-scrive 1.4s steps(24,end) .35s both}
  .gira .an-fatta .an-cb{animation:an-spunta .4s ease 2s both}
  .gira .an-fatta>span{animation:an-barra .35s ease 2.15s both}
  .gira .an-entra{animation:an-entra .55s cubic-bezier(.2,.7,.2,1) .5s both}
@@ -944,3 +941,153 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--corsivo);letter-
 main,footer{transition:opacity .15s}
 html.menu-aperto main,html.menu-aperto footer{opacity:.45}
 @media(prefers-reduced-motion:reduce){main,footer{transition:none}}
+
+/* ===================== voti (nov 2026): salvati, grandezza del testo, testata compatta ===================== */
+/* «I tuoi salvati»: nel menu del telefono e nella barra del computer, col numero quando c'è qualcosa */
+.conta{display:inline-grid;place-items:center;min-width:26px;height:26px;padding:0 8px;margin-left:8px;border-radius:999px;font:700 1rem/1 var(--titoli);font-style:normal;text-decoration:none;vertical-align:2px;background:var(--marca-t);color:var(--su-marca)}
+.nav-salvati .conta{background:#fff;color:#7F4E5C}
+[data-tema=scuro] .nav-salvati .conta{background:#F6DCE2;color:#3A2630}
+@media(min-width:960px){
+ .nav-d .nav-salvati{margin-left:auto;gap:8px;text-decoration:none}
+ .nav-d .nav-salvati span{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}
+ .nav-d .nav-salvati[aria-current] span{text-decoration-thickness:3px}
+}
+.menu-p .menu-salvati{border-top:1px solid var(--linea2)}
+.menu-tema{display:none;width:100%;align-items:center;gap:12px;min-height:58px;padding:0 var(--gut);border:0;border-bottom:1px solid var(--linea);background:none;color:var(--ink);font:500 1.0625rem var(--titoli);cursor:pointer;text-align:left}
+.menu-tema span:first-child{flex:1}
+.menu-tema .luna,[data-tema=scuro] .menu-tema .sole{display:block;color:var(--marca-t)}
+.menu-tema .sole,[data-tema=scuro] .menu-tema .luna{display:none}
+html:not(.js) .menu-tema{display:none!important}
+
+/* grandezza del testo: il pulsante dice quella di adesso; le tre scelte, «Normale» compresa */
+.icbtn.aa{width:auto;min-width:44px;height:50px;padding:0 4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.icbtn.aa b{font-size:16px;line-height:1.1}
+.icbtn.aa small{font:500 12px/1 var(--titoli)}
+@media(min-width:960px){.icbtn.aa{height:44px;padding:0 6px}.icbtn.aa small{display:none}.icbtn.aa b{font-size:1rem}}
+.aa b::before{content:"A"}
+:root[data-testo="1"] .aa b::before{content:"A+"}
+:root[data-testo="2"] .aa b::before{content:"A++"}
+.icbtn.aa[aria-expanded=true]{background:rgba(255,255,255,.18)}
+.hd-in{position:relative}
+.aa-p{position:absolute;right:var(--gut);top:calc(100% - 4px);z-index:46;width:min(360px,calc(100% - 2 * var(--gut)));background:var(--carta);color:var(--ink);border-radius:12px;border-bottom:3px solid var(--linea2);box-shadow:0 18px 40px -16px rgba(0,0,0,.45);padding:14px}
+.aa-p p{margin:0 0 10px;font:500 1rem/1.3 var(--titoli);color:var(--muted)}
+.aa-s{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.aa-s button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:68px;padding:6px 4px;border:1.5px solid var(--marca-t);border-radius:10px;background:transparent;color:var(--marca-t);font:500 .9375rem/1.2 var(--titoli);cursor:pointer}
+.aa-s button b{font:800 1.125rem/1 var(--titoli)}
+.aa-s button:nth-child(2) b{font-size:1.3125rem}
+.aa-s button:nth-child(3) b{font-size:1.5rem}
+.aa-s button[aria-pressed=true]{background:var(--marca-t);color:var(--su-marca)}
+.aa-s button:hover{background:var(--tinta)}
+.aa-s button[aria-pressed=true]:hover{background:var(--marca-tt)}
+.aa-p :focus-visible{outline-color:var(--marca-t)}
+html:not(.js) .aa,html:not(.js) .aa-p{display:none!important}
+
+/* testata compatta: sotto i 380 px, o col testo grande al telefono. La ricerca resta in vista, come pulsante «Cerca» */
+.campo-hd i b{display:none}
+@media(max-width:379px){
+ .hd-in{flex-wrap:nowrap;gap:4px;padding:8px 8px}
+ .hd-act{gap:0}
+ .hd-act{margin-left:0}
+ .campo-hd{order:0;flex:none;width:54px;min-height:0;height:50px;margin:0}
+ .campo-hd>span{display:none}
+ .campo-hd i{width:100%;flex-direction:column;gap:2px;align-content:center}
+ .campo-hd i b{display:block;font:500 12px/1 var(--titoli)}
+ [data-tema=scuro] .campo-hd i{box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.5)}
+ .hd-act>.tema{display:none}
+ .menu-tema{display:flex}
+ .brand span{font-size:14px;letter-spacing:.01em}
+ .logo-mark{width:36px;height:36px}
+ .brand{gap:6px}
+ .campo-hd{width:52px}
+ .menu-m summary{width:46px}
+}
+@media(max-width:959px){
+ :root[data-testo] .hd-in{flex-wrap:nowrap;gap:4px;padding:8px 8px}
+ :root[data-testo] .hd-act{gap:0}
+ :root[data-testo] .hd-act{margin-left:0}
+ :root[data-testo] .igcard{flex-wrap:wrap}
+ :root[data-testo] .vg-n{letter-spacing:0}
+ :root[data-testo] .values{grid-template-columns:repeat(auto-fit,minmax(min(100%,10em),1fr))}
+ :root[data-testo] .campo-hd{order:0;flex:none;width:52px;min-height:0;height:50px;margin:0}
+ :root[data-testo] .campo-hd>span{display:none}
+ :root[data-testo] .campo-hd i{width:100%;flex-direction:column;gap:2px;align-content:center}
+ :root[data-testo] .campo-hd i b{display:block;font:500 12px/1 var(--titoli)}
+ :root[data-testo][data-tema=scuro] .campo-hd i{box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.5)}
+ :root[data-testo] .hd-act>.tema{display:none}
+ :root[data-testo] .menu-tema{display:flex}
+ :root[data-testo] .brand span{font-size:14px;letter-spacing:.01em}
+ :root[data-testo] .logo-mark{width:36px;height:36px}
+ :root[data-testo] .brand{gap:6px}
+ :root[data-testo] .menu-m summary{width:46px}
+ :root[data-testo] .menu-m summary .ap,:root[data-testo] .menu-m summary .ch{font-size:12px}
+}
+
+/* «Cosa ti serve stasera?»: la prima scheda ha lo stesso aspetto delle altre (titolo sottolineato, freccia nel cerchio) */
+.ora-card{display:grid;grid-template-columns:minmax(0,1fr) 38px;gap:12px;align-items:center;min-height:88px;border-left:0;border-radius:4px;padding:18px 16px 18px 20px}
+.ora-card b{font:400 1.3125rem/1.25 var(--parole);color:var(--marca-t);text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1.5px}
+.ora-card small{font-size:1.0625rem;line-height:1.45;margin-top:6px}
+.ora-card>i{font-style:normal;width:38px;height:38px;border-radius:50%;background:var(--marca-t);color:var(--su-marca);display:grid;place-items:center}
+.ora-card:hover b{color:var(--marca-t);text-decoration-thickness:3px}
+.ora-card .tic{display:none}
+
+/* riquadri della ricerca su sintomi e urgenze: più riconoscibili, stessi testi */
+.avviso.sicuro{background:var(--carta);color:var(--ink);border:2px solid var(--marca-t);border-left-width:10px;border-radius:8px}
+.avviso.sicuro.urgente{background:#FBE9EE;border:3px solid #5E3442;border-left-width:12px}
+.avviso.sicuro.urgente .u112{color:#5E3442}
+[data-tema=scuro] .avviso.sicuro{background:#2A1D22;border-color:#E7B9C5}
+[data-tema=scuro] .avviso.sicuro.urgente{background:#3D2530;border-color:#F6DCE2}
+[data-tema=scuro] .avviso.sicuro.urgente .u112{color:#FFFFFF}
+.avviso.sicuro .small{color:var(--muted)}
+
+/* Medicine di casa: l'ora accanto alla sua casella anche al computer; errori accanto al campo */
+.md-ora-n{margin:0 0 4px}
+@media(min-width:680px){.md-quando label.md-o span{flex:0 0 9em}}
+.md-err{margin:6px 0 2px;padding:8px 12px;border-left:4px solid #9B2F45;background:#FBE9EE;color:#7A1F33;font:700 1rem/1.4 var(--titoli);border-radius:4px}
+[data-tema=scuro] .md-err{background:#3D2530;color:#FFD6DE;border-color:#FFB3C1}
+.md-add input[aria-invalid=true]{border-color:#9B2F45;border-width:2px}
+[data-tema=scuro] .md-add input[aria-invalid=true]{border-color:#FFB3C1}
+.chi-band{grid-template-columns:minmax(0,1fr)}
+@media(min-width:960px){.chi-band{grid-template-columns:1fr 1fr}}
+/* testo molto grande su schermi stretti: le parole lunghe vanno a capo invece di allargare la pagina */
+.rowl>.t{min-width:0;overflow-wrap:break-word}
+main :is(p,li,dd,summary,h1,h2,h3){overflow-wrap:break-word}
+.passi summary,.check label>span:last-child,.facts dd{overflow-wrap:anywhere;hyphens:auto;min-width:0}
+.facts div{flex-wrap:wrap;min-width:0}
+/* al telefono nessun testo sotto i 16 px: etichette, date, intestazioni delle tabelle */
+@media(max-width:959px){
+ .chip,.occhiello,.eyebrow,.postl .date,thead th,.rows .dl,.argf small{font-size:max(1rem,16px)}
+ .ora-card small,.scheda small{font-size:1.0625rem}
+}
+
+/* «Da sapere»: schede brevi, una colonna sola, da leggere in un minuto. Stessa testata, stesso piede e stessi caratteri delle guide */
+.ds .art-hd{gap:12px}
+.ds-occh{font:500 1rem/1.3 var(--titoli);letter-spacing:.08em;text-transform:uppercase;color:var(--marca-t)}
+.ds h1{font-size:clamp(1.75rem,5.6vw,2.625rem);line-height:1.12}
+.ds-sotto{font:400 clamp(1.125rem,2.6vw,1.3125rem)/1.45 var(--parole);color:var(--muted)}
+.ds-corpo{display:flex;flex-direction:column;gap:22px}
+.ds-testo{border-left:8px solid var(--marca);border-radius:0 6px 6px 0;padding:20px 18px 20px 20px;display:flex;flex-direction:column;gap:14px}
+.ds-testo p{font-size:1.125rem;line-height:1.6}
+/* i rimandi alle fonti: piccoli numeri; il tocco è largo 44 px anche se il numero è piccolo */
+.rif{white-space:nowrap;margin-left:6px}
+.rif-n{position:relative;display:inline-grid;place-items:center;min-width:28px;height:28px;padding:0 7px;border-radius:999px;background:var(--tinta2);color:var(--marca-tt);font:700 1rem/1 var(--titoli);text-decoration:none;vertical-align:1px;font-variant-numeric:tabular-nums}
+.rif-n+.rif-n{margin-left:16px}
+.rif-n::after{content:"";position:absolute;inset:-8px}
+.rif-n:hover{background:var(--marca-t);color:var(--su-marca)}
+.ds-elenco{margin:0;padding-left:1.7em;display:flex;flex-direction:column;gap:6px;font-size:1.125rem}
+.ds-elenco li::marker{color:var(--marca-t);font-weight:700}
+.ds-limiti{gap:0}
+.ds-limiti p{font-size:1.0625rem;line-height:1.55}
+.ds-fonti{display:flex;flex-direction:column;gap:4px}
+.ds-n{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--tinta2);color:var(--marca-tt);font:700 1rem/1 var(--titoli);margin-right:10px;vertical-align:1px}
+.ds .src{scroll-margin-top:96px;transition:background .3s}
+.ds .src:target{background:var(--tinta);border-radius:6px;padding-inline:12px;margin-inline:-12px}
+.ds-medico{font:400 1.0625rem/1.5 var(--parole);border-top:1px solid var(--linea);padding-top:14px}
+.ds .related{gap:0}
+.ds-rim{display:flex;flex-direction:column;gap:6px}
+@media print{
+ .ds-testo{border-left:0}.rif-n{background:none!important;padding:0 2px;min-width:0;height:auto;vertical-align:super;font-size:8pt}.rif-n::after{display:none}.rif-n+.rif-n{margin-left:2px}
+ .ds .crumbs{display:none}.ds .src{break-inside:avoid}.ds .src a{min-height:0;display:block}.ds .src a::after{content:" " attr(href);font-weight:400;font-size:8pt;overflow-wrap:anywhere}.ds .src a .ic-s{display:none}
+ .ds-limiti{border:1px solid #999!important;padding:8pt!important}
+}
+/* briciole di pane: anche «Inizio» si tocca su 44 px */
+.crumbs a{min-width:44px}
