@@ -3700,5 +3700,863 @@
     "neonato-documenti-primi-giorni"
    ]
   }
+ ],
+ "libri": [
+  {
+   "slug": "le-medicine",
+   "titolo": "Le medicine",
+   "riga": "La pagina del quaderno «Le medicine»: le fonti aggiornate e le novità.",
+   "riga2": "Un libro stampato non si corregge, questa pagina sì.",
+   "controllata": "2026-11-13",
+   "cambiato": [
+    {
+     "titolo": "La ricetta ripetibile fino a 12 mesi",
+     "pag": "52",
+     "testo": [
+      "Per le malattie croniche, la legge 182 del 2025 prevede una ricetta elettronica ripetibile fino a dodici mesi. Ogni volta il farmacista consegna le confezioni per trenta giorni di terapia.",
+      "La legge è in vigore dal 18 dicembre 2025. Per partire, però, serve un decreto del Ministro della salute, insieme al Ministro dell'economia.",
+      "Al 13 novembre 2026 non abbiamo trovato questo decreto in Gazzetta Ufficiale. Per questo non possiamo dirvi che la ricetta di dodici mesi si usa già.",
+      "Se vale per voi, ve lo dice il medico. Quando il decreto uscirà, lo scriveremo qui."
+     ],
+     "fonti": [
+      {
+       "ente": "Gazzetta Ufficiale",
+       "pagina": "Legge 2 dicembre 2025, n. 182, articolo 62 (Gazzetta Ufficiale n. 281 del 3 dicembre 2025)",
+       "url": "https://www.gazzettaufficiale.it/eli/gu/2025/12/03/281/sg/pdf",
+       "data": "Pubblicata il 3 dicembre 2025",
+       "letta": "2026-11-13"
+      }
+     ]
+    },
+    {
+     "titolo": "La farmacia dei servizi",
+     "pag": "64",
+     "testo": [
+      "La legge 182 del 2025 ha allargato l'elenco di quello che le farmacie possono offrire: per esempio le vaccinazioni dai 12 anni in su, alcuni test, la telemedicina, la scelta del medico di famiglia o del pediatra.",
+      "Le novità partono man mano: servono decreti del Ministero della salute, d'intesa con le Regioni.",
+      "Ogni farmacia sceglie cosa offrire, e molto dipende dalla Regione: chiedete alla vostra farmacia cosa fa già."
+     ],
+     "fonti": [
+      {
+       "ente": "Gazzetta Ufficiale",
+       "pagina": "Legge 2 dicembre 2025, n. 182, articolo 60 (Gazzetta Ufficiale n. 281 del 3 dicembre 2025)",
+       "url": "https://www.gazzettaufficiale.it/eli/gu/2025/12/03/281/sg/pdf",
+       "data": "Pubblicata il 3 dicembre 2025",
+       "letta": "2026-11-13"
+      }
+     ]
+    }
+   ],
+   "numeri": null,
+   "fonti_intro": [
+    "Le pagine «Da sapere» del quaderno riportano, in parole semplici, quello che dicono queste fonti ufficiali. Le parole semplici sono nostre: se qualcosa non torna, fa fede la fonte.",
+    "Qui le trovate tutte, con il link e il giorno in cui le abbiamo controllate."
+   ],
+   "fonti": [
+    {
+     "gruppo": "AIFA, Agenzia italiana del farmaco",
+     "voci": [
+      {
+       "titolo": "Riassunto delle caratteristiche e foglio illustrativo",
+       "link": [
+        "https://www.aifa.gov.it/riassunto-caratteristiche-e-foglio-illustrativo"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Banca dati dei farmaci e app «AIFA Medicinali»",
+       "link": [
+        "https://medicinali.aifa.gov.it/"
+       ],
+       "letta": "2026-11-12"
+      },
+      {
+       "titolo": "Chiarimenti sulla determinazione AIFA n. 821/2018 (foglio illustrativo aggiornato), 2025",
+       "link": [
+        "https://www.aifa.gov.it/-/chiarimenti-sulla-determinazione-aifa-n-821-2018"
+       ],
+       "letta": "2026-11-12"
+      },
+      {
+       "titolo": "Farmaci equivalenti",
+       "link": [
+        "https://www.aifa.gov.it/en/farmaci-equivalenti1"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Farmaci ed estate: 20 consigli per utilizzare i medicinali in sicurezza, 2014",
+       "link": [
+        "https://www.aifa.gov.it/-/farmaci-ed-estate-20-consigli-per-utilizzare-i-medicinali-in-sicurezza-nel-periodo-estivo"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Piano terapeutico, esempio con data di scadenza (Nota 85)",
+       "link": [
+        "https://www.aifa.gov.it/documents/20142/1728086/nota-85_all_PT.pdf"
+       ],
+       "letta": "2026-11-12"
+      }
+     ]
+    },
+    {
+     "gruppo": "Regione Emilia-Romagna",
+     "voci": [
+      {
+       "titolo": "Gestione dei farmaci in assistenza domiciliare e da parte dei cittadini o loro caregiver, BUR n. 251, 2024",
+       "link": [
+        "https://bur.regione.emilia-romagna.it/area-bollettini/n-251-del-29-07-2024-parte-seconda/gestione-dei-farmaci-in-assistenza-domiciliare-in-attuazione-del-dm-77-2022-e-da-parte-dei-cittadini-o-loro-caregiver/allegato-1"
+       ],
+       "letta": "2026-11-12"
+      },
+      {
+       "titolo": "Il piano della Regione per ridurre i tempi di attesa, 2026",
+       "link": [
+        "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa"
+       ],
+       "letta": "2026-11-13"
+      }
+     ]
+    },
+    {
+     "gruppo": "Regione Lombardia",
+     "voci": [
+      {
+       "titolo": "Farmaci, visite, esami: prescrizione e prenotazione SSR, 2026",
+       "link": [
+        "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/farmaci-visite-esami--prescrizione-prenotazione-ssr"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Ticket, esenzioni ed erogabilità, 2026",
+       "link": [
+        "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/DettaglioRedazionale/servizi-e-informazioni/cittadini/salute-e-prevenzione/prenotazioni-ticket-e-tempi-di-attesa/ticket-ed-esenzioni1/ticket-ed-esenzioni1"
+       ],
+       "letta": "2026-11-12"
+      },
+      {
+       "titolo": "Riconciliazione della terapia farmacologica: cosa è importante sapere, 2026",
+       "link": [
+        "https://www.regione.lombardia.it/sanita/farmaci-protesi-e-assistenza-integrata/riconciliazione-terapia-farmacologica"
+       ],
+       "letta": "2026-11-12"
+      }
+     ]
+    },
+    {
+     "gruppo": "Regione Toscana",
+     "voci": [
+      {
+       "titolo": "Esenzioni, 2026",
+       "link": [
+        "https://www.regione.toscana.it/-/esenzioni"
+       ],
+       "letta": "2026-11-12"
+      }
+     ]
+    },
+    {
+     "gruppo": "Regione Umbria",
+     "voci": [
+      {
+       "titolo": "Fascicolo sanitario elettronico, opuscolo informativo, 2026",
+       "link": [
+        "https://insalute.regione.umbria.it/wp-content/uploads/2026/04/FSE-2.0-Opuscolo-Informativo-1.pdf",
+        "https://www.fascicolosanitario.gov.it/"
+       ],
+       "letta": "2026-11-13"
+      }
+     ]
+    },
+    {
+     "gruppo": "Leggi",
+     "voci": [
+      {
+       "titolo": "Legge 2 dicembre 2025, n. 182 (Semplificazioni), articoli 60 e 62",
+       "link": [
+        "https://www.gazzettaufficiale.it/eli/gu/2025/12/03/281/sg/pdf"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Decreto legislativo 24 aprile 2006, n. 219 (medicinali per uso umano), articoli 1 e 73",
+       "link": [
+        "https://www.aifa.gov.it/sites/default/files/d.lgs_.n._219_2006_e_s.m.i..pdf"
+       ],
+       "letta": "2026-11-13"
+      }
+     ]
+    },
+    {
+     "gruppo": "ISS, Istituto superiore di sanità",
+     "voci": [
+      {
+       "titolo": "Piano nazionale di prevenzione vaccinale 2023-2025",
+       "link": [
+        "https://www.epicentro.iss.it/vaccini/documentazione-italia"
+       ],
+       "letta": "2026-11-12"
+      }
+     ]
+    },
+    {
+     "gruppo": "Commissione europea",
+     "voci": [
+      {
+       "titolo": "Your Europe: il numero di emergenza 112, gratuito in tutta l'Unione europea",
+       "link": [
+        "https://europa.eu/youreurope/citizens/travel/safety/emergency/index_it.htm"
+       ],
+       "letta": "2026-11-13"
+      }
+     ]
+    }
+   ],
+   "emergenza": {
+    "testo": [
+     "Se qualcuno sta male, respira male o non risponde, chiamate subito il 112.",
+     "È il numero di emergenza europeo: si chiama gratis da un telefono fisso o da un cellulare, in tutta l'Unione europea."
+    ],
+    "fonte": {
+     "ente": "Commissione europea",
+     "pagina": "Your Europe: il numero di emergenza 112",
+     "url": "https://europa.eu/youreurope/citizens/travel/safety/emergency/index_it.htm",
+     "data": "Verificata dalla Commissione il 22 giugno 2026",
+     "letta": "2026-11-13"
+    }
+   },
+   "whatsapp": "",
+   "acquista": []
+  },
+  {
+   "slug": "nascita",
+   "titolo": "Nascita",
+   "riga": "La pagina del quaderno «Nascita»: le fonti aggiornate e le novità.",
+   "riga2": "Un libro stampato non si corregge, questa pagina sì.",
+   "controllata": "2026-11-13",
+   "cambiato": [],
+   "numeri": {
+    "titolo": "Durate, importi e scadenze aggiornati",
+    "intro": [
+     "Il quaderno non stampa questi numeri, perché cambiano spesso. Eccoli, controllati sulle pagine dell'INPS il 13 novembre 2026."
+    ],
+    "avviso": {
+     "testo": [
+      "La legge di bilancio per il 2027 è in discussione in Parlamento: il Governo l'ha presentata alla Camera il 30 ottobre 2026. Può cambiare alcuni di questi numeri. Quando sarà approvata, aggiorneremo questa pagina."
+     ],
+     "fonti": [
+      {
+       "ente": "Camera dei deputati",
+       "pagina": "Bilancio di previsione dello Stato per l'anno finanziario 2027 e bilancio pluriennale per il triennio 2027-2029 (A.C. 3174)",
+       "url": "https://www.camera.it/leg19/126?idDocumento=3174",
+       "data": "Presentata alla Camera il 30 ottobre 2026",
+       "letta": "2026-11-13"
+      }
+     ]
+    },
+    "voci": [
+     {
+      "id": "maternita",
+      "titolo": "Congedo di maternità",
+      "pag": "16",
+      "testo": [
+       "Per le lavoratrici dipendenti dura 5 mesi: di solito 2 prima della data presunta del parto e 3 dopo.",
+       "Si può spostare: 1 mese prima e 4 dopo, oppure tutti e 5 dopo il parto. Serve un medico che attesti che non ci sono rischi per la salute.",
+       "Se il bambino nasce prima, i giorni non presi si aggiungono dopo. Se nasce dopo, si aggiungono i giorni in più.",
+       "È pagato all'80% della retribuzione.",
+       "La domanda si fa all'INPS prima che comincino i 2 mesi che precedono la data presunta del parto.",
+       "Per chi non è dipendente le regole sono diverse: l'INPS ha pagine dedicate."
+      ],
+      "fonti": [
+       {
+        "ente": "INPS",
+        "pagina": "Indennità per congedo di maternità e di paternità alternativo per lavoratrici e lavoratori dipendenti",
+        "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50586.indennit-per-congedo-di-maternit-e-di-paternit-alternativo-per-lavoratrici-e-lavoratori-dipendenti.html",
+        "data": "2025-05-30",
+        "letta": "2026-11-13"
+       }
+      ]
+     },
+     {
+      "id": "paternita",
+      "titolo": "Congedo di paternità obbligatorio",
+      "pag": "16",
+      "testo": [
+       "Il congedo di paternità obbligatorio dura 10 giorni lavorativi (20 se nascono gemelli o più bambini) e si può usare da 2 mesi prima della data presunta del parto fino a 5 mesi dopo la nascita. I giorni scelti si comunicano per iscritto al datore di lavoro almeno 5 giorni prima, quando è possibile rispetto alla nascita, partendo dalla data presunta del parto; il contratto collettivo può prevedere condizioni migliori.",
+       "È pagato al 100% della retribuzione."
+      ],
+      "fonti": [
+       {
+        "ente": "INPS",
+        "pagina": "Congedo di paternità obbligatorio",
+        "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.congedo-di-paternit-obbligatorio-58988.congedo-di-paternit-obbligatorio.html",
+        "data": "2025-11-13",
+        "letta": "2026-11-13"
+       }
+      ]
+     },
+     {
+      "id": "parentale",
+      "titolo": "Congedo parentale",
+      "pag": "91",
+      "testo": [
+       "Per i lavoratori dipendenti. È facoltativo e si aggiunge ai congedi di maternità e di paternità."
+      ],
+      "tabella": {
+       "colonne": [
+        "Che cosa",
+        "Regola"
+       ],
+       "righe": [
+        [
+         "Mesi per ciascun genitore",
+         "Fino a 6; il padre arriva a 7 se ne prende almeno 3"
+        ],
+        [
+         "Mesi in tutto, per la coppia",
+         "10; diventano 11 se il padre ne prende almeno 3"
+        ],
+        [
+         "Genitore solo",
+         "Fino a 11 mesi"
+        ],
+        [
+         "Fino a quando",
+         "Entro i 14 anni del figlio"
+        ],
+        [
+         "Mesi pagati",
+         "9 in tutto per la coppia: 3 per ciascun genitore, che non passano all'altro, più 3 da dividere. 9 anche per il genitore solo"
+        ],
+        [
+         "Pagati all'80%",
+         "3 mesi in tutto, entro i 6 anni del figlio"
+        ],
+        [
+         "Pagati al 30%",
+         "Gli altri mesi pagati"
+        ]
+       ]
+      },
+      "dopo": [
+       "Per chi lavora in proprio o è iscritto alla Gestione separata le regole sono diverse."
+      ],
+      "link": {
+       "href": "/guide/congedo-parentale/",
+       "testo": "Come si divide e come si chiede: la guida"
+      },
+      "fonti": [
+       {
+        "ente": "INPS",
+        "pagina": "Indennità di congedo parentale per lavoratrici e lavoratori dipendenti",
+        "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50583.indennit-di-congedo-parentale-per-lavoratrici-e-lavoratori-dipendenti.html",
+        "data": "2026-06-16",
+        "letta": "2026-11-13"
+       }
+      ]
+     },
+     {
+      "id": "allattamento",
+      "titolo": "Riposi per l'allattamento",
+      "pag": "39",
+      "testo": [
+       "Per le mamme lavoratrici dipendenti, nel primo anno di vita del bambino: 2 ore al giorno se l'orario di lavoro è di almeno 6 ore, 1 ora se è più corto.",
+       "Se nascono gemelli o più bambini, le ore raddoppiano.",
+       "Sono ore pagate: l'indennità è pari alla retribuzione.",
+       "Al papà lavoratore dipendente spettano in alcuni casi: per esempio se la mamma è morta o gravemente malata, o se la mamma è lavoratrice dipendente e non li usa. Non spettano al papà mentre la mamma dipendente è in congedo di maternità o parentale.",
+       "Se la mamma lavora in proprio o non lavora, chiedete all'INPS o a un patronato prima di contarci.",
+       "La mamma li chiede al datore di lavoro. Il papà li chiede online all'INPS e al datore di lavoro."
+      ],
+      "fonti": [
+       {
+        "ente": "INPS",
+        "pagina": "Indennità per riposi giornalieri per padri e madri dipendenti",
+        "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.50581.indennit-per-riposi-giornalieri-per-padri-e-madri-dipendenti.html",
+        "data": "2026-04-01",
+        "letta": "2026-11-13"
+       }
+      ]
+     },
+     {
+      "id": "assegno-unico",
+      "titolo": "L'Assegno unico",
+      "pag": "37",
+      "testo": [
+       "Per un bambino che nasce, spetta dal settimo mese di gravidanza, se la domanda arriva entro 120 giorni dalla nascita.",
+       "Nel 2026 l'importo va da 58,30 euro al mese per ogni figlio minorenne (senza ISEE, o con un ISEE di 46.582,71 euro o più) a 203,80 euro al mese (con un ISEE fino a 17.468,51 euro).",
+       "Gli importi si aggiornano ogni anno: quelli del 2027 li scriveremo qui quando l'INPS li pubblica."
+      ],
+      "fonti": [
+       {
+        "ente": "INPS",
+        "pagina": "Assegno unico e universale per i figli a carico",
+        "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-55984.assegno-unico-e-universale-per-i-figli-a-carico.html",
+        "data": "2026-09-10",
+        "letta": "2026-11-13"
+       },
+       {
+        "ente": "INPS",
+        "pagina": "Guida alla genitorialità «Con mamma e papà» (Direzione regionale Puglia)",
+        "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/Guida_genitorialita.pdf",
+        "data": "Senza data, successiva a maggio 2025",
+        "letta": "2026-11-13"
+       }
+      ]
+     },
+     {
+      "id": "nuovi-nati",
+      "titolo": "Il bonus per i nuovi nati",
+      "pag": "37",
+      "testo": [
+       "Per i bambini nati o adottati nel 2026: 1.000 euro, una volta sola, se l'ISEE per i minorenni non supera 40.000 euro, senza contare l'Assegno unico.",
+       "La domanda la fa un genitore all'INPS entro 120 giorni dalla nascita: dopo non si può più.",
+       "Per i bambini che nasceranno nel 2027, oggi l'INPS non ne parla ancora. Aggiorneremo questa pagina."
+      ],
+      "fonti": [
+       {
+        "ente": "INPS",
+        "pagina": "Bonus nuovi nati 2026 (notizia del 28 aprile 2026, con la circolare n. 45 e il messaggio n. 1268 del 2026)",
+        "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.04.bonus-nuovi-nati-2026-al-via-le-domande.html",
+        "data": "Notizia del 28 aprile 2026, aggiornata l'8 maggio 2026",
+        "letta": "2026-11-13"
+       },
+       {
+        "ente": "INPS",
+        "pagina": "Bonus nuovi nati",
+        "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.bonus-nuovi-nati.html",
+        "data": "2026-04-27",
+        "letta": "2026-11-13"
+       }
+      ]
+     },
+     {
+      "id": "nido",
+      "titolo": "Il bonus asilo nido",
+      "pag": "92",
+      "testo": [
+       "Aiuta a pagare la retta del nido per i bambini con meno di 3 anni, fino a 11 mesi l'anno. L'importo dipende dall'ISEE per i minorenni e dall'anno di nascita."
+      ],
+      "tabella": {
+       "colonne": [
+        "Bambini",
+        "ISEE per i minorenni",
+        "In un anno"
+       ],
+       "righe": [
+        [
+         "Nati dal 1° gennaio 2024",
+         "Fino a 40.000 euro",
+         "3.600 euro"
+        ],
+        [
+         "Nati dal 1° gennaio 2024",
+         "Oltre 40.000 euro, o senza ISEE",
+         "1.500 euro"
+        ],
+        [
+         "Nati prima del 1° gennaio 2024",
+         "Fino a 25.000,99 euro",
+         "3.000 euro"
+        ],
+        [
+         "Nati prima del 1° gennaio 2024",
+         "Da 25.001 a 40.000 euro",
+         "2.500 euro"
+        ],
+        [
+         "Nati prima del 1° gennaio 2024",
+         "Oltre 40.000 euro, o senza ISEE",
+         "1.500 euro"
+        ]
+       ]
+      },
+      "dopo": [
+       "Sono gli importi del 2026."
+      ],
+      "link": {
+       "href": "/guide/bonus-asilo-nido/",
+       "testo": "Come si chiede e quali ricevute servono: la guida"
+      },
+      "fonti": [
+       {
+        "ente": "INPS",
+        "pagina": "Bonus asilo nido e forme di supporto presso la propria abitazione",
+        "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.bonus-asilo-nido-e-forme-di-supporto-presso-la-propria-abitazione-51105.bonus-asilo-nido-e-forme-di-supporto-presso-la-propria-abitazione.html",
+        "data": "2026-05-28",
+        "letta": "2026-11-13"
+       }
+      ]
+     }
+    ]
+   },
+   "fonti_intro": [
+    "Le pagine «Da sapere» del quaderno riportano, in parole semplici, quello che dicono queste fonti ufficiali. Le parole semplici sono nostre: se qualcosa non torna, fa fede la fonte.",
+    "Qui le trovate tutte, con il link e il giorno in cui le abbiamo controllate."
+   ],
+   "fonti": [
+    {
+     "gruppo": "Ministero della Salute e ISS, Istituto superiore di sanità",
+     "voci": [
+      {
+       "titolo": "Raccomandazioni per ridurre il rischio di SIDS (Ministero della Salute, 2014), nel volantino della Provincia autonoma di Bolzano",
+       "link": [
+        "https://www.provincia.bz.it/salute-benessere/salute/downloads/05_PDF_SIDS_IT.pdf"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Novità per gli esami in gravidanza (ItOSS, per le cittadine)",
+       "link": [
+        "https://www.epicentro.iss.it/itoss/pdf/Novit%C3%A0%20per%20gli%20esami%20in%20gravidanza_cittadini-SENZA%20LOGO.pdf"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Sorveglianza Bambini 0–2 anni: la posizione in culla, 2026",
+       "link": [
+        "https://www.epicentro.iss.it/sorveglianza02anni/indagine-2025-posizione-culla"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "SIDS, Sindrome della morte improvvisa del lattante",
+       "link": [
+        "https://www.epicentro.iss.it/sids/"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Allattamento: politiche di protezione, 2021",
+       "link": [
+        "https://www.epicentro.iss.it/allattamento/politiche-di-protezione"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Bollettino epidemiologico nazionale 2025: disagio emotivo in gravidanza e dopo il parto (AUSL Romagna)",
+       "link": [
+        "https://www.epicentro.iss.it/ben/2025/3/disagio-emotivo-gravidanza-2024"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Come prevenire la depressione post partum e sentirsi nuovamente se stesse, 2012",
+       "link": [
+        "https://www.asst-mantova.it/documents/338413/1498693/Come+prevenire+la+depressione+post+partum+e+sentirsi+di+nuovo+se+stesse.pdf/23ae8192-c6d8-5e8d-a7d3-de83035d9a67"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Piano nazionale di prevenzione vaccinale",
+       "link": [
+        "https://www.epicentro.iss.it/vaccini/documentazione-italia"
+       ],
+       "letta": "2026-11-12"
+      },
+      {
+       "titolo": "Centri antiveleni e intossicazioni da sostanze chimiche, 2019",
+       "link": [
+        "https://www.iss.it/en/consigli-al-consumatore/-/asset_publisher/JHgxEFj4YPn0/content/centri-antiveleni-e-intossicazioni-da-sostanze-chimiche"
+       ],
+       "letta": "2026-11-13"
+      }
+     ]
+    },
+    {
+     "gruppo": "Leggi e Parlamento",
+     "voci": [
+      {
+       "titolo": "Aggiornamento dei Livelli essenziali di assistenza, Gazzetta Ufficiale n. 227, 2026",
+       "link": [
+        "https://www.gazzettaufficiale.it/eli/gu/2026/09/30/227/SG/html"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Legge 31 luglio 2017, n. 119 (vaccinazioni obbligatorie)",
+       "link": [
+        "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2017-07-31;119"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Legge 1 ottobre 2018, n. 117 (dispositivi antiabbandono)",
+       "link": [
+        "https://www.normattiva.it/eli/id/2018/10/12/18G00136/CONSOLIDATED/"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Legge 30 dicembre 2025, n. 199 (Bilancio 2026), articolo 1, commi 219–220",
+       "link": [
+        "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Camera dei deputati, Il trasporto e la sicurezza stradali, 2022",
+       "link": [
+        "https://www.camera.it/temiap/documentazione/temi/pdf/1137287.pdf"
+       ],
+       "letta": "2026-11-13"
+      }
+     ]
+    },
+    {
+     "gruppo": "INPS",
+     "voci": [
+      {
+       "titolo": "Congedo di paternità obbligatorio, 2025",
+       "link": [
+        "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.congedo-di-paternit-obbligatorio-58988.congedo-di-paternit-obbligatorio.html"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Guida alla genitorialità",
+       "link": [
+        "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/Guida_genitorialita.pdf"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Bonus nuovi nati 2026",
+       "link": [
+        "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.04.bonus-nuovi-nati-2026-al-via-le-domande.html"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Indennità per riposi giornalieri per padri e madri dipendenti, 2026",
+       "link": [
+        "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.50581.indennit-per-riposi-giornalieri-per-padri-e-madri-dipendenti.html"
+       ],
+       "letta": "2026-11-13"
+      }
+     ]
+    },
+    {
+     "gruppo": "Altri enti nazionali",
+     "voci": [
+      {
+       "titolo": "Agenzia delle Entrate, Guida alla Tessera sanitaria, 2022",
+       "link": [
+        "https://agenziaentrate.gov.it/portale/documents/20143/3200356/Guida-Tessera_Sanitaria.pdf"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Ministero della Giustizia, Nascita, 2020",
+       "link": [
+        "https://www.giustizia.it/giustizia/page/it/nascita"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Ministero dell'Interno, Carta d'identità elettronica: rilascio e rinnovo ai minorenni; circolare 15/2011",
+       "link": [
+        "https://www.cartaidentita.interno.gov.it/en/request-cie/release-and-renew-minors/",
+        "https://dait.interno.gov.it/documenti/circ_015_servdemo_26-05-2011.pdf"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Ispettorato del lavoro, sede di Venezia, Lavoratrici madri, 2019",
+       "link": [
+        "https://ispettorato.gov.it/files/2023/01/Brochure-lavoratrici-madri-IIL-Venezia.pdf"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "AIFA, Banca dati dei farmaci e app «AIFA Medicinali»; Farmaci ed estate, 2014",
+       "link": [
+        "https://medicinali.aifa.gov.it/",
+        "https://www.aifa.gov.it/-/farmaci-ed-estate-20-consigli-per-utilizzare-i-medicinali-in-sicurezza-nel-periodo-estivo"
+       ],
+       "letta": "2026-11-13"
+      }
+     ]
+    },
+    {
+     "gruppo": "Regioni",
+     "voci": [
+      {
+       "titolo": "Regione Toscana, I consultori, 2025",
+       "link": [
+        "https://www.regione.toscana.it/-/i-consultori"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Regione Toscana, Nascere in Toscana, 2026",
+       "link": [
+        "https://www.regione.toscana.it/-/nascere-in-toscana"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Regione Toscana, Screening neonatale, 2025",
+       "link": [
+        "https://www.regione.toscana.it/it/-/screening-neonatale"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Regione Toscana, Scegliere il pediatra e contattarlo, 2026",
+       "link": [
+        "https://www.regione.toscana.it/it/scegliere-il-pediatra-e-contattarlo"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Regione Piemonte, Agenda di gravidanza, 2026",
+       "link": [
+        "https://www.regione.piemonte.it/web/node/1077"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Regione Piemonte, Iscrizione al Servizio sanitario e scelta del pediatra, 2026",
+       "link": [
+        "https://www.regione.piemonte.it/web/node/449"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Regione Puglia, Opuscolo Consultori, donna e neonato, 2024",
+       "link": [
+        "https://sanita.puglia.it/documents/36031/377200108/Opuscolo+Consultori+donna_neonato+2024/b910912f-0a94-4770-baee-ae5b8de1530b"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Regione Puglia, Iscrizione al SSN e scelta del medico",
+       "link": [
+        "https://www.sanita.puglia.it/documents/20182/127217/iscrizione+al+SSN+e+scelta-cambio+del+medico+(scelta+e+cambio+del+medico.pdf)/3420599b-c6c7-448e-8df8-2ed3fae9b8a6"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Regione Friuli Venezia Giulia, Obbligo vaccinale",
+       "link": [
+        "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/promozione-salute-prevenzione/FOGLIA5/FOGLIA2/"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Regione Umbria, Fascicolo sanitario elettronico, opuscolo informativo, 2026",
+       "link": [
+        "https://insalute.regione.umbria.it/wp-content/uploads/2026/04/FSE-2.0-Opuscolo-Informativo-1.pdf"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Regione Emilia-Romagna, Gestione dei farmaci da parte dei cittadini o loro caregiver, BUR n. 251, 2024",
+       "link": [
+        "https://bur.regione.emilia-romagna.it/area-bollettini/n-251-del-29-07-2024-parte-seconda/gestione-dei-farmaci-in-assistenza-domiciliare-in-attuazione-del-dm-77-2022-e-da-parte-dei-cittadini-o-loro-caregiver/allegato-1"
+       ],
+       "letta": "2026-11-12"
+      },
+      {
+       "titolo": "Regione Emilia-Romagna, La crescita e la cura dei bambini nel primo anno di vita, 2008",
+       "link": [
+        "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/pubblicazioni/cura-dei-bambini/201cla-crescita-e-la-cura-dei-bambini-nel-primo-anno-di-vita201d-italiano/@@download/file/BAMBINO_italiano%5B1%5D.pdf"
+       ],
+       "letta": "2026-11-13"
+      }
+     ]
+    },
+    {
+     "gruppo": "Aziende sanitarie, ospedali, Comuni",
+     "voci": [
+      {
+       "titolo": "IRCCS Burlo Garofolo, Informativa sulla dichiarazione di nascita, 2025",
+       "link": [
+        "https://www.burlo.trieste.it/sites/default/files/documenti-basicpage/MOD_OST_0427_03_2122025_informativa_dich_nascita.pdf"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "ASST Mantova, Informativa sulla denuncia di nascita",
+       "link": [
+        "https://www.asst-mantova.it/documents/338413/1498693/informativa+completa+denuncia+di+nascita.pdf/1fc607c1-ff8e-2d45-99bc-ffe0b069c58d"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "AUSL Romagna, Ospedale di Ravenna, Depressione post partum: informazioni e supporto per le neo-mamme",
+       "link": [
+        "https://www.auslromagna.it/azienda/organizzazione/dipartimenti/salute-donna-infanzia-adolescenza-ravenna/ginecologia-ostetricia-ravenna/percorsi-ambulatorio-gar-ravenna/13-informativa_depressione-postpartum.pdf/@@download/file"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Azienda ULSS 9 Scaligera, Sorveglianza Bambini 0–2 anni, brochure per i genitori",
+       "link": [
+        "https://www.epicentro.iss.it/sorveglianza02anni/pdf/Brochure_per_i_genitori.pdf"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Comune di Firenze, Polizia Municipale, Guido mio figlio, 2020",
+       "link": [
+        "https://poliziamunicipale.comune.firenze.it/export/sites/poliziamunicipale/materiali/Guido_mio_figlio_MARGHERITA_2020.pdf"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Ospedale Pediatrico Bambino Gesù, Centro Antiveleni pediatrico: le cose da sapere",
+       "link": [
+        "https://www.ospedalebambinogesu.it/centro-antiveleni-le-cose-da-sapere-128569/"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Ospedale Pediatrico Bambino Gesù, Incidenti e bambini, 2022",
+       "link": [
+        "https://www.ospedalebambinogesu.it/incidenti-e-bambini-139789/"
+       ],
+       "letta": "2026-11-13"
+      },
+      {
+       "titolo": "ASL Nuoro, Intossicazioni in età pediatrica, opuscolo",
+       "link": [
+        "https://asl3nuoro.it/wp-content/uploads/2024/10/Brochure-piegh-Intossicazioni-in-eta-pediatrica-Ottobre.pdf"
+       ],
+       "letta": "2026-11-13"
+      }
+     ]
+    },
+    {
+     "gruppo": "Unione europea",
+     "voci": [
+      {
+       "titolo": "Commissione europea, Your Europe: il numero di emergenza 112, gratuito in tutta l'Unione europea",
+       "link": [
+        "https://europa.eu/youreurope/citizens/travel/safety/emergency/index_it.htm"
+       ],
+       "letta": "2026-11-13"
+      }
+     ]
+    }
+   ],
+   "emergenza": {
+    "testo": [
+     "Se qualcuno sta male, respira male o non risponde, chiamate subito il 112.",
+     "È il numero di emergenza europeo: si chiama gratis da un telefono fisso o da un cellulare, in tutta l'Unione europea."
+    ],
+    "fonte": {
+     "ente": "Commissione europea",
+     "pagina": "Your Europe: il numero di emergenza 112",
+     "url": "https://europa.eu/youreurope/citizens/travel/safety/emergency/index_it.htm",
+     "data": "Verificata dalla Commissione il 22 giugno 2026",
+     "letta": "2026-11-13"
+    }
+   },
+   "whatsapp": "",
+   "acquista": []
+  }
  ]
 }

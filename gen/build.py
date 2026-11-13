@@ -223,7 +223,7 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None, pre=''):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{e(t)}</title>
 <meta name="description" content="{e(desc)}">
-<link rel="canonical" href="{canon}">{'<meta name="robots" content="noindex">' if path in ('/privacy/', '/404/', '/salvati/', '/senza-rete/') else ''}
+<link rel="canonical" href="{canon}">{'<meta name="robots" content="noindex">' if path in ('/privacy/', '/404/', '/salvati/', '/senza-rete/') or path.startswith('/libri/') else ''}
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{canon}">
@@ -1043,6 +1043,76 @@ pages.append(page('/', 'Serena', 'Parole e idee per chi si prende cura della fam
 <div style="display:flex;flex-direction:column;gap:20px">{valori()}{IGCARD}</div></div></section>
 ''', cls='p-home', pre=hero_pre()))
 
+# ---------- i quaderni: le pagine dei QR (/libri/…) ----------
+# Testi in dati.json, «libri». Finché i libri non escono le pagine restano fuori da menu, ricerca e sitemap, con noindex (vedi page() e la sitemap).
+# Ogni sezione compare solo se ha contenuto: «cambiato» vuoto, «numeri» null, «whatsapp» "" e «acquista» [] non mostrano niente (nessun segnaposto).
+# Il QR stampato porta a serenainmente.it/libri/<slug> (senza la barra finale: il server la aggiunge da sé).
+def lb_dom(u): return u.split('/')[2].replace('www.', '')
+def lb_fonte(x):
+    # «data»: una data (la pagina della fonte aggiornata quel giorno) oppure una frase già scritta («Pubblicata il …»)
+    dt = f"Pagina aggiornata il {data_ds(x['data'])} · controllata il {data_it(x['letta'])}" if re.match(r'^\d{4}-\d{2}', x.get('data', '')) else (f"{x['data']} · controllata il {data_it(x['letta'])}" if x.get('data') else f"Controllata il {data_it(x['letta'])}")
+    return (f'<li class="src"><span class="org">{e(x["ente"])}</span><span class="ttl">{e(x["pagina"])}</span><span class="type">{e(dt)}</span>'
+            f'<a href="{e(x["url"])}" target="_blank" rel="noopener" data-umami-event="libro-fonte">Apri la fonte su {e(lb_dom(x["url"]))}<span class="sr"> (si apre in una nuova scheda)</span> {ic("esterno","ic-s")}</a></li>')
+def lb_voce(x, n):
+    tb = ''
+    if x.get('tabella'):
+        t = x['tabella']
+        tb = (f'<div class="tbl pila{" lb-due" if len(t["colonne"]) == 2 else ""}"><table><thead><tr>' + ''.join(f'<th scope="col">{e(c)}</th>' for c in t['colonne']) + '</tr></thead><tbody>'
+              + ''.join('<tr>' + ''.join((f'<th scope="row">{e(c)}</th>' if i == 0 else f'<td data-l="{e(t["colonne"][i])}">{e(c)}</td>') for i, c in enumerate(r)) + '</tr>' for r in t['righe']) + '</tbody></table></div>')
+    lk = f'<a class="more" href="~{x["link"]["href"]}">{e(x["link"]["testo"])} {ic("arrow","ic-s")}</a>' if x.get('link') else ''
+    hid = x.get('id', f'v{n}')
+    return (f'<section class="ds-testo vetro lb-voce" id="{hid}" aria-labelledby="{hid}-t"><p class="lb-pag">Nel quaderno: pag. {e(x["pag"])}</p><h3 id="{hid}-t">{e(x["titolo"])}</h3>'
+            + ''.join(f'<p>{e(p)}</p>' for p in x['testo']) + tb + ''.join(f'<p>{e(p)}</p>' for p in x.get('dopo', [])) + lk
+            + f'<ul class="sources lb-src" aria-label="Fonti">{"".join(lb_fonte(f) for f in x["fonti"])}</ul></section>')
+def lb_gruppo(g):
+    def voce(x):
+        # un link: il titolo stesso si tocca; più link: un link per sito
+        a = lambda u, t: f'<a href="{e(u)}" target="_blank" rel="noopener" data-umami-event="libro-fonte">{t}<span class="sr"> (si apre in una nuova scheda)</span> {ic("esterno","ic-s")}</a>'
+        doms = ' · '.join(dict.fromkeys(lb_dom(u) for u in x['link']))
+        if len(x['link']) == 1:
+            return f'<li class="src lb-f">{a(x["link"][0], e(x["titolo"]))}<span class="type">{e(doms)} · controllata il {data_it(x["letta"])}</span></li>'
+        return (f'<li class="src lb-f"><span class="ttl">{e(x["titolo"])}</span><span class="lb-ll">' + ''.join(a(u, e(lb_dom(u))) for u in x['link'])
+                + f'</span><span class="type">Controllata il {data_it(x["letta"])}</span></li>')
+    return f'<section class="lb-gruppo"><h3>{e(g["gruppo"])}</h3><ul class="sources">{"".join(voce(x) for x in g["voci"])}</ul></section>'
+for L in D.get('libri', []):
+    lp = f"/libri/{L['slug']}/"
+    w = L['titolo'].rsplit(' ', 1)
+    h1 = (e(w[0]) + ' ' if len(w) == 2 else '') + f'<em>{e(w[-1])}</em>'
+    N = L.get('numeri')
+    cambiato = (f'<section class="lb-sez" id="cambiato" aria-labelledby="cambiato-t"><h2 class="sec-t" id="cambiato-t">Cosa è cambiato</h2>'
+                + ''.join(lb_voce(x, i) for i, x in enumerate(L['cambiato'])) + '</section>') if L.get('cambiato') else ''
+    # il canale WhatsApp: compare solo quando in dati.json c'è il link (i testi li approva il presidente)
+    wa = (f'<section class="box box-salvia lb-wa noprint"><h2>Il canale WhatsApp di Serena</h2><a class="btn" href="{e(L["whatsapp"])}" rel="noopener" data-umami-event="libro-whatsapp">Apri il canale {ic("arrow","ic-s")}</a></section>') if L.get('whatsapp') else ''
+    numeri = ''
+    if N:
+        av = N.get('avviso')
+        avviso = (f'<aside class="box box-rosa lb-avviso">' + ''.join(f'<p>{e(p)}</p>' for p in av['testo']) + f'<ul class="sources lb-src" aria-label="Fonte">{"".join(lb_fonte(f) for f in av["fonti"])}</ul></aside>') if av else ''
+        indice = '<ul class="lb-indice noprint" aria-label="In questa sezione">' + ''.join(f'<li><a class="chip" href="#{x["id"]}">{e(x["titolo"])}</a></li>' for x in N['voci']) + '</ul>'
+        numeri = (f'<section class="lb-sez" id="numeri" aria-labelledby="numeri-t"><h2 class="sec-t" id="numeri-t">{e(N["titolo"])}</h2>' + ''.join(f'<p>{e(p)}</p>' for p in N.get('intro', []))
+                  + indice + avviso + ''.join(lb_voce(x, i) for i, x in enumerate(N['voci'])) + '</section>')
+    fonti = (f'<section class="lb-sez" id="fonti" aria-labelledby="fonti-t"><h2 class="sec-t" id="fonti-t">Le fonti del quaderno</h2>' + ''.join(f'<p>{e(p)}</p>' for p in L.get('fonti_intro', []))
+             + ''.join(lb_gruppo(g) for g in L['fonti']) + '</section>')
+    E = L.get('emergenza')
+    emerg = (f'<section class="box box-rosa lb-112" aria-labelledby="em-t"><h2 id="em-t">In emergenza: 112</h2>' + ''.join(f'<p>{e(p)}</p>' for p in E['testo'])
+             + f'<a class="btn noprint" href="tel:112" data-umami-event="libro-112">Chiama il 112</a><ul class="sources lb-src" aria-label="Fonte">{lb_fonte(E["fonte"])}</ul></section>') if E else ''
+    # dove comprare i quaderni: compare solo quando in dati.json ci sono i link
+    compra = ('<section class="lb-sez lb-compra noprint"><h2 class="sec-t">I quaderni</h2><div class="row">' + ''.join(f'<a class="btn btn-line" href="{e(a["url"])}" rel="noopener" data-umami-event="libro-acquista">{e(a["testo"])}</a>' for a in L['acquista']) + '</div></section>') if L.get('acquista') else ''
+    segnala = 'mailto:' + MAIL + '?subject=' + urllib.parse.quote('Segnalazione: quaderno «' + L['titolo'] + '»')
+    body = f'''<article class="art ds lb">
+<header class="art-hd wrap-t">
+<p class="ds-occh">Pagina del quaderno</p>
+<h1>{h1}</h1>
+<p class="ds-sotto"><em>{e(L['riga'])} {e(L['riga2'])}</em></p>
+<p class="small">Controllata il {data_it(L['controllata'])}.</p>
+</header>
+<div class="wrap-t ds-corpo">
+{cambiato}{wa}{numeri}{fonti}{emerg}{compra}
+<p class="ds-medico">{e(DS_MEDICO)}</p>
+<p class="small fatta-r noprint"><a href="{segnala}" data-umami-event="segnala-errore">Segnala un errore</a></p>
+</div>
+</article>'''
+    pages.append(page(lp, f"«{L['titolo']}»: fonti e novità", L['riga'], body, cls='p-ds p-libro'))
+
 # ---------- pagina non trovata ----------
 pages_404 = page('/404/', 'Questa pagina non c\'è', 'Pagina non trovata.', f'''
 <section class="ph-hd wrap-t"><h1>Questa pagina non c'è.</h1><p class="lead">Forse l'indirizzo è cambiato. Cerca qui quello che ti serviva.</p>{CHIEDI}
@@ -1119,7 +1189,7 @@ if os.path.isdir(fd):
         if os.path.isdir(os.path.join(fd, n)) and n not in vivi: shutil.rmtree(os.path.join(fd, n))
 if not PREVIEW:
     today = datetime.date.today().isoformat()
-    sm = ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in pages if p not in ('/privacy/', '/salvati/', '/senza-rete/'))  # la pagina Privacy (col nome del titolare) resta fuori dai motori di ricerca
+    sm = ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in pages if p not in ('/privacy/', '/salvati/', '/senza-rete/') and not p.startswith('/libri/'))  # la pagina Privacy (col nome del titolare) resta fuori dai motori di ricerca
     open(os.path.join(OUT, 'sitemap.xml'), 'w').write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sm}</urlset>')
 else:
     for d in ['assets/fonts', 'assets/brand', 'assets/gestionale', 'assets/foto', 'assets/mini', 'assets/ig', 'assets/stampabili', 'scarica']:

@@ -1093,3 +1093,23 @@ main :is(p,li,dd,summary,h1,h2,h3){overflow-wrap:break-word}
 }
 /* briciole di pane: anche «Inizio» si tocca su 44 px */
 .crumbs a{min-width:44px}
+/* le pagine dei quaderni (/libri/…): stesse schede di «Da sapere», con i titoli delle voci e le fonti strette */
+.lb-sez{display:flex;flex-direction:column;gap:16px;scroll-margin-top:96px}
+.lb-sez>p{font-size:1.125rem;line-height:1.6}
+.lb-voce{scroll-margin-top:96px}
+.lb-voce h3{font-size:clamp(1.375rem,3.4vw,1.625rem);line-height:1.2;margin-top:-6px}
+.lb-pag{font:500 .9375rem/1.3 var(--titoli);letter-spacing:.08em;text-transform:uppercase;color:var(--marca-t)}
+.lb-voce .more{white-space:normal;align-self:flex-start}
+.lb-src .src{padding:10px 0}
+.lb-src .src .org,.lb-src .src .ttl{font-size:1rem}
+.lb-indice{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.lb-indice .chip{min-height:44px;padding-inline:14px;white-space:nowrap}
+@media(max-width:599px){.lb-indice{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:calc(var(--gut)*-1);padding:2px var(--gut)}.lb-indice::-webkit-scrollbar{display:none}}
+.lb-due td::before{content:none!important}
+.lb-f{gap:0}.lb-f a{font-weight:500;line-height:1.4;padding:6px 0;min-height:44px}.lb-f .type{font-size:.9375rem}
+.lb-ll{display:flex;flex-wrap:wrap;column-gap:18px}
+.lb-avviso p,.lb-112 p{font-size:1.0625rem;line-height:1.55}
+.lb-112 .btn{align-self:flex-start}
+.lb-gruppo{display:flex;flex-direction:column}
+.lb-gruppo h3{font-size:1.25rem;margin:10px 0 6px}
+@media print{.lb-voce{break-inside:avoid-page}.lb .src{break-inside:avoid}.lb .src a{min-height:0;display:block}.lb .src a::after{content:" " attr(href);font-weight:400;font-size:8pt;overflow-wrap:anywhere}.lb .src a .ic-s{display:none}}
