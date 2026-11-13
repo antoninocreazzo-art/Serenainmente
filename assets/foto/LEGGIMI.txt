@@ -32,4 +32,6 @@ Poi: python3 gen/build.py
 
 Dal 13/11/2026 hanno la foto definitiva anche le 14 guide di «Attesa e primi mesi», inserimento-al-nido e
 primo-giorno-nido-materna-cosa-serve (1536 × 1024 più -sm e -xs, miniature con python3 gen/miniature.py).
-Le altre 41 guide nuove aspettano la foto: i prompt sono nel documento di progetto delle foto delle 57 guide.
+Sempre il 13/11 sono arrivate le foto di altre 30 guide (Genitori anziani e Soldi e agevolazioni).
+Aspettano ancora la foto 11 guide: 9 di «Bambini e crescita» (schermi, pannolino, mensa, sostegno, DSA,
+centri estivi, iscrizione primaria, scuolabus, pidocchi), prevenire-cadute-in-casa e vaccinazioni-dopo-65-anni.
