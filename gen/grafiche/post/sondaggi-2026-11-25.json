@@ -1,0 +1,69 @@
+{
+ "nota": "Sondaggi 25/11-1/12 scelti il 14/11 sera dalle proposte di tre esperti (secondo giro).",
+ "reel": [],
+ "storie": [
+  {
+   "data": "2026-11-25",
+   "sfondo": "#FBF6F4",
+   "chip": "Un grazie piccolo",
+   "titolo": "Quando qualcuno ti ringrazia per una cosa minuscola, tu come ti senti?",
+   "testo": "Il caffè preparato, il messaggio ricordato. Le cose che nessuno conta, contate.",
+   "tipo": "adesivo",
+   "file": "2026-11-25-sondaggio.jpg"
+  },
+  {
+   "data": "2026-11-26",
+   "sfondo": "#F2EBE3",
+   "chip": "Piccola confessione",
+   "titolo": "Ti capita di rispondere a un messaggio nella testa, ma mai per davvero?",
+   "testo": "Lo leggi, sai cosa scrivere, pensi «dopo». E il dopo è martedì prossimo.",
+   "tipo": "adesivo",
+   "file": "2026-11-26-sondaggio.jpg"
+  },
+  {
+   "data": "2026-11-27",
+   "sfondo": "#F4E9EC",
+   "chip": "Sa di casa",
+   "titolo": "C'è un piatto che, appena lo assaggi, ti riporta a casa di quando eri piccola?",
+   "testo": "Basta il profumo e sei di nuovo lì. Il tuo qual è? Scrivimelo qui sotto.",
+   "tipo": "adesivo",
+   "file": "2026-11-27-sondaggio.jpg"
+  },
+  {
+   "data": "2026-11-28",
+   "sfondo": "#EBD3D9",
+   "chip": "Il permesso di fermarsi",
+   "titolo": "Quanto permesso ti dai di fermarti, anche quando non hai finito tutto?",
+   "testo": "Il bucato resta lì, la lista anche. Muovi il cursore: la media la vedi subito.",
+   "tipo": "adesivo",
+   "file": "2026-11-28-sondaggio.jpg"
+  },
+  {
+   "data": "2026-11-29",
+   "sfondo": "#FBF6F4",
+   "chip": "Una domanda vera",
+   "titolo": "Quale domanda vorresti che qualcuno ti facesse più spesso?",
+   "testo": "Non «tutto bene?». Una domanda vera. Scrivila qui: la condivido senza nome.",
+   "tipo": "adesivo",
+   "file": "2026-11-29-sondaggio.jpg"
+  },
+  {
+   "data": "2026-11-30",
+   "sfondo": "#F2EBE3",
+   "chip": "Un grazie in sospeso",
+   "titolo": "C'è una persona a cui vorresti dire grazie, e non l'hai ancora fatto?",
+   "testo": "Per una cosa piccola o enorme. Se ti viene in mente adesso, mandale questa storia.",
+   "tipo": "adesivo",
+   "file": "2026-11-30-sondaggio.jpg"
+  },
+  {
+   "data": "2026-12-01",
+   "sfondo": "#F4E9EC",
+   "chip": "Inizia dicembre",
+   "titolo": "Inizia dicembre. Per te è più un mese di lucine o di liste?",
+   "testo": "Comunque lo vivi, e qualunque cosa festeggi: va bene così.",
+   "tipo": "adesivo",
+   "file": "2026-12-01-sondaggio.jpg"
+  }
+ ]
+}
