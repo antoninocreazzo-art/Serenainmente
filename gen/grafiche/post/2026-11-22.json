@@ -1,0 +1,58 @@
+[
+ {
+  "file": "2026-11-22-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "il vocabolario di Serena",
+  "titolo": "Le parole\ndella settimana",
+  "sottotitolo": "Sei parole della vita di casa,\ndal 16 al 21 novembre.",
+  "sfondo": "#F4E9EC"
+ },
+ {
+  "file": "2026-11-22-2.jpg",
+  "tipo": "frase",
+  "parola": "Lunedì",
+  "numero": "16",
+  "frase": "Il giorno in cui si decide:\n«stasera tutti a letto presto».\nDura fino alle nove\nmeno un quarto.\nSi riprova martedì.",
+  "sfondo": "#F4E9EC"
+ },
+ {
+  "file": "2026-11-22-3.jpg",
+  "tipo": "frase",
+  "parola": "Lista della spesa",
+  "numero": "17",
+  "frase": "Scritta in tre,\ncon tre calligrafie diverse.\nSi dimentica a casa.\n«Prendi solo il latte.»\nRientro: 46 euro.\nIl latte no.",
+  "sfondo": "#F4E9EC"
+ },
+ {
+  "file": "2026-11-22-4.jpg",
+  "tipo": "frase",
+  "parola": "Borraccia",
+  "numero": "18",
+  "frase": "Parte piena alle otto.\nTorna piena alle quattro.\n«Hai bevuto a scuola?»\n«Sì, tantissimo.»\nIl mistero continua.",
+  "sfondo": "#F4E9EC"
+ },
+ {
+  "file": "2026-11-22-5.jpg",
+  "tipo": "frase",
+  "parola": "Giubbotto",
+  "numero": "19",
+  "frase": "Si mette «dopo».\nSi toglie dopo due minuti.\nSi dimentica al parco.\nConsiglio: il nome scritto\ndentro, a pennarello.\nTorna quasi sempre.",
+  "sfondo": "#F4E9EC"
+ },
+ {
+  "file": "2026-11-22-6.jpg",
+  "tipo": "frase",
+  "parola": "Compiti",
+  "numero": "20",
+  "frase": "Venti minuti di esercizi.\nUn'ora di matite,\nsorsi d'acqua\ne «non trovo la gomma».\nTu lì accanto, col caffè:\nanche questo è esserci.",
+  "sfondo": "#F4E9EC"
+ },
+ {
+  "file": "2026-11-22-7.jpg",
+  "tipo": "frase",
+  "parola": "Bagnetto",
+  "numero": "21",
+  "frase": "Comincia: «Non voglio».\nFinisce: «Ancora un po'!»\nIn mezzo: due paperelle,\nil pavimento allagato\ne tre asciugamani zuppi.",
+  "sfondo": "#F4E9EC"
+ }
+]

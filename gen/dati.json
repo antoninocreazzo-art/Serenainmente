@@ -751,6 +751,19 @@
    "fonti": [
     "CC-06"
    ]
+  },
+  {
+   "slug": "quanto-dorme-un-neonato",
+   "data": "2026-11-23",
+   "controllo": "2026-11-14",
+   "titolo": "Dorme tanto, ma a pezzetti?",
+   "guida": "quanto-dorme-un-bambino",
+   "affermazioni": [
+    "Secondo l'OMS i neonati hanno bisogno di 14-17 ore di sonno di buona qualità tra 0 e 3 mesi e di 12-16 ore tra 4 e 11 mesi, sonnellini compresi. Sono indicazioni di popolazione: nei primi mesi la variabilità è ampia, e per ogni dubbio sul singolo bambino il riferimento è il pediatra."
+   ],
+   "fonti": [
+    "SB-07"
+   ]
   }
  ],
  "guide": [
@@ -2988,6 +3001,18 @@
    "titolo": "Quante ore deve dormire un bambino, età per età",
    "link": "/guide/quanto-dorme-un-bambino/",
    "tipo": "guida"
+  },
+  {
+   "data": "2026-11-19",
+   "titolo": "Il certificato vaccinale: dove si scarica e quando serve",
+   "link": "/guide/certificato-vaccinale/",
+   "tipo": "guida"
+  },
+  {
+   "data": "2026-11-23",
+   "titolo": "Dorme tanto, ma a pezzetti? Le fonti",
+   "link": "/fonti/quanto-dorme-un-neonato/",
+   "tipo": "fonti"
   }
  ],
  "frase_medico_schede": "Serena riporta informazioni generali: non sostituiscono il medico o il pediatra.",

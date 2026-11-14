@@ -1,0 +1,87 @@
+{
+ "nota": "Il buongiorno di Serena 16-24/11 (preparato dall'esecuzione automatica del 9/11, completato in chat il 14/11).",
+ "reel": [],
+ "storie": [
+  {
+   "data": "2026-11-16",
+   "tipo": "buongiorno",
+   "sfondo": "#F4E9EC",
+   "saluto": "Buongiorno",
+   "titolo": "a chi stamattina riparte con la lista della settimana già in testa. Non serve finirla oggi: basta cominciare dalla prima riga.",
+   "testo": "Un passo alla volta. Lo stai già facendo.",
+   "file": "2026-11-16-buongiorno.jpg"
+  },
+  {
+   "data": "2026-11-17",
+   "tipo": "buongiorno",
+   "sfondo": "#F2EBE3",
+   "saluto": "Buongiorno",
+   "titolo": "a chi ieri sera è andata a letto tardi per finire tutto. Oggi non devi correre più forte: devi solo arrivare a sera.",
+   "testo": "E ci arriverai. Hai più forza di quanta ne senti.",
+   "file": "2026-11-17-buongiorno.jpg"
+  },
+  {
+   "data": "2026-11-18",
+   "tipo": "buongiorno",
+   "sfondo": "#FBF6F4",
+   "saluto": "Buongiorno",
+   "titolo": "Metà settimana. Forse sei stanca, forse un po' indietro. Ma tutto quello che hai fatto finora conta, anche se nessuno l'ha visto.",
+   "testo": "Che oggi qualcuno ti renda un sorriso.",
+   "file": "2026-11-18-buongiorno.jpg"
+  },
+  {
+   "data": "2026-11-19",
+   "tipo": "buongiorno",
+   "sfondo": "#F4E9EC",
+   "saluto": "Buongiorno",
+   "titolo": "a chi stamattina ha già trovato le scarpe, firmato un avviso e fatto ridere qualcuno. Prima ancora delle otto.",
+   "testo": "Buona giornata. Ti meriti un caffè caldo.",
+   "file": "2026-11-19-buongiorno.jpg"
+  },
+  {
+   "data": "2026-11-20",
+   "tipo": "buongiorno",
+   "sfondo": "#EBD3D9",
+   "saluto": "Buongiorno",
+   "titolo": "Ultimo giorno di scuola e di lavoro della settimana. Quello che resta indietro può aspettare lunedì: stasera si respira.",
+   "testo": "Ancora qualche ora. Ce la fai, come sempre.",
+   "file": "2026-11-20-buongiorno.jpg"
+  },
+  {
+   "data": "2026-11-21",
+   "tipo": "buongiorno",
+   "sfondo": "#F2EBE3",
+   "saluto": "Buongiorno",
+   "titolo": "Oggi la sveglia può suonare più tardi, anche se tu sarai sveglia lo stesso. Che sia una giornata senza orari da rincorrere.",
+   "testo": "Buon sabato, lento e tutto tuo.",
+   "file": "2026-11-21-buongiorno.jpg"
+  },
+  {
+   "data": "2026-11-22",
+   "tipo": "buongiorno",
+   "sfondo": "#FBF6F4",
+   "saluto": "Buongiorno",
+   "titolo": "La domenica non deve essere perfetta. Basta un pranzo insieme, una passeggiata corta, una risata a tavola.",
+   "testo": "Buona domenica, a te e a chi ami.",
+   "file": "2026-11-22-buongiorno.jpg"
+  },
+  {
+   "data": "2026-11-23",
+   "tipo": "buongiorno",
+   "sfondo": "#F4E9EC",
+   "saluto": "Buongiorno",
+   "titolo": "a chi stanotte si è alzata e stamattina riparte lo stesso. Non sei sola a sentirti così: tante case, stamattina, hanno lo stesso caffè.",
+   "testo": "Oggi basta il necessario. Il resto può aspettare.",
+   "file": "2026-11-23-buongiorno.jpg"
+  },
+  {
+   "data": "2026-11-24",
+   "tipo": "buongiorno",
+   "sfondo": "#EBD3D9",
+   "saluto": "Buongiorno",
+   "titolo": "a chi oggi ha tre cose da fare nello stesso momento. Sceglierne una, adesso, è già un modo per volersi bene.",
+   "testo": "Una alla volta. Sei più brava di quanto pensi.",
+   "file": "2026-11-24-buongiorno.jpg"
+  }
+ ]
+}

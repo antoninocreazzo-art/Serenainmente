@@ -1,0 +1,41 @@
+[
+ {
+  "file": "2026-11-24-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "tre passi",
+  "titolo": "Mille foto\nsul telefono.\nE le prime volte?",
+  "sottotitolo": "Cinque minuti al mese\nper non perderle.",
+  "sfondo": "#F2EBE3"
+ },
+ {
+  "file": "2026-11-24-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "Una cartella\nper le prime volte",
+  "testo": "Primo passo, primo dente, primo giorno di nido: tutte nello stesso posto, sul telefono.",
+  "sfondo": "#F2EBE3"
+ },
+ {
+  "file": "2026-11-24-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Una riga\nsotto ogni foto",
+  "testo": "Dove eravate, chi c'era, cosa ha detto. Tra dieci anni è quella riga a raccontare la foto.",
+  "sfondo": "#F2EBE3"
+ },
+ {
+  "file": "2026-11-24-4.jpg",
+  "tipo": "passo",
+  "numero": "3",
+  "titolo": "Dieci foto\nal mese",
+  "testo": "Scegline dieci e stampale, o mettile in un album. Le altre possono restare nel telefono.",
+  "sfondo": "#F2EBE3"
+ },
+ {
+  "file": "2026-11-24-5.jpg",
+  "tipo": "chiusura",
+  "titolo": "Cinque minuti\nal mese",
+  "testo": "Bastano per tenere quello che oggi ricordi a memoria.",
+  "sfondo": "#F2EBE3"
+ }
+]

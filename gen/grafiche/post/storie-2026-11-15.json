@@ -1,0 +1,98 @@
+{
+ "nota": "Storie con adesivo 15-24/11 (schema del 6/11): alle 12 con notifica Metricool (autoPublish false); 15-17 alle 12:10 perché alle 12 esce già la storia automatica del post; il 19/11 alle 12:05 la Rivela con la parola del 20/11. 18-24 dall'esecuzione automatica del 9/11, 15-17 scritte in chat il 14/11.",
+ "reel": [],
+ "storie": [
+  {
+   "data": "2026-11-15",
+   "sfondo": "#FBF6F4",
+   "chip": "La domanda della domenica",
+   "titolo": "Lo zaino di domani è già pronto?",
+   "testo": "Un tocco qui sotto. Così vediamo se non sei l'unica a farlo lunedì mattina.",
+   "tipo": "adesivo",
+   "file": "2026-11-15-storia-b.jpg"
+  },
+  {
+   "data": "2026-11-16",
+   "sfondo": "#F2EBE3",
+   "chip": "Prova del minuto",
+   "titolo": "Il referto dell'ultima visita: lo ritrovi in meno di un minuto?",
+   "testo": "Prova adesso, poi rispondi. Nessun giudizio: nel post di oggi, tre gesti per riuscirci.",
+   "tipo": "adesivo",
+   "file": "2026-11-16-storia-b.jpg"
+  },
+  {
+   "data": "2026-11-17",
+   "sfondo": "#F4E9EC",
+   "chip": "Com'è la settimana?",
+   "titolo": "Da «tutto sotto controllo» a «chi ha spostato il martedì?».",
+   "testo": "Sposta il cursore. Siamo in tante a incastrare tutto.",
+   "tipo": "adesivo",
+   "file": "2026-11-17-storia-b.jpg"
+  },
+  {
+   "data": "2026-11-18",
+   "sfondo": "#F2EBE3",
+   "chip": "Vero o falso?",
+   "titolo": "Per iscriversi al nido serve il certificato delle vaccinazioni?",
+   "testo": "Vota qui sotto: domani la risposta, con la fonte.",
+   "tipo": "adesivo"
+  },
+  {
+   "data": "2026-11-19",
+   "sfondo": "#F4E9EC",
+   "chip": "La risposta di ieri",
+   "titolo": "Vero: per nido e scuola dell'infanzia.",
+   "testo": "Fino ai 6 anni le vaccinazioni obbligatorie sono un requisito per l'accesso; dalla primaria in poi non condizionano l'iscrizione (legge 119/2017). Dove scaricare il certificato: la guida è qui sotto.",
+   "tipo": "adesivo"
+  },
+  {
+   "data": "2026-11-20",
+   "sfondo": "#EBD3D9",
+   "chip": "Lo strumento del venerdì",
+   "titolo": "Visite, scadenze e documenti in un file solo.",
+   "testo": "Il gestionale di famiglia, gratis. Funziona anche dal telefono. Ti servirebbe?",
+   "tipo": "adesivo"
+  },
+  {
+   "data": "2026-11-21",
+   "sfondo": "#F2EBE3",
+   "chip": "Aggiungi il tuo",
+   "titolo": "La merenda di oggi.",
+   "testo": "Una foto, niente volti. Aggiungi la tua e guarda quelle degli altri.",
+   "tipo": "adesivo"
+  },
+  {
+   "data": "2026-11-22",
+   "sfondo": "#FBF6F4",
+   "chip": "La domanda della domenica",
+   "titolo": "Questa settimana: più corsa o più calma?",
+   "testo": "Un tocco qui sotto. Così vediamo come sta andando, a casa di tutti.",
+   "tipo": "adesivo"
+  },
+  {
+   "data": "2026-11-23",
+   "sfondo": "#EBD3D9",
+   "chip": "Com'è andata la notte?",
+   "titolo": "Da «dormito benissimo» a «chi ha visto le 4?».",
+   "testo": "Sposta il cursore. Nessun giudizio: solo per sentirci meno soli.",
+   "tipo": "adesivo"
+  },
+  {
+   "data": "2026-11-24",
+   "sfondo": "#F4E9EC",
+   "chip": "Questo o quello",
+   "titolo": "Le foto dei bambini: stampate o tutte nel telefono?",
+   "testo": "Ogni casa ha la sua abitudine. Qual è la vostra?",
+   "tipo": "adesivo"
+  },
+  {
+   "data": "2026-11-19",
+   "sfondo": "#FBF6F4",
+   "chip": "Il vocabolario di domani",
+   "titolo": "Compiti",
+   "testo": "Domani alle 18, la definizione. Chi la scopre oggi può già dirci la sua.",
+   "tipo": "adesivo",
+   "file": "2026-11-19-storia-b.jpg"
+  }
+ ]
+}

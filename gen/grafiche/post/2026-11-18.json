@@ -1,0 +1,59 @@
+[
+ {
+  "file": "2026-11-18-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "prima puntata",
+  "titolo": "Le cose che\nnessuno conta",
+  "sottotitolo": "Piccolo inventario\ndi una giornata qualsiasi.",
+  "sfondo": "#F4E9EC"
+ },
+ {
+  "file": "2026-11-18-2.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Capire dal corridoio,\nsolo dal rumore,\nche il bicchiere è caduto\nma non si è rotto."
+ },
+ {
+  "file": "2026-11-18-3.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Sapere qual è\nil cucchiaino giusto.\nQuello col manico blu.\nNon l'altro blu."
+ },
+ {
+  "file": "2026-11-18-4.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Scaldare il latte,\nprovarlo sul polso,\naspettare.\nRiprovarlo."
+ },
+ {
+  "file": "2026-11-18-5.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Tagliare l'etichetta\ndalla maglietta nuova,\nperché pizzica."
+ },
+ {
+  "file": "2026-11-18-6.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Mandare a tuo padre\nla foto del nipote\ncol cappello di lana.\nE aspettare il suo\npollice in su,\nche arriva sempre."
+ },
+ {
+  "file": "2026-11-18-7.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "Ricordarti che giovedì\nserve la maglietta bianca\nper la recita.\nComprarla mercoledì\nalle sette di sera."
+ },
+ {
+  "file": "2026-11-18-8.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F4E9EC",
+  "frase": "E tu,\nquale aggiungeresti?"
+ }
+]

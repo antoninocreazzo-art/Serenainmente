@@ -1,0 +1,45 @@
+[
+ {
+  "file": "2026-11-20-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "20 novembre",
+  "titolo": "I diritti piccoli,\nquelli di casa",
+  "sottotitolo": "Oggi è la Giornata\ndei diritti dell'infanzia.",
+  "sfondo": "#F2EBE3"
+ },
+ {
+  "file": "2026-11-20-2.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F2EBE3",
+  "frase": "Il diritto di fare\ncento domande.\nE di ricevere almeno\nuna risposta vera."
+ },
+ {
+  "file": "2026-11-20-3.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F2EBE3",
+  "frase": "Il diritto di sporcarsi\nal parco, e di tornare\ncon le tasche\npiene di sassi."
+ },
+ {
+  "file": "2026-11-20-4.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F2EBE3",
+  "frase": "Il diritto di annoiarsi\nun pomeriggio intero,\nsenza che nessuno\nlo riempia."
+ },
+ {
+  "file": "2026-11-20-5.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#F2EBE3",
+  "frase": "Il diritto di essere\nascoltati anche quando\nla storia è lunghissima\ne non finisce mai."
+ },
+ {
+  "file": "2026-11-20-6.jpg",
+  "tipo": "chiusura",
+  "titolo": "Li difendi\nogni giorno",
+  "testo": "Spesso senza accorgertene:\ncon il tempo, la pazienza,\nuno sguardo.\nAnche questo è cura.",
+  "sfondo": "#F2EBE3"
+ }
+]
