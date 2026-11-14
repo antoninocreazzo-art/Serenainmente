@@ -1,0 +1,96 @@
+{
+ "nota": "Sondaggi 15-24/11 rifatti il 14/11 sera: sintesi di tre esperti (mondiale, italiano, viralità). Sostituiscono le storie con adesivo dello stesso giorno in storie-2026-11-15.json (resta la Rivela del 19/11).",
+ "reel": [],
+ "storie": [
+  {
+   "data": "2026-11-15",
+   "sfondo": "#FBF6F4",
+   "chip": "Il vocabolario di casa",
+   "titolo": "Qual è la frase che a casa tua dici più spesso?",
+   "testo": "Quella che ormai esce da sola. Se ne hai un'altra, scrivimela.",
+   "tipo": "adesivo",
+   "file": "2026-11-15-sondaggio.jpg"
+  },
+  {
+   "data": "2026-11-16",
+   "sfondo": "#F2EBE3",
+   "chip": "Confessione leggera",
+   "titolo": "Bollette, pagelle, garanzie, referti: dove finiscono a casa tua?",
+   "testo": "Qui si confessa e basta: nessun voto, nessuna predica.",
+   "tipo": "adesivo",
+   "file": "2026-11-16-sondaggio.jpg"
+  },
+  {
+   "data": "2026-11-17",
+   "sfondo": "#F4E9EC",
+   "chip": "Una domanda onesta",
+   "titolo": "L'ultima cosa che hai spostato in agenda: era per te o per qualcun altro?",
+   "testo": "Non c'è una risposta giusta. Vale solo la pena accorgersene.",
+   "tipo": "adesivo",
+   "file": "2026-11-17-sondaggio.jpg"
+  },
+  {
+   "data": "2026-11-18",
+   "sfondo": "#F2EBE3",
+   "chip": "Le cose che nessuno conta",
+   "titolo": "Un gesto di cura che qualcuno faceva per te, e che hai capito solo dopo?",
+   "testo": "Il panino già tagliato, la luce lasciata accesa… Raccontalo: lo condivido senza nome.",
+   "tipo": "adesivo",
+   "file": "2026-11-18-sondaggio.jpg"
+  },
+  {
+   "data": "2026-11-19",
+   "sfondo": "#F4E9EC",
+   "chip": "Visita a sorpresa",
+   "titolo": "Suonano alla porta senza preavviso. Tu cosa fai?",
+   "testo": "Il post di oggi dice: respira. Il sondaggio dice: confessa.",
+   "tipo": "adesivo",
+   "file": "2026-11-19-sondaggio.jpg"
+  },
+  {
+   "data": "2026-11-20",
+   "sfondo": "#EBD3D9",
+   "chip": "I diritti piccoli",
+   "titolo": "In una casa, a qualsiasi età, quale diritto viene prima?",
+   "testo": "Vale per i bambini, per i nonni, per chi si prende cura di tutti. Anche per te.",
+   "tipo": "adesivo",
+   "file": "2026-11-20-sondaggio.jpg"
+  },
+  {
+   "data": "2026-11-21",
+   "sfondo": "#F2EBE3",
+   "chip": "Fare insieme",
+   "titolo": "Quanto ti costa lasciar fare a qualcuno, anche se ci mette il triplo?",
+   "testo": "Il cappotto allacciato da solo, il conto fatto a modo suo. Quanto ti costa?",
+   "tipo": "adesivo",
+   "file": "2026-11-21-sondaggio.jpg"
+  },
+  {
+   "data": "2026-11-22",
+   "sfondo": "#FBF6F4",
+   "chip": "Il vocabolario di casa",
+   "titolo": "C'è una parola che a casa tua vuol dire una cosa sola, e la capite solo voi?",
+   "testo": "Storpiata da un bimbo, rimasta dai nonni, inventata per gioco. Raccontamela.",
+   "tipo": "adesivo",
+   "file": "2026-11-22-sondaggio.jpg"
+  },
+  {
+   "data": "2026-11-23",
+   "sfondo": "#EBD3D9",
+   "chip": "A luci spente",
+   "titolo": "Quando finalmente appoggi la testa sul cuscino, il tuo cervello cosa fa?",
+   "testo": "Anche se la giornata è finita da un pezzo.",
+   "tipo": "adesivo",
+   "file": "2026-11-23-sondaggio.jpg"
+  },
+  {
+   "data": "2026-11-24",
+   "sfondo": "#F4E9EC",
+   "chip": "Com'eri da piccola",
+   "titolo": "Di quando eri piccola, in famiglia, sono rimaste più foto o più racconti?",
+   "testo": "Quelli che iniziano con «Tu da piccola…» e finiscono sempre allo stesso modo.",
+   "tipo": "adesivo",
+   "file": "2026-11-24-sondaggio.jpg"
+  }
+ ]
+}
