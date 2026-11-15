@@ -658,6 +658,54 @@
    "titolo": "Legge 9 gennaio 2004, n. 6, art. 3: articolo 408 del codice civile (scelta dell'amministratore di sostegno e designazione da parte dello stesso interessato)",
    "tipo": "Norma",
    "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2004-01-19&atto.codiceRedazionale=004G0017&atto.articolo.numero=3&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0"
+  },
+  {
+   "id": "OR-76",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Assegno unico 2026: presentazione domanda e aggiornamento importi (notizia del 2 febbraio 2026, circolare n. 7 del 30 gennaio 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.assegno-unico-2026-presentazione-domanda-e-aggiornamento-importi.html"
+  },
+  {
+   "id": "OR-77",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Nuovi criteri ISEE per l'inclusione sociale: aggiornamento procedure (notizia del 13 gennaio 2026, messaggio n. 102 del 12 gennaio 2026)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.01.nuovi-criteri-isee-per-l-inclusione-sociale-aggiornamento-procedure.html"
+  },
+  {
+   "id": "OR-78",
+   "ente": "ARERA",
+   "anno": 2026,
+   "titolo": "Bonus sociali: ARERA alza a 9.796 euro la soglia ISEE per le agevolazioni su acqua, luce, gas e rifiuti (comunicato stampa, delibera 2/2026/R/com)",
+   "tipo": "Documento istituzionale",
+   "url": "https://www.arera.it/comunicati-stampa/dettaglio/bonus-sociali-arera-alza-a-9796-euro-la-soglia-isee-per-laccesso-alle-agevolazioni-per-acqua-luce-gas-e-rifiuti"
+  },
+  {
+   "id": "OR-79",
+   "ente": "Informazione Fiscale (sulla circolare INPS n. 16/2026)",
+   "anno": 2026,
+   "titolo": "Maternità dei Comuni INPS: nel 2026 aumenta l'importo dell'assegno",
+   "tipo": "Articolo divulgativo",
+   "url": "https://www.informazionefiscale.it/assegno-maternita-comuni-inps-importo-domanda-2026"
+  },
+  {
+   "id": "OR-80",
+   "ente": "Money.it (sulla circolare INPS n. 45 del 10 aprile 2026)",
+   "anno": 2026,
+   "titolo": "Bonus nuovi nati 2026, via libera alle domande all'INPS",
+   "tipo": "Articolo divulgativo",
+   "url": "https://www.money.it/bonus-nuovi-nati-2026-via-libera-domande-inps-ecco-guida"
+  },
+  {
+   "id": "OR-81",
+   "ente": "QuiFinanza",
+   "anno": 2026,
+   "titolo": "Assegno di inclusione di gennaio in pagamento, attenzione al rinnovo ISEE",
+   "tipo": "Articolo divulgativo",
+   "url": "https://quifinanza.it/fisco-tasse/bonus-fiscali/assegno-inclusione-gennaio-2026-rinnovo-isee/955031/"
   }
  ],
  "post": [
@@ -763,6 +811,33 @@
    ],
    "fonti": [
     "SB-07"
+   ]
+  },
+  {
+   "slug": "isee-scade-31-dicembre",
+   "data": "2026-12-28",
+   "controllo": "2026-11-15",
+   "titolo": "Il tuo ISEE scade il 31 dicembre",
+   "guida": "bonus-asilo-nido",
+   "affermazioni": [
+    "Ogni attestazione ISEE vale fino al 31 dicembre dell'anno in cui è presentata la DSU: dal 1° gennaio serve quella nuova.",
+    "Assegno unico: la domanda già accolta prosegue senza essere ripresentata. Gennaio e febbraio si pagano con l'ISEE dell'anno prima; da marzo, senza ISEE valido, si riceve l'importo minimo. Con la DSU presentata entro il 30 giugno si recuperano gli arretrati da marzo. Nel 2026 l'importo per figlio andava da 58,30 a 203,80 euro al mese.",
+    "Dal 2026, per assegno unico, bonus nido, bonus nuovi nati e assegno di inclusione, la casa di abitazione non si conta fino a 91.500 euro (120.000 euro nei capoluoghi delle città metropolitane), più 2.500 euro per ogni figlio convivente dopo il primo; titoli di Stato, buoni e libretti postali sono esclusi fino a 50.000 euro.",
+    "Bonus nido 2026: per i bambini nati dal 2024 con ISEE fino a 40.000 euro, fino a 3.600 euro l'anno; senza ISEE valido, 1.500 euro.",
+    "Bonus nuovi nati 2026: 1.000 euro con ISEE fino a 40.000 euro, domanda entro 120 giorni dalla nascita. Assegno di maternità dei Comuni 2026: fino a 2.065,50 euro con ISEE fino a 20.668,26 euro, domanda al Comune entro 6 mesi.",
+    "Bonus sociali su luce, gas, acqua e rifiuti: automatici con ISEE fino a 9.796 euro (20.000 euro con almeno 4 figli a carico) dal 1° gennaio 2026.",
+    "Assegno di inclusione: senza ISEE valido si rischia la sospensione dei pagamenti."
+   ],
+   "fonti": [
+    "OR-76",
+    "OR-77",
+    "OR-35",
+    "OR-37",
+    "OR-69",
+    "OR-80",
+    "OR-79",
+    "OR-78",
+    "OR-81"
    ]
   }
  ],
@@ -3012,6 +3087,12 @@
    "data": "2026-11-23",
    "titolo": "Dorme tanto, ma a pezzetti? Le fonti",
    "link": "/fonti/quanto-dorme-un-neonato/",
+   "tipo": "fonti"
+  },
+  {
+   "data": "2026-12-28",
+   "titolo": "Il tuo ISEE scade il 31 dicembre: le fonti",
+   "link": "/fonti/isee-scade-31-dicembre/",
    "tipo": "fonti"
   }
  ],

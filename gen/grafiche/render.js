@@ -39,6 +39,7 @@ const css = `
 .arrow{position:absolute;right:110px;top:1190px;font-family:Fraunces,serif;font-size:64px;color:#97606F}
 .story.c{height:1920px}.story .f{top:560px;height:640px}.story .t{top:1290px}.story .s{top:1640px}
 /* caroselli */
+.densa .k{gap:26px}.densa .pt{font-size:60px}.densa .px{font-size:34px;line-height:1.45}
 .k{position:absolute;left:110px;right:110px;top:150px;bottom:230px;display:flex;flex-direction:column;justify-content:center;gap:40px}
 .eti{font-family:'DM Sans',sans-serif;font-weight:800;font-size:26px;letter-spacing:5px;text-transform:uppercase;color:#97606F}
 .tit{font-family:Fraunces,serif;font-weight:600;font-size:84px;line-height:1.08;white-space:pre-line}
@@ -87,7 +88,7 @@ function corpo(it) {
     const tipo = it.tipo || 'frase';
     const bg = it.sfondo || SFONDI[tipo] || '#FBF6F4';
     const h = it.story ? 1920 : 1350;
-    const cls = `c ${tipo === 'frase' ? (it.stile || '') + (it.parola ? ' parola' + (String(it.frase || '').split('\n').length > 4 ? ' lunga' : '') : '') : ''} ${it.story ? 'story' : ''}`;
+    const cls = `c ${it.densa ? 'densa ' : ''}${tipo === 'frase' ? (it.stile || '') + (it.parola ? ' parola' + (String(it.frase || '').split('\n').length > 4 ? ' lunga' : '') : '') : ''} ${it.story ? 'story' : ''}`;
     await page.setViewportSize({ width: 1080, height: h });
     await page.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body><div class="${cls}" style="background:${bg}">${corpo(it)}</div></body></html>`, { waitUntil: 'load' });
     await page.evaluate(() => document.fonts.ready);
