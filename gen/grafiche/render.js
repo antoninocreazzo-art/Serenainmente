@@ -4,7 +4,8 @@
 //   tipo "frase"      → frase, stile: "" (frase breve minuscola) | "pensiero" | "forte" | "riconoscimento" | "parola"
 //                       per "parola": parola, numero (n. del vocabolario), frase = definizione
 //                       freccia: true → aggiunge "→" (prima slide di una frase a sospeso)
-//   tipo "copertina"  → etichetta, titolo, sottotitolo   (prima slide di carosello o pratico)
+//   tipo "copertina"  → etichetta, titolo, sottotitolo [, rubrica, aggiornato]
+//   "rub": true su qualunque scheda → accenti verde scuro (rubrica Notizie utili, sfondo #E8EEE6)   (prima slide di carosello o pratico)
 //   tipo "passo"      → numero, titolo, testo            (slide centrali)
 //   tipo "chiusura"   → titolo, testo, fonte, nota       (ultima slide: in pratica + fonte)
 //   story: true       → formato storia 1080x1920 (solo tipo "frase")
@@ -39,6 +40,7 @@ const css = `
 .arrow{position:absolute;right:110px;top:1190px;font-family:Fraunces,serif;font-size:64px;color:#97606F}
 .story.c{height:1920px}.story .f{top:560px;height:640px}.story .t{top:1290px}.story .s{top:1640px}
 /* caroselli */
+.rub .eti,.rub .scorri,.rub .agg{color:#4F6B4C}.rub .num{background:#5B7558;color:#F4F7F2}.pill{align-self:flex-start;background:#5B7558;color:#F4F7F2;font-family:'DM Sans',sans-serif;font-weight:800;font-size:28px;letter-spacing:4px;padding:14px 28px;border-radius:44px;text-transform:uppercase;margin-bottom:6px}.agg{font-family:'DM Sans',sans-serif;font-weight:500;font-size:26px;margin-top:6px}
 .densa .k{gap:26px}.densa .pt{font-size:60px}.densa .px{font-size:34px;line-height:1.45}
 .k{position:absolute;left:110px;right:110px;top:150px;bottom:230px;display:flex;flex-direction:column;justify-content:center;gap:40px}
 .eti{font-family:'DM Sans',sans-serif;font-weight:800;font-size:26px;letter-spacing:5px;text-transform:uppercase;color:#97606F}
@@ -69,7 +71,7 @@ function corpo(it) {
   }
   const piede = `${filoMini}<div class="firma">serenainmente</div>`;
   if (tipo === 'copertina')
-    return `<div class="k"><div class="eti">${esc(it.etichetta)}</div><div class="tit">${esc(it.titolo)}</div>${it.sottotitolo ? `<div class="sot">${esc(it.sottotitolo)}</div>` : ''}</div><div class="scorri">scorri →</div>${piede}`;
+    return `<div class="k">${it.rubrica ? `<div class="pill">${esc(it.rubrica)}</div>` : ''}<div class="eti">${esc(it.etichetta)}</div><div class="tit">${esc(it.titolo)}</div>${it.sottotitolo ? `<div class="sot">${esc(it.sottotitolo)}</div>` : ''}${it.aggiornato ? `<div class="agg">${esc(it.aggiornato)}</div>` : ''}</div><div class="scorri">scorri →</div>${piede}`;
   if (tipo === 'passo')
     return `<div class="k"><div class="num">${esc(it.numero)}</div><div class="pt">${esc(it.titolo)}</div><div class="px">${esc(it.testo)}</div></div>${piede}`;
   if (tipo === 'chiusura')
@@ -88,7 +90,7 @@ function corpo(it) {
     const tipo = it.tipo || 'frase';
     const bg = it.sfondo || SFONDI[tipo] || '#FBF6F4';
     const h = it.story ? 1920 : 1350;
-    const cls = `c ${it.densa ? 'densa ' : ''}${tipo === 'frase' ? (it.stile || '') + (it.parola ? ' parola' + (String(it.frase || '').split('\n').length > 4 ? ' lunga' : '') : '') : ''} ${it.story ? 'story' : ''}`;
+    const cls = `c ${it.densa ? 'densa ' : ''}${(it.rub || it.rubrica) ? 'rub ' : ''}${tipo === 'frase' ? (it.stile || '') + (it.parola ? ' parola' + (String(it.frase || '').split('\n').length > 4 ? ' lunga' : '') : '') : ''} ${it.story ? 'story' : ''}`;
     await page.setViewportSize({ width: 1080, height: h });
     await page.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body><div class="${cls}" style="background:${bg}">${corpo(it)}</div></body></html>`, { waitUntil: 'load' });
     await page.evaluate(() => document.fonts.ready);
