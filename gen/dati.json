@@ -902,6 +902,25 @@
     "OR-69",
     "OR-80"
    ]
+  },
+  {
+   "slug": "spese-figli-entro-31-dicembre",
+   "data": "2026-11-17",
+   "controllo": "2026-11-15",
+   "titolo": "Le spese dei figli che tornano indietro nel 730",
+   "guida": "spese-figli-da-detrarre",
+   "affermazioni": [
+    "Nel 730 si detraggono le spese pagate nell'anno: quelle pagate dal 1° gennaio al 31 dicembre 2026 entrano nella dichiarazione del 2027. Per molte detrazioni del 19% i pagamenti in contanti non valgono: servono carta, bancomat o bonifico.",
+    "La detrazione è del 19% della spesa, entro un tetto per ogni voce, per i figli fiscalmente a carico (reddito fino a 2.840,51 euro, o 4.000 euro fino a 24 anni), anche con l'assegno unico.",
+    "Tetti di spesa: sport dei ragazzi dai 5 ai 18 anni 210 euro per ragazzo; scuola dell'infanzia, primo ciclo e superiori 1.000 euro per alunno (dalla legge di bilancio 2025); asilo nido 632 euro per figlio, non cumulabile con il bonus nido INPS; abbonamenti al trasporto pubblico 250 euro; strumenti per i DSA senza tetto fissato; conservatorio e scuole di musica dai 5 ai 18 anni 1.000 euro se il reddito non supera 36.000 euro.",
+    "Con un reddito oltre 75.000 euro c'è un tetto al totale delle spese detraibili, che cresce con il numero dei figli a carico; le spese sanitarie restano fuori da questo tetto."
+   ],
+   "fonti": [
+    "SO-01",
+    "SO-02",
+    "SO-08",
+    "SO-06"
+   ]
   }
  ],
  "guide": [
@@ -3162,6 +3181,12 @@
    "data": "2026-11-15",
    "titolo": "4 scadenze per le famiglie entro dicembre: le fonti",
    "link": "/fonti/scadenze-famiglie-dicembre-2026/",
+   "tipo": "fonti"
+  },
+  {
+   "data": "2026-11-17",
+   "titolo": "Le spese dei figli che tornano indietro nel 730: le fonti",
+   "link": "/fonti/spese-figli-entro-31-dicembre/",
    "tipo": "fonti"
   }
  ],
