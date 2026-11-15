@@ -706,6 +706,46 @@
    "titolo": "Assegno di inclusione di gennaio in pagamento, attenzione al rinnovo ISEE",
    "tipo": "Articolo divulgativo",
    "url": "https://quifinanza.it/fisco-tasse/bonus-fiscali/assegno-inclusione-gennaio-2026-rinnovo-isee/955031/"
+  },
+  {
+   "id": "OR-82",
+   "ente": "QuiFinanza (sul messaggio INPS n. 3343 del 20 ottobre 2026)",
+   "anno": 2026,
+   "titolo": "Nuovo bonus mamme 2026 INPS: via alle domande, come fare e requisiti",
+   "tipo": "Articolo divulgativo",
+   "url": "https://quifinanza.it/fisco-tasse/bonus-fiscali/bonus-mamme-2026-inps-domanda-apertura/1020523/"
+  },
+  {
+   "id": "OR-83",
+   "ente": "AGI",
+   "anno": 2026,
+   "titolo": "Bonus mamme, al via le domande all'INPS (20 ottobre 2026)",
+   "tipo": "Articolo divulgativo",
+   "url": "https://www.agi.it/economia/news/2026-10-20/bonus-mamme-domande-inps-39631399/"
+  },
+  {
+   "id": "OR-84",
+   "ente": "QuiFinanza",
+   "anno": 2026,
+   "titolo": "Carta Dedicata a Te 2026, 500 euro dal 4 novembre: chi li riceve e la scadenza da rispettare",
+   "tipo": "Articolo divulgativo",
+   "url": "https://quifinanza.it/fisco-tasse/bonus-fiscali/carta-dedicata-a-te-2026-quando-arriva/1020340/"
+  },
+  {
+   "id": "OR-85",
+   "ente": "OK Mugello",
+   "anno": 2026,
+   "titolo": "Carta Dedicata a te, nuovi nati, nido: le scadenze dei bonus da qui a dicembre (23 ottobre 2026)",
+   "tipo": "Articolo divulgativo",
+   "url": "https://www.okmugello.it/articolo/carta-dedicata-a-te-nuovi-nati-nido-le-scadenze-dei-bonus-da-qui-a-dicembre_262262/"
+  },
+  {
+   "id": "OR-86",
+   "ente": "Informazione Fiscale",
+   "anno": 2026,
+   "titolo": "Bonus nido INPS 2026: quando fare domanda",
+   "tipo": "Articolo divulgativo",
+   "url": "https://www.informazionefiscale.it/bonus-nido-inps-2026-quando-fare-domanda"
   }
  ],
  "post": [
@@ -838,6 +878,29 @@
     "OR-79",
     "OR-78",
     "OR-81"
+   ]
+  },
+  {
+   "slug": "scadenze-famiglie-dicembre-2026",
+   "data": "2026-11-15",
+   "controllo": "2026-11-15",
+   "titolo": "4 scadenze per le famiglie entro dicembre",
+   "guida": "bonus-asilo-nido",
+   "affermazioni": [
+    "Nuovo bonus mamme 2026: 60 euro al mese, fino a 720 euro, pagati in un'unica soluzione, non tassati e non conteggiati nell'ISEE. Spetta alle lavoratrici dipendenti o autonome con reddito da lavoro fino a 40.000 euro e almeno due figli (con due figli il più piccolo sotto i 10 anni, con tre o più sotto i 18); escluso il lavoro domestico. Domanda all'INPS entro il 31 dicembre 2026, o entro il 31 gennaio 2027 per chi matura i requisiti a dicembre.",
+    "Bonus nido: per i nati dal 1° gennaio 2024 fino a 3.600 euro l'anno con ISEE minorenni fino a 40.000 euro, 1.500 euro senza ISEE. Dal 2026 la domanda resta valida fino ad agosto dell'anno in cui il bambino compie tre anni, ma va aggiornata ogni anno. Se l'ISEE si presenta dopo la domanda, l'importo maggiorato vale solo per i mesi successivi.",
+    "Carta Dedicata a te 2026: 500 euro per la spesa alimentare, senza domanda, per famiglie con ISEE fino a 15.000 euro individuate dai Comuni; il primo acquisto va fatto entro il 16 dicembre 2026; un'altra ricarica di 500 euro è prevista da aprile 2027.",
+    "Bonus nuovi nati: 1.000 euro per i nati o adottati nel 2026 con ISEE fino a 40.000 euro, domanda all'INPS entro 120 giorni dalla nascita."
+   ],
+   "fonti": [
+    "OR-82",
+    "OR-83",
+    "OR-35",
+    "OR-86",
+    "OR-84",
+    "OR-85",
+    "OR-69",
+    "OR-80"
    ]
   }
  ],
@@ -3093,6 +3156,12 @@
    "data": "2026-12-28",
    "titolo": "Il tuo ISEE scade il 31 dicembre: le fonti",
    "link": "/fonti/isee-scade-31-dicembre/",
+   "tipo": "fonti"
+  },
+  {
+   "data": "2026-11-15",
+   "titolo": "4 scadenze per le famiglie entro dicembre: le fonti",
+   "link": "/fonti/scadenze-famiglie-dicembre-2026/",
    "tipo": "fonti"
   }
  ],
