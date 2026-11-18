@@ -1,11 +1,132 @@
 [
- {"file": "2026-11-27-1.jpg", "tipo": "copertina", "rubrica": "Lo strumento gratuito", "etichetta": "gratis · ogni venerdì", "titolo": "Bollo, vaccini,\ncarta d'identità\ndel nonno:\nchi se lo ricorda?", "sottotitolo": "Un file gratuito\nche se lo ricorda per voi.", "sfondo": "#FBF6F4"},
- {"file": "2026-11-27-2.jpg", "tipo": "chiusura", "etichetta": "succede a tutte", "titolo": "Alle 23 ti ricordi che…", "testo": "• il richiamo del vaccino era il mese scorso\n• la carta d'identità di tuo padre scade la settimana prossima\n• la retta del nido andava pagata ieri\n\nNon è distrazione: sono troppe cose, sparse in troppi posti.", "sfondo": "#FBF6F4"},
- {"file": "2026-11-27-3.jpg", "tipo": "chiusura", "etichetta": "prima e dopo", "titolo": "Prima: un post-it sul frigo,\nuna mail, una chat,\nla memoria di una persona sola.", "testo": "Dopo: un foglio solo, che possono guardare tutti in casa. Con i giorni che mancano, contati da soli.", "sfondo": "#FBF6F4"},
- {"file": "2026-11-27-4.jpg", "tipo": "tabella", "etichetta": "esempio compilato", "titolo": "La scheda «Scadenze»\ndi una famiglia qualsiasi", "colonne": ["Cosa", "Per chi", "Prossima volta", "Giorni", "Stato"], "righe": [["Carta d'identità", "Nonno Franco", "03/12/2026", "6", "Questa settimana"], ["Retta del nido", "Sofia", "08/12/2026", "11", "Entro 30 giorni"], ["Rinnovo piano terapeutico", "Nonno Franco", "20/12/2026", "23", "Entro 30 giorni"], ["Bollo dell'auto", "Casa", "31/01/2027", "65", "Più avanti"], ["Richiamo vaccino", "Sofia", "12/02/2027", "77", "Più avanti"], ["Revisione della caldaia", "Casa", "15/03/2027", "108", "Più avanti"]], "numeri": 3, "stato": 4, "nota": "Esempio con nomi inventati. Giorni e stato si calcolano da soli; se una scadenza si ripete, la «prossima volta» si sposta da sola.", "sfondo": "#FBF6F4"},
- {"file": "2026-11-27-5.jpg", "tipo": "zoom", "etichetta": "il dettaglio che aiuta", "titolo": "Non devi ricordarti la data.\nTe lo dice lui.", "r1": "Carta d'identità · Nonno Franco", "r2": "tra 6 giorni", "chip": "Questa settimana", "testo": "Le scadenze vicine si colorano da sole: «questa settimana», «entro 30 giorni», «scaduta».", "sfondo": "#FBF6F4"},
- {"file": "2026-11-27-6.jpg", "tipo": "chiusura", "etichetta": "cosa ci trovi", "titolo": "Non solo scadenze", "testo": "• La famiglia: nomi, età, pediatra o medico\n• Le visite, con le domande da fare\n• La cartellina: dove sta ogni documento e quando scade\n• La settimana: chi fa cosa\n• I contatti utili, da stampare\n• Le prime volte, da non dimenticare", "sfondo": "#FBF6F4", "densa": true},
- {"file": "2026-11-27-7.jpg", "tipo": "chiusura", "etichetta": "come si usa", "titolo": "Tre passi, una volta sola", "testo": "1. Fai una copia: Excel o Fogli Google, anche dal telefono.\n2. Scrivi le scadenze di ognuno, figli e nonni compresi.\n3. Aprilo una volta a settimana: nella prima scheda vedi cosa arriva.\n\nGratis, senza registrazione: i dati restano tuoi.", "sfondo": "#FBF6F4"},
- {"file": "2026-11-27-8.jpg", "tipo": "chiusura", "etichetta": "il consiglio di Serena", "titolo": "Segna le scadenze\ncon un mese di anticipo,\nnon il giorno stesso.", "testo": "Carta d'identità, rinnovi, piani terapeutici di un genitore: spesso serve un appuntamento, e si prenota settimane prima. Vale anche se il file non lo scarichi.", "sfondo": "#FBF6F4"},
- {"file": "2026-11-27-9.jpg", "tipo": "chiusura", "etichetta": "lo strumento gratuito", "titolo": "Scrivi SCADENZE\nnei commenti\ne ti mando il link.", "testo": "Oppure lo trovi dal link in bio.\nMandalo a chi tiene tutto a memoria.", "sfondo": "#FBF6F4"}
+ {
+  "file": "2026-11-27-1.jpg",
+  "tipo": "copertina",
+  "rubrica": "Lo strumento gratuito",
+  "etichetta": "gratis · ogni venerdì",
+  "titolo": "Bollo, vaccini,\ncarta d'identità\ndel nonno:\nchi se lo ricorda?",
+  "sottotitolo": "Un file gratuito\nche se lo ricorda per voi.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-27-2.jpg",
+  "tipo": "chiusura",
+  "etichetta": "succede a tutte",
+  "titolo": "Alle 23 ti ricordi che…",
+  "testo": "• il richiamo del vaccino era il mese scorso\n• la carta d'identità di tuo padre scade la settimana prossima\n• la retta del nido andava pagata ieri\n\nNon è distrazione: sono troppe cose, sparse in troppi posti.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-27-3.jpg",
+  "tipo": "chiusura",
+  "etichetta": "prima e dopo",
+  "titolo": "Prima: un post-it sul frigo,\nuna mail, una chat,\nla memoria di una persona sola.",
+  "testo": "Dopo: un foglio solo, che possono guardare tutti in casa. Con i giorni che mancano, contati da soli.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-27-4.jpg",
+  "tipo": "tabella",
+  "etichetta": "esempio compilato",
+  "titolo": "La scheda «Scadenze»\ndi una famiglia qualsiasi",
+  "colonne": [
+   "Cosa",
+   "Per chi",
+   "Prossima volta",
+   "Giorni",
+   "Stato"
+  ],
+  "righe": [
+   [
+    "Carta d'identità",
+    "Nonno Franco",
+    "03/12/2026",
+    "6",
+    "Questa settimana"
+   ],
+   [
+    "Retta del nido",
+    "Sofia",
+    "08/12/2026",
+    "11",
+    "Entro 30 giorni"
+   ],
+   [
+    "Rinnovo piano terapeutico",
+    "Nonno Franco",
+    "20/12/2026",
+    "23",
+    "Entro 30 giorni"
+   ],
+   [
+    "Bollo dell'auto",
+    "Casa",
+    "31/01/2027",
+    "65",
+    "Più avanti"
+   ],
+   [
+    "Richiamo vaccino",
+    "Sofia",
+    "12/02/2027",
+    "77",
+    "Più avanti"
+   ],
+   [
+    "Revisione della caldaia",
+    "Casa",
+    "15/03/2027",
+    "108",
+    "Più avanti"
+   ]
+  ],
+  "numeri": 3,
+  "stato": 4,
+  "nota": "Esempio con nomi inventati. Giorni e stato si calcolano da soli; se una scadenza si ripete, la «prossima volta» si sposta da sola.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-27-5.jpg",
+  "tipo": "zoom",
+  "etichetta": "il dettaglio che aiuta",
+  "titolo": "Non devi ricordarti la data.\nTe lo dice lui.",
+  "r1": "Carta d'identità · Nonno Franco",
+  "r2": "tra 6 giorni",
+  "chip": "Questa settimana",
+  "testo": "Le scadenze vicine si colorano da sole: «questa settimana», «entro 30 giorni», «scaduta».",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-27-6.jpg",
+  "tipo": "chiusura",
+  "etichetta": "cosa ci trovi",
+  "titolo": "Non solo scadenze",
+  "testo": "• La famiglia: nomi, età, pediatra o medico\n• Le visite, con le domande da fare\n• La cartellina: dove sta ogni documento e quando scade\n• La settimana: chi fa cosa\n• I contatti utili, da stampare\n• Le prime volte, da non dimenticare",
+  "sfondo": "#FBF6F4",
+  "densa": true
+ },
+ {
+  "file": "2026-11-27-7.jpg",
+  "tipo": "chiusura",
+  "etichetta": "come si usa",
+  "titolo": "Tre passi, una volta sola",
+  "testo": "1. Fai una copia: Excel o Fogli Google, anche dal telefono.\n2. Scrivi le scadenze di ognuno, figli e nonni compresi.\n3. Aprilo una volta a settimana: nella prima scheda vedi cosa arriva.\n\nGratis, senza registrazione: i dati restano tuoi.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-27-8.jpg",
+  "tipo": "chiusura",
+  "etichetta": "il consiglio di Serena",
+  "titolo": "Segna le scadenze\ncon un mese di anticipo,\nnon il giorno stesso.",
+  "testo": "Carta d'identità, rinnovi, piani terapeutici di un genitore: spesso serve un appuntamento, e si prenota settimane prima. Vale anche se il file non lo scarichi.",
+  "sfondo": "#FBF6F4"
+ },
+ {
+  "file": "2026-11-27-9.jpg",
+  "tipo": "chiusura",
+  "etichetta": "lo strumento gratuito",
+  "titolo": "Lo trovi gratis\ndal link in bio.",
+  "testo": "Su serenainmente.it, pagina «Gestionale».\nSalvalo e mandalo a chi tiene tutto a memoria.",
+  "sfondo": "#FBF6F4"
+ }
 ]
