@@ -42,6 +42,7 @@ const css = `
 .arrow{position:absolute;right:110px;top:1190px;font-family:Fraunces,serif;font-size:64px;color:#97606F}
 .story.c{height:1920px}.story .f{top:560px;height:640px}.story .t{top:1290px}.story .s{top:1640px}
 /* caroselli */
+.cnt{position:absolute;right:110px;top:110px;font-family:'DM Sans',sans-serif;font-weight:500;font-size:28px;letter-spacing:3px;color:#97606F}
 .tab{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 24px 50px -30px rgba(58,44,48,.45);font-family:'DM Sans',sans-serif}
 .tab th{background:#4A383D;color:#FBF6F4;font-weight:800;font-size:19px;letter-spacing:1px;text-transform:uppercase;text-align:left;padding:16px 14px}
 .tab td{font-size:24px;line-height:1.25;padding:16px 14px;border-top:1px solid #EFE6E8;color:#3A2C30;vertical-align:middle}
@@ -78,7 +79,7 @@ function corpo(it) {
   const tipo = it.tipo || 'frase';
   if (tipo === 'frase') {
     const lab = it.parola ? `<div class="lab">${esc(it.parola)}<small>il vocabolario di Serena · n. ${esc(it.numero)}</small></div>` : '';
-    return `${lab}<div class="f">${esc(it.frase)}</div>${filo}<div class="s">serenainmente</div>${it.freccia ? '<div class="arrow">→</div>' : ''}`;
+    return `${it.conta ? `<div class="cnt">${esc(it.conta)}</div>` : ''}${lab}<div class="f">${esc(it.frase)}</div>${filo}<div class="s">serenainmente</div>${it.freccia ? '<div class="arrow">→</div>' : ''}`;
   }
   const piede = `${filoMini}<div class="firma">serenainmente</div>`;
   if (tipo === 'copertina')

@@ -1,1 +1,113 @@
-[{"file": "2026-12-01-congedi-1.jpg", "tipo": "copertina", "etichetta": "prima delle vacanze di Natale", "titolo": "Congedi per i figli:\ncosa vale nel 2026", "sottotitolo": "Fino a 14 anni, e più giorni\nper la malattia. Tutto, in ordine.", "sfondo": "#E8EEE6", "rub": true, "rubrica": "Notizie utili · n. 3", "aggiornato": "Aggiornato al 16 novembre 2026"}, {"file": "2026-12-01-congedi-2.jpg", "tipo": "passo", "numero": "1", "titolo": "Cosa è cambiato", "testo": "Dal 1° gennaio 2026, per chi lavora come dipendente:\n• il congedo parentale si può chiedere fino ai 14 anni del figlio (prima erano 12);\n• per la malattia del figlio dai 3 ai 14 anni i giorni sono 10 all'anno per ciascun genitore (prima 5, e solo fino a 8 anni).", "sfondo": "#E8EEE6", "rub": true, "densa": true}, {"file": "2026-12-01-congedi-3.jpg", "tipo": "passo", "numero": "2", "titolo": "Congedo parentale:\nquanto dura", "testo": "• 10 mesi in tutto tra i due genitori\n• Fino a 6 mesi la madre, fino a 6 il padre\n• Se il padre ne prende almeno 3, il totale sale a 11 (e lui arriva a 7)\n• Genitore solo: fino a 11 mesi", "sfondo": "#E8EEE6", "rub": true, "densa": true}, {"file": "2026-12-01-congedi-4.jpg", "tipo": "passo", "numero": "3", "titolo": "Quanto si prende", "testo": "• 9 mesi in tutto pagati al 30% della retribuzione: 3 alla madre, 3 al padre (non si passano), 3 a scelta tra i due\n• Fino a 3 di questi mesi all'80%, se il figlio ha meno di 6 anni (dipende da quando è finito il congedo di maternità o paternità)\n• Oltre i 9 mesi: il 30% solo con redditi bassi", "sfondo": "#E8EEE6", "rub": true, "densa": true}, {"file": "2026-12-01-congedi-5.jpg", "tipo": "passo", "numero": "4", "titolo": "Anche a giorni\no a ore", "testo": "Non serve prenderlo tutto insieme: si può usare a giorni, e a ore se il contratto collettivo lo prevede.\n\nPuò servire per i giorni di vacanza della scuola.", "sfondo": "#E8EEE6", "rub": true}, {"file": "2026-12-01-congedi-6.jpg", "tipo": "passo", "numero": "5", "titolo": "Avvisa prima", "testo": "• Al datore di lavoro: almeno 5 giorni prima (2 se è a ore), con inizio e fine, o come dice il tuo contratto\n• All'INPS: la domanda va fatta prima di cominciare. Se arriva dopo, sono pagati solo i giorni successivi", "sfondo": "#E8EEE6", "rub": true, "densa": true}, {"file": "2026-12-01-congedi-7.jpg", "tipo": "passo", "numero": "6", "titolo": "Come si fa\nla domanda", "testo": "• Sul sito dell'INPS, servizio «Domande di maternità e paternità»\n• Al telefono: 803 164 da rete fissa (gratis), 06 164 164 da cellulare\n• Con un patronato", "sfondo": "#E8EEE6", "rub": true, "densa": true}, {"file": "2026-12-01-congedi-8.jpg", "tipo": "passo", "numero": "7", "titolo": "Malattia del figlio", "testo": "• Sotto i 3 anni: per tutta la durata della malattia\n• Dai 3 ai 14 anni: 10 giorni lavorativi all'anno, per ciascun genitore\n• Per la stessa malattia, un genitore alla volta\n• Di regola non sono retribuiti: controlla il tuo contratto", "sfondo": "#E8EEE6", "rub": true, "densa": true}, {"file": "2026-12-01-congedi-9.jpg", "tipo": "passo", "numero": "8", "titolo": "Chi resta\ncon le regole di prima", "testo": "• Iscritti alla Gestione separata: il congedo parentale resta entro i 12 anni del figlio\n• Lavoratori autonomi: entro il primo anno di vita\n• Adozione e affido: entro 14 anni dall'ingresso in famiglia, non oltre i 18 anni", "sfondo": "#E8EEE6", "rub": true, "densa": true}, {"file": "2026-12-01-congedi-10.jpg", "tipo": "passo", "numero": "9", "titolo": "Cosa fare adesso", "testo": "• Chiedi all'ufficio del personale o a un patronato quanti mesi hai già usato\n• Segna i giorni di vacanza della scuola che ti servono\n• Avvisa il datore di lavoro e fai la domanda prima di cominciare", "sfondo": "#E8EEE6", "rub": true, "densa": true}, {"file": "2026-12-01-congedi-11.jpg", "tipo": "chiusura", "etichetta": "salvalo", "titolo": "Mandalo a chi\nha figli fino a 14 anni.", "testo": "Regole in vigore nel 2026. La legge di bilancio 2027 è in discussione: dal 2027 qualcosa potrebbe cambiare.", "fonte": "Fonti: INPS (messaggio n. 251 del 26/1/2026, scheda «Indennità di congedo parentale», notizia sulla legge di bilancio 2026); Legge 30/12/2025 n. 199; D.Lgs. 151/2001, art. 32.", "nota": "Informazioni generali: per il tuo caso chiedi all'INPS, al Comune o a un patronato/CAF.", "sfondo": "#E8EEE6", "rub": true}]
+[
+ {
+  "file": "2026-12-01-congedi-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "prima delle vacanze di Natale",
+  "titolo": "Dal 2026 il congedo\nvale fino ai 14 anni.\nLo sapevi?",
+  "sottotitolo": "Congedi per i figli: cosa vale,\nquanto si prende, come si chiede →",
+  "sfondo": "#E8EEE6",
+  "rub": true,
+  "rubrica": "Notizie utili · n. 3",
+  "aggiornato": "Aggiornato al 16 novembre 2026"
+ },
+ {
+  "file": "2026-12-01-congedi-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "Cosa è cambiato",
+  "testo": "Dal 1° gennaio 2026, per chi lavora come dipendente:\n• il congedo parentale si può chiedere fino ai 14 anni del figlio (prima erano 12);\n• per la malattia del figlio dai 3 ai 14 anni i giorni sono 10 all'anno per ciascun genitore (prima 5, e solo fino a 8 anni).",
+  "sfondo": "#E8EEE6",
+  "rub": true,
+  "densa": true
+ },
+ {
+  "file": "2026-12-01-congedi-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Congedo parentale:\nquanto dura",
+  "testo": "• 10 mesi in tutto tra i due genitori\n• Fino a 6 mesi la madre, fino a 6 il padre\n• Se il padre ne prende almeno 3, il totale sale a 11 (e lui arriva a 7)\n• Genitore solo: fino a 11 mesi",
+  "sfondo": "#E8EEE6",
+  "rub": true,
+  "densa": true
+ },
+ {
+  "file": "2026-12-01-congedi-4.jpg",
+  "tipo": "passo",
+  "numero": "3",
+  "titolo": "Quanto si prende",
+  "testo": "• 9 mesi in tutto pagati al 30% della retribuzione: 3 alla madre, 3 al padre (non si passano), 3 a scelta tra i due\n• Fino a 3 di questi mesi all'80%, se il figlio ha meno di 6 anni (dipende da quando è finito il congedo di maternità o paternità)\n• Oltre i 9 mesi: il 30% solo con redditi bassi",
+  "sfondo": "#E8EEE6",
+  "rub": true,
+  "densa": true
+ },
+ {
+  "file": "2026-12-01-congedi-5.jpg",
+  "tipo": "passo",
+  "numero": "4",
+  "titolo": "Anche a giorni\no a ore",
+  "testo": "Non serve prenderlo tutto insieme: si può usare a giorni, e a ore se il contratto collettivo lo prevede.\n\nPuò servire per i giorni di vacanza della scuola.",
+  "sfondo": "#E8EEE6",
+  "rub": true
+ },
+ {
+  "file": "2026-12-01-congedi-6.jpg",
+  "tipo": "passo",
+  "numero": "5",
+  "titolo": "Avvisa prima",
+  "testo": "• Al datore di lavoro: almeno 5 giorni prima (2 se è a ore), con inizio e fine, o come dice il tuo contratto\n• All'INPS: la domanda va fatta prima di cominciare. Se arriva dopo, sono pagati solo i giorni successivi",
+  "sfondo": "#E8EEE6",
+  "rub": true,
+  "densa": true
+ },
+ {
+  "file": "2026-12-01-congedi-7.jpg",
+  "tipo": "passo",
+  "numero": "6",
+  "titolo": "Come si fa\nla domanda",
+  "testo": "• Sul sito dell'INPS, servizio «Domande di maternità e paternità»\n• Al telefono: 803 164 da rete fissa (gratis), 06 164 164 da cellulare\n• Con un patronato",
+  "sfondo": "#E8EEE6",
+  "rub": true,
+  "densa": true
+ },
+ {
+  "file": "2026-12-01-congedi-8.jpg",
+  "tipo": "passo",
+  "numero": "7",
+  "titolo": "Malattia del figlio",
+  "testo": "• Sotto i 3 anni: per tutta la durata della malattia\n• Dai 3 ai 14 anni: 10 giorni lavorativi all'anno, per ciascun genitore\n• Per la stessa malattia, un genitore alla volta\n• Di regola non sono retribuiti: controlla il tuo contratto",
+  "sfondo": "#E8EEE6",
+  "rub": true,
+  "densa": true
+ },
+ {
+  "file": "2026-12-01-congedi-9.jpg",
+  "tipo": "passo",
+  "numero": "8",
+  "titolo": "Chi resta\ncon le regole di prima",
+  "testo": "• Iscritti alla Gestione separata: il congedo parentale resta entro i 12 anni del figlio\n• Lavoratori autonomi: entro il primo anno di vita\n• Adozione e affido: entro 14 anni dall'ingresso in famiglia, non oltre i 18 anni",
+  "sfondo": "#E8EEE6",
+  "rub": true,
+  "densa": true
+ },
+ {
+  "file": "2026-12-01-congedi-10.jpg",
+  "tipo": "passo",
+  "numero": "9",
+  "titolo": "Cosa fare adesso",
+  "testo": "• Chiedi all'ufficio del personale o a un patronato quanti mesi hai già usato\n• Segna i giorni di vacanza della scuola che ti servono\n• Avvisa il datore di lavoro e fai la domanda prima di cominciare",
+  "sfondo": "#E8EEE6",
+  "rub": true,
+  "densa": true
+ },
+ {
+  "file": "2026-12-01-congedi-11.jpg",
+  "tipo": "chiusura",
+  "etichetta": "salvalo",
+  "titolo": "Mandalo a chi\nha figli fino a 14 anni.",
+  "testo": "Regole in vigore nel 2026. La legge di bilancio 2027 è in discussione: dal 2027 qualcosa potrebbe cambiare.",
+  "fonte": "Fonti: INPS (messaggio n. 251 del 26/1/2026, scheda «Indennità di congedo parentale», notizia sulla legge di bilancio 2026); Legge 30/12/2025 n. 199; D.Lgs. 151/2001, art. 32.",
+  "nota": "Informazioni generali: per il tuo caso chiedi all'INPS, al Comune o a un patronato/CAF.",
+  "sfondo": "#E8EEE6",
+  "rub": true
+ }
+]

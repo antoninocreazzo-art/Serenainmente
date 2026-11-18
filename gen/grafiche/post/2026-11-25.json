@@ -1,1 +1,65 @@
-[{"file": "2026-11-25-1.jpg", "tipo": "copertina", "etichetta": "seconda puntata", "titolo": "Le cose che\nnessuno conta", "sottotitolo": "Altri piccoli gesti,\nda una settimana qualsiasi.", "sfondo": "#EBD3D9"}, {"file": "2026-11-25-2.jpg", "tipo": "frase", "stile": "riconoscimento", "sfondo": "#EBD3D9", "frase": "Togliere la crosta\nal pane del panino.\nSolo da tre lati.\nIl quarto va bene."}, {"file": "2026-11-25-3.jpg", "tipo": "frase", "stile": "riconoscimento", "sfondo": "#EBD3D9", "frase": "Rispondere «buongiorno»\nal pupazzo\nche ti mettono davanti.\nCon la voce giusta."}, {"file": "2026-11-25-4.jpg", "tipo": "frase", "stile": "riconoscimento", "sfondo": "#EBD3D9", "frase": "Lasciare la porta\naperta di tre dita.\nNon due. Non quattro.\nTre."}, {"file": "2026-11-25-5.jpg", "tipo": "frase", "stile": "riconoscimento", "sfondo": "#EBD3D9", "frase": "Trovare in tasca\nun elastico per capelli,\nil tappo di un pennarello\ne un sassolino\nche ti hanno regalato."}, {"file": "2026-11-25-6.jpg", "tipo": "frase", "stile": "riconoscimento", "sfondo": "#EBD3D9", "frase": "Chiamare tua madre\nalle sette e mezza,\nperché a quell'ora\nha finito il suo programma."}, {"file": "2026-11-25-7.jpg", "tipo": "frase", "stile": "riconoscimento", "sfondo": "#EBD3D9", "frase": "Fare finta di non vedere\nil biscotto preso di nascosto.\nE prenderne uno anche tu."}, {"file": "2026-11-25-8.jpg", "tipo": "frase", "stile": "riconoscimento", "sfondo": "#EBD3D9", "frase": "E tu,\nquale aggiungeresti?"}]
+[
+ {
+  "file": "2026-11-25-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "le cose che nessuno conta",
+  "titolo": "Nessuno le conta.\nStavolta\ncontale tu.",
+  "sottotitolo": "6 gesti minuscoli di chi si prende cura.\nQuanti ne fai anche tu? →",
+  "sfondo": "#EBD3D9"
+ },
+ {
+  "file": "2026-11-25-2.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "frase": "Togliere la crosta\nal pane del panino.\nSolo da tre lati.\nIl quarto va bene.",
+  "conta": "1/6"
+ },
+ {
+  "file": "2026-11-25-3.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "frase": "Rispondere «buongiorno»\nal pupazzo\nche ti mettono davanti.\nCon la voce giusta.",
+  "conta": "2/6"
+ },
+ {
+  "file": "2026-11-25-4.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "frase": "Lasciare la porta\naperta di tre dita.\nNon due. Non quattro.\nTre.",
+  "conta": "3/6"
+ },
+ {
+  "file": "2026-11-25-5.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "frase": "Trovare in tasca\nun elastico per capelli,\nil tappo di un pennarello\ne un sassolino\nche ti hanno regalato.",
+  "conta": "4/6"
+ },
+ {
+  "file": "2026-11-25-6.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "frase": "Chiamare tua madre\nalle sette e mezza,\nperché a quell'ora\nha finito il suo programma.",
+  "conta": "5/6"
+ },
+ {
+  "file": "2026-11-25-7.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "frase": "Fare finta di non vedere\nil biscotto preso di nascosto.\nE prenderne uno anche tu.",
+  "conta": "6/6"
+ },
+ {
+  "file": "2026-11-25-8.jpg",
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EBD3D9",
+  "frase": "Quante erano le tue?\nE tu, quale aggiungeresti?"
+ }
+]
