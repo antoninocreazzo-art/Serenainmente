@@ -746,6 +746,46 @@
    "titolo": "Bonus nido INPS 2026: quando fare domanda",
    "tipo": "Articolo divulgativo",
    "url": "https://www.informazionefiscale.it/bonus-nido-inps-2026-quando-fare-domanda"
+  },
+  {
+   "id": "OR-87",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Messaggio n. 251 del 26 gennaio 2026: congedo parentale dei lavoratori dipendenti esteso fino ai 14 anni",
+   "tipo": "Normativa / istruzioni operative",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/01/Circolare_15144/Allegati/16535_Messaggio-numero-251-del-26-01-2026.pdf"
+  },
+  {
+   "id": "OR-88",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Indennità di congedo parentale per lavoratrici e lavoratori dipendenti (scheda)",
+   "tipo": "Scheda ufficiale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50583.indennit-di-congedo-parentale-per-lavoratrici-e-lavoratori-dipendenti.html"
+  },
+  {
+   "id": "OR-89",
+   "ente": "INPS",
+   "anno": 2026,
+   "titolo": "Legge di bilancio 2026: genitorialità, inclusione sociale e disabilità",
+   "tipo": "Notizia ufficiale",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.01.legge-di-bilancio-2026-genitorialit-inclusione-sociale-e-disabilit.html"
+  },
+  {
+   "id": "OR-90",
+   "ente": "Brocardi.it",
+   "anno": 2026,
+   "titolo": "D.Lgs. 151/2001, art. 32: congedo parentale (testo aggiornato al 1° gennaio 2026)",
+   "tipo": "Testo normativo",
+   "url": "https://brocardi.it/testo-unico-sostegno-maternita-paternita/capo-v/art32.html"
+  },
+  {
+   "id": "OR-91",
+   "ente": "Brocardi.it",
+   "anno": 2026,
+   "titolo": "Dieci giorni di permesso per la malattia del figlio fino a 14 anni (legge 199/2025, comma 220)",
+   "tipo": "Articolo divulgativo",
+   "url": "https://brocardi.it/notizie-giuridiche/lavoratore-oggi-spettano-dieci-giorni-permesso-malattia-figlio-fino/6431.html"
   }
  ],
  "post": [
@@ -921,6 +961,27 @@
     "SO-08",
     "SO-06"
    ]
+  },
+  {
+   "slug": "congedi-figli-2026",
+   "data": "2026-12-01",
+   "controllo": "2026-11-16",
+   "titolo": "Congedi per i figli: cosa vale nel 2026",
+   "affermazioni": [
+    "Dal 1° gennaio 2026 i lavoratori dipendenti possono usare il congedo parentale entro i primi 14 anni di vita del figlio (prima 12), o entro 14 anni dall'ingresso in famiglia in caso di adozione o affidamento, non oltre la maggiore età (legge 199/2025, art. 1 comma 219; INPS, messaggio 251/2026). Per la Gestione separata il limite resta 12 anni; per gli autonomi il primo anno di vita.",
+    "Il congedo parentale dura al massimo 10 mesi tra i due genitori, 11 se il padre si astiene per almeno 3 mesi; fino a 6 mesi per la madre e 6 (o 7) per il padre; fino a 11 mesi per il genitore solo.",
+    "L'indennità è del 30% della retribuzione per 9 mesi complessivi (3 non trasferibili per ciascun genitore e 3 in alternativa); fino a 3 mesi sono indennizzati all'80% per figli sotto i 6 anni, a seconda di quando è terminato il congedo di maternità o paternità; oltre i 9 mesi il 30% spetta solo se il reddito individuale è inferiore a 2,5 volte il trattamento minimo di pensione.",
+    "Il genitore deve preavvisare il datore di lavoro almeno 5 giorni prima (2 giorni per il congedo a ore), salvo diversa disciplina dei contratti collettivi; la domanda all'INPS va presentata prima dell'inizio del congedo (online con il servizio «Domande di maternità e paternità», al Contact Center 803 164 o 06 164 164, o tramite patronato).",
+    "Congedo per malattia del figlio: senza limiti fino ai 3 anni; dai 3 ai 14 anni (prima fino a 8) 10 giorni lavorativi all'anno per ciascun genitore (prima 5), dal 1° gennaio 2026 (legge 199/2025, comma 220)."
+   ],
+   "fonti": [
+    "OR-87",
+    "OR-88",
+    "OR-89",
+    "OR-90",
+    "OR-91"
+   ],
+   "guida": "congedo-parentale"
   }
  ],
  "guide": [
@@ -3188,6 +3249,18 @@
    "titolo": "Le spese dei figli che tornano indietro nel 730: le fonti",
    "link": "/fonti/spese-figli-entro-31-dicembre/",
    "tipo": "fonti"
+  },
+  {
+   "data": "2026-12-01",
+   "titolo": "Congedi per i figli: cosa vale nel 2026, le fonti",
+   "link": "/fonti/congedi-figli-2026/",
+   "tipo": "fonti"
+  },
+  {
+   "data": "2026-12-01",
+   "titolo": "Congedo parentale: quanti mesi, quanto si prende e come si chiede",
+   "link": "/guide/congedo-parentale/",
+   "tipo": "guida"
   }
  ],
  "frase_medico_schede": "Serena riporta informazioni generali: non sostituiscono il medico o il pediatra.",
