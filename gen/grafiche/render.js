@@ -68,6 +68,15 @@ const css = `
 .mini{position:absolute;left:110px;bottom:110px;width:200px;height:auto}
 .firma{position:absolute;right:110px;bottom:118px;font-family:'DM Sans',sans-serif;font-weight:500;font-size:24px;letter-spacing:3px;color:#97606F}
 .scorri{position:absolute;right:110px;bottom:170px;font-family:'DM Sans',sans-serif;font-weight:500;font-size:26px;color:#97606F}
+/* v2: copertine leggibili in griglia (studio 18/11) */
+.v2 .k{left:80px;right:80px;gap:34px}.v2 .tit{font-size:112px;line-height:1.02;letter-spacing:-1px}.v2 .sot{font-size:36px;color:inherit;opacity:.8}
+.v2 .pill{font-size:30px;padding:16px 30px}.v2 .eti{font-size:24px}.v2 .eti:empty{display:none}
+.v2 .eti,.v2 .scorri,.v2 .firma,.v2 .s,.v2 .arrow,.v2 .cnt,.v2 .rsotto{color:#6E4A55}.v2.rub .eti,.v2.rub .scorri,.v2.rub .agg{color:#4E6A4B}
+.v2 .mini{width:270px;left:80px}.v2 .firma{right:80px}.v2 .scorri{right:80px}
+.v2 .f{left:110px;width:860px;top:330px;height:500px;font-weight:400;font-size:96px;line-height:1.22}.rsotto{position:absolute;left:0;top:1085px;width:1080px;text-align:center;font-family:'DM Sans',sans-serif;font-weight:800;font-size:24px;letter-spacing:4px;text-transform:uppercase}
+.v2.scura .eti,.v2.scura .scorri,.v2.scura .firma,.v2.scura .s,.v2.scura .arrow,.v2.scura .cnt,.v2.scura .rsotto{color:#EBD3D9}.v2.scura .sot{color:#FBF6F4}
+/* copertina scura: rubrica emotiva */
+.scura{color:#FBF6F4}.scura .eti,.scura .scorri,.scura .firma,.scura .s,.scura .arrow,.scura .cnt{color:#EBD3D9}.scura .sot{color:#F1E3E6}.scura svg path{stroke:#EBD3D9}.scura svg circle{fill:#C99AA6}
 `;
 const PATH = 'M 300 128 C 380 128 400 62 470 62 C 540 62 552 138 620 138 C 690 138 700 84 760 84';
 const filo = `<svg class="t" viewBox="0 0 1080 200"><path d="${PATH}" fill="none" stroke="#97606F" stroke-width="7" stroke-linecap="round"/><circle cx="792" cy="84" r="9" fill="#C99AA6"/></svg>`;
@@ -79,11 +88,11 @@ function corpo(it) {
   const tipo = it.tipo || 'frase';
   if (tipo === 'frase') {
     const lab = it.parola ? `<div class="lab">${esc(it.parola)}<small>il vocabolario di Serena · n. ${esc(it.numero)}</small></div>` : '';
-    return `${it.conta ? `<div class="cnt">${esc(it.conta)}</div>` : ''}${lab}<div class="f">${esc(it.frase)}</div>${filo}<div class="s">serenainmente</div>${it.freccia ? '<div class="arrow">→</div>' : ''}`;
+    return `${it.conta ? `<div class="cnt">${esc(it.conta)}</div>` : ''}${lab}<div class="f">${esc(it.frase)}</div>${filo}${it.rubricaSotto ? `<div class="rsotto">${esc(it.rubricaSotto)}</div>` : ''}<div class="s">serenainmente</div>${it.freccia ? '<div class="arrow">→</div>' : ''}`;
   }
   const piede = `${filoMini}<div class="firma">serenainmente</div>`;
   if (tipo === 'copertina')
-    return `<div class="k">${it.rubrica ? `<div class="pill">${esc(it.rubrica)}</div>` : ''}<div class="eti">${esc(it.etichetta)}</div><div class="tit">${esc(it.titolo)}</div>${it.sottotitolo ? `<div class="sot">${esc(it.sottotitolo)}</div>` : ''}${it.aggiornato ? `<div class="agg">${esc(it.aggiornato)}</div>` : ''}</div><div class="scorri">scorri →</div>${piede}`;
+    return `<div class="k">${it.rubrica ? `<div class="pill"${it.accento ? ` style="background:${it.accento};color:${it.accentoTesto || '#FBF6F4'}"` : ''}>${esc(it.rubrica)}</div>` : ''}<div class="eti">${esc(it.etichetta)}</div><div class="tit">${esc(it.titolo)}</div>${it.sottotitolo ? `<div class="sot">${esc(it.sottotitolo)}</div>` : ''}${it.aggiornato ? `<div class="agg">${esc(it.aggiornato)}</div>` : ''}</div><div class="scorri">scorri →</div>${piede}`;
   if (tipo === 'passo')
     return `<div class="k"><div class="num">${esc(it.numero)}</div><div class="pt">${esc(it.titolo)}</div><div class="px">${esc(it.testo)}</div></div>${piede}`;
   if (tipo === 'chiusura')
@@ -108,12 +117,19 @@ function corpo(it) {
   const page = await browser.newPage({ viewport: { width: 1080, height: 1350 } });
   for (const it of items) {
     const tipo = it.tipo || 'frase';
-    const bg = it.sfondo || SFONDI[tipo] || '#FBF6F4';
+    const bg = it.sfondo || (it.scura ? '#6E4A55' : SFONDI[tipo]) || '#FBF6F4';
     const h = it.story ? 1920 : 1350;
-    const cls = `c ${it.densa ? 'densa ' : ''}${(it.rub || it.rubrica) ? 'rub ' : ''}${tipo === 'frase' ? (it.stile || '') + (it.parola ? ' parola' + (String(it.frase || '').split('\n').length > 4 ? ' lunga' : '') : '') : ''} ${it.story ? 'story' : ''}`;
+    const cls = `c ${it.densa ? 'densa ' : ''}${(it.rub || it.rubrica) ? 'rub ' : ''}${tipo === 'frase' ? (it.stile || '') + (it.parola ? ' parola' + (String(it.frase || '').split('\n').length > 4 ? ' lunga' : '') : '') : ''} ${it.story ? 'story' : ''}${it.scura ? ' scura' : ''}${it.v2 ? ' v2' : ''}`;
     await page.setViewportSize({ width: 1080, height: h });
     await page.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body><div class="${cls}" style="background:${bg}">${corpo(it)}</div></body></html>`, { waitUntil: 'load' });
     await page.evaluate(() => document.fonts.ready);
+    if (it.v2) await page.evaluate(() => {
+      const fit = (el, max, min, righe) => { if (!el) return; let fs = max; el.style.fontSize = fs + 'px';
+        const lh = () => parseFloat(getComputedStyle(el).lineHeight);
+        while (fs > min && (el.scrollWidth > el.clientWidth + 1 || (el.classList.contains('f') && el.scrollHeight > el.clientHeight + 1) || (!el.classList.contains('f') && el.getBoundingClientRect().height / lh() > righe + 0.2))) { fs -= 4; el.style.fontSize = fs + 'px'; } };
+      fit(document.querySelector('.tit'), 112, 90, 4);
+      fit(document.querySelector('.f'), 96, 72, 4);
+    });
     // controllo: il testo non deve uscire dal riquadro
     const over = await page.evaluate(() => [...document.querySelectorAll('.f,.k')].some(el => el.scrollHeight > el.clientHeight + 2));
     if (over) console.warn('ATTENZIONE testo troppo lungo:', it.file);

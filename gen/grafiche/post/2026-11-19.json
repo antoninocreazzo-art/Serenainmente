@@ -1,9 +1,2 @@
-[
- {
-  "file": "2026-11-19-1.jpg",
-  "tipo": "frase",
-  "stile": "",
-  "sfondo": "#FBF6F4",
-  "frase": "respira.\nla casa può restare\nin disordine ancora un po'."
- }
-]
+[{"file":"2026-11-19-1.jpg","tipo":"frase","stile":"","v2":true,"sfondo":"#F4E9EC","frase":"respira.\nla casa può\naspettare.","freccia":true},
+ {"file":"2026-11-19-2.jpg","tipo":"frase","stile":"riconoscimento","sfondo":"#F4E9EC","frase":"I piatti, il cesto dei panni,\ni giochi sul tappeto:\ndomani saranno ancora lì.\n\nMandalo all'amica che stasera\nriordina invece di sedersi."}]
