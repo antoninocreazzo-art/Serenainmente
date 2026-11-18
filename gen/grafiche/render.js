@@ -92,7 +92,7 @@ function corpo(it) {
   }
   const piede = `${filoMini}<div class="firma">serenainmente</div>`;
   if (tipo === 'copertina')
-    return `<div class="k">${it.rubrica ? `<div class="pill"${it.accento ? ` style="background:${it.accento};color:${it.accentoTesto || '#FBF6F4'}"` : ''}>${esc(it.rubrica)}</div>` : ''}<div class="eti">${esc(it.etichetta)}</div><div class="tit">${esc(it.titolo)}</div>${it.sottotitolo ? `<div class="sot">${esc(it.sottotitolo)}</div>` : ''}${it.aggiornato ? `<div class="agg">${esc(it.aggiornato)}</div>` : ''}</div><div class="scorri">scorri →</div>${piede}`;
+    return `<div class="k">${it.rubrica ? `<div class="pill"${it.accento ? ` style="background:${it.accento};color:${it.accentoTesto || '#FBF6F4'}"` : ''}>${esc(it.rubrica)}</div>` : ''}<div class="eti">${esc(it.etichetta)}</div><div class="tit"${it.righe ? ` data-righe="${it.righe}"` : ''}>${esc(it.titolo)}</div>${it.sottotitolo ? `<div class="sot">${esc(it.sottotitolo)}</div>` : ''}${it.aggiornato ? `<div class="agg">${esc(it.aggiornato)}</div>` : ''}</div><div class="scorri">scorri →</div>${piede}`;
   if (tipo === 'passo')
     return `<div class="k"><div class="num">${esc(it.numero)}</div><div class="pt">${esc(it.titolo)}</div><div class="px">${esc(it.testo)}</div></div>${piede}`;
   if (tipo === 'chiusura')
@@ -119,7 +119,7 @@ function corpo(it) {
     const tipo = it.tipo || 'frase';
     const bg = it.sfondo || (it.scura ? '#6E4A55' : SFONDI[tipo]) || '#FBF6F4';
     const h = it.story ? 1920 : 1350;
-    const cls = `c ${it.densa ? 'densa ' : ''}${(it.rub || it.rubrica) ? 'rub ' : ''}${tipo === 'frase' ? (it.stile || '') + (it.parola ? ' parola' + (String(it.frase || '').split('\n').length > 4 ? ' lunga' : '') : '') : ''} ${it.story ? 'story' : ''}${it.scura ? ' scura' : ''}${it.v2 ? ' v2' : ''}`;
+    const cls = `c ${it.densa ? 'densa ' : ''}${(it.rub || (it.rubrica && !it.accento)) ? 'rub ' : ''}${tipo === 'frase' ? (it.stile || '') + (it.parola ? ' parola' + (String(it.frase || '').split('\n').length > 4 ? ' lunga' : '') : '') : ''} ${it.story ? 'story' : ''}${it.scura ? ' scura' : ''}${it.v2 ? ' v2' : ''}`;
     await page.setViewportSize({ width: 1080, height: h });
     await page.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body><div class="${cls}" style="background:${bg}">${corpo(it)}</div></body></html>`, { waitUntil: 'load' });
     await page.evaluate(() => document.fonts.ready);
@@ -127,7 +127,7 @@ function corpo(it) {
       const fit = (el, max, min, righe) => { if (!el) return; let fs = max; el.style.fontSize = fs + 'px';
         const lh = () => parseFloat(getComputedStyle(el).lineHeight);
         while (fs > min && (el.scrollWidth > el.clientWidth + 1 || (el.classList.contains('f') && el.scrollHeight > el.clientHeight + 1) || (!el.classList.contains('f') && el.getBoundingClientRect().height / lh() > righe + 0.2))) { fs -= 4; el.style.fontSize = fs + 'px'; } };
-      fit(document.querySelector('.tit'), 112, 90, 4);
+      const tt = document.querySelector('.tit'); fit(tt, 112, tt && tt.dataset.righe ? 60 : 90, tt && tt.dataset.righe ? Number(tt.dataset.righe) : 4);
       fit(document.querySelector('.f'), 96, 72, 4);
     });
     // controllo: il testo non deve uscire dal riquadro

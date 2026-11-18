@@ -2,10 +2,14 @@
  {
   "file": "2026-11-22-1.jpg",
   "tipo": "copertina",
-  "etichetta": "il vocabolario di Serena",
-  "titolo": "Le parole\ndella settimana",
-  "sottotitolo": "Sei parole della vita di casa,\ndal 16 al 21 novembre.",
-  "sfondo": "#F4E9EC"
+  "v2": true,
+  "sfondo": "#EBD3D9",
+  "rubrica": "Le parole della settimana",
+  "accento": "#6E4A55",
+  "etichetta": "",
+  "titolo": "Parte piena alle otto.\nTorna piena alle quattro.",
+  "sottotitolo": "«Sì, ho bevuto tantissimo.»\nCinque parole della vita di casa →",
+  "righe": 2
  },
  {
   "file": "2026-11-22-2.jpg",
@@ -18,21 +22,13 @@
  {
   "file": "2026-11-22-3.jpg",
   "tipo": "frase",
-  "parola": "Lista della spesa",
-  "numero": "17",
-  "frase": "Scritta in tre,\ncon tre calligrafie diverse.\nSi dimentica a casa.\n«Prendi solo il latte.»\nRientro: 46 euro.\nIl latte no.",
-  "sfondo": "#F4E9EC"
- },
- {
-  "file": "2026-11-22-4.jpg",
-  "tipo": "frase",
   "parola": "Borraccia",
   "numero": "18",
   "frase": "Parte piena alle otto.\nTorna piena alle quattro.\n«Hai bevuto a scuola?»\n«Sì, tantissimo.»\nIl mistero continua.",
   "sfondo": "#F4E9EC"
  },
  {
-  "file": "2026-11-22-5.jpg",
+  "file": "2026-11-22-4.jpg",
   "tipo": "frase",
   "parola": "Giubbotto",
   "numero": "19",
@@ -40,7 +36,7 @@
   "sfondo": "#F4E9EC"
  },
  {
-  "file": "2026-11-22-6.jpg",
+  "file": "2026-11-22-5.jpg",
   "tipo": "frase",
   "parola": "Compiti",
   "numero": "20",
@@ -48,7 +44,7 @@
   "sfondo": "#F4E9EC"
  },
  {
-  "file": "2026-11-22-7.jpg",
+  "file": "2026-11-22-6.jpg",
   "tipo": "frase",
   "parola": "Bagnetto",
   "numero": "21",
