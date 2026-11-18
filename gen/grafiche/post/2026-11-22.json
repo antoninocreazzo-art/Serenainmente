@@ -14,9 +14,9 @@
  {
   "file": "2026-11-22-2.jpg",
   "tipo": "frase",
-  "parola": "Lunedì",
-  "numero": "16",
-  "frase": "Il giorno in cui si decide:\n«stasera tutti a letto presto».\nDura fino alle nove\nmeno un quarto.\nSi riprova martedì.",
+  "parola": "Bagnetto",
+  "numero": "21",
+  "frase": "Comincia: «Non voglio».\nFinisce: «Ancora un po'!»\nIn mezzo: due paperelle,\nil pavimento allagato\ne tre asciugamani zuppi.",
   "sfondo": "#F4E9EC"
  },
  {
@@ -46,9 +46,17 @@
  {
   "file": "2026-11-22-6.jpg",
   "tipo": "frase",
-  "parola": "Bagnetto",
-  "numero": "21",
-  "frase": "Comincia: «Non voglio».\nFinisce: «Ancora un po'!»\nIn mezzo: due paperelle,\nil pavimento allagato\ne tre asciugamani zuppi.",
+  "parola": "Lunedì",
+  "numero": "16",
+  "frase": "Il giorno in cui si decide:\n«stasera tutti a letto presto».\nDura fino alle nove\nmeno un quarto.\nSi riprova martedì.",
   "sfondo": "#F4E9EC"
+ },
+ {
+  "tipo": "frase",
+  "v2": true,
+  "sfondo": "#EBD3D9",
+  "frase": "mandalo a chi\nstamattina ha riempito\nla borraccia.",
+  "rubricaSotto": "Le parole della settimana",
+  "file": "2026-11-22-7.jpg"
  }
 ]
