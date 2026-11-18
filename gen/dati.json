@@ -3261,6 +3261,12 @@
    "titolo": "Congedo parentale: quanti mesi, quanto si prende e come si chiede",
    "link": "/guide/congedo-parentale/",
    "tipo": "guida"
+  },
+  {
+   "data": "2026-11-27",
+   "titolo": "Il gestionale di famiglia: le scadenze di tutti in un file solo",
+   "link": "/gestionale/",
+   "tipo": "strumento"
   }
  ],
  "frase_medico_schede": "Serena riporta informazioni generali: non sostituiscono il medico o il pediatra.",
