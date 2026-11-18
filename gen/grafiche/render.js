@@ -4,6 +4,8 @@
 //   tipo "frase"      → frase, stile: "" (frase breve minuscola) | "pensiero" | "forte" | "riconoscimento" | "parola"
 //                       per "parola": parola, numero (n. del vocabolario), frase = definizione
 //                       freccia: true → aggiunge "→" (prima slide di una frase a sospeso)
+//   tipo "tabella" → etichetta, titolo, colonne[], righe[][], stato (indice colonna con chip), numeri (indice colonna numerica), nota
+//   tipo "zoom"    → etichetta, titolo, r1, r2, chip, testo
 //   tipo "copertina"  → etichetta, titolo, sottotitolo [, rubrica, aggiornato]
 //   "rub": true su qualunque scheda → accenti verde scuro (rubrica Notizie utili, sfondo #E8EEE6)   (prima slide di carosello o pratico)
 //   tipo "passo"      → numero, titolo, testo            (slide centrali)
@@ -40,6 +42,15 @@ const css = `
 .arrow{position:absolute;right:110px;top:1190px;font-family:Fraunces,serif;font-size:64px;color:#97606F}
 .story.c{height:1920px}.story .f{top:560px;height:640px}.story .t{top:1290px}.story .s{top:1640px}
 /* caroselli */
+.tab{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 24px 50px -30px rgba(58,44,48,.45);font-family:'DM Sans',sans-serif}
+.tab th{background:#4A383D;color:#FBF6F4;font-weight:800;font-size:19px;letter-spacing:1px;text-transform:uppercase;text-align:left;padding:16px 14px}
+.tab td{font-size:24px;line-height:1.25;padding:16px 14px;border-top:1px solid #EFE6E8;color:#3A2C30;vertical-align:middle}
+.tab td.n{font-weight:800;text-align:right;white-space:nowrap}
+.chip{display:inline-block;border-radius:30px;padding:6px 14px;font-size:19px;font-weight:800;white-space:nowrap}
+.chip.sa{background:#F6D8D2;color:#8A3B2E}.chip.sb{background:#F8EBC8;color:#7A5A12}.chip.sc{background:#E3EDE0;color:#3F5C3B}
+.card{background:#fff;border-radius:26px;padding:44px 48px;box-shadow:0 24px 50px -30px rgba(58,44,48,.45);display:flex;flex-direction:column;gap:18px;font-family:'DM Sans',sans-serif}
+.card .r1{font-size:30px;color:#6B575C}.card .r2{font-family:Fraunces,serif;font-size:64px;line-height:1.1}.card .r3{font-size:44px;font-weight:800}
+
 .rub .eti,.rub .scorri,.rub .agg{color:#4F6B4C}.rub .num{background:#5B7558;color:#F4F7F2}.pill{align-self:flex-start;background:#5B7558;color:#F4F7F2;font-family:'DM Sans',sans-serif;font-weight:800;font-size:28px;letter-spacing:4px;padding:14px 28px;border-radius:44px;text-transform:uppercase;margin-bottom:6px}.agg{font-family:'DM Sans',sans-serif;font-weight:500;font-size:26px;margin-top:6px}
 .densa .k{gap:26px}.densa .pt{font-size:60px}.densa .px{font-size:34px;line-height:1.45}
 .k{position:absolute;left:110px;right:110px;top:150px;bottom:230px;display:flex;flex-direction:column;justify-content:center;gap:40px}
@@ -76,6 +87,14 @@ function corpo(it) {
     return `<div class="k"><div class="num">${esc(it.numero)}</div><div class="pt">${esc(it.titolo)}</div><div class="px">${esc(it.testo)}</div></div>${piede}`;
   if (tipo === 'chiusura')
     return `<div class="k"><div class="eti">${esc(it.etichetta || 'in pratica')}</div><div class="ct">${esc(it.titolo)}</div>${it.testo ? `<div class="px">${esc(it.testo)}</div>` : ''}${it.fonte || it.nota ? `<div class="box">${it.fonte ? `<div class="fo">${esc(it.fonte)}</div>` : ''}${it.nota ? `<div class="no">${esc(it.nota)}</div>` : ''}</div>` : ''}</div>${piede}`;
+  if (tipo === 'tabella') {
+    const cls = v => /settimana|scadut/i.test(v) ? 'sa' : /30 giorni/i.test(v) ? 'sb' : 'sc';
+    const th = it.colonne.map(c => `<th>${esc(c)}</th>`).join('');
+    const tr = it.righe.map(r => `<tr>${r.map((v, i) => i === it.stato ? `<td><span class="chip ${cls(v)}">${esc(v)}</span></td>` : `<td class="${i === it.numeri ? 'n' : ''}">${esc(v)}</td>`).join('')}</tr>`).join('');
+    return `<div class="k" style="gap:30px"><div class="eti">${esc(it.etichetta || '')}</div><div class="ct">${esc(it.titolo)}</div><table class="tab"><tr>${th}</tr>${tr}</table>${it.nota ? `<div class="no">${esc(it.nota)}</div>` : ''}</div>${piede}`;
+  }
+  if (tipo === 'zoom')
+    return `<div class="k"><div class="eti">${esc(it.etichetta || '')}</div><div class="ct">${esc(it.titolo)}</div><div class="card"><div class="r1">${esc(it.r1)}</div><div class="r2">${esc(it.r2)}</div><div class="r3">${it.chip ? `<span class="chip sa" style="font-size:34px;padding:10px 22px">${esc(it.chip)}</span>` : ''}</div></div>${it.testo ? `<div class="px">${esc(it.testo)}</div>` : ''}</div>${piede}`;
   throw new Error('tipo sconosciuto: ' + tipo);
 }
 
