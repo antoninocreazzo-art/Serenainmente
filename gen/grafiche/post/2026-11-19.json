@@ -3,10 +3,10 @@
   "file": "2026-11-19-1.jpg",
   "tipo": "frase",
   "stile": "",
-  "v2": true,
   "sfondo": "#F7E6DC",
   "frase": "respira.\nla casa può\naspettare.",
-  "freccia": true
+  "freccia": true,
+  "dim": 76
  },
  {
   "file": "2026-11-19-2.jpg",

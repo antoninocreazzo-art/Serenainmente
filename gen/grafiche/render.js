@@ -88,7 +88,7 @@ function corpo(it) {
   const tipo = it.tipo || 'frase';
   if (tipo === 'frase') {
     const lab = it.parola ? `<div class="lab">${esc(it.parola)}<small>il vocabolario di Serena · n. ${esc(it.numero)}</small></div>` : '';
-    return `${it.conta ? `<div class="cnt">${esc(it.conta)}</div>` : ''}${lab}<div class="f">${esc(it.frase)}</div>${filo}${it.rubricaSotto ? `<div class="rsotto">${esc(it.rubricaSotto)}</div>` : ''}<div class="s">serenainmente</div>${it.freccia ? '<div class="arrow">→</div>' : ''}`;
+    return `${it.conta ? `<div class="cnt">${esc(it.conta)}</div>` : ''}${lab}<div class="f"${it.dim ? ` style="font-size:${it.dim}px"` : ''}>${esc(it.frase)}</div>${filo}${it.rubricaSotto ? `<div class="rsotto">${esc(it.rubricaSotto)}</div>` : ''}<div class="s">serenainmente</div>${it.freccia ? '<div class="arrow">→</div>' : ''}`;
   }
   const piede = `${filoMini}<div class="firma">serenainmente</div>`;
   if (tipo === 'copertina')
