@@ -786,6 +786,38 @@
    "titolo": "Dieci giorni di permesso per la malattia del figlio fino a 14 anni (legge 199/2025, comma 220)",
    "tipo": "Articolo divulgativo",
    "url": "https://brocardi.it/notizie-giuridiche/lavoratore-oggi-spettano-dieci-giorni-permesso-malattia-figlio-fino/6431.html"
+  },
+  {
+   "id": "OR-92",
+   "ente": "Ministero della Salute",
+   "anno": 2026,
+   "titolo": "Pubblicato il nuovo Piano Nazionale Governo Liste di Attesa 2026-2028 (D.M. 26 giugno 2026, G.U. n. 195 del 24 agosto 2026)",
+   "tipo": "Fonte istituzionale",
+   "url": "https://www.salute.gov.it/new/it/news-e-media/notizie/pubblicato-il-nuovo-piano-nazionale-governo-liste-di-attesa-2026-2028/"
+  },
+  {
+   "id": "OR-93",
+   "ente": "Altroconsumo",
+   "anno": 2026,
+   "titolo": "Priorità della ricetta non rispettata: cosa fare (13 ottobre 2026)",
+   "tipo": "Guida per i consumatori",
+   "url": "https://www.altroconsumo.it/salute/dal-medico/consigli/priorita-della-ricetta-non-rispettata"
+  },
+  {
+   "id": "OR-94",
+   "ente": "Quotidiano Sanità",
+   "anno": 2026,
+   "titolo": "Piano di governo delle liste di attesa: la nota di Cittadinanzattiva (disdetta almeno due giorni lavorativi prima, anche per gli esenti)",
+   "tipo": "Articolo di settore",
+   "url": "https://www.quotidianosanita.it/?p=153176"
+  },
+  {
+   "id": "OR-95",
+   "ente": "Quotidiano Sanità",
+   "anno": 2026,
+   "titolo": "Liste d'attesa: in Veneto la disdetta passa a quattro giorni lavorativi prima, pena il ticket anche per gli esenti",
+   "tipo": "Articolo di settore",
+   "url": "https://www.quotidianosanita.it/regioni-e-asl/liste-d-attesa-in-veneto-il-tempo-massimo-per-disdire-visite-ed-esami-passa-dai-ai-giorni-precedenti-pena-il-pagamento-del-ticket-anche-se-esenti/"
   }
  ],
  "post": [
@@ -982,6 +1014,26 @@
     "OR-91"
    ],
    "guida": "congedo-parentale"
+  },
+  {
+   "slug": "lettera-sulla-ricetta",
+   "data": "2026-12-08",
+   "controllo": "2026-11-19",
+   "titolo": "La lettera sulla ricetta: U, B, D, P e cosa fare se il CUP non ha posto",
+   "affermazioni": [
+    "Le classi di priorità della ricetta restano quattro: U entro 72 ore; B entro 10 giorni; D entro 30 giorni per le visite e 60 per gli accertamenti diagnostici; P entro 120 giorni. Valgono per il primo accesso; per i controlli conta il tempo indicato dallo specialista (Piano nazionale di governo delle liste d'attesa 2026-2028, D.M. 26/6/2026, G.U. n. 195 del 24/8/2026).",
+    "Se dopo il primo contatto con il CUP non c'è un posto compatibile con la priorità, l'Azienda sanitaria attiva un percorso di tutela (prelista o lista di tutela) e ricontatta l'assistito entro al massimo 5 giorni per la classe B, 10 per le visite D, 15 per gli esami D, 30 per la classe P; le preliste non si usano per le urgenze.",
+    "Nel percorso di tutela la prestazione può essere garantita da altre strutture, dal privato accreditato o in libera professione intramuraria: il cittadino paga solo l'eventuale ticket. Il Piano esclude il rimborso a posteriori di prestazioni prenotate autonomamente nel privato (Altroconsumo, 13/10/2026).",
+    "Chi non si presenta senza disdire almeno due giorni lavorativi prima paga la quota di partecipazione anche se esente; alcune Regioni chiedono un anticipo maggiore (in Veneto quattro giorni lavorativi).",
+    "La scadenza della ricetta per prenotare cambia da Regione a Regione: per esempio in Lombardia 10 giorni per le U e 30 per le B."
+   ],
+   "fonti": [
+    "OR-92",
+    "OR-93",
+    "OR-94",
+    "OR-95"
+   ],
+   "guida": "prenotare-con-il-cup"
   }
  ],
  "guide": [
@@ -3267,6 +3319,18 @@
    "titolo": "Il gestionale di famiglia: le scadenze di tutti in un file solo",
    "link": "/gestionale/",
    "tipo": "strumento"
+  },
+  {
+   "data": "2026-12-08",
+   "titolo": "La lettera sulla ricetta: U, B, D, P, le fonti",
+   "link": "/fonti/lettera-sulla-ricetta/",
+   "tipo": "fonti"
+  },
+  {
+   "data": "2026-12-08",
+   "titolo": "Prenotare con il CUP: la ricetta elettronica e i tempi di attesa",
+   "link": "/guide/prenotare-con-il-cup/",
+   "tipo": "guida"
   }
  ],
  "frase_medico_schede": "Serena riporta informazioni generali: non sostituiscono il medico o il pediatra.",

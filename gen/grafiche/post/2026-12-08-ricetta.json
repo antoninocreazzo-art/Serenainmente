@@ -1,0 +1,117 @@
+[
+ {
+  "file": "2026-12-08-ricetta-1.jpg",
+  "tipo": "copertina",
+  "etichetta": "cosa dice la ricetta",
+  "titolo": "Sulla ricetta\nc'è una lettera.\nSai cosa vuol dire?",
+  "sottotitolo": "U, B, D o P: entro quando ti spetta\nla visita, e cosa fare se il CUP\nti dà una data lontana →",
+  "sfondo": "#E8EEE6",
+  "rub": true,
+  "rubrica": "Notizie utili · n. 4",
+  "aggiornato": "Aggiornato al 19 novembre 2026"
+ },
+ {
+  "file": "2026-12-08-ricetta-2.jpg",
+  "tipo": "passo",
+  "numero": "1",
+  "titolo": "La lettera\nla sceglie il medico",
+  "testo": "La trovi nella casella della priorità, vicino alla visita o all'esame.\n\nVale per la prima visita o il primo esame per un problema. Per i controlli, no.",
+  "sfondo": "#E8EEE6",
+  "rub": true
+ },
+ {
+  "file": "2026-12-08-ricetta-3.jpg",
+  "tipo": "passo",
+  "numero": "2",
+  "titolo": "Quattro lettere,\nquattro tempi",
+  "testo": "• U, urgente: entro 72 ore\n• B, breve: entro 10 giorni\n• D, differibile: entro 30 giorni per le visite, 60 per gli esami\n• P, programmabile: entro 120 giorni",
+  "sfondo": "#E8EEE6",
+  "rub": true,
+  "densa": true
+ },
+ {
+  "file": "2026-12-08-ricetta-4.jpg",
+  "tipo": "passo",
+  "numero": "3",
+  "titolo": "Anche la ricetta\nha una scadenza",
+  "testo": "È il tempo che hai per prenotare, e cambia da regione a regione: per le U e le B può essere di pochi giorni.\n\nPrenota appena puoi. Se hai un dubbio, chiedilo al CUP.",
+  "sfondo": "#E8EEE6",
+  "rub": true
+ },
+ {
+  "file": "2026-12-08-ricetta-5.jpg",
+  "tipo": "passo",
+  "numero": "4",
+  "titolo": "Il CUP non ha posto\nnei tempi?",
+  "testo": "Si attiva la tua ASL: si chiama percorso di tutela.\n\nLa richiesta resta registrata, e il posto lo cercano loro. Non tocca a te richiamare ogni giorno.",
+  "sfondo": "#E8EEE6",
+  "rub": true
+ },
+ {
+  "file": "2026-12-08-ricetta-6.jpg",
+  "tipo": "passo",
+  "numero": "5",
+  "titolo": "Poi ti richiamano loro",
+  "testo": "Per proporti una data hanno al massimo:\n• 5 giorni per le B\n• 10 giorni per le visite D\n• 15 giorni per gli esami D\n• 30 giorni per le P\nPer le urgenti (U) ci sono strade più rapide.",
+  "sfondo": "#E8EEE6",
+  "rub": true,
+  "densa": true
+ },
+ {
+  "file": "2026-12-08-ricetta-7.jpg",
+  "tipo": "passo",
+  "numero": "6",
+  "titolo": "Dove ti possono\nmandare",
+  "testo": "In un'altra struttura pubblica, nel privato accreditato o da un medico dell'ospedale in libera professione (intramoenia).\n\nPaghi solo il ticket, se lo paghi già.",
+  "sfondo": "#E8EEE6",
+  "rub": true
+ },
+ {
+  "file": "2026-12-08-ricetta-8.jpg",
+  "tipo": "passo",
+  "numero": "7",
+  "titolo": "Se non succede,\nscrivi",
+  "testo": "Meglio per iscritto, all'ufficio relazioni con il pubblico (URP) della tua ASL: la visita o l'esame, la lettera della priorità, la prima data che ti hanno proposto.\n\nTieni la ricetta e ogni promemoria.",
+  "sfondo": "#E8EEE6",
+  "rub": true,
+  "densa": true
+ },
+ {
+  "file": "2026-12-08-ricetta-9.jpg",
+  "tipo": "passo",
+  "numero": "8",
+  "titolo": "Una cosa da non fare",
+  "testo": "Prenotare nel privato per conto tuo, sperando poi nel rimborso.\n\nIl nuovo Piano nazionale lo esclude.",
+  "sfondo": "#E8EEE6",
+  "rub": true
+ },
+ {
+  "file": "2026-12-08-ricetta-10.jpg",
+  "tipo": "passo",
+  "numero": "9",
+  "titolo": "Non puoi andare?\nDisdici",
+  "testo": "Almeno due giorni lavorativi prima; alcune regioni chiedono di più (in Veneto quattro).\n\nSe non ti presenti senza avvisare, il ticket si paga anche se sei esente.",
+  "sfondo": "#E8EEE6",
+  "rub": true
+ },
+ {
+  "file": "2026-12-08-ricetta-11.jpg",
+  "tipo": "passo",
+  "numero": "10",
+  "titolo": "E i controlli?",
+  "testo": "Per le visite di controllo le lettere non valgono: conta il tempo scritto dallo specialista.\n\nDi solito li programma la struttura che ti segue.",
+  "sfondo": "#E8EEE6",
+  "rub": true
+ },
+ {
+  "file": "2026-12-08-ricetta-12.jpg",
+  "tipo": "chiusura",
+  "etichetta": "salvalo",
+  "titolo": "Mandalo a chi ha\nuna ricetta in borsa\nda settimane.",
+  "testo": "Regole nazionali in vigore dal 24 agosto 2026. Le Regioni le applicano con i loro piani: alcuni dettagli cambiano.",
+  "fonte": "Fonti: Ministero della Salute, Piano nazionale di governo delle liste d'attesa 2026-2028 (D.M. 26/6/2026, G.U. n. 195 del 24/8/2026); Altroconsumo, «Priorità della ricetta non rispettata», 13/10/2026.",
+  "nota": "Informazioni generali: per il tuo caso chiedi alla tua ASL o al medico.",
+  "sfondo": "#E8EEE6",
+  "rub": true
+ }
+]
