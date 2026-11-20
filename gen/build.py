@@ -30,7 +30,7 @@ _sl = [g['slug'] for g in D['guide']]
 assert len(_sl) == len(set(_sl)), 'slug di guida ripetuto: ' + str([i for i in _sl if _sl.count(i) > 1][:5])
 SITE = 'https://serenainmente.it'
 IG = 'https://www.instagram.com/serenainmente/'
-MAIL = 'privacy@serenainmente.it'   # unico indirizzo di contatto (deciso dal presidente il 12/11/2026)
+MAIL = 'serena@serenainmente.it'   # indirizzo di contatto generale (deciso dal presidente il 20/11/2026); privacy@ resta solo nell'informativa privacy
 e = html.escape
 MESI = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre']
 def data_it(s):
