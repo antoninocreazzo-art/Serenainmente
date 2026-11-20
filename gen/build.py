@@ -188,8 +188,18 @@ def data_ds(s):
     m = re.match(r'^(\d{4})-(\d{2})(?:-(\d{2}))?$', s or '')
     if not m: return s
     return data_it(s) if m.group(3) else f"{MESI[int(m.group(2)) - 1]} {m.group(1)}"
+# Schede lunghe fatte solo di citazioni (es. «La casa sicura», 20/11/2026): «sezioni» [{id, titolo, blocchi: [{titolo?, righe?, tabella?, elenco?}]}].
+# Ogni riga è una citazione fra «» con il suo rimando; accanto compare la fonte in breve («breve» nella fonte). I titoletti sono l'unica parte nostra.
+# «emergenza» {titolo, guida, passo}: il riquadro del 112 in fondo, con il rimando al passo della guida (il Centro antiveleni). «eta»: le età della scheda.
+def ds_parole(s):
+    """il testo delle sezioni, per il tempo di lettura e per la ricerca"""
+    out = []
+    for z in s.get('sezioni', []):
+        for b in z['blocchi']:
+            out += [r['t'] for r in b.get('righe', [])] + b.get('elenco', []) + [c for r in b.get('tabella', {}).get('righe', []) for c in r]
+    return out
 for s in DS:
-    s['min'] = max(1, round(len(' '.join([r['t'] for r in s['righe']] + s.get('elenco', [])).split()) / 200))
+    s['min'] = max(1, round(len(' '.join([r['t'] for r in s['righe']] + s.get('elenco', []) + ds_parole(s)).split()) / 200))
 def riga_scheda(s, li=''):
     return riga(f"~/da-sapere/{s['slug']}/", s['titolo'], f"Scheda · {s['min']} min · {s['sotto']}", icona='info', li=li)
 def schede_di_guida(slug):
@@ -247,7 +257,7 @@ def page(path, title, desc, body, ld=None, cls='', seo=None, og=None, pre=''):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{e(t)}</title>
 <meta name="description" content="{e(desc)}">
-<link rel="canonical" href="{canon}">{'<meta name="robots" content="noindex">' if path in ('/privacy/', '/404/', '/salvati/', '/senza-rete/') or path.startswith('/libri/') else ''}
+<link rel="canonical" href="{canon}">{'<meta name="robots" content="noindex">' if path in ('/privacy/', '/404/', '/salvati/', '/senza-rete/') or path.startswith(('/libri/', '/n/')) else ''}
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{canon}">
@@ -629,11 +639,40 @@ def fonte_ds(i, f):
     dom = f['url'].split('/')[2].replace('www.', '').replace('www1.', '')
     return (f'<li class="src" id="fonte-{i + 1}"><span class="org"><span class="ds-n" aria-hidden="true">{i + 1}</span>{e(f["ente"])}</span><span class="ttl">{e(f["pagina"])}</span>'
             f'<span class="type">{e(data_ds(f["data"]))}</span><a href="{e(f["url"])}" target="_blank" rel="noopener" data-umami-event="scheda-fonte">Apri la fonte su {e(dom)}<span class="sr"> (si apre in una nuova scheda)</span> {ic("esterno","ic-s")}</a></li>')
+def ds_chi(s, f, sic=''):
+    """accanto alla citazione: la fonte in breve (e, se c'è, il refuso lasciato com'è nella fonte), poi il numero che porta alla fonte"""
+    chi = ' · '.join(x for x in [s['fonti'][f[0]].get('breve', '') if f else '', sic] if x)
+    return (f' <span class="small">— {e(chi)}</span>' if chi else '') + rif(s, f)
+def ds_blocco(s, b):
+    h = f'<h3>{e(b["titolo"])}</h3>' if b.get('titolo') else ''
+    ps = ''.join(f'<p>{e(r["t"])}{ds_chi(s, r["f"], r.get("sic", ""))}</p>' for r in b.get('righe', []))
+    tb = ''
+    if b.get('tabella'):
+        t = b['tabella']
+        tb = (f'<div class="tbl pila{" lb-due" if len(t["colonne"]) == 2 else ""}"><table><thead><tr>' + ''.join(f'<th scope="col">{e(c)}</th>' for c in t['colonne']) + '</tr></thead><tbody>'
+              + ''.join('<tr>' + ''.join((f'<th scope="row">{e(c)}</th>' if i == 0 else f'<td data-l="{e(t["colonne"][i])}">{e(c)}</td>') for i, c in enumerate(r)) + '</tr>' for r in t['righe'])
+              + f'</tbody></table></div><p>{ds_chi(s, t["f"]).strip()}</p>')
+    el = ('<ul class="ds-elenco">' + ''.join(f'<li>{e(x)}</li>' for x in b['elenco']) + f'</ul><p>{ds_chi(s, b["elenco_f"]).strip()}</p>') if b.get('elenco') else ''
+    return f'<div class="ds-testo vetro lb-voce">{h}{ps}{tb}{el}</div>'
+def ds_sezioni(s):
+    Z = s.get('sezioni', [])
+    if not Z: return ''
+    indice = '<ul class="lb-indice noprint" aria-label="In questa scheda">' + ''.join(f'<li><a class="chip" href="#{z["id"]}">{e(z.get("chip") or z["titolo"].split(":")[0])}</a></li>' for z in Z) + '</ul>'
+    return indice + ''.join(f'<section class="lb-sez" id="{z["id"]}" aria-labelledby="{z["id"]}-t"><h2 class="sec-t" id="{z["id"]}-t">{e(z["titolo"])}</h2>'
+                            + ''.join(ds_blocco(s, b) for b in z['blocchi']) + '</section>' for z in Z)
+def ds_emergenza(s):
+    E = s.get('emergenza')
+    if not E: return ''
+    g = GN.get(E.get('guida'))
+    rim = f'<ul class="rows">{riga(f"~/guide/{g["slug"]}/#passo-{E["passo"]}", g["passi"][E["passo"] - 1][0], "Nella guida «" + g["titolo"] + "»", icona="book")}</ul>' if g else ''
+    return (f'<section class="box box-rosa lb-112" aria-labelledby="em-t"><h2 id="em-t">{e(E["titolo"])}</h2>'
+            f'<a class="btn noprint" href="tel:112" data-umami-event="scheda-112">Chiama il 112</a>{rim}</section>')
 for s in DS:
     a = ARGN[s['argomento']]
     sp = f"/da-sapere/{s['slug']}/"
     righe = ''.join(f'<p>{e(r["t"])}{rif(s, r["f"])}</p>' for r in s['righe'])
     elenco = ('<ol class="ds-elenco">' + ''.join(f'<li>{e(v)}</li>' for v in s['elenco']) + '</ol>') if s.get('elenco') else ''
+    testo = f'<section class="ds-testo vetro" aria-label="La scheda">{righe}{elenco}</section>' if righe or elenco else ''
     lim = f'<aside class="box box-rosa ds-limiti"><p>{limiti_html(s["limiti"])}</p></aside>' if s.get('limiti') else ''
     nf = len(s['fonti'])
     fonti = ''.join(fonte_ds(i, f) for i, f in enumerate(s['fonti']))
@@ -650,7 +689,7 @@ for s in DS:
 <div class="azioni noprint">{salva(sp, s['titolo'])}<button class="btn btn-line btn-sm" type="button" data-stampa data-umami-event="scheda-stampa">{ic('print','ic-s')}<span>Stampa</span></button></div>
 </header>
 <div class="wrap-t ds-corpo">
-<section class="ds-testo vetro" aria-label="La scheda">{righe}{elenco}</section>
+{testo}{ds_sezioni(s)}{ds_emergenza(s)}
 {lim}
 <section class="ds-fonti" id="fonti" aria-labelledby="fonti-t"><h2 id="fonti-t">{'La fonte' if nf == 1 else 'Le fonti'}</h2><ol class="sources">{fonti}</ol></section>
 <p class="small ds-date">Aggiornata il {data_ds(s['aggiornata'])} · prossima revisione {data_ds(s['revisione'])}</p>
@@ -1153,6 +1192,38 @@ for L in D.get('libri', []):
 </article>'''
     pages.append(page(lp, f"«{L['titolo']}»: fonti e novità", L['riga'], body, cls='p-ds p-libro'))
 
+# ---------- i QR corti dei quaderni (/n/…) ----------
+# Dati in dati.json, «quaderni_qr». Gli indirizzi sono stampati nel libro: non si cambiano e non si spengono finché il libro è in vendita.
+# Come le pagine /libri/: fuori da menu, ricerca e sitemap, con noindex (le apre chi ha il quaderno, dal QR; così si contano anche a parte).
+# Ogni pagina, nell'ordine del progetto (F.5): il titolo della pagina del quaderno e il suo numero; «Da stampare ancora»; le fonti aggiornate.
+# Prima del lancio pubblico dell'app (7 gennaio 2027) qui l'app non si nomina. I PDF stanno in scarica/<libro>/.
+QR = D.get('quaderni_qr', [])
+QRN = {x['path']: x for x in QR}
+def qr_pdf(p):
+    sotto = f"Pag. {p['pag']} · PDF, {p['pagine']} {'pagina' if p['pagine'] == 1 else 'pagine'}"
+    return riga(f"~/scarica/{p['file']}", p['titolo'], sotto, icona='print', attr=f' data-umami-event="quaderno-pdf" data-umami-event-file="{e(p["file"])}"')
+for Q in QR:
+    L = next((x for x in D.get('libri', []) if x['slug'] == Q['libro']), None)
+    lt = L['titolo'] if L else Q['libro'].capitalize()
+    altre = ''.join(riga(f"~{QRN[x]['path']}", QRN[x]['parte'], ' · '.join(p['titolo'] for p in QRN[x]['stampa']), icona='print') for x in Q.get('parti', []) if x in QRN)
+    tutte = '' if Q.get('parti') else (riga(f"~{QR[0]['path']}", QR[0]['stampa'][0]['titolo'], 'Tutte le parti del quaderno', icona='print') if QR[0] is not Q and QR[0]['libro'] == Q['libro'] else '')
+    fonti = (f'<section class="lb-sez" aria-labelledby="qf-t"><h2 class="sec-t" id="qf-t">Le fonti aggiornate</h2><ul class="rows">'
+             + riga(f"~/libri/{L['slug']}/", f'Le fonti del quaderno «{lt}»', 'Con il canale WhatsApp di Serena, per sapere quando una regola cambia' if L.get('whatsapp') else 'Con il giorno in cui le abbiamo controllate', icona='book')
+             + '</ul></section>') if L else ''
+    body = f'''<article class="art ds lb">
+<header class="art-hd wrap-t">
+<h1>{e(Q['titolo'])}</h1>
+<p class="ds-sotto"><em>Dal quaderno {e(lt)}, pag. {e(Q['pag'])}</em></p>
+</header>
+<div class="wrap-t ds-corpo">
+<section class="lb-sez" aria-labelledby="qs-t"><h2 class="sec-t" id="qs-t">Da stampare ancora</h2>
+<ul class="rows">{''.join(qr_pdf(p) for p in Q['stampa'])}{altre}{tutte}</ul>
+<p class="small">Si possono stampare per uso personale e familiare.</p></section>
+{fonti}
+</div>
+</article>'''
+    pages.append(page(Q['path'], f"{Q['titolo']} · dal quaderno «{lt}»", f"Le pagine del quaderno «{lt}» da stampare ancora, e le fonti aggiornate.", body, cls='p-ds p-libro'))
+
 # ---------- pagina non trovata ----------
 pages_404 = page('/404/', 'Questa pagina non c\'è', 'Pagina non trovata.', f'''
 <section class="ph-hd wrap-t"><h1>Questa pagina non c'è.</h1><p class="lead">Forse l'indirizzo è cambiato. Cerca qui quello che ti serviva.</p>{CHIEDI}
@@ -1200,11 +1271,12 @@ CHIAVI_DS = {
  'assegno-unico': 'assegno unico universale inps figli domanda rinnovo',
  'spese-sanitarie-da-detrarre': 'spese sanitarie detrazione detrarre scontrino scontrini fatture ricevute dichiarazione redditi 730',
  'calendario-vaccinale': 'calendario vaccinale vaccinazioni vaccini età esavalente richiami',
+ 'casa-sicura': 'casa sicura sicurezza in casa incidenti domestici prevenire prevenzione cadute caduto fasciatoio seggiolone girello scale finestre ustioni scottature bagnetto fornelli detersivi medicine farmaci intossicazione avvelenamento piante batterie a bottone piccoli oggetti soffocamento cibo traverso uva tagliare annegamento vasca prese elettriche centro antiveleni',
 }
 for s in DS:
     IDX.append(voce(f"/da-sapere/{s['slug']}/", s['titolo'], s['sotto'], 'Scheda', ' '.join([s['titolo'], CHIAVI_DS.get(s['slug'], '')]), s['sotto'],
-                    c2=' '.join([r['t'] for r in s['righe']] + s.get('elenco', [])), m=s['min'], az='Leggi la scheda', ar=s['argomento'],
-                    c='bambino anziano' if s['argomento'] == 'documenti' or s['slug'] == 'foglietto-illustrativo' else 'bambino', fa=TUTTE_ETA,
+                    c2=' '.join([r['t'] for r in s['righe']] + s.get('elenco', []) + ds_parole(s)), m=s['min'], az='Leggi la scheda', ar=s['argomento'],
+                    c='bambino anziano' if s['argomento'] == 'documenti' or s['slug'] == 'foglietto-illustrativo' else 'bambino', fa=s.get('eta', TUTTE_ETA),
                     gd=[f'/guide/{x}/' for x in s.get('guide', [])]))
 IDX.extend(dq_indice())  # domande
 IDX.append(voce('/chi-e-serena/', 'Chi è Serena', D['chi']['sommario'], 'Pagina', 'chi è serena siamo siete dietro autore progetto persona', 'trasparenza indipendenza valori'))
@@ -1229,7 +1301,7 @@ if os.path.isdir(fd):
         if os.path.isdir(os.path.join(fd, n)) and n not in vivi: shutil.rmtree(os.path.join(fd, n))
 if not PREVIEW:
     today = datetime.date.today().isoformat()
-    sm = ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in pages if p not in ('/privacy/', '/salvati/', '/senza-rete/') and not p.startswith('/libri/'))  # la pagina Privacy (col nome del titolare) resta fuori dai motori di ricerca
+    sm = ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in pages if p not in ('/privacy/', '/salvati/', '/senza-rete/') and not p.startswith(('/libri/', '/n/')))  # la pagina Privacy (col nome del titolare) resta fuori dai motori di ricerca
     open(os.path.join(OUT, 'sitemap.xml'), 'w').write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sm}</urlset>')
 else:
     for d in ['assets/fonts', 'assets/brand', 'assets/gestionale', 'assets/foto', 'assets/mini', 'assets/ig', 'assets/stampabili', 'scarica']:

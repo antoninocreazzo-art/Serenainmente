@@ -4089,6 +4089,661 @@
     "certificato-vaccinale",
     "neonato-documenti-primi-giorni"
    ]
+  },
+  {
+   "slug": "casa-sicura",
+   "argomento": "crescita",
+   "titolo": "La casa sicura",
+   "sotto": "Per prevenire gli incidenti in casa, da 0 a 2 anni: le parole delle fonti ufficiali, fra virgolette.",
+   "righe": [],
+   "sezioni": [
+    {
+     "id": "perche",
+     "titolo": "Perché pensarci",
+     "blocchi": [
+      {
+       "righe": [
+        {
+         "t": "«Così come le malattie, anche gli incidenti possono essere prevenuti.»",
+         "f": [
+          0
+         ]
+        },
+        {
+         "t": "«Nel caso dei bambini costituisce un fattore di rischio l'ambiente inadeguato legato non solo alle condizioni di scarsa sicurezza degli ambienti domestici, ma anche alla bassa percezione del rischio da parte degli adulti.»",
+         "f": [
+          1
+         ]
+        },
+        {
+         "t": "«Preparare un ambiente salutare e sicuro dipende anche da voi.»",
+         "f": [
+          2
+         ]
+        },
+        {
+         "t": "«A casa verificate con attenzione i possibili pericoli.»",
+         "f": [
+          2
+         ]
+        },
+        {
+         "t": "«Non lasciare incustodito il tuo bambino perché ogni angolo della casa può diventare pericoloso se il bambino sfugge al tuo controllo.»",
+         "f": [
+          3
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "eta",
+     "titolo": "Età per età",
+     "blocchi": [
+      {
+       "righe": [
+        {
+         "t": "«Tra la nascita e i 6 mesi di età, i rischi principali sono: le cadute e le ustioni.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Tra i 6 mesi e un anno di età, i rischi principali sono ancora le cadute e le ustioni, ma attenzione anche al rischio di soffocamento per ingestione di corpi estranei e allo strattonamento.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Tra il primo anno e il quarto anno d'età, i rischi principali sono: le ustioni e l'ingestione di corpi estranei, ma attenzione anche al rischio di annegamento, ferite da taglio e cadute.»",
+         "f": [
+          3
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "cadute",
+     "titolo": "Cadute: fasciatoio, letto, sdraietta, seggiolone, scale, finestre",
+     "blocchi": [
+      {
+       "righe": [
+        {
+         "t": "«Non lasciate mai il bimbo da solo né sul fasciatoio né nella vasca del bagnetto, neanche per un solo istante»",
+         "f": [
+          4
+         ]
+        },
+        {
+         "t": "«Sdraietta: fissa il bambino con le cinture adeguate, tienila sempre per terra, mai su letti, tavoli o sedie perché il bambino potrebbe muoversi e ribaltarsi.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Letti, divani, sedie: non lasciare mai il bambino da solo, se non puoi tenerlo in braccio, mettilo sul lettino con le sponde alzate, nel box o per terra.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Allaccia sempre la cintura al tuo bambino quando é sul seggiolone.»",
+         "f": [
+          3
+         ],
+         "sic": "«é»: così nella fonte"
+        },
+        {
+         "t": "«Quando inizia a gattonare non lasciarlo mai solo.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Scale: usa i cancelli con chiusura di sicurezza per impedire l'accesso alle scale.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Il girello: non usarlo, può essere pericoloso perché il bambino può rovesciarlo, cadere dalle scale o raggiungere mobili dai quali far cadere oggetti pesanti o cibi bollenti.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Rischio cadute: […] rendi stabili le librerie perché il bambino potrebbe scalarle e cadere; non lasciare sedie, sgabelli, vasi di fiori, tricicli, davanti a tavoli, ripiani o davanzali. Metti reti di protezione nei balconi e nelle scale.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Non addossate sedie o tavolini alla finestra»",
+         "f": [
+          4
+         ]
+        },
+        {
+         "t": "«Verificate che le sbarre della ringhiera non siano scalabili o che permettano al bambino di infilarci la testa»",
+         "f": [
+          4
+         ]
+        },
+        {
+         "t": "«Chiama il pediatra se il tuo bambino, dopo una caduta non si comporta normalmente.»",
+         "f": [
+          3
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "scottature",
+     "titolo": "Scottature: acqua del bagnetto, liquidi caldi, fornelli",
+     "blocchi": [
+      {
+       "righe": [
+        {
+         "t": "«Bagnetto: assicurati che l'acqua sia tiepida, prima di immergerlo verifica la temperatura dell'acqua con il termometro (37° C) o con il gomito; regola lo scaldabagno o boiler a una temperatura inferiore a 50 °C.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Rischio ustioni in bagno: il bambino potrebbe aprire il rubinetto dell'acqua calda e ustionarsi; fissa lo scaldabagno ad una temperatura inferiore a 50 °C.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Biberon: fai attenzione alla temperatura, assicurati che il latte o altra bevanda sia tiepida, soprattutto se usi il forno a microonde.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Usa barriere apposite per i fuochi della cucina e utilizza preferibilmente i fornelli posteriori, rivolgendo i manici degli utensili verso l'interno del piano cottura.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Utilizzate i fornelli più interni e pentole pesanti provvedendo a girare il manico verso il muro»",
+         "f": [
+          4
+         ]
+        },
+        {
+         "t": "«Evitate tovaglie che pendono dal tavolo»",
+         "f": [
+          4
+         ]
+        },
+        {
+         "t": "«Chiudi le porte della cucina e bagno dove il bambino potrebbe correre pericoli, se non è in tua presenza .»",
+         "f": [
+          3
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "prodotti",
+     "chip": "Medicine e prodotti",
+     "titolo": "Medicine, detersivi, prodotti di casa, piante",
+     "blocchi": [
+      {
+       "righe": [
+        {
+         "t": "«Tenete voi e il vostro bambino al sicuro da prodotti potenzialmente pericolosi (insetticidi, farmaci, prodotti per la casa e per il corpo): usateli solo se indispensabile.»",
+         "f": [
+          2
+         ]
+        },
+        {
+         "t": "«I principali prodotti che possono provocare intossicazioni e che si trovano nelle nostre case sono detergenti, farmaci e insetticidi»",
+         "f": [
+          5
+         ]
+        },
+        {
+         "t": "«Tenere qualsiasi farmaco fuori dalla portata dei bambini.»",
+         "f": [
+          5
+         ]
+        },
+        {
+         "t": "«Rischio di intossicazione: per la conservazione di sostanze tossiche, scegli luoghi della casa inaccessibili al bambino; conserva detersivi, disinfettanti, medicinali ecc. in mobiletti posti in alto e mai sotto il lavello della cucina o del bagno.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Conserva sempre i prodotti tossici nei loro contenitori originali, dotati di chiusura di sicurezza ed appropriata etichettatura.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Non travasate mai sostanze tossiche in contenitori alimentari»",
+         "f": [
+          4
+         ]
+        },
+        {
+         "t": "«Attenzione alle piante d'appartamento: alcune sono tossiche, (azalee, filodendro, ciclamino, mughetto, stelle di natale e oleandro), sistemale fuori dalla sua portata.»",
+         "f": [
+          3
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "piccoli-oggetti",
+     "chip": "Piccoli oggetti",
+     "titolo": "Batterie a bottone e piccoli oggetti",
+     "blocchi": [
+      {
+       "righe": [
+        {
+         "t": "«Non lasciate assolutamente a portata di bambino monete, bottoni, caramelle, batterie, penne e altri oggetti piccoli che potrebbe ingerire.»",
+         "f": [
+          4
+         ]
+        },
+        {
+         "t": "«Non lasciare a portata di mano del tuo bambino, piccoli oggetti (tra gli altri, attenzione ai palloncini di gomma !) che potrebbe mettere in bocca, rischiando il soffocamento»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«verificare che i vani batteria siano fissati con una vite o richiedano l'uso di un attrezzo per essere aperti»",
+         "f": [
+          6
+         ]
+        },
+        {
+         "t": "«conservare le batterie nuove e usate fuori dalla vista e dalla portata dei bambini e smaltire tempestivamente quelle esaurite»",
+         "f": [
+          6
+         ]
+        },
+        {
+         "t": "«Elimina catenelle e lacci al collo, tieni le buste di plastica fuori dalla portate del bambino per evitare il rischio di soffocamento.»",
+         "f": [
+          3
+         ],
+         "sic": "«dalla portate»: così nella fonte"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "cibo",
+     "chip": "Il cibo",
+     "titolo": "Il cibo che va di traverso",
+     "blocchi": [
+      {
+       "titolo": "Come preparare gli alimenti",
+       "tabella": {
+        "colonne": [
+         "Alimento",
+         "Come prepararlo"
+        ],
+        "f": [
+         7
+        ],
+        "righe": [
+         [
+          "«Alimenti di forma tondeggiante (es. uva, ciliegie, olive, mozzarelline, pomodorini, polpettine)»",
+          "«Tagliare in pezzi piccoli (circa 5 mm). Prestare attenzione nel rimuovere i semi e i noccioli.»"
+         ],
+         [
+          "«Alimenti di forma cilindrica (es. wurstel, salsicce, carote)»",
+          "«Tagliare prima in lunghezza (a listarelle) e poi in pezzi più piccoli (circa 5mm), MAI a rondelle. Prestare attenzione nel rimuovere eventuali budelli o bucce.»"
+         ],
+         [
+          "«Arachidi, semi e frutta secca a guscio»",
+          "«Se comunque somministrati, tritare finemente o ridurre in farina.»"
+         ],
+         [
+          "«Frutta disidratata (es. uvetta sultanina)»",
+          "«Mettere a bagno/ammorbidire e tagliare finemente.»"
+         ],
+         [
+          "«Burro di arachidi e altri alimenti della stessa consistenza»",
+          "«Spalmare uno strato sottile sul pane.»"
+         ],
+         [
+          "«Carne, pesce»",
+          "«Cuocere fino a quando diventano morbidi e poi tagliare in pezzi piccoli. Prestare attenzione nel rimuovere nervature e filamenti, gli ossicini dalla carne, le lische dal pesce.»"
+         ],
+         [
+          "«Salumi e prosciutto»",
+          "«Tagliare in pezzi piccoli (massimo 1 cm) da somministrare singolarmente»"
+         ],
+         [
+          "«Legumi (es. fagioli e piselli)»",
+          "«Cuocere fino a quando sono abbastanza morbidi da poterli schiacciare con una forchetta.»"
+         ]
+        ]
+       }
+      },
+      {
+       "titolo": "Età fino alla quale evitare l'alimento",
+       "tabella": {
+        "colonne": [
+         "Alimento",
+         "Età fino alla quale evitare l'alimento"
+        ],
+        "f": [
+         7
+        ],
+        "righe": [
+         [
+          "«Arachidi, semi e frutta secca a guscio»",
+          "«4/5 anni»"
+         ],
+         [
+          "«Caramelle dure e gommose, gelatine, marshmallow, gomme da masticare, popcorn, sfoglie di patate fritte croccanti (e snack simili)»",
+          "«4/5 anni»"
+         ]
+        ]
+       }
+      },
+      {
+       "titolo": "Le regole a tavola",
+       "righe": [
+        {
+         "t": "«Il bambino deve mangiare a tavola, seduto con la schiena dritta.»",
+         "f": [
+          7
+         ]
+        },
+        {
+         "t": "«Il bambino non deve mangiare mentre gioca, è distratto dalla tv o da videogiochi, corre o si trova in un veicolo in movimento (es. automobile).»",
+         "f": [
+          7
+         ]
+        },
+        {
+         "t": "«Evitare distrazioni e non dare alimenti al bambino mentre sta piangendo o ridendo.»",
+         "f": [
+          7
+         ]
+        },
+        {
+         "t": "«Mai lasciare il bambino da solo mentre sta mangiando.»",
+         "f": [
+          7
+         ]
+        },
+        {
+         "t": "«Incoraggiare il bambino a mangiare lentamente, a fare bocconi piccoli e a masticare bene prima di deglutire.»",
+         "f": [
+          7
+         ]
+        },
+        {
+         "t": "«Non forzare il bambino a mangiare.»",
+         "f": [
+          7
+         ]
+        },
+        {
+         "t": "«Dare al bambino alimenti appropriati al suo livello di sviluppo.»",
+         "f": [
+          7
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "acqua",
+     "titolo": "Acqua: vasca, piscinette, secchi",
+     "blocchi": [
+      {
+       "righe": [
+        {
+         "t": "«Rischio annegamento: non lasciare mai il bambino da solo nella vasca da bagno o piscina gonfiabile, svuotali completamente dopo l'uso; come pure catini, bidet o altri recipienti.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Bastano pochi cm di acqua per annegare!»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Non lasciate mai i vostri bambini da soli nella vasca per il pericolo di annegamento: bastano 5 cm d'acqua»",
+         "f": [
+          4
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "elettricita",
+     "titolo": "Elettricità",
+     "blocchi": [
+      {
+       "righe": [
+        {
+         "t": "«Prese elettriche: coprile con i copripresa e non lasciare da solo il bambino in ambienti dove funzionano gli elettrodomestici.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Non disporre elettrodomestici vicino a fonti d' acqua (ad es. l'asciugacapelli).»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«I piccoli elettrodomestici possono causare folgorazioni e bruciature, staccare sempre la spina dopo l'utilizzo»",
+         "f": [
+          4
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "se-succede",
+     "titolo": "Se succede",
+     "blocchi": [
+      {
+       "righe": [
+        {
+         "t": "«Registra il numero telefonico del Centro Antiveleni nella rubrica del tuo telefono.»",
+         "f": [
+          3
+         ]
+        },
+        {
+         "t": "«Chiama immediatamente il pediatra o il Centro Antiveleni se il tuo bambino ha messo in bocca qualcosa di velenoso.»",
+         "f": [
+          3
+         ]
+        }
+       ]
+      },
+      {
+       "titolo": "Se ha ingerito o toccato un prodotto",
+       "righe": [
+        {
+         "t": "«Non indurre il vomito nel bambino che ha ingerito la sostanza»",
+         "f": [
+          8
+         ]
+        },
+        {
+         "t": "«Non fare mangiare o bere il bambino. Prima contatta un Centro Antiveleni»",
+         "f": [
+          8
+         ]
+        },
+        {
+         "t": "«Contatta il Centro Antiveleni anche se il bambino non presenta sintomi, per avere indicazioni su cosa fare»",
+         "f": [
+          8
+         ]
+        },
+        {
+         "t": "«Non assaggiare mai il prodotto, nemmeno per verificare cosa abbia ingerito il bambino»",
+         "f": [
+          8
+         ]
+        },
+        {
+         "t": "«Porta con te il contenitore della sostanza assunta se porti il bambino in Ospedale»",
+         "f": [
+          8
+         ]
+        }
+       ]
+      },
+      {
+       "titolo": "Cosa si deve comunicare al telefono",
+       "elenco": [
+        "«Età e peso del bambino o del ragazzo»",
+        "«Cosa ha ingerito»",
+        "«Da quanto tempo»",
+        "«Quanta sostanza ha assunto»",
+        "«Sintomi»"
+       ],
+       "elenco_f": [
+        8
+       ]
+      },
+      {
+       "titolo": "Se ha ingoiato una batteria a bottone",
+       "righe": [
+        {
+         "t": "«L'ingestione di una batteria a bottone rappresenta una vera emergenza tempo-dipendente»",
+         "f": [
+          6
+         ]
+        },
+        {
+         "t": "«in caso di ingestione certa o anche solo sospetta, è fondamentale recarsi immediatamente in Pronto Soccorso»",
+         "f": [
+          6
+         ]
+        }
+       ]
+      },
+      {
+       "titolo": "Se va di traverso",
+       "righe": [
+        {
+         "t": "«Educazione al primo soccorso: è raccomandabile che le famiglie e gli adulti responsabili della supervisione del bambino acquisiscano conoscenze e competenze sulle manovre di disostruzione e la rianimazione cardio polmonare.»",
+         "f": [
+          7
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "emergenza": {
+    "titolo": "In caso di emergenza: 112",
+    "guida": "numeri-utili-di-famiglia",
+    "passo": 3
+   },
+   "fonti": [
+    {
+     "ente": "Istituto Superiore di Sanità · EpiCentro",
+     "pagina": "Incidenti domestici, informazioni generali",
+     "url": "https://www.epicentro.iss.it/incidenti-domestici/",
+     "data": "pagina senza data",
+     "breve": "ISS, EpiCentro"
+    },
+    {
+     "ente": "Ministero della Salute",
+     "pagina": "Prevenire gli incidenti domestici (Piano nazionale della prevenzione)",
+     "url": "https://www.salute.gov.it/new/it/tema/piano-nazionale-della-prevenzione/prevenire-gli-incidenti-domestici/",
+     "data": "2015-03-05",
+     "breve": "Ministero della Salute, 2015"
+    },
+    {
+     "ente": "Azienda ULSS 9 Scaligera (Regione Veneto)",
+     "pagina": "«Pensiamo insieme alla salute dei nostri bambini», Sorveglianza Bambini 0–2 anni, brochure per i genitori (con il Progetto CCM)",
+     "url": "https://www.epicentro.iss.it/sorveglianza02anni/pdf/Brochure_per_i_genitori.pdf",
+     "data": "senza data",
+     "breve": "Azienda ULSS 9 Scaligera"
+    },
+    {
+     "ente": "ASL Ogliastra (Lanusei)",
+     "pagina": "«Il tuo bambino é nato» – «Crea per lui un nido sicuro», opuscolo del Programma regionale di prevenzione degli incidenti domestici in Sardegna",
+     "url": "https://www.aslogliastra.it/wp-content/uploads/2022/11/Il-tuo-bambino-e-nato-Crea-per-lui-un-nido-sicuro-ASL-Ogliastra.pdf",
+     "data": "senza data stampata; sul sito da novembre 2022",
+     "breve": "ASL Ogliastra"
+    },
+    {
+     "ente": "Ospedale Pediatrico Bambino Gesù",
+     "pagina": "Sicurezza del bambino in casa",
+     "url": "https://www.ospedalebambinogesu.it/sicurezza-del-bambino-in-casa-111873/",
+     "data": "2021-04-16",
+     "breve": "Bambino Gesù, 2021"
+    },
+    {
+     "ente": "Ospedale Pediatrico Bambino Gesù",
+     "pagina": "Intossicazioni, come prevenirle in casa",
+     "url": "https://www.ospedalebambinogesu.it/intossicazioni-come-prevenirle-in-casa-90410/",
+     "data": "2025-10-08",
+     "breve": "Bambino Gesù, 2025"
+    },
+    {
+     "ente": "Ospedale Pediatrico Bambino Gesù",
+     "pagina": "Batterie a bottone: in tre mesi 6 ricoveri al Bambino Gesù per gravi lesioni all'esofago, il triplo del 2025",
+     "url": "https://www.ospedalebambinogesu.it/batterie-a-bottone-in-tre-mesi-6-ricoveri-al-bambino-gesu-per-gravi-lesioni-all-esofago-il-triplo-del-2025-182024/",
+     "data": "2026-08-11",
+     "breve": "Bambino Gesù, 2026"
+    },
+    {
+     "ente": "Ministero della Salute",
+     "pagina": "Linee di indirizzo per la prevenzione del soffocamento da cibo in età pediatrica",
+     "url": "https://www.salute.gov.it/portale/documentazione/p6_2_2_1.jsp?lingua=italiano&id=2618",
+     "data": "2017-07-06",
+     "breve": "Ministero della Salute, 2017"
+    },
+    {
+     "ente": "Ospedale Pediatrico Bambino Gesù",
+     "pagina": "Centro Antiveleni pediatrico, le cose da sapere",
+     "url": "https://www.ospedalebambinogesu.it/centro-antiveleni-le-cose-da-sapere-128569/",
+     "data": "pagina senza data",
+     "breve": "Bambino Gesù"
+    }
+   ],
+   "aggiornata": "2026-11-20",
+   "revisione": "2027-05-20",
+   "medico": true,
+   "guide": [],
+   "eta": [
+    "0-1",
+    "1-3"
+   ]
   }
  ],
  "libri": [
@@ -4947,6 +5602,112 @@
    },
    "whatsapp": "https://whatsapp.com/channel/0029Vb9TkOULo4hb9bMdNx1s",
    "acquista": []
+  }
+ ],
+ "quaderni_qr": [
+  {
+   "path": "/n/",
+   "libro": "nascita",
+   "titolo": "Come si usa questo quaderno",
+   "pag": "6",
+   "stampa": [
+    {
+     "file": "nascita/tutte-le-pagine.pdf",
+     "titolo": "Tutte le pagine da stampare, in un file solo",
+     "pag": "20–22, 42, 46, 60–61, 90–91, 108–109, 135",
+     "pagine": 12
+    }
+   ],
+   "parti": [
+    "/n/attesa/",
+    "/n/pratiche/",
+    "/n/visite/",
+    "/n/scadenze/"
+   ]
+  },
+  {
+   "path": "/n/attesa/",
+   "libro": "nascita",
+   "parte": "L'attesa",
+   "titolo": "Lavorare in gravidanza",
+   "pag": "17",
+   "stampa": [
+    {
+     "file": "nascita/prima-del-controllo.pdf",
+     "titolo": "Prima del controllo",
+     "pag": "22",
+     "pagine": 1
+    },
+    {
+     "file": "nascita/controlli-ed-esami-in-gravidanza.pdf",
+     "titolo": "Controlli ed esami in gravidanza",
+     "pag": "20–21",
+     "pagine": 2
+    }
+   ]
+  },
+  {
+   "path": "/n/pratiche/",
+   "libro": "nascita",
+   "parte": "La nascita e le prime settimane",
+   "titolo": "Codice fiscale, tessera sanitaria, pediatra",
+   "pag": "40",
+   "stampa": [
+    {
+     "file": "nascita/pratiche-dei-primi-giorni.pdf",
+     "titolo": "Le pratiche dei primi giorni",
+     "pag": "42",
+     "pagine": 1
+    },
+    {
+     "file": "nascita/registro-dei-primi-giorni.pdf",
+     "titolo": "Il registro dei primi giorni",
+     "pag": "46",
+     "pagine": 1
+    }
+   ]
+  },
+  {
+   "path": "/n/visite/",
+   "libro": "nascita",
+   "parte": "La salute del bambino e le visite",
+   "titolo": "Il pediatra e i bilanci di salute",
+   "pag": "55",
+   "stampa": [
+    {
+     "file": "nascita/visita-dal-pediatra.pdf",
+     "titolo": "Prima della visita dal pediatra e Cosa ha detto il pediatra",
+     "pag": "60–61",
+     "pagine": 2
+    },
+    {
+     "file": "nascita/quando-sta-male.pdf",
+     "titolo": "Quando sta male",
+     "pag": "90–91",
+     "pagine": 2
+    }
+   ]
+  },
+  {
+   "path": "/n/scadenze/",
+   "libro": "nascita",
+   "parte": "La famiglia si organizza",
+   "titolo": "I documenti del bambino",
+   "pag": "116",
+   "stampa": [
+    {
+     "file": "nascita/scadenze-e-pratiche.pdf",
+     "titolo": "Scadenze e pratiche",
+     "pag": "108–109",
+     "pagine": 2
+    },
+    {
+     "file": "nascita/note.pdf",
+     "titolo": "Note",
+     "pag": "135",
+     "pagine": 1
+    }
+   ]
   }
  ]
 }
