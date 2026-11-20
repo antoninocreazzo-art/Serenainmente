@@ -1206,7 +1206,7 @@ for Q in QR:
     L = next((x for x in D.get('libri', []) if x['slug'] == Q['libro']), None)
     lt = L['titolo'] if L else Q['libro'].capitalize()
     altre = ''.join(riga(f"~{QRN[x]['path']}", QRN[x]['parte'], ' · '.join(p['titolo'] for p in QRN[x]['stampa']), icona='print') for x in Q.get('parti', []) if x in QRN)
-    tutte = '' if Q.get('parti') else (riga(f"~{QR[0]['path']}", QR[0]['stampa'][0]['titolo'], 'Tutte le parti del quaderno', icona='print') if QR[0] is not Q and QR[0]['libro'] == Q['libro'] else '')
+    tutte = '' if Q.get('parti') else (qr_pdf(QR[0]['stampa'][0]) if QR[0] is not Q and QR[0]['libro'] == Q['libro'] else '')
     fonti = (f'<section class="lb-sez" aria-labelledby="qf-t"><h2 class="sec-t" id="qf-t">Le fonti aggiornate</h2><ul class="rows">'
              + riga(f"~/libri/{L['slug']}/", f'Le fonti del quaderno «{lt}»', 'Con il canale WhatsApp di Serena, per sapere quando una regola cambia' if L.get('whatsapp') else 'Con il giorno in cui le abbiamo controllate', icona='book')
              + '</ul></section>') if L else ''
