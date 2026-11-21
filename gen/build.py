@@ -1140,7 +1140,8 @@ def lb_voce(x, n):
               + ''.join('<tr>' + ''.join((f'<th scope="row">{e(c)}</th>' if i == 0 else f'<td data-l="{e(t["colonne"][i])}">{e(c)}</td>') for i, c in enumerate(r)) + '</tr>' for r in t['righe']) + '</tbody></table></div>')
     lk = f'<a class="more" href="~{x["link"]["href"]}">{e(x["link"]["testo"])} {ic("arrow","ic-s")}</a>' if x.get('link') else ''
     hid = x.get('id', f'v{n}')
-    return (f'<section class="ds-testo vetro lb-voce" id="{hid}" aria-labelledby="{hid}-t"><p class="lb-pag">Nel quaderno: pag. {e(x["pag"])}</p><h3 id="{hid}-t">{e(x["titolo"])}</h3>'
+    # «pag128»: il numero della stessa pagina nell'edizione da 128 pagine (quella del QR di pag. 126), accanto a quello dell'edizione aggiornata
+    return (f'<section class="ds-testo vetro lb-voce" id="{hid}" aria-labelledby="{hid}-t"><p class="lb-pag">Nel quaderno: pag. {e(x["pag"])}{(" · pag. " + e(x["pag128"]) + " nell'edizione da 128 pagine") if x.get("pag128") else ""}</p><h3 id="{hid}-t">{e(x["titolo"])}</h3>'
             + ''.join(f'<p>{e(p)}</p>' for p in x['testo']) + tb + ''.join(f'<p>{e(p)}</p>' for p in x.get('dopo', [])) + lk
             + f'<ul class="sources lb-src" aria-label="Fonti">{"".join(lb_fonte(f) for f in x["fonti"])}</ul></section>')
 def lb_gruppo(g):

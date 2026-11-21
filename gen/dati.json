@@ -5005,7 +5005,7 @@
      {
       "id": "maternita",
       "titolo": "Congedo di maternità",
-      "pag": "16",
+      "pag": "18",
       "testo": [
        "Per le lavoratrici dipendenti dura 5 mesi: di solito 2 prima della data presunta del parto e 3 dopo.",
        "Si può spostare: 1 mese prima e 4 dopo, oppure tutti e 5 dopo il parto. Serve un medico che attesti che non ci sono rischi per la salute.",
@@ -5022,12 +5022,13 @@
         "data": "2025-05-30",
         "letta": "2026-11-13"
        }
-      ]
+      ],
+      "pag128": "16"
      },
      {
       "id": "paternita",
       "titolo": "Congedo di paternità obbligatorio",
-      "pag": "16",
+      "pag": "18",
       "testo": [
        "Il congedo di paternità obbligatorio dura 10 giorni lavorativi (20 se nascono gemelli o più bambini) e si può usare da 2 mesi prima della data presunta del parto fino a 5 mesi dopo la nascita. I giorni scelti si comunicano per iscritto al datore di lavoro almeno 5 giorni prima, quando è possibile rispetto alla nascita, partendo dalla data presunta del parto; il contratto collettivo può prevedere condizioni migliori.",
        "È pagato al 100% della retribuzione."
@@ -5040,12 +5041,13 @@
         "data": "2025-11-13",
         "letta": "2026-11-13"
        }
-      ]
+      ],
+      "pag128": "16"
      },
      {
       "id": "parentale",
       "titolo": "Congedo parentale",
-      "pag": "91",
+      "pag": "101",
       "testo": [
        "Per i lavoratori dipendenti. È facoltativo e si aggiunge ai congedi di maternità e di paternità."
       ],
@@ -5100,12 +5102,13 @@
         "data": "2026-06-16",
         "letta": "2026-11-13"
        }
-      ]
+      ],
+      "pag128": "91"
      },
      {
       "id": "allattamento",
       "titolo": "Riposi per l'allattamento",
-      "pag": "39",
+      "pag": "43",
       "testo": [
        "Per le mamme lavoratrici dipendenti, nel primo anno di vita del bambino: 2 ore al giorno se l'orario di lavoro è di almeno 6 ore, 1 ora se è più corto.",
        "Se nascono gemelli o più bambini, le ore raddoppiano.",
@@ -5122,12 +5125,13 @@
         "data": "2026-04-01",
         "letta": "2026-11-13"
        }
-      ]
+      ],
+      "pag128": "39"
      },
      {
       "id": "assegno-unico",
       "titolo": "L'Assegno unico",
-      "pag": "37",
+      "pag": "41",
       "testo": [
        "Per un bambino che nasce, spetta dal settimo mese di gravidanza, se la domanda arriva entro 120 giorni dalla nascita.",
        "Nel 2026 l'importo va da 58,30 euro al mese per ogni figlio minorenne (senza ISEE, o con un ISEE di 46.582,71 euro o più) a 203,80 euro al mese (con un ISEE fino a 17.468,51 euro).",
@@ -5148,12 +5152,13 @@
         "data": "Senza data, successiva a maggio 2025",
         "letta": "2026-11-13"
        }
-      ]
+      ],
+      "pag128": "37"
      },
      {
       "id": "nuovi-nati",
       "titolo": "Il bonus per i nuovi nati",
-      "pag": "37",
+      "pag": "41",
       "testo": [
        "Per i bambini nati o adottati nel 2026: 1.000 euro, una volta sola, se l'ISEE per i minorenni non supera 40.000 euro, senza contare l'Assegno unico.",
        "La domanda la fa un genitore all'INPS entro 120 giorni dalla nascita: dopo non si può più.",
@@ -5174,12 +5179,13 @@
         "data": "2026-04-27",
         "letta": "2026-11-13"
        }
-      ]
+      ],
+      "pag128": "37"
      },
      {
       "id": "nido",
       "titolo": "Il bonus asilo nido",
-      "pag": "92",
+      "pag": "108",
       "testo": [
        "Aiuta a pagare la retta del nido per i bambini con meno di 3 anni, fino a 11 mesi l'anno. L'importo dipende dall'ISEE per i minorenni e dall'anno di nascita."
       ],
@@ -5232,7 +5238,8 @@
         "data": "2026-05-28",
         "letta": "2026-11-13"
        }
-      ]
+      ],
+      "pag128": "92"
      }
     ]
    },
@@ -5301,11 +5308,25 @@
        "letta": "2026-11-12"
       },
       {
-       "titolo": "Centri antiveleni e intossicazioni da sostanze chimiche, 2019",
+       "titolo": "Centri antiveleni e intossicazioni da sostanze chimiche, 2020",
        "link": [
         "https://www.iss.it/en/consigli-al-consumatore/-/asset_publisher/JHgxEFj4YPn0/content/centri-antiveleni-e-intossicazioni-da-sostanze-chimiche"
        ],
-       "letta": "2026-11-13"
+       "letta": "2026-11-20"
+      },
+      {
+       "titolo": "Ministero della Salute, Linee di indirizzo sul soffocamento da cibo, 2017",
+       "link": [
+        "https://www.salute.gov.it/new/sites/default/files/imported/C_17_pubblicazioni_2618_allegato.pdf"
+       ],
+       "letta": "2026-11-20"
+      },
+      {
+       "titolo": "Piano nazionale di prevenzione vaccinale 2023-2025",
+       "link": [
+        "https://www.epicentro.iss.it/vaccini/piano-nazionale-vaccini-2023-2025"
+       ],
+       "letta": "2026-11-20"
       }
      ]
     },
@@ -5346,6 +5367,34 @@
         "https://www.camera.it/temiap/documentazione/temi/pdf/1137287.pdf"
        ],
        "letta": "2026-11-13"
+      },
+      {
+       "titolo": "DPR 3 novembre 2000, n. 396 (dichiarazione di nascita, art. 30; nome, art. 35), testo del Ministero degli Esteri",
+       "link": [
+        "https://www.esteri.it/mae/doc/DPR396_2000.pdf"
+       ],
+       "letta": "2026-11-20"
+      },
+      {
+       "titolo": "DPR 30 maggio 1989, n. 223, art. 7 (residenza del neonato), copia della Prefettura",
+       "link": [
+        "https://prefettura.interno.gov.it/sites/default/files/2024-01/D.P.R.%2030-05-1989%2C%20n.223_0.pdf"
+       ],
+       "letta": "2026-11-20"
+      },
+      {
+       "titolo": "Corte costituzionale, sentenza n. 131 del 2022 (cognome)",
+       "link": [
+        "https://www.cortecostituzionale.it/actionSchedaPronuncia.do?anno=2022&numero=131"
+       ],
+       "letta": "2026-11-20"
+      },
+      {
+       "titolo": "Ministero della Difesa, circolare del 5 febbraio 2026 sul congedo e la malattia del figlio (applica la Legge 199/2025, art. 1, commi 219–220)",
+       "link": [
+        "https://www.difesa.it/assets/allegati/88342/circolare_modifica_per_congedo_e_malattia_figlio.pdf"
+       ],
+       "letta": "2026-11-20"
       }
      ]
     },
@@ -5379,6 +5428,34 @@
         "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.50581.indennit-per-riposi-giornalieri-per-padri-e-madri-dipendenti.html"
        ],
        "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Indennità di congedo parentale per lavoratrici e lavoratori dipendenti, 2026",
+       "link": [
+        "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50583.indennit-di-congedo-parentale-per-lavoratrici-e-lavoratori-dipendenti.html"
+       ],
+       "letta": "2026-11-20"
+      },
+      {
+       "titolo": "Congedo parentale dei lavoratori dipendenti esteso fino ai 14 anni, 2026",
+       "link": [
+        "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.01.congedo-parentale-lavoratori-dipendenti-esteso-fino-ai-14-anni.html"
+       ],
+       "letta": "2026-11-20"
+      },
+      {
+       "titolo": "Assegno unico e universale per i figli a carico, 2026",
+       "link": [
+        "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-55984.assegno-unico-e-universale-per-i-figli-a-carico.html"
+       ],
+       "letta": "2026-11-20"
+      },
+      {
+       "titolo": "Bonus asilo nido 2026",
+       "link": [
+        "https://inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.03.bonus-asilo-nido-2026-attivo-il-servizio-per-la-domanda.html"
+       ],
+       "letta": "2026-11-20"
       }
      ]
     },
@@ -5571,6 +5648,20 @@
         "https://asl3nuoro.it/wp-content/uploads/2024/10/Brochure-piegh-Intossicazioni-in-eta-pediatrica-Ottobre.pdf"
        ],
        "letta": "2026-11-13"
+      },
+      {
+       "titolo": "Ospedale Pediatrico Bambino Gesù, Sicurezza del bambino in casa, 2021",
+       "link": [
+        "https://www.ospedalebambinogesu.it/sicurezza-del-bambino-in-casa-111873/"
+       ],
+       "letta": "2026-11-20"
+      },
+      {
+       "titolo": "ASL Ogliastra, Il tuo bambino è nato: crea per lui un nido sicuro, 2022",
+       "link": [
+        "https://www.aslogliastra.it/wp-content/uploads/2022/11/Il-tuo-bambino-e-nato-Crea-per-lui-un-nido-sicuro-ASL-Ogliastra.pdf"
+       ],
+       "letta": "2026-11-20"
       }
      ]
     },
@@ -5614,14 +5705,15 @@
     {
      "file": "nascita/tutte-le-pagine.pdf",
      "titolo": "Tutte le pagine da stampare, in un file solo",
-     "pag": "20–22, 42, 46, 60–61, 90–91, 108–109, 135",
-     "pagine": 12
+     "pag": "20–22, 42, 47, 55–57, 76–77, 82–83, 93, 97, 102–103, 135",
+     "pagine": 17
     }
    ],
    "parti": [
     "/n/attesa/",
     "/n/pratiche/",
     "/n/visite/",
+    "/n/medicine/",
     "/n/scadenze/"
    ]
   },
@@ -5662,7 +5754,7 @@
     {
      "file": "nascita/registro-dei-primi-giorni.pdf",
      "titolo": "Il registro dei primi giorni",
-     "pag": "46",
+     "pag": "47",
      "pagine": 1
     }
    ]
@@ -5672,19 +5764,52 @@
    "libro": "nascita",
    "parte": "La salute del bambino e le visite",
    "titolo": "Il pediatra e i bilanci di salute",
-   "pag": "55",
+   "pag": "51",
    "stampa": [
     {
      "file": "nascita/visita-dal-pediatra.pdf",
      "titolo": "Prima della visita dal pediatra e Cosa ha detto il pediatra",
-     "pag": "60–61",
+     "pag": "56–57",
+     "pagine": 2
+    },
+    {
+     "file": "nascita/domande-per-il-pediatra.pdf",
+     "titolo": "Le domande per il pediatra",
+     "pag": "55",
+     "pagine": 1
+    },
+    {
+     "file": "nascita/altre-visite-ed-esami.pdf",
+     "titolo": "Altre visite ed esami",
+     "pag": "76–77",
      "pagine": 2
     },
     {
      "file": "nascita/quando-sta-male.pdf",
      "titolo": "Quando sta male",
-     "pag": "90–91",
+     "pag": "82–83",
      "pagine": 2
+    }
+   ]
+  },
+  {
+   "path": "/n/medicine/",
+   "libro": "nascita",
+   "parte": "Le medicine dei bambini",
+   "titolo": "Le medicine dei bambini: come si usano queste pagine",
+   "pag": "89",
+   "stampa": [
+    {
+     "file": "nascita/ogni-volta-che-se-ne-da-una.pdf",
+     "titolo": "Ogni volta che se ne dà una",
+     "pag": "97",
+     "pagine": 1
+    },
+    {
+     "file": "nascita/cure-con-un-inizio-e-una-fine.pdf",
+     "titolo": "Le cure con un inizio e una fine",
+     "pag": "93",
+     "pagine": 1
     }
    ]
   },
@@ -5693,12 +5818,12 @@
    "libro": "nascita",
    "parte": "La famiglia si organizza",
    "titolo": "I documenti del bambino",
-   "pag": "116",
+   "pag": "110",
    "stampa": [
     {
      "file": "nascita/scadenze-e-pratiche.pdf",
      "titolo": "Scadenze e pratiche",
-     "pag": "108–109",
+     "pag": "102–103",
      "pagine": 2
     },
     {
