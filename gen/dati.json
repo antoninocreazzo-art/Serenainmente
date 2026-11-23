@@ -3273,6 +3273,18 @@
    "tipo": "guida"
   },
   {
+   "data": "2026-11-15",
+   "titolo": "4 scadenze per le famiglie entro dicembre: le fonti",
+   "link": "/fonti/scadenze-famiglie-dicembre-2026/",
+   "tipo": "fonti"
+  },
+  {
+   "data": "2026-11-17",
+   "titolo": "Le spese dei figli che tornano indietro nel 730: le fonti",
+   "link": "/fonti/spese-figli-entro-31-dicembre/",
+   "tipo": "fonti"
+  },
+  {
    "data": "2026-11-19",
    "titolo": "Il certificato vaccinale: dove si scarica e quando serve",
    "link": "/guide/certificato-vaccinale/",
@@ -3285,22 +3297,10 @@
    "tipo": "fonti"
   },
   {
-   "data": "2027-01-04",
-   "titolo": "Il tuo ISEE scade il 31 dicembre: le fonti",
-   "link": "/fonti/isee-scade-31-dicembre/",
-   "tipo": "fonti"
-  },
-  {
-   "data": "2026-11-15",
-   "titolo": "4 scadenze per le famiglie entro dicembre: le fonti",
-   "link": "/fonti/scadenze-famiglie-dicembre-2026/",
-   "tipo": "fonti"
-  },
-  {
-   "data": "2026-11-17",
-   "titolo": "Le spese dei figli che tornano indietro nel 730: le fonti",
-   "link": "/fonti/spese-figli-entro-31-dicembre/",
-   "tipo": "fonti"
+   "data": "2026-11-27",
+   "titolo": "Il gestionale di famiglia: le scadenze di tutti in un file solo",
+   "link": "/gestionale/",
+   "tipo": "strumento"
   },
   {
    "data": "2026-12-01",
@@ -3315,10 +3315,16 @@
    "tipo": "guida"
   },
   {
-   "data": "2026-11-27",
-   "titolo": "Il gestionale di famiglia: le scadenze di tutti in un file solo",
-   "link": "/gestionale/",
+   "data": "2026-12-04",
+   "titolo": "Prima della visita dal pediatra: il foglio delle domande da stampare",
+   "link": "/stampabili/domande-per-il-pediatra/",
    "tipo": "strumento"
+  },
+  {
+   "data": "2026-12-07",
+   "titolo": "Carta d'identità per i bambini: come si chiede e cosa serve",
+   "link": "/guide/carta-identita-bambini/",
+   "tipo": "guida"
   },
   {
    "data": "2026-12-08",
@@ -3331,6 +3337,12 @@
    "titolo": "Prenotare con il CUP: la ricetta elettronica e i tempi di attesa",
    "link": "/guide/prenotare-con-il-cup/",
    "tipo": "guida"
+  },
+  {
+   "data": "2027-01-04",
+   "titolo": "Il tuo ISEE scade il 31 dicembre: le fonti",
+   "link": "/fonti/isee-scade-31-dicembre/",
+   "tipo": "fonti"
   }
  ],
  "frase_medico_schede": "Serena riporta informazioni generali: non sostituiscono il medico o il pediatra.",

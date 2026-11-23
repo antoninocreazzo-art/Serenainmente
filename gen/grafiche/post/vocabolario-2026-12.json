@@ -1,1 +1,93 @@
-{"nota": "Il vocabolario di Serena, dicembre 2026 (stesso formato di vocabolario-2026-11.json). Il 7 e l'8/12 sono già scritti (Impegnativa e CUP, legati alle Notizie utili n. 4 dell'8/12): la preparazione settimanale numera i giorni dal 2 al 6 con 32–36 e non li riscrive.", "voci": [{"data": "2026-12-01", "numero": "31", "parola": "Dicembre", "sfondo": "#F4E9EC", "frase": "Recite, cene, regali:\nagenda piena fino al 31.\nConsiglio: un giorno vuoto,\nsegnato a penna.", "didascalia": "Il vocabolario di Serena, n. 31.\nDicembre: recite, cene, regali: agenda piena fino al 31. Consiglio: un giorno vuoto, segnato a penna.\n\nUna parola della vita di casa ogni giorno alle 18.\n\nMandalo a chi ha già tre recite in calendario.", "hashtag": "#vocabolariodiserena #mamma #genitori #vitadamamma #dicembre", "commento": "Il vostro dicembre: più lucine o più liste?", "alt": "Pagina del vocabolario di Serena, numero 31. Dicembre: Recite, cene, regali: agenda piena fino al 31. Consiglio: un giorno vuoto, segnato a penna."}, {"data": "2026-12-07", "numero": "37", "parola": "Impegnativa", "sfondo": "#F2EBE3", "frase": "Il foglio che resta in borsa\nper settimane, piegato in quattro,\nfinché qualcuno non risponde.", "didascalia": "Il vocabolario di Serena, n. 37.\nImpegnativa: il foglio che resta in borsa per settimane, piegato in quattro, finché qualcuno non risponde.\n\nUna parola della vita di casa ogni giorno alle 18.\n\nMandalo a chi ne ha una in borsa proprio adesso.", "hashtag": "#vocabolariodiserena #mamma #genitori #caregiver #visitemediche", "commento": "La tua da quanto tempo è in borsa?", "alt": "Pagina del vocabolario di Serena, numero 37. Impegnativa: il foglio che resta in borsa per settimane, piegato in quattro, finché qualcuno non risponde."}, {"data": "2026-12-08", "numero": "38", "parola": "CUP", "sfondo": "#F4E9EC", "frase": "Tre lettere\ne una musichetta\nche ormai sai fischiettare.", "didascalia": "Il vocabolario di Serena, n. 38.\nCUP: tre lettere e una musichetta che ormai sai fischiettare.\n\nStamattina, nelle Notizie utili: cosa vuol dire la lettera sulla ricetta e cosa fare se il CUP non ha posto.\n\nMandalo a chi è in attesa da venti minuti.", "hashtag": "#vocabolariodiserena #mamma #genitori #caregiver #cup", "commento": "Il tuo record di attesa al telefono?", "alt": "Pagina del vocabolario di Serena, numero 38. CUP: tre lettere e una musichetta che ormai sai fischiettare."}]}
+{
+ "nota": "Il vocabolario di Serena, dicembre 2026 (stesso formato di vocabolario-2026-11.json). Il 7 e l'8/12 sono già scritti (Impegnativa e CUP, legati alle Notizie utili n. 4 dell'8/12): la preparazione settimanale numera i giorni dal 2 al 6 con 32–36 e non li riscrive.",
+ "voci": [
+  {
+   "data": "2026-12-01",
+   "numero": "31",
+   "parola": "Dicembre",
+   "sfondo": "#F4E9EC",
+   "frase": "Recite, cene, regali:\nagenda piena fino al 31.\nConsiglio: un giorno vuoto,\nsegnato a penna.",
+   "didascalia": "Il vocabolario di Serena, n. 31.\nDicembre: recite, cene, regali: agenda piena fino al 31. Consiglio: un giorno vuoto, segnato a penna.\n\nUna parola della vita di casa ogni giorno alle 18.\n\nMandalo a chi ha già tre recite in calendario.",
+   "hashtag": "#vocabolariodiserena #mamma #genitori #vitadamamma #dicembre",
+   "commento": "Il vostro dicembre: più lucine o più liste?",
+   "alt": "Pagina del vocabolario di Serena, numero 31. Dicembre: Recite, cene, regali: agenda piena fino al 31. Consiglio: un giorno vuoto, segnato a penna."
+  },
+  {
+   "data": "2026-12-02",
+   "numero": "32",
+   "parola": "Caricabatterie",
+   "sfondo": "#FBF6F4",
+   "frase": "In casa ce ne sono sette.\nNella stanza dove sei tu,\nnessuno. Il telefono\nintanto è al 2%.",
+   "didascalia": "Il vocabolario di Serena, n. 32.\nCaricabatterie: in casa ce ne sono sette. Nella stanza dove sei tu, nessuno. Il telefono intanto è al 2%.\n\nUna parola della vita di casa ogni giorno alle 18.\n\nMandalo a chi ha appena cercato il caricabatterie in tutta casa.",
+   "hashtag": "#vocabolariodiserena #mamma #genitori #vitadamamma #caricabatterie",
+   "commento": "Da voi dove finiscono i caricabatterie: in cucina, in camera o in macchina?",
+   "alt": "Pagina del vocabolario di Serena, numero 32. Caricabatterie: In casa ce ne sono sette. Nella stanza dove sei tu, nessuno. Il telefono intanto è al 2%."
+  },
+  {
+   "data": "2026-12-03",
+   "numero": "33",
+   "parola": "Vivavoce",
+   "sfondo": "#F2EBE3",
+   "frase": "Quando chiama la nonna,\nil telefono va in mezzo al tavolo.\nParlano tutti insieme,\nsi capisce poco, si ride tanto.",
+   "didascalia": "Il vocabolario di Serena, n. 33.\nVivavoce: quando chiama la nonna, il telefono va in mezzo al tavolo. Parlano tutti insieme, si capisce poco, si ride tanto.\n\nUna parola della vita di casa ogni giorno alle 18.\n\nMandalo a chi stasera chiama i nonni in vivavoce.",
+   "hashtag": "#vocabolariodiserena #mamma #genitori #nonni #famiglia",
+   "commento": "Chi è il primo a gridare «ciao nonna!» a casa vostra?",
+   "alt": "Pagina del vocabolario di Serena, numero 33. Vivavoce: Quando chiama la nonna, il telefono va in mezzo al tavolo. Parlano tutti insieme, si capisce poco, si ride tanto."
+  },
+  {
+   "data": "2026-12-04",
+   "numero": "34",
+   "parola": "Guanti",
+   "sfondo": "#F4E9EC",
+   "frase": "Si esce con due,\nsi torna con uno.\nTrucco: una molletta\nli tiene insieme in tasca.",
+   "didascalia": "Il vocabolario di Serena, n. 34.\nGuanti: si esce con due, si torna con uno. Trucco: una molletta li tiene insieme in tasca.\n\nUna parola della vita di casa ogni giorno alle 18.\n\nMandalo a chi ha una scatola piena di guanti spaiati.",
+   "hashtag": "#vocabolariodiserena #mamma #genitori #vitadamamma #inverno",
+   "commento": "Il record di guanti persi in un inverno, a casa vostra?",
+   "alt": "Pagina del vocabolario di Serena, numero 34. Guanti: Si esce con due, si torna con uno. Trucco: una molletta li tiene insieme in tasca."
+  },
+  {
+   "data": "2026-12-05",
+   "numero": "35",
+   "parola": "Sabato mattina",
+   "sfondo": "#F2EBE3",
+   "frase": "Nessuna sveglia.\nAlle 6:40 un ditino\nti apre un occhio:\n«Sei sveglia?» Adesso sì.",
+   "didascalia": "Il vocabolario di Serena, n. 35.\nSabato mattina: nessuna sveglia. Alle 6:40 un ditino ti apre un occhio: «Sei sveglia?» Adesso sì.\n\nUna parola della vita di casa ogni giorno alle 18.\n\nMandalo a chi stamattina è stata svegliata da un ditino.",
+   "hashtag": "#vocabolariodiserena #mamma #genitori #vitadamamma #sabato",
+   "commento": "A che ora vi svegliano, il sabato, i vostri «ditini»?",
+   "alt": "Pagina del vocabolario di Serena, numero 35. Sabato mattina: Nessuna sveglia. Alle 6:40 un ditino ti apre un occhio: «Sei sveglia?» Adesso sì."
+  },
+  {
+   "data": "2026-12-06",
+   "numero": "36",
+   "parola": "Avanzi",
+   "sfondo": "#FBF6F4",
+   "frase": "La cena della domenica sera.\nUn po' di tutto, in tavola\ninsieme. Nessuno si lamenta,\ne il frigo respira.",
+   "didascalia": "Il vocabolario di Serena, n. 36.\nAvanzi: la cena della domenica sera. Un po' di tutto, in tavola insieme. Nessuno si lamenta, e il frigo respira.\n\nUna parola della vita di casa ogni giorno alle 18.\n\nMandalo a chi stasera apre il frigo e dice «facciamo con quello che c'è».",
+   "hashtag": "#vocabolariodiserena #mamma #genitori #vitadamamma #domenicasera",
+   "commento": "Qual è l'avanzo che a casa vostra è più buono il giorno dopo?",
+   "alt": "Pagina del vocabolario di Serena, numero 36. Avanzi: La cena della domenica sera. Un po' di tutto, in tavola insieme. Nessuno si lamenta, e il frigo respira."
+  },
+  {
+   "data": "2026-12-07",
+   "numero": "37",
+   "parola": "Impegnativa",
+   "sfondo": "#F2EBE3",
+   "frase": "Il foglio che resta\nin borsa per settimane,\npiegato in quattro,\nfinché qualcuno risponde.",
+   "didascalia": "Il vocabolario di Serena, n. 37.\nImpegnativa: il foglio che resta in borsa per settimane, piegato in quattro, finché qualcuno non risponde.\n\nUna parola della vita di casa ogni giorno alle 18.\n\nMandalo a chi ne ha una in borsa proprio adesso.",
+   "hashtag": "#vocabolariodiserena #mamma #genitori #caregiver #visitemediche",
+   "commento": "La tua da quanto tempo è in borsa?",
+   "alt": "Pagina del vocabolario di Serena, numero 37. Impegnativa: il foglio che resta in borsa per settimane, piegato in quattro, finché qualcuno non risponde."
+  },
+  {
+   "data": "2026-12-08",
+   "numero": "38",
+   "parola": "CUP",
+   "sfondo": "#F4E9EC",
+   "frase": "Tre lettere\ne una musichetta\nche ormai sai fischiettare.",
+   "didascalia": "Il vocabolario di Serena, n. 38.\nCUP: tre lettere e una musichetta che ormai sai fischiettare.\n\nStamattina, nelle Notizie utili: cosa vuol dire la lettera sulla ricetta e cosa fare se il CUP non ha posto.\n\nMandalo a chi è in attesa da venti minuti.",
+   "hashtag": "#vocabolariodiserena #mamma #genitori #caregiver #cup",
+   "commento": "Il tuo record di attesa al telefono?",
+   "alt": "Pagina del vocabolario di Serena, numero 38. CUP: tre lettere e una musichetta che ormai sai fischiettare."
+  }
+ ]
+}
