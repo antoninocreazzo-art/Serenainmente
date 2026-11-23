@@ -1,17 +1,66 @@
 [
  {
-  "file": "2026-11-28-1.jpg",
   "tipo": "frase",
-  "stile": "",
   "sfondo": "#EDEAF2",
-  "frase": "il sabato non deve\nservire a niente.",
-  "freccia": true
+  "dim": 76,
+  "frase": "alla mamma\nche ieri sera\nha detto\n«ultima storia»…",
+  "freccia": true,
+  "rubricaSotto": "continua, scorri →",
+  "file": "2026-11-28-1.jpg"
  },
  {
-  "file": "2026-11-28-2.jpg",
   "tipo": "frase",
   "stile": "riconoscimento",
   "sfondo": "#EDEAF2",
-  "frase": "Basta stare insieme.\nUna colazione lunga,\nun giro senza meta,\nil pigiama fino a tardi."
+  "conta": "1/6",
+  "frase": "Lo sapevi già,\nmentre lo dicevi.\n«Ultima» era una parola\nda trattare.",
+  "file": "2026-11-28-2.jpg"
+ },
+ {
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EDEAF2",
+  "conta": "2/6",
+  "frase": "Lui ha scelto quella lunga.\nQuella con il lupo\nche cambia voce\ntre volte.",
+  "file": "2026-11-28-3.jpg"
+ },
+ {
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EDEAF2",
+  "conta": "3/6",
+  "frase": "A metà ti si chiudevano\ngli occhi.\nHai saltato una pagina.\nSe n'è accorto subito.",
+  "file": "2026-11-28-4.jpg"
+ },
+ {
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EDEAF2",
+  "conta": "4/6",
+  "frase": "«Mamma, manca il pezzo\ndel ponte.»\nE sei tornata indietro.",
+  "file": "2026-11-28-5.jpg"
+ },
+ {
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EDEAF2",
+  "conta": "5/6",
+  "frase": "Poi la luce spenta,\nil respiro che rallenta,\nla sua mano\nsul tuo braccio.",
+  "file": "2026-11-28-6.jpg"
+ },
+ {
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EDEAF2",
+  "conta": "6/6",
+  "frase": "Un giorno ti dirà\n«basta, sono grande».\nQuella sera, l'ultima storia\nvorrai leggerla tu.",
+  "file": "2026-11-28-7.jpg"
+ },
+ {
+  "tipo": "frase",
+  "stile": "riconoscimento",
+  "sfondo": "#EDEAF2",
+  "frase": "Qual è la storia\nche a casa vostra\nnon finisce mai?",
+  "file": "2026-11-28-8.jpg"
  }
 ]
